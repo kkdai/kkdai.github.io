@@ -1,0 +1,152 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2010-01-10 12:36:54+00:00
+slug: '%e9%9b%bb%e8%85%a6%e8%bd%89%e6%8f%9b%e4%b8%ad-%e4%be%bf%e7%95%b6%e9%9b%bb%e8%85%a6%e6%98%af%e6%88%91%e7%9a%84%e4%b8%8b%e4%b8%80%e7%ab%99'
+title: 電腦轉換中~~~~~~ 便當電腦是我的下一站
+wordpress_id: 1081
+categories:
+- 柴米油鹽的東西
+---
+
+  
+
+    
+
+      
+
+        
+
+            
+
+             
+
+**原由:**
+
+             
+
+主要起因是因為，有個周末要騎車出去買東西，在停車場的時候看到我們家電錶跑得比其他住戶都快，於是嚇了一大跳~~ 仔細回想了一下~~ 家裡就是有兩台電腦開機還有養魚的水再吃電。 兩台電腦一台是P3拿來當Linux伺服器的相簿主機(還有這篇blog)、另外一台是動物機(桌機)
+
+             
+
+             
+
+難道~~是動物機太耗電嗎？
+
+             
+
+<blockquote>              
+> 
+> 是動物機太耗電嗎？
+> 
+>                
+> 
+> 是動物機太耗電嗎？
+> 
+>                
+> 
+> 是動物機太耗電嗎？
+> 
+>             </blockquote>
+
+             
+
+去經過了一番調查，其實不光是動物機～ 就算是一台P3的就電腦。其實也會耗到200w左右～ 當然我G86的動物機更是兇猛大約有350w。 當然這些數據都是自己大約的估算而不是使用mobile01 每個人都會推薦的”變電家＂測量耗電的電表。
+
+             
+
+             
+
+於是開始找一些文章，這時候真的發現有訂"電腦王"真的很有用。剛剛好12月這一期就是介紹省電又小的"便當電腦"。 也就是大部分就是推ION或是ATOM的機種。 也在網路上看到一些耗電量分析的文章
+
+             
+
+<blockquote>              
+> 
+>                
+> 
+>                 <table cellpadding="0" cellspacing="0" id="pid327140" summary="pid327140" ><tbody >                     <tr >                       
+> <td class="postcontent" >                         
+> 
+>                           
+> 
+> 30W如何???                                
+ATOM330+9400M                                 
+自行搜尋 1下                                 
+一年省下5000元以上電費                                 
+以上計算以30W                                 
+普通PC200W為基礎 電費3.5元/度                                 
+                             <table style="width:432px;" cellspacing="0" class="t_table" ><tbody >                                 <tr >                                   
+> <td width="72" >30
+> </td>                                    
+> <td width="72" >*24
+> </td>                                    
+> <td width="72" >*365
+> </td>                                    
+> <td width="72" >*0.001
+> </td>                                    
+> <td width="72" >*3.5
+> </td>                                    
+> <td width="72" >=919.8
+> </td>                                 </tr>                                  <tr >                                   
+> <td >200
+> </td>                                    
+> <td >*24
+> </td>                                    
+> <td >*365
+> </td>                                    
+> <td >*0.001
+> </td>                                    
+> <td >*3.5
+> </td>                                    
+> <td >=6132
+> </td>                                 </tr>                               </tbody></table>                           
+> 
+>                         
+> 
+>                       
+> </td>                     </tr>                   </tbody></table>               
+> 
+>             </blockquote>
+
+          
+
+      
+
+    
+
+  
+
+ 
+
+<blockquote>  
+> 
+> asa(阿貴) from [http://www.hd.club.tw/viewthread.php?tid=29636](http://www.hd.club.tw/viewthread.php?tid=29636)
+> 
+> </blockquote>
+
+ 
+
+很好!!!! 很強大~~~沒錯一台便當電腦跟一台舊電腦相比之下～ 省下來的電費就可能有五千塊左右~~~ 更何況我是一台主機、一台動物機(兩個如果都灌在Windows上面就可以合併成一台)。
+
+ 
+
+**找電腦:**
+
+ 
+
+於是我去買了ACER REVO 3610~~ (注意~ 是3610 不是3600)，我當初也以為我買的是3600~ 結果老闆就給我CPU跟硬碟都升級的3610(當然價錢是3610 =..=| )
+
+ 
+
+![](http://image.momoshop.com.tw/images/89/477089_L.jpg)
+
+ 
+
+會買這台其實也跟電腦王12月號的一篇報導"便當電腦"有關，裡面ACER的性價比算是尚可，雖然我自己是很想買View Sonic的便當電腦(省電)，但是去賣場問又一定得綁著OS，綁個OS的價錢都然就很差了。加上ViewSonic的幾款基本的記憶體有點小(1G RAM)比起這個 ASPIRE Revo 的電腦基本配備就是2G 加上350G HD (Seagate老闆曾經說過~~~ 硬碟越大是為了~~~~~)
+
+ 
+
+照片來自: [momo購物](http://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=477089&str_category_code=16101002&mdiv=16101002&Area=DgrpCategory)

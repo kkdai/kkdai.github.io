@@ -1,0 +1,18 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2004-06-29 14:24:10+00:00
+slug: '%e8%a9%ad%e7%95%b0%e7%9a%84%e7%a1%ac%e7%a2%9f'
+title: 詭異的硬碟
+wordpress_id: 110
+categories:
+- 我的生活
+---
+
+![硬碟](http://www.evanlin.com/blog/archives/0629/0629.jpg)
+
+最近，去光華商場買了顆2.5吋的硬碟，加上一個USB外接盒於是乎馬上變成了一個隨身攜帶的大容量隨身碟。但是，使用上怪怪的也就算了，只要一斷電，裡面的資料全部都不能用？？？
+
+是怎樣～～～ 我的_硬碟_～～ 原來跟_RAM_一樣阿？？？？

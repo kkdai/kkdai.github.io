@@ -1,0 +1,16 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2005-03-12 19:18:10+00:00
+slug: '%e5%b0%8f%e9%81%8a%e6%88%b2-%e8%88%8c%e9%a0%ad%e4%bf%9d%e9%bd%a1%e7%90%83'
+title: 小遊戲–舌頭保齡球
+wordpress_id: 209
+categories:
+- 網路上好玩的事情
+---
+
+![toneBollow.JPG](http://www.evanlin.com/blog/archives/20050311/toneBollow.JPG)
+
+[這個遊戲](http://games.hostway.com/holiplay/BodyBowling.swf)傳給同事，到也有很多同事在努力拼這個分數~~真不愧是保齡球社的，連遊戲保齡球也打的不賴  

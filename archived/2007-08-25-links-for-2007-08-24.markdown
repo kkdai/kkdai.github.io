@@ -1,0 +1,87 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2007-08-25 00:22:07+00:00
+slug: links-for-2007-08-24
+title: links for 2007-08-24
+wordpress_id: 748
+categories:
+- 未分類
+---
+
+
+	
+  * 
+		
+
+[脳内メーカー](http://maker.usoko.net/nounai/)
+
+
+		
+
+USOKO 是一個很好玩的網站，它提供讓你輸入一個名字，就會畫出那個人的腦袋裏面再想什麼。準不準我就不知道了~~~ 大家自行解答了。
+
+
+	
+
+	
+  * 
+		
+
+[Racklin's 阿土伯程式大觀園: 推推王 推文按鈕貼紙 加強版](http://racklin.blogspot.com/2007/08/blog-post.html)
+
+
+		
+
+funp 推推王的介面改了~~ 你是否找不到修正的方法??? 到這裡吧!!!!!
+
+
+		
+
+(tags: [funp](http://del.icio.us/kkdai/funp) [貼紙](http://del.icio.us/kkdai/貼紙))
+
+
+	
+
+	
+  * 
+		
+
+[FunP.com - 開發者日誌: [ funP 夏日傳說 1 ] funP 快看的更新功能](http://pushfun.blogspot.com/2007/08/funp-1-funp.html)
+
+
+		
+
+關掉推推王funp iframe 的方法~~~ 個人覺得蠻討厭的!!!!!
+
+
+		
+
+(tags: [funp](http://del.icio.us/kkdai/funp))
+
+
+	
+
+	
+  * 
+		
+
+[FunP.com - 開發者日誌](http://pushfun.blogspot.com/)
+
+
+		
+
+推推王的blog 蠻多值得看的東西~~~ 人家創業流程與艱辛都是一種經驗阿~~~
+
+
+		
+
+(tags: [funp](http://del.icio.us/kkdai/funp))
+
+
+	
+
+
+

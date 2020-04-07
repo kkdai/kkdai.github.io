@@ -1,0 +1,22 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2004-07-27 18:36:35+00:00
+slug: '%e5%9c%a8%e7%b6%b2%e5%9d%80%e5%88%97%e4%b8%8a%e7%9b%b4%e6%8e%a5%e8%bc%b8%e5%85%a5java-script'
+title: 在網址列上直接輸入Java Script
+wordpress_id: 126
+categories:
+- 學習文件
+---
+
+![在網址上輸入JAVASCRIPT 真好玩](http://www.evanlin.com/blog/archives/0728/0728.jpg)
+
+ 由[陈叙远的世界](http://www.cnblogs.com/jjstar/)看來的資料，發現可以在網址列上直接輸入JAVA SCRIPT可以察看一些資料，而日本網頁上[フレーム利用が正攻法](http://www.wingworld.co.jp/forum/w2.cgi?http://www.wingworld.co.jp/forum/html/messages/830.html)似乎有另外的用法可以思量，如果大家要測試這些東西的話，可以在我的網址列上輸入
+
+<blockquote>javascript:alert(document.body.innerHTML);
+> 
+> </blockquote>
+
+即可測試一下～～～(IE下測試成功～～）

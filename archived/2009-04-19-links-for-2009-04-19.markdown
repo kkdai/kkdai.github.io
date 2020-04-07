@@ -1,0 +1,34 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2009-04-19 23:46:58+00:00
+slug: links-for-2009-04-19
+title: links for 2009-04-19
+wordpress_id: 1051
+categories:
+- 未分類
+---
+
+  * 
+                
+
+[Windows 7 Codecs v1.0 Beta 2 - Win 7专用解码包 | Vista影音播放 | Vista下载 | Vista之家](http://www.vista123.com/html/7707.html)
+
+
+                
+
+Vista之家（www.vista123.com）：Windows 7 Codecs v1.0 Beta 2 - Win 7专用解码包
+
+ 这是MSFN社区发布的支持Windows 7的解码包,它可以让Windows Media Player和Windows 7 Media Center支持各种编码的文件.但它并不包含媒体播放器,同时也不关联任何文件类型,只是提供了对Windows 7的兼容性.
+
+小编：看到这里可能大家还不熟悉这解码器包到底是什么网站出的，以前有没有有过类似产品。其实看下下面的官网就知道了，其实这就是我们熟知的Vista Codec Package的升级版本。因此，对这款解码器包的质量，应该还是可以放心的
+
+
+                
+
+(tags: [Windows7](http://delicious.com/kkdai/Windows7))
+
+
+            

@@ -1,0 +1,92 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2006-07-31 15:33:46+00:00
+slug: links-for-2006-07-31
+title: links for 2006-07-31
+wordpress_id: 455
+categories:
+- 每日網摘
+---
+
+
+	
+  * 
+		
+
+[管理者権限でCOMオブジェクトを生成 - Windows Vista](http://www.ailight.jp/blog/sha256/archive/2006/03/15/11181.aspx)
+
+
+		
+
+日文資料關於COM 在Vista 的elevate
+
+
+
+		
+
+(tags: [vista](http://del.icio.us/kkdai/vista) [elevation](http://del.icio.us/kkdai/elevation))
+
+
+	
+
+	
+  * 
+		
+
+[The COM Elevation Moniker](http://msdn.microsoft.com/library/en-us/com/html/1595ebb8-65af-4609-b3e7-a21209e64391.asp?frame=true)
+
+
+		
+
+在MSDN上面關於COM的Elevation 方式~~
+
+
+		
+
+(tags: [Elevation](http://del.icio.us/kkdai/Elevation) [Vista](http://del.icio.us/kkdai/Vista))
+
+
+	
+
+	
+  * 
+		
+
+[: Developer Best Practices and Guidelines for Applications in a Least Privileged Environment](http://msdn.microsoft.com/windowsvista/default.aspx?pull=/library/en-us/dnlong/html/AccProtVista.asp)
+
+
+		
+
+關於VISTA上面使用最小權限去執行的相關~~與CoCocreateInstanceAsAdmin 的範例ＣＯＤＥ
+
+
+		
+
+(tags: [Vista](http://del.icio.us/kkdai/Vista) [Elevation](http://del.icio.us/kkdai/Elevation))
+
+
+	
+
+	
+  * 
+		
+
+[發霉客--極樂貓咪](http://www.youvegotblogs.com/post/5/1352)
+
+
+		
+
+光是看到極樂貓咪～　應該就隻到～～日本竟然連~~ 貓咪都有出A片~~  連敘述都相當入骨
+
+
+		
+
+(tags: [funny](http://del.icio.us/kkdai/funny))
+
+
+	
+
+

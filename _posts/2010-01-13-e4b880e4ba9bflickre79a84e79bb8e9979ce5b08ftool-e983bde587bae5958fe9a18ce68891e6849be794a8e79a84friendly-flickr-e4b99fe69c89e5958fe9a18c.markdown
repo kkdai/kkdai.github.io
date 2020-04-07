@@ -1,0 +1,56 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2010-01-13 06:09:35+00:00
+slug: '%e4%b8%80%e4%ba%9bflickr%e7%9a%84%e7%9b%b8%e9%97%9c%e5%b0%8ftool-%e9%83%bd%e5%87%ba%e5%95%8f%e9%a1%8c%e6%88%91%e6%84%9b%e7%94%a8%e7%9a%84friendly-flickr-%e4%b9%9f%e6%9c%89%e5%95%8f%e9%a1%8c'
+title: 一些Flickr的相關小tool 都出問題~~~我愛用的Friendly Flickr 也有問題～
+wordpress_id: 1084
+categories:
+- 網路上好玩的事情
+---
+
+大概是從昨天早上開始吧!! 個人猜測是 Flickr 的身分驗證機制有改~ 造成許多Flickr plugin忽然就不work了。
+
+ 
+
+**[Friendly Flickr](http://richielin-programer.blogspot.com/search/label/Friendly.Flickr)**
+
+ 
+
+![](http://farm3.static.flickr.com/2706/4268417334_9d09ee9a61_o.jpg)
+
+ 
+
+這大概是WLW上面最好用的Flickr plugin，由[搖擺天秤開發](http://richielin-programer.blogspot.com/search/label/Friendly.Flickr)的除了上傳介面相當直覺之外~ 功能也相當強大~~ 所以大概所有Window Live Writer 的plugin 都是用這套來使用Flickr上面的照片。 不過從禮拜一(01/11)開始~~這個東西就不能作用了， 一直無法登入授權頁面～～ 自己用IE去取得授權也是沒有用的。
+
+ 
+
+[**Flickr4Writer**](http://flickr4writer.com/)
+
+ 
+
+此外~另外一套英文語系大家經常使用的Flickr plugin 就是Flickr4Image，其實也是很好用~~~ 不過這理由於登入有事有問題~~ 只能看到自己非隱藏的圖片，隱藏圖片看的到~~ 但是出來的Link 就會出問題啦~~~~
+
+ 
+
+**[Fireflix](https://addons.mozilla.org/zh-TW/firefox/addon/3453)**
+
+ 
+
+在Firefox 上面的plugin ，Fireflix雖然沒有登入的問題，使用上看起來也都還OK~~但是也是不能處理隱藏圖片～～～ 這就怪怪了
+
+ 
+
+ 
+
+接下來～ 只能看看Friendly Flickr 大大有沒有空～ 來查看問題啦～～ 其實Flickr4Writer我也去留言了～ 希望有新版本可以使用阿～ 不然Flickr圖片還蠻難使用的說～～～
+
+ 
+
+更新： 01/14，Friendly Flickr 作者看來有看到問題了～～ 不過也在看大家的反應如何～～大家可以到[這裡](http://richielin-programer.blogspot.com/2010/01/friendlyflickr.html)去留言!!
+
+ 
+
+更新: 01/15 早上~ Friendly Flickr 作者網站湧入數十個留言~ 所以作者決定要更新版本~ [最新版本 2.81 就不會有問題了](http://richielin-programer.blogspot.com/2010/01/friendlyflickr-281-released.html)~~ 相較之下~ [Flickr4Writer](http://flickr4writer.com/) 還不修改~ 真是有點不積極~~

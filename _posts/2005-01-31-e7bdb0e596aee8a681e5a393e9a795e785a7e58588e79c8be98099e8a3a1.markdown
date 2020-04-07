@@ -1,0 +1,38 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2005-01-31 11:45:31+00:00
+slug: '%e7%bd%b0%e5%96%ae%e8%a6%81%e5%a3%93%e9%a7%95%e7%85%a7%e5%85%88%e7%9c%8b%e9%80%99%e8%a3%a1'
+title: 罰單要壓駕照?先看這裡!!
+wordpress_id: 192
+categories:
+- 柴米油鹽的東西
+---
+
+![](http://163.29.173.252/menu/download_pics/ticket1.jpg)
+
+之前[倒楣的運氣](http://www.evanlin.com/blog/archives/000241.html)，在最近總算有點起色~~希望能一直下去。也由於在之前被開了罰單，所以稍微研究一下，大家經常提到的壓駕照，再此將一些心得跟大家分享:
+
+**被開單?先查看多少摳摳**
+
+如果在路上被警察開單了，或許你不會知道一張罰單是多少錢，你可以到以下的網址(電子公路監理網)，去查詢一下該罰單的詳細內容與價位(又不是買東西)，並且可以[線上繳款](https://www.mvdis.gov.tw/wps/portal/!ut/p/_s.7_0_A/7_0_DD/.cmd/ad/.ar/sa.com.cht.mvdis.portal.portlet.flow.util.DispatchAction/.c/6_0_6G/.ce/7_0_2R6/.p/5_0_2KP/.d/0?PC_7_0_2R6_TargetStateDescriptor=com.cht.mvdis.portal.gu.ptf%3F&PC_7_0_2R6_ActionDescriptorName=com.cht.mvdis.portal.portlet.flow.util.DispatchActionDescriptor&PC_7_0_2R6_ActionDescriptorString=com.cht.mvdis.portal.gu.ptf%23com.cht.mvdis.portal.portlet.flow.util.DefaultResetState%23com.cht.mvdis.portal.gu.ptf%3F%23&PC_7_0_2R6_TargetStateName=com.cht.mvdis.portal.portlet.flow.util.DefaultResetState#)。
+
+**分清楚是否可以易處吊扣駕照**
+
+關於吊扣駕照相關事項可以查看這個[網址說明](http://203.204.118.57/da-vi/home5-2.htm)，此外若是你選擇吊扣駕照而又駕駛的話，若是被警察臨檢到，你所會受的處罰將會更嚴重，經舉發則罰款9000~12000元還要吊銷其駕照一年後.才可重新考取駕照.(無照駕駛罰款8400元)  
+
+
+**相關資料:**
+
+  * [罰單沒錢繳，怎麼辦?](http://forum.u-car.com.tw/forum-detail.asp?fid=24682)
+  * [被拍照可以易處吊扣駕照嗎?](http://203.204.118.57/da-vi/home5-2.htm)
+  * [台北交通事件裁決所](http://www.judge.taipei.gov.tw/)
+  * 詳細情形，請問[台北區監理所](http://www.tmvso.gov.tw/index.asp)--<table cellpadding="2" border="1" cellspacing="1" class="text" ><tbody ><tr >
+<td >自用車裁罰課課長 
+</td>
+<td >2688-6476 
+</td>
+<td >501
+</td></tr></tbody></table>

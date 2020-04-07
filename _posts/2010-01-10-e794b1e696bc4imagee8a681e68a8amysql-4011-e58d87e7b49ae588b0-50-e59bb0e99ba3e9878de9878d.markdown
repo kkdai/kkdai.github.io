@@ -1,0 +1,112 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2010-01-10 12:41:10+00:00
+slug: '%e7%94%b1%e6%96%bc4image%e8%a6%81%e6%8a%8amysql-4011-%e5%8d%87%e7%b4%9a%e5%88%b0-50-%e5%9b%b0%e9%9b%a3%e9%87%8d%e9%87%8d'
+title: 由於4image要把MySQL 4.011 升級到 5.0 困難重重
+wordpress_id: 1082
+categories:
+- 柴米油鹽的東西
+---
+
+UTF8真的很難搞，而我會決定要搞UTF8也就是因為我的相簿網站~~ 他是使用4image
+
+ 
+
+4image 把許多資料都放在資料庫MySQL之中～～～～～ 所以我要搬移資料就比較麻煩～～～
+
+ 
+
+ 
+
+找了許多文章都不太work~~ 以下是我曾經試過的方式~
+
+ 
+
+  
+  1. [網站製作學習誌» 將_MySQL 4.0_ 的資料轉至MySQL _5.0_](http://www.jaceju.net/blog/?p=66)   
+會出現亂碼~ 而且不能正常讀取~~ 可能我用的4image 不是用latin1 存取 
+   
+  2. [CloverHsc的Blog: _Mysql_ 4 big5轉到_Mysql 5_ UTF8的方法](http://cloverhsc.blogspot.com/2008/01/mysql-4-big5mysql-5-utf8.html) (原文: [http://www.j2h.tw/bbs/bbs16/150.html](http://www.j2h.tw/bbs/bbs16/150.html))         
+其實這個看起來是work的~ 但是因為我是用 Windows 不是Linux 找不到piconv 
+ 
+
+後來覺得這個文章[Angel 3.Blue Station » Blog Archive » 「_MySQL 4.0_ 輕鬆升級_5.0_ 實作 **...**](http://a3.walkup.tw/?p=443)挺好用的~~ 用ultraedit 來轉UTF8 是個好方法~~~但是我預設不是UTF8 於是要硬轉~~ 然後轉完之後~ 之前很多符號會變成不合法~~~ 主要就是因為平常打相簿的文章有些怪符號。
+
+ 
+
+  
+  1. ~r   
+分開 “~ r” 
+   
+  2. ~~r   
+分開 “~~ r” 
+   
+  3. ~~   
+移除 
+   
+  4. ^^   
+移除 
+   
+  5. ???   
+移除 
+   
+  6. -   
+移除 
+   
+  7. >   
+移除 
+ 
+
+以上符號都需要被移除~~~~~~ 或是隔開~~~ 不過就算資料庫裡面看的是正確的~~ 整個相簿還是錯誤的~~ 我才想到~~~跟網頁的編碼也是有關的。 因為4image當初安裝用的是big5~~~ 所以default 網頁瀏覽encoding 就是使用big5.後來決定先把使用者資料匯入進去～ 然後用4image 本身的資料庫復原工作～～～ 然後把資料庫encoding 設定是big5 就成功了～～～～
+
+ 
+
+ 
+
+不過後來執行4image發現～～～ 整個會出現一些怪的現象～～ 會有 “[Unknown column 'i.user_id' in 'on clause'](http://www.4homepages.de/forum/index.php?topic=22668.msg123709#msg123709)” 的問題。原來是MySQL 5.0 SQL的問題～～ 參考link就可以修掉。
+
+ 
+
+ 
+
+現在總算可以看到所有的照片跟資料~~ 不過就算如此，現在還是不能上傳照片。去把error log 打開~~~
+
+ 
+
+ 
+
+<blockquote>  
+> 
+> [index.php-topic=26053.msg142100#msg142100](http://www.4homepages.de/forum/index.php?topic=26053.msg142100#msg142100)
+> 
+>    
+> 
+> [EDIT]        
+Since blank page occur not only when you login, then it's not quiet related to this topic.         
+In global.php find line with **error_reporting**         
+add below that line: 
+> 
+>    
+> 
+> PHP Code: [[Select]](http://www.4homepages.de/#) [[Expand]](http://www.4homepages.de/#) [[Hide line numbers]](http://www.4homepages.de/#)
+> 
+>    
+> 
+> `1.error_reporting(E_ALL);          
+[2.@ini_set("display_errors](mailto:2.@ini_set("display_errors)", 1);           
+`
+> 
+>    
+> 
+> See if any errors shows
+> 
+> </blockquote>
+
+ 
+
+ 
+
+就可以清楚發現問題所在然後修掉吧!!! 

@@ -1,0 +1,41 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2004-03-09 03:18:17+00:00
+slug: mt%e7%9a%84%e6%9b%b4%e6%96%b0%e7%9c%9f%e6%98%af%e4%b8%80%e5%80%8b%e5%a4%a7%e5%b7%a5%e7%a8%8b
+title: MT的更新,真是一個大工程
+wordpress_id: 55
+categories:
+- 關於MT的學習心得
+---
+
+![好累～～ 好累的大工程](http://www.evanlin.com/blog/archives/0309/work.jpg)
+ 更新[MT](http://www.movabletype.org/)，果真是一項大工程，裡面可能由於我之前所建制的[MT](http://www.movabletype.org/)是一個『怪怪的架構』怎麼說是怪怪的架構呢？由於我當初建制的時候，通常我們在建制的時候，都會將_
+docs/ images/ style.css_ 移到別的目錄之下，並且將_mt.cfg_
+裡面的 _ StaticWebPath_ 設定到別的地方，不然的話，[MT](http://www.movabletype.org/)會無法執行。
+
+
+但是偏偏我的[MT](http://www.movabletype.org/)檔案都沒有移過，卻可以正常執行，或許跟我把_StaticWebPath
+_設定到別的目錄有關，但是從[Jedi大大](http://mtbook.net/download.html#13)那邊抓來的檔案，不patch之前倒是可以執行，但是patch
+之後，卻無法執行，真是傷腦筋的事情，這個部分的事物，只好之後再繼續努力來將他解決.......
+
+
+
+
+所以後來我透過自行安裝htmlarea的方式來進行自我的更新部分，首先我手動的將我[MT](http://www.movabletype.org/)由2.64-->2.661，所更新的方式是透過[官方網站](http://www.movabletype.org/)下載更新檔案M，直接將相對的檔案貼在目錄之上就可以了。
+
+
+
+
+之後去[Jedi大大](http://jedi.z6i.org/blog/)關於[htmlarea](http://jedi.z6i.org/blog/archives/002797.html)的文章部分，下載
+[htmlarea30b-mt.tgz](http://jedi.z6i.org/blog/archives/htmlarea30b-mt.tgz)
+這個檔案，將其解壓縮在您設定_StaticWebPath_目錄之下，等等！！
+不只是這樣而以唷，你還必須使用[Jedi大大](http://mtbook.net/download.html#13)提供檔案中的tmpl，因為他其中有將tmpl/cms/edit_entry.tmpl
+做過更改已呼叫[htmlarea](http://www.interactivetools.com/products/htmlarea/)，將你所使用的tmpl更新到[Jedi大大](http://mtbook.net/download.html#13)的之後，你在執行mt的時候，就會有可愛的[htmlarea](http://www.interactivetools.com/products/htmlarea/)了，真是令我感動萬分，下一階段要將將[MT](http://www.movabletype.org/)的執行速度加以改善才行～～～～
+
+
+
+
+　

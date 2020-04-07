@@ -1,0 +1,91 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2006-03-16 15:40:58+00:00
+slug: links-for-2006-03-16
+title: links for 2006-03-16
+wordpress_id: 359
+categories:
+- 每日網摘
+---
+
+
+	
+  * 
+		
+
+[VeryCD - 学而时习之，不亦乐乎](http://verycd.com/)
+
+
+		
+
+分享的好地方~~~~
+
+
+		
+
+(tags: [emule](http://del.icio.us/kkdai/emule))
+
+
+	
+
+	
+  * 
+		
+
+[XQuery Tutorial](http://www.w3schools.com/xquery/default.asp)
+
+
+		
+
+一些XQuery基本觀念的介紹
+
+
+		
+
+(tags: [XML](http://del.icio.us/kkdai/XML) [xquery](http://del.icio.us/kkdai/xquery))
+
+
+	
+
+	
+  * 
+		
+
+[揭穿 XQuery 的神話和誤解](http://www-128.ibm.com/developerworks/tw/library/x-xqmyth.html)
+
+
+		
+
+讓人知道XQuery 並不是那麼的好用與無敵的
+
+
+		
+
+(tags: [XML](http://del.icio.us/kkdai/XML) [XQUERY](http://del.icio.us/kkdai/XQUERY))
+
+
+	
+
+	
+  * 
+		
+
+[Build a Visual Studio Add-in to Evaluate XPath/XQuery Expressions (Visual Studio .NET Developer 2005)](http://msdn.microsoft.com/library/en-us/dnvsdev05/html/vs05c5.asp?frame=true)
+
+
+		
+
+關於在VS2005上去做XQUERY 的方式
+
+
+		
+
+(tags: [XML](http://del.icio.us/kkdai/XML) [XQUERY](http://del.icio.us/kkdai/XQUERY) [VC.NET](http://del.icio.us/kkdai/VC.NET))
+
+
+	
+
+

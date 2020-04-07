@@ -1,0 +1,89 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2004-05-18 02:30:39+00:00
+slug: '%e8%bb%9f%e9%ab%94%e8%a9%a6%e7%94%a8-mydriver%e6%82%a8%e7%9a%84%e9%a9%85%e5%8b%95%e7%a8%8b%e5%bc%8f%e7%ae%a1%e7%90%86%e5%93%a1'
+title: 軟體試用-MyDriver您的驅動程式管理員
+wordpress_id: 93
+categories:
+- 柴米油鹽的東西
+---
+
+![MyDriver很好用的驅動程式管理程式](http://www.evanlin.com/blog/archives/0518/0518-0.jpg)
+  
+
+
+
+由[百分之八十的完美這個BLOG](http://exca3274.game-server.cc/)所看到的一個軟體，[MyDriver](http://www.zhangduo.com/driverbackup.html)是一套很好用的試用軟體，基本上他算是一個簡單的Driver檔案總管的功能，在我用過裡面的一些功能之後，大家可以去[原始網站](http://www.zhangduo.com/driverbackup.html)下載試用版，一共有十五天的試用期，剛下載完安裝的時候語言版本請選「English」，等到執行程式的時候，會自動轉成「簡體中文」（對岸同胞真是厲害～～），[MyDriver](http://www.zhangduo.com/driverbackup.html)這個軟體主要功能敘述如下：
+
+
+
+
+
+  
+  * 自動搜尋系統所有設備的驅動程式
+
+  
+  * 備份系統設備驅動程式
+
+  
+  * 線上更新設備驅動程式
+
+  
+  * 安裝與恢復舊有的驅動程式
+
+
+<!-- more -->
+
+
+其實這些功能實在相當的好用，在這邊展示一下他線上更新Driver的功能給大家看，首先在執行程式之後，選擇第一個選項之後會出現以下的畫面：
+
+
+**1.進入管理畫面後，選擇更新驅動，他就會自動抓取電腦上所有的驅動程式**
+
+
+　[![按下看大圖形](http://www.evanlin.com/blog/archives/0518/0518-1.jpg)
+](http://www.evanlin.com/blog/archives/0518/0518-1.jpg)
+
+
+
+
+
+**2.之後列出所有的驅動程式（可能有些不太清楚），就選取可以更新的下載，然後在自行安裝到電腦上**
+
+
+
+
+　[![按下看大圖形](http://www.evanlin.com/blog/archives/0518/0518-2.jpg)
+](http://www.evanlin.com/blog/archives/0518/0518-2.jpg)
+
+
+
+
+
+**3.選取好設備之後的下載視窗**
+
+
+
+
+
+　![按下看大圖形](http://www.evanlin.com/blog/archives/0518/0518-3.jpg)
+
+
+
+
+
+　
+
+
+
+
+**結論：**
+
+
+
+
+使用過後來說，對於公司的MIS來說，這套軟體實在有購買的必要，不論是幫你備份驅動程式，或是尋找與更新相對應的驅動程式，若是沒有這個軟體，難保許多人員還要拆開電腦一個個設備去確認與尋找光碟片，有了這個軟體可以解決掉資訊人員在重灌電腦的慘痛經驗，並且也可以節省掉保存一大盒驅動程式的必要（網路卡還是需要，畢竟還是透過網路來更新驅動程式） 
+

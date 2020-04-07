@@ -1,0 +1,16 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2004-07-22 12:30:50+00:00
+slug: '%e6%96%b0%e5%9e%8b%e6%89%93%e5%9c%b0%e9%bc%a0%e9%81%8a%e6%88%b2%e4%bd%bf%e7%94%a8%e4%b9%9d%e5%ae%ae%e9%8d%b5%e7%9b%a4%e7%8e%a9%e5%94%b7'
+title: 新型打地鼠遊戲~~~使用九宮鍵盤玩唷
+wordpress_id: 123
+categories:
+- 網路上好玩的事情
+---
+
+[http://www.kiteretsu.jp/on/tontie/index.html](http://www.kiteretsu.jp/on/tontie/index.html)![按下照片進入](http://www.evanlin.com/blog/archives/0722/00.jpg)
+
+![按下照片進入](http://www.evanlin.com/blog/archives/0722/11.jpg)

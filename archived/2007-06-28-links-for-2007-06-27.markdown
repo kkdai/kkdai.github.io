@@ -1,0 +1,40 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2007-06-28 08:17:43+00:00
+slug: links-for-2007-06-27
+title: links for 2007-06-27
+wordpress_id: 688
+categories:
+- 每日網摘
+---
+
+  * [AdSense for Video: 網路廣告的新去處 ? Mr./Ms. Days - 網路, 資訊, 觀察, 生活](http://mmdays.wordpress.com/2007/06/26/adsense-for-video/#more-932)
+
+2 分鐘前 Evan Lin 說: 對於新的廣告型態~ ADSENSE ON VIDEO 有初步的技術說明~~ 相當有用 
+
+(tags: [web2.0](http://del.icio.us/kkdai/web2.0) [google](http://del.icio.us/kkdai/google))
+
+  * [[網路相關] 比 FlashGet 更好用又完全免費的下載管理軟體 - FDM - 硬是要學！網路資源學習站](http://soft.onlyone.idv.tw/article.asp?id=65)
+
+赫赫有名的 FlashGet 到後期因為抵擋不住破解風氣的盛行，所以就乾脆轉變成 Freeware。最新釋出的版本 1.8 還支援 BitTorrent 下載，此舉是劃蛇添足或著如虎添翼就看使用習慣而論定了。
+
+(tags: [download](http://del.icio.us/kkdai/download) [freeware](http://del.icio.us/kkdai/freeware))
+
+  * [diggirl.net 美女相簿的 討論/評鑑/快速下載中心 -- 連結編號 254764 -- 留言](http://www.diggirl.net/detail.jsp?linkNo=254764&mode=comments)
+
+土耳其帥哥與 兩位台灣辣妹留學生的自拍照~~~~
+
+(tags: [自拍](http://del.icio.us/kkdai/自拍) [美女](http://del.icio.us/kkdai/美女) [diggirl](http://del.icio.us/kkdai/diggirl))
+
+  * [Blog E--How to handle YouTube in your program](http://www.evanlin.com/blog/archives/000787.html)
+
+YouTube the world largest bideo braofcast company. People usually watch video under the web site or use the mashup to integrate into theirown blog. This article describes the way to deal with YouTube via C coding. I will show you how to handle YouTube
+
+  * [wiic(wi-ic.com.cn)](http://www.wi-ic.com.cn/index.html)
+
+Wi-IC 官方網站
+
+(tags: [Wi-IC](http://del.icio.us/kkdai/Wi-IC))

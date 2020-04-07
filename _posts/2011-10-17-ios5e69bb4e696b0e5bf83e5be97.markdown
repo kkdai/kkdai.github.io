@@ -1,0 +1,25 @@
+---
+layout: post
+author: kkdai
+comments: true
+date: 2011-10-17 11:07:30+00:00
+title: iOS5更新心得
+wordpress_id: 1132
+category:
+- 我的生活
+- 未分類
+---
+
+## iOS5 upgraded, 幾個重點記錄一下:      
+
+2. 1. C槽請有夠大空間~ 避免更新時候的備份掛點~       
+2. 請記得先把購買的部分全部傳到iTune       
+3. 要事前備份避免任何意外(連你下載檔案都先備份)       
+4. App 要sync 到iTune 不然就得重新下載然後自己排位置       
+5. iCloud 設定要設好~ app 裡面東西先不用上雲端~ 避免爆掉(每人免費5G)       
+6. 更新中網路不要斷(可以先下載避免意外)       
+
+## 兩篇文章可參考       
+
+- [http://www.ptt.cc/bbs/iPhone/M.1318504656.A.655.html](http://www.ptt.cc/bbs/iPhone/M.1318504656.A.655.html)       
+- [http://www.ptt.cc/bbs/iPhone/M.1318506974.A.C22.html](http://www.ptt.cc/bbs/iPhone/M.1318506974.A.C22.html)

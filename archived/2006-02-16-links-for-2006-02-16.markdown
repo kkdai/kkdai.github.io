@@ -1,0 +1,34 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2006-02-16 15:46:26+00:00
+slug: links-for-2006-02-16
+title: links for 2006-02-16
+wordpress_id: 339
+categories:
+- 每日網摘
+---
+
+
+	
+  * 
+		
+
+[How to debug Windows services](http://support.microsoft.com/?kbid=824344)
+
+
+		
+
+大部分都是講解如何使用WinDbg  來debug windows service
+
+
+		
+
+(tags: [WindowsService](http://del.icio.us/kkdai/WindowsService) [VC6](http://del.icio.us/kkdai/VC6))
+
+
+	
+
+

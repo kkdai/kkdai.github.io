@@ -1,0 +1,56 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2004-05-24 07:19:38+00:00
+slug: '%e6%9b%b4%e5%a5%bd%e7%94%a8%e6%9b%b8%e7%b1%a4%e7%ae%a1%e7%90%86%e7%b3%bb%e7%b5%b1%e3%80%8e%e7%be%8e%e5%91%b3%e6%9b%b8%e7%b1%a4delicious%e3%80%8f'
+title: 更好用書籤管理系統『美味書籤(del.icio.us)』
+wordpress_id: 98
+categories:
+- 關於MT的學習心得
+---
+
+[![美味書籤](http://www.evanlin.com/blog/archives/0524/0524-2.jpg)
+](http://del.icio.us/)
+
+
+當我之前介紹[Blogrolling](http://www.blogrolling.com/)時，一邊抱怨著他無法方便的使用中文輸入的時候，[好心的卡西蒂小姐](http://cassidy.nicetypo.com/nt/cassidy.nsf/Index)跟我介紹到[<strike>MARK</strike>ROYBOY在他的BLOG](http://roy.nicetypo.com/nt/roylee.nsf/ContentBypermaLink/4919B5000668853F48256E51003053AB)曾經有提過的[del.icio.us(美味書籤)](http://del.icio.us/)，跟之前介紹[Blogrolling](http://www.blogrolling.com/)一樣，[del.icio.us(美味書籤)](http://del.icio.us/)不僅可以管理好你所記錄的[BOOKMARK](http://del.icio.us/kkdai)，更可以讓你的BLOG去讀取你所存取[BOOKMARK](http://del.icio.us/kkdai)來變成像我首頁一樣的東西。
+
+
+<!-- more -->
+
+
+至於要怎麼申請與使用在你自己的BLOG之上的方式，[<strike>MARK</strike>ROYBOY在他的BLOG](http://roy.nicetypo.com/nt/roylee.nsf/ContentBypermaLink/4919B5000668853F48256E51003053AB)有講解得相當詳細，建議大家可以去上面看看，在此我主要介紹到一個功能，就是[美味書籤](http://del.icio.us/)提供的[相當多功能中](http://del.icio.us/doc/about)的[right
+click context-menu](http://www.hatch.org/blog/2003/12/18/social_bookmarks_manager_rightclick_context_menu.php)(也就是利用右鍵來增加你的網址)，所有步驟如下：
+
+
+
+
+
+  
+  1. 首先建議各位先連接到[right
+    click context-menu](http://www.hatch.org/blog/2003/12/18/social_bookmarks_manager_rightclick_context_menu.php)
+
+  
+  2. 下載REG檔[post-to-del-icio-us.reg](http://www.hatch.org/scripts/post-to-del-icio-us.reg)(也就是系統登錄檔)
+
+  
+  3. 利用另存新檔下載後，連按兩下滑鼠，將他加入到你的登錄之中
+
+  
+  4. 然後關閉所有的瀏覽器，重新打開之後，當你看到喜歡的網頁，就按下右鍵，就會出現以下的東西
+
+
+[
+![按下右鍵後的新增加的『一步登錄』](http://www.evanlin.com/blog/archives/0524/0524.jpg)
+](http://www.evanlin.com/blog/archives/0524/0524.jpg)
+
+
+**P.S.**
+第一次使用的時候，可能會請你輸入你所註冊的位置，請千萬記住要輸入『http://del.icio.us/你註冊的名字』（記住要打入全部，不然以後會全部錯誤，直到你將[利用這個鍊結，將COOKIE刪除](http://www.hatch.org/scripts/post-to-del-icio-us.html?del=1)，之後[解除掉該REG](http://www.hatch.org/scripts/remove-post-to-del-icio-us.reg)，重新安裝之後才會成功唷！！
+
+
+
+
+　

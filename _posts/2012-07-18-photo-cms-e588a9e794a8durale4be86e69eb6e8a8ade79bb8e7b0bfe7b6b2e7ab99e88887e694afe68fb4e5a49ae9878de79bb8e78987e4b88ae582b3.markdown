@@ -1,0 +1,133 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2012-07-18 08:34:37+00:00
+slug: photo-cms-%e5%88%a9%e7%94%a8dural%e4%be%86%e6%9e%b6%e8%a8%ad%e7%9b%b8%e7%b0%bf%e7%b6%b2%e7%ab%99%e8%88%87%e6%94%af%e6%8f%b4%e5%a4%9a%e9%87%8d%e7%9b%b8%e7%89%87%e4%b8%8a%e5%82%b3
+title: '[PHOTO CMS] 利用Dural來架設相簿網站與支援多重相片上傳'
+wordpress_id: 1166
+categories:
+- 學習文件
+- 柴米油鹽的東西
+---
+
+其實之前就有在使用[4images](http://www.4homepages.de/)來架設相簿，不過由於本人喜歡一次選取多個相片上傳，所以有使用[Jupload](http://jupload.biz)的Java Applet，偏偏最近IE更新與Java更新後一直無法正常作用，看來得更換新的相簿管理網站。
+
+ 
+
+期間也是有試用過其他的相簿網站:
+
+ 
+
+  
+  * [ZenPhoto](http://www.zenphoto.org/)              
+    * 看起來不錯，但是由於[AppServ](http://www.appservnetwork.com/)版本有點舊，無法正常安裝。可能晚些時間再研究。 
+       
+   
+  * [Gallery](http://gallery.menalto.com/)              
+    * 3.0 不支援[AppServ](http://www.appservnetwork.com/)，安裝2.X之後整體功能完整。但是由於上傳界面還是屬於醜醜的Java Applet可能先當成備案，再看看有沒有其他的網站軟體。 
+       
+   
+  * [Dural](http://drupaltaiwan.org/):              
+    * 算是老牌的CMS軟體，而且跟我覺得多重像片上傳的API [Plupload](http://www.plupload.com/index.php)整合的很好，現在可能會開始研究這個。 
+       
+ 
+
+接下來就記錄一下如何利用[Dural](http://drupaltaiwan.org/)來架設相簿網站，我的環境有點舊，有需要的人再看吧:
+
+ 
+
+  
+  * 環境說明:             
+    * Win7 SP1 32 bit 
+       
+    * [AppServ](http://www.appservnetwork.com/) 2.2 (PHP, MySQL版本參照2.2的版本) 
+       
+   
+  * [Dural](http://drupaltaiwan.org/) 相關套件:              
+    * 主程式: drupal-7.14 
+       
+    * 主要的模組(其他細節看安裝流程):                     
+      * [Media](http://drupal.org/project/media): media-7.x-1.2 
+           
+      * [PlUpload](http://drupal.org/project/plupload): 7.x-1.0 
+           
+      * [Media Gallery](http://drupal.org/project/media_gallery) [7.x-1.0-beta8](http://drupal.org/node/1673916)
+               
+       
+   
+  * 安裝流程:             
+    * [Dural](http://drupaltaiwan.org/)7                      
+      * 下載drupal-7.14後解開來，並且把權限改成666，或是改成不是唯讀即可。 
+           
+      * 直接跑該目錄來執行安裝 
+           
+      * 再選資料庫的時候，會發現只有SQLite可以選，點下去後，這時候會跳出一個問題: SQlite問題                             
+        * In order for Drupal to work, and to continue with the installation process, you must resolve all issues reported below. For more help with configuring your database server, see the installation handbook. If you are unsure what any of this means you should probably contact your hosting provider.                    
+The database version 3.3.7undefined is less than the minimum required version 3.3.7. 
+               
+        * 找到解決方法，因為使用[AppServ](http://www.appservnetwork.com/) 2.2，參考[這裡](http://drupal.org/node/988326)。 
+               
+        * 修改php.ini，打開extension=php_pdo_mysql.dll 
+               
+        * 改完之後重新跑安裝網頁，會發現有MySQL可以選 
+                       
+           
+      * 這樣就可以順利安裝完drupal 7 
+               
+       
+    * 安裝 [Dural](http://drupaltaiwan.org/) 相關 mudule extension: (安裝module流程，參考[這裡](http://drupal.org/node/895232))                      
+      * 點選 "Module” –> “Install new module” 
+           
+      * 將[Meida](http://drupal.org/project/media)找到的檔案鏈結填上~然後下載安裝。 
+           
+      * 要啟用(Enable newly added modules)之前，會發現有一堆的相關module需要安裝。                             
+        * 下載並安裝[CTools](http://drupal.org/project/ctools)
+               
+        * 啟用[File Entity](http://drupal.org/project/file_entity)
+               
+        * 啟用[Media](http://drupal.org/project/media)與Media Internet Sources 
+                       
+           
+      * 開始安裝[PlUpload](http://drupal.org/project/plupload) extension ([7.x-1.0](http://drupal.org/node/1575806))                              
+        * 安裝前先去PlUpload 下載library 
+               
+        * 解壓縮到安裝目錄/site/all/libraries/plupload 
+               
+        * 參考[這裡](http://drupal.org/node/1647890)
+                       
+           
+      * 安裝[multiform](http://drupal.org/project/multiform) extension ([7.x-1.0](http://drupal.org/node/1420210)) 
+           
+      * 安裝[Media Gallery](http://drupal.org/project/media_gallery) extension ([7.x-1.0-beta8](http://drupal.org/node/1673916)) 
+           
+      * 接下來你到你的首頁，應該有看到"Galleries”的Tab，就可以開始使用了。 
+               
+       
+   
+  * 參考資料:             
+    * 如何使用 [Media Gallery](http://drupal.org/project/media_gallery):                      
+      * [http://www.drupalgardens.com/documentation/feature/media-gallery](http://www.drupalgardens.com/documentation/feature/media-gallery)
+               
+       
+    * 架設相簿網站，建議相關安裝module :                     
+      * [http://drupaltaiwan.org/forum/20120228/6126](http://drupaltaiwan.org/forum/20120228/6126) "joey91133"
+               
+       
+    * 安裝dural與media與plupload可能遇到問題:                     
+      * [http://drupaltaiwan.org/forum/20120422/6219](http://drupaltaiwan.org/forum/20120422/6219)
+           
+      * [http://drupaltaiwan.org/forum/20120424/6223](http://drupaltaiwan.org/forum/20120424/6223)
+               
+       
+    * 使用dural跟media架設的網站                     
+      * [http://www.simplife.com.tw/](http://www.simplife.com.tw/)
+           
+      * [http://cats.netizen.tw/photo/](http://cats.netizen.tw/photo/)
+               
+       
+    * 書籍:                     
+      * [用Drupal打造酷玩娛樂互動社群網站：Facebook × 相簿 × 地圖 × 影音娛樂多媒體](http://www.books.com.tw/exep/prod/booksfile.php?item=0010466406)
+               
+       

@@ -1,0 +1,52 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2004-07-07 04:02:20+00:00
+slug: xp%e4%b8%8acom%e5%85%83%e4%bb%b6%e7%9a%84side-by-side-%e5%b0%8d%e6%87%89
+title: XP上COM元件的Side-by-Side 對應
+wordpress_id: 112
+categories:
+- VC++程式設計
+---
+
+_**前言：**_
+
+這些資料的產生是由於我在做DEBUG的時候，往往無法在VC下無法在某些函示中設定BreakPoint，令我相當困擾。所以去詢問[老闆](http://baby.homeip.net/patrick/)的結果，才讓我知道關於Side-By-Side的概念，於是想說將現在所瞭解到的概念加以整理一下，希望以後用到會清楚一點，也希望能幫助到一些有需要的人。
+
+_**大綱：**_
+
+這份文件主要稍微介紹到在WIN XP下呼叫COM物件的基本流程與Side-By-Side的概念。
+<!-- more -->
+
+
+**COM元件的版本問題**
+
+維護一個大型程式的開發往往是相當困難的，加上軟體的開發流程上經常將許多的程式寫成COM元件，透過程式碼來呼叫這些COM元件來達成相對應的功能，由於程式在呼叫COM元件的時候，主要是透過uuid(guid)來呼叫，而每一個DLL在電腦中也只會存在著唯一的識別子，所以不會有名稱衝突的問題，但是在程式的研發之中，我們會發現隨著對於DLL檔案裡面程式碼的修改，檔案若是存在在相同的位置還好，若儲存與原先不同的位置，由於呼叫COM都是透過Registry中所登記的介面（Interface）來呼叫，就會發生想要使用新建立的COM卻是呼叫到原有系統中的元件。於是乎COM物件的版本控制變的重要，這樣一來往往就會有COM元件的版本問題，舉例來說：針對資料庫的存取，系統已經有一個名為FoolDB COM object，若是我們要針對這個功能加以修改，當程式要求程式讀取COM時，透過Registry則會主動去讀取就得元件而不會使用我們所建立出來新的元件。要完成這樣的事件，則需要使用Side-By-Side的對應方式
+
+**在XP下的Side-By-Side對應方式**
+
+所謂的Side-By-Side就是希望程式能執行與自己相關的元件（EXE，DLL），而不要去執行系統上所登記的元件。在XP系統上有兩種方式可以達成這樣的結果
+
+  * XP上：建立一個LOCAL檔，假設有一個程式名為fool.exe，若希望他執行該目錄下的元件，則建立一個檔案，fool.exe.local 即可，Windows在執行該檔案時，當他發現這個LOCAL檔時，則會主動去執行該目錄下的其他元件，而不用系統上登陸的元件。
+  * 在XP的SP1上：透過ServerPack的XP，可以說是更加的麻煩了。必須建立一個對應的檔案名稱，名為manifest 裡面必須儲存著COM元件的XML資料。其資料格式可能如下：
+
+
+
+<blockquote>
+
+> 
+> <comInterfaceExternalProxyStub  
+         name="IAEClip"  
+         iid="{37EFF48E-09F1-4100-B3FA-E77258366D39}"  
+         proxyStubClsid32="{AE864E00-365F-44EE-A642-532883027E8C}"  
+         numMethods="18"  
+    />
+> 
+> 
+</blockquote>
+
+裡面存放著元件的名稱與UIID，也就是宣告系統，當呼叫到這些元件的時候，請執行目前這個目錄裡面的元件，而不要使用系統上的元件。
+
+簡單介紹，關於COM的其他概念，我本身也還在摸索，以後有心得在波出來。

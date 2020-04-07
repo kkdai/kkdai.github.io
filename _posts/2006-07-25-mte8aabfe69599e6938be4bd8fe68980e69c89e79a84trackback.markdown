@@ -1,0 +1,27 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2006-07-25 17:38:23+00:00
+slug: mt%e8%aa%bf%e6%95%99%e6%93%8b%e4%bd%8f%e6%89%80%e6%9c%89%e7%9a%84trackback
+title: MT調教~擋住所有的TrackBack
+wordpress_id: 453
+categories:
+- 關於MT的學習心得
+---
+
+![關於MT的技術](http://www.evanlin.com/mt/images/mt-logo.gif)
+
+雖然很不容易的把[SCode](http://www.evanlin.com/blog/archives/000526.html)安裝完整，總算擋住了之前蜂擁而上的迴響。但是由於MT-Blacklist關閉的原因~使得垃圾的Trackback如潮水般的襲來~~ 沒辦法了~ 只好去網路上找尋一些的解決方法~ 總算找到了這個[MTDisguiseTrackbackURL](http://mt-hacks.com/20041203-mtdisguisetrackbackurl-v05-beta.html) 。他的運作機制也很簡單，就是利用java script 去把你原來的引用切成了許多的小片段~ 讓SPAM無法正常的運作~~安裝方式如下:
+
+  1. 下載0.5版的[MTDisguiseTrackbackURL](http://mt-hacks.com/downloads/DisguiseTrackbackURL.zip)
+  2. 解壓縮在你的plugin目錄底下
+  3. 這樣就可以了~ 如果你跟我一樣每篇都有的話~ 可能需要重建所有的頁面就可以了~
+
+直接看可能看不出有什麼不同，但是當你去檢視原始碼的時候~你就會發現有所不同了~~~
+
+參考資料:
+
+  * [Blog@MNMNN](mailto:Blog@MNMNN)::[對抗 trackback spam: MTDisguise TrackbackURL](http://www.xxc.idv.tw/mt/archives/first/001845.html)
+  * [這不是部落格::Trackback Spam 襲來！](http://mt.leafportal.org/archives/001295.html)

@@ -1,0 +1,28 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2006-03-31 11:02:10+00:00
+slug: borland-%e5%9c%a8%e6%97%a5%e5%89%8d%e5%ae%a3%e4%bd%88%e8%a6%81%e5%87%ba%e5%94%ae%e6%97%97%e4%b8%8b%e6%89%80%e6%9c%89ide%e9%83%a8%e9%96%80
+title: Borland 在日前宣佈要出售旗下所有IDE部門
+wordpress_id: 372
+categories:
+- 網路上好玩的事情
+- 我的生活
+---
+
+![Borland](http://www.borland.com/images/logo-area/borland_logo_nocountry.gif)
+
+日前軟體IDE產業一時的霸主[Borland](http://www.borland.com/)，曾經利用Pascal迅速爆紅在程式語言的世界中，並且以Delphi與Borland C++獲得與微軟共爭霸主的軟體公司，日前在宣佈購併軟體生命週期管理公司(ALM)[Segue](http://www.segue.com/)後，隨即又宣佈要全部出售自己旗下所有的IDE部門(包括Delphi、C++Builder、C#Builder、JBuilder (and Peloton)、InterBase、JDataStore、nDataStore、Kylix與原來的Turbo Pascal產品線)。
+
+相關新聞:
+
+  1. [Borland计划出售其IDE部门，买家尚未确定](http://news.csdn.net/n/20060209/86465.html)
+  2. [求成長 Borland出售開發工具業務](http://taiwan.cnet.com/enterprise/topic/0,2000062938,20104306,00.htm)
+  3. [Borland出售IDE部门](http://blog.it580.com/338)
+  4. [谁会买下Delphi？(孟岩)](http://blog.csdn.net/myan/archive/2006/02/16/600279.aspx)
+  5. [Borland plans separate company for Delphi, JBuilder, C++Builder, InterBase, JDataStore and other developer products...](http://blogs.borland.com/davidi/archive/2006/02/08/23013.aspx)
+  6. **[它終於發生了!(李維的Blog)](http://spaces.msn.com/gordonliwei/blog/cns!CCE1F10BD8108687!464.entry?_c11_blogpart_blogpart=blogview&_c=blogpart#permalink)**
+
+ 蠻久之前在閱讀完[Borland傳奇之後](http://www.evanlin.com/blog/archives/000217.html)，對於[Borland](http://www.borland.com/)這間公司的發展狀況感到相當的好奇與注意。但是卻在今天(感覺~~~似乎有點太慢了～～）才知道這個消息。感覺相當的可惜，畢竟我第一套熟悉的ＩＤＥ產品。也是Borland C++ Builder 1.0，並且在五專的時候，ＢC++3.0也陪我度過多少個熬夜的晚上。對於大學時代所學習的PASCAL更是覺得相當的好用與經典，只能說～～　真的是太可惜了～～　

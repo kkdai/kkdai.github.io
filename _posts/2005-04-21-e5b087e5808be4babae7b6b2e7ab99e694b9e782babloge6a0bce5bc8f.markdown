@@ -1,0 +1,20 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2005-04-21 18:26:20+00:00
+slug: '%e5%b0%87%e5%80%8b%e4%ba%ba%e7%b6%b2%e7%ab%99%e6%94%b9%e7%82%bablog%e6%a0%bc%e5%bc%8f'
+title: 將個人網站改為Blog格式
+wordpress_id: 232
+categories:
+- 我的生活
+---
+
+![](http://www.evanlin.com/image/my.jpg)這張照片是我很久以前的照片，相信看過我[個人網站](http://www.evanlin.com/)的人都會了解，雖然這張照片跟現在的我有點超級不像，並且阿~~~ 年代也有點給他久遠了 (是我大學時代，在社團辦公室的照片)~~ 不過呢!! 這些都不是重點。
+
+重點是，最近我呢~在將我的[個人網站](http://www.evanlin.com/)做個大改版，我將把裡面全部的檔案、全部的資料、全部的內容，以Blog的方式來管理[(好像很久以前就曾經說過要做的說)](http://www.evanlin.com/blog/archives/000024.html#entry)。不僅要實現我曾經說過[Blog是一個大利器](http://www.evanlin.com/blog/archives/000013.html#entry)的理論，也希望能將一些舊時的檔案作一個整理(由於[Apache Server](http://apache.org/) 胡亂一搞，竟然中文檔名讀不出來了~~)，也為了以後檔案的新增、修改變的更加的方便，所以我要做出這次的改版。
+
+在改版的過程中，又再一次的研究了許多關於[Movable Type 2.661](http://www.movabletype.org/)的語法，雖然[Movable Type 2.661](http://www.movabletype.org/)本身無法做成階層式類別(Hierachical class)的概念，加上我本身對於CSS的實在是不熟悉，很多語法也都是邊學邊用，並且得考慮許多狀況，不過在最近的整理之下，雖然可能沒辦法完全將blog裡CMS(Content Management System)的功能發揮的更好，不過到也是發現許多blog的優點，相信做利用blog做討論區也不是一件難事(如果有階層類別的話) :p
+
+_**BTW:在**_[_**新版網頁**_](http://www.evanlin.com/)_**還沒有完成之前，各位要找資料可以到**_[_**舊版網頁去看看**_](http://www.evanlin.com/1.htm)_**。**_

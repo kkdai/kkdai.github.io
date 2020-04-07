@@ -1,0 +1,34 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2007-02-06 08:13:25+00:00
+slug: links-for-2007-02-05
+title: links for 2007-02-05
+wordpress_id: 589
+categories:
+- 每日網摘
+---
+
+
+	
+  * 
+		
+
+[如何成為令人倚重的程式設計師之另類思考 : 愛德華日誌](http://nettrace.blogspirit.com/archive/2007/01/25/%E5%A6%82%E4%BD%95%E6%88%90%E7%82%BA%E4%BB%A4%E4%BA%BA%E5%80%9A%E9%87%8D%E7%9A%84%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88%E5%B8%AB%E4%B9%8B%E5%8F%A6%E9%A1%9E%E6%80%9D%E8%80%83.html)
+
+
+		
+
+與其成為這樣的工程師~ 我寧願好好的寫文件~~ 做個盡責的工程師~~~~~ 自許之~~
+
+
+		
+
+(tags: [program](http://del.icio.us/kkdai/program))
+
+
+	
+
+

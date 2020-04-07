@@ -1,0 +1,208 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2006-07-10 17:21:11+00:00
+slug: '%e8%a6%96%e7%aa%97%e5%bd%b1%e5%83%8f%e8%99%95%e7%90%86%e6%8e%a8%e8%96%a6%e6%9b%b8%e7%9b%ae'
+title: 視窗影像處理推薦書目
+wordpress_id: 437
+categories:
+- VC++程式設計
+---
+
+![](http://www.yeswedo.idv.tw/product/PC/12/1204/1204-1.jpg)  
+(圖片來源: [悅仕網路書店](http://www.yeswedo.idv.tw/product/productDescription.asp?RowID=1204))
+
+<table cellpadding="1" border="0" cellspacing="1" ><tbody ><tr >
+<td align="center" nowrap="true" class="normalText2" >
+
+書　　名：
+
+</td>
+<td width="330" class="bookName2" >**DirectShow開發指南**
+</td></tr><tr >
+<td align="center" nowrap="true" class="normalText2" >I S B N ：
+</td>
+<td class="normalTextBlk" >7-302-07650-2
+</td></tr><tr >
+<td align="center" nowrap="true" class="normalText2" >
+
+出 版 社 ：
+
+</td>
+<td class="normalTextBlk" >北京科海電子出版社
+</td></tr><tr >
+<td align="center" nowrap="true" class="normalText2" >
+
+裝　　訂：
+
+</td>
+<td class="normalTextBlk" >16開 平裝 黑白
+</td></tr><tr >
+<td align="center" nowrap="true" class="normalText2" >
+
+隨書光碟：
+
+</td>
+<td class="normalTextBlk" >0CD
+</td></tr><tr >
+<td align="center" nowrap="true" class="normalText2" >
+
+書本頁數：
+
+</td>
+<td class="normalText2" >368 頁 
+</td></tr></tbody></table>
+
+**推薦原因**: 對於整個DirectShow 有完整的說明，原作者[陸齊明](http://jemylu.spaces.msn.com/PersonalSpace.aspx?_c=)為微軟的[MVP](http://www.mvps.org/)，對於整個DirectX有完整的了解，對於要處理影像問題的人這本是一本不可或缺的基本書籍。
+
+![](http://www.yeswedo.idv.tw/product/PC/12/2057/2057-1.jpg)  
+(圖片來源: [悅仕網路書店](http://www.yeswedo.idv.tw/product/productDescription.asp?Rowid=2057))
+
+<table cellpadding="1" border="0" cellspacing="1" ><tbody ><tr >
+<td align="center" nowrap="true" class="normalText2" >
+
+書　　名：
+
+</td>
+<td width="330" class="bookName2" >**DirectShow實務精選**
+</td></tr><tr >
+<td align="center" nowrap="true" class="normalText2" >I S B N ：
+</td>
+<td class="normalTextBlk" >7-03-013654-3
+</td></tr><tr >
+<td align="center" nowrap="true" class="normalText2" >
+
+出 版 社 ：
+
+</td>
+<td class="normalTextBlk" >北京科海電子出版社
+</td></tr><tr >
+<td align="center" nowrap="true" class="normalText2" >
+
+裝　　訂：
+
+</td>
+<td class="normalTextBlk" >16開 平裝 黑白
+</td></tr><tr >
+<td align="center" nowrap="true" class="normalText2" >
+
+隨書光碟：
+
+</td>
+<td class="normalTextBlk" >1
+</td></tr><tr >
+<td align="center" nowrap="true" class="normalText2" >
+
+書本頁數：
+
+</td>
+<td class="normalText2" >471 頁 
+</td></tr></tbody></table>
+
+**推薦原因**: 同為微軟[MVP](http://www.mvps.org/)[陸齊明](http://jemylu.spaces.msn.com/PersonalSpace.aspx?_c=)的作品，這本書偏向於實務，舉凡DVD播放、Filter的製作都有相當好的範例~裡面的範例光碟可以讓你有快速的應用與了解。
+
+![](http://www.yeswedo.idv.tw/product/PC/12/4495/4495-1.jpg)  
+(圖片來源: [悅仕網路書店](http://www.yeswedo.idv.tw/product/productDescription.asp?Rowid=4495))
+
+<table cellpadding="1" border="0" cellspacing="1" ><tbody ><tr >
+<td align="center" nowrap="true" class="normalText2" >
+
+書　　名：
+
+</td>
+<td width="330" class="bookName2" >**Windows Media編程導向**
+</td></tr><tr >
+<td align="center" nowrap="true" class="normalText2" >I S B N ：
+</td>
+<td class="normalTextBlk" >7-302-10944-3
+</td></tr><tr >
+<td align="center" nowrap="true" class="normalText2" >
+
+出 版 社 ：
+
+</td>
+<td class="normalTextBlk" >北京科海電子出版社
+</td></tr><tr >
+<td align="center" nowrap="true" class="normalText2" >
+
+裝　　訂：
+
+</td>
+<td class="normalTextBlk" >16開 平裝 黑白
+</td></tr><tr >
+<td align="center" nowrap="true" class="normalText2" >
+
+隨書光碟：
+
+</td>
+<td class="normalTextBlk" >1CD
+</td></tr><tr >
+<td align="center" nowrap="true" class="normalText2" >
+
+書本頁數：
+
+</td>
+<td class="normalText2" >309 頁 
+</td></tr></tbody></table>
+
+**推薦原因**:  這本書我已經購買了，但是由於書還沒有拿到只能說[陸齊明](http://jemylu.spaces.msn.com/PersonalSpace.aspx?_c=)的作品我並不想錯過~~。
+
+![](http://addons.books.com.tw/G/3/0010000103.gif)  
+(圖片來源: [博客來網路書店](http://www.books.com.tw/exep/prod/booksfile.php?item=0010000103))
+
+### COM本質論
+
+### 
+
+####  
+
+#### 作者：[侯俊傑](http://search.books.com.tw/exep/openfind.php?key=%ABJ%ABT%B3%C7)
+
+#### 出版社：[碁峰](http://www.books.com.tw/exep/pub_book.php?pubid=gotop)
+
+#### 出版日期：1999 年 03 月 15 日
+
+#### 語言別：繁體中文
+
+**推薦原因**:  涵蓋了所有COM的核心概念~所有學習COM的人都應該要好好的學習。
+
+![](http://tlsj.tenlong.com.tw/WebModule/BookSearch/cover/55/9861252983.jpg)  
+(圖片來源: [天瓏網路書店](http://tlsj.tenlong.com.tw/WebModule/BookSearch/bookSearchViewAction.do?isbn=9861252983&sid=22020))
+
+**Windows 程式設計使用 MFC (Programming Windows with MFC, 2/e)**
+
+<table cellpadding="0" width="100%" border="0" cellspacing="0" ><tbody ><tr >
+<td width="33%" align="right" height="20" >
+
+****
+
+**ISBN : **
+
+</td>
+<td height="20" >  9861252983 
+</td></tr><tr >
+<td align="right" height="20" >
+
+**出版商 : **
+
+</td>
+<td height="20" >  文魁 
+</td></tr><tr >
+<td align="right" height="20" >
+
+**出版日期 : **
+
+</td>
+<td height="20" >  2004-08-14 
+</td></tr><tr >
+<td align="right" height="20" >
+
+**上架日期 : **
+
+</td>
+<td height="20" >  2004-08-14 
+</td></tr></tbody></table>
+
+**推薦原因**: 學習Windows Programming的第一本書，可以讓你對於視窗程式設計有基礎的概念。也可以讓你對於COM有一定的了解與應用。

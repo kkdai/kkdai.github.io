@@ -1,0 +1,45 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2007-05-24 22:08:39+00:00
+slug: nba-live-0607-%e5%a5%bd%e7%94%a8%e7%9a%84%e8%a3%9c%e4%b8%81%e9%9b%86%e5%90%88
+title: '[NBA Live 06/07]  好用的補丁集合'
+wordpress_id: 654
+categories:
+- 遊戲天國
+---
+
+![](http://sd.cnnbalive.com/jimmy.jpg)
+
+好久沒把這塊遊戲再度拿出來玩~~~ 會把NBA Live 07拿出來玩的主因~~ 就是由於我的電腦中毒了~~  所以的遊戲都不見了~~~ 重新去安裝軟體的時候~ 翻了翻手邊遊戲之中~~  忽然又看到這塊讓我又愛又恨的遊戲~~~
+
+由於07電腦換人與自幹的問題(改過PATCH 與 ROSTER之後仍然嚴重)~~ 我之前就先在網路上找NBA Live 06的最新球員更新檔~~  
+
+但是苦於找不到的情況下~ 先找到了這個更新檔~~ 不過在安裝Jimmy GameFix 系列之前~ 還是要先安裝 [Live 2007 中文版更新檔](http://www.ea.com.tw/Files/Files_Info.aspx?ID=814) 。之後再去[這裡](http://www.nbaliveforums.com/ftopic42117.php)下載Jimmy GameFix 9.7 (雖然圖片是9.4~ 但是最新版本已經到達了9.7)
+
+<blockquote>In 9.7 improvements from the previous version:   
+  
+1. AI improvement   
+2. Re-new Team strategy for Defense   
+3. Re-new Team strategy for Offense   
+4. Different of Alleyoops   
+5. Dunking for Star Highflyers[credit to A_nuke]   
+6. Dynamic plays   
+7. More distribution of ball   
+8. Every players have chances to be more offensive   
+9. Some others improvement   
+10. Special edited AIACT   
+11. ONLY 100% work with IRPT roster 4.4 and 9x% work with IRPT roster 4.x
+> 
+> </blockquote>
+
+安裝方法~~ 裡面有兩個安裝檔~~ 就把他裝起來~~
+
+  1. 安裝part1.exe
+  2. 安裝part2.EXE
+  3. Copy For Dynasty Season or PlayoffSettings,dat 換掉原來安裝的 (這是調整Slider)
+  4. Copy TEAMPLAYFIX FOR NOinjury ROSTER(compatible with all types of saves) 到你的王朝紀錄檔下~ 執行該BAT 可以幫你降低一些素質.
+
+此外~~要 [NBA Live 06 的最新球員更新檔](http://www.17nba.com/bbs/read.php?tid=194432)？？到這裡去找吧～～～

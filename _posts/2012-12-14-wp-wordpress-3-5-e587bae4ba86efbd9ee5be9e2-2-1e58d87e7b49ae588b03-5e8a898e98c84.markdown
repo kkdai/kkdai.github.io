@@ -1,0 +1,165 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2012-12-14 07:02:54+00:00
+slug: wp-wordpress-3-5-%e5%87%ba%e4%ba%86%ef%bd%9e%e5%be%9e2-2-1%e5%8d%87%e7%b4%9a%e5%88%b03-5%e8%a8%98%e9%8c%84
+title: '[WP] Wordpress 3.5 出了～從2.2.1升級到3.5記錄'
+wordpress_id: 1172
+categories:
+- WordPress學習心得
+---
+
+記得之前看到WordPress 3.5推出的一些文章與廣告，發現他的相簿功能真的很多。  
+之前為了增強家裡相簿的能力，從4Imgage之後～ 新架了一個[Drupal](http://drupal.org/)來使用  
+Drupal的相簿(Album) plugin 很強很好使用～但是速度實在不太快
+
+
+
+
+所以看到，[WordPress 3.5 宣傳的影片](http://wordpress.org/news/2012/12/elvin/)～讓我不禁想使用看看他的相簿功能  
+畢竟之前使用WordPress的使用經驗都覺得速度相當的快
+
+
+
+
+以下簡單記錄一下我的升級流程：
+
+
+
+
+ 
+
+
+
+
+電腦資料：
+
+
+
+
+
+
+  * PHP:        5.2.6
+
+
+  * MySQL:   5.0.51
+
+
+
+
+升級WordPress 3.5 基本要求:
+
+
+
+
+
+
+
+
+
+  * PHP:        5.2.4
+
+
+  * MySQL:   5.0
+
+
+
+
+
+
+
+ 
+
+
+
+
+我的升級流程是依據[官方的資料](https://codex.wordpress.org/Upgrading_WordPress_Extended#Detailed_Upgrade_Instructions_for_1.5.x.2C_and_versions_2.0_-_2.6.5.2C_to_3.5)如下：
+
+
+
+
+
+
+
+
+
+  * 備份WP資料
+
+
+
+    * 備份 MySQL
+
+
+    * 備份 WP(透過WP備份）
+
+
+
+  * 備份所有WP上面的檔案
+
+
+  * 關閉所有的plugin
+
+
+  * 下載最新版WP(先不要蓋過去）
+
+
+  * 刪除舊的檔案
+
+
+
+    * 參考以下檔案列表
+
+
+
+      * wp*.php （不要移除wp-config.php)
+
+
+      * .htaccess 
+
+
+      * license.txt 
+
+
+      * readme.html 
+
+
+      * xmlrpc.php
+
+
+
+    * 移除資料夾wp-admin wp-includes
+
+
+    * 記得留下 wp-config.php
+
+
+
+  * 執行 wp-admin/upgrade.php
+
+
+  * 完成
+
+
+
+
+實在是順利又快速～ 
+
+
+
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+ 

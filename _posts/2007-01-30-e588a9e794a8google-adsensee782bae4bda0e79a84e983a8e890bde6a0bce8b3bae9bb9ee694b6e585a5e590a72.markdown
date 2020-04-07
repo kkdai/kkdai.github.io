@@ -1,0 +1,34 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2007-01-30 11:19:27+00:00
+slug: '%e5%88%a9%e7%94%a8google-adsense%e7%82%ba%e4%bd%a0%e7%9a%84%e9%83%a8%e8%90%bd%e6%a0%bc%e8%b3%ba%e9%bb%9e%e6%94%b6%e5%85%a5%e5%90%a72'
+title: 利用Google Adsense為你的部落格賺點收入吧(2)
+wordpress_id: 588
+categories:
+- 關於MT的學習心得
+---
+
+[![](https://www.google.com/adsense/images/google_sm.gif)](https://www.google.com/adsense/home)
+
+日前[Google AdSense](https://www.google.com/adsense/?hl=zh_TW)也推出了完整的中文版，於是在大大小小的Blog裡面就看到了大家擺滿了廣告~ 在這裡提供幾個幾個小技巧如下:
+
+**AdSense for Content 部分**:
+
+  * 一個頁面最多可以擺放兩個AdSense for content，在此建議一個頁面擺放兩個為最佳~ 一個為垂直的大型廣告~~另外一個可以擺在文章最下方的。  
+
+  * **_頻道_**的使用: [頻道](https://www.google.com/adsense/support/bin/answer.py?answer=9868&sourceid=aso&subid=ww-ww-et-asui&medium=link)，這個名詞或許翻譯起來會有點難以理解~~舉個簡單的例子好了，我的網站分成三大部分:Web, Forum, Blog。你就可以訂定三個頻道: MyWeb, MyForums, MyBlog  
+順便可以查看，哪個頻道所帶來的收益最高。這樣也方便你去管理你的內容～～　與廣告的比例  
+
+
+**AdSense for Search 部分**:
+
+  * 我比較少看到有人應用這個在自己的Blog裡面~~一方面大家會因為這個不是以顯示為計量單位~ 但是仔細查看~~ 這是以搜尋次數來計量的~~ 也就是說~~ 當使用這個搜尋的人越多~ 你也就月賺錢。這個時候~ 如何讓大家去使用這個[Google](http://google.com/)搜尋列也就最重要了。
+  * 把網站預設的搜尋改成[Google](http://google.com): 就是把個別網站的搜尋功能Bar 改成是[Google](http://google.com/)。
+  * 加上預設的搜尋字眼: 以MT為例~~找到相關的地方~改成以下的字。  
+_<input type="text" name="q" size="31" maxlength="255" value="<$MTEntryKeywords$>"></input>_  
+並且在你的文章裡面打開"關鍵字"的選項~~ 只要你固定去寫上一些簡單的關鍵字~ 你的[Google](http://google.com/)搜尋列~就會變得更好用。
+
+剩下的部分~ 之後再續~~

@@ -1,0 +1,20 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2006-03-08 02:35:20+00:00
+slug: '%e6%b8%ac%e8%a9%a6%e4%bd%a0%e9%83%a8%e8%90%bd%e6%a0%bc%e7%9a%84%e5%83%b9%e5%80%bc'
+title: 測試你部落格的價值~~
+wordpress_id: 349
+categories:
+- 網路上好玩的事情
+---
+
+![](http://static.flickr.com/23/25822676_789bf55448_t.jpg)  
+My [blog](http://evanlin.com/blog/) is worth **$11,855.34**.  
+[How much is your blog worth?](http://www.business-opportunities.biz/projects/how-much-is-your-blog-worth/)
+
+[![](http://technorati.com/pix/tech-logo-embed.gif)](http://www.technorati.com/)
+
+[這個網站](http://www.business-opportunities.biz/projects/how-much-is-your-blog-worth/)相當的好玩，可以測試你部落格的價值。~~~ 如果~~我的部落格真的值那麼多～～～　　考慮賣掉去渡個小假也不錯～～～

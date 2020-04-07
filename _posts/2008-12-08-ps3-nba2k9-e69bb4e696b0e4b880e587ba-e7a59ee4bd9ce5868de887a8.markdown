@@ -1,0 +1,312 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2008-12-08 16:11:02+00:00
+slug: ps3-nba2k9-%e6%9b%b4%e6%96%b0%e4%b8%80%e5%87%ba-%e7%a5%9e%e4%bd%9c%e5%86%8d%e8%87%a8
+title: PS3-NBA2k9 更新一出~~~~ 神作再臨!!
+wordpress_id: 997
+categories:
+- 遊戲天國
+- 頂級娛樂聲光站PS3
+---
+
+![0000018430.jpg](http://farm4.static.flickr.com/3296/3091812084_c4db122dff.jpg)
+
+ 
+
+NBA 2K9 在12月初總算有了第二次的更新，這些更新其實變動了很多地方。也讓這款本來BUG也不少的遊戲化身變成神作(也就是超級棒的遊戲) 至少各大論壇已經把這款遊戲變成新一代的NBA遊戲了。 或許有人會問~~ 那NBA LIVE呢? 你說甚麼????? 那個BUG多多的遊戲~~~~ 怎麼可以跟2K9比呢??? 自從2K9換了新的臉部繪製系統後~ 現在2K9的球員面孔變成跟真人真的沒兩樣~~ 由其是Kobe 跟 Kidd ，不過也是有中國大陸球迷反應~ 覺得姚明不像而要<strike>(努力分享?)</strike>霸買的事件。
+
+ 
+
+在此我也來分享我自己的玩過更新的心得吧:
+
+ 
+
+  
+  1. **狂切搖擺球員去死吧!!! 守的住了**         
+對於LBJ或是Kobe 這種切入能力超級強的球員，在更新之前可以說這些人的天下。記得更新前曾經上線去找人對打~~~ 結果對方用Kobe 狂電我25分~~~ 在結束前還故意打開得分表秀秀他KOBE 的得分率。 更新後變得比較容易叮上，跳起來封蓋的比例也變高了。         
+       
+
+   
+  2. **跳起來封蓋~~ 不再變得沒有效用          
+**更新前對於要投球的對手進行跳起來封蓋~~~ 通常只有兩種結局，一者是蓋到火鍋(當然~~更新前火鍋蓋到的判定也比較難） 另外就是被投進。 這不誇張～～我在玩的時候，我甚至懷疑這是一個顯而易見的重大BUG。 也就是當你要封蓋對手的投射的時候，按下叮人鍵的舉手防守比起跳起來防守有用的多了。 這樣喜歡防守的我變得相當不適應。 更新過後~~ 除了火鍋更容易蓋到(我終於蓋到電腦火鍋啦!!!) 跳起來防守(除非晃過) 基本上會造成對手進球率的減少!!!         
+       
+
+ 
+
+我更新到現在大概也只玩了20場左右~~希望多玩之後會有更多的感覺。      
+
+
+ 
+
+ 
+
+最後，以下就是PTT上面一些大大針對更新部分的翻譯:
+
+
+<!-- more -->
+  
+
+作者: TsungHan (Steven我要坐M63) 看板: NBAGAME      
+標題: Re: [情報] NBA 2K9_360&PS3 重大官方更新即將到來       
+時間: Tue Dec 2 13:31:46 2008
+
+ 
+
+General      
+一般性的更新 
+
+ 
+
+Inbound Bug - We have corrected an issue where teams would not inbound the ball      
+after a made basket, resulting in a non-authentic experience. This turned out       
+to be a timing-specific issue with regards to quitting out of another game mode.       
+修正發球入場無限回圈場的bug(我想很多人都遇過,但是我就是沒遇過) 
+
+ 
+
+Player DNA - We found an issue where face sliders were getting offset when      
+downloading the DNA of a player that another user has previously uploaded.       
+Downloaded players should now look identical to when the original user uploaded       
+the Player DNA.       
+球員DNA部分,有時候下載別人上傳的球員時候會發現臉部的設定有些許不同       
+這個已經被改正,下載的球員臉部設定應該跟原本上傳的時候完全一樣 
+
+ 
+
+![0000223412.jpg](http://farm4.static.flickr.com/3228/3092269468_4823afc998.jpg)
+
+ 
+
+Created Player Scrolling Crash - When a player was created with the 'Thick'      
+body type and was not placed on a team, on the Bobcats, or on the Thunder, the       
+game would crash when attempting to load the player model in the create player       
+screen or in-game. This issue has been addressed.       
+創造球員的當機現象,       
+當自創球員是"粗壯"的身材,但是此球員並沒有編入任何一支隊伍       
+此時如果進入修改球員資料當讀取球員體型的時候,當機就會發生 
+
+ 
+
+Exiting Game Mode Crash - A crash was identified when the user attempted to      
+leave a game mode (Association, Playoffs, etc.) when starting the game mode       
+after receiving an updated Living Roster. This issue has been addressed.       
+退出遊戲的時候當遊戲重新讀取球員檔案的時候的當機現象也修正了       
+(我之前也常常遇過) 
+
+ 
+
+Development Drill Crash - Related to the issue above, a few users were seeing      
+a crash when attempting to perform a development drill after loading an       
+Association file. The triggering issue has been identified and resolved.       
+王朝模式的球員培養,       
+有人指出在進入球員培養的小遊戲的時候會當機(在使用賽夫羅得大法讀取王朝紀錄之後)       
+此bug也已經被修正了 
+
+ 
+
+Substitution Issue - It was discovered that when the user would change their      
+'Substitution Method' to 'By Rotation', the CPU would remain in the 'By       
+Fatigue' method which would result in inconsistent subs or none at all. The       
+CPU will now replicate the 'Substitution Method' chosen by the user's team.       
+修正了換人的方法,       
+當改成"By Rotation"的時候電腦不在會繼續以體力來調度上場球員 
+
+ 
+
+2K Cam Framerate - We have greatly improved the framerate gameplay in the 2K      
+camera. Additional cameras have also seen performance boosts with the changes       
+made.       
+修改了framerate 
+
+ 
+
+Injury Frequency - In-game injuries during The Association will now occur at      
+a lower frequency. This is particularly true with hard fouls, loose ball dives,       
+and general falls.       
+受傷頻率,球員比較不會那麼容易受傷了       
+尤其是一些犯規,飛撲爭搶地板球,還有落地的時候 
+
+ 
+
+Association League Leaders - Users playing through The Association with 5      
+minute quarters were finding that their players who should qualify for the       
+league leaders weren't properly being listed. This issue has been corrected.       
+王朝模式如果玩五分鐘一節會發現你的球員都上不了攻守排行榜       
+這個bug也已經修正 
+
+ 
+
+Association Simulation - The simulator inside The Association has been tuned      
+to produce more realistic game results. We found the final scores for most       
+games to be too high pre-patch.       
+電腦模擬的比數都偏高,現在已經修正為比較接近真實的數據       
+
+
+ 
+
+Online      
+上網對戰 
+
+ 
+
+Player Match Crash - It was discovered on launch day that when a certain      
+number of users simultaneously select the 'Player Match' option, the game       
+will eventually crash when looping through the available players.       
+當有一定數量的玩家同時使用"Player Match"這個選項的時候       
+所出現的當機現在已經修正了 
+
+ 
+
+Team-Up Lag - An intense round of optimization has taken place for the Team-Up      
+experience. The changes made grant significant speed improvements for users on       
+slower broadband connections such as lower-end DSL connections. The end result       
+is a much smoother gameplay experience for everyone.       
+對於網路速度較慢的玩家玩"Team-Up"的時候會更加流暢       
+提供網路最佳化的效率       
+  
+'2K' Cam - In order to increase user satisfaction with the title, we have       
+added the '2K' camera angle as a playable camera angle when playing online       
+網路對戰新增"2K"的視角       
+  
+First FT Lag / Difficulty - The first free throw of an online game had a       
+variable amount of lag depending on which camera was chosen for the shot. We       
+have corrected this issue by asserting a fixed camera for this shot that       
+eliminates any controller lag. In addition to this, the 'make' window for       
+free throws in online play has been increased to account for the timing       
+difference.       
+第一球罰球會lag的現象已經修正 
+
+ 
+
+Waiting For Opponent - Users with poor connections were causing the game to      
+loop too long on the "Waiting for Opponent" dialog before continuing on       
+into the game. We've cleaned up this behavior to place players into the game       
+in a much quicker fashion.       
+網路速度較慢的玩家所造成的等了很久才進入遊戲       
+只一直看到"Waiting for Opponent"的對話框       
+我們已經修正並且可以讓玩家可以更快的進入遊戲 
+
+ 
+
+Quick Match Connection Problems - An issue was identified where users were      
+being re-directed to the online FAQ instead of being taken into a game. This       
+message will now only appear in appropriate situations.       
+有些玩家選擇Quick Match卻跳到Online FAQ的現象已經修正       
+  
+Online League Injuries - In online leagues, injured players that were taken       
+off the roster weren't healing. The game now properly detects injured players       
+and heals them in the appropriate time frame regardless of where they are       
+placed on the roster.       
+線上聯盟的受傷,       
+線上聯盟的受傷球員都不會治癒,       
+現在遊戲會自動偵測球員受傷程度, 並且讓依照他們受傷程度在一定時間讓他們痊癒       
+除非....這名傷兵還擺在球員名單上 
+
+ 
+
+![0000223411.jpg](http://farm4.static.flickr.com/3169/3091429967_1400f9b15b.jpg)
+
+ 
+
+PS3 Voice / Team-Up - An issue was uncovered where voice chat would drop or      
+become intermittent when more than two users were talking simultaneously. This       
+issue has been resolved.       
+針對PS3的玩家,       
+之前如果兩個以上玩家同時說話的時候,       
+語音會受干擾的情形已經改正       
+
+
+ 
+
+Team-Up Cameras - The Broadcast camera for Team-Up has been optimized to
+ show      
+the user a better balance of their player, the ball, and they player they       
+should be guarding. Also, 2K Cam has been added to the list of cameras the user       
+can use during Team-Up play.       
+在Team-Up裡面的視角       
+Broadcast的視角已經最佳化讓玩家更能享受遊戲       
+  
+Gameplay       
+遊戲度 
+
+ 
+
+Subbing Fouled Out Player - A bug was found where you could substitute in a      
+player who had previously fouled out, only when using the quick-sub method of       
+the On-The-Fly Coaching menu.       
+犯滿出場的球員不能再利用暫停時間的quick-sub偷偷回來了 
+
+ 
+
+Resetting Substitutions - When the user queued up substitutions via the On-The      
+-Fly Coaching feature, re-accessing the feature before the substitutions       
+actually took place would cause the subs to be reset such that the user would       
+have to manually perform them again. We have addressed this issue.       
+當使用快速換人的時候,每當你重新打開視窗就會發現之前換人的設定已經被重新設定了       
+這個情形也已經修正了,玩家不必再重新把人重新換過一遍       
+  
+Points Off Turnovers - It was discovered that this statistic was not       
+calculating correctly when it is reported to the server for online league       
+games. We have isolated the issue in the AI and have addressed the problem such       
+that the stat is correctly reported.       
+因失誤所得到的分數,       
+當玩線上聯盟的時候,       
+統計數字並沒有被正確的計算       
+我們已經更改AI,現在數字已經被正確的統計了 
+
+ 
+
+Double Dribble Issue - By performing a sequence of moves that ended in a hop      
+step, the user was able to perform a double dribble. This issue has been       
+corrected.       
+當使用出一連串的動作最後是由大跨步(跳步?)結尾的時候       
+玩家都會被吹走步, 這個bug已經被改正
+
+ 
+
+![0000071567.jpg](http://farm4.static.flickr.com/3080/3091429799_cea43328b7.jpg)       
+  
+Jab Step Fixes - The 'Jab Step' move has been reconstructed to be more       
+balanced in the post. Specifically, it should not be effective in user vs.       
+user games unless the ball-handler touches the defender. Also, performing the       
+'Jab Step' should no longer make the defense go back when the ball-handler       
+loses the dribble.       
+低位的假動作刺探步已經被修正,       
+仔細的說,它不再像之前那樣好用了,除非當持球者對上防守球員       
+當作試探步的球員掉球後,防守球員也不再往後退防守了 
+
+ 
+
+Points in the Paint - In an effort to increase user satisfaction, we have      
+tuned interior defense in combination with shooting percentages for shots taken       
+in the paint. The result is something we feel will be more in-line with what       
+our users are expecting.       
+禁區得分的改善 
+
+ 
+
+![0000071559.jpg](http://farm4.static.flickr.com/3238/3091429597_46b1c3cde4.jpg)
+
+ 
+
+Shooting Percentages - Continuing with the above description, we have tuned      
+down shot success of perimeter shots when the defender is amply covering the       
+offensive player taking the shot.       
+外線命中率的調低,當防守者貼上來的時候命中率會下降 
+
+ 
+
+PlayVision - PlayVision in Team-Up was showing everyone's starting point with      
+no indication on which was yours. We have changed the behavior to only show the       
+floor art for the player you are controlling.       
+線上玩"Team-Up"的時候可以更清楚的知道你所操作角色的位置 
+
+ 
+
+General Fixes - A large number of other smaller issues have been addressed      
+with the aim of increasing user satisfaction. These changes, while minor, have       
+improved the quality of gameplay.       
+哩哩拉拉的小bug也已經修正了,讓玩家更能好好的享受遊戲 

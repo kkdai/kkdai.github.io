@@ -1,0 +1,47 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2008-11-11 09:52:00+00:00
+slug: '%e5%a6%82%e4%bd%95%e8%a8%bb%e5%86%8a%e5%a4%9a%e5%9c%8b%e7%be%8e%e5%9c%8b%e8%88%87%e6%97%a5%e6%9c%acpsn%e5%b8%b3%e8%99%9f'
+title: 如何註冊多國(美國與日本)PSN帳號
+wordpress_id: 989
+categories:
+- 遊戲天國
+- 頂級娛樂聲光站PS3
+---
+
+![PSN.jpg](http://farm4.static.flickr.com/3178/3021013460_deddb118fd.jpg)
+
+ 
+
+[PSN (PlayStationNetwork)](http://www.us.playstation.com/PS3/network) 就是PS3裡面獨特有的網路功能，可以連接到PSN的網站下載最新的遊戲試玩版(DEMO)或是下載最新的遊戲影片。 不過呢～ 買了兩個禮拜的PS3 卻覺得可以下載的內容實在太少了。原來是因為台灣方面的[PSN](http://www.us.playstation.com/PS3/network) 只有一些內容~~但是美國或是日本[PSN](http://www.us.playstation.com/PS3/network) 的下載內容可是讓你下載不完的。
+
+ 
+
+這裡把PTT上面教導如何設定多個國家帳戶的方法~~最重要的是～～註冊的時候會檢查郵遞區號~~~所以這裡提供一下郵遞區號的範例
+
+ 
+
+ 
+
+作者: colk (站長是正妹!!) 看板: PlayStation      
+標題: Re: [PS3 ] 如何上美國playstore?       
+時間: Sun Feb 17 13:40:18 2008 
+
+ 
+
+※ 引述《colk (站長是正妹!!)》之銘言：      
+: 看板上網友說有the show 2008可以下載試玩       
+: 可是不知要如何上到美國playstore       
+: 有人可以交一下嗎?謝謝 
+
+ 
+
+剛剛自己找到知識家友人po跟大家分享      
+首先你到選單的最左邊再創一個使用者(一個使用者限登入一個地方)然後你如果要登入日       
+本的就要把主機調成日文(美國就調成英文的)再到選單的最右邊創一個帳號(有登入台灣       
+的話因該就清楚程序了)主要的是地區和郵遞區號!!       
+日版帳號:東京都 涉谷區 郵遞區號1518544 其它4個打1或是亂填都可以!       
+美版帳號:California 郵遞區號90245 其它4個打1或是亂填都可以!

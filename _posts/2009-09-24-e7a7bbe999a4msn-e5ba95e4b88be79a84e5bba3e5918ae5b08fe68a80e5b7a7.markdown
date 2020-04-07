@@ -1,0 +1,30 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2009-09-24 08:49:46+00:00
+slug: '%e7%a7%bb%e9%99%a4msn-%e5%ba%95%e4%b8%8b%e7%9a%84%e5%bb%a3%e5%91%8a%e5%b0%8f%e6%8a%80%e5%b7%a7'
+title: 移除MSN 底下的廣告小技巧…
+wordpress_id: 1076
+categories:
+- 網路上好玩的事情
+---
+
+![Messenger](http://sgstb.msn.com/i/F3/DFC6EC92EA29FF27EC89FE977CE95.png)
+
+ 
+
+移除廣告只需要幾個設定步驟，就可以完成了。      
+方法如下：       
+1. 首先要關閉MSN軟體       
+2. 進到資料夾：C:WINDOWSsystem32driversetc 目錄內       
+3. 找到檔名為“hosts”的檔案，用記事本開啟它       
+4. 在文件最後加上 127.0.0.1 rad.msn.com 還有 127.0.0.1 rad.live.com 這兩行       
+5. 將文件存檔       
+6. 重新開啟MSN軟體即可       
+備註：其中127.0.0.1在TCP/IP代表localhost（本機），這麼做的意思是將讀取廣告的動作轉到讀取自己的電腦，這樣一來就讀不到廣告啦。
+
+ 
+
+(轉貼自: [http://forum.zhe-feng.com.tw/viewthread.php?tid=1114](http://forum.zhe-feng.com.tw/viewthread.php?tid=1114))

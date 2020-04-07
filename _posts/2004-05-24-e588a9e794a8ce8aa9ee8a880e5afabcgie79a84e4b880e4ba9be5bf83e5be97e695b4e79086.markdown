@@ -1,0 +1,228 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2004-05-24 01:31:56+00:00
+slug: '%e5%88%a9%e7%94%a8c%e8%aa%9e%e8%a8%80%e5%af%abcgi%e7%9a%84%e4%b8%80%e4%ba%9b%e5%bf%83%e5%be%97%e6%95%b4%e7%90%86'
+title: 利用C語言寫CGI的一些心得整理
+wordpress_id: 97
+categories:
+- 學習文件
+---
+
+關於利用C語言撰寫CGI程式的部分，這也是之前人家面試的時候，所詢問我的另外一個問題，經過這幾天上網找資料，並且撰寫之後，將一些心得整理出來，希望能幫助到有一些疑問的人。其實利用關鍵字『C語言、CGI、GET、POST』還是可以找到蠻多相關的網頁，[大部分的資料](http://moon-soft.com/e_commerce/soft/book/ccgi.htm)都嫌老舊，並且都是由同一個作者撰寫而出（不過倒是有蠻多人複製在自己的網站上面--_________--""），所以在此為各位整理一些概念，而繁瑣的程式碼（關於將STRING去spilit並且找出變數對應值）就不再詳述，可參考[以下這個網址](http://www.cs.ntust.edu.tw/~huang/CGI/CGIbyC.htm)，在這裡只專注於觀念上的敘述，希望帶給大家一些基本的概念。
+
+
+<!-- more -->
+
+
+　
+
+
+
+
+**利用C語言撰寫CGI程式**
+
+
+
+
+CGI（ Common Gateway Interface)
+
+
+
+
+**1.放在可以執行的地方  
+
+  
+
+**不論哪種網頁伺服器的主機（[IIS](http://www.microsoft.com/windowsserver2003/iis/default.mspx)、[Apache](http://www.apache.org/)），對於檔案可否執行（execute)的權限管理相當嚴格，尤其是[Apache](http://www.apache.org/)，要由網路上執行某些檔案（通常是CGI），都必須透過，httpd.conf
+這個檔案裡面的設定才行（通常預設是 cgi-bin/ )
+。另一方面，對於[IIS](http://www.microsoft.com/windowsserver2003/iis/default.mspx)的設定就方便多了，只要啟動[IIS](http://www.microsoft.com/windowsserver2003/iis/default.mspx)
+Service將該目錄可執行的權限打開，就可以執行CGI程式。
+
+
+
+
+P.S. 算是FAQ的問題，請注意即便可以執行
+C語言的請編譯好用修改權限為可以執行的檔案。
+
+
+
+
+　
+
+
+
+
+**2.C語言中CGI裡面的Hello World!!  
+
+  
+
+**在這裡要跟大家講解對於網頁而言，其實與一般的C語言程式沒有兩樣，重點在於輸出與輸入的介面（UI）。相較於一般的C語言程式，利用C來撰寫的CGI其輸入與輸出都不一樣，首先在輸出方面，最不一樣的就是CGI有以下的輸出
+
+
+
+
+**printf ("Content-type: text/htmlnn");**
+
+
+
+
+這個就是代表這是一個網頁的程式，記住"Content-type:
+text/htmlnn"這段文字儘量不要修改，並且連空白都要注意好（沒有注意好，網頁伺服器會誤認為其他可執行檔案而變成可以下載，而非當成CGI程式），所以根據這個，以下為一個基本的CGI程式
+
+
+
+
+
+  <table cellspacing="1" border="1" width="36%" >
+    <tr >
+      
+<td width="100%" bgcolor="#000000" >
+        
+
+//  
+
+        // File Name test1.cpp  
+
+        //  
+
+        #include <stdio.h>  
+
+        #include <stdlib.h>  
+
+        int main(int argc, char* argv[],char *envp[] )  
+
+        {  
+
+         printf("Content-type: text/htmlnn");  
+
+         printf("Hello___World");  
+
+        }
+</td>
+    </tr>
+  </table>
+
+
+
+
+
+各位可將此程式編譯(gcc -o test1.cgi test1.cpp)之後，放在可以執行的目錄下。
+
+
+
+
+　
+
+
+
+
+**3.CGI中參數的傳入**
+
+
+
+
+如同之前所敘述，CGI程式與一般的程式最大的差別在於資料擷取的不同，網頁資料的擷取上主要有兩種，分別是透過GET與POST。這兩種可以透過表單函數<form
+method="GET/POST">下去設定，在此引用[Form與CGI的綜合運用](http://www.cc.nctu.edu.tw/~claven/course/www/html_tutorial/formcgi.htm)中作者所畫的一張圖，可以清楚的瞭解變數在此轉換的差別。
+
+
+
+
+
+[
+![使用C語言寫CGI變數輸入圖](http://www.evanlin.com/blog/archives/0520/img00003.gif)
+
+](http://www.evanlin.com/blog/archives/0520/img00003.gif)
+
+根據以上的圖，有兩一個系統參數可以辨別參數傳過來的方式，就是(REQUEST_METHOD)，裡面會儲存傳入變的的方式，利用以下一個簡單的程式可以抓取所有的環境變數：
+
+
+
+  
+  <table cellspacing="1" border="1" width="36%" >
+    <tr >
+      
+<td width="100%" bgcolor="#000000" >
+        
+
+#include <stdio.h>  
+
+          
+
+        int main(int argc, char* argv[],char *envp[] )  
+
+        {  
+
+         printf("Content-type: text/htmlnn");  
+
+         for(int i = 0; envp[i] != NULL; ++i ){  
+
+         printf(envp[i]);  
+
+         printf("<br>");  
+
+         }   
+
+      }
+</td>
+    </tr>
+  </table>
+  
+
+
+
+
+
+
+**傳值為GET的取值法：**大家亦可透過[範例程式](http://www.evanlin.com/cgi-bin/g1.cgi)去看，若是在網址列後面輸入變數(?aa=1&bb=2)即可觀察到變數QUERY_STRING裡面百的就是我們所輸入的變數值，在根據裡面的資料去PARSE即可瞭解。若要[使用表單的範例](http://www.evanlin.com/get.html)請看這裡，[若要看詳細CGI程式碼，請看這裡](http://www.evanlin.com/get.txt)
+
+**傳值為POST的取值法：**若是透過<form
+method="POST">的方式所傳遞過來的參數，在CGI程式之中，會被當做是Standard_input也就是當成外在輸入（可用getch,
+gets來抓取)，然後在一個個去變數去作PARSE的動作。以下會[有一個範例](http://www.evanlin.com/post.html)的表單傳遞到變數去。[若要看詳細CGI程式碼，請看這裡](http://www.evanlin.com/post.txt)
+
+
+
+其實對於字串的PARSE部分，應該有許多寫好的函示可以應用，不過重點還是在於兩種輸入方式對於程式處理上的不同。（切記：GET=>Query_String;
+POST=>Std_Input)
+
+
+
+　
+
+
+
+　
+
+
+
+**參考資料：**
+
+
+
+  
+  1. 
+    
+
+[Form與CGI的綜合運用](http://www.cc.nctu.edu.tw/~claven/course/www/html_tutorial/formcgi.htm)
+
+  
+  2. 
+    
+
+[用C語言進行CGI程序程式](http://moon-soft.com/e_commerce/soft/book/ccgi.htm)
+
+  
+  3. 
+    
+
+**[Win32下apache,perl环境建立](http://www.csdn.net/develop/Read_Article.asp?Id=6568)**[ BigApple（原作）](http://www.csdn.net/develop/Read_Article.asp?Id=6568)
+
+  
+  4. 
+    
+
+[CGI範例與寫作](http://www.cs.ntust.edu.tw/~huang/CGI/CGIbyC.htm)
+
+

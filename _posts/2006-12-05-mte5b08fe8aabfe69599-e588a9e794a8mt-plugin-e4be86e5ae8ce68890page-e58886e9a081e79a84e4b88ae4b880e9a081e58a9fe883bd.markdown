@@ -1,0 +1,21 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2006-12-05 11:50:26+00:00
+slug: mt%e5%b0%8f%e8%aa%bf%e6%95%99-%e5%88%a9%e7%94%a8mt-plugin-%e4%be%86%e5%ae%8c%e6%88%90page-%e5%88%86%e9%a0%81%e7%9a%84%e4%b8%8a%e4%b8%80%e9%a0%81%e5%8a%9f%e8%83%bd
+title: MT小調教~ 利用MT-plugin 來完成PAGE 分頁的上一頁功能
+wordpress_id: 537
+categories:
+- 關於MT的學習心得
+---
+
+# [![MT Extensions](http://www.nonplus.net/software/mt/images/logo_mtextensions.gif)](http://www.nonplus.net/software/mt/)
+
+今天心血來潮~ 把整個頁面改成最原始而簡單的頁面。主要原因大概就是希望把整個BLOG更以內容走向為主~~~ 說到內容~ WordPress裡面的"上一頁"倒是一直是我很想要的功能之一~~ 經過了幾番搜尋之後~~ 找到兩個可以用的plug-in 可以達成這件事情。
+
+  1. [MTPaginate 1.26](http://www.nonplus.net/software/mt/MTPaginate.htm)---- 支援舊版的MT，但是須要你的主機要支援PHP，而且每個網頁也得改成PHP，得在思考一下。
+  2. [Paged Archives Plugin](http://abates.tetrap.com/plugins/pagedarchives.html)-- 功能相當強大的plug-in，不過僅支援MT3.2以上的功能~
+
+大家挑自己喜歡的吧!! 至於我~~ 我還在思考要不要換成MT3.3~~~ 

@@ -1,0 +1,40 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2004-03-10 14:09:39+00:00
+slug: '%e9%80%a3%e7%b5%90nexus'
+title: 連結(NEXUS)
+wordpress_id: 57
+categories:
+- 書海裡的漫遊
+---
+
+![連結（NEXUS）](http://www.evanlin.com/blog/archives/0310/0010234427.jpg)
+ 書籍名稱： 天下文化｜連結(NEXUS)｜Mark Buchanan
+
+
+書籍介紹：[博客來](http://www.books.com.tw/exep/prod/booksfile.php?item=0010234427)｜[誠品書局](http://www.eslitebooks.com/cgi-bin/eslite.dll/search/book/book.jsp?idx=1&pageNo=1&PRODUCT_ID=2910411640000)
+
+
+
+
+相關介紹在[Chiron  Chou網站](http://chiron.nicetypo.com/)內有介紹到關於這本書的內容，讓我忽然想起來手邊有這本還沒看完的書籍，所以與這個詳細的文章，就去[Chiron  Chou網站](http://chiron.nicetypo.com/nt/ChironChou.nsf/ContentBypermaLink/0983E7F089C244F848256E4F003C1C30)的網站內看一下關於『小世界（Small
+World）』的相關介紹，關於這篇文章所提到的概念，其實跟我之前作的研究有一點相關、也可以說完全沒有關係，怎麼說呢？
+
+
+
+
+利用FUZZY（模糊理論）的觀點來看『小世界』觀點，每個人的朋友關係可以代表成一個對稱的矩陣空間上，對於這樣的矩陣空間裡，若是我們將友好關係利用某些運算結果模糊來看的話，我認識甲、甲認識乙，也可以當成我認識乙的話，這樣來說就是將彼此友好關係作一個簡單的『收斂（closure）』，講遠了 
+=______________= a
+
+
+
+
+不過不論怎樣，我對於這本書最欣賞的就是，是否可以將論文利用連結的方式來撰寫？那麼現在也就不用那麼痛苦，每天寫一些相關研究寫的要死要活的！！，直接一個超連結給別人去參考不就好了？
+
+
+
+
+　

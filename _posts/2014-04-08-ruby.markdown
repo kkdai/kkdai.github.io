@@ -1,0 +1,243 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2014-04-08 01:15:42+00:00
+slug: ruby-%e9%97%9c%e6%96%bccodecademy%e5%ad%b8%e7%bf%92ruby%e7%9a%84%e5%bf%83%e5%be%97
+title: '[Ruby] 關於Codecademy學習Ruby的心得'
+wordpress_id: 1376
+categories:
+- Ruby
+- Ruby on Rails
+---
+
+[Codecademy](http://www.codecademy.com/)是一個可以線上學習程式語言的地方，透過許多的線上題目，你可以快速地學習語言．目前支援的語言有Python，Ruby，PHO，CSS與JavaScript．
+
+
+
+
+每天花不到十分鐘，透過接近一個月的時間，我也把兩三百題都做完了．  
+在此記錄一些心得與比較重要的了解：　 
+
+
+
+
+**_[Codecademy](http://www.codecademy.com/)學習Ruby感想：_**
+
+
+
+
+這裡些先一些使用[Codecademy](http://www.codecademy.com/)在學習上的感想吧，希望對大家可以帶來一些幫助
+
+
+
+
+
+
+  * 題目不難，但是要讀懂題目比較困難：
+
+
+
+    * 大部份的概念其實在[Wiki](http://zh.wikipedia.org/wiki/Ruby)可以看到，但是透過一兩百題不斷地教導．很多觀念會慢慢地深入在你的心裡．
+
+
+
+  * 題目主要著重在觀念的傳遞，會不斷地教導:
+
+
+
+    * 這裡面主要會利用互動的方式（也就是叫你在螢幕上寫一段code）然後跑出他想要的結果．
+
+
+    * 所以可能～～寫一個 method 會跑了三個題目一步步來教導你，更別說class會有更多的題目來引導
+
+
+
+  * 真的看不懂？沒關係有提示:
+
+
+
+    * 別怕真的不會寫，他最後通常都有提示會告訴你應該怎麼進行這個題目．基本上全部會用到的語法都會給你．
+
+
+
+
+
+接下來會寫一些在這個地方學到個概念，其實之前光是靠Ruby Wiki 與一些自己在學習的實作上面就已經把大部份的概念了解．但是一步步仔細去看反而有不少令人驚豔的地方，讓人覺得Ruby真是個有趣的語言：
+
+
+
+
+**_關於Ruby的學習:_**
+
+
+
+
+
+
+  * **Chapter 15: Blocks Procs 跟 Lambda差異**
+
+
+
+    * 這一章節相當有趣，把三個容易搞錯的概念 Blocks Procs 與 Lambda來比較，這裡先把三種寫法都先寫一次
+
+
+
+      * Block:   
+
+
+
+        * block_a = { DO_SOMETHING }
+
+
+
+      * Proc:    
+
+
+
+        * proc_a = Proc.new {  DO_SOMETHING } 
+
+
+        *  proc_a.call
+
+
+
+      * Lambda:
+
+
+
+        * lambda_a = lambda { DO_SOMETHING }
+
+
+        * lambda_a.call
+
+
+
+
+    * 接下來會把它們的不同與差異來詳述一下:
+
+
+
+      * Proc 與 Lambda都是一種Block但是有一些差異~接下來會提到
+
+
+      * 跟Block不同，Lambda與Proc都可以當成參數傳遞並使用 .call 來呼叫
+
+
+      * Proc與Lambda都可以傳遞參數，但是Lambda會檢查參數的個數，但是Proc會把他裝成nil
+
+
+      * Lambda的return 會回到caller，但是Proc直接回傳
+
+
+
+        * 
+
+
+def batman_ironman_proc  
+victor = Proc.new { return "Batman will win!" }  
+victor.call  
+"Iron Man will win!"  
+end
+
+
+
+
+puts batman_ironman_proc
+
+
+
+
+**#print Batman will win!**
+
+
+
+
+def batman_ironman_lambda  
+victor = lambda { return "Batman will win!" }  
+victor.call  
+"Iron Man will win!"  
+end
+
+
+
+
+puts batman_ironman_lambda  
+**#print Iron Man will win!** 
+
+
+
+
+
+
+
+    * 更多部分可以參考: [http://www.adamjonas.com/blog/procs-and-lambdas/](http://www.adamjonas.com/blog/procs-and-lambdas/)
+
+
+
+  * **Chapter 16: Object-Oriented Programming(I)**
+
+
+
+    * 在物件導向的程式設計上面，根據[Wiki](http://zh.wikipedia.org/wiki/Ruby) 的說法是這樣子(等等會提到一些原因):
+
+
+
+      * Ruby的繼承功能相當脆弱，儘管Ruby是一個物件導向語言，Ruby內的許多規則，卻使得子類別有可能不小心就覆寫了父型別的功能，在《The Ruby Programming Language》一書中，建議除非程式設計師對一個型別相當了解，否則盡可能不要使用繼承。
+
+
+
+    * 關於繼承 (Inheritance)
+
+
+
+      * Ruby只支援單一繼承.. 
+
+
+      * Ruby在繼承上 Child 的constructor (Ruby叫做 initialize) 並不會呼叫Parent的 initialize.
+
+
+
+        * 使用上只能自己加上 super或是使用 composition 的做法.. [http://ruby.learncodethehardway.org/book/ex44.html](http://ruby.learncodethehardway.org/book/ex44.html)
+
+
+
+      * 關於變數在繼承上的應用
+
+
+
+        * @ instance variable: 是個別class分開的..  但是child 卻無法存取parent 的instance variable (會得到 nil)
+
+
+        * @@ class variable: 所有繼承體系的都會共用...  所以後面的不論是Parent還是Child 都會改寫到.....
+
+
+        * 更多:
+
+
+
+          * 可以看這篇 [http://www.railstips.org/blog/archives/2006/11/18/class-and-instance-variables-in-ruby/](http://www.railstips.org/blog/archives/2006/11/18/class-and-instance-variables-in-ruby/)  
+
+
+          * 或是這個問答 [http://stackoverflow.com/questions/15773552/ruby-class-instance-variable-vs-class-variable](http://stackoverflow.com/questions/15773552/ruby-class-instance-variable-vs-class-variable)
+
+
+
+
+
+    * 更多可以參考以下文章: 
+
+
+
+      * [http://www.railstips.org/blog/archives/2006/11/18/class-and-instance-variables-in-ruby/](http://www.railstips.org/blog/archives/2006/11/18/class-and-instance-variables-in-ruby/)
+
+
+      * [http://rubylearning.com/satishtalim/ruby_inheritance.html](http://rubylearning.com/satishtalim/ruby_inheritance.html)
+
+
+      * [http://ruby.learncodethehardway.org/book/ex44.html](http://ruby.learncodethehardway.org/book/ex44.html)
+
+
+
+

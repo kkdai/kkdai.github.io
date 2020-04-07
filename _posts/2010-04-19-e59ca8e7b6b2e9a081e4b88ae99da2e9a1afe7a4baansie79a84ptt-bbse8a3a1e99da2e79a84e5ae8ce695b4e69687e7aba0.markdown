@@ -1,0 +1,83 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2010-04-19 01:14:05+00:00
+slug: '%e5%9c%a8%e7%b6%b2%e9%a0%81%e4%b8%8a%e9%9d%a2%e9%a1%af%e7%a4%baansi%e7%9a%84ptt-bbs%e8%a3%a1%e9%9d%a2%e7%9a%84%e5%ae%8c%e6%95%b4%e6%96%87%e7%ab%a0'
+title: 在網頁上面顯示ANSI的PTT BBS裡面的完整文章
+wordpress_id: 1093
+categories:
+- 網路上好玩的事情
+---
+
+ 
+
+![ptt.jpg](http://farm5.static.flickr.com/4013/4458787847_a45918e511.jpg)
+
+ 
+
+有時候呢~ 大家在BBS上面看到很好玩的文章~ 很想分享給別人~ 偏偏那篇文章好笑的地方就在ANSI碼上面~ 或是一些BBS裡面所謂"推齊"的笑話~ 要用文章轉貼是很難表現出來的~~ 所以這時候可以用以下的方式來轉寄~~
+
+ 
+
+**必要軟體**:
+
+ 
+
+  
+  1. [PCMAN](http://pcman.openfoundry.org/) (用來上BBS用~ 還可以抓下ANSI碼~) 
+   
+  2. [PTT.CC縮網](http://ppt.cc/index.php?txt=2) (放在網路上的縮網址) 
+ 
+
+**方法:**
+
+ 
+
+![ptt1.jpg](http://farm3.static.flickr.com/2698/4458781713_800769b7e2.jpg)
+
+ 
+
+找到你想看的文章~ 按下右鍵 選取"下載正在閱讀的文章" –> “複製到剪貼簿(包含ANSI彩色)"
+
+ 
+
+這時候會PCMAN會把正個文章掃完~ 複製到你的剪貼簿裡面~
+
+ 
+
+ 
+
+![ptt2.jpg](http://farm5.static.flickr.com/4059/4459561180_843b56a614.jpg)
+
+ 
+
+接下來到PTT縮網址網頁: [http://ppt.cc/index.php?txt=2](http://ppt.cc/index.php?txt=2) 貼上內容後按下 "來鍋PTT縮文章"
+
+ 
+
+![ptt3.jpg](http://farm5.static.flickr.com/4033/4458781959_6cbc5f62f7.jpg)
+
+ 
+
+出現可愛哈士奇~ 就是網址已經準備好了~~ 各位可以到 [http://ppt.cc/WIOF](http://ppt.cc/WIOF) 看結果
+
+ 
+
+ 
+
+![ptt4.jpg](http://farm5.static.flickr.com/4060/4458782057_0331246fa9.jpg)
+
+ 
+
+雖然ANSI圖片還有BUG~ 不過可以寫是一些顏色跟推文~ 好笑的東西~~~ 
+
+ 
+
+幾篇好笑的PTT文章:
+
+ 
+
+  
+  * [DQ9勇者十里坡葉問(一個打十個)](http://ppt.cc/fxVD)

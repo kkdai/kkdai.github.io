@@ -1,0 +1,37 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2008-10-08 18:42:28+00:00
+title: PS3 相關文章收集
+wordpress_id: 965
+categories:
+- 遊戲天國
+---
+
+整理一下文章
+
+ 
+
+#### PS3可以使用USB硬碟，但是要改成FAT32 不能用NTFS
+  
+  * [PS3是否無法讀取USB80G硬碟!!](http://www.mobile01.com/topicdetail.php?f=281&t=286774)
+   
+  * [請問一個PS3 USB外接硬碟的問題](http://www.mobile01.com/topicdetail.php?f=281&t=600745) PS3裡面硬碟拿來當USB用 
+ 
+
+###PS3 硬碟更換圖解
+
+
+* [騷屁部落格 Blog Archive: _PS3 硬碟_自行_更換_心得](http://www.sopiyoyo.com/wordpress/?p=153)
+
+* [Goston's Blog  [PS3] 升級_更換PS3 硬碟_的方式](http://www.goston.net/2008/02/05/1131/)
+
+* [wen - 《_PS3_》DIY內建SATA_硬碟更換_【FUJITSU 200G】專存高清HD檔](http://www.wretch.cc/blog/N8855/6429637)
+
+### 應用程式
+
+* 「Folding@home」是史丹佛大學所主導的蛋白質摺疊研究計劃(是史丹佛大學所主導的蛋白質摺疊研究計劃) 
+   
+* [教學:PS3播放有字幕的TS影片](http://www.hd.club.tw/thread-3407-1-1.html)

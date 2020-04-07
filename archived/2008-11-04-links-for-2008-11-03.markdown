@@ -1,0 +1,83 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2008-11-04 00:11:40+00:00
+slug: links-for-2008-11-03
+title: links for 2008-11-03
+wordpress_id: 983
+categories:
+- 未分類
+---
+
+  * 
+                
+
+[這兩天Windows 7的消息鋪天蓋地，這裡總結了你應該知道的Windows 7的7件事：](http://chinese.engadget.com/2008/10/30/windows7-7-sentences/)
+
+
+                
+
+這兩天Windows 7的消息鋪天蓋地，這裡總結了你應該知道的Windows 7的7件事：
+
+1.Windows7並沒有大幅度修改Vista的架構，兩者沒有相容性的問題。如果程式在Vista下運作的很好，那麼在Windows7下也不會有什麼問題。
+
+2. Windows 7不像Vista那麼「煩人」，不斷彈出對話框來問這問那。Windows 7大多數的提示都被放到了一個控制板裡，在他們出現在系統列（system tray）之前會出現一個許可圖示，你可以選擇要看哪一些提示，或乾脆一次把他們關掉。
+
+3. Windows 7全新的「Jump List」透過秀出你常用、最近用過的文件，讓你想做的事情隨手可得。例如你在開始功能表或工具列上點了IE的圖示，你就可以看到最近造訪的網站列表。
+
+4. Windows 7讓建立家用網路更容易了。新的功能叫做HomeGroup，用簡單的方式就可以完成網路連線、檔案及文件共享，而且可以直接點系統列的圖標，在彈出來的選單上連接到Wi-Fi或3G網路。
+
+5. Windows 7 不會有Windows 7 Ultimate Extras，或者說那些原本的Vista桌面輔助程式、那些和Windows Live tools沒兩樣的東西，像是信件、相冊、msn等將可以在Windows Live的「wave three」下載。
+
+6. Windows 7運作的速度比Vista快！如果系統跑的是Vista，跑Windows 7會更快；如果是跑Vista的筆電，跑Windows 7的話筆電的電池續航力應該也會更好。
+
+7. Windows7也能在輕省筆電上跑得很開心。根據微軟Steven Sinofksy的說法，Windows 7團隊「即使在那些使用Atom處理器、記憶體只有1GB的低階輕省筆電，Windows 7的表現也讓他們內心感到很高興。」
+
+
+
+            
+  * 
+                
+
+[新 Windows 7 功能搶鮮看！](http://chinese.engadget.com/2008/10/29/windows-7-details-galore-interface-tweaks-netbook-builds-medi/)
+
+
+
+                
+
+(tags: [Windows7](http://delicious.com/kkdai/Windows7))
+
+
+            
+  * 
+                
+
+[Windows 7 - WIKI](http://zh.wikipedia.org/wiki/Windows_7)
+
+
+
+                
+
+(tags: [Windows7](http://delicious.com/kkdai/Windows7))
+
+
+            
+  * 
+                
+
+[PCADV捲土重來的Windows 7](http://www.pcadv.com.tw/?p=2019)
+
+
+                
+
+Windows 7 的介紹
+
+
+                
+
+(tags: [Windows7](http://delicious.com/kkdai/Windows7))
+
+
+            

@@ -1,0 +1,129 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2004-04-16 16:23:09+00:00
+slug: mt-%e4%b8%8b%e6%8b%89%e6%af%8f%e6%9c%88%e9%81%b8%e5%96%ae%e8%88%87%e5%8a%a0%e4%b8%8a%e5%88%a4%e6%96%b7%e5%ae%8c%e6%95%b4%e7%9a%84%e9%80%9a%e5%91%8a%e9%a3%b2%e7%94%a8%e9%80%9a%e7%9f%a5
+title: MT-下拉每月選單與加上判斷完整的通告飲用通知
+wordpress_id: 77
+categories:
+- 關於MT的學習心得
+---
+
+![下拉的前期文章](http://www.evanlin.com/blog/archives/0417/0417.jpg)
+
+
+
+
+恩恩，基本上我MT的針對於瀏覽者的最佳化方面的工作已經告一段落了，除了這次的這個。下一次貼與MT相關的東西，應該會考慮去[MT-Extensions](http://www.nonplus.net/software/mt/)翻翻看有哪一些比較有用的最佳化，或是一些寫好的程式拿來使用，不過最近[投稿研討會](http://icim2004.mis.cycu.edu.tw/index.asp)的計畫已經嚴重的影響到我五月多畢業的計畫，最近可能要進入前所未有的黑暗論文奮鬥期，果然重新審查論文，比寫一篇新的論文還簡單的說～～～～
+
+
+
+
+廢話不說了，這次主要要講兩個地方，第一個就是各位看到的『顯示他人引用』的部分，第二不份就是上面有提到的『每月彙整』的部分：
+
+
+<!-- more -->
+
+
+1.在顯示他人引用的部分，上次我只是寫出『告知他人，本文章的引用位置』，那麼如果真的有人引用你的文章，你要在哪裡察看呢？請在『每日彙整』(Individual Entry Archive)上加入你想放置的地方（像我釋放在『迴響』之前，全文之後）
+
+
+  
+
+
+
+
+
+引用
+
+
+
+
+
+<blockquote>
+**
+> 
+> 引用此篇網址： 
+> 
+> **
+以下是前來引用的連結
+<a href="">'' 來自 <a href="">
+
+
+
+> 
+> 
+<a name="">
+<a href="" target="new">  
+
+**文摘:**   
+
+**網誌:**   
+
+**引用時間:** 
+
+> 
+> 
+
+</blockquote>
+
+
+
+
+
+
+
+
+在這裡有幾個重要的東西，之前的引用部分，並沒有加入判斷<MTEntryIfAllowPings>，這個判斷是指說若你的那篇文章並沒有允許引用通告（比如說留言版，沒有通告的文章）需要加一些基本的判斷就是在以下的部分（之前的文章已經修改完畢～～～）
+
+
+  
+
+
+與
+
+
+
+
+
+
+2.在下拉的每月彙整選單方面（也就是上面那個圖形的程式部分），請在主索引上面加上以下的程式吧！！
+
+
+
+
+
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+if (restore) selObj.selectedIndex=0;
+}
+
+
+
+
+每月彙整
+
+
+
+
+
+
+
+
+前期文章
+
+<option value="">
+ (  )
+
+
+
+
+
+
+
+
+
+
+這樣應該就可以了～

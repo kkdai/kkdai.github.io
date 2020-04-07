@@ -1,0 +1,53 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2007-08-28 01:28:29+00:00
+slug: '%e9%bb%91%e7%b1%b3%e5%8d%a1%e5%87%ba%e7%8f%be-%e6%8e%a8%e6%8e%a8%e7%8e%8b%e6%8c%ab%e7%9a%84%e7%ad%89'
+title: 黑米卡出現~~ 推推王挫的等
+wordpress_id: 751
+categories:
+- 網路上好玩的事情
+---
+
+
+HEMiDEMi_Scriptlet_Action='hemicard';
+HEMiDEMi_Scriptlet_Username='kkdai';
+HEMiDEMi_Scriptlet_WebsiteId=1;
+HEMiDEMi_Scriptlet_Size='xl';
+HEMiDEMi_Scriptlet_Color='u';
+
+
+
+
+[黑米](http://www.hemidemi.com/home)一直是我蠻愛用的服務之一( 雖然他首頁真的很慢~~~ 而且每個鏈結還會連到一個很討厭的地方)。不過[黑米卡](http://www.hemidemi.com/blogtools/hemicard)是個蠻不錯的設計。其實這樣的貼紙，在[部落格觀察](http://look.urs.tw/)裡面早就有了。 [推推王](http://funp.com/)大概是最近很強勁的後起之秀，憑著[推推王](http://funp.com/)的按鈕系統與簡單的使用介面(不過IFRAME真的是很討厭的)。如果他們兩個可以修改一下的缺點，將會更好:
+
+[黑米](http://www.hemidemi.com/home):
+
+
+
+	
+  * 加速首頁的讀取速度
+
+	
+  * 減少系統資源的浪費
+
+	
+  * 讀取縮圖的速度加快
+
+
+當然[推推王](http://funp.com/)也不是沒缺點的，如果他們也修改以下的地方，將會更好用
+
+
+
+	
+  * 增加右鍵REGISTRY
+
+	
+  * 增加工具說明(不要每次都是外面的BLOGGER 在幫忙)
+
+	
+  * 每日網摘的系統
+
+

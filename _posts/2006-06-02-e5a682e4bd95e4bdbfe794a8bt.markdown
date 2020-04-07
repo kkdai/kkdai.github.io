@@ -1,0 +1,24 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2006-06-02 06:55:39+00:00
+slug: '%e5%a6%82%e4%bd%95%e4%bd%bf%e7%94%a8bt'
+title: 如何使用BT
+wordpress_id: 406
+categories:
+- 網路上好玩的事情
+---
+
+![](http://toget.pchome.com.tw/pic_main/network_transfer/22226_network_transfer_head.jpg)  
+(圖片: [PCHome](http://toget.pchome.com.tw/intro/network_transfer/network_transfer_p2p/22226.html))
+
+BT大概是近幾年最受歡的的下載技術了，而軟體BitComet也是最好用的軟體之ㄧ，要下載請到[PCHome](http://toget.pchome.com.tw/intro/network_transfer/network_transfer_p2p/22226.html)。一些相關網頁整理如下:
+
+  1. [BITCOMET下載網頁](http://toget.pchome.com.tw/intro/network_transfer/network_transfer_p2p/22226.html)
+  2. [BITCOMET教學](http://woodpecker.mysinamail.com/htm/bcteach.htm)
+  3. [BitComet參數設置詳解](http://ktzhk.com/viewthread.php?tid=582227)
+  4. [BitComet設定攻略](http://ktzhk.com/viewthread.php?tid=660643)
+  5. [BitComet提速教程](http://ktzhk.com/viewthread.php?tid=660888)
+  6. [害怕BT傷硬碟的都進來看看吧!](http://ktzhk.com/viewthread.php?tid=544367)

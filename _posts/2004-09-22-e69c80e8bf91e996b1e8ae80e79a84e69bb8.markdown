@@ -1,0 +1,25 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2004-09-22 15:35:31+00:00
+slug: '%e6%9c%80%e8%bf%91%e9%96%b1%e8%ae%80%e7%9a%84%e6%9b%b8'
+title: 最近閱讀的書
+wordpress_id: 147
+categories:
+- 書海裡的漫遊
+---
+
+去了趟美國, 最大的收穫. 除了寫了一堆程式碼, 胖了一圈之外, 大概就是去[Amazon](http://www.amazon.com/)買了一堆書吧
+
+[![](http://images.amazon.com/images/P/020170238X.01._PE16_PIdp-schmoo2,TopRight,7,-26_SCMZZZZZZZ_.jpg)](http://www.amazon.com/exec/obidos/tg/detail/-/020161622X/ref=wl_it_dp/102-9563240-7308123?%5Fencoding=UTF8&coliid=I1HIZ4JN4CEG38&v=glance&colid=1ADKR81BEUPFM)
+
+[  
+![](http://images.amazon.com/images/P/020161622X.01._PE23_PIdp-schmoo2,TopRight,7,-26_SCMZZZZZZZ_.jpg)](http://www.amazon.com/exec/obidos/tg/detail/-/020161622X/ref=wl_it_dp/102-9563240-7308123?%5Fencoding=UTF8&coliid=I1HIZ4JN4CEG38&v=glance&colid=1ADKR81BEUPFM)
+
+上面兩本都算是很好的書籍，也是我在美國一直在閱讀的書籍，Debugging 那本算是一本工具書，有很多實用的設計方法，另外一本很像是教導你當一個程式設計師的書籍，英文比較深    @__@"
+
+下面這兩本，都是大師的作品～～～ 不過～～ 還沒時間看～～～
+
+![](http://images.amazon.com/images/P/0735619670.01._PE32_PI_SCMZZZZZZZ_.jpg)[![](http://images.amazon.com/images/P/1556159005.01._PE32_PI_SCMZZZZZZZ_.jpg)](http://www.amazon.com/exec/obidos/tg/detail/-/1556159005/qid=1095826265/sr=8-1/ref=pd_csp_1/102-9563240-7308123?v=glance&s=books&n=507846)

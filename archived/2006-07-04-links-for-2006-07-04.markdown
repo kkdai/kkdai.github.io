@@ -1,0 +1,91 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2006-07-04 15:39:49+00:00
+slug: links-for-2006-07-04
+title: links for 2006-07-04
+wordpress_id: 432
+categories:
+- 每日網摘
+---
+
+
+	
+  * 
+		
+
+[Solution for comments spams](http://james.seng.cc/archives/000145.html)
+
+
+		
+
+SCODE 的來源~~~~
+
+
+		
+
+(tags: [mt-plugin](http://del.icio.us/kkdai/mt-plugin) [mt-spam](http://del.icio.us/kkdai/mt-spam))
+
+
+	
+
+	
+  * 
+		
+
+[小粋空間: MT-SCode プラグインによるコメントスパム対策（その1）](http://www.koikikukan.com/archives/2005/05/13-230055.php)
+
+
+		
+
+一個日文網站講解~~~ antispam 在MT上的方法~~~
+
+
+		
+
+(tags: [mt-plugin](http://del.icio.us/kkdai/mt-plugin) [mt-spam](http://del.icio.us/kkdai/mt-spam))
+
+
+	
+
+	
+  * 
+		
+
+[橘子工廠 ~~ Orange Factory ~~: 發表迴響 修改索引模版--引用項目](http://teacher.fyjh.tpc.edu.tw/cgi-bin/mt-comments.cgi?entry_id=77)
+
+
+		
+
+改改TRACKBACK 的引用吧~~~~
+
+
+		
+
+(tags: [mt-plugin](http://del.icio.us/kkdai/mt-plugin) [mt-spam](http://del.icio.us/kkdai/mt-spam))
+
+
+	
+
+	
+  * 
+		
+
+[博客园 - VinceYuan - 升级VC7项目到VC8的注意事项](http://vinceyuan.cnblogs.com/archive/2005/12/20/301188.html)
+
+
+		
+
+Migrate 到VC8 很多需要的注解都在這裡~~~~
+
+
+		
+
+(tags: [VC.NET](http://del.icio.us/kkdai/VC.NET))
+
+
+	
+
+

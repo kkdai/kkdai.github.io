@@ -1,0 +1,224 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2010-03-02 08:51:26+00:00
+slug: '%e8%88%8a%e5%9e%8bps3pre-slim%e5%8d%83%e7%a6%a7%e8%9f%b2-%e6%9c%83%e5%87%ba%e7%8f%be8001050f%e9%8c%af%e8%aa%a4%e4%b8%a6%e4%b8%94%e5%bc%b7%e5%88%b6%e7%99%bb%e5%87%bapsn'
+title: 舊型PS3(Pre-slim)千禧蟲--會出現8001050F錯誤並且強制登出PSN
+wordpress_id: 1092
+categories:
+- 頂級娛樂聲光站PS3
+---
+
+![ps3networkerror.jpg](http://farm5.static.flickr.com/4062/4399707667_5b44298e10.jpg)
+
+ 
+
+(PIC from [http://exophase.com/ps3/ps3-units-locked-out-from-psn-sony-says-8001050f-error-fix-due-soon-13989.htm](http://exophase.com/ps3/ps3-units-locked-out-from-psn-sony-says-8001050f-error-fix-due-soon-13989.htm))
+
+ 
+
+æ¨å¤©éæ²çæéè¦çå¤§äº~ å¤§æ¦å°±æ¯PS3åç¦§è²çäºå§ï¼ä¸»è¦ç¼ççåå å¦ä¸:
+
+ 
+
+**ä¸»è¦ç¼çæ©å**:
+
+ 
+
+  
+  * éèåçPS3(Pre-Slim) ä¹å°±æ¯ä¿ç¨±çèP 
+ 
+
+**ç¼çççç**:
+
+ 
+
+  
+  * éæ©çæåï¼ç±æ¼ä¸»æ©æ¿å¤å¥é¯èª¤ï¼æéæè¨­å®å°2001/01/01(æ­¤æéæ¯é¨æ©ç)ã å°éè£¡ä¾çåèçå½±ç      
+
+[youtube http://www.youtube.com/watch?v=f9orgIzHJ4Y&hl;=en]
+
+  
+   
+  * PSNç¡æ³ç»å¥(åºç¾8001050F ä¸¦ä¸å¼·å¶ç»åº) 
+   
+  * ä»è²»ä¸è¼çéæ²ç¡æ³é å©éç©(èªè­åºç¾é¯èª¤) 
+   
+  * çæ¯ç¡æ³é å©æ¥ç 
+ 
+
+**ç¼çåé¡ä¸»å **:
+
+ 
+
+è«æ¥çåæ: 
+
+ 
+
+<blockquote>  
+> 
+> [http://www.neogaf.com/forum/showthread.php?t=388872](http://www.neogaf.com/forum/showthread.php?t=388872)         
+The going theory is that the PS3 is storing some form of date in GMT, then modifying that to get whatever you see in the on-screen clock. That modification process seems to be fine--the system can take 2/28/2010, 9PM GMT, add four hours, and get 3/1/2010, 1AM random time zone.         
+What's apparently effed, as speculation goes, is when the internal GMT-tracking rolls over to 3/1. It's either not rolling, or rolling to 2/29, at which point a system tries to add/subtract from 2/29, which it can't do because the front-end calendar doesn't have a 2/29/2010, and shit explodes. Seemed to happen around 4PM PDT, which I think is 12AM GMT, so.         
+And the PS3 launched in 2006; it's hit 4 2/28s so far. 2007 and 2009 were odd-numbered years; 2008 was an even, and a leap year. 2010 is the first even non-leap-year the system's been around for. If some sort of base-level math is choking on itself, it may have ruled out the odd 2007 and 2009 successfully, but is convinced the even 2010 is a leap year (this part I'm less sure of, but is why leap year could theoretically come into play at some point.)
+> 
+> </blockquote>
+
+ 
+
+ç¿»è­¯å°±æ¯:(ä¾èª:[http://www.cngba.com/thread-18683473-1-1.html](http://www.cngba.com/thread-18683473-1-1.html))
+
+ 
+
+<blockquote>  
+> 
+> PS3åèæ¶éå­å¨äºä¸äºGMTçæ°æ®è¡¨ï¼èä¸å®åºè¯¥ä¼æ´æ¹ä½ æçå°çæ¶é´ãæ¶é´çä¿®æ¹åºè¯¥æ¯æ­£å¸¸ç~ç³»ç»æ¶é´æ¯2/28/2010ï¼ 9PM GMTï¼å¾å4ä¸ªå°æ¶åºè¯¥å°±æ¯3/1/2010ï¼ 1AM GMTè¿æ¯æ²¡éç~        
+ç®åPS3çé®é¢æ¯ï¼å½GMTæ¶é´å°3/1/2010 0AM GMTçæ¶åï¼PS3åé¨æ¶éä¸è½å°è¾¾3/1/2010ï¼é°å¹´è®¡ç®åºéï¼æè2/29/2010ï¼å ä¸ºä¹ï¼å ä¸ºä¸è½å°3/1/2010ï¼æä»¥PS3å°±å¨å¾æ­»éå¯»æ¾2/29/2010ï¼ä½æ¯åèçæ¥åè¡¨èªç¶æ¯ä¹2/29/2010çï¼ä¹åè¯´äºï¼ä¸æ¯é°å¹´ï¼æä»¥å§ç»å°±çåäºâ¦â¦æ¶é´å°±åå°äº12/31/1999ï¼-_-âï¼ä»ç»è°æ¥åºéçæ¶é´å°±æ¯å¨3/1/2010 0AM GMTï¼å¶å®åºåæ¶é´è¯·èªå·±è®¡ç®ï¼         
+PS3æ¯å¨2006å¹´åå®çï¼æç§æ­£å¸¸æ¶é´æ¥è¯´åºè¯¥æ¯å·²ç»éè¿äº4æ¬¡2/28ï¼ 2007/2009æ¯åæ°å¹´ä»½ï¼2008æ¶å¯ä¸çåæ°ï¼å¹¶ä¸æ¯é°å¹´ï¼2010æ¯ç¬¬ä¸ä¸ªéé°å¹´çåæ°å¹´ãå¦ææ¯ä»¥æåºç¡ççµèç¨ç4å¹´é°å¹´è®°çè¯ï¼2006å¹´ä¹åçç¬¬ä¸ä¸ª4å¹´ä¼è¢«è®¡ç®æé°å¹´ï¼å ä¸ºåæ°çä¸¤ä¸ªå¹´ä»½è¯å®ä¸æ¯äº~ æä»¥2010å°±è¿æ ·è¢«æ²å§äºâ¦â¦åºäºä¸ä¸ªä¸å­å¨ç2/29/2010æ¥æâ¦â¦ï¼å¦æççæ¯è¿æ ·çè¯â¦â¦é£ä¹æçµæ± æ¢å¤ä¹åï¼å®æ¹æ²¡æä»»ä½è¡¥ä¸æ¹æ¡ï¼2014å¹´ä¼åæ¬¡æ²å§â¦â¦
+> 
+> </blockquote>
+
+ 
+
+**ç°¡å®çèªª**: å°±æ¯ç³»çµ±æå°æ¼éå¹´(leap year)å¤æ·æ©å¶åºç¾é¯èª¤~ ç¡¬é«å§çæéè¨­ç½®ææ¯é¯èª¤ç~ å°è´ä½ é£ä¸PSNææ¯ç©ä»è²»ä¸è¼çéæ²æåºç¾åé¡ã ç¶ç¶ï¼å çºåé¡æ¯åºå¨ä½ çä¸»æ©ä¸é¢~ ä¹å°±æ¯èªª~ ç¶æéå°äº03/02ä¹å¾~ ä¸åå°±ææ­£å¸¸äºã éåæåSCEé¤äºæ´æç¡¬é«ä¹å¤~ å°±æ¯ç­å¾æéçæµéä¾ä¿®æåé¡ãææ°çæ´æ°æ¯~ åªè¦ç³»çµ±æéå°äº03/02~ ä¸åå°±ææ¢å¾©æ­£å¸¸äºã
+
+ 
+
+ 
+
+**SCEçå±æ©èç**:
+
+ 
+
+éä¸åçåé¡æ¯åå ±æ¼åå¤§è«å£ççµæï¼ç¶ç¶SCEèªå·±çè¨è«åä¹æè©³ç´°çè¨è«ä¸²ã[PlayStation@Networkçè¨è«åä¸](mailto:PlayStation@Network)(Error Code: 8001050F) æèææ°çæ³åå ±ä»¥ååé¡è§£éãä½æ¯è®æååéé ­ä¾çç~ SCEæ¯å¦ä½èçéååé¡çã
+
+ 
+
+<blockquote>  
+> 
+> Twitter update:
+> 
+>    
+> 
+> We're aware that many of you are having problems connecting to PSN, and yes, we're looking into it. Stay tuned for updates. [9:09 AM Mar 1st ](http://twitter.com/SonyPlayStation/status/9801870518)via web
+> 
+>    
+> 
+> From Playsation twitter [9-09 AM Mar 1st](http://twitter.com/SonyPlayStation/status/9801870518)
+> 
+> </blockquote>
+
+ 
+
+éæPS blog ä¹update
+
+ 
+
+<blockquote>  
+> 
+> [Playstation](http://blog.us.playstation.com/2010/02/playstation-network-status-update/) Blog updated
+> 
+>    
+> 
+> [Posted by Jeff Rubenstein // Social Media Manager](http://blog.us.playstation.com/?author=5519)
+> 
+>    
+> 
+> Weâre aware that many of you are having difficulty connecting to the PlayStation Network this evening. Those of you with âslimâ PS3s (the 120/250 GB models) appear to be unaffected.
+> 
+>    
+> 
+> Know that we have narrowed down the issue and have engineers working to restore service even as you read this. We apologize for any inconvenience this may cause you, and genuinely appreciate your patience while we work to resolve this.
+> 
+>    
+> 
+> In the meantime, you may want to [follow our Twitter account](http://twitter.com/sonyplaystation) for the latest updates.
+> 
+>    
+> 
+> Tagged //[ps3](http://blog.us.playstation.com/tag/ps3/)
+> 
+>    
+> 
+> Filed: [PlayStation Network](http://blog.us.playstation.com/category/playstation-network/)
+> 
+> </blockquote>
+
+ 
+
+å¾æé¡¯ççå¾åºä¾~ éæå~ SCE éæéååé¡å®ç´çç¶æè·PSNæéï¼æè¨±éæ¨£ä¾èªªå§~~~ ç¶ææ¯ç¶²è·¯çåé¡å¯ä»¥è¢«ç¨æ¶é«è«èªª"éæ¯å¯ä»¥è¢«ä¿®å¾©ç"ã æä»¥åè¬ææ¯PSNçåé¡~ ä¹å¯ä»¥é¿åä½¿ç¨èçç¼å¤§è¦æ¨¡ææ©æ½®ã
+
+ 
+
+<blockquote>  
+> 
+> Playstation Twitter:
+> 
+>    
+> 
+> PSN status update: We're narrowing down the issue and continue to work to restore service to all. Updates as soon as we have them. [11:44 AM Mar 1st ](http://twitter.com/SonyPlayStation/status/9808291518)via web
+> 
+> </blockquote>
+
+ 
+
+éæå~ è¶ç¥å¥çäºæç¼çäº~~~ ææå°±æ¯ç¡¬é«çåé¡~~ ä¹ä¸ç¥é SCE è¦æéº¼å»è§£æ±ºä¸¦ä¸restore åªä¸åçservice???? åªæ¯çæ¸¬éæ¨£çupdate æ¯çºäºè¦çµ¦ä¸è¬ä½¿ç¨èä¸é»äº¤ä»£~~~ (åäººèªçºè·æ¿åºå®å¡èªª"æåä¸æé¤" æèç°æ²åå·¥ä¹å¦)
+
+ 
+
+<blockquote>  
+> 
+> Playstation Twitter:
+> 
+>    
+> 
+> PSN status update (part 2): Readers/followers are confirming that "slim" units (120/250 GB models) are connecting normally. [11:45 AM Mar 1st ](http://twitter.com/SonyPlayStation/status/9808346549)via web
+> 
+> </blockquote>
+
+ 
+
+å~ çä¸ç¥é~ æ¯ä»åè¦ä¿®BUG éæ¯è¦å¹¾è¬æ¶çä½¿ç¨èä¾åç­åé¡å¢??? ç«ç
+¶é£ç¢ºå®slimçèåæ©åæ¯å¥½çé½è¦ééä½¿ç¨èä¾åå ±ï½~ å¯è½æ¯åæ­£å¤§å®¶é½éæ¨£èªªäº~ ç¶ç¶éæ¨£æ¯æå¥½çåè¦é¿~~~ äºå¯¦ä¸å¶å¯¦pre-slimä¹æ¯ææ©åä¹åçã
+
+ 
+
+### 
+
+ 
+
+<blockquote>  
+> 
+> ### Playstation blog
+> 
+>    
+> 
+> ### [PlayStation Network Service Restored](http://blog.us.playstation.com/2010/03/playstation-network-service-restored/)
+> 
+>    
+> 
+> [Posted by Patrick Seybold // Sr. Director, Corporate Communications & Social Media](http://blog.us.playstation.com/?author=35)
+> 
+>    
+> 
+> We are aware that the internal clock functionality in the PS3 units other than the slim model, recognized the year 2010 as a leap year. Having the internal clock date change from February 29 to March 1 (both GMT), we have verified that the symptoms are now resolved and that users are able to use their PS3 normally.
+> 
+>    
+> 
+> If the time displayed on the XMB is still incorrect, users are able to adjust time settings manually or via the internet. If we have new information, we will update you through the [PlayStation.Blog](http://blog.us.playstation.com/) or [PlayStation.com](http://us.playstation.com/).
+> 
+>    
+> 
+> We apologize for any inconvenience this may have caused.
+> 
+> </blockquote>
+
+ 
+
+ç¸½ç®~ è³æ·±ç¸½ç£ç¸½ç®å¨blogä¸é¢ç¼è¡¨äºæ°çæ¶æ¯ï¼ä¸¦ä¸ç¸½ç®è­å¯¦äºéæ¬¡çåé¡æ¯ç¼çå¨ç¡¬é«ä¹ä¸ãä½æ¯ç¶å¥¹åç¼åºéåè²æçæå~ å¶å¯¦å¤§é¨åçæåå·²ç¶è®ææ¯03/02äº~~ æä»¥éååé¡ç¶ç¶ä¹å°±åä¹ä¸æåºç¾å¦~~~~ ç¶ç¶~SCEä¹åªè¦è¼ææ·¡å¯«çèªªåº~ "We apologize for any inconvenience this may have caused." éééæ®µè²æ~ å¶å¯¦è¨±å¤ä½¿ç¨èæè·æä¸æ¨£æèå¤ªå¤ççåï¼å¦æææ¯èæ©å~ åªåæ©åæç¼çåé¡? ç¼çéåé¡çç·åéæ©æå¥½å? çºä»éº¼ææéæ¨£åé¡? ä¹å¾éæç¼çå? ææ³æç¶å¸¸è·å®¢æ¶~(å°¤å¶æ¯æ¥æ¬äºº)äº¤æç¶é©çäºº~ é½ææä¸æ¨£ççå~ ä½æ¯ä»åå¾æé¡¯çé¿æçææå¯è½çåé¡~ åªæ¯è¼ææ·¡å¯«çåè¨´ä½ ~ ç¾å¨æ¯å¥½ç~~~~~ 
+
+ 
+
+ä»ä¹ä¸æ¢èªª~ ä»¥å¾æä¸æç¼çåé¡~ å çºèç¾å¨æè¨­è¨çç¡¬é«~ å¦æ2010æç¼çåé¡~ é£éº¼2012å çºåå¥½æ¯éå¹´~ æä»¥æ¯å¥½ç~ 2014æè©²å°±æç¼çåé¡~ ææ³SCEåªæ¯å¨ç­å¾èPS4(å¤§è­æ¨?)è½è§£æ±ºåé¡ã

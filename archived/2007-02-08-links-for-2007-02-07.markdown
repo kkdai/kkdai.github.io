@@ -1,0 +1,105 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2007-02-08 08:17:00+00:00
+slug: links-for-2007-02-07
+title: links for 2007-02-07
+wordpress_id: 592
+categories:
+- 每日網摘
+---
+
+
+	
+  * 
+		
+
+[鋒哥對你說: 灌籃高手的回憶「10 Days after」](http://linfon0423.blogspot.com/2007/02/10-days-after.html)
+
+
+		
+
+再熱銷1億本之後~~ 灌籃高手的作者在黑板上畫出~~  番外篇?
+
+
+		
+
+(tags: [SlamDunk](http://del.icio.us/kkdai/SlamDunk) [comic](http://del.icio.us/kkdai/comic))
+
+
+	
+
+	
+  * 
+		
+
+[Visual C   2005 上開發 C   程式與 Boost Library 使用技巧](http://www.microsoft.com/taiwan/msdn/events/visualc/event070208_1.htm)
+
+
+		
+
+有興趣聽Boost的人可以聽聽看~~~
+
+
+		
+
+(tags: [C++](http://del.icio.us/kkdai/C++) [BOOST](http://del.icio.us/kkdai/BOOST))
+
+
+	
+
+	
+  * 
+		
+
+[Boost Test Library](http://www.boost.org/libs/test/doc/index.html)
+
+
+		
+
+簡單的文件去教導你使用Boost~~
+
+
+		
+
+(tags: [C++](http://del.icio.us/kkdai/C++) [BOOST](http://del.icio.us/kkdai/BOOST))
+
+
+	
+
+	
+  * 
+		
+
+[雜牌軍現象與石油提鍊作用 : 愛德華日誌](http://nettrace.blogspirit.com/archive/2007/01/25/%E9%9B%9C%E7%89%8C%E8%BB%8D%E7%8F%BE%E8%B1%A1%E8%88%87%E7%9F%B3%E6%B2%B9%E6%8F%90%E9%8D%8A%E4%BD%9C%E7%94%A8.html#comments)
+
+
+		
+
+真是一語點醒夢中人~~~  想當初出去打戰的時候 就是有這種感受~
+
+
+		
+
+(tags: [Manage](http://del.icio.us/kkdai/Manage))
+
+
+	
+
+	
+  * 
+		
+
+[工作被外包　美國電腦工程師現在掃狗屎-Yahoo!奇摩新聞](http://tw.news.yahoo.com/article/url/d/a/070206/1/a947.html)
+
+
+		
+
+恩~~~~ 人力外包的狀況越來越嚴重~
+
+
+	
+
+

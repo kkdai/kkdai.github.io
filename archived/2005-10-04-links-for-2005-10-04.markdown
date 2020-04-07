@@ -1,0 +1,72 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2005-10-04 15:50:06+00:00
+slug: links-for-2005-10-04
+title: links for 2005-10-04
+wordpress_id: 276
+categories:
+- 未分類
+---
+
+
+	
+  * 
+		
+
+[PermaLink--Eric's Complete Guide To BSTR Semantics](http://blogs.gotdotnet.com/ericlippert/archive/2003/09/12/52976.aspx)
+
+
+		
+
+在使用BSTR的時候，這個網頁提供許多很重要的注意事項是個很好的參考~~
+
+
+		
+
+(tags: [spec](http://del.icio.us/kkdai/spec) [code](http://del.icio.us/kkdai/code))
+
+
+	
+
+	
+  * 
+		
+
+[MSDN--String Manipulation Functions](http://msdn.microsoft.com/library/default.asp?url=/library/en-us/automat/htm/chap7_2xgz.asp)
+
+
+		
+
+MSDN上關於BSTR的操作介紹，但是有許多小地方並沒有提到，比如說~~equivalence  of NULL and L"" in BSTR semantics
+
+
+		
+
+(tags: [code](http://del.icio.us/kkdai/code) [spec](http://del.icio.us/kkdai/spec))
+
+
+	
+
+	
+  * 
+		
+
+[MP3-Info Extension](http://www.mutschler.de/mp3ext/)
+
+
+		
+
+許多mp3的info ID3或是ID3V2 都有~~~
+
+
+		
+
+(tags: [spec](http://del.icio.us/kkdai/spec))
+
+
+	
+
+

@@ -1,0 +1,34 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2007-05-30 08:22:35+00:00
+slug: links-for-2007-05-29
+title: links for 2007-05-29
+wordpress_id: 659
+categories:
+- 每日網摘
+---
+
+
+	
+  * 
+		
+
+[SteveX Compiled ? String Formatting in C#](http://blog.stevex.net/index.php/string-formatting-in-csharp/)
+
+
+		
+
+在C#上面去使用類似sprintf 的東西
+
+
+		
+
+(tags: [CSharp](http://del.icio.us/kkdai/CSharp) [Sprintf](http://del.icio.us/kkdai/Sprintf) [C++](http://del.icio.us/kkdai/C++))
+
+
+	
+
+

@@ -1,0 +1,317 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2004-05-19 15:50:42+00:00
+slug: c%e8%aa%9e%e8%a8%80%e7%9b%b8%e9%97%9c%e6%8e%a2%e8%a8%8e%ef%bc%8c%e7%b4%b0%e7%a9%b6%e6%8c%87%e6%a8%99pointer%e8%88%87%e5%8f%83%e7%85%a7reference
+title: C語言相關探討，細究指標(pointer)與參照(reference)
+wordpress_id: 95
+categories:
+- STL學習心得
+---
+
+感謝網友『阿仁』對於我BLOG裡面程式碼的訂正，在參考過『[More
+Effective C++](http://www.jjhou.com/jjtbooks-more-effective-cpp.htm)』中，對於指標使用上的補充順便加入Reference的一些資料。所以一併將這些資料整理在這裡，順便提一下今天[侯捷老師](http://www.jjhou.com/)講解一些關於Reference 
+Counting
+的概念。只能說很多東西要不斷的複習，不然真的都會遺忘，這幾次的面試有很多間公司都搞砸了也就是因為這個原因，原本五專時代都記得的東西，因為許久沒有使用，真的都忘的乾乾淨淨。
+
+
+<!-- more -->
+
+
+
+  
+  1. **指標(Pointer)與參照(Reference)   
+
+    **在C語言中，雖然指標與參照在使用上極為類似，但是實際上有許多地方式都是不同的。我將這些不同做成以下列表出來：  
+
+    
+
+
+      
+      <table cellspacing="1" border="1" width="62%" >
+        <tr >
+          
+<td width="23%" align="center" bgcolor="#99CCFF" >　
+</td>
+          
+<td width="33%" align="center" bgcolor="#99CCFF" >指標(Pointer)   
+
+            (type *p)
+</td>
+          
+<td width="44%" align="center" bgcolor="#99CCFF" >參照(Reference)  
+
+            (type &p)
+</td>
+        </tr>
+        <tr >
+          
+<td width="23%" align="center" bgcolor="#FFCCFF" >記憶體配置
+</td>
+          
+<td width="33%" align="center" >配置指標記憶體（4Byte)
+</td>
+          
+<td width="44%" align="center" >不配置記憶體，本身為別名(Alias)
+</td>
+        </tr>
+        <tr >
+          
+<td width="23%" align="center" bgcolor="#FFCCFF" >初始值給定
+</td>
+          
+<td width="33%" align="center" >可以後來指定（不建議，但是允許這樣給值）
+</td>
+          
+<td width="44%" align="center" >必須在變數成立的時候，直接給定初始值
+</td>
+        </tr>
+        <tr >
+          
+<td width="23%" align="center" bgcolor="#FFCCFF" >內容值(p)
+</td>
+          
+<td width="33%" align="center" >代表一個記憶體位置，指向給定的目標值
+</td>
+          
+<td width="44%" align="center" >直接代表目標值
+</td>
+        </tr>
+        <tr >
+          
+<td width="23%" align="center" bgcolor="#FFCCFF" >設定位置  
+
+            (目標值Q)
+</td>
+          
+<td width="33%" align="center" >p=&Q
+</td>
+          
+<td width="44%" align="center" >p=Q  
+
+            (在此為將Q另外設定一個名字p)
+</td>
+        </tr>
+        <tr >
+          
+<td width="23%" align="center" bgcolor="#FFCCFF" >給值  
+
+            (目標值Q)
+</td>
+          
+<td width="33%" align="center" >*p=Q  
+
+            (將Q的值給*p)
+</td>
+          
+<td width="44%" align="center" >p=Q  
+
+            (在此為將Q另外設定一個名字p)
+</td>
+        </tr>
+      </table>
+      
+    
+
+
+    
+
+  
+
+    根據以上的表格，順道提到一般課本常提到的Call by address與
+    Call by reference的參照方式，撰寫如下：
+
+
+    
+
+
+      
+      <table cellspacing="1" border="1" width="57%" >
+        <tr >
+          
+<td width="50%" bgcolor="#99CCFF" >
+            
+
+Call by Address  
+
+            (use Pointer)
+</td>
+          
+<td width="50%" bgcolor="#99CCFF" >
+            
+
+Call by Reference  
+
+            (use Reference)
+</td>
+        </tr>
+      
+      <tr >
+        
+<td width="50%" bgcolor="#000000" >
+          
+
+#include <iostream.h>  
+
+          void fun1(int * p, int * q)  
+
+          {  
+
+           *p=*p+*q;  
+
+          }  
+
+            
+
+          void main()  
+
+          {   
+
+           int i=3,j=4,k;  
+
+           fun1(&i,&j);  
+
+           cout <<i;  
+
+          }
+</td>
+        
+        
+<td width="50%" bgcolor="#000000" >#include <iostream.h>  
+
+          void fun1(int & p, int & q)  
+
+          {  
+
+           p=p+q;  
+
+          }  
+
+            
+
+          void main()  
+
+          {   
+
+           int i=3,j=4,k;  
+
+           fun1(i,j);  
+
+           cout <<i;  
+
+          } 
+</td>
+        </tr>
+      </table>
+      
+    
+
+
+    
+
+透過這個列表，可以清楚的兩者的差異，所以在之前文章所提到的錯誤為：
+
+
+    
+
+
+      
+    <table cellspacing="1" border="1" width="37%" >
+      <tr >
+        
+<td width="100%" align="center" bgcolor="#000000" >
+          
+
+int x=10;  
+
+           int *v;  
+
+           *v=x;;
+
+
+        
+</td>
+      </tr>
+    </table>
+      
+    
+
+
+    
+
+在此錯誤為，由於我的指標 *v 並沒有初始化指標，所以v的值是一個系統給的亂數（或是之前變數留下來的資料），其實這樣去指定是相當危險的一件事情。所以要設定v去指定x的時候，應該使用 
+    v=&x 去設定一個位置在v之中。之前會這樣想也因為我對於字串指標的設定有一點混淆
+    char *s="test ~~~ string~~~";
+    像這樣的句子，雖然也是起使一個指標，但是由於電腦會先根據字串"test
+    ~~~ string~~~"去分配一個位置給他，然後再把位置指定給s
+    ，所以不需要再配置一次位置（記得這個問題在趨勢與友立似乎也一直被問到～～）  
+
+      
+
+    但是這裡順道一提 char *s="test ~~~ string~~~"; 與 char
+    s[]="test ~~~ string~~~";
+    若要顯示整段文字，勢必得使用後者，因為cout <<*s;
+    只會顯示出第一個字元，而<strike> cout <<sp[];</strike> cout<<sp; 
+    則會顯示整個字串，這也是字串與指標的一種混和運用。太久沒寫的人(像我)，這邊也會有種混淆的感覺＠﹍﹍﹍＠  
+
+  
+
+  
+  2. **有效的參照與節省記憶體 （Reference Counting ）**  
+
+      
+
+    同樣在『[More
+Effective C++](http://www.jjhou.com/jjtbooks-more-effective-cpp.htm)』的第30條之中，裡面有提到一個概念(Reference
+    Counting )，主要是利用運算子多載（Operator Overloading)的概念，將
+    = （Assign給值）這個運算子，更改其用途，來節省記憶體的使用。一般而言，若是  
+
+    
+
+
+      
+    <table cellspacing="1" border="1" width="37%" >
+      <tr >
+        
+<td width="100%" align="center" bgcolor="#000000" >
+          
+
+String a,b,c,d,e;  
+
+          a=b=c=d=e="Hello";
+
+
+        
+</td>
+      </tr>
+    </table>
+      
+    
+
+
+    
+
+在以上的程式之中，記憶體是會分配『五塊記憶體（大小為STRING）』，因為原來在String中的運算子『＝』的定義是Assign
+    by Copy的方式，也就是會同樣的分配一塊記憶體，然後複製其內容值到每一塊記憶體之中。所以若是針對
+    『＝』加以更改其作用值，若是在參考的時候（也就是單純的String
+    互傳值）的話，應該是將記憶體節省下來，直接讓LHS（左手邊的變數）直接指向RHS（右手邊）的變數才對。並且還要可以計數所有有參照到該記憶體的變數個數（所以才叫Reference
+    Counting)，詳細說明，請看『[More
+Effective C++](http://www.jjhou.com/jjtbooks-more-effective-cpp.htm)』的P.183  
+
+      
+
+      
+
+      
+
+  
+
+
+
+
+　
+
+
+

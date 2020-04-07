@@ -1,0 +1,19 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2004-08-20 22:18:47+00:00
+slug: listctrl%e7%9a%84%e4%b8%80%e4%ba%9b%e7%94%a8%e6%b3%95
+title: ListCtrl的一些用法
+wordpress_id: 141
+categories:
+- VC++程式設計
+---
+
+![List.jpg](http://www.evanlin.com/blog/archives/0820/List.jpg)
+
+ListCtrl在MFC之中算是很好使用的工具，可以很輕鬆的利用一個List來做顯示、新增、刪除一些資訊。最近有一些使用上的心得，可以跟大家分享：
+
+  1. **_延伸設定_**：List.SetExtendedStyle(List.GetExtendedStyle() | LVS_EX_HEADERDRAGDROP | LVS_EX_ONECLICKACTIVATE);可以設定一些延伸功能，其餘可看MSDN。
+  2. **_自動對應到選擇的欄位_**：List.EnsureVisible(_nItem_,FALSE);若是你的List 時常需要Refresh 但是又怕被Scroll跑掉，可以使用這個，確保你select到的欄位可以被看到。

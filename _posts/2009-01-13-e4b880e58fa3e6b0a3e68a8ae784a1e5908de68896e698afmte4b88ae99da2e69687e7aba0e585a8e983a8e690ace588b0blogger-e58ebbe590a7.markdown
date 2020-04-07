@@ -1,0 +1,49 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2009-01-13 10:13:55+00:00
+slug: '%e4%b8%80%e5%8f%a3%e6%b0%a3%e6%8a%8a%e7%84%a1%e5%90%8d%e6%88%96%e6%98%afmt%e4%b8%8a%e9%9d%a2%e6%96%87%e7%ab%a0%e5%85%a8%e9%83%a8%e6%90%ac%e5%88%b0blogger-%e5%8e%bb%e5%90%a7'
+title: 一口氣把"無名"或是"MT"上面文章全部搬到Blogger 去吧!!!
+wordpress_id: 1014
+categories:
+- 網路上好玩的事情
+- 關於MT的學習心得
+---
+
+![BlogTrans.jpg](http://farm4.static.flickr.com/3410/3192320675_1f58915b26.jpg)
+
+ 
+
+之前曾經嘗試的利用[glin的搬家方法](http://blog.xdite.net/?p=401)把自己架設的MT搬到Blogger 上面。不過由於有每天五十篇的限制於是就作罷了。不過還好Blogger本身也把搬家的部分做好了(也有提供搬出來的部分) 請參考 [最方便的無名搬家到Blogger方式 (可搬留言，無一天五十篇限制)](http://gaagaaga.blogspot.com/2008/09/blogger.html)
+
+ 
+
+步驟很簡單、節錄如下
+
+ 
+
+  
+  1. 把要搬家的網站(MT、無名)匯出到檔案 
+   
+  2. 利用[BlogTrans](https://sourceforge.net/project/showfiles.php?group_id=211548) 來轉換到MT 或是BLOGGER格式 
+   
+  3. 到Blogger 開設新網站，利用設定裡面的匯入把資料匯入 
+ 
+
+現在發現的問題有~~~~~
+
+ 
+
+  
+  * 可能是我MT設定不對，我的MT匯出檔必須先把format 改成DOS格式才能正常讀取 
+   
+  * 匯出之後~~~ 常常第一篇(日期最早的一篇)無法正常匯入到Blogger 
+   
+  * 有496篇左右的限制、由於我文章超過八百篇，第二次得用手把第一次匯入好的取消 
+ 
+
+ 
+
+不過道也是匯出成功了~~~~~ 太棒啦!!!

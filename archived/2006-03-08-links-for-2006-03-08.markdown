@@ -1,0 +1,91 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2006-03-08 15:42:55+00:00
+slug: links-for-2006-03-08
+title: links for 2006-03-08
+wordpress_id: 350
+categories:
+- 每日網摘
+---
+
+
+	
+  * 
+		
+
+[Helldesign](http://en.helldesign.pl/)
+
+
+		
+
+他的WEB設計相當的炫~~~ 中間的部分原本以為是FLASH，結果後來發現是圖片~ 竟然還有LOAD的效果~~~
+
+
+		
+
+(tags: [webdesign](http://del.icio.us/kkdai/webdesign))
+
+
+	
+
+	
+  * 
+		
+
+[憂鬱馬戲團 Blue Circus: 關於申請部落格](http://blog.bluecircus.net/archives/000807.html)
+
+
+		
+
+想申請個BLOG??? 看憂鬱馬戲團的這篇介紹文章
+
+
+		
+
+(tags: [TWblog](http://del.icio.us/kkdai/TWblog))
+
+
+	
+
+	
+  * 
+		
+
+[憂鬱馬戲團 Blue Circus: 你也可以有「新聞聯播」](http://blog.bluecircus.net/archives/003187.html)
+
+
+		
+
+教導怎麼在mt 上面去做新聞聯播
+
+
+		
+
+(tags: [mt](http://del.icio.us/kkdai/mt))
+
+
+	
+
+	
+  * 
+		
+
+[NewsGator Online](http://www.newsgator.com/home.aspx)
+
+
+		
+
+有提供rss feed service 的網站~~ 可以讓你做出新聞聯播的功能在MT上
+
+
+		
+
+(tags: [MT](http://del.icio.us/kkdai/MT) [news](http://del.icio.us/kkdai/news))
+
+
+	
+
+

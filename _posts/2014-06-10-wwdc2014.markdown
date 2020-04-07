@@ -1,0 +1,195 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2014-06-10 02:50:33+00:00
+slug: wwdc2014%e5%bd%b1%e7%89%87%e5%ad%b8%e7%bf%92%e5%bf%83%e5%be%97
+title: '[WWDC2014]影片學習心得'
+wordpress_id: 1455
+categories:
+- 研討會心得
+- iOS的程式開發
+---
+
+這裡放一些我看完WWDC2014 session 的心得
+
+
+
+
+
+
+  * Introduce of Swift
+
+
+
+    * 身為WWDC2014最大的震撼彈，Swift的發表代表著iOS/MacOS的開發也可以使用現代程式設計語言的特性．
+
+
+    * Swift擁有的新的特性如下:
+
+
+
+      * Generic
+
+
+      * Tuples
+
+
+      * Closure
+
+
+
+    * 整個會場內容大多都是簡單地介紹語法，我覺得光是看官方語法就很足夠了．
+
+
+
+  * Introduce CloudKit
+
+
+
+    * 這是我最期待的session，因為他可以幫忙架設server的部分．
+
+
+    * CloudKit 的簡介:
+
+
+
+      * 主要是用來存取iCloud services
+
+
+      * 支援OSX與iOS
+
+
+      * 必須使用iCloud 帳號
+
+
+      * 可以擁有公開(?)與隱秘的資料庫
+
+
+
+    * Container
+
+
+
+      * 基本單位，一個App會有一個Container
+
+
+      * 負責讀取與寫資料到iCloud
+
+
+
+    * Database
+
+
+
+      * 一個app可以管理一個公開的跟一個私密的資料庫
+
+
+
+        * 公開資料庫負責放共享的資料，只有在寫的時候才需要帳號～容量算在開發者身上
+
+
+        * 私密資料庫負責放使用者資料，不論寫或是讀都需要帳號～容量算在使用者身上
+
+
+
+
+    * Record:
+
+
+
+      * 在我看起來很像是資料庫的Table一樣，不過他是採取Map的方式也就是Key->Value 才讀取/寫入
+
+
+
+    * Record Zone:
+
+
+
+      * 管理一堆的Record，有分成Default Zone 跟 Custom Zone．俱有資料管理的功能，可以找回一些修改的變動．
+
+
+
+
+  * Design for Game Controller
+
+
+
+    * 主要是介紹如何設計一個能搭配MFi(Made For iPhone/iPad/iPod)的外在遊戲控制器的app．
+
+
+    * 所有的遙控器都支援GamePad而具有左右蘑菇頭的遙控器(joystick: API ThumbStick)會有GCExtendedGamePad
+
+
+
+      * PressedChangedHandler: 可以接受按下去與放開的event
+
+
+      * 可以偵測按鈕的敏感度(presure sensitive)，官方也給一些幾個建議．
+
+
+
+    *  新的部分(iOS8)如下:
+
+
+
+      * Controller Forwarding
+
+
+
+        * 把iPhone當成一個額外的控制器來控制其他iDevice(iPad) (以後應該有 Apple TV)
+
+
+        * iPhone會被當成是搖桿而被GamePad API找到
+
+
+
+      * Motion Forwarding
+
+
+
+        * 可以用G Sensor 並且有三軸定位的資料結構
+
+
+
+      * Idle Timer
+
+
+
+        * 玩遊戲的時候到了iOS8 會自動把省電關閉螢幕的裝置關掉 (其實iOS7 是bug吧?)
+
+
+
+      * Pause Button
+
+
+
+        * 它是一個toggle的按鈕，要自己處理相關行為
+
+
+
+      * Player Indicator LEDs
+
+
+
+        * 也就是定位你是第幾個遙控器(看來敵人真的是一般的遊戲主機)
+
+
+        * 當多人控制的時候，這邊有些部分要注意：
+
+
+
+          * 好好的分配整個Indicator Array
+
+
+          * 要分陪哪個控制器可以操控選單
+
+
+          * 定義如果有任何遙控斷線的撞控（哪些要暫停～哪些不需要）
+
+
+
+
+
+

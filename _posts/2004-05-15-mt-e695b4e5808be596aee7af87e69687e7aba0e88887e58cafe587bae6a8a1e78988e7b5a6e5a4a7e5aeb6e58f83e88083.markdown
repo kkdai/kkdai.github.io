@@ -1,0 +1,108 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2004-05-15 12:12:06+00:00
+slug: mt-%e6%95%b4%e5%80%8b%e5%96%ae%e7%af%87%e6%96%87%e7%ab%a0%e8%88%87%e5%8c%af%e5%87%ba%e6%a8%a1%e7%89%88%e7%b5%a6%e5%a4%a7%e5%ae%b6%e5%8f%83%e8%80%83
+title: MT 整個單篇文章與匯出模版給大家參考
+wordpress_id: 92
+categories:
+- 關於MT的學習心得
+---
+
+今日來學校加班論文，老師卻不在＠﹍﹍﹍＠"，但是看見[酋長的部落格](http://www.chieftain.idv.tw/blog/)格式實在不錯，所以將自己的部落格也作了一些修改，修改如下：
+
+
+
+
+
+  
+  * 將本來主索引中「[友站鍊結](http://www.evanlin.com/blog/archives/000115.html)」整理成[一個鍊結](http://www.evanlin.com/blog/archives/000115.html)方便以後整理
+
+  
+  * 單篇文章的顯示模版(Individual Entry Archive)整合到主模版(main
+    index)之中用來顯示
+
+  
+  * 將每個模版整理出來（詳細資料，請看以下介紹～～～）
+
+
+<!-- more -->
+
+
+依照[酋長的部落格](http://www.chieftain.idv.tw/archives/000083.html)，我思考到雖然之前有波一些整合介面的文章，但是深怕大家不太會使用我所提出的一些MT調教的手則，但是雖然像所[酋長的部落格](http://www.chieftain.idv.tw/archives/000083.html)所提到一樣可以匯出檔案，我也發現如果要正確的重建所有的檔案，所有的檔案還是需要恢復成原來的名稱（也就是『主索引』還是要改回為index.html）這點倒是讓我想不透，所以我後來的處理方式如下：
+
+
+
+
+
+  
+  * 將Blog下所有html
+    檔案（原來的模版檔案，複製到一個自製的目錄區）
+
+  
+  * 更改檔案內容為 txt
+
+
+
+
+如果你的主機系統是在LINUX下面，有一個更方便的方式
+
+
+
+
+
+  
+  * 建立一個目錄為 template
+
+  
+  * 在 /template 建立 LINK ( ln -s 目的.txt 
+    來源)
+
+  
+  * 比如說 『主索引模版』( ln -s ../index.html ./index.htm.txt 
+    )
+
+  
+  * 　
+
+
+
+
+雖然這個方法很麻煩，不過我還是將模版列出如下：
+
+
+
+
+[主索引::index](http://www.evanlin.com/blog/template/index.htm.txt)
+
+
+
+
+[樣式表::styles-site.css](http://www.evanlin.com/blog/template/styles-site.css.txt)
+
+
+
+
+[總彙整索引::archives](http://www.evanlin.com/blog/template/archives.html.txt)
+
+
+
+
+[分類彙整](http://www.evanlin.com/blog/template/category.txt)
+
+
+
+
+[單篇彙整](http://www.evanlin.com/blog/template/individual.txt)
+
+
+
+
+[按時彙整](http://www.evanlin.com/blog/template/datearchive.txt)
+
+
+
+
+要參考的請按滑鼠右鍵後，選取另存新檔即可打開

@@ -1,0 +1,29 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2004-12-06 05:27:30+00:00
+slug: dnd-in-vc%e5%9c%a8vc%e4%b8%8a%e6%8b%96%e6%9b%b3%e6%aa%94%e6%a1%88
+title: DND in VC++(在VC++上拖曳檔案)
+wordpress_id: 167
+categories:
+- VC++程式設計
+---
+
+[圖片來自:[![The Code Project](http://www.thecodeproject.com/images/standard/logo225x72.gif)](http://www.codeproject.com/)]
+
+![Demo project](http://www.thecodeproject.com/listctrl/filedroplistctrl/filedroplistctrl.gif)
+
+最近開始研習一些關於WIN GUI上面的一些操作與視覺部分的修改，順便也開始研究去修改一些WINDOW上面的基本操作，當然DND(DRAG AND DROP)是一定會去觸碰到的一部份。
+
+在WINDOW上面對於DRAG AND DROP的操作上，主要可以透過兩種方式去處理，分別是透過_WM_DROPFILES_跟_使用OLE的DRAG AND DROP_。這兩種主要差別在於，使用_WM_DROPFILES_的方式僅能處理外部拖曳見來的檔案，並且是在拖曳之後的動作。而_使用OLE的DRAG AND DROP_的方式，可以去客製化整個流程包括OnDragOver、OnDragLeave、OnDragEnter等等的Event。
+
+在此我就不詳細介紹這兩種的原理~因為我所提供的網頁裡面都有詳細的說明，不然、也可以參考MSDN裡面的"drag and drop, about OLE drag and drop"
+
+**參考網址:**
+
+  1. [http://www.thecodeproject.com/listctrl/filedroplistctrl.asp?df=100&forumid=306&exp=0&select=68072](http://www.thecodeproject.com/listctrl/filedroplistctrl.asp?df=100&forumid=306&exp=0&select=68072)
+  2. [http://www.codeproject.com/shell/explorerdragdrop.asp?select=502828&df=100&forumid=1699&exp=0](http://www.codeproject.com/shell/explorerdragdrop.asp?select=502828&df=100&forumid=1699&exp=0)
+  3. (簡單講解 WM_DROPFILES)[http://www.codeguru.com/Cpp/Cpp/cpp_mfc/dragdrop/article.php/c4059/](http://www.codeguru.com/Cpp/Cpp/cpp_mfc/dragdrop/article.php/c4059/)
+  4. [http://www.funducode.com/freevc/controls/controls8/controls8.htm](http://www.funducode.com/freevc/controls/controls8/controls8.htm)

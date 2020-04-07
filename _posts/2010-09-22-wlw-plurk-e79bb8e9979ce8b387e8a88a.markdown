@@ -1,0 +1,44 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2010-09-22 11:10:00+00:00
+slug: wlw-plurk-%e7%9b%b8%e9%97%9c%e8%b3%87%e8%a8%8a
+title: WLW Plurk 相關資訊
+wordpress_id: 1141
+categories:
+- Windows Live Writer的相關開發
+---
+
+幾經尋找~總算找到一個好用的plurk API使用軟體。不過在此之前還是有一些事情得先做。
+
+ 
+
+  
+  1. 申請Plurk API Key: 到[此去申請](http://www.plurk.com/API/)一個你自己使用的plurk API key. 
+   
+  2. 去[NPlurk](http://nplurk.codeplex.com/)去下載相關source code吧~ 這個超好用的 
+ 
+
+測試過後，已經可以正常的把文章發不到Plurk去。算是好用吧(?)
+
+ 
+
+測試結果: [http://www.plurk.com/p/7qp2eq](http://www.plurk.com/p/7qp2eq) 是成功發文。
+
+ 
+
+不過由於login架構尚未完成，現在整個plugin 也只有我自己可以使用。感覺有點弱。還有以下的工作項目需要完成:
+
+ 
+
+  
+  * 增加LOGIN選項(像是[http://dev.scottisafool.co.uk/2010/05/09/blackbird-pie-twitter-plugin-for-live-writer/](http://dev.scottisafool.co.uk/2010/05/09/blackbird-pie-twitter-plugin-for-live-writer/)) 
+   
+  * 增加自訂格式 
+   
+  * 準備安裝包 
+ 
+
+不過有人需要我也是可以幫你客制一個先給你用

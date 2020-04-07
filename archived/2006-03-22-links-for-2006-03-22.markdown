@@ -1,0 +1,167 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2006-03-22 15:40:48+00:00
+slug: links-for-2006-03-22
+title: links for 2006-03-22
+wordpress_id: 364
+categories:
+- 每日網摘
+---
+
+
+	
+  * 
+		
+
+[CodeGuru: Plug-in Architecture Framework for Beginners](http://www.codeguru.com/Cpp/misc/misc/plug-insadd-ins/article.php/c3879)
+
+
+		
+
+This article will help you to design a plugin architecture
+
+
+		
+
+(tags: [VC6](http://del.icio.us/kkdai/VC6))
+
+
+	
+
+	
+  * 
+		
+
+[CodeGuru: Multi Platform Plugin Development Made Easy!](http://www.codeguru.com/Cpp/Cpp/cpp_mfc/portability/article.php/c7159)
+
+
+		
+
+This is a sample to implement multiple platform plugin
+
+
+		
+
+(tags: [VC6](http://del.icio.us/kkdai/VC6))
+
+
+	
+
+	
+  * 
+		
+
+[Kindel Systems MCE Controller](http://www.kindel.com/Default.aspx?tabid=25)
+
+
+		
+
+A MCE plugin
+
+
+		
+
+(tags: [MCE-plugin](http://del.icio.us/kkdai/MCE-plugin) [VC.NET](http://del.icio.us/kkdai/VC.NET))
+
+
+	
+
+	
+  * 
+		
+
+[Re: Xtras.Net's XP MCE 2005 Hardware Kit for Developers](http://channel9.msdn.com/ShowPost.aspx?PostID=43898)
+
+
+		
+
+討論關於MCE 的Hardware Kit for Developer
+
+
+		
+
+(tags: [MCE](http://del.icio.us/kkdai/MCE))
+
+
+	
+
+	
+  * 
+		
+
+[The Green Button™ | The Premier Windows Media Center Community Forum](http://www.thegreenbutton.com/)
+
+
+		
+
+MM MCE 特有的按鈕 GreenButton 想不到有個特別網站~~~
+
+
+		
+
+(tags: [MCE](http://del.icio.us/kkdai/MCE))
+
+
+	
+
+	
+  * 
+		
+
+[Matt Goyer's Microsoft Windows Media Center Blog - MCE 2005](http://blog.mattgoyer.com/categories/mediaCenter/)
+
+
+		
+
+MCE PM
+
+
+		
+
+(tags: [MCE](http://del.icio.us/kkdai/MCE) [blog](http://del.icio.us/kkdai/blog))
+
+
+	
+
+	
+  * 
+		
+
+[Windows Marketplace: Media Center Plug-ins](http://www.windowsmarketplace.com/content.aspx?ctid=163)
+
+
+		
+
+列出所有的MCE plugin
+
+
+		
+
+(tags: [MCE-plugin](http://del.icio.us/kkdai/MCE-plugin))
+
+
+	
+
+	
+  * 
+		
+
+[The Green Button™ | Community MCEStandby](http://www.thegreenbutton.com/community/shwmessage.aspx?forumid=26&messageid=145454#bm161047)
+
+
+		
+
+一個MCE plugin MCEStandby
+
+
+		
+
+(tags: [MCE-plugin](http://del.icio.us/kkdai/MCE-plugin))
+
+
+	
+
+

@@ -1,0 +1,34 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2008-09-17 21:10:09+00:00
+slug: google-chrome-%e5%bc%95%e8%b5%b7%e7%9a%84%e6%96%b0%e5%8a%9f%e8%83%bd
+title: Google Chrome 引起的新功能
+wordpress_id: 949
+categories:
+- 關於Gmail
+---
+
+![080908chrome1.jpg](http://farm4.static.flickr.com/3168/2863881289_ebd460a0de.jpg)  
+女友像要試試看GOOGLE CHROME
+
+![080908chromefinalwep-796471.gif](http://farm4.static.flickr.com/3272/2864713916_18b38e9a56.jpg)
+
+打開網頁結果都是男友之前看的A片網站!!!
+
+![080908chrome3.jpg](http://farm4.static.flickr.com/3099/2863881563_785dd19cb7.jpg)
+
+兩人都傻掉!!!
+
+(圖片來源: [http://www.gizmodo.jp/2008/09/google_chrome_1.html](http://www.gizmodo.jp/2008/09/google_chrome_1.html))
+
+這個笑話是來自日本的網站([http://www.gizmodo.jp/2008/09/google_chrome_1.html](http://www.gizmodo.jp/2008/09/google_chrome_1.html))，這裡面想要透露出的訊息只要使用過的人都會知道。由於Google Chrome 再啟動的時候，會把前幾次你所瀏覽的結果總結在首頁上面讓你選取，並且還有縮圖在旁邊。可以讓你相當快速的去選擇你所喜歡網頁。
+
+不過這個時候，無痕式視窗或許就是最好的解決方法。
+
+_延伸閱讀:_
+
+  * [GOOGLE CHROME 資料夾](http://www.wretch.cc/blog/HerbAndPgx/10012893)  
+  * [Google Chrome VS Mozilla Firefox 基本盤評測！](http://163.13.181.101/philsu/index.php/web-design/225-google-chrome-vs-mozilla-firefox-basic-compare)

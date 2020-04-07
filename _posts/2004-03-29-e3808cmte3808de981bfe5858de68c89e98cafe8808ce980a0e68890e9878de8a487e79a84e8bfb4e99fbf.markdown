@@ -1,0 +1,90 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2004-03-29 14:55:49+00:00
+slug: '%e3%80%8cmt%e3%80%8d%e9%81%bf%e5%85%8d%e6%8c%89%e9%8c%af%e8%80%8c%e9%80%a0%e6%88%90%e9%87%8d%e8%a4%87%e7%9a%84%e8%bf%b4%e9%9f%bf'
+title: 「MT」避免按錯而造成重複的迴響
+wordpress_id: 68
+categories:
+- 關於MT的學習心得
+---
+
+![唉呀！多按一次！！](http://www.evanlin.com/blog/archives/0330/0330.jpg)
+
+
+避免重複按下送出而造成多個迴響的造成
+
+
+
+
+**緣起：**本來是在[Zonble's Blog](http://zonble.twbbs.org/)上面要留言，卻發現自己不小心留了好幾個迴響，於是回到自己最近很常去的一個[MT技術網站MTExtension](http://www.nonplus.net/software/mt/AvoidingDuplicateComments.htm)找一下相關的檔案，裡面有講到一個避免的方法，就是修改一下[MT](http://www.movabletype.org/)的一些程式碼
+
+
+
+
+詳細狀況，請看詳細敘述
+
+
+
+
+　
+
+
+<!-- more -->
+
+
+　
+
+
+
+
+
+  
+  * 若是一般方式請修改[MT](http://www.movabletype.org/)目錄下的 
+    lib/MT/App/Comments.pm
+
+  
+  * 若是有安裝[MT-Blacklist](http://www.jayallen.org/projects/mt-blacklist/)的話請修改 
+    exlib/jayallen/MTBIPost.pm
+
+
+
+
+請貼以下的程式碼在 _$comment->save;_ 
+**之前**
+
+
+
+
+
+## BEGIN HACK Avoid Duplicate Comments
+    ## http://www.nonplus.net/software/mt/AvoidingDuplicateComments.htm
+    if(my @existing_comments = MT::Comment->load({
+                  blog_id => $comment->blog_id,
+                  entry_id => $comment->entry_id})) {
+
+      foreach my $c (@existing_comments) {
+          next unless (($c->author||'') eq ($comment->author||'')
+                  && ($c->email||'') eq ($comment->email||'')
+                  && ($c->text||'') eq ($comment->text||''));
+
+          my $link_url;
+          if (!$q->param('static')) {
+              my $url = $app->base . $app->uri;
+              $url .= '?entry_id=' . $q->param('entry_id');
+              $link_url = $url;
+          } else {
+              my $static = $q->param('static');
+              if ($static == 1) {
+                  $link_url = $entry->permalink;
+              } else {
+                  $link_url = $static . '#' . $c->id;
+              }
+          }
+          return $app->redirect($link_url);
+      }
+    }
+    ## END HACK Avoid Duplicate Comments
+

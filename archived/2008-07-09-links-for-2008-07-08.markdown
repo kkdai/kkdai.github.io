@@ -1,0 +1,54 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2008-07-09 00:39:45+00:00
+slug: links-for-2008-07-08
+title: links for 2008-07-08
+wordpress_id: 901
+categories:
+- 未分類
+---
+
+
+	
+  * 
+		
+
+[Windows Vista Software Application Certification](http://hauhan.spaces.live.com/blog/cns!B07B9841E8B148C3!2412.entry)
+
+
+		
+
+About test 30 case for VISTA LOGO
+
+
+		
+
+(tags: [VISTA_LOGO](http://del.icio.us/kkdai/VISTA_LOGO) [VISTA](http://del.icio.us/kkdai/VISTA))
+
+
+	
+
+	
+  * 
+		
+
+[Certified For Vista: How to ensure an application gets certified.](http://www.codeproject.com/KB/vista/Certified_for_Vista.aspx)
+
+
+		
+
+code project anptjer Restar Manager Aware
+
+
+		
+
+(tags: [VISTA_LOGO](http://del.icio.us/kkdai/VISTA_LOGO) [VISTA](http://del.icio.us/kkdai/VISTA))
+
+
+	
+
+
+

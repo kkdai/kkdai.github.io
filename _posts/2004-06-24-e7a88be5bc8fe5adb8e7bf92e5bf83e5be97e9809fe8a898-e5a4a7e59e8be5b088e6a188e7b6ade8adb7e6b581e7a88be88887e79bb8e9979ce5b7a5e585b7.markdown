@@ -1,0 +1,20 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2004-06-24 13:56:14+00:00
+slug: '%e7%a8%8b%e5%bc%8f%e5%ad%b8%e7%bf%92%e5%bf%83%e5%be%97%e9%80%9f%e8%a8%98-%e5%a4%a7%e5%9e%8b%e5%b0%88%e6%a1%88%e7%b6%ad%e8%ad%b7%e6%b5%81%e7%a8%8b%e8%88%87%e7%9b%b8%e9%97%9c%e5%b7%a5%e5%85%b7'
+title: 程式學習心得速記—大型專案維護流程與相關工具
+wordpress_id: 107
+categories:
+- 學習文件
+---
+
+在利用VC維護一個專案的時候，有許多有用的工具是很建議大家安裝的。 
+
+首先是[Visual Asssit](http://www.wholetomato.com/)利用這個工具可以幫助你輕鬆的顯示程式碼，快速切換H與CPP之間，並且可以快速找到相關的程式碼。
+
+再來是維護大型專案一定會用到的伺服器軟體，[Perforce](http://www.perforce.com/)可讓一個大型專案很容易的被大家所維護，不僅僅是保護程式碼與做CVS而已，[也像patrick所提到的一樣](http://baby.homeip.net/patrick/archives/000192.php)， source code branching沒有透過[Perforce](http://www.perforce.com/)將是相當困難的。最後還有一個比對檔案的軟體[Araxis Merge](http://www.araxis.com/)，利用這個東西可以比對兩個檔案所不同之處，加上[Perforce](http://www.perforce.com/)本身所提供的檔案整合功能，再做專案的Branching時將是相當的方便的。
+
+以上這幾個軟體，算是公司同事李每個人都會運用到的軟體，在這裡跟大家分享一下，也希望大家會利用到這些軟體使得開發軟體上更加的容易。

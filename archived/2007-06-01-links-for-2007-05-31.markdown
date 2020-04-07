@@ -1,0 +1,53 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2007-06-01 08:21:48+00:00
+slug: links-for-2007-05-31
+title: links for 2007-05-31
+wordpress_id: 662
+categories:
+- 每日網摘
+---
+
+
+	
+  * 
+		
+
+[Download details: Windows Media Center Software Development Kit](http://www.microsoft.com/downloads/details.aspx?familyid=A43EA0B7-B85F-4612-AA08-3BF128C5873E&displaylang=en)
+
+
+		
+
+最新版本的MCE SDK FOR VISTA
+
+
+		
+
+(tags: [MCE](http://del.icio.us/kkdai/MCE) [SDK](http://del.icio.us/kkdai/SDK) [VISTA](http://del.icio.us/kkdai/VISTA))
+
+
+	
+
+	
+  * 
+		
+
+[Gadget Development Overview](http://msdn2.microsoft.com/en-us/library/ms723694.aspx)
+
+
+		
+
+SideBAr Gadget 簡單的開發流程與簡介
+
+
+		
+
+(tags: [Sidebar](http://del.icio.us/kkdai/Sidebar) [Vista](http://del.icio.us/kkdai/Vista) [MSDN](http://del.icio.us/kkdai/MSDN) [.NET](http://del.icio.us/kkdai/.NET) [Windows](http://del.icio.us/kkdai/Windows))
+
+
+	
+
+

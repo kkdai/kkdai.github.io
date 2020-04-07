@@ -1,0 +1,38 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2004-07-13 17:35:33+00:00
+slug: '%e5%b0%88%e5%88%a9%e6%ac%8a%e7%9a%84%e9%87%8d%e8%a6%81%ef%bd%9e%ef%bd%9e'
+title: 專利權的重要～～
+wordpress_id: 116
+categories:
+- 書海裡的漫遊
+---
+
+[我們公司](http://www.intervideo.com)有一個蠻好的政策就是會幫晚上留下加班的員工訂便當，並且設立一個娛樂室可以讓大家在那邊吃飯或是看電視。我又是_[公司 ](http://intervideo.com)_的新人，所以天天都留下來加班，今天晚上吃飯的時候，跟隔壁的同事聊天，才知道原來他負責的是『專利工程師』（英文～～ 我就不知道）。
+
+今天聽Dr. Jay Kuo演講關於H.264的東西（詳細演講稿記錄我放在延伸閱讀裡面～）或許在軟體公司很注重開發時間的催促下，很多專利權的保護可能沒有人會注意到，最近去[对牛乱弹琴 | Playin' with IT](http://www.donews.net/keso/) 則看到一些很有趣的新聞
+
+<blockquote>IBM最自豪的一件事之一是它在2003年註冊了3415項專利，打破了單一年度獲得專利的紀錄，並連續第11年成爲全球最忙於開發企業知識産權的公司。
+> 
+> </blockquote>
+
+這篇文章是從英國《[金融時報](http://zhongwen.ft.com/zhongwen)》丹·羅伯茨(Dan Roberts)的最新文章《[IBM的新思路](http://zhongwen.ft.com/servlet/ContentServer?pagename=FTChina/StoryFT/FullStory&c=StoryFT&cid=1087373527241&p=1039878132466)》。大家可以看看～～</p
+<!-- more -->
+>
+
+<blockquote>**1.Digital Media REvolution:**
+> 
+> _Absract:_ talk about the Audio, Vedio, revolution and computer revolution. there are some interest thing should be memberied  (1): watermark for sampleing the advertise on Radio  or TV. (2). content control maybe is a new trend which about spaming email, website content control... 
+> 
+> **2.Overview of H.264 (or MPEG AVC) Video compression standard:**
+> 
+> _Abtract:_ H.264 is come from H.263+ and H.263++ and  H.264 is a super set which use lots of method to encore the source. for example (1) Intra-Prediction: spatial correlation. (2) Inter-Prediction: is about motion prediction.(3). Multiple Reference Frame: which can catch firm change more the two frames. (4)Two kinds of Codding more effective than Hoffman.(5)Error Resiliance: canuse group, interlace matrix way to verify the error and fix it.
+> 
+> the H.264 is High latency (in main profile  with B) and realtime in baseline profile without B). H.264's encorder is very time dependecy which is usually use computer to compute (lots of time)
+> 
+> H.264 is good for DAB(Digial Audio Broadcasting), DVB, and DMB any kind of Broadcasting~~~ but remember H.264's encore is very waste time~~
+> 
+> </blockquote>

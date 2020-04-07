@@ -1,0 +1,19 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2005-03-15 13:03:35+00:00
+slug: from-c-to-c
+title: From C++ to C#
+wordpress_id: 211
+categories:
+- VC++程式設計
+---
+
+![Designing .NET Class Libraries: API Usability](http://msdn.microsoft.com/netframework/art/NETFw.jpg)學習新的語言，一直是身為軟體工程師不可躲避的宿命與責任。而微軟的C#，更是身為視窗系統研發的我們，必須學習的一個新技術。最近除了學習將VisualStudio的Porting之外，C#應該是讓我們進入.Net Framework 最快路徑。這裡提供幾個鏈結關於C#:
+
+  * [C# Station: Introduction to the C# Tutorial](http://www.csharp-station.com/Tutorial.aspx)
+  * [A Quick view from C/C++ to C#](http://www.csharphelp.com/archives/archive118.html)
+[Patrick](http://baby.homeip.net/patrick/)也在[這篇文章中](http://baby.homeip.net/patrick/archives/2003/05/applied_microso.php)提到[Applied Microsoft .Net framework programming](http://www.amazon.com/exec/obidos/tg/detail/-/0735614229/ref=ord_cart_shr/103-9970321-9491862?%5Fencoding=UTF8&m=ATVPDKIKX0DER&v=glance)這本書，也是一本利用C#來了解.Net Framework ，是本不可缺少的好書~~  
+

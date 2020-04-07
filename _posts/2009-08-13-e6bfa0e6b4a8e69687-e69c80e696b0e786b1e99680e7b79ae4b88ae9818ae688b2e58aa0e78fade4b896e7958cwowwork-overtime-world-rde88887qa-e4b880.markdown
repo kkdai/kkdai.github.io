@@ -1,0 +1,92 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2009-08-13 01:56:24+00:00
+slug: '%e6%bf%a0%e6%b4%a8%e6%96%87-%e6%9c%80%e6%96%b0%e7%86%b1%e9%96%80%e7%b7%9a%e4%b8%8a%e9%81%8a%e6%88%b2%e5%8a%a0%e7%8f%ad%e4%b8%96%e7%95%8cwowwork-overtime-world-rd%e8%88%87qa-%e4%b8%80'
+title: 濠洨文—最新熱門線上遊戲—加班世界WOW(Work Overtime World)—RD與QA (一)
+wordpress_id: 1073
+categories:
+- 不惡搞~ 怎麼行
+---
+
+ 
+
+WOW(加班世界-ㄤ賴) 是一個最近熱門的線上遊戲~~~
+
+ 
+
+主要可以扮演的職業如下:
+
+ 
+
+ 
+
+[![](http://www.wowtaiwan.com.tw/03Gameguide/gameinfo/Classes/image/warrior.gif)](http://www.wowtaiwan.com.tw/03Gameguide/gameinfo/Classes/warrior/warrior.asp)
+
+ 
+
+**戰士 (RD)**
+
+ 
+
+默默的提供攻擊輸出(DPS: Debug Per second)~~ 有著強大的身軀與堅毅不拔的肝臟。 有時候會有強大的裝備當做後盾(好的鍵盤、12000DPS 超精靈敏滑鼠與柔軟無比的按摩座椅)
+
+ 
+
+ 
+
+**可以選擇的種族**：只要有肝臟~手指頭可以打字都可以~~~       
+**類型**： 主要坦職 (有bug的時候~~ 被推出來解bug)       
+**標準數值槽**： 生命值(可加班時數) / 怒氣(被找出的bug數)       
+**可以使用的裝備**： 超營養靈敏滑鼠~~~ 無線薄膜式鍵盤~~ 超級柔軟座椅~~ 當然有個高功率輸出耳機。       
+**可以使用的武器**： 全部（除了 回家以外)       
+**評價**： 出色的解BUG者~~~~ 可以推出來檔王(尤其是週五BUG出現的時候~~~ 還可以把產品交不出去賴在他頭上)~~ 不愧為坦王之王
+
+ 
+
+ 
+
+ 
+
+[![](http://www.wowtaiwan.com.tw/03Gameguide/gameinfo/Classes/image/priest.gif)](http://www.wowtaiwan.com.tw/03Gameguide/gameinfo/Classes/priest/priest.asp)
+
+ 
+
+**牧師**(QA)
+
+ 
+
+QA 是治療與控制仇恨的大師(治療RD想解BUG的鬱悶心情)~~~ 有著各式各樣的增益法術 (各種測試流程~ 與報告)~~ 再推王的時候~~ 真的不能沒有他阿~~~ (廢話~~ 誰出軟體不用QA 可以出的)
+
+ 
+
+ 
+
+**可以選擇的種族**： 男人、女人、大哥、大姐~ 隔壁三姨媽~ 四舅婆       
+**類型**： 治療者(找出BUG)       
+**標準數值槽**： 生命值 (一堆測試表格)/ 魔法值(超級多的報告與BUG)       
+**可以使用的裝備**： 布甲(客戶的電腦?)
+
+ 
+
+**可以使用的武器**： BUG 管理系統、神之手(抹著黏黏的東西?)
+
+ 
+
+**評價**： 每個團隊都在苦苦追尋的職業(每個公司都在不停流動的職業)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+歡迎組隊(任務團隊 task force) 一起推副本(出差去吧?)

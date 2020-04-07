@@ -1,0 +1,84 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2004-04-10 18:30:13+00:00
+slug: mt-%e7%b0%a1%e5%8c%96%e7%80%8f%e8%a6%bd%e8%80%85%e7%9a%84%e7%80%8f%e8%a6%bd%e7%bf%92%e6%85%a3
+title: MT–簡化瀏覽者的瀏覽習慣
+wordpress_id: 73
+categories:
+- 關於MT的學習心得
+---
+
+![關於MT的技術](http://www.evanlin.com/mt/images/mt-logo.gif)
+
+
+
+
+最近對於整個Blog網站，做了一個大動作的修改。整體的內容變的簡單，也就是操作的介面變的簡單。我將原本數個模版的MT介面，修改為只有三～四個模版而已。主要的修改還是在『迴響』與『引用』上。
+
+
+
+
+原本各位所使用的MT系統上，『迴響』與『引用』均會跳出一個新的視窗，來告知你說該文章有多少的迴響與引用，但是在『最新迴響』所採取的超鍊結上卻不是這樣，他直接連接到『整篇文章』（或叫做靜態文章
+_$MTEntryPermalink_ 的鍊結，而直接連接到段落
+#command上）。後來在使用上，會發現其實連接到『整篇文章』的迴響上算是一個很方便的功能，因為除了可以看見其他人的迴響外，還可以再次觀察文章全體，使得回覆的迴響不易出錯。
+
+
+<!-- more -->
+
+
+先提到『顯示引用的程式碼』，也就是不需要跳出引用的視窗，而讓人可以直接察看如何引用您的文章的程式碼：
+
+
+  
+
+
+引用此篇網址：   
+
+
+
+
+
+
+之後各位得必須修改各位的『單獨模版（Individual
+Entry Archive )』上，設定一些書籤（也就是 <a
+name="書籤名稱" ></a>
+)在某些您需要的地方，比如說，在迴響那邊加上<a
+name="command_post"></a>，或是在『整篇文章』加上剛剛所告訴各位的(引用此篇網址：<$MTEntryTrackbackLink$>），這樣的話再整篇文章就會顯示如何引用您的文章的方法。
+
+
+
+
+再來各位可以更改自己在
+『主索引模版』、『分類索引模版』、『時間索引模版』，將原本為
+
+
+
+
+<a href="?entry_id=" onclick="OpenComments(this.href); return false" >
+
+及
+
+<a href="?__mode=view&entry_id=" onclick="OpenTrackback(this.href); return false" >
+
+
+
+
+修改為
+
+
+
+
+<a href="#comments_post">
+
+及
+
+|<a href="#track_back">
+
+
+
+
+這樣就可以了，各位可以參考我的Blog
+所顯示的方式，我是覺得比較符合一般使用者的操作習慣。記得要重建唷！！

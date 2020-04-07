@@ -1,0 +1,29 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2006-05-02 11:48:32+00:00
+slug: '%e9%ad%94%e7%8d%b8%e4%b8%96%e7%95%8c%e5%a6%82%e4%bd%95%e6%9e%b6%e8%a8%addkp'
+title: '[魔獸世界]如何架設DKP'
+wordpress_id: 388
+categories:
+- 遊戲天國
+---
+
+![](http://home.educities.edu.tw/jgohabbakuk/www/img/c001.JPG)
+
+DKP = dragon kill point
+
+　　起源自EQ某個大公會,因為EQ的boss全都是龍, 因此取名為DKP.  
+主要功用就是解決分寶的問題,每個人對公會的貢獻值可以DKP來表示.  
+就像上班打卡, 你出的raid愈多,打倒的boss愈多就愈多dkp,也就是有  
+更好的機會可以拿到你想要的裝備.
+
+　　簡單來說就是每次出raid都會有專人記下每個raid成員的出席情形,  
+打倒的王的數量,然後分配dkp,並記錄誰loot了什麼裝備,增加或減少了  
+多少的dkp量.然後將其在特定網頁上記錄,做到公平公開的原則.
+
+  1. [簡單架設DKP網站](http://home.educities.edu.tw/jgohabbakuk/www/dkpteacher3.htm)
+  2. [利用CT_RaidTracker來紀錄DKP值](http://home.educities.edu.tw/jgohabbakuk/www/dkpteacher1.htm)
+  3. [將CT_RaidTracker所取得的DKP紀錄匯入DKP系統內](http://home.educities.edu.tw/jgohabbakuk/www/dkpteacher2.htm)

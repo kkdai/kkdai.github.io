@@ -1,0 +1,93 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2004-03-04 07:38:14+00:00
+slug: '%e5%88%a9%e7%94%a8-mt-blacklist-%e4%be%86%e9%98%bb%e6%93%8b%e8%88%87%e5%88%aa%e9%99%a4%e4%b8%80%e7%be%a4%e5%9e%83%e5%9c%be%e8%bf%b4%e9%9f%bf'
+title: 利用  MT-Blacklist  來阻擋與刪除一群垃圾迴響
+wordpress_id: 53
+categories:
+- 關於MT的學習心得
+---
+
+![～不要攻擊我阿～](http://www.evanlin.com/blog/archives/0304/spam.gif)
+
+
+好～～我不得不承認，我的Blog E之前受到垃圾迴響攻擊，才不到50篇的文章，卻跳出一堆的迴響，讓我興奮之餘一個個去察看，結果都是同一個IP發出的，加上[上一篇](http://www.evanlin.com/blog/archives/000062.html)提到了，我的[MT](http://www.movabletype.org)好像又不能刪除迴響～～會不會是太慘了一點？所以回到[MT討論區](http://www.movabletype.org/support/)去查詢資料，看到有人在使用一個軟體[MT-Blacklist](http://www.jayallen.org/projects/mt-blacklist/)除了來阻擋被攻擊的迴響之外，還可以找出具有特定文字的迴響加以刪除，安裝方式敘述如下：
+
+
+
+
+　
+
+
+
+
+　
+
+
+
+
+　
+
+
+<!-- more -->
+
+
+[MT-Blacklist](http://www.jayallen.org/projects/mt-blacklist/)簡單安裝與使用法
+
+
+
+
+1.先去網站上下載[最新版本](http://www.jayallen.org/projects/mt-blacklist/latest/MT-Blacklist.tar.gz)
+
+
+
+
+2.解壓縮之後，具有以下的檔案：Blacklist.pl  Blacklist.pm
+mt-blacklist.cgi MTBlPing.pm  MTBlPost.pm  README
+
+
+
+
+3.將mt-blacklist.cgi 複製到 安裝MT目錄下（與mt.cgi相同）
+
+
+
+
+4.將Blacklist.pl 
+複製到 安裝MT目錄下plugin 中
+
+
+
+
+5.將MTBlPing.pm  MTBlPost.pm 複製到 安裝MT目錄下jayallen 
+(需要自己建立）
+
+
+
+
+6.進入設定畫面，執行與 mt.cgi 相同目錄，將檔案改成mt-blacklist.cgi
+
+
+
+
+7.利用 add
+加入要SPAM的字串或是關鍵字，會找到相關的垃圾迴響再加以刪除即可
+
+
+
+
+　
+
+
+
+
+這樣雖然我[上一篇](http://www.evanlin.com/blog/archives/000062.html)的問題還是沒解決 
+~____~ 但是我還是可以刪除掉一群的垃圾迴響
+
+
+
+
+　

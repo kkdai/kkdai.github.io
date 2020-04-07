@@ -1,0 +1,53 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2006-02-13 15:44:51+00:00
+slug: links-for-2006-02-13
+title: links for 2006-02-13
+wordpress_id: 337
+categories:
+- 每日網摘
+---
+
+
+	
+  * 
+		
+
+[Simple Windows Service Sample - The Code Project - .NET](http://www.codeproject.com/dotnet/simplewindowsservice.asp)
+
+
+		
+
+教導如何在.NET下撰寫 Windows Service 的技術指引
+
+
+		
+
+(tags: [VC.NET](http://del.icio.us/kkdai/VC.NET) [WindowsService](http://del.icio.us/kkdai/WindowsService))
+
+
+	
+
+	
+  * 
+		
+
+[风微柳细: Windows（IIS）平台下MT2.661的安装、汉化、配置及插件的安装](http://blog.iyi.cn/hily/archives/2005/05/windowsiismt2661.html)
+
+
+		
+
+一 個寫的相當詳細的MT2.6安裝手冊，使用IIS 來當WebServer
+
+
+		
+
+(tags: [MT](http://del.icio.us/kkdai/MT))
+
+
+	
+
+

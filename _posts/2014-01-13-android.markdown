@@ -1,0 +1,141 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2014-01-13 04:54:34+00:00
+slug: android%e5%ad%b8%e7%bf%92%e5%bf%83%e5%be%97-1-%e7%92%b0%e5%a2%83%e8%a8%ad%e5%ae%9a%e8%88%87evernotesdk
+title: '[Android]學習心得 (1) - 環境設定與EvernoteSDK'
+wordpress_id: 1291
+categories:
+- Android安卓學習心得
+- 學習文件
+---
+
+**記錄一下，本來是寫英文後來還是決定改成中文的**
+
+
+
+
+
+
+  * **我的環境:**
+
+
+
+    * MBA (Mac Book Air 2012 Ivy-Bridge) with 8G Ram, 128G SSD.
+
+
+
+  * **環境設定與準備:**
+
+
+
+    * 主要有兩種方向可以給Android開發者，我兩種都有試試看來決定最容易與方便使用的IDE.
+
+
+    * **Eclipse with ADT (Android Development Tool)**
+
+
+
+      * 最常使用的開發環境，設定算簡單，不過個人覺得界面使用起來總是哪裡怪怪的，可能因為Eclipse本身屬於開放式架構的關係．
+
+
+      * 下載 [http://developer.android.com/sdk/index.html](http://developer.android.com/sdk/index.html)
+
+
+
+    * **Android Studio**
+
+
+
+      * 2013年發佈的Android Studio，我覺得開發新的應該會很棒．不過似乎在打開一些舊的檔案會因為檔案架構的原因出現一些問題．
+
+
+      * 這個部分對於剛開始學習開發得人是比較麻煩的，可能要等後面版本在修改得時候看看能不能解決得好．
+
+
+
+
+  * **Android 模擬器 -- AVD (Android Virtual Device)**
+
+
+
+    * AVD 就是一個Android的模擬器可以來執行你的程式．
+
+
+    * Android Development Tool所提供的模擬器，其實相當不好用．我發生以下的一些問題：.
+
+
+
+      * 啟動這個ADT的模擬器(AVD)時間相當的久．在我的環境裡面大概需要3~5分鐘才能夠開完Android的模擬器．更別說把App部署(deploy)到模擬器上面，當然如果要debug那就更殘忍了．
+
+
+      * 可能是因為需要太多的系統資源，所以常常在編輯過後要重新部署的時候都容易發生錯誤．
+
+
+
+    * 利用虛擬機器 Virtual Box所執行的模擬器  [Genymotion](http://www.genymotion.com/) 
+
+
+
+      * 這個是我參加Evernote Developer Meetup 所得到的知識，相當快速（極快）的模擬器．大概在我的環境裡面Android跑起來到App部署完全不需要一分鐘。 真是太令人感動了. 
+
+
+      * 這裡有詳細的教學:
+
+
+
+        * [http://blog.mosil.biz/2013/12/android-emulator/](http://blog.mosil.biz/2013/12/android-emulator/)
+
+
+        * [http://jdev.tw/blog/3663/using-fastest-android-genymotion-emulator](http://jdev.tw/blog/3663/using-fastest-android-genymotion-emulator)
+
+
+
+
+
+  * **關於Evernote SDK in Android:**
+
+
+
+    * 這篇文章是官方的文章，其實可以很快地建立出Evernote的程式 [http://www.evernoteapi.com/tagged/android](http://www.evernoteapi.com/tagged/android)
+
+
+    * 除了裡面的範例程式之外，其實只剩下一些需要注意的地方
+
+
+    * Evernote API key 申請
+
+
+
+      * 可以去這裡申請 ([http://dev.evernote.com/doc/](http://dev.evernote.com/doc/)) 不過要注意的是裡面的API 是對應另外一台伺服器的帳號 (Sandbox.evernote.com)．跟你所平時在用的並不相同，除非你有寄出Production Server的申請
+
+
+      * 由於是Sandbox的伺服器上面，所以你可能需要另外在這個伺服器上面去註冊你的帳號(Evernote的帳號)才能用你在Sandbox的API Key去存取他.
+
+
+
+    * 申請好之後其實很快速就可以寫出一個login與logou的範例程式．
+
+
+    * 關於Login/Logout的部分:
+
+
+
+      * 不過這邊還有一個可以註記一下的是由於登入Login 是透過OAuth的方式來登入，所以App會離開後然後再度回來，在這裡要注意到的是會由 OnResume回來
+
+
+      * 但是Logout卻不會遇到這樣的狀況．這是可以注意的．
+
+
+
+
+
+
+ 
+
+
+
+
+接下來應該要努力嘗試 Android Development Tool with Eclipse 的程式 porting 到 Android Studio了...

@@ -1,0 +1,34 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2006-11-30 08:23:12+00:00
+slug: links-for-2006-11-29
+title: links for 2006-11-29
+wordpress_id: 534
+categories:
+- 每日網摘
+---
+
+
+	
+  * 
+		
+
+[Duba's Blog: Mandrake9.1下安裝php-iconv](http://vrhost.spaces.live.com/blog/cns!840D61238181AC8F!272.entry)
+
+
+		
+
+蠻有用的安裝步驟
+
+
+		
+
+(tags: [php](http://del.icio.us/kkdai/php))
+
+
+	
+
+

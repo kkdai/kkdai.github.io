@@ -1,0 +1,1517 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2014-07-19 19:00:08+00:00
+slug: coscup2014%e9%96%8b%e6%ba%90%e4%ba%ba%e5%b9%b4%e6%9c%832014%e5%bf%83%e5%be%97%e8%88%87%e9%80%9f%e8%a8%98
+title: '[COSCUP2014]開源人年會2014心得與速記'
+wordpress_id: 1460
+categories:
+- 研討會心得
+---
+
+**前言：**
+
+
+
+
+十秒就搶完的票，號稱工程師界的秒殺票卷．當天其實是來不及搶到票．感謝Patrick 願意把他搶到的票讓我去看．  
+整個會場看到一堆年輕人，真的讓我非常的開心．也很替現在的年輕人開心，  
+你們不是沒機會～我們以前社團要搞這些活動的時候資源少到不行又沒人願意參加．   
+現在技術種類又多又有趣，年輕人個個有出頭的機會． 台灣又有這麼多做OpenSource的前輩在前面幫你們開路～  
+年輕人別再抱怨房價跟薪水了，認真學習好好跟這些前輩效法才是未來真正的出路～～ 
+
+
+
+
+ 
+
+
+
+
+**一些令人覺得經驗的亮點:**
+
+
+
+
+
+
+  * 有人搬卓機來研討會 [https://twitter.com/superbil/status/490319430434312192/photo/1](https://twitter.com/superbil/status/490319430434312192/photo/1)
+
+
+  * 思源黑體和小叮噹會幫我完成所有的願望 [https://twitter.com/zhusee2/status/490429614951387136](https://twitter.com/zhusee2/status/490429614951387136)
+
+
+  * g0v 政府對政府關係   [https://twitter.com/ijliao/status/490437005575061506](https://twitter.com/ijliao/status/490437005575061506)
+
+
+  * 愛因斯坦說過如果要花一個小時要解決問題，必須要花五十五分鐘好好思考問題是什麼，然後花五分鐘來解決它． [https://twitter.com/onReflect/status/490413297812783105](https://twitter.com/onReflect/status/490413297812783105)
+
+
+
+
+HackFolder [http://hackfoldr.org/coscup2014/](http://hackfoldr.org/coscup2014/)
+
+
+
+
+## 09:10 - 10:00**[R0]全場地聯播Maker 《自造世代》**
+
+
+
+
+
+
+  * 潛水機器人採取開源的方式並且要求[CC]（要使用的人也得開源)
+
+
+
+    * 等待專利時間永遠跟不上創新的速度
+
+
+    * 不怕抄襲- 抄襲的人永遠跟不上創新的發明
+
+
+
+
+
+## **Real-time Streaming Classification with Storm – The Pinball system**
+
+
+
+
+**心得：**
+
+
+
+
+
+
+  * 利用steaming classification( 不斷的分類與判別）來判斷yahoo買家並且給予最好的購買建議與推薦．
+
+
+  * 類似於Hadoop Map-Reduce Job 但是屬於streaming ( Hadoop 是 batch processing）
+
+
+  * 購買欲望 (Buy Intention) 與 PageView 有關．瀏覽頁面越多，購買欲望越高．
+
+
+
+
+速記:
+
+
+
+
+
+
+  * Challenges
+
+
+
+    * Batch processing can react latest update data.
+
+
+
+  * Solution: Pinball
+
+
+
+    * Pinball
+
+
+
+      * 使用者透過不斷的classification來判別preference
+
+
+      * Real-time classifier using Storm on apache
+
+
+      * Storm -> is potential buyer ? -> promotion
+
+
+
+    * Hadoop map-reduce job is batch processing but storm is streaming.
+
+
+    * Buy intention
+
+
+
+      * 同一購買類別瀏覽次數越多，購買欲望越高
+
+
+
+    * How to combine Storm and Buy Intention
+
+
+
+      * Navigation Spout 
+
+
+
+        * Buy: 
+
+
+
+          * User buy history -> learning bolt -> classifier (record page view)
+
+
+
+        * View: 
+
+
+
+          * User history bolt -> classifier -> Qualifier Match -> promotion
+
+
+
+        * Batch processing is source of truth, realtime processing using it as reference.
+
+
+
+
+    * Lambda Architecture
+
+
+
+      * Batch Layer
+
+
+
+        * Pig
+
+
+        * Hadoop
+
+
+        * Spark
+
+
+        * Summingbird (scala)
+
+
+
+
+
+
+
+## Life Lessons From the Cloud: My Career as a Technology Evangelist
+
+
+
+
+**心得:**
+
+
+
+
+
+
+
+
+
+  * 傳道者路線
+
+
+
+    * 不斷的尋找你的興趣
+
+
+    * 找到以後，增進你的技術並且變成專家
+
+
+    * 不斷地談論它
+
+
+    * 把你的文字散佈到世界
+
+
+    * 建立你的聽眾
+
+
+    * 建立你的聲譽
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+## How to Make A Scanning Drone
+
+
+
+
+**心得：**
+
+
+
+
+
+
+
+
+
+  * 日本講者用中文來講，真的是辛苦他了．主要的內容就是分享一些製作Drone上面會遇到的問題
+
+
+  * 個人覺得可以用英文來講會更好．
+
+
+
+
+
+
+
+速記：
+
+
+
+
+
+
+
+
+
+  * Drone
+
+
+
+    * Hardware
+
+
+    * Drone
+
+
+    * IR Cam
+
+
+    * Application processor (ODROID-X)
+
+
+
+  * Software
+
+
+
+    * RTOS
+
+
+
+  * Drone 製品重點: 
+
+
+
+    * 買現成的改韌體增加空制度
+
+
+
+  * 現成Drone:
+
+
+
+    * AR. Drone 2.0 
+
+
+
+      * 地下街可以買到
+
+
+
+    * IRIS (選擇這種)
+
+
+
+      * 組裝品（三萬塊)
+
+
+      * OpenSource 
+
+
+
+        * RTOS
+
+
+
+      * Open Hardware
+
+
+
+        * 可以改造
+
+
+
+
+    * DJI Phantom 2 vision
+
+
+
+      * 製成品: 四萬塊 
+
+
+      * No open source, no open hardware
+
+
+      * 穩定度高
+
+
+
+
+  * 研發歷程:
+
+
+
+    * IRIS
+
+
+
+      * 買來東西有一些被扣關
+
+
+
+    * AR Drone
+
+
+
+      * 發動機太弱，缺乏穩定性
+
+
+      * 電力要12V6A
+
+
+      * 螺旋槳威力太大，可以切斷手指
+
+
+
+
+  * 深度相機
+
+
+
+    * Light coding
+
+
+    * Time of flight
+
+
+    * 視差(RGB)
+
+
+
+  * ORDOID-U (選擇原因)
+
+
+
+    * 體積夠小
+
+
+    * Quad-core
+
+
+    * Two USB
+
+
+
+
+
+
+
+
+## Raspberry Pi最新動向和發佈兩年的體驗
+
+
+
+
+**心得:**
+
+
+
+
+
+
+  * 因為強大社群而成長，Broadcom 本身看起來很支持．
+
+
+  * 不論是 model A用在比較省電的領域或是多媒體的model B都是受人歡迎
+
+
+
+
+**速記：**
+
+
+
+
+
+
+  * RPI Model B
+
+
+
+    * Spec:
+
+
+
+      * 512M memory
+
+
+      * 2 USB
+
+
+      * Ethernet, HDM, Analog audio
+
+
+
+    *  Application:
+
+
+
+      * In car computer
+
+
+      * XBMC media player
+
+
+      * Pi-rotenchnics
+
+
+      * Wearable Pi
+
+
+
+
+  * Mode A
+
+
+
+    * Spec 
+
+
+
+      * 256Mb mem
+
+
+      * Single USB, no network
+
+
+
+    * But ….  more chip ..  and more power saving
+
+
+    * Application
+
+
+
+      * Pi in outer space (need power saving)
+
+
+
+
+  * Camera moduls
+
+
+
+    * 5M pixels
+
+
+    * 1080p(30fps), 720p(60fps), VGA90 video
+
+
+
+  * Camera without IR filter
+
+
+
+    * build-in their own filters.
+
+
+
+  * Pi-Mote - Community innovation
+
+
+
+    * [http://www.raspberrypi.org/controlling-electrical-sockets-with-energenie-pi-mote/](http://www.raspberrypi.org/controlling-electrical-sockets-with-energenie-pi-mote/)
+
+
+
+  * continue to innovate
+
+
+
+    * RPI Compute Module  (individual or commercial using)
+
+
+
+      * 512M mem
+
+
+      * 4GB eMMC
+
+
+      * 120 pin GPIO
+
+
+      * optimize power design
+
+
+
+    * RPI B+ 
+
+
+
+      * [http://www.raspberrypi.org/introducing-raspberry-pi-model-b-plus/](http://www.raspberrypi.org/introducing-raspberry-pi-model-b-plus/)
+
+
+      * Compatible with B
+
+
+      * More GPIO (grow from 26 to 40)
+
+
+      * More USB (2->4)
+
+
+      * Support Micro-SD
+
+
+      * Lower power
+
+
+      * Better Audio
+
+
+      * Neater form factor support.
+
+
+
+
+  * Design Spark
+
+
+
+    * A community to discuss how to design under RPI GPIO.
+
+
+
+  * IOT development Kit
+
+
+
+    * Pressure, temperature, humidity, G-sensor, e-Compass
+
+
+
+  * Internet Toilet 
+
+
+
+    * [http://www.raspberrypi.org/wp-content/uploads/2014/07/iotbog-500x375.jpg](http://www.raspberrypi.org/wp-content/uploads/2014/07/iotbog-500x375.jpg)
+
+
+
+
+
+## 實現在行動裝置的影像處理和智慧型辨識系統，建立流浪狗協尋及地圖分佈服務
+
+
+
+
+### 心得:
+
+
+
+
+
+
+  1. 強大的影像辨識與分類演算法
+
+
+
+    1. 分類特徵化
+
+
+    2. 資料搜尋
+
+
+
+  2. 使用者習慣
+
+
+
+    1. 避免個人資料曝光
+
+
+    2. 資料輸入方式
+
+
+    3. 界面～不好看的界面不會有人使用．
+
+
+
+  3. 攜帶式晶片掃描器是一個很大的市場 
+
+
+
+
+### 速記:
+
+
+
+
+
+
+  *  找狗網 ([http://finddog.net](http://finddog.net))
+
+
+
+    * 可以用影像，文字搜尋寵物的網站
+
+
+
+  * 傳統找寵物
+
+
+
+    * 小訣竅:
+
+
+
+      * 十個小時內尋找比較容易找到，貓容易躲陰涼地
+
+
+
+    * 方法:
+
+
+
+      * 貼廣告
+
+
+      * 報警
+
+
+      * 拜拜？
+
+
+
+    * 缺點：
+
+
+
+      * 人看過寵物都忘
+
+
+      * 個人資料外洩
+
+
+
+
+  * 現有App缺點
+
+
+
+    * 不好用
+
+
+    * 狗臉辨識（效率低)
+
+
+    * 文字資料得用人工keyin
+
+
+
+  * 辨識技術
+
+
+
+    * 在local 使用影像辨識
+
+
+    * 分類特徵化
+
+
+    * 
+
+
+  * Architecture (EC2)
+
+
+  * 晶片掃描器
+
+
+
+    * 市售得要三萬塊
+
+
+    * 研發出只要插在iPhone上就可以使用
+
+
+    * 並且有連接資料庫的問題
+
+
+
+
+
+Q&A
+
+
+
+
+
+
+  * Q:  影像辨識的部分?
+
+
+
+    * A:: 部分參考OpenCV，其他都自己完成．
+
+
+
+  * Q:  關於狗臉辨識有論文?
+
+
+
+    * A: 本來要做人臉辨認｀因為有個資法語肖像權的問題．所以只能做人臉辨識．
+
+
+
+
+
+ 
+
+
+
+
+## 從立院影城到公民直播的影音串流技術 (yhsiang)
+
+
+
+
+### 心得:  
+
+
+
+
+做公民直播除了技術與架構之外，什麼樣分享出去適當的資訊以及避免偏袒真的是一個大問題．
+
+
+
+
+### 速記：
+
+
+
+
+
+
+  * 背景:
+
+
+
+    * 立法院的影音只能保留半年
+
+
+    * 格式: mms 
+
+
+    * 質詢冗長而無聊
+
+
+
+  * Yahoo Hack Day
+
+
+
+    * 原來想做彈幕
+
+
+    * 後來改成鞋子跟雞蛋 ~也可以護航
+
+
+
+  * 技術
+
+
+
+    * **後端轉錄：**
+
+
+
+      * **mms (msdl) -> WebM  (FFserver) -> HLS (nginx-rtmp)**
+
+
+
+    * **前端技術:**
+
+
+
+      * **Firebase x MediaElement (Brunch)**
+
+
+
+    * 獲得：
+
+
+
+      * 最佳人氣獎
+
+
+      * 媒體報導
+
+
+
+
+  * 思考：
+
+
+
+    * 人們想關心立法院，只是不容易使用並且無趣
+
+
+
+  * 直播金字塔:
+
+
+
+    * 前端
+
+
+    * 雲端
+
+
+    * 硬體
+
+
+
+      * Win/Mac Record card BlackMagic
+
+
+
+    * 網路
+
+
+
+  * 簡易完成SNG
+
+
+
+    * Ustream 直撥教學
+
+
+    * YuTing [http://www.slideshare.net/yuting1987/0417-33607269](http://www.slideshare.net/yuting1987/0417-33607269)
+
+
+
+  * 遍地開花
+
+
+
+    * Whtchout 沃草 [http://watchout.tw/](http://watchout.tw/)
+
+
+    * Live直撥 大腸花垃圾話論壇  [https://www.youtube.com/watch?v=11Qc0p9zzVU](https://www.youtube.com/watch?v=11Qc0p9zzVU)
+
+
+    * SkyWatch
+
+
+
+  * 新形態的媒體平台
+
+
+
+    * Hackfoldr 
+
+
+    * Livehouse.in
+
+
+    * inLiveTW
+
+
+    * g8v.tv
+
+
+
+  * WebRTC
+
+
+
+    * Stun/Turn (p2p)
+
+
+    * Relay
+
+
+
+  * 公民導播檯
+
+
+
+    * 誰來決定
+
+
+    * 變成另外一個媒體（獨大？)
+
+
+
+
+
+**Q&A:**
+
+
+
+
+RTSP/RTMP/MMS/HLS 差別
+
+
+
+
+
+
+  * (?)Adaptive streaming, no buffering.
+
+
+
+    * RTSP/RTP 
+
+
+
+      * Provide by 
+
+
+
+    * MMS
+
+
+
+      * Adaptive, no buffering.
+
+
+
+
+  * (?)Buffering streaming
+
+
+
+    * RTMP
+
+
+
+      * Don’t need http server.
+
+
+      * using on flash
+
+
+      * (?)
+
+
+
+    * HLS
+
+
+
+      * Need http server
+
+
+      * Apple
+
+
+      * (?)
+
+
+
+
+
+
+ 
+
+
+
+
+## 電腦不只會選土豆，還會幫你選新聞
+
+
+
+
+### 心得:
+
+
+
+
+
+
+  * 別忘了～搞Big Data的人80%時間都在準備輸入資料還有20％是抱怨為何要準備資料． 可見資料有多重要．
+
+
+  * Python 有許多Data Science 應用上的module
+
+
+
+
+### 速記:
+
+
+
+
+
+
+  * 用Python抓取新聞抓取的新聞篩選系統
+
+
+  * 愛因斯坦 -
+
+
+
+    * 如果有一個小時要解決問題，必須用55分鐘去思考問題而用五分鐘來想解決的方法．
+
+
+
+  * 問題定義：
+
+
+  * 尋找新聞:
+
+
+
+    * 傳統方式:
+
+
+
+      * 打開瀏覽器
+
+
+      * 複製新聞
+
+
+      * 貼上
+
+
+
+    * (換成Python)
+
+
+
+      * requests  模擬瀏覽器查詢
+
+
+      * selenium 真正模擬器所有動作
+
+
+
+    * 關於 selenium
+
+
+
+      * 可以模擬 JS的互動狀態 
+
+
+      * code:
+
+
+
+        * browser =  webdriver.Firefox()  #真的會打開Firefox
+
+
+        * browser.get('http://google.com')
+
+
+        * elem = browser.dind_elelment_by_name(‘q’)  ＃Google 的搜尋框
+
+
+        * elem.send_keys(‘coscup’)
+
+
+        * elem.submit  #真正瀏覽器會送出查詢 coscup
+
+
+
+
+    * BeautifulSoup （抓取資料)
+
+
+    * Readability (抓出網頁主文，並且去除廣告)
+
+
+
+      * from readability.readability
+
+
+
+    * SAAS 一樣有抓網頁的東西
+
+
+
+      * www.kimnolabs.com
+
+
+      * import.io
+
+
+
+
+  * 存取新聞
+
+
+
+    * 存進資料庫 MongoDB
+
+
+
+      * PyMongo
+
+
+
+    * 有趣資料
+
+
+
+      * 最不受歡迎的類別：財經(3.11%)、消費(2.57%）、健康(1.06%)
+
+
+      * 最受歡迎的類別：生活（38.0%）、新奇(47.74%)、寵物動物(89.24%)
+
+
+
+
+  * 機器學習 (Machine Learning)
+
+
+
+    * 斷詞 ([jieba](https://github.com/fxsjy/jieba)) 
+
+
+
+      * imoort jieba
+
+
+      * jieba.cut('分析這段文字’)
+
+
+
+    * 找關鍵詞 (jieba)
+
+
+    * 加自定詞庫 (jieba)
+
+
+    * Scikit-learn Skelearn (Python Machine Learning module)
+
+
+
+      * Classification
+
+
+
+        * 文章會不會超過1000 likes
+
+
+
+      * Regression
+
+
+
+        * 歸納出一條線
+
+
+
+      * Clustering
+
+
+
+        * 給一堆新聞，分堆
+
+
+
+      * Prediction
+
+
+
+        * 預測這篇新聞會不會得到 1000 likes
+
+
+
+
+
+  * 其他工具:
+
+
+
+    * 抓網頁 Scrapy
+
+
+    * 自然語言  NLTK
+
+
+    * Python Data Analysis Library - Pandas 
+
+
+    * Open Source Data visualization - Orange 
+
+
+
+
+
+ Q&A
+
+
+
+
+
+
+  * Q:如何訓練找出自己的喜歡的文章
+
+
+
+    * A: 必須先要訓練數千篇文章讓你的電腦知道的喜好．
+
+
+
+
+
+ 
+
+
+
+
+## Startup Best Practices on AWS
+
+
+
+
+### 心得:
+
+
+
+
+
+
+
+
+
+  * Amazon 不僅僅提供PAAS服務基本上我想所有的服務都有了，是可以找機會研究一下看看有沒有什麼特別的地方．
+
+
+  * 有提到一些template與快速設置的方面可以查查，Marketplace 也可以看看．
+
+
+
+
+
+
+
+### 速記:
+
+
+
+
+
+
+
+
+
+  * MVP (Minimum Viable Product)
+
+
+
+    * Release Quickly
+
+
+    * Limited** core fathers**
+
+
+
+      * Must choose essential features.
+
+
+
+    * **iterate** in production
+
+
+
+      * Improve your product by marketing every week, month.
+
+
+
+    * Business **decisions** base on **data**
+
+
+
+  * Application Architecture
+
+
+  * AWS Marketplace
+
+
+
+    * OSSF API
+
+
+    * NetFlex 
+
+
+
+  * Loose Coupling Enable Scale-out and resiliency
+
+
+
+    * Use Message Queues
+
+
+
+      * If message is stock, SQS (Simple Queue Service) will help to load balance.
+
+
+
+    * Use Circuit break
+
+
+
+      * It could bypass downgrade service or default service if any failure happen.
+
+
+
+
+  * Statelessness Enables Scale-out
+
+
+  * Amazon DynamoDB
+
+
+
+    * Once create DB you need to provisioned
+
+
+
+      * how much loading you need
+
+
+      * how many bandwidth
+
+
+
+    * Once it almost exceed it will send alert to scale it up.
+
+
+
+  * Cloud SOA (Service Oriented 
+
+
+  * Two-pizza teams
+
+
+
+    * small, autonomous team
+
+
+    * full responsibility for service X
+
+
+    * No handovers 
+
+
+    * Trust
+
+
+
+  * Amazon Web Service
+
+
+
+    * If you can program it, you can automate it.
+
+
+
+  * 所以相依的服務有樣板可以依樣畫葫蘆建造
+
+
+
+    * 有資料庫，CDN或是其他更多的服務
+
+
+    * 有版本控制
+
+
+
+  * Infrastructure in AWS also can have its own version to deploy.
+
+
+
+
+
+
+
+## State of the unison: g0v 村情咨文
+
+
+
+
+### 心得
+
+
+
+
+
+
+  * g0v 是一群有理想願意付出自己時間與能力的人，是一種Open Source的最佳表現
+
+
+  * g0v 的建立讓Gov 得好好的去思考與反省，並且開放更多的資料出來了．
+
+
+  * 可以找機會看看g0v 的活動有沒有可以幫上忙的
+
+
+
+
+### 速記
+
+
+
+
+
+
+  * 政治獻金數位化
+
+
+
+    * 紙本資料 -> 掃描 -> OCR ( Otaku CR) 宅男辨識系統 -> 分析
+
+
+
+  * G0V 成為世界上最大的開放政府資料的社群活動
+
+
+  * 從 g0v 到 gov 
+
+
+
+    * 到立法院資訊處演講
+
+
+
+  * 跟教育部整合
+
+
+
+    * 萌典  
+
+
+
+      * 筆順，動畫
+
+
+
+
+  * 從 ngo 到 ng0(zero)
+
+

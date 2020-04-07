@@ -1,0 +1,130 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2004-04-13 02:35:05+00:00
+slug: mt-%e7%b9%bc%e7%ba%8c%e4%bf%ae%e6%94%b9%e8%bf%b4%e9%9f%bf%e8%88%87%e8%a8%82%e9%96%b1blog%e7%9a%84%e9%83%a8%e5%88%86
+title: MT-繼續修改迴響與訂閱Blog的部分
+wordpress_id: 74
+categories:
+- 關於MT的學習心得
+---
+
+![關於MT的技術](http://www.evanlin.com/mt/images/mt-logo.gif)
+
+
+
+
+
+針對最近對於MT的小小研究，這裡在這繼續分享一些簡單修改MT的部分
+
+
+
+
+
+  
+  1. **[修改迴響的鍊結](http://www.evanlin.com/blog/archives/000092.html#tag1)**[：](http://www.evanlin.com/blog/archives/000092.html#tag1)各位若有在首頁加上迴響，當然都希望能直接察看該迴響的內容，這個部分就是修改這些東西，方便使用。
+
+  
+  2. **[加上訂閱MT日誌的功能](http://www.evanlin.com/blog/archives/000092.html#tag2)**[：](http://www.evanlin.com/blog/archives/000092.html#tag2)有人曾經問過如何讓別人可以訂閱自己的Blog？以下我會為這個原本就有的功能，作一個介紹。
+
+
+<!-- more -->
+
+
+**1.**對於[上一篇](http://www.evanlin.com/blog/archives/000091.html#146)的介紹，我要加上了一些小小的修改，也就是將最新回應上加上相對應的位置，各位可以參考我Blog首頁上的最新回應，每個最新回應都會對應到相對應的迴響位置上，而不會跑到某些沒必要的地方，所以各位將您的最新回應修改成以下的格式，可以將他放在『主要模版』(_Main
+Index_)之中，
+
+
+
+
+
+
+ (<a href="" target=_blink>)：  
+
+
+　<a href="#">關於"..."
+  
+
+
+
+
+
+
+
+以上修改的主要含有
+
+
+
+
+
+  
+  * 將每個迴響發表人，將上鍊結連到他的網址
+
+  
+  * 迴響可以直接連結到『個人迴響』中每個迴響發表的人位置
+
+
+
+
+
+當然，這還是需要修改『個別迴響』(_Individual
+Entry Archive_)裡面的一些設定值，位於迴響附近將內容更改為下：
+
+
+
+
+
+
+<a name="">
+
+
+
+
+Posted by:  發表於 
+
+
+
+
+
+
+
+
+
+各位可以這樣修改吧
+
+
+
+
+**2.**針對訂閱部分，各位可以參考我的首頁上面的資訊，將以下的字串加入您的『主要模版』(_Main
+Index_)之中即可
+
+
+
+
+<form method="post" action="mt-add-notify.cgi">
+<input type="hidden" name="blog_id" value="" />
+<input type="hidden" name="_redirect" value="" />
+
+
+
+
+
+
+
+
+
+如此一來在管理介面的『通知書』可以看到訂閱的人次，但是如果您要寄送的話，得在完成文章的編輯後在下方按下寄送才可以，如下圖所示，可以選擇加上任何一些文字，或是加上文摘寄送給訂閱日誌的人
+
+
+![加上內容或是按下文摘後寄送出去](http://www.evanlin.com/blog/archives/0413/0413.jpg)
+
+
+
+Have fun!!
+
+
+
+
+　

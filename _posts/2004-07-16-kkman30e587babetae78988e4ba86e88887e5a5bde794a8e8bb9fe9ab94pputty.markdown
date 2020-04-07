@@ -1,0 +1,27 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2004-07-16 02:17:39+00:00
+slug: kkman30%e5%87%babeta%e7%89%88%e4%ba%86%e8%88%87%e5%a5%bd%e7%94%a8%e8%bb%9f%e9%ab%94pputty
+title: KKMAN3.0出BETA版了與好用軟體Pputty
+wordpress_id: 118
+categories:
+- 網路上好玩的事情
+---
+
+<blockquote>[![按下去看全螢幕執行畫面](http://www.evanlin.com/blog/archives/0716/kkman.jpg)](http://www.evanlin.com/blog/archives/0716/kkman_full.jpg)與 [![按下去看全螢幕執行畫面](http://www.evanlin.com/blog/archives/0716/pputy.jpg)](http://www.evanlin.com/blog/archives/0716/pputty_full.jpg)  都是華人界蠻好用的軟體
+> 
+> </blockquote>
+
+如同[KKMAN](http://kkman.com/)網站上面的公告，新版的KKMAN3.0已經有BETA版本。這個一直被大家使用，也一直被大家罵的軟體，也出了新版了，剛剛裝好之後使用一下，發現一些舊版的BUG都修好了（無法自動關閉網頁，無法使用FLASH網頁～～ ）。雖然這套軟體，使用上有許多的BUG，但是其中切換視窗的習慣與關閉視窗的快速鍵（Ctrl+Left or Right)(Ctrl+Del)這些快速鍵倒也是影響到我之後面對一些具有TABLE的程式要切換程式之間，也都會將快速建設定與KKMAN相同的操作方式_（一種軟體佔有方式？？）_，在我一邊試試看的時候，大家有幸去就去下載用用看吧～～～
+
+另外一個好用的軟體pputty是一個很好用的連線軟體，不論是TELNET（BBS啦）或是SSH（具有加密的連線方式）都可以使用他，以下是[Jedi](http://jedi.z6i.org/blog/)在[pputty的介紹文章中](http://jedi.z6i.org/blog/archives/004064.html#entry)有以下的敘述，可以參考，也可以到[官方網站](http://ntu.csie.org/~piaip/prjs/pputty/)去～～～
+
+<blockquote>pputty 就是 piaip's PuTTY extension project 的縮寫，官方網站位於 [http://ntu.csie.org/~piaip/prjs/pputty/](http://ntu.csie.org/~piaip/prjs/pputty/) ，同時提供了英文版的 pputty 和中文版的 cpputty ，中文版除了各種選單、訊息都已中文化外，功能與英文版是一致的。 pputty 除了修掉了前述中文輸入的瑕疵外，還有許多強大可怕的功能。
+> 
+>   
+首先，程式啟動的介面變得簡潔許多，而且會自動地儲存最後一次使用時的設定值，方便下次直接採用，而且標題列也會顯示妳目前的終端機長寬（如果妳有改過的話）。再來就是可以自訂透明程度的視窗半透明功能，讓妳的 PuTTY 硬是比別人炫麗許多。許多專門連 BBS 的程式，都可以直接點選 http:// 、 mms:// 、 ftp:// 、 [telnet://](telnet://) 等鏈結，這項 PuTTY 開發團隊「遲遲不願意花力氣做」的功能，現在被 piaip 放進 pputty 了！而 pputty 更是史上第一個支援 slzzp:// 以及 ericyu:// 的程式！（如果妳按著 Ctrl 不放的話，這項功能就會暫時被停用，以便妳複製鏈結文字。）然後許多熟悉 UN*X 的朋友們或許會常常用到 SCP ，現在 pputty 已經內建 SCP 功能了！妳祇需要用滑鼠拖曳的方式，把要上傳的檔案拖進 pputty 視窗內，就可以把檔案上傳到遠端主機上了
+> 
+> </blockquote>

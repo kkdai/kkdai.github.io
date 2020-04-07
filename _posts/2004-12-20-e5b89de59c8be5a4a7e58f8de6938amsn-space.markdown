@@ -1,0 +1,45 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2004-12-20 17:52:34+00:00
+slug: '%e5%b8%9d%e5%9c%8b%e5%a4%a7%e5%8f%8d%e6%93%8amsn-space'
+title: 帝國大反擊~~~MSN Space
+wordpress_id: 172
+categories:
+- 網路上好玩的事情
+---
+
+![](http://messenger.msn.com/controls/images/sf.gif)
+
+微軟，這位軟體業的老大，最擅長的不過就是利用自己強大的市佔率，去強迫市場上的使用者，去使用他們的相關服務，舉反[MSN Messenger](http://messenger.msn.com/Beta/Default.aspx)與IE都是如此。日前~他們發表了[MSN Messenger](http://messenger.msn.com/Beta/Default.aspx)7.0的BETA版本，裡面加入了許多令人驚艷的功能，以下有一些相關報導
+
+  * [人民網](http://www.people.com.cn/BIG5/it/1070/2917054.html)
+  * [聯合新聞網 MSN 7.0 搶鮮版報到!](http://news.sina.com.tw/articles/12/52/02/12520280.html?/tech/)
+
+在此，就先不強調一些其他的新功能。但是眼尖的人會發現，其實此版的[MSN Messenger](http://messenger.msn.com/Beta/Default.aspx)(以下簡稱MSN)最主要的，就是將微軟的新服務([其實之前就介紹過了](http://www.evanlin.com/blog/archives/000178.html)~~~)MSN SPACE推薦給全世界的Bloger。
+
+針對這一點，主要的就是在MSN的名單列表上，會出現相關的分享空間(此為繁中譯文，個人覺得有點奇怪)，如同以下的範例圖(摘自[人民網](http://www.people.com.cn/BIG5/it/1070/2917054.html))，你會看到該連絡人所分享出的圖片，或是可以連接到該連絡人的網誌去。
+
+![F2004101315065300000.jpg](http://www.evanlin.com/blog/archives/20041221/F2004101315065300000.jpg)
+
+於是乎，人人開始建立自己的[MSN SPACE](http://spaces.msn.com/HomePage.aspx)，但是經過我這幾天的測試與使用下，其實[MSN SPACE](http://spaces.msn.com/HomePage.aspx)還是有一些使用上相當不便的地方。
+
+  1. **版面不可修改HTML:  
+**當然，對於許多的使用者。這個是相當方便的，你不必去修改難懂的HTML CODE，但是相對的、你也就不能使用[http://del.icio.us/](http://del.icio.us/)這種方便的BOOKLIST服務(或許微軟自己會搞一套，WHO KNOW?)  
+
+  2. **帳號與相關不確定性:**  
+要這樣的服務，首先你需要有MSN .NET  PASSPORT的帳號(廢話! 有MSN的人一定都有的)。不過，在我無聊亂逛下，我看到一個[有趣的畫面](http://spaces.msn.com/HomePage.aspx)。( 上面是寫_*您可能需支付網際網路的費用。_)，以後會不會收費??  別問我 ^___^"  
+  
+![MSN.JPG](http://www.evanlin.com/blog/archives/20041221/MSN.JPG)   
+
+  3. **對於其他軟體TrackBack的通用:  
+**TrackBack已經是相當被許多BLOGER使用的一套機制(我想也是個禮貌，引人人家文章要知會一聲)，MT的TrackBack算是蠻好用的，Plog也支援MT格式的TrackBack，在此!! MSN SPACE 完全不提供其他軟體的PING (TrackBack主要是用Ping來傳遞訊息)，其實此點完全是微軟的作風。  
+
+  4. **備份機制??:  
+**不知道，是微軟大哥忘記這件事，還是故意不寫，這套MSN SPACE是我看過BLOG系統上，少數幾個沒有備份機制的，不過~~~想到以後可能會收費，這樣的遺忘，似乎又是合理的。
+
+以上幾點，是小弟我觀察到的缺點啦。當然，MSN SPACE有許多好用的地方(介面、拖曳修改外觀、支援圖片相本、HTML編輯方式)，我在此就不多加敘述，你問我，會不會使用MSN SPACE?
+
+[我有申請一個阿](http://spaces.msn.com/members/evan/)，不過就是拿來放放10MB照片罷了!!!

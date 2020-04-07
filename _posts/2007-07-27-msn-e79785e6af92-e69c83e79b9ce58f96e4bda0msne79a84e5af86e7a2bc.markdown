@@ -1,0 +1,25 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2007-07-27 19:36:19+00:00
+slug: msn-%e7%97%85%e6%af%92-%e6%9c%83%e7%9b%9c%e5%8f%96%e4%bd%a0msn%e7%9a%84%e5%af%86%e7%a2%bc
+title: MSN 病毒~~~ 會盜取你MSN的密碼
+wordpress_id: 718
+categories:
+- 網路上好玩的事情
+---
+
+[![](http://tbn0.google.com/images?q=tbn:1RQoNaxY0QeDfM:http://kit-cat.net/f2b/images/avatars/1.gif)](http://images.google.com.tw/imgres?imgurl=http://kit-cat.net/f2b/images/avatars/1.gif&imgrefurl=http://kit-cat.net/f2b/index.php%3Fload%3Dread%26id%3D163&h=80&w=80&sz=4&hl=zh-TW&start=0&sig2=nQMskjjbjcXzMULSWx7cBw&um=1&tbnid=1RQoNaxY0QeDfM:&tbnh=74&tbnw=74&ei=FNSpRprvKKKQggOn1KHUAw&prev=/images%3Fq%3DMSN%25E4%25B8%25AD%25E6%25AF%2592%26svnum%3D10%26um%3D1%26complete%3D1%26hl%3Dzh-TW%26sa%3DN)
+
+<blockquote>XXXX said:   
+在不被发现的情况下查出谁把你从MSN中删除 http://messenger-detective.tk 
+> 
+> </blockquote>
+
+各位要小心~~ 如果你MSN 收到以上類似的訊息~~~ 請不要連進去~~ 因為這是盜取你MSN 的帳號與密碼的程式~~ 如果各位已經被盜取的話~~~
+
+請用以下的鏈結去重新設定密碼~~~
+
+[http://0rz.tw/2b2lR](http://0rz.tw/2b2lR)

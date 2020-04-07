@@ -1,0 +1,31 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2006-07-04 21:09:08+00:00
+slug: '%e5%9c%a8mt%e4%b8%8a%e5%ae%89%e8%a3%9dscode'
+title: 在MT上安裝SCode
+wordpress_id: 433
+categories:
+- 關於MT的學習心得
+---
+
+![關於MT的技術](http://www.evanlin.com/mt/images/mt-logo.gif)  
+
+
+大家應該都很羨慕有些人的Blog 有類似以下的圖片來輸入你的安全碼才能寫COMMENT
+
+![](http://james.seng.sg/captcha)
+
+這樣可以有效的來抵擋垃圾的迴響~~
+
+那~~ 要怎麼樣來安裝呢??
+
+  1. 首先[Download SCode 1.0C](http://www.evanlin.com/blog/archives/20060705/scode-0.1c.tar.gz)
+  2. 解壓縮後，將裡面的scodetest.cgi放在你MT的目錄下執行看看~~ 如果執行沒有任何問題，表示你的GD for PERL 是安裝正常的。
+  3. 如果沒有的話請在這裡[下載最新的GD](http://www.boutell.com/gd/)，並且[安裝GD.pm](http://search.cpan.org/~lds/GD-2.34/GD.pm)
+  4. 如果你有安裝MT-Blacklist，請關閉它(就我的經驗是如果不關閉~  SCODE的功能會失效)
+  5. 依照README的說明來安裝~~~
+  
+如果沒有MT-Blacklist 怎麼辦???如果你有依照~~ 依照[OUI-Blog](http://www.oui-blog.com/)所提供的[Spam大作戰 【第二彈追擊](http://www.oui-blog.com/archives/2005/03/spamae_aecaea.php)所提供的方式來安裝批次刪除PING 與 COMMEND 的SPAM的話，應該可以解決大部分的問題了~~

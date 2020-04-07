@@ -1,0 +1,192 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2014-02-04 19:26:33+00:00
+slug: '%e5%ad%b8%e7%bf%92%e5%bf%83%e5%be%97-ruby-%e8%b7%9f-rail-%e7%a0%94%e7%a9%b6%e5%bf%83%e5%be%97-1'
+title: '[學習心得] Ruby 跟 Rail 研究心得 (1)'
+wordpress_id: 1310
+categories:
+- Ruby on Rails
+- 學習文件
+---
+
+**緣起:**
+
+
+
+
+最近開始要找時間研究一些新的程式語言，主要是要讓我自己的程式在server端back-end的一些處理  
+有些前輩推薦我使用[Heroku](http://heroku.com)，主要原因如下：
+
+
+
+
+
+
+  * 支援的程式語言相當的多 (Ruby/Golang)
+
+
+  * 只要是跑一個process之下，基本上算是免費
+
+
+
+
+Ruby on Rails 網路上的資源並不少，不過[這一個算](http://ihower.tw/rails3/ruby.html)是我找到比較齊的，也很適合初學者來學習.
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+**關於程式語言Ruby:**
+
+
+
+
+如同每一個最近產生的程式語言一樣，Ruby有著比較方便的用途與預先設定好的一些API
+
+
+
+
+在此整理一下，個人所認為相當方便與特別的地方:
+
+
+
+
+
+
+
+
+
+  * _關於變數型別_
+
+
+
+    * 是所謂的[強型別]
+
+
+
+      * 物件無法了解其型別
+
+
+      * 無法直接轉換數字與浮點數需要自行轉換
+
+
+
+    * 字串轉數字，數字轉字串原本就有提供   .to_s  to_i
+
+
+    * 大寫是constant 小寫是變數 (類別class名稱要用constant)
+
+
+    * [注意] Symbol 是記憶體位置固定的但是變數記憶體位置不固定
+
+
+    * 讓我比較覺得特別的是 除了 nil 與 false  其餘都是true包含
+
+
+
+      * if (0)
+
+
+      * if (“ “)
+
+
+
+
+  * _關於資料結構: 陣列，雜湊表_
+
+
+
+    * 陣列限制，可以[0] 是字串，但是[1]自數字
+
+
+
+  * _關於走訪與iterator_
+
+
+
+    *  提供許多方便的traversal 或是interator的方式
+
+
+
+      * .each do (這很基本)
+
+
+      * .delete_if {|x| x >20}
+
+
+      * .map {|x| x+”ss”} 來轉移或是轉變array
+
+
+      * .inject 是取出兩兩成對～我認為這個真的很好用
+
+
+
+
+
+
+關於inject 我提出一個範例出來比對C++與 Ruby 字串處理的差異
+
+
+
+
+**題目： 找出一個字串列中最大的N個字串，比如說 [“1”, “22”, “333”] 找出前兩長為 “333”, “22"**
+
+
+
+
+C++結果如下
+
+
+
+
+
+Ruby利用inject 結果卻短的個不行
+
+
+
+
+
+
+
+ 
+
+
+
+
+最後把我所有的sample code放上來
+
+
+
+
+
+**參考資料:**
+
+
+
+
+
+
+  * [http://ihower.tw/rails3](http://ihower.tw/rails3)
+
+
+  * [https://www.ruby-lang.org/zh_tw/documentation/ruby-from-other-languages/](https://www.ruby-lang.org/zh_tw/documentation/ruby-from-other-languages/)
+
+
+  * [http://zh.wikipedia.org/wiki/Ruby](http://zh.wikipedia.org/wiki/Ruby)
+
+
+  * [http://ruby-doc.com/docs/ProgrammingRuby/](http://ruby-doc.com/docs/ProgrammingRuby/)
+
+

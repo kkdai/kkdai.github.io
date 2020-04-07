@@ -1,0 +1,34 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2006-12-27 23:42:12+00:00
+slug: wii-remote-%e7%9a%84%e6%93%8d%e6%8e%a7%e6%96%b9%e5%bc%8f-%e6%88%96%e8%a8%b1%e6%9c%83%e5%b8%b6%e4%be%86%e9%81%8a%e6%88%b2%e4%bb%a5%e5%a4%96%e6%9b%b4%e6%96%b0%e7%9a%84%e8%a1%9d%e6%93%8a
+title: Wii remote 的操控方式~ 或許會帶來遊戲以外更新的衝擊
+wordpress_id: 554
+categories:
+- 遊戲天國
+---
+
+![](http://wii.vggen.com/features/controlissues/oldvsnew.jpg)
+
+Wii 的專用遙控器(Wii Remote)，是這次Wii主要推出的一個新的功能，透過直覺式的操作方式，去進行遊戲的操作。
+
+這些當然都還是冰山的一角，遊戲主機的下一步就是希望能跟使用者又更多的接觸~ 除了遊戲之外~整個客廳的"唯一"主機就會希望是遊戲主機...  
+
+談遠了~ 不過呢~~任天堂公司買的這個操控的新技術～　真的有很多有趣的應用。
+
+**Wii Opera - Del.icio.us Tabbed Browsing**
+
+
+[youtube http://www.youtube.com/watch?v=Gt2ASOM86Tc]
+
+
+
+
+**RoombaWii - The Wii-mote controlled Roomba**  
+一個網路玩家，[Chirs，利用Perl script與Darwiin Remote software](http://spazout.com/roomba/)去完成了這個東西。
+
+
+[youtube http://www.youtube.com/watch?v=mj4lsNw3IG0]

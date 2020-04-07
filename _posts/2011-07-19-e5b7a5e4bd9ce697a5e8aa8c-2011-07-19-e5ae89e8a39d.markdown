@@ -1,0 +1,78 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2011-07-19 11:28:00+00:00
+slug: '%e5%b7%a5%e4%bd%9c%e6%97%a5%e8%aa%8c-2011-07-19-%e5%ae%89%e8%a3%9d'
+title: 工作日誌-2011-07-19 (安裝)
+wordpress_id: 1146
+categories:
+- 未分類
+---
+
+這是開站第一篇工作日誌，先從安裝環境開始吧。由於還沒買Mac硬體~ 先尋找Windows 上面尋找開發的方式:
+
+ 
+
+<blockquote>  
+> 
+> 在Windows中安装iPhone开发环境--中国移动开发者社区: [index.php-doc-view-2273.html](http://dev.10086.cn/cmdn/wiki/index.php?doc-view-2273.html)
+> 
+> </blockquote>
+
+ 
+
+這篇文章看起來很有用~ 不過太多軟體要下載~ 加上VMWare 也要尋找~ 先放著~~~ 也要尋找檔案。 順便也要尋找便宜的Mac~ 當作備案。 加上使用WINXP~ 還得另外灌~ 先放著。
+
+ 
+
+<blockquote>  
+> 
+> Installing iOS SDK and Xcode on Windows 7 [http://dev.iphonetw.net/viewthread.php?tid=3962&highlight=windows](http://dev.iphonetw.net/viewthread.php?tid=3962&highlight=windows)
+> 
+>    
+> 
+> [Installing iOS SDK and Xcode on Windows 7](http://ipodtoucher55.blogspot.com/2010/12/installing-ios-sdk-and-xcode-on-windows.html)
+> 
+>    
+> 
+> How to Virtualize OS X on Windows 7 [http://techexxpert.blogspot.com/2010/12/how-to-virtualize-os-x-on-windows-7.html](http://techexxpert.blogspot.com/2010/12/how-to-virtualize-os-x-on-windows-7.html)
+> 
+> </blockquote>
+
+ 
+
+在Win7上面安裝~ 先把檔案都試著抓起來吧~~~~ 明天接著看。
+
+ 
+
+<blockquote>  
+> 
+> 2010/02/12 簽到 DragonFireSDK-讓您在Windows下開發iPhone軟體 [http://dev.iphonetw.net/viewthread.php?tid=1537&highlight=windows](http://dev.iphonetw.net/viewthread.php?tid=1537&highlight=windows)
+> 
+> </blockquote>
+
+ 
+
+這個部分會當作是本日的最後一個方案~ 不過看起來還要#99 有夠貴的~ 不如錢留下來買Mac Air~~~
+
+ 
+
+<blockquote>  
+> 
+> iphone開發環境cygwin(已編譯ToolChain版)下載網誌: [http://www.iphonetw.net/node/517](http://www.iphonetw.net/node/517)
+> 
+> </blockquote>
+
+ 
+
+<blockquote>  
+> 
+> cygwin 開發平台(windows版 iPhone SDK) 開發網誌: [http://www.iphonetw.net/books/unofficialdev/cygwintoolchain](http://www.iphonetw.net/books/unofficialdev/cygwintoolchain)
+> 
+> </blockquote>
+
+ 
+
+使用[這個裡面](http://www.iphonetw.net/node/517)的檔案。先灌好CygWin之後(記得灌X11)，然後把opt 裡面iphone的相關資料夾般過去後~ 直接compiler。可以compiler 成功~ 但是由於我的iPhone還沒JB所以還無法查看是否正常執行~~~~~ 這是本日工作日誌。

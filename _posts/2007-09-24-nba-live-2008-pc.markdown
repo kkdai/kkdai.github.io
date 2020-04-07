@@ -1,0 +1,69 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2007-09-24 13:23:22+00:00
+slug: nba-live-2008-pc
+title: NBA Live 2008 即將發售(PC)版
+wordpress_id: 765
+categories:
+- 遊戲天國
+---
+
+![](http://www.ea.com.tw/images/store/easports/15349_th.jpg)
+
+EA Sport, It is XXX GAME!!
+
+許多人又愛又恨的EA Sport 又有新作要推出啦(我指的是電腦上)。[勁爆美國職籃08](http://www.ea.com.tw/Products/Products_Info.aspx?ID=702) PC中文版是最近即將推出的電腦版的NBA遊戲。大家或許知道我可是EA SPORT 的忠實愛護者(原因也蠻簡單的，誰叫他是唯一做PC上唯一NBA遊戲呢??) 加上PC上面很方便更新ROSTER(球員名單)，所以我才從06一直支持到現在。
+
+來看看基本配備吧!!!!
+
+<blockquote>**基本需求**
+> 
+> 玩家人數：1-2人
+> 
+> 作業系統- WinXP SP2或Win 2000 SP4或Vista  
+處理器- 1.3 GHz P III以上  
+記憶體- 256 MB RAM  
+硬碟空間- 3.7 GB可用硬碟空間  
+DVD光碟機- 16x DVD光碟機  
+解析度：800x600 16bits color以上
+> 
+> 音效卡- 支援DirectSound並使用DirectX 9.0c相容驅動程式的音效卡  
+輸入裝置- 鍵盤 - 滑鼠 - 支援的手把: Logitech Dual Action或Rumblepad、Rumblepad 2系列；Saitek P880 Rumble Pad；Thrustmaster Firestorm Dual Power 3、Firestorm Wireless、或Dual trigger系列
+> 
+> 顯示卡- 相容於DirectX 9.0c的顯示卡  
+需具備64 MB以上的顯示記憶體，並僅支援以下晶片組：
+> 
+> ATI Radeon 7500或以上 / NVIDIA GeForce3、GeForce4 Ti系列或以上
+> 
+> </blockquote>
+
+基本上基本配備需求跟07一樣，搞不好畫面也是一樣(EA 你老實承認~~ 08只是07BUG改進版加上新的球員名單吧??) 順便來看看 新功能介紹~~~~
+
+<blockquote>**產品特色**
+> 
+>   * **制霸禁區  
+**把球交給你的中鋒，運用全新的射球假動作、沈底步法、勾射、旋轉以及其他新招式，在禁區展開殊死戰。  
+>   * **找到適合你發揮的位置  
+**採取真實球員統計資料的全新熱區機制，告訴你何處可以射籃、何處較不順手，以及何處可以投進致勝的一球。  
+>   * **全新FIBA世界錦標賽  
+**在FIBA世界錦標賽中挑戰一流的國家代表隊，包括美國隊、西班牙隊、法國隊等，證明你稱霸全球的實力。  
+>   * **招牌關鍵招式  
+**在球隊最需要你的時候，施展比賽中出色球員的寫實關鍵招式。以著名的退步跳投、邊跑邊投或是後仰式跳投等招式扭轉情勢。  
+>   * **嶄新的王朝劇本  
+**必要情況才親自出手，在「王朝模式」裡模擬比賽，並於比賽中最關鍵的持球時刻取回控制權
+> </blockquote>
+
+制霸禁區 ---> 07 歐尼爾就有啦??
+
+熱區機制 ---> 感覺是以前的投籃分析
+
+FABA ---> 這是新的沒錯～ 不過以往網友就有做過了~~~ 還有灌籃高手的版本～
+
+招牌關鍵招式 ---> 這~~不就是明星招式嗎？
+
+新王朝劇本　---> 蠻期待的!!!
+
+發售日是10/2~~~ 我看~~  我還是會買吧!!!! 

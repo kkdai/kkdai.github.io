@@ -1,0 +1,110 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2005-09-08 15:54:50+00:00
+slug: links-for-2005-09-08
+title: links for 2005-09-08
+wordpress_id: 258
+categories:
+- 每日網摘
+---
+
+
+	
+  * 
+		
+
+[Microsoft Internet Explorer 7.0 Details Begin to Leak](http://www.microsoft-watch.com/article2/0,1995,1776290,00.asp)
+
+
+		
+
+首先先來看篇三月的舊聞，裡面提到關於IE7的一些謎題(TAB，CSS2.0)，現在看來挺有趣的
+
+
+		
+
+(tags: [news](http://del.icio.us/kkdai/news))
+
+
+	
+
+	
+  * 
+		
+
+[Internet Explorer 7 Will Include Antiphishing Tools - Yahoo! News](http://news.yahoo.com/news?tmpl=story&u=/nf/20050826/tc_nf/37970)
+
+
+		
+
+YAHOO新聞，IE7會提升在網路釣魚方面的防範~~ (早該做了~~)
+
+
+		
+
+(tags: [news](http://del.icio.us/kkdai/news))
+
+
+	
+
+	
+  * 
+		
+
+[Paul Thurrott's SuperSite for Windows: Internet Explorer 7 Preview](http://www.winsupersite.com/reviews/ie7_preview_1.asp)
+
+
+		
+
+IE7 Preview，裡面提到許多關鍵性功能(Tab, CSS2, Antiphishing
+
+
+		
+
+(tags: [news](http://del.icio.us/kkdai/news))
+
+
+	
+
+	
+  * 
+		
+
+[Internet Explorer 7: Now in beta testing for developers](http://www.microsoft.com/windows/IE/ie7/default.mspx)
+
+
+		
+
+IE7 下載網址~ 看了那麼多文章~~ 總該裝裝看
+
+
+		
+
+(tags: [news](http://del.icio.us/kkdai/news))
+
+
+	
+
+	
+  * 
+		
+
+[IEBlog](http://blogs.msdn.com/ie/default.aspx)
+
+
+		
+
+有任何IE7的問題，去他們官方BLOG問問看吧
+
+
+		
+
+(tags: [blog](http://del.icio.us/kkdai/blog))
+
+
+	
+
+

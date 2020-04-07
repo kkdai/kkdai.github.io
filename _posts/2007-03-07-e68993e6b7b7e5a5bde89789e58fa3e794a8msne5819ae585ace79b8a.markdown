@@ -1,0 +1,26 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2007-03-07 22:00:34+00:00
+slug: '%e6%89%93%e6%b7%b7%e5%a5%bd%e8%97%89%e5%8f%a3%e7%94%a8msn%e5%81%9a%e5%85%ac%e7%9b%8a'
+title: 打混好藉口?用MSN做公益
+wordpress_id: 606
+categories:
+- 網路上好玩的事情
+---
+
+[![](http://www.ettoday.com/newspic/1091/i1091843.jpg)](http://im.live.com)
+
+最近越來越多同事的MSN前面有加上"I'm"的符號~~ 本來以為只是最新的MSN符號可以使用，沒想到~~ 原來是個公益活動。
+
+<blockquote>許多人當初以為這個綠色的「I'm」是微軟新推「隱藏版」表情符號，興高采烈地放在MSN暱稱的前面，正好變成「I'm 某某某（姓名）」，台灣微軟MSN部門行銷經理鍾婉珍表示，這是一個在美國推出的公益捐助計畫，在Windows Live Messenger 8.1版（8.1版本前均不支援）暱稱上輸入一串「特定碼」，MSN暱稱除了出現「I'm」符號之外，微軟將按照訊息量，拆分一定比例的廣告營收捐贈給代碼所表示的慈善機構，在第一年每個機構的捐款下限是十萬美元，聊越多微軟也將捐贈的越多，由於這個計畫是在美國實行，捐贈的對象將是美國慈善團體，而且限定對話的雙方必須有一方是在美國網站註冊的用戶。   
+  
+目前受贈機構包括American Red Cross（美國紅十字會，特定碼*red+u）、Boys & Girls Club（兒童群益會，特定碼*bgca）、National AIDS Fund（美國國家愛滋基金，特定碼*naf）、National Multiple Sclerosis Society（國家多發性硬化症學會，特定碼*mssoc）、ninemillion.org（國際兒童難民援助組織，特定碼*9mil）、Sierra Club 山巒協會（保護自然生態的地球環境協會，特定碼*sierra）、StopGlobalWarming.org（防止全球溫室效應惡化的機構，特定碼*help） 、Susan G. Komen for the Cure（乳癌基金會，特定碼*komen） 、The US fund for UNICEF（美國地區聯合國兒童基金會，特定碼*unicef）、World Wildlife Fund for Nature（世界自然基金會，特定碼*wwf）、   
+The Oxford Committee for Famine Relief （樂施會；協助解決當時世界各地饑荒及貧窮問題，特定碼*oxfam）、國際關懷協會（特定碼*care）、The Humane Society of the United States（美國人道協會，特定碼*hsus）、American Cancer Society（美國癌症協會，特定碼*acs）、ONE Campaign-（全球消除貧困與對抗愛滋的組織(GCAP)，特定碼*one）   
+以上文章，[摘自: ETtoday: ](http://www.ettoday.com/2007/03/06/91-2062754.htm)_MSN出現隱藏病毒？　暱稱前跑出的「I'm」是啥東西？ _
+> 
+> </blockquote>
+
+有興趣的~~自己換阿

@@ -1,0 +1,56 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2006-01-10 06:44:46+00:00
+slug: '%e5%a6%82%e4%bd%95%e4%bd%bf%e7%94%a8drwatson%e6%89%be%e5%95%8f%e9%a1%8c'
+title: 如何使用Dr.Watson找問題
+wordpress_id: 323
+categories:
+- VC++程式設計
+---
+
+[Dr.Watson](http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/drwatson_overview.mspx)是一個相當方便的偵錯工具，當你的系統出現向以下一樣的[錯誤訊息](http://www.panoramafactory.com/drwatson.html)。即使你沒有安裝VC，你也可以透過[Dr.Watson](http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/drwatson_overview.mspx)幫你把錯誤的log去記錄下來。
+
+![](http://www.panoramafactory.com/drwtsn32.gif)  
+這一篇文章，主要就是簡單的介紹如何的使用[Dr.Watson](http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/drwatson_overview.mspx)，並且也交你如何更改系統的設定去啟動你的[Dr.Watson](http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/drwatson_overview.mspx)、或是當你不想使用它的時候，也可以透過修改Registry Table去將他由系統初始設定裏面移除掉。
+
+**啟動**[**Dr.Watson**](http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/drwatson_overview.mspx)**:  
+**[Dr.Watson](http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/drwatson_overview.mspx)並不是什麼新的軟體，而是從古早時代就已經存在在各位的電腦之中，至於怎麼啟動就是在[執行]下面去按[drwstn32]即可。
+
+![DW0.JPG](http://www.evanlin.com/blog/archives/20060110/DW0.JPG)
+
+**設定**[**Dr.Watson**](http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/drwatson_overview.mspx)**:  
+**在這個設定畫面，你可以設定將error.log 放置的地點，也記得要把[傾印記號表]標記起來，才能正確的記錄下錯誤資訊。
+
+![DW.JPG](http://www.evanlin.com/blog/archives/20060110/DW.JPG)
+
+**設定**[**Dr.Watson**](http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/drwatson_overview.mspx)**為預設的Just-In-Time debugger:**
+
+要將[Dr.Watson](http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/drwatson_overview.mspx)設定的話(注意~~ 再這裡最好先備份你的registry table)，才能避免你原來所設定VC debugger 的設定會消失。
+
+![DW1.JPG](http://www.evanlin.com/blog/archives/20060110/DW1.JPG)
+
+**找尋問題的版本增加Debug Information:**
+
+ 開始找尋問題之前，記得~~~將你的release版本的軟體加上debug information，這樣才能讓你的[Dr.Watson](http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/drwatson_overview.mspx)將正確的資訊傾印下來。 
+
+![VC_Setting1.JPG](http://www.evanlin.com/blog/archives/20061011/VC_Setting1.JPG)
+
+ ![VC_Setting2.JPG](http://www.evanlin.com/blog/archives/20060111/VC_Setting2.JPG)
+
+ ![VC_Setting3.JPG](http://www.evanlin.com/blog/archives/20060111/VC_Setting3.JPG)
+
+**將Dr.Watson由預設移除:**
+
+主要是將RegistryTable修改為原來的資料，請將以下文字另存新檔為Dr.Reg，然後點兩下後安裝~~~   
+
+
+<blockquote>Windows Registry Editor Version 5.00
+> 
+> [HKEY_LOCAL_MACHINESOFTWAREMicrosoftWindows NTCurrentVersionAeDebug]  
+"Debugger"=""C:\WINDOWS\system32\vsjitdebugger.exe" -p %ld -e %ld"  
+
+> 
+> </blockquote>

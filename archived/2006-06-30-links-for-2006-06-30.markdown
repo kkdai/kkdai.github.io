@@ -1,0 +1,72 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2006-06-30 15:39:33+00:00
+slug: links-for-2006-06-30
+title: links for 2006-06-30
+wordpress_id: 427
+categories:
+- 每日網摘
+---
+
+
+	
+  * 
+		
+
+[YouTube - The man who takes off clothes within ten seconds.](http://www.youtube.com/watch?v=k8RnOKTS3vw&eurl=http%3A%2F%2Fwww.ecrazys%2)
+
+
+		
+
+能在十秒內脫光他的衣服~  真是厲害~~不過這樣的技能～～　可以做些什麼？？？
+
+
+		
+
+(tags: [funny](http://del.icio.us/kkdai/funny))
+
+
+	
+
+	
+  * 
+		
+
+[設定優先順序 - The Joel on Software Translation Project](http://local.joelonsoftware.com/mediawiki/index.php/%E8%A8%AD%E5%AE%9A%E5%84%AA%E5%85%88%E9%A0%86%E5%BA%8F)
+
+
+		
+
+Joel 這篇文章裡面充分討論到　幫客人客製化軟體可能會產生的大危險與問題～～　　想起以前幫人客製化軟體的經驗～～　真是覺得心有戚戚焉～～
+
+
+		
+
+(tags: [Software](http://del.icio.us/kkdai/Software))
+
+
+	
+
+	
+  * 
+		
+
+[測測你自己 - The Joel on Software Translation Project](http://local.joelonsoftware.com/mediawiki/index.php/%E6%B8%AC%E6%B8%AC%E4%BD%A0%E8%87%AA%E5%B7%B1)
+
+
+		
+
+Joel 寫了一些比較難以解決的測試題目～～　有能力的可以看看
+
+
+		
+
+(tags: [Program](http://del.icio.us/kkdai/Program))
+
+
+	
+
+

@@ -1,0 +1,225 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2007-07-30 17:15:12+00:00
+slug: '%e6%95%b8%e7%a8%ae%e7%a7%bb%e9%99%a4rm%e5%bd%b1%e7%89%87%e5%bb%a3%e5%91%8a%e7%9a%84%e6%96%b9%e6%b3%95'
+title: 數種移除RM影片廣告的方法
+wordpress_id: 721
+categories:
+- 網路上好玩的事情
+---
+
+
+
+
+[![NO_RM.JPG](http://farm2.static.flickr.com/1018/952608927_6004eeeb8e_o.jpg)](http://www.flickr.com/photos/27643002@N00/952608927/)  
+大家或許都跟我一樣，有經常從網路上去下載影片的需求。但是許多的影片格式中，RMVB(RM)由於檔案容量小，品質優良總是受到大家的喜愛。但是大家總會遇到有一些RMVB或是RM檔案裡面夾有廣告的。也就是你在播放的時候，會不時跳出許多的廣告視窗。
+
+
+
+
+如果你跟我一樣為了這些檔案而困擾的話，那可以參考以下的方法去移除它:
+
+
+
+
+
+
+  1. 
+
+
+**Real 事件清除工具  
+**有的RMVB（ [示例，注意扩展名为rmvb] ）或者RM动画（ [示例，注意扩展名为rm] ）在播放时会弹出网页，这是因为在制作RMVB或者RM文件时，加入了REAL事件，请在下载完RMVB文件后使用"[Real 事件清除工具](http://p.greedland.net/help/clstools.rar)"清除，然后再播放该RMVB文件。  
+
+  
+
+Real 事件清除工具使用方法：  
+
+第一步骤：  
+
+把下载的工具解压缩到您硬盘的某个目录，不需要安装即可使用。  
+
+查看图示：  
+![](http://p.greedland.net/help/clstools2.gif)  
+
+  
+
+第二步骤：  
+
+双击"Real 事件清除工具"这个文件，然后点击"文件"菜单里的"添加文件"，然后从硬盘里选择您想要清除Real事件的RMVB动画文件或RM动画文件，可以选择多个一次清除。  
+
+查看图示：  
+![](http://p.greedland.net/help/clstools3.gif)  
+  
+
+第三步骤：  
+
+点击"开始清除按钮"，会出现红色字提示正在开始清除，在此期间，请耐心等待，清除完毕后即可放心播放该文件了。注：如果程序很长时间没有反应，说明该文件没有插入事件。
+
+
+
+
+
+  2. 
+
+
+**Helix Producer Plus  
+**
+
+
+
+
+RMVB 網站廣告移除方法:  
+在播放一些從網上下載的RMVB檔時，放著放著就會打開一個網頁，而且每次放到這個地方就會自動打開網頁，很麻煩。其實這是別人做廣告的一個方法，他們把網頁資料保存在Real檔的剪輯資訊中就會這樣了，我們只要去掉剪輯資訊中的網頁資料就可以解決這個問題了。
+
+
+
+
+方法一：
+
+
+
+
+　　首先要下載軟體"Helix Producer Plus"，下載後進行安裝，軟體默認是安裝在"C:Program FilesRealHelix Producer Plus"下的。
+
+
+
+
+　　安裝好找到要去除網頁的RMVB檔（如input.rmvb），在旁邊新建一個空白的文字檔案（如event.txt），接著再新建一個批次檔案（如abc.bat），並在裏面輸入如下內容：
+
+
+
+
+　　"C:Program FilesRealHelix Producer PlusRealMediaEditorrmevents.exe" -i input.rmvb -e event.txt -o output.rmvb
+
+
+
+
+　　其中input.rmvb是要進行處理的檔，event.txt是編輯剪輯資訊的檔，output.rmvb表示處理後正常的RMVB檔。
+
+
+
+
+　　檔建立好後，就可以來運行批次檔案abc.bat，這時就會生成一個output.rmvb的視頻檔，它就是已經去除自動打開網頁的檔。
+
+
+  
+
+
+網站廣告原理：
+
+
+
+
+  
+可以在影片中添加事件(events)是rm檔的特性之一。用戶可以安裝 RealProducer Plus (Realnetworks的官方產品之一) 來對rm檔進行編輯、製作、修改。其安裝目錄下的 RealMediaEditor/rmevents.exe 可執行檔正是用來為rm檔插入事件的命令行程式。
+
+
+
+
+你可以任意新建一個文字檔案，比如myevents.txt，檔內容如下：
+
+
+
+
+u 00:00:08.0 00:00:20.0 &&_rpexternal&&http://www.xxxx.net/
+
+
+
+
+其中，  
+u 是事件標誌(Flag)， 表示要在檔中插入的是一個url位址，  
+第2,第三個欄位分別表示起止時間點，單位格式是 小時:分:秒.毫秒  
+最後一個欄位是你要彈出的url的位址 ,  
+_rpexternal 參數表示在外部流覽器打開url,  
+而不是使用realplayer內嵌的流覽器。
+
+
+
+
+  
+保存之後打開命令行視窗，cd到 {RealProducer安裝目錄}/RealMediaEditor 子目錄，執行以下命令：
+
+
+
+
+rmevents -i D:MovieOriginal.rm -e D:myevents.txt -o D:movieWithPopup.rm
+
+
+
+
+執行完成之後用播放器播放處理之後的movieWithPopup.rm檔，當播放到第8秒或者你拖動進度條至8-20秒之間的任一位置，都會彈出一個視窗來。
+
+
+
+
+知道了彈出視窗的原理，要把惡意rm文件的惡意代碼給去掉也很簡單了。你只要新建一個完全空白的myevents.txt文字檔案，然後重新執行上面的命令行就可以把指定rm檔中的所有事件都清除乾淨。
+
+
+
+
+不過要注意的是，rm事件中除了可以彈出視窗之外，還可以用 i 標誌來為剪輯添加一些說明資訊或標題。執行上述命令之後所有的標題資訊可能也會一併去除。但一般來說我們看rm電影不太會去關心這些剪輯標題資訊（何況大部分的標題資訊都是些網站的廣告之類），因此關係不大。
+
+
+
+
+完整的rmevents命令行的使用方法，可以參見安裝目錄下help目錄幫助文檔。
+
+
+
+
+
+  3. 
+
+
+**RM惡意廣告清除器V1.1 (示範圖片在上面)**
+
+
+
+
+2007-01-03 21:53:49
+
+
+
+
+
+
+
+    * **文件大小**: 562 KB
+
+
+    * **文件版本**: V1.1
+
+
+    * **開發商**: 來源網絡
+
+
+    * **文件來源**: 本地
+
+
+    * **界面語言**: 繁體中文
+
+
+    * **授權方式**: 免費
+
+
+    * **運行平台**: Win9X/Win2000/WinXP
+
+
+
+
+
+
+
+清除Real media 影片檔彈出式廣告連結，目前開放測試中，[請到作者網頁下載](http://blog.ecstart.com/index.php/action/viewspace/itemid/1485)。  
+
+
+
+
+
+
+
+
+Powered by [Zoundry](http://www.zoundry.com)

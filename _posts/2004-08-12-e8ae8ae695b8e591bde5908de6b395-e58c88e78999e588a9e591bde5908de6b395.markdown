@@ -1,0 +1,78 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2004-08-12 12:25:10+00:00
+slug: '%e8%ae%8a%e6%95%b8%e5%91%bd%e5%90%8d%e6%b3%95-%e5%8c%88%e7%89%99%e5%88%a9%e5%91%bd%e5%90%8d%e6%b3%95'
+title: 變數命名法–匈牙利命名法
+wordpress_id: 137
+categories:
+- VC++程式設計
+---
+
+![](http://www.popularmechanics.com/science/worst_case_scenario/2003/10/camel/images/tb_camel.jpg)
+
+前幾天去誠品，逛呀逛著，開始看一本關於遊戲設計概念的書『大師談遊戲架構與設計理論 (Game Architecture and Design)』。這本書其實真不賴，不僅有遊戲計概念的書，並且有教導專案管理、程式碼的撰寫風格等等。這些部分其實在市面上的書是很少看的到的。
+
+![](http://reg.softking.com.tw/sell_pic/software/grandtech/EB253.gif)
+
+不過在裡面看到一個程式命名的技巧匈牙利命名法(Hungarian Notation)回頭看自己寫的程式，還真的沒有這樣的命名習慣，難怪自己有時候要找變數的型態，還是得花上一點時間。
+
+在這裡找出一些我找到的相關資料，大家可以看看。
+
+
+<!-- more -->
+
+
+<blockquote>　编码风格约定的目的是为了编写出的代码清晰和一致。Win32 中采用的是“匈牙利命名法”，这已经成为在 Win32 编程中通用的编码惯例。它含有变量前缀符号，该符号给出了一个变量的建议类型。以下的前缀是共同的： 
+>     
+>       a       Array                         数组
+>       b       BOOL (int)                    布尔
+>       by      Unsigned Char (byte)          字节
+>       c       Char                          字符
+>       cb      Count of bytes                字节数量
+>       cr      Color reference value         颜色
+>       cx      Count of x (short)            x 类型数量
+>       dw      DWORD (unsigned long)         双字
+>       f       Flags (usually multiple bit values)多位标志
+>       fn      Function                      函数
+>       g_      global                        全局变量
+>       h       Handle                        句柄
+>       i       Integer                       整数
+>       l       Long                          长整数
+>       lp      Long pointer                  长指针
+>       m_      Data member of a class        类数据成员
+>       n       Short int                     短整数
+>       p       Pointer                       指针
+>       s       String                        字串
+>       sz      Zero terminated String        零结束字串
+>       tm      Text metric                   公制文本
+>       u       Unsigned int                  无符号整数
+>       ul      Unsigned long (ULONG)         无符号长整数
+>       w       WORD (unsigned short)         字
+>       x,y     x, y coordinates (short)      x,y 坐标值
+> 
+> 　　这些约定可以相互结合，如： 
+>     
+>       pszMyString                           指向一零结束字串的指针.
+>       m_pszMyString                         一个类的指向一零结束字串的指针
+> 
+> 　　其他约定还有： 
+>     
+>       CMyClass                              前缀 'C' 代表一 C++ 类名.
+>       COMyObjectClass                       前缀 'CO' 代表一 COM 对象类名
+>       CFMyClassFactory                      前缀 'CF' 代表一 COM 类工厂名
+>       IMyInterface                          前缀 'I' 代表一 COM 接口的类名
+>       CImpIMyInterface                      前缀 'CImpI' 代表一 COM 接口实现的类名
+> 
+> </blockquote>
+    
+    <strong>參考資料:</strong>
+
+  1. [http://member.netease.com/~element/diary0101.html](http://member.netease.com/~element/diary0101.html)
+  2. [http://www.longen.org/E-K/detaile~k/Hungary.htm](http://www.longen.org/E-K/detaile~k/Hungary.htm)
+  3. [http://c2.com/cgi/wiki?CamelCase](http://c2.com/cgi/wiki?CamelCase)
+  4. [http://www.uml.org.cn/bzgf/bzgf5.htm](http://www.uml.org.cn/bzgf/bzgf5.htm)
+
+

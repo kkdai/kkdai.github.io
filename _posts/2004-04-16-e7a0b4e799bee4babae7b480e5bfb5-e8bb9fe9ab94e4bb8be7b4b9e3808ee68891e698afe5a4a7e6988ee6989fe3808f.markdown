@@ -1,0 +1,172 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2004-04-16 12:07:59+00:00
+slug: '%e7%a0%b4%e7%99%be%e4%ba%ba%e7%b4%80%e5%bf%b5-%e8%bb%9f%e9%ab%94%e4%bb%8b%e7%b4%b9%e3%80%8e%e6%88%91%e6%98%af%e5%a4%a7%e6%98%8e%e6%98%9f%e3%80%8f'
+title: 破百人紀念-軟體介紹『我是大明星』
+wordpress_id: 76
+categories:
+- 學習文件
+---
+
+![看到了沒？？ 單日人數破百了](http://www.evanlin.com/blog/archives/0416/server.gif)
+
+
+
+**『立正！！！～～～ 敬禮』**
+
+
+
+
+![Evan在這裡跟大家致敬](http://www.evanlin.com/blog/archives/0416/Evan_0416.gif)
+
+
+
+
+
+在這裡跟大家致敬，由於昨天的單日造訪人次總算識破了一百，從去年的九月
+BLOG
+E建立開始，從每天不到十個人的來訪，到現在每天有一百左右的拜訪人次。為此我得好好的慶祝一下，於是我用我的大頭貼，作了一個對大家敬禮的的姿勢，感謝大家對
+[ Blog E](http://www.evanlin.com/blog/)的愛護阿，在此也為大家介紹一個我最近所買的一套好玩的軟體，叫做『
+[It's ME 我是大明星](http://www.reallusion.com.tw/itsme/default.asp)』
+<!-- more -->
+<table border="1" >
+  <tr >
+    
+<td width="100" valign="top" >
+      
+
+![](http://www.reallusion.com.tw/itsme/images/package_itsme2.gif)
+
+
+      
+
+　
+
+
+    
+</td>
+    
+<td >
+      
+
+
+        
+        <table cellpadding="5" width="100%" class="body" >
+          <tbody >
+            <tr >
+              
+<td height="30" >![](http://www.reallusion.com.tw/itsme/images/dat.gif)
+                只要一張照片，3D動畫明星就是你。
+</td>
+            </tr>
+            <tr >
+              
+<td >
+                
+
+檔案大小：48.6MB
+
+
+                
+
+配備需求：  
+
+                Pentium II 233 MHz或是更高階的處理器  
+
+                64 MB或更多的記憶體容量（建議128Mb以上）  
+
+                200 MB以上的磁碟空間（建議500MB以上）  
+
+                3D加速卡（4 MB 視訊記憶體以上，建議 8MB 以上）  
+
+                CD-ROM光碟機/音效卡/喇叭  
+
+                Windows 2000/98/ME/XP  
+
+                螢幕顯示需800*600以上  
+
+                DirectX 版本 7.0 以上
+
+
+                
+
+
+                  [盒裝版](http://www.reallusion.com.tw/store/cart_additem.asp?item=0001-im20Box-01-S)
+                  $ 890元│ [下載版](http://www.reallusion.com.tw/store/cart_additem.asp?item=0001-im202dn_1-01-S)
+                  $ 640元
+                
+
+
+              
+</td>
+            </tr>
+          </tbody>
+        </table>
+        
+      
+
+
+    
+</td>
+  </table>
+
+
+(以上資訊，摘自
+甲尚軟體公司，版權歸其所有）
+
+
+
+
+　
+
+
+  
+
+『 [It's ME 我是大明星](http://www.reallusion.com.tw/itsme/default.asp)』這一套軟體算是綜合了將相片3D模型化的一個軟體，並且可以做出許多可愛的動作，標榜的就是『只要一張照片，大明星就是你』，顧名思義，也就是如果你有一張大頭照，即便你不會使用任何的合成軟體，你也很可以很輕鬆的做出3D的動畫人物，不僅可以幫喜愛的人做出一些可愛的動作，也可以幫寶貝加上一些可愛的服裝，讓他做出一些活潑的動作，由於我手上的是一個基本版的配備，裡面大概只有十種動作『超人飛行』、『印地安舞蹈』『跑步』『翻跟斗』...一些很活潑的動作，當然你也可以編輯你自己喜歡的動作，在『[我是大明星，動作編輯器](http://www.reallusion.com.tw/store/cart_additem.asp?item=0001-IMMotionEditor-01-S)』裡面，提供一個蠻簡單的介面，比起我之前使用的3D
+  Studio MAX或是[TrueSpace](http://www.turespace.com.tw)來說都還算是相當簡單的軟體，只要對於整個人偶化人物用滑鼠拉一下動作，就可以將一連續的動作紀錄記下來，不論以後你用哪一種人物外掛（人物外掛指的是 
+  服裝、飾品、整套的系列服裝等等），都可以輕鬆的將你的人物加上可愛的動作，相當的簡單。
+
+
+  
+
+講到人物外掛方面，裡面有上班服裝（我現在所用的）、牛仔裝、神鬼戰士、曲棍球服裝、特種部隊....等等人物外掛方面的東西（當然要一些特別的外掛～～～
+  也是要＄＄的，我只能說這家公司真是聰明）將自己的大頭照輸入之後，搭配上特別的人物外掛，每個人自然而然都便程式大明星，我知道現在每個人的Blog都流行『[虛擬大頭貼](http://roxytom.bluecircus.net/archives/001436.html)』，但是，如果你有虛擬的3D動態人物，何必需要大頭貼呢？
+
+
+  
+
+　
+
+
+
+
+
+  ![軟體執行的主畫面](http://www.evanlin.com/blog/archives/0416/star.jpg)
+
+
+
+
+　
+
+
+
+
+這個就是執行的主畫面，當你選定好臉行之後，可以將你的大頭照片放上，當你把眼睛、鼻子與嘴巴的相對位置對應好之後，他就會將你的臉型轉換成3D的模型，之後你就可以將這個臉行的模型套用在任何一個人物外掛之上，所以可以說這是一個相當方便的軟體，將影像處理加以創意化，我想就是這樣，在現在許多影像處理功能越來越多的時候，我想這樣的功能可能其他重量型軟體也作的到，但是能專門為了娛樂而用的影像處理軟體，這個可說是第一套我覺得很讚的！！
+
+
+
+
+在此對大家推薦一下！！！
+
+
+
+
+Have Fun!!!!
+
+
+
+
+　

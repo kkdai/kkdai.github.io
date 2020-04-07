@@ -1,0 +1,25 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2006-11-30 04:24:27+00:00
+slug: '%e9%87%8d%e6%96%b0%e5%ae%89%e8%a3%9dphp%e8%88%87apache'
+title: 重新安裝PHP與Apache
+wordpress_id: 533
+categories:
+- 學習文件
+---
+
+[![PHP](http://static.php.net/www.php.net/images/php.gif)](http://www.php.net/)  
+一向以來~Evan家裡的主機都是透過Mandrake所提供的安裝光碟所安裝起來的~ 除卻一些比較奇怪的module，我都會使用安裝光碟上面所提供的版本來安裝~~ 所以一向以來備份與復原都相當的快速。(何謂備份? 就是把所有網站全部放進去MYSQL~ 並且定期備份出來~ 復原~也是如此~ )
+
+經過這樣的機制~ 就算我家的老伺服器電腦的風扇掛點~ 我也能在一天之內恢復我的主機功能~ (A 備份 a day， Keep 幹譙 away) 但是最近倒是比較奇怪了~ 一直覺得網路速度有點緩慢~ 使得我"友善資源分享"的驢子都無法盡情的奔跑~~ 而且 ls 的功能也變成會出現錯誤~  
+   ls: unrecognized option `--show-control-chars'   
+讓我覺得有點異常的詭異~ 經過[網中人大哥的指點](http://groups.google.com.tw/group/tw.bbs.comp.unix/browse_thread/thread/a946255d0ce04e6c/75757c580e14f4be?lnk=st&q=samba+ls+Control+Options+%E9%BB%91&rnum=1&hl=zh-TW#75757c580e14f4be)與[這篇文章](http://www.ttian.net/website/2005/1203/872.html)。我更是確定我的主機被人家透過Samba 來Hack了~~ 所以只好又再度的重灌~~。
+
+不過~ 這次倒是覺得很奇怪了說~ 我的PHP完全無法使用~ 每次去執行PHP的網頁~ 反而會變成下載指令~ 搞了一陣子~ 總算了解是因為PHP 與APACHE 在安裝上的問題~ 不過在我全部重新安裝之後，到也是沒有這個問題了~ ([參考這篇文章](http://vrhost.spaces.live.com/blog/cns!840D61238181AC8F!272.entry)來安裝的)
+
+  1. 安裝libphp_common
+  2. 安裝apache2-mod_php
+  3. 安裝mod_php

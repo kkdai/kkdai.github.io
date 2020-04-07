@@ -1,0 +1,91 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2007-06-06 08:22:57+00:00
+slug: links-for-2007-06-05
+title: links for 2007-06-05
+wordpress_id: 666
+categories:
+- 每日網摘
+---
+
+
+	
+  * 
+		
+
+[COUPON 折價卷 - 上傳E-coupon](http://www.nppetmall.com/ptt_coupon/ptt/update_coupon.php)
+
+
+		
+
+博客來的E-coupon~~  大家可以一起來分享與領用別人多的E-coupon
+
+
+		
+
+(tags: [博客來](http://del.icio.us/kkdai/博客來) [E-coupon](http://del.icio.us/kkdai/E-coupon))
+
+
+	
+
+	
+  * 
+		
+
+[PChome Online 分紅網](http://share.pchome.com.tw/)
+
+
+		
+
+PC HOME 的分紅網~~透過介紹與廣告～　你可以賺取相當的報酬~~比起博客來ＡＰ　真的好用太多了～～
+
+
+		
+
+(tags: [PCHome](http://del.icio.us/kkdai/PCHome) [shopping](http://del.icio.us/kkdai/shopping))
+
+
+	
+
+	
+  * 
+		
+
+[Screencasts of Ruby on Rails](http://rubyonrails.org.tw/screencasts.html)
+
+
+		
+
+Ruby on Rails 介紹網頁～　有許多影片介紹如何裡用Ruby on Rails　架設個人網站～～～
+
+
+		
+
+(tags: [Ruby](http://del.icio.us/kkdai/Ruby) [Rails](http://del.icio.us/kkdai/Rails))
+
+
+	
+
+	
+  * 
+		
+
+[Ruby on Rails Taiwan | Google 網上論壇](http://groups.google.com/group/Ruby-on-Rails-Taiwan/)
+
+
+		
+
+Ruby on Rails 的台灣線上論壇～～～　
+
+
+		
+
+(tags: [Ruby](http://del.icio.us/kkdai/Ruby) [Rails](http://del.icio.us/kkdai/Rails))
+
+
+	
+
+

@@ -1,0 +1,53 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2006-01-09 15:55:38+00:00
+slug: links-for-2006-01-09
+title: links for 2006-01-09
+wordpress_id: 322
+categories:
+- 每日網摘
+---
+
+
+	
+  * 
+		
+
+[聯合新聞網 | 股市理財 | 房市情報 | 青年購屋低利貸款2.045% 申辦動作要快](http://udn.com/NEWS/STOCK/STO10/3103752.shtml)
+
+
+		
+
+最近正在努力看房子中~~~ 當然好的貸款方案也要注意
+
+
+		
+
+(tags: [House](http://del.icio.us/kkdai/House))
+
+
+	
+
+	
+  * 
+		
+
+[Upload multiple images via *.zip DONE](http://www.4homepages.de/forum/index.php?topic=8994.0)
+
+
+		
+
+讓你的4Image 支援複數個檔案上傳機制~~~ 並且可以支援上傳ZIP，直接解壓縮、作縮圖、然後造出一個新的類別
+
+
+		
+
+(tags: [4Image](http://del.icio.us/kkdai/4Image))
+
+
+	
+
+

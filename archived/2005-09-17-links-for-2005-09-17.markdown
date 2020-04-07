@@ -1,0 +1,129 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2005-09-17 15:53:35+00:00
+slug: links-for-2005-09-17
+title: links for 2005-09-17
+wordpress_id: 264
+categories:
+- 每日網摘
+---
+
+
+	
+  * 
+		
+
+[Bill Gates Webcasts](http://www.microsoft.com/events/executives/billgates.mspx)
+
+
+		
+
+PDC的展示轉播，有展示許多Vista的新功能，算是相當吸引人的功能
+
+
+		
+
+(tags: [news](http://del.icio.us/kkdai/news))
+
+
+	
+
+	
+  * 
+		
+
+[ASP.NET : Future Versions](http://msdn.microsoft.com/asp.net/future/)
+
+
+		
+
+Atlas 新的ASP .NET support 的功能
+
+
+		
+
+(tags: [spec](http://del.icio.us/kkdai/spec))
+
+
+	
+
+	
+  * 
+		
+
+[ASP.NET Web: The Official Microsoft ASP.NET 2.0 Site : Home Page](http://beta.asp.net/default.aspx?tabindex=7&tabid=47)
+
+
+		
+
+ASP .NET 預覽文件~~
+
+
+		
+
+(tags: [spec](http://del.icio.us/kkdai/spec))
+
+
+	
+
+	
+  * 
+		
+
+[Anders Hejlsberg - Programming data in C# 3.0](http://channel9.msdn.com/ShowPost.aspx?PostID=10276)
+
+
+		
+
+Anders Hejlsberg接受Channel 9 的專訪
+
+
+		
+
+(tags: [spec](http://del.icio.us/kkdai/spec))
+
+
+	
+
+	
+  * 
+		
+
+[Simply Patrick: 9/16 Anders Hejlsberg on C# 3.0](http://baby.homeip.net/patrick/archives/2005/09/916_anders_hejl.php)
+
+
+		
+
+Patrick聽 Anders Hejlsberg 的PDC課程
+
+
+		
+
+(tags: [spec](http://del.icio.us/kkdai/spec))
+
+
+	
+
+	
+  * 
+		
+
+[Flickr: Photos from 自由自在的鮪魚<~~~](http://www.flickr.com/photos/faulfish)
+
+
+		
+
+同事的Flick照片網站，有許多我們在上海出差的照片
+
+
+		
+
+(tags: [blog](http://del.icio.us/kkdai/blog))
+
+
+	
+
+

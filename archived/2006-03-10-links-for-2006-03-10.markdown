@@ -1,0 +1,72 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2006-03-10 15:43:55+00:00
+slug: links-for-2006-03-10
+title: links for 2006-03-10
+wordpress_id: 352
+categories:
+- 每日網摘
+---
+
+
+	
+  * 
+		
+
+[Gene Webb's Blog : Visual Studio Team System Demo (3/23, 4/20, 5/18/, 6/15)](http://blogs.msdn.com/genewebb/archive/2006/03/09/547158.aspx)
+
+
+		
+
+裡面有關於VS2005 Team work system 的demo 可以參考一下~~
+
+
+		
+
+(tags: [VC.NET](http://del.icio.us/kkdai/VC.NET))
+
+
+	
+
+	
+  * 
+		
+
+[Files: Videos](http://vstsrocks.net/files/10/default.aspx)
+
+
+		
+
+VS Team work system 相關video 的主要下載點
+
+
+		
+
+(tags: [VC.NET](http://del.icio.us/kkdai/VC.NET))
+
+
+	
+
+	
+  * 
+		
+
+[★☆ DIY 教學 ☆★ MAZDA6 升級豪華電動按摩椅 DIY](http://www.moveart.idv.tw/07_diy_24_6.htm)
+
+
+		
+
+教導你如何將自己的車子改成附有高級按摩椅的車子
+
+
+		
+
+(tags: [CAR](http://del.icio.us/kkdai/CAR))
+
+
+	
+
+
