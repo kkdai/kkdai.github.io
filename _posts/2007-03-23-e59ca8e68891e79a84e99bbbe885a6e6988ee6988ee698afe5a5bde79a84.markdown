@@ -1,0 +1,22 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2007-03-23 01:30:18+00:00
+slug: '%e5%9c%a8%e6%88%91%e7%9a%84%e9%9b%bb%e8%85%a6%e6%98%8e%e6%98%8e%e6%98%af%e5%a5%bd%e7%9a%84'
+title: 在我的電腦明明是好的~~~~
+wordpress_id: 615
+categories:
+- 不惡搞~ 怎麼行
+---
+
+[![worksonmymachine_logo](http://farm1.static.flickr.com/176/429415925_5cddb98c6d_m.jpg)](http://www.flickr.com/photos/7403123@N07/429415925/)  
+[![works-on-my-machine-starburst[1]](http://farm1.static.flickr.com/180/429397671_3cf77813a6_o.png)](http://www.flickr.com/photos/7403123@N07/429397671/)[![works-on-my-machine-stamped[2]](http://farm1.static.flickr.com/185/429397700_5ca469d7db_o.png)](http://www.flickr.com/photos/7403123@N07/429397700/)
+
+由[<strike>傳奇工作室</strike>傳說中的工作室](http://legendstudio.blogspot.com/2007/03/it-works-on-my-machine.html)看到的有趣blog，身為程式設計師~ 雖然這是很要不得的習慣。但是總是會聽到週遭的RD發出這樣的怒吼~~~ "ㄟ~~這明明在我電腦就是好的！！！　怎麼在你那邊就不行了？＂。
+
+這時候的問題～～　或許可能分成很多種～～　　RD跑的是debug，但是交貨出去的卻是release。這就可能是變數起始值設定的問題。 也有可能是某些元件沒有註冊所造成的~~ 這些諸如此類的問題~~ 都可能是造成這總話語的原因~~  
+(當然~~ 包括~~ 客戶總是比較笨~~)
+
+老闆!~~~  要不要把這個圖貼在我們的產品上面?

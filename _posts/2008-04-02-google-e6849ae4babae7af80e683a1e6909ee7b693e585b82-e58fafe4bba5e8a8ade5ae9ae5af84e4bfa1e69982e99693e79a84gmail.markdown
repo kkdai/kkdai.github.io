@@ -1,0 +1,31 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2008-04-02 02:32:41+00:00
+slug: google-%e6%84%9a%e4%ba%ba%e7%af%80%e6%83%a1%e6%90%9e%e7%b6%93%e5%85%b82-%e5%8f%af%e4%bb%a5%e8%a8%ad%e5%ae%9a%e5%af%84%e4%bf%a1%e6%99%82%e9%96%93%e7%9a%84gmail
+title: Google 愚人節惡搞經典(2) — 可以設定寄信時間的Gmail
+wordpress_id: 840
+categories:
+- 關於Gmail
+- 不惡搞~ 怎麼行
+---
+
+[![GoogleFunny2.JPG](http://farm3.static.flickr.com/2200/2380815478_43160c350f.jpg)](http://www.flickr.com/photos/27643002@N00/2380815478/)
+
+[http://mail.google.com/mail/help/customtime/index.html](http://mail.google.com/mail/help/customtime/index.html)
+
+GOOGLE愚人節的惡搞真的是多，好像整間公司都把愚人節當做產品(惡搞)發表日一樣。第二個惡搞經典就是可以調整時間的GMAIL。
+
+其實這一直是大家最想要的EMAILE功能吧~~ 就是可以寄信給過去的自己~ 或是寄信給未來的自己。整個COOL到不行阿
+
+<blockquote>#### How does it work?
+> 
+> Gmail utilizes an e-flux capacitor to resolve issues of causality (see [Grandfather Paradox](http://en.wikipedia.org/wiki/Grandfather_paradox)). 
+> 
+> </blockquote>
+
+而且~~ Google還宣稱可以解決祖父矛盾(就是由於時空交錯而造成的時間錯亂原因 [**[祖父悖論](http://zh.wikipedia.org/wiki/%E7%A5%96%E7%88%B6%E6%82%96%E8%AB%96)**])
+
+GOOGLE 不僅僅弄出了這個網站~你看看旁邊四個使用過的人的感謝言～～　更好笑～～～

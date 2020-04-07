@@ -1,0 +1,60 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2011-07-21 11:31:00+00:00
+slug: 2011-07-21-%e7%b9%bc%e7%ba%8c%e5%ae%89%e8%a3%9dmac-os-%e5%9c%a8vmplayer
+title: 2011-07-21 (繼續安裝MAC OS 在VMPlayer)
+wordpress_id: 1147
+categories:
+- 未分類
+---
+
+目前採用Win7 with VMPlayer 方案，根據[http://techexxpert.blogspot.com/2010/12/how-to-virtualize-os-x-on-windows-7.html](http://techexxpert.blogspot.com/2010/12/how-to-virtualize-os-x-on-windows-7.html)上面把VM Player 專案擋跟MAC OS IMAGE 抓下來。
+
+ 
+
+可以正常執行並且呼叫出安裝畫面，但是可能會遇到一些問題~~ 
+
+ 
+
+<blockquote>  
+> 
+> “System config file /com.apple.Boot.plist not found”
+> 
+> </blockquote>
+
+ 
+
+原來是沒有依照他的安裝方式，
+
+ 
+
+<blockquote>  
+> 
+> 8. Select** Mac OS_X_10.6.2**. Under Kernels, select **Legacy_kernel_10.2.0**. Under Graphic_Drivers, select** GraphicEnabler**. Click **Done**.Click **Install**. This process should take around 10-15 minutes. 
+> 
+>    
+> 
+> [![](http://i577.photobucket.com/albums/ss220/deadfire55/Step8.png)](http://i577.photobucket.com/albums/ss220/deadfire55/Step8.png)
+> 
+> </blockquote>
+
+ 
+
+這個裝好之後~ 最重要的要把你iso換掉， 
+
+ 
+
+10. Now go to Snowy_VMSnowy_VM**darwin_snow.iso**. 
+
+ 
+
+[![](http://i577.photobucket.com/albums/ss220/deadfire55/step10.png)](http://i577.photobucket.com/albums/ss220/deadfire55/step10.png)
+
+ 
+
+ 
+
+重開之後~ 果然就成功了~~~~~ 接下來應該就是準備灌XCode

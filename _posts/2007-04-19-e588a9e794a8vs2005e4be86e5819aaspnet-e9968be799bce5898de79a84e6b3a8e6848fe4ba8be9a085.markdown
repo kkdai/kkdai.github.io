@@ -1,0 +1,25 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2007-04-19 11:10:55+00:00
+slug: '%e5%88%a9%e7%94%a8vs2005%e4%be%86%e5%81%9aaspnet-%e9%96%8b%e7%99%bc%e5%89%8d%e7%9a%84%e6%b3%a8%e6%84%8f%e4%ba%8b%e9%a0%85'
+title: 利用VS2005來做ASP.NET 開發前的注意事項
+wordpress_id: 626
+categories:
+- NET程式設計
+---
+
+[![www.asp.net Home](http://static.asp.net/asp.net/images/MicrosoftASPNET.gif)](http://asp.net/)
+
+利用VS2005來作為ASP.NET的開發平台~~ 說老實的~~ 寫過不少Web Application的我還真是沒試過~~  (我是使用無敵記事本~~ 加上FTP 上傳的笨蛋)  心血來潮之下~ 在家裡測試了一下~~ 反而發現~~ 原來在安裝上面~還有許多需要注意的地方~~~
+
+  1. **ASP.NET 使用者的權限**: .[Net FrameWork 2.0 ](http://www.microsoft.com/downloads/details.aspx?FamilyID=0856EACB-4362-4B0D-8EDD-AAB15C5E04F5&displaylang=zh-cn)在安裝的時候~ 都會幫你設定一個使用者~~ 叫作ASP.NET~ 而他的作用就是代表者~~ 你localhost 要執行ASP.NET的程式時~~ 所允許的權限. 很多時候~~ 大家可能會把這個使用者給封鎖或是刪除, 如果這個使用者已經被刪除了~~~ 重新安裝一次.[Net FrameWork 2.0 ](http://www.microsoft.com/downloads/details.aspx?FamilyID=0856EACB-4362-4B0D-8EDD-AAB15C5E04F5&displaylang=zh-cn) 就可以了~~~  安裝完後～可以選擇提高 ASP.NET使用者的權限 (我自己是調到最高~大家可以自己決定).  
+
+  2. **Integrated Windows authentication is not enabled**:  這個問題～～是我在安裝完並且修改完權限之後所發現的.  要解決這個問題~~ 我搜尋網路之後~~ 發現這篇文章 [Unable to start debugging on the web server.Debugging failes because integrated Windows authentication is not enabled.](http://www.cnblogs.com/zzc315/archive/2006/06/21/431426.html)  有講解到解決方式~~其實很簡單～～我摘錄該文章裡面的附圖.   
+![](http://www.cnblogs.com/images/cnblogs_com/zzc315/IIS.GIF)  
+就注意好~~ 把滑鼠指到的那個項目點到就好~~~  
+
+
+現在總算可以用平常上班的VS2005 來做網路程式的撰寫~~ 感覺就興奮異常阿~~~~

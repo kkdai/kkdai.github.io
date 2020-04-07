@@ -1,0 +1,73 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2008-07-01 00:39:57+00:00
+slug: links-for-2008-06-30
+title: links for 2008-06-30
+wordpress_id: 894
+categories:
+- 未分類
+---
+
+
+	
+  * 
+		
+
+[CodeProject: How to Develop Restart Manager Aware Application: Test Case 30. Free source code and programming help](http://www.codeproject.com/KB/vista/Restart_Manager_Aware_App.aspx)
+
+
+		
+
+About restart manager for MDA testing
+
+
+		
+
+(tags: [MDA](http://del.icio.us/kkdai/MDA) [VISTA](http://del.icio.us/kkdai/VISTA))
+
+
+	
+
+	
+  * 
+		
+
+[Restart Manager (Windows)](http://msdn.microsoft.com/en-us/library/aa373654(VS.85).aspx)
+
+
+		
+
+VISTA Restart Manager of MSDN
+
+
+		
+
+(tags: [MDA](http://del.icio.us/kkdai/MDA))
+
+
+	
+
+	
+  * 
+		
+
+[Resize a Partition for Free in Windows Vista :: the How-To Geek](http://www.howtogeek.com/howto/windows-vista/resize-a-partition-for-free-in-windows-vista/)
+
+
+		
+
+教導你如何在VISTA 上面 變更分割的大小
+
+
+		
+
+(tags: [VISTA](http://del.icio.us/kkdai/VISTA) [partition](http://del.icio.us/kkdai/partition) [howto](http://del.icio.us/kkdai/howto) [Software](http://del.icio.us/kkdai/Software) [PC](http://del.icio.us/kkdai/PC) [tools](http://del.icio.us/kkdai/tools))
+
+
+	
+
+
+

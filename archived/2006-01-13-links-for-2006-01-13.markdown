@@ -1,0 +1,34 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2006-01-13 15:54:22+00:00
+slug: links-for-2006-01-13
+title: links for 2006-01-13
+wordpress_id: 325
+categories:
+- 未分類
+---
+
+
+	
+  * 
+		
+
+[Mark Rideout's Blog : Welcome](http://blogs.msdn.com/markrideout/archive/2006/01/08/510665.aspx)
+
+
+		
+
+PM on the Windows Forms team, 由這篇開場白的Blog 可以看的出來，雖然是洋洋灑灑寫了一些他的經歷，卻也看到一個由專業工程師轉換成PM的例子
+
+
+		
+
+(tags: [VISTA](http://del.icio.us/kkdai/VISTA))
+
+
+	
+
+

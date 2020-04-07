@@ -1,0 +1,134 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2004-05-12 02:39:27+00:00
+slug: '%e9%97%9c%e6%96%bc%e6%9c%80%e8%bf%91%e7%8c%96%e7%8b%82%e7%9a%84%e7%97%85%e6%af%92-sasser-worm'
+title: 關於最近猖狂的病毒 Sasser Worm
+wordpress_id: 89
+categories:
+- 柴米油鹽的東西
+---
+
+![~~Worm 也是很可怕的~~](http://www.evanlin.com/blog/archives/0512/worm.gif)
+
+
+
+聽說最近很猖獗的病毒Sasser Worm，[根據微軟網站所提供的消息](http://www.microsoft.com/taiwan/security/incident/sasser.asp)，為微軟程式內部[LSASS（Local security authority subsystem service)的缺點](http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CAN-2003-0533)  
+
+也就是利用 Buffer overflow來獲得系統控制權  
+
+
+
+
+
+
+[微軟MS04-011安全性公告](http://www.microsoft.com/taiwan/security/bulletins/MS04-011.asp)
+
+
+[偵測與移除Sasser
+Worm](http://www.microsoft.com/taiwan/security/incident/sasser.asp)
+
+
+
+
+  
+
+或許大家講到這裡會跟我一樣好奇，為何Buffer Overflow會產生系統危險呢？  
+
+所以我去找了一個相關文件，請看下面那位大大的解說  
+
+
+
+
+<!-- more -->
+
+
+<blockquote>
+  
+>     
+>     作者: tmg (海邊漂來的..海嘯) 看板: SobVersion
+>     標題: 說文解字: 何謂 buffer overflow
+>     時間: Wed Nov 13 20:50:24 1996
+>     
+>     
+>     唉....... buffer overflow 這個洞, 大概是最難防備的一個洞,
+>     因為這個洞發生的原因純粹是因為程式的 bug,
+>     而這種 bug 你我三不五時就會犯這種錯, 非常難以在 coding 時就加以防備。
+>     要防止這種洞, 只有非常小心仔細檢查 code........
+>     
+>     這種洞, 顧名思義, 就是利用 buffer overflow 的原理達成目的的......
+>     比如, 一個陣列只有 100 bytes, 但我餵給它 200 bytes 的資料,
+>     於是這個陣列裝不下這些資料, 造成了 overflow......
+>     
+>     為什麼 overflow 會有 security hole 呢?
+>     首先, overflow 發生時, 多出來的資料會蓋到其它變數上,
+>     相信這一點大家早就知道了。
+>     
+>     問題是, 為什麼資料蓋到其它變數上時, 頂多使程式執行錯誤,
+>     會嚴重到出現 security 的問題嗎? 這時, 好玩的事情就發生了.......
+>     
+>     當我們呼叫一個 function 時, 以組合語言的觀點,
+>     會將 return address 堆入 stack 中。
+>     如果這個 function 宣告了一些 local 變數,
+>     那進入這個 function 之後, 會在 stack 中再空出一塊區域給這些 local 變數,
+>     當要從這個 function return 回去時, 就把這些在 stack 中的 local 變數清掉。
+>     
+>     現在好了, buffer overflow security hole 就是在這裡發生了.......
+>     
+>     如果有某個 function 宣告了一個 local array, 如:
+>     
+>     int func() {
+>       int i, j, k;
+>       char buf[16];
+>       struct abc *x, *y, *z;
+>           .
+>           .
+>           .
+>     }
+>     
+>     這時, 當這個 function 被呼叫時, stack 中的長像就像:
+>     
+>                                    +-----------------------+
+>     current stack pointer ---->    | (other variable)      |
+>                                    +-----------------------+
+>                                    | buf (16 bytes)        |
+>                                    +-----------------------+
+>                                    | (other variable)      |
+>                                    +-----------------------+
+>                                    | some system data      |
+>                                    +-----------------------+
+>                                    | return address of     |
+>                                    | this function         |
+>                                    +-----------------------+
+>                                    | (other data in stack) |
+>                                    |           .           |
+>                                    |           .           |
+>                                    |           .           |
+>     
+>     嗯..... 這樣就很明顯了, 如果在這個 function 內有了 bug, 忘記去控制
+>     資料餵給 buf 的長度, 那..... 當我資料餵長一點, 就可以蓋到這個
+>     function 的 return address 了..........
+>     
+>     這時, 我在餵資料給 buf 時, 順便將要執行的機器碼餵進去,
+>     當餵到 function 的 return address 時, 就把 return address
+>     指到自己所餵進去的 code 上......
+>     這時, function 執行完畢, 要 return 時, 嘿嘿嘿,
+>     它就不會 return 到原來呼叫它的地方, 而會 "return" 到我所餵進去的那些 code...
+>     這時, 就可以為所欲為了....... 看我高興愛怎麼做就怎麼做了..........
+>     
+>     這實在有點可怕, 因為這種洞純粹是程式發展者的 "疏乎",
+>     不管系統管理再完善, 一但使用了這種程式, 就等於開了一個洞.......
+>     有這種洞的程式還不少, 比如早期的 fingerd, sendmail 8.6.xxx, Xt...... 等.....
+>     遇上這問題, 除了趕快找新版程式回來 compile 外,
+>     還要祈禱在你發現這個洞之前沒有 hacker 來鑽過這個洞........
+>     
+> 
+> 
+  
+> 
+> 　
+> 
+> 
+</blockquote>

@@ -1,0 +1,71 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2010-02-24 04:32:25+00:00
+slug: mt%e5%82%99%e4%bb%bd%e4%bf%ae%e6%ad%a3-%e5%82%99%e4%bb%bd%e8%88%87%e5%be%a9%e5%8e%9fmt%e7%9a%84%e6%99%82%e5%80%99%e9%9c%80%e8%a6%81%e8%a8%98%e5%be%97%e6%8a%8ascode%e9%87%8d%e5%bb%ba
+title: MT備份修正-備份與復原MT的時候需要記得把SCODE重建
+wordpress_id: 1090
+categories:
+- 關於MT的學習心得
+---
+
+![關於MT的技術](http://www.evanlin.com/mt/images/mt-logo.gif)
+
+ 
+
+之前提過我的電腦有轉移~ 所以MT(Movable Type 2.661)也整個備份又復原到新的電腦上，但是過了兩三個月之後，發現完全沒有人留言。
+
+ 
+
+雖然本站不是多有人氣的站台~ 但是連垃圾留言都沒有的時候~ 表示也怪怪的~ 於是我又下去仔細查看。這個時候就發現~ SCODE有點壞掉了。 執行 cgi-bin/mt/scodetest.cgi 出現一些問題:
+
+ 
+
+<blockquote>  
+> 
+> Step 2.0 fail : $tmpdir in SCode.pm is not defined properly
+> 
+> </blockquote>
+
+ 
+
+**解決方法**:       
+1. 先編輯 cgi-bin/mt/lib/mt/scode.pm，把$tmpdir 的位置設定好。       
+2. 修改blog樣板
+
+ 
+
+- 單篇彙整(Individual Entry Template)      
+- 迴響清單模版(Comment Listing Template)       
+- 迴響預覽模版(Comment Preview Template)       
+- 迴響出錯模版(Comment Error Template) 
+
+ 
+
+在預覽前加上
+
+ 
+
+(請輸入以下的驗證碼)      
+<!-- Security Code Check -->       
+<input type="hidden" id="code" name="code" value="<$MTSecurityCode$>" />       
+<img border="0" src="<$MTCGIPath$><$MTSecurityImage$>?code=<$MTSecurityCode$>"><br />       
+<input tabindex=3 id="scode" name="scode" /><br /><br />       
+<!-- end of Security Code Check -->
+
+ 
+
+ 
+
+這樣總算修好了~ 不過這樣是不是代表又有垃圾留言了呢???
+
+ 
+
+**參考網站**:
+
+ 
+
+1. [Anti-Spam Comments Project始動！(](http://www.gaspar.info/blog/2005/04/anti-spam-comments-project-2.html)[Gaspar.info | 東鞋西煮](http://www.gaspar.info/blog/))       
+2. [防制發廣告機器人的檢核碼](http://planetoid.info/weblog/2004/10/30/000501.html)([planetoid's blog](http://planetoid.info/weblog/))

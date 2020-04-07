@@ -1,0 +1,24 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2004-07-15 05:51:36+00:00
+slug: '%e5%af%9f%e7%9c%8b%e6%97%a5%e6%96%87%e5%90%8d%e5%ad%97'
+title: 察看日文名字
+wordpress_id: 117
+categories:
+- 網路上好玩的事情
+---
+
+![](http://images.google.com.tw/images?q=tbn:FZH4WZVyDVkJ:www.sysken.or.jp/kumasen/japanese/img/j-name.gif)
+
+由[太妃糖馬戲團](http://carol.bluecircus.net/).看到一篇蠻有趣的文章，一個可以[將你的中文，名字轉換成日文名字的網站](http://rumandmonkey.com/widgets/toys/namegen/969/)，大家可以去看看，而我的日文名字查到的是**長谷川 健太  Hasegawa  Kenta**，真是蠻不賴的。總覺得看到健太就感覺很像個漫畫主角的感覺  
+
+^_________^
+
+而且還可以產生網頁碼出來
+
+My japanese name is **長谷川 Hasegawa (long valley river) 健太 Kenta (healthy and plump)**.  
+[Take your real japanese name generator! today!](http://rumandmonkey.com/widgets/toys/namegen/969/)  
+Created with [Rum and Monkey](http://rumandmonkey.com/)'s [Name Generator Generator](http://rumandmonkey.com/widgets/toys/namegen/).

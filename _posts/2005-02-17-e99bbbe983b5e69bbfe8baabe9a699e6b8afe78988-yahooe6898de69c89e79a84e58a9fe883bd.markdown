@@ -1,0 +1,34 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2005-02-17 18:05:24+00:00
+slug: '%e9%9b%bb%e9%83%b5%e6%9b%bf%e8%ba%ab%e9%a6%99%e6%b8%af%e7%89%88-yahoo%e6%89%8d%e6%9c%89%e7%9a%84%e5%8a%9f%e8%83%bd'
+title: 電郵替身~~~香港版 YAHOO才有的功能
+wordpress_id: 198
+categories:
+- 網路上好玩的事情
+---
+
+![yahoo_1.JPG](http://www.evanlin.com/blog/archives/20050217/yahoo_1.JPG)  
+
+垃圾郵件一直是大家很困擾的問題，雖然[GMAIL](http://www.gmail.com/)提供的SPAM是很好用的東西，但是畢竟將一個個EMAIL去檔的能力有限，何不一發現垃圾信件的時候，直接將這個信箱刪除或是關閉呢?  你一定會說，如果有多到這樣的信箱，大概也不用害怕垃圾信件呢。
+
+但是如果我跟你說，現在~~ 你可以用很多的信箱，並且他們都會收在同一個帳戶之下，一但你在某個信箱發現有垃圾信件，就可以將它刪除掉。這樣是不是很好呢?
+
+如果我跟你講[YAHOO](http://tw.yahoo.com/)已經有這套系統了，但是現在只給[香港](http://hk.yahoo.com/)的同胞使用，你會如何呢? 讓我們一起來設定吧~
+
+有需要的人在往下看吧
+<!-- more -->
+!!
+
+先到更改[基本資料那邊](http://login.yahoo.com/)輸入自己ID跟密碼，依照下圖去更改資料，到那裡系統會再要求您輸入另外一次密碼。
+
+![yahoo_2.JPG](http://www.evanlin.com/blog/archives/20050217/yahoo_2.JPG)
+
+輸入完密碼後，選擇更改資料在名字與身份那個欄位，將使用語言的選項，選擇跟以下一樣的"香港"即可
+
+![yahoo_3.JPG](http://www.evanlin.com/blog/archives/20050217/yahoo_3.JPG)
+
+設定完後，重新進入信箱就會看到跟我一樣的畫面，在電郵選項之內就會有個電郵替身的選項，裡面有簡單的教學，相信都可以看的懂   ^____________^

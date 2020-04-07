@@ -1,0 +1,176 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2004-04-27 11:12:18+00:00
+slug: stl%e5%ad%b8%e7%bf%92-vector%e5%88%9d%e6%8e%a2%e8%88%87%e5%ad%b8%e7%bf%92%e5%bf%83%e5%be%97
+title: STL學習-Vector初探與學習心得
+wordpress_id: 82
+categories:
+- STL學習心得
+---
+
+Vector是STL容器裡面最簡單的一個，但是在資料結構裡面也鮮少有提到，但是在STL裡面卻時常利用這個資料結構。在這裡擺上我今天學習Vector的一些重點，讓大家分享一下。
+
+
+
+
+
+  
+  * **引用STLPORT版本 **：stlport4.0在bcb5.5上實做
+
+  
+  * **引用函示庫 <vector>**** **：位置： _您安裝STLPORT的位置stlportvector_
+
+  
+  * **實際運作函示庫 
+    **：位置：
+    _您安裝STLPORT的位置stlportstl_vector.h_
+
+
+<!-- more -->
+
+
+Vector是一個線性空間，但是為一個可以變動大小的線性空間，在宣告之後整個空間就像陣列（array)一樣為一個連續的線性空間，亦可以在上面進行類似Array的操作（比如說直接給值
+a[i]=5 ; 或是直接顯示值 a[i])，而且Vector還可以隨意插入任何一個位置之中，並且使之後的元素均往後退一個（這個在array之中倒是需要實做上去加強的功能），_並且最重要的是在Vector之中，他的位置是可以變動大小的_。也就是若你一開始宣告的Vector大小為5，但是當你插入第6個元素的時候，整個Vector會自動變更大小到現在的兩倍(10個）。針對這個功能，所以Vector在使用上變的相當的方便，加上STL中泛型的設計概念使得Vector變得更強大，能解決的問題也就更多。整理Vector的特點如下：
+
+
+
+
+**Vector特點**
+
+
+
+
+
+  
+  1. 線性空間
+
+  
+  2. 與陣列操作相同
+
+  
+  3. 可以任意插入在任何位置
+
+  
+  4. 若是空間不足，將會自動擴大兩倍的空間
+
+
+
+
+在今天的學習筆記之中，我附上一個自己的範例程式碼，方便各位如果要測試程式的時候一個參考依據：
+
+
+  
+
+#include 
+#include 
+#include 
+
+using namespace std;
+
+int main()
+{
+	int i;
+	vector iv(2,9);
+	cout <<"iv[1]="<<iv[0];
+	cout <<"iv[2]="<<iv[1]<<endl;
+	cout <<"size="<<iv.size()<<endl;
+	cout <<"capacity="<<iv.capacity()<<endl;
+	cout <<"-----------------------------------------"<<endl;
+
+	iv.push_back(1);
+	cout <<"iv[3]="<<iv[1]<<endl;
+	cout <<"size="<<iv.size()<<endl;
+	cout <<"capacity="<<iv.capacity()<<endl;
+	cout <<"-----------------------------------------"<<endl;
+
+	iv.push_back(2);
+	cout <<"iv[4]="<<iv[1]<<endl;
+	cout <<"size="<<iv.size()<<endl;
+	cout <<"capacity="<<iv.capacity()<<endl;
+	cout <<"-----------------------------------------"<<endl;
+
+	iv.push_back(3);
+	cout <<"iv[5]="<<iv[1]<<endl;
+	cout <<"size="<<iv.size()<<endl;
+	cout <<"capacity="<<iv.capacity()<<endl;
+	cout <<"-----------------------------------------"<<endl;
+
+	iv.push_back(4);
+	cout <<"iv[6]="<<iv[1]<<endl;
+	cout <<"size="<<iv.size()<<endl;
+	cout <<"capacity="<<iv.capacity()<<endl;
+	cout <<"-----------------------------------------"<<endl;
+
+	for (i=0;i<iv.size();++i)
+		cout <<iv[i]<<"--";
+	cout <<endl;
+
+	iv.push_back();
+	iv.push_back();
+	cout <<"size="<<iv.size()<<endl;
+	cout <<"capacity="<<iv.capacity()<<endl;
+	for (i=0;i<iv.size();++i)
+		cout <<iv[i]<<"--";
+	cout <<endl;
+
+	vector::iterator ivite= find(iv.begin(), iv.end(),1);
+	if (ivite) {iv.erase(ivite);}
+	cout <<"-----------------------------------------"<<endl;
+	cout <<"size="<<iv.size()<<endl;
+	cout <<"capacity="<<iv.capacity()<<endl;
+	cout <<*ivite;
+	for (i=0;i<iv.size();++i)
+		cout <<iv[i]<<"--";
+	cout <<endl;
+
+	ivite= find(iv.begin(), iv.end(),2);
+	if (ivite) {iv.insert(ivite,3,7);}
+	cout <<"-----------------------------------------"<<endl;
+	cout <<"size="<<iv.size()<<endl;
+	cout <<"capacity="<<iv.capacity()<<endl;
+	for (i=0;i<iv.size();++i)
+		cout <<iv[i]<<"--";
+	cout <<endl;
+
+
+	ivite= find(iv.begin(), iv.end(),7);
+	cout <<iv.begin()<<"**"<<endl;
+	cout <<ivite<<"==";
+	ivite= find(ivite, iv.end(),7);
+	cout <<ivite<<"==";
+
+
+
+	iv.clear2();
+	cout <<"-----------------------------------------"<<endl;
+	cout <<"size="<<iv.size()<<endl;
+	cout <<"capacity="<<iv.capacity()<<endl;
+	for (i=0;i<iv.size();++i)
+		cout <<iv[i]<<"--";
+	cout <<endl;
+
+
+}
+
+
+
+
+
+**解說：**這個程式主要就是在測試一些Vector的功能，就是建立一個大小為（2）的Vector，並且不斷插入(pushback)一些數值之後，顯示整個Vector的size(已用的空間）與capacity(整個Vector的空間)，而這個也是參考[侯捷老師所寫的書<STL
+源碼剖析>](http://www.jjhou.com/jjwbooks-tass.htm)裡面的範例所打的。
+
+
+
+
+
+**尚未完成：**雖然整體的Vector應用已經有一定程度的瞭解，但是總覺得對於空間的配置上，Vector自動擴充到兩倍空間這個特性其實有點浪費空間，也使得一開始的宣告上變的不能使用太大的空間（避免兩倍擴充空間變成龐大空間負擔）。並且Vector在clear之後，擴大的空間無法縮回來，使得整個空間大小變的相當的巨大（往往操作過後，會變的很大），以上兩點是我這幾天希望能修改原始碼完成的，但是由於stlport裡面所用的Vector程式碼與[<STL
+源碼剖析>](http://www.jjhou.com/jjwbooks-tass.htm)裡面的內容有一點點不同，可能這幾天看懂後才開始修改～～～
+
+
+
+
+
+　

@@ -1,0 +1,114 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2007-06-23 08:18:20+00:00
+slug: links-for-2007-06-22
+title: links for 2007-06-22
+wordpress_id: 681
+categories:
+- 每日網摘
+---
+
+
+	
+  * 
+		
+
+[台灣凶宅網 - Powered by vBulletin](http://www.unluckyhouse.com/)
+
+
+		
+
+要買房子的人~~如果擔心買到凶宅~~~~ 一定要去這邊好好查詢~~~
+
+
+		
+
+(tags: [買房子](http://del.icio.us/kkdai/買房子) [凶宅](http://del.icio.us/kkdai/凶宅))
+
+
+	
+
+	
+  * 
+		
+
+[YouTube - Broadcast Yourself.](http://www.youtube.com/dev_docs)
+
+
+		
+
+YouTube 的API 列表~~ 列出所有經常使用的API ~~~由於ＹＯＵＴＵＢＥ　ＡＰＩ是利用ＸＭＬ傳回來～～　其實資料都可以直接ＰＡＲＳＥ～～相當方便
+
+
+		
+
+(tags: [YOUTUBE](http://del.icio.us/kkdai/YOUTUBE) [API](http://del.icio.us/kkdai/API) [documentation](http://del.icio.us/kkdai/documentation) [Web2.0](http://del.icio.us/kkdai/Web2.0) [reference](http://del.icio.us/kkdai/reference) [Web](http://del.icio.us/kkdai/Web) [REST](http://del.icio.us/kkdai/REST) [blog](http://del.icio.us/kkdai/blog))
+
+
+	
+
+	
+  * 
+		
+
+[男丁格爾's 脫殼玩 - FLV Video Parser Web 版](http://209.8.117.203/~abgne/flv/action.php)
+
+
+		
+
+貼上YOUTUBE VLOG 網址~~ 可以直接下載~~~~相當好用的網址~~~
+
+
+		
+
+(tags: [YOUTUBE](http://del.icio.us/kkdai/YOUTUBE) [web2.0](http://del.icio.us/kkdai/web2.0) [DOWNLOAD](http://del.icio.us/kkdai/DOWNLOAD))
+
+
+	
+
+	
+  * 
+		
+
+[GooTube FLV Retriever](http://kej.tw/flvretriever/)
+
+
+		
+
+另外一版可以下載YOUTUBE的網頁~~ 相當方便的東西
+
+
+		
+
+(tags: [YOUTUBE](http://del.icio.us/kkdai/YOUTUBE) [WE](http://del.icio.us/kkdai/WE) [DOWNLOAD](http://del.icio.us/kkdai/DOWNLOAD) [GOOGLE](http://del.icio.us/kkdai/GOOGLE) [music](http://del.icio.us/kkdai/music) [radio](http://del.icio.us/kkdai/radio) [reference](http://del.icio.us/kkdai/reference) [Software](http://del.icio.us/kkdai/Software) [tool](http://del.icio.us/kkdai/tool) [tools](http://del.icio.us/kkdai/tools))
+
+
+	
+
+	
+  * 
+		
+
+[【影片】如何抓 "無名" 上面的影片 [論壇存檔] - PCZONE 討論區](http://www.pczone.com.tw/vbb3/archive/t-118857.html)
+
+
+		
+
+那是舊的方法，現在的youtube要另外加上驗證碼。
+驗證碼是隨機的，所以要自己看源代碼找出來。通常會在這一段(紅色字的)...
+去搜索 
+
+大致上就可以馬上找到了，不然用抓Flash
+
+
+		
+
+(tags: [YOUTUBE](http://del.icio.us/kkdai/YOUTUBE) [DOWNLOAD](http://del.icio.us/kkdai/DOWNLOAD))
+
+
+	
+
+

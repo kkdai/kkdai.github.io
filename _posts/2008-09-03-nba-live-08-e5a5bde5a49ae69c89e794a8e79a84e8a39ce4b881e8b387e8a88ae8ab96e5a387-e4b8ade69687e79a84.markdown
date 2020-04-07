@@ -1,0 +1,95 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2008-09-03 00:50:34+00:00
+slug: nba-live-08-%e5%a5%bd%e5%a4%9a%e6%9c%89%e7%94%a8%e7%9a%84%e8%a3%9c%e4%b8%81%e8%b3%87%e8%a8%8a%e8%ab%96%e5%a3%87-%e4%b8%ad%e6%96%87%e7%9a%84
+title: NBA Live 08 好多有用的補丁資訊論壇—中文的
+wordpress_id: 935
+categories:
+- 遊戲天國
+---
+
+[![球迷帝国](http://www.qmdg.com/images/default/logo.gif)](http://www.qmdg.com/index.php)
+
+[球迷帝國](http://www.qmdg.com/index.php)是一個相當好的網站，除了裡面有許多NBA的討論之外，最令我驚奇的就是裡面的[NBA2008游戏--NBA2008资源补丁下载区](http://www.evanlin.com/blog/forumdisplay.php?fid=88) 了。裡面有相當多好用的補丁(也就是針對 PC 版的NBA LIVE08 所出的一些更新檔，可以讓你的Live 08再玩一年。因為聽說EA 也不打算出在PC上了)
+
+最近在裡面其實找到不少好用的補丁，不管是尼姑牌(自己修正的AI 及動作) 還有很多人引用美國論壇裡面的一些資料加上中文資訊，其實真的相當的好用。
+
+但是裡面最大的問題就是
+
+<blockquote>fs2you.com 的檔案怎麼都找不到???**
+> 
+> </blockquote>
+
+還好在網路上找到一位大大([:::KeNnY:::─I Wanna Go To a Place..](http://tw.myblog.yahoo.com/kennnny-blog/)) 裡面有提到 "[fs2you 連不上](http://tw.myblog.yahoo.com/kennnny-blog/article?mid=2258&prev=2260&next=2254)"
+
+<blockquote>是連向 fs2you  
+都會出現找不到網頁的訊息  
+  
+據說是  
+該網站未通過大陸審查  
+(當然不是版權的問題大陸對智慧財產權這五個自 只是知道怎麼寫而已...  
+當然據說是因為裡面是存放一堆色情類資料? 天曉得是什原因   
+反正快點能正常連上吧.. )  
+所以各地的DNS指向　都給檔掉啦  
+讓你找不到 fs2you  
+
+> 
+> 就是自己手動新建ip   
+跟電腦說  
+要找 fs2you 要去哪找..  
+  
+  
+WINDOWSsystem32driversetc  
+的 hosts 檔案  
+可以手動輸入IP 網址的對照在這個檔案內  
+當這邊有資料的時候  
+你連線就不去找dns要資料  
+有了ip  
+連線就連的到啦  
+(有些病毒就是去改這邊讓你連出去都連到病毒指定的地方去...)  
+  
+以下是我找到關於 fs2you 的 IP  
+只要在 host中加入 以下 就可以連上 fs2you 啦  
+59.63.157.25 www.fs2you.com  
+222.169.230.101 dyn.www.fs2you.com  
+59.32.232.195 cachefile1.fs2you.com  
+222.169.230.98 cachefile2.fs2you.com  
+221.204.246.79 cachefile3.fs2you.com  
+61.150.85.80 cachefile4.fs2you.com  
+60.2.139.27 cachefile5.fs2you.com  
+61.184.189.10 cachefile6.fs2you.com  
+61.174.62.132 cachefile7.fs2you.com  
+58.211.75.49 cachefile8.fs2you.com  
+61.134.84.238 cachefile9.fs2you.com  
+61.156.40.181 cachefile10.fs2you.com  
+218.75.151.4 cachefile11.fs2you.com  
+58.211.75.31 cachefile12.fs2you.com  
+124.94.101.133 cachefile13.fs2you.com  
+221.204.246.115 cachefile14.fs2you.com  
+218.75.151.10 cachefile15.fs2you.com  
+58.218.209.126 cachefile16.fs2you.com  
+61.157.152.173 cachefile17.fs2you.com  
+125.46.41.27 cachefile18.fs2you.com  
+125.91.11.223 cachefile19.fs2you.com  
+59.53.48.134 cachefile20.fs2you.com  
+59.53.48.136 cachefile21.fs2you.com  
+59.53.48.144 cachefile22.fs2you.com  
+61.139.106.204 cachefile23.fs2you.com  
+59.53.48.172 cachefile24.fs2you.com  
+124.94.101.146 cachefile25.fs2you.com  
+61.166.111.227 cachefile26.fs2you.com  
+  
+要復原只要把  
+這一堆從 hosts 移掉就ok啦  
+  
+host 用記事本即可開啟  
+  
+目前我這樣是可以正常連上 fs2you的  
+(資料來自: ([:::KeNnY:::─I Wanna Go To a Place..](http://tw.myblog.yahoo.com/kennnny-blog/)) 裡面有提到 "[fs2you 連不上](http://tw.myblog.yahoo.com/kennnny-blog/article?mid=2258&prev=2260&next=2254)" )
+> 
+> </blockquote>
+
+記得還得先下載客戶端軟體 [http://static.rayfile.com/zh-cn/client/](http://static.rayfile.com/zh-cn/client/) 才能找到喔

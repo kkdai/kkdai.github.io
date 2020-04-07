@@ -1,0 +1,30 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2009-01-13 23:58:58+00:00
+slug: links-for-2009-01-13
+title: links for 2009-01-13
+wordpress_id: 1015
+categories:
+- 未分類
+---
+
+  * 
+                
+
+[MediaWiki網站架設心得](http://telsat3.tsima.org.tw/wiki/index.php/%u671F%u520A/MediaWiki%u7DB2%u7AD9%u67B6%u8A2D%u5FC3%u5F97)
+
+
+                
+
+一些教導架設WIKI的架站心得
+
+
+                
+
+(tags: [WIKI](http://delicious.com/kkdai/WIKI))
+
+
+            

@@ -1,0 +1,76 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2008-10-09 00:12:31+00:00
+slug: links-for-2008-10-08
+title: links for 2008-10-08
+wordpress_id: 968
+categories:
+- 未分類
+---
+
+  * 
+                
+
+[Mobile01 PS3%u662F%u5426%u7121%u6CD5%u8B80%u53D6USB80G%u786C%u789F!!](http://www.mobile01.com/topicdetail.php?f=281&t=286774)
+
+
+                
+
+PS3 外接USB 硬碟的問答~~基本上PS3 只支援 40G 的USB 槽 而且只支援 FAT32 不支援NTFS
+
+
+                
+
+(tags: [PS3](http://delicious.com/kkdai/PS3) [USB](http://delicious.com/kkdai/USB))
+
+
+            
+  * 
+                
+
+[PS3 / PlayStation3 %u54C8%u5566%u677F - %u5DF4%u54C8%u59C6%u7279%u96FB%u73A9%u8CC7%u8A0A%u7AD9](http://forum.gamer.com.tw/C.php?bsn=60281&snA=35321&locked=F&tnum=17&subbsn=0&Bpage=1&author=ganlinlan&media=0)
+
+
+                
+
+樓主用了錯誤方式來處裡當機
+當機時.. PS按鍵 沒有回應..千萬先別退片
+這是絕對錯誤的方式~
+ps3的說明書上有關於這樣的情況該怎麼處理~
+當遊戲當機時,千萬不要按退片鍵,請先按住總電源六到十秒以上,一直到ps3發出嗶嗶嗶聲,藍綠兩燈閃爍完畢會自動重開機~
+如果當機時去按退片鍵,則ps3會自動將讀取頭鎖定,為了保護讀取頭也為了保護ps3本體,而採取的動作~
+上台灣新力的網站瀏覽ps3的正確使用方
+
+
+                
+
+(tags: [PS3](http://delicious.com/kkdai/PS3))
+
+
+            
+  * 
+                
+
+[程式錯誤 Mode: Quicktime.qts 解決方法](http://home.gamer.com.tw/blogDetail.php?owner=tp34x&sn=1163)
+
+
+                
+
+程式錯誤 Mode: Quicktime.qts 解決方法
+由時候因為QuickTime 相容性問題，程式會發生錯誤。
+導致關閉時，查看他使用模組是不是 Quicktime.qts
+是的話，開啟 Quicktime Player
+編輯 -> 喜好設定 -> Quicktime 喜好設定 -> 進階 -> 視訊
+
+把原本選擇 DirctX，改選成 安全模式 (僅適用於 GDI)
+
+
+                
+
+(tags: [quicktime](http://delicious.com/kkdai/quicktime))
+
+
+            

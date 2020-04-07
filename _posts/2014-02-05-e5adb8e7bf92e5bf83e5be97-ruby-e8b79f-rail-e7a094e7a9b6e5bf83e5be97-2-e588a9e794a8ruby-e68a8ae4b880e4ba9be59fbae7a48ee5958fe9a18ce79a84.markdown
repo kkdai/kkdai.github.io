@@ -1,0 +1,102 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2014-02-05 12:40:14+00:00
+slug: '%e5%ad%b8%e7%bf%92%e5%bf%83%e5%be%97-ruby-%e8%b7%9f-rail-%e7%a0%94%e7%a9%b6%e5%bf%83%e5%be%97-2-%e5%88%a9%e7%94%a8ruby-%e6%8a%8a%e4%b8%80%e4%ba%9b%e5%9f%ba%e7%a4%8e%e5%95%8f%e9%a1%8c%e7%9a%84'
+title: '[學習心得] Ruby 跟 Rail 研究心得 (2) - 利用Ruby 把一些基礎問題的改寫'
+wordpress_id: 1312
+categories:
+- Ruby on Rails
+- 學習文件
+---
+
+為了達到練習與熟悉Ruby的目的，我找了幾個常用到（也比較簡單的）問題來練習
+
+
+
+
+ 
+
+
+
+
+**Quicksort (快速排序法)**
+
+
+
+
+
+ 
+
+
+
+
+這裡沒有什麼特別語法～主要也確認了～Ruby的參數傳遞的方式，參考[http://stackoverflow.com/questions/1872110/is-ruby-pass-by-reference-or-by-value](http://stackoverflow.com/questions/1872110/is-ruby-pass-by-reference-or-by-value) 
+
+
+
+
+ 
+
+
+
+
+**Fibonacci (費式數列)**
+
+
+
+
+ 
+
+
+
+
+
+
+似乎C++也可以一行搞定～主要是確認ruby也是可以跑遞迴(recursive)
+
+
+
+
+ 
+
+
+
+
+**中序表示式轉後序或是前序 (Infix -> Prefix, infix -> Postfix)**
+
+
+
+
+
+ 
+
+
+
+
+有幾個要注意的，主要是有用到ruby在字串裡面比較強大的應用
+
+
+
+
+
+
+  *  “+-*/“.include? (op) 這代表著檢查 字元 op 是不是 +-*/
+
+
+  * 在前面有宣告型別 [] 或是 “” 可以避免operator << 錯誤
+
+
+  * 宣告型別也可以避免 method<=>' for nil:NilClass (NoMethodError) 的發生
+
+
+
+
+ 
+
+
+
+
+ 

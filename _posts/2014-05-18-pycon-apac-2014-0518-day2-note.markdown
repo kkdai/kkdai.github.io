@@ -1,0 +1,1533 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2014-05-18 08:06:32+00:00
+slug: pycon-apac-2014-0518-day2-note
+title: "[研討會心得]PyCon APAC 2014 05/18 Day2 Note"
+categories:
+- Django
+- Python
+- 研討會心得 
+tags: []
+---
+
+Keynote: Jessica McKellar
+
+  * Python is everywhere -1000 meter (deep ocean) to 80000 meter space center 
+
+
+  * OpenData for UK
+    * open.gov.uk
+    * Government will use Good tool
+
+
+
+
+
+  * Need to improve user using Python in Windows
+
+
+  * 
+
+
+    * Hard to use in Windows for lots step
+
+
+
+
+
+  * Write python Mobile app is big challenge but it is doable
+
+
+  * iOS SDK for Python
+
+
+  * 
+
+
+    * Kivy [http://kivy.org/](http://kivy.org/)
+
+
+    * Pyzia [http://pyzia.com/technology.html](http://pyzia.com/technology.html)
+
+
+
+
+
+  * Write Python in Chinese?
+
+
+  * 
+
+
+    * [https://code.google.com/p/zhpy/](https://code.google.com/p/zhpy/) 周蟒
+
+
+    * 但周蟒已不再維護... 官網說請參考
+
+
+    * [https://blockly-demo.appspot.com/static/apps/code/index.html?lang=zh-hant](https://blockly-demo.appspot.com/static/apps/code/index.html?lang=zh-hant)
+
+
+
+
+
+  * PypyJS 
+
+
+  * 
+
+
+    * Python with JS
+
+
+
+
+
+  * PyPy
+
+
+  * 
+
+
+    * [http://pypy.org/features.html](http://pypy.org/features.html)
+
+
+
+
+
+  * PyPi Python in Respberry Pi
+
+
+  * Do a thing with python you never done before 2015
+
+
+  * Resource:
+
+
+  * 
+
+
+    * robonaut: [http://www.i-programmer.info/news/169-robotics/4527-robonaut-2-simulator.html](http://www.i-programmer.info/news/169-robotics/4527-robonaut-2-simulator.html)
+
+
+    * [http://www.w3schools.com/browsers/browsers_os.asp](http://www.w3schools.com/browsers/browsers_os.asp)
+
+
+    * [https://docs.python.org/3/using/windows.html](https://docs.python.org/3/using/windows.html)
+
+
+    * [http://interactivepython.org/](http://interactivepython.org/)
+
+
+    * [https://github.com/bnmnetp/runestone](https://github.com/bnmnetp/runestone)
+
+
+    * [http://pythonsprints.com/](http://pythonsprints.com/)
+
+
+    * [https://www.python.org/psf/grants/](https://www.python.org/psf/grants/)
+
+
+    * zhpy: [https://code.google.com/p/zhpy/](https://code.google.com/p/zhpy/)
+
+
+    * kivy: [http://kivy.org/#home](http://kivy.org/#home)
+
+
+    * pypy.js: [https://github.com/rfk/pypyjs](https://github.com/rfk/pypyjs)   (PyPy.js: PyPy compiled into JavaScript)
+
+
+
+
+
+
+
+* * *
+
+R2 What Is Async, How Does It Work, and When Should I Use It?
+
+
+
+
+
+
+
+A. Jesse Jiryu Davis [http://emptysqua.re/blog/](http://emptysqua.re/blog/) [https://twitter.com/jessejiryudavis](https://twitter.com/jessejiryudavis)
+
+
+
+
+
+
+
+
+
+  * Non-Async
+
+
+  * 
+
+
+    * Sub process in NYC, it is non-async
+
+
+    * 
+
+
+      * Way to speed it up, add more cooker
+
+
+
+
+
+
+
+
+  * Async
+
+
+  * 
+
+
+    * Pizza in NYC
+
+
+    * 
+
+
+      * All food need wait the microwave to make pizza
+
+
+      * No way to speed it up if only increase cooker.
+
+
+      * Async, wait is process loss.
+
+
+
+
+
+
+
+
+  * Why async is hard to code?
+
+
+  * Between Threads and Callbacks
+
+
+  * 
+
+
+    * Greebkets
+
+
+    * Coroutines
+
+
+
+
+
+  * Async
+
+
+  * 
+
+
+    * Single thread
+
+
+    * non-blocked
+
+
+    * I/O concurrency
+
+
+    * epoll/kqueue
+
+
+    * event loop
+
+
+
+
+
+  * **asyncio**
+
+
+  * 
+
+
+    * **AKA “tulip”**
+
+
+    * Python 3.4 standard library
+
+
+    * Coroutines
+
+
+
+
+
+  * Should I use async
+
+
+  * 
+
+
+    * Yes:
+
+
+    * 
+
+
+      * Slow backed
+
+
+      * web-socket
+
+
+      * many connection
+
+
+      * MySQL suggest use it, because it will lots block from server side.
+
+
+
+
+
+    * No
+
+
+    * 
+
+
+      * CPU -bound
+
+
+      * No async driver
+
+
+      * No async expertise
+
+
+
+
+
+
+
+
+  * Resource:
+
+
+  * 
+
+
+    * Twisted [https://twistedmatrix.com/trac/](https://twistedmatrix.com/trac/)
+
+
+    * Tornado [https://pypi.python.org/pypi/tornado](https://pypi.python.org/pypi/tornado)
+
+
+    * asyncio [https://docs.python.org/3/library/asyncio.html](https://docs.python.org/3/library/asyncio.html)
+
+
+    * Longer version of speech [http://emptysqua.re/blog/pycon-2014-video-what-is-async/](http://emptysqua.re/blog/pycon-2014-video-what-is-async/)
+
+
+    * Hackpad [https://pyconapac2014.hackpad.com/What-Is-Async-How-Does-It-Work-and-When-Should-I-Use-It-53-JDTScvi6VRw](https://pyconapac2014.hackpad.com/What-Is-Async-How-Does-It-Work-and-When-Should-I-Use-It-53-JDTScvi6VRw)
+
+
+
+
+
+
+
+* * *
+
+StreetVoice 改造後, 現在我們如何進行開發工作
+
+
+
+
+
+
+
+[http://tzangms.com/](http://tzangms.com/)
+
+
+
+
+
+
+
+
+
+  * StreetVoice
+
+
+  * 
+
+
+    * SimpleLife
+
+
+
+
+
+  * Old street voice
+
+
+  * 
+
+
+    * windows + ASP 
+
+
+    * no version control
+
+
+
+
+
+  * New Street voice
+
+
+  * 
+
+
+    * Python + Django
+
+
+    * MariaDB
+
+
+    * redis
+
+
+    * RabbitMQ
+
+
+    * Git/Github
+
+
+
+
+
+  * What changes
+
+
+  * 
+
+
+    * unit test
+
+
+    * 
+
+
+      * travis 
+
+
+
+
+
+    * error tracking
+
+
+    * 
+
+
+      * sentry for JS/python
+
+
+      * 
+
+
+        * can use sentry for github issues.
+
+
+
+
+
+
+
+
+    * deployment
+
+
+    * 
+
+
+      * saltstack
+
+
+      * 
+
+
+        * use one command line to push to all servers
+
+
+
+
+
+
+
+
+    * **hubot [https://hubot.github.com/](https://hubot.github.com/)**
+
+
+    * 
+
+
+      * **hipchar -> hubot -> saltstack**
+
+
+      * 
+
+
+        * **using chat message to control deployment**
+
+
+
+
+
+
+
+
+
+
+
+  * **Make it all together  — Hipchat**
+
+
+  * 
+
+
+    * hipchat
+
+
+    * error -> hipchat
+
+
+    * Github update -> hipchat
+
+
+
+
+
+  * **github branch strategy**
+
+
+  * 
+
+
+    * **default — develop**
+
+
+    * **When it done -> product branch**
+
+
+    * **Implement new -> feature branch**
+
+
+
+
+
+  * **Github submit flow**
+
+
+  * 
+
+
+    * **pull request**
+
+
+    * **travis (unit test)**
+
+
+    * **push back result on hipchat**
+
+
+
+
+
+  * Open Source Projects
+
+
+  * 
+
+
+    * django-elestic-transcoder
+
+
+    * 
+
+
+      * [https://github.com/StreetVoice/django-elastic-transcoder](https://github.com/StreetVoice/django-elastic-transcoder)  
+
+
+
+      * ![](///Users/Evan/Library/Application%20Support/Evernote/accounts/Evernote/enanlin1007/content/p11925/3941ba41b08df24fa9356107bc78ecef.jpeg)
+
+
+
+
+
+    * django-celery-ses
+
+
+    * 
+
+
+      * [https://github.com/tzangms/django-celery-ses-demo](https://github.com/tzangms/django-celery-ses-demo)
+
+
+      * [https://github.com/StreetVoice/django-celery-ses](https://github.com/StreetVoice/django-celery-ses)
+
+
+      * celery —> email 電子報
+
+
+
+
+
+    * django-nextpage
+
+
+    * 
+
+
+      * [https://github.com/StreetVoice/django-nextpage](https://github.com/StreetVoice/django-nextpage)
+
+
+      * pagination count and next page system
+
+
+
+
+
+    * HyerialPlayer
+
+
+    * 
+
+
+      * [https://github.com/StreetVoice/HysteriaPlayer](https://github.com/StreetVoice/HysteriaPlayer)
+
+
+      * Object-C AVPlayer
+
+
+
+
+
+    * ididit
+
+
+    * 
+
+
+      * work the daily working log system
+
+
+      * [https://github.com/StreetVoice/ididit](https://github.com/StreetVoice/ididit)
+
+
+
+
+
+
+
+
+  * Resource:
+
+
+  * 
+
+
+    * 工作流程: trello, github
+
+
+    * 
+
+
+      *   - 即時討論: hipchat
+
+
+      *   - 錯誤追蹤: sentry
+
+
+      *   - 單元測試: 使用 travis / coveralls, 搭配  pip wheels
+
+
+      *     - 如何提升? 每週五衝 unit test, 在兩個月內衝了 10% coverage
+
+
+      *   - 部署: saltstack + hubot
+
+
+      *     我們有北京 + 台灣 + AWS 機房
+
+
+      *   - 趣味: hubot
+
+
+      *   - 現在我們持續開源:
+
+
+      *     - ididit:  `idonethis` clone
+
+
+      *     - django-celery-ses: Django Email Backend + SES + Celery
+
+
+      *     - HysteriaPlayer: Streaming media player for iOS
+
+
+
+
+
+
+
+
+
+
+* * *
+
+如何用 grs 擷取台灣上市股票股價資訊 [@toomore](https://twitter.com/toomore)
+
+
+
+
+[http://www.toomore.net/](http://www.toomore.net/)
+
+
+
+
+
+
+
+
+
+  * Why use python
+
+
+  * 
+
+
+    * Excel has limitation 65536
+
+
+    * 81 days only 
+
+
+
+
+
+  * 股票分析網站
+
+
+  * 
+
+
+    * 消息類
+
+
+    * 
+
+
+      * 注意與收集相關個股消息
+
+
+
+
+
+    * 技術類
+
+
+    * 
+
+
+      * 看線圖的價跟量
+
+
+
+
+
+
+
+
+  * grs
+
+
+  * 
+
+
+    * 本身偏技術分析
+
+
+    * Install and using
+
+
+    * 
+
+
+      * pip install grs
+
+
+      * >> from grs import Stock
+
+
+      * >> stock(‘2618).info
+
+
+
+
+
+    * grs-doc
+
+
+    * 
+
+
+      * it has version control, different version have diff doc
+
+
+
+
+
+
+
+
+  * 簡單分析
+
+
+  * 
+
+
+    * 均價/均量
+
+
+    * 
+
+
+      * (Stock.MA, Sock.MAV)
+
+
+      * 五日均價  Stock(‘2618’).MA(‘5’)
+
+
+
+
+
+    * 均價乖離
+
+
+    * 
+
+
+      * Stock.MAO 
+
+
+
+
+
+    * 乖離轉折點
+
+
+    * 
+
+
+      * Stock(‘2618).MAO
+
+
+
+
+
+    * 四大買賣判斷
+
+
+    * 
+
+
+      * BestFourPoint
+
+
+      * 買(賣)點
+
+
+      * 
+
+
+        * 負 (正) : 乖離扣至最大 量大收紅 (黑)
+
+
+        * 負 (正) : 乖離扣至最大 量縮價不跌(跌)
+
+
+        * **短期日 3/6/18 日 ～比起市場 5/20/60 日提早是因為想要更早看出線圖**
+
+
+
+
+
+      * from grs import BestFourPoint
+
+
+
+
+
+
+
+
+  * 其他常用工具
+
+
+  * 
+
+
+    * 顯示台灣時間  TWTime
+
+
+    * 是否開市  TWSEOpen
+
+
+    * 個股即時盤  RealtimeStock
+
+
+    * 大盤即時資訊  Realtimeeight
+
+
+    * 上市～上櫃代碼 TWSENo OTCNo
+
+
+    * 單日倒數時間 Countdown
+
+
+
+
+
+  * 其他利用工具
+
+
+  * 
+
+
+    * **XMPP rubot**
+
+
+    * 
+
+
+      * **using XMPP with grs+GAE**
+
+
+
+
+
+
+
+
+  * Resource
+
+
+  * 
+
+
+    * pypi / [https://pypi.python.org/pypi/grs](https://pypi.python.org/pypi/grs) 
+
+
+    * github / [https://github.com/toomore/grs](https://github.com/toomore/grs) 
+
+
+    * grs docs / [http://grs-docs.toomore.net](http://grs-docs.toomore.net/)
+
+
+
+
+
+
+
+* * *
+
+
+
+
+### Rapid Web Development with Mezzanine [Stephen McDonald](http://twitter.com/stephen_mcd)
+
+
+
+
+  [https://pyconapac2014.hackpad.com/Keynote-Stephen-McDonald-day2-x4HpfSvNc1f](https://pyconapac2014.hackpad.com/Keynote-Stephen-McDonald-day2-x4HpfSvNc1f)
+
+
+
+
+
+
+
+
+
+  * Why another CMS?
+
+
+  * 
+
+
+    * People do awesome job in marketing but don’t have good technical skills to back it up.
+
+
+    * Try to abstract out the logic to make things reusable without copy-pasting.
+
+
+
+
+
+  * **”You make different things if you focus on constraints instead of requirements.” — Benjamin Black (@b6n)**
+
+
+  * Mezzanine i
+
+
+  * 
+
+
+    * Constraints
+
+
+    * Simplicity
+
+
+    * Just Django
+
+
+
+
+
+  * Model graph [http://bit.ly/MezzLego](http://bit.ly/MezzLego)
+
+
+  * About Mezanine
+
+
+  * 
+
+
+    * class RichTextPAge(Page)
+
+
+    * class Form(Page)
+
+
+    * class Gallery(Page)
+
+
+    * It is very easy to implement blog/shopping cart/gallery 
+
+
+
+
+
+  * About Batteries included in Mezzanine
+
+
+  * 
+
+
+    * Python and Django is good ecosystem to provide more “power”
+
+
+    * batteries include
+
+
+    * 
+
+
+      * Keywords, rating, threaded comments
+
+
+      * search 
+
+
+      * user editable setting
+
+
+      * Multi-tenancy 
+
+
+      * image thubnailing
+
+
+      * caching
+
+
+      * bootstrap + live edting
+
+
+      * deploy tooling
+
+
+
+
+
+
+
+
+  * Extra Batteries
+
+
+  * 
+
+
+    * [Cartridge ](http://cartridge.jupo.org/)for commerce  
+
+
+    * [Drum ](http://drum.jupo.org/)for forum 
+
+
+    * Themes is [there](http://mezzathe.me/)
+
+
+
+
+
+  * Other ~70 packages
+
+
+  * 
+
+
+    * [https://www.djangopackages.com/grids/g/mezzanine/](https://www.djangopackages.com/grids/g/mezzanine/)
+
+
+
+
+
+  * Resource:
+
+
+  * 
+
+
+    * [Mezzanine](http://mezzanine.jupo.org/) CMS
+
+
+    * [Kouio](https://kouio.com/) News tools
+
+
+    * [Mathspace](https://mathspace.co/) 
+
+
+
+
+
+
+
+* * *
+
+
+
+
+**Functional Programming in Python**
+
+
+
+
+[https://pyconapac2014.hackpad.com/Functional-Programming-in-Python-101-nvp9OVl6NPz](https://pyconapac2014.hackpad.com/Functional-Programming-in-Python-101-nvp9OVl6NPz)
+
+
+
+
+[http://www.slideshare.net/littleq0903/functional-programming-in-python-33358806](http://www.slideshare.net/littleq0903/functional-programming-in-python-33358806)
+
+
+
+
+* * *
+
+
+
+
+以廣告品項為基礎的行動廣告推薦系統: 以 Python Hadoop Streaming 實作
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  * Mobile Advertise System
+
+
+  * 
+
+
+    * Impression AD
+
+
+    * 
+
+
+      * Banner, Or any kind of AD in mobile system
+
+
+
+
+
+    * Conversion
+
+
+    * 
+
+
+      * 到定點列印QR code 去兌換東西
+
+
+
+
+
+    * Landing pages
+
+
+    * 
+
+
+      * 可以顯示廣告接受人與店家的距離
+
+
+
+
+
+
+
+
+  * 行動廣告重要數據
+
+
+  * 
+
+
+    * Click Through Rate (CTR)  每一百次顯示有多少點擊次數
+
+
+    * Conversion Rate 產生的實際行為
+
+
+    * Goal:
+
+
+    * 
+
+
+      * Maximum CTR and conversations
+
+
+
+
+
+
+
+
+  * Architect
+
+
+  * 
+
+
+    * Http Host
+
+
+    * 
+
+
+      * DB: Couch DB (NoSQL)
+
+
+      * In memory grid for realtime backend process.
+
+
+      * Hadoop distributed + spark + HBase
+
+
+
+
+
+    * Web
+
+
+    * 
+
+
+      * Django + SSH
+
+
+
+
+
+    * AD video, image
+
+
+    * 
+
+
+      * CDS
+
+
+
+
+
+    * Message Queue
+
+
+    * 
+
+
+      * Ad Operation
+
+
+      * Reporting Operation
+
+
+
+
+
+
+
+
+  * Data Selection -> Machine Learning -> Prediction -> Evaluation (for machine learning adjustment)
+
+
+
+
+* * *
+
+High Performance Tool with Python
+
+
+
+
+
+
+
+
+
+
+## Andreas Klöckner 
+
+
+
+
+
+
+
+
+
+
+
+
+  * Scripting language are SLOW
+
+
+  * Let computing in OpenCL other using Python
+
+
+  * OpenCL
+
+
+  * 
+
+
+    * JIT build kernel
+
+
+
+
+
+  * Moving Data
+
+
+  * 
+
+
+    * Latency
+
+
+    * Higher Current (more power)
+
+
+
+
+
+  * Programing Model need modification to adopt concurrency Parallelism
+
+
+  * Parallel Programming 
+
+
+  * PyOpenCL
+
+
+  * 
+
+
+    * Benefit in just use OpenCL
+
+
+    * 
+
+
+      * PyOpenCl will compile and cache the kernel code for you.
+
+
+      * Auto cleanup
+
+
+      * Error Checking
+
+
+
+
+
+
+
+
+  * **Machine generate code (code generation)**
+
+
+  * 
+
+
+    * **Using PyOpenCL could generate kernel by using some function packages**
+
+
+    * **Let machine generate OpenCL kernel code for you.**
+
+
+    * 
+
+
+      * **Automated tuning**
+
+
+      * **data types **
+
+
+      * **specialize code for given problem**
+
+
+      * **constants faster than variables**
+
+
+      * **Loop unrooling**
+
+
+
+
+
+
+
+
+  * Scan problem (input need last output)
+
+
+  * 
+
+
+    * 1 , 1, 2, (1+1+2) 4, (1+1+2+4) 8
+
+
+    * Using GenericScan in OpenCL you don’t need write any kernel code here.
+
+
+
+
+
+  * Loop Generation 
+
+
+  * 
+
+
+    * c[i, j] = a[i] * b[j]
+
+
+    * It is very hard for OpenCL to do it because it need other input
+
+
+
+
+
+  * Bonus Features
+
+
+  * 
+
+
+    * A-priori bounds checking
+
+
+    * Generate a sequential version of code
+
+
+    * Automatic Benchmarking
+
+
+    * Free tuning advice
+
+
+    * 
+
+
+      * Local memory layout
+
+
+
+
+
+    * Automatic Testing
+
+
+    * Data layout transformation
+
+
+
+
+
+  * **loo.py**
+
+
+  * 
+
+
+    * Will be MIT, release in summer
+
+
+
+
+
+  *  [http://andreask.cs.illinois.edu/aboutme/](http://andreask.cs.illinois.edu/aboutme/)
+
+
+
+
+
+

@@ -1,0 +1,35 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2007-04-25 03:15:57+00:00
+slug: '%e7%9c%8b%e7%9c%8b%e4%bd%a0%e9%83%a8%e8%90%bd%e6%a0%bc%e7%9a%84%e6%96%87%e7%ad%86%e5%a6%82%e4%bd%95'
+title: 看看你部落格的文筆如何??
+wordpress_id: 631
+categories:
+- 網路上好玩的事情
+---
+
+[![](http://www.youvegotblogs.com/resserver.php?blogId=5&resource=start.jpg&mode=medium)](http://www.sogou.com/labs/wenpin/)
+
+ [搜狗文品指數測算](http://www.sogou.com/labs/wenpin/)不錯玩~~~ 把你的文章貼進去~~ 就會出現你的文筆如何~~ 有興趣去看看
+
+## Evan，您的评测结果：
+
+[李敖](http://www.sogou.com/web?query= 李敖)
+    ![](http://www.sogou.com/images/statsword/bar1.gif)
+    34% 
+    Hoho，受到这位作家的一些轻微影响。
+
+[崔永元](http://www.sogou.com/web?query= 崔永元)
+    ![](http://www.sogou.com/images/statsword/bar2.gif)
+    28% 
+    没有想到吧，你有这位作家那么一点点的味道哟。
+
+[木子美](http://www.sogou.com/web?query= 木子美)
+    ![](http://www.sogou.com/images/statsword/bar3.gif)
+    18% 
+    放心吧，你和他/她的相似度基本可以忽略不计。
+
+[有意思，我也要去试试！](http://www.sogou.com/websearch/test/statsword.jsp)

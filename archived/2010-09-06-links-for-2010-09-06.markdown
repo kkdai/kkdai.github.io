@@ -1,0 +1,82 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2010-09-06 16:02:22+00:00
+slug: links-for-2010-09-06
+title: links for 2010-09-06
+wordpress_id: 1111
+categories:
+- 未分類
+---
+
+  * 
+                
+
+[Ben Hall's Blog: Windows Live Writer Plugin - Hello World!](http://blog.benhall.me.uk/2007/09/windows-live-writer-plugin-hello-world.html)
+
+
+                
+
+WLW hello world
+
+
+                
+
+(tags: [WLW](http://delicious.com/kkdai/WLW))
+
+
+            
+  * 
+                
+
+[Ben Hall's Blog](http://blog.benhall.me.uk/)
+
+
+                
+
+sample hello world for WLW
+
+
+                
+
+(tags: [WLW](http://delicious.com/kkdai/WLW) [extension](http://delicious.com/kkdai/extension))
+
+
+            
+  * 
+                
+
+[Windows Live Gallery - 開發人員中心](http://gallery.live.com/devcenter.aspx#Dev_11)
+
+
+                
+
+WLW Extension 官方相關資料
+
+
+                
+
+(tags: [WLW](http://delicious.com/kkdai/WLW) [extension](http://delicious.com/kkdai/extension))
+
+
+            
+  * 
+                
+
+[[FIX] Common Problems While Installing Windows 7 Service Pack 1 (SP1) Beta - Tweaking with Vishal](http://www.askvg.com/fix-common-problems-while-installing-windows-7-service-pack-1-sp1-beta/)
+
+
+                
+
+Win7 SP1 安裝問題修復與相關文章
+SP1 RTM 2011 1st week
+
+
+                
+
+(tags: [Windows7](http://delicious.com/kkdai/Windows7) [SP1](http://delicious.com/kkdai/SP1))
+
+
+            

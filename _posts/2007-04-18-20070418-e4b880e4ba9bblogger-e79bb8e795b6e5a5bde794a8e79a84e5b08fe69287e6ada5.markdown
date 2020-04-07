@@ -1,0 +1,63 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2007-04-18 12:18:20+00:00
+slug: 20070418-%e4%b8%80%e4%ba%9bblogger-%e7%9b%b8%e7%95%b6%e5%a5%bd%e7%94%a8%e7%9a%84%e5%b0%8f%e6%92%87%e6%ad%a5
+title: '[2007/04/18] 一些Blogger 相當好用的小撇步'
+wordpress_id: 625
+categories:
+- 我的生活
+---
+
+大家可以參考這些文章~~~ 裡面充滿著許多Blogger 的小技巧~~ 可以讓你使用blogger 使用的更方便與舒適～~
+
+  * **[堯@部落格: 彈指搞定Blogger搜尋](http://jinyaolin.blogspot.com/2006/10/blogger.html)**
+
+04/18 03:56, 2007
+
+不錯的blogger hack
+
+  * **[堯@部落格: 關心樂生聯播代碼](http://jinyaolin.blogspot.com/2007/03/blog-post_3246.html)**
+
+04/18 04:00, 2007
+
+引述 :『鑑於目前已經有許多部落客願意協助書寫關於樂生的文章，因此希望在各位的部落格上面放置樂生聯播文章的人，可以利用下列程式碼，將之放置於部落格邊欄或網頁之中，相關代碼如下。』
+
+樂生聯播代碼 
+
+  * **[色彩斑斓: Blogger beta:把模板修改为三栏](http://sunr.blogspot.com/2006/09/blogger-beta_30.html)**
+
+04/18 04:05, 2007
+
+引述 :『如果你的Widget较多，那么你可能会希望模板变成三栏。下面是一种方法，不过这仅仅是一个参考，不同的模板可能不同，视情况修改，记住在修改之前保存模板。』
+
+教導你變成三欄的方式
+
+  * **[Yee's Blog » Blog 存档 » Blogger Beta hack 汇总](http://iyee.cn/post/blogger-beta-hacks.html)**
+
+04/18 04:06, 2007
+
+引述 :『Blogger Beta 发布也有一段时间了，虽然官方承诺的FTP功能到现在一点眉目都没有，但还是有很多不怕功亏一篑的人选择了升级。最近我又收到不少询问如何修改Beta的E-MAIL，但是很抱歉，我对这个目前看来并不安全的系统没有任何深入的研究。好在国内有几个朋友玩得挺起劲的，编译了不少Blogger Beta hack的文章，下面帮他们做一个小汇总。』
+
+Blogger hack 小總匯
+
+  * **[Beautiful Beta: BlogToC Widget Released](http://beautifulbeta.blogspot.com/2007/04/blogtoc-widget-released.html)**
+
+04/18 04:10, 2007
+
+引述 :『The job is done. We now have a complete interactive Table Of Contents. Click the button in my sidebar to display the TOC. You can sort the TOC by Post Title by clicking the column header. Click it again, and it is sorted in reversed order. The same way if you want to sort the posts by date: newest first, or oldest first. And by clicking on one of the labels in the TOC filters all posts with that label. Click the column header to return to the full ToC.』
+
+昨天發現了一個實用也很炫的 Blogger hack: BlogToC Widget. 這是一個 Blooger 限定的 hack, 它可以提供一張清單，列出你所有的 post, 可以依照時間排列，或是照字母，或是依 label 來列出文章，這功能對讀者非常有用。節錄 Beautiful Beta的說明:
+
+  * **[色彩斑斓: Blogger:如何合并多个Blogger帐号](http://sunr.blogspot.com/2006/10/bloggerblogger.html)**
+
+04/18 04:11, 2007
+
+如何合併Blogger 多個帳號的文章~~~~
+
+  
+
+
+[我的更多書籤](http://www.hemidemi.com/user/kkdai/bookmark) @ [HEMiDEMi - 黑米共享書籤](http://www.hemidemi.com)

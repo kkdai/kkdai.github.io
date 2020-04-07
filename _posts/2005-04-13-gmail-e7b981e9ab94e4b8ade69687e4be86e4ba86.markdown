@@ -1,0 +1,18 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2005-04-13 18:29:45+00:00
+slug: gmail-%e7%b9%81%e9%ab%94%e4%b8%ad%e6%96%87%e4%be%86%e4%ba%86
+title: Gmail 繁體中文來了!!
+wordpress_id: 228
+categories:
+- 關於Gmail
+---
+
+![](http://gmail.google.com/gmail/help/images/logo.gif)[**新功能！**](http://gmail.google.com/gmail/help/intl/zh-TW/whatsnew.html)   最近，Gmail裡面的這個選項，一直讓我相當的興奮，想不到他也開始support繁體中文了。
+
+原諒我那麼的興奮，可能Gmail總是在最近作出了許多令人驚奇的更新，讓我不斷對這家公司的軟體有了相當大的信心，之前的HTML編輯預覽機制就已經讓我覺得相當方便了(什麼?  我知道 YAHOO很久就有啦~~)加上最近支援繁體中文(什麼叫支援繁體中文? 可不是有著繁體中文的說明畫面罷了~~~ 還支援import office 2003 繁體中文的通訊錄)。
+
+總覺得Gmail快速進步是一個好事，也可以推促其他免費Webmail 軟體加速的研發更有趣、有實際的功能 (YAHOO 的 信件假名 蠻有意義的~)，不過!!!!  比起~~ 使用介面支援繁體中文~~ 我也很希望~~ [Google Adsense](https://www.google.com/adsense/r)早點支援繁體中文吧!!!  ^____________^ a 

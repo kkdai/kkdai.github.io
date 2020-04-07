@@ -1,0 +1,72 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2005-09-05 15:57:22+00:00
+slug: links-for-2005-09-05
+title: links for 2005-09-05
+wordpress_id: 257
+categories:
+- 每日網摘
+---
+
+
+	
+  * 
+		
+
+[Common Craft - Social Design for the Web: How to Post Daily Del.icio.us Links to Your Movable Type Blog](http://www.commoncraft.com/archives/001028.html)
+
+
+		
+
+How to Post Daily Del.icio.us Links to Your Movable Type Blog
+
+
+		
+
+(tags: [code](http://del.icio.us/kkdai/code))
+
+
+	
+
+	
+  * 
+		
+
+[How to write a good research paper and give a good research talk](http://research.microsoft.com/Users/simonpj/papers/giving-a-talk/giving-a-talk.htm)
+
+
+		
+
+應該找時間好好看看如何做一場好的研究性質演講
+
+
+		
+
+(tags: [teach](http://del.icio.us/kkdai/teach))
+
+
+	
+
+	
+  * 
+		
+
+[Comprehensive Listing of Del.icio.us Tools, Plugins and Add-ons for Social Bookmarking ? ‘Change, Culture, Creativity, Communication’](http://www.kriskrug.com/?p=276)
+
+
+		
+
+許多好用的DELICIOUS TOOLS
+
+
+		
+
+(tags: [teach](http://del.icio.us/kkdai/teach))
+
+
+	
+
+

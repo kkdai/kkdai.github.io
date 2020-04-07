@@ -1,0 +1,91 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2006-01-04 15:53:13+00:00
+slug: links-for-2006-01-04
+title: links for 2006-01-04
+wordpress_id: 319
+categories:
+- 每日網摘
+---
+
+
+	
+  * 
+		
+
+[Drupal是一套以 PHP 開發、模組化、架構簡易，功能卻強大的內容管理架站系統。](http://drupal.org/)
+
+
+		
+
+可以看看，一個從Xoops, Nuke 系出同門的CMS系統~~支援多種模組新增
+
+
+		
+
+(tags: [PHP](http://del.icio.us/kkdai/PHP))
+
+
+	
+
+	
+  * 
+		
+
+[愛德華日誌 : What's hot in Year 2006?](http://nettrace.blogspirit.com/archive/2005/12/31/what-s-hot-in-year-2006.html)
+
+
+		
+
+有一些對於2006的展望，也有對於Drupal的簡介與展望~~
+
+
+		
+
+(tags: [PHP](http://del.icio.us/kkdai/PHP))
+
+
+	
+
+	
+  * 
+		
+
+[WordPress › Free Blog Tool and Weblog Platform](http://wordpress.org/)
+
+
+		
+
+另外一套CMS系統，WiordPress現在很多人拿來用Blog 系統
+
+
+		
+
+(tags: [PHP](http://del.icio.us/kkdai/PHP))
+
+
+	
+
+	
+  * 
+		
+
+[我和爸爸一起玩魔兽：父爱在WOW里延伸 - 魔兽世界-World of Warcraft-魔兽中文站 - wow.duowan.com](http://wow.duowan.com/2005-12-29/007N/09582506.html)
+
+
+		
+
+很好玩的一篇文章~~敘述說一個疼愛女兒的父親，努力在WOW的世界裡幫女兒奮鬥~~~~果然看出大陸一胎化的"孝子"。
+
+
+		
+
+(tags: [WOW](http://del.icio.us/kkdai/WOW) [funny](http://del.icio.us/kkdai/funny))
+
+
+	
+
+

@@ -1,0 +1,32 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2005-10-17 18:28:29+00:00
+slug: '%e4%bb%a4%e4%ba%ba%e6%87%b7%e8%88%8a%e7%9a%84%e7%b6%b2%e7%ab%99'
+title: 令人懷舊的網站
+wordpress_id: 282
+categories:
+- 網路上好玩的事情
+---
+
+![scuec.JPG](http://www.evanlin.com/blog/archives/20051018/scuec.JPG)
+
+這個社團MARK是我在大學時代所建立的社團，當時抓準了網路創業的浪潮，我們幾個大學生也希望能學習別人網路創業的精神~在大學裏面找尋學弟妹加以訓練~~~~去外面找些公司接接CASE訓練自己實力、尋求創業的機會。
+
+本來社團的理念都是不錯的~~ 無奈~~大學生大多喜歡活動性質的社團，不然就是不願意浪費上課以外的時間來學習新的課程~讓當時身為社團幹部的我們相當的無力。望著別人的社團滿滿的人，我們的社團最多的狀態只有數十人(也算很多了~~~)
+
+<blockquote>[Internet Archive: Wayback Machine](http://www.archive.org/web/web.php)
+> 
+> 看古時候的網頁~~ 從1996開始到現在的網頁版本都會記錄下來~~
+> 
+> </blockquote>
+
+這個網站~~會幫我們自動備份住自從1996年後到現在的所有網站大變化，所以~~ 我就去選取了以前的社團網站~~
+
+[http://web.archive.org/web/20010516211127/http://www.scuec.net/](http://web.archive.org/web/20010516211127/http://www.scuec.net/)
+
+真是令人懷念~~ 在四年前所撰寫的這個網站，完全用PHP的內容，當然是比不上現在的一些CMS(Content Management System)，但是也是有自動發報、文件管理、文章收集的一些功能~~並且還有總編輯、作者編輯的一些功能~~~再發信的機制上還做了許多最佳化處理~~ 真是令人懷念阿~~~
+
+![webpage.JPG](http://www.evanlin.com/blog/archives/20051018/webpage.JPG)

@@ -1,0 +1,103 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2006-10-03 17:12:26+00:00
+slug: nba-live-07-%e7%9a%84%e6%8f%9b%e4%ba%ba%e8%88%87%e8%a7%a3%e6%b1%ba%e5%be%8c%e8%a1%9b%e4%b8%80%e6%89%93%e4%ba%94%e7%9a%84%e8%a3%9c%e4%b8%81
+title: NBA LIVE 07 的換人與解決後衛一打五的補丁
+wordpress_id: 495
+categories:
+- 遊戲天國
+---
+
+[換人補丁]
+
+screen.width*0.7) {this.resized=true; this.width=screen.width*0.7; this.style.cursor='hand'; this.alt='Click here to open new windownCTRL+Mouse wheel to zoom in/out';}
+}
+}
+}" onclick="function anonymous()
+{
+function anonymous()
+{
+function anonymous()
+{
+if(!this.resized) {return true;} else {window.open('http://i74.photobucket.com/albums/i250/jaosming/nbalive072006-10-0117-01-02-17.jpg');}
+}
+}
+}" alt="" src="http://i74.photobucket.com/albums/i250/jaosming/nbalive072006-10-0117-01-02-17.jpg" onload="function anonymous()
+{
+function anonymous()
+{
+function anonymous()
+{
+if(this.width>screen.width*0.7) {this.resized=true; this.width=screen.width*0.7; this.alt='Click here to open new windownCTRL+Mouse wheel to zoom in/out';}
+}
+}
+}" border="0" /> screen.width*0.7) {this.resized=true; this.width=screen.width*0.7; this.style.cursor='hand'; this.alt='Click here to open new windownCTRL+Mouse wheel to zoom in/out';}
+}
+}
+}" onclick="function anonymous()
+{
+function anonymous()
+{
+function anonymous()
+{
+if(!this.resized) {return true;} else {window.open('http://i74.photobucket.com/albums/i250/jaosming/nbalive072006-10-0117-01-03-92.jpg');}
+}
+}
+}" alt="" src="http://i74.photobucket.com/albums/i250/jaosming/nbalive072006-10-0117-01-03-92.jpg" onload="function anonymous()
+{
+function anonymous()
+{
+function anonymous()
+{
+if(this.width>screen.width*0.7) {this.resized=true; this.width=screen.width*0.7; this.alt='Click here to open new windownCTRL+Mouse wheel to zoom in/out';}
+}
+}
+}" border="0" /> screen.width*0.7) {this.resized=true; this.width=screen.width*0.7; this.style.cursor='hand'; this.alt='Click here to open new windownCTRL+Mouse wheel to zoom in/out';}
+}
+}
+}" onclick="function anonymous()
+{
+function anonymous()
+{
+function anonymous()
+{
+if(!this.resized) {return true;} else {window.open('http://i74.photobucket.com/albums/i250/jaosming/nbalive072006-10-0117-01-05-01.jpg');}
+}
+}
+}" alt="" src="http://i74.photobucket.com/albums/i250/jaosming/nbalive072006-10-0117-01-05-01.jpg" onload="function anonymous()
+{
+function anonymous()
+{
+function anonymous()
+{
+if(this.width>screen.width*0.7) {this.resized=true; this.width=screen.width*0.7; this.alt='Click here to open new windownCTRL+Mouse wheel to zoom in/out';}
+}
+}
+}" border="0" />  
+  
+原始鏈結:[［NBA Live 07］解决cpu不换人及后卫单干补丁](http://nba.cpgl.net/thread-110367-1-1.html)
+
+[心得]:我試了一下  
+由於增加三個設定檔~ 使得原來看不到電腦換人頻率出現了  
+也有疲勞影響度的選項  
+(是中文的~ 表示本來就有~ 可能放在自訂選項之內)　不過~~~ ～但是即使你調到一百，五分鐘一節的球賽還是喚不到一次  
+看來，這幾個選項是沒有用的
+
+PG自幹程度~~~  不能說變好了  
+只能說~~ＰＧ　不會拿了球就往籃下衝  
+可能變成外線或是其他的  
+不過自幹狀況還是很嚴重  
+太陽隊的ＮＡＳＨ　一場拿３７分（真人也一樣嗎？）
+
+P.S.由於是拿０６的設定去變更的  
+所以按鈕的設定會被改變  
+自己記得要調一下
+
+_[解決後衛一打五]_
+
+_原文鏈結:  _[[原创] NBA07 AIACT补丁(PG修正最后版正式放出)](http://game.ali213.net/thread-1165664-1-1.html)
+
+[心得]:我試了一下，整個電腦的進攻方式有大大的改善~~整體而言真的有修掉～～　　相當感謝～～

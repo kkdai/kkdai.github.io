@@ -1,0 +1,164 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2004-04-21 09:09:50+00:00
+slug: stl%e5%ad%b8%e7%bf%92-%e7%b0%a1%e6%98%93%e5%ad%b8%e7%bf%92stl%e7%9a%84%e6%a6%82%e5%bf%b5
+title: STL學習-簡易學習STL的概念
+wordpress_id: 80
+categories:
+- STL學習心得
+---
+
+![](http://www.awl.ca/booksellers/backlist/images/generic.jpg)
+
+
+
+
+　
+
+
+
+
+　
+
+
+
+
+　
+
+
+
+
+　
+
+
+
+
+　
+
+
+
+
+　
+
+
+**緣起**
+
+
+
+[STL（
+Standard Template Library)與泛行程式設計](http://www.jjhou.com/jjtbooks-generic-programming-and-the-stl.htm)是一個設計程式的概念，將資料容器與演算法加以分開的一個設計程序，不僅僅可以簡化整個設計流程，更可以使程式模組設計好之後，可以獲得更廣泛的應用空間。這麼好的設計方式，其實已經行之有年，記得前幾天去某些科技公司面試的時候，他們不斷的詢問我問知不知道『[侯捷](http://www.jjhou.com/)』有沒有修過他的課程，後來才知道原來[侯捷](http://www.jjhou.com/)算是國內的MFC與STL的大師，只要有修過他開的課程，基本上的程式設計能力就有一定的能力。於是我修了[STL與泛型程式設計](http://www.jjhou.com/course-generic-yzu-922.htm)。
+
+
+
+
+在修的過程中，與我之前去接CASE的概念完全不同，雖然我已經相當的熟練物件導向的設計方式，與一些簡單的Template概念，但是卻沒有繼續的研讀一些軟體設計的方法論。所以聽到這些概念的時候，其實整個人是很感動的，在修了幾次的課程之後，於是開始回去架設可以執行STL的執行平台。
+
+
+  
+
+所以這篇文章主要是一個架設起可以執行STL的平台，裡面包括(1).[STL架設在BCB5.0上的步驟（詳細請參照該篇文章）](http://www.jjhou.com/myan-stlport.htm)，(2).利用[UltraEdit](http://www.ultraedit.com/)建立一個可以Compiler的空間
+
+
+<!-- more -->
+
+
+
+  
+  1. **架設STL的執行平台**
+
+
+  
+
+雖然STL的設計概念非常的好，但是若你想要執行實做在你手邊有的IDE介面似乎是沒有的，所以我找了一些現有的一些資料裡面。關於STL的開發函示庫中，裡面以[SGI的STL](http://www.sgi.com/tech/stl/)算是不錯，而[侯捷](http://www.jjhou.com/)老師開關於這些課程，也都是再追蹤[SGI的STL](http://www.sgi.com/tech/stl/)裡面的源碼(source
+code)。當你無法直接使用這些函示庫的時候，可以使用[STLPORT](http://www.stlport.org/)這個網站所提供的套件去將STL移植到你常使用的IDE介面（比如說VC++，BCB，BC++....）但是有那麼簡單嗎？如果能像[STLPORT](http://www.stlport.org/)裡面所提的Have
+Fun!那也就好了～～我在GCC上面一直無法PORT成功。所以察看[侯捷](http://www.jjhou.com/)所寫的『STL源碼剖析』[後面有位作者孟岩所寫的文章](http://www.jjhou.com/myan-stlport.htm)，是關於使用[STLPORT](http://www.stlport.org/)在BCB與VC++上。
+根據所以以下的操作先根據這樣的步驟，下載好[BCB的compiler](http://www.borland.com/products/downloads/download_cbuilder.html#)，[並且可以去這裡下載STLPORT4.0的版本](http://www.stlport.com/archive/)，依照該上面提到關於BCB5的部分，即可架設完整，裡面可能會遇到的是，MAKE的時候若是MAKE的時候，出現了Page
+  Table 的Size不夠大，即可修改 Makefile將第16行中的
+
+
+
+  
+
+LINK = tlib /P128 ===> LINK = tlib /P256 即可。
+
+
+
+  
+  2. **使用UltraEdit去建立編輯，執行平台**
+
+
+  
+
+但是全部的編輯完成後，其實相當的麻煩，也就是每次編輯的時候需要透過DOS模式下COMMAND的方式去編輯軟體。[UltraEdit](http://www.ultraedit.com/)是一個大家常用來撰寫原始碼、或是做些簡單的文書處理用的軟體。但是其實他可以搭配著Compiler去直接當成一個有簡單的IDE介面的CODE軟體。只要你WINDOW的目錄設定好（PATH裡面有包含到COMPILER的執行檔，可直接在COMMAND
+  LINE測試一次，即可知道）就可以利用[UltraEdit](http://www.ultraedit.com/)去編譯程式。方法如下(以下說明針對英文版，中文請將相關位置找到即可）：
+
+
+
+  
+
+首先先到 [Advanced]--->[Tool Configuration]，即可看到一個編輯畫面如下：
+
+
+
+  
+
+　![UltraEdit中 Tool configuration的畫面](http://www.evanlin.com/blog/archives/0421/u01.jpg)
+
+
+
+
+  
+
+**先設定Compiler的部分：**
+
+
+  
+
+根據這個畫面，將[Command Line]填入：" bcc32 %F"
+  指的就是可以利用bcc32 這個compiler去編譯這個檔案。而將[Working
+  Directory]設定到 "%P"
+  也就是編譯出來的中間檔放在該目錄之下。[Menu Item Name]裡面就是該TOOL的名稱，就隨便你填入你想要的名稱即可。並且記得將
+  [Show DOS Box]與 [Capture Output]兩個選項打勾，即可將這個操作的輸出結果抓取到另外一個檔案。
+
+
+  
+
+設定好之後，在主畫面中的[Advanced]下就會出現一個新的選項（快速鍵是
+  Shift＋CTL＋某個數字鍵），可拿著某個STL程式作一個簡單的測試。
+
+
+  
+
+**接著設定執行程式的部分：**
+
+
+  
+
+一樣到剛才那個畫面根據這個畫面，將[Command Line]填入："%P%N.exe"
+  指的就是可以利用執行這個檔案編譯好的執行檔。而將[Working
+  Directory]也設定 "%P" 。[Menu Item Name]裡面就是該TOOL的名稱，一樣你填入你想要的名稱即可。記得也需要將並且記得將
+  [Show DOS Box]與 [Capture Output]兩個選項打勾，才能由畫面看到您的執行結果。
+
+
+  
+
+若要測試這樣的程式是否成功，可以利用[UltraEdit](http://www.ultraedit.com/)開啟該CPP檔案，按下（CTL＋Shift＋0）『假設你設定COMPILER是第一個），就會出現一個編譯畫面，並且會出現一個新的編輯文字方塊，裡面出現相關的錯誤訊息或是正確訊息。要執行的話按下（CTL＋Shift＋1），就會看到其相關的執行結果在另外一個編輯文字的檔案之中。
+
+
+  
+
+　
+
+
+
+
+
+　
+
+
+
+
+　

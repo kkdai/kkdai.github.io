@@ -1,0 +1,31 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2012-02-17 11:55:22+00:00
+slug: '%e5%ad%b8%e7%bf%92%e6%97%a5%e8%aa%8c-linq%e5%bf%83%e5%be%97'
+title: 學習日誌-LINQ心得
+wordpress_id: 1150
+categories:
+- VC++程式設計
+---
+
+最近再研究如何寫出一個aggregator, 首先把LINQ跟JSON都看了一下。試著想找出一可以方便在各大相片網站找資料的共通語言，由於codeplex上面有[Linq.Flickr](http://linqflickr.codeplex.com/)這個open source 的library，也開始試著研究。
+
+ 
+
+參考: [使用linq.flickr搜尋相片](http://sholfen.pixnet.net/blog/post/581647-%E4%BD%BF%E7%94%A8linq.flickr%E6%90%9C%E5%B0%8B%E7%9B%B8%E7%89%87)
+
+ 
+
+Note:
+
+ 
+
+  
+  1. 由於改[WLWPlurk](http://wlwplurk.codeplex.com/)，稱這次機會把手邊平台由VS2008改成VS2010。也裝了[Visual Studio Achievements](http://channel9.msdn.com/achievements/visualstudio)。 
+   
+  2. 為了開發快一點也把順手語言改成C#，不過後來發現[Linq.Flickr](http://linqflickr.codeplex.com/)是.Net3.5的~ 竟然也踩到了3.5 與 4.0 不共通的弊病。 所以也在Add reference 卡了一下。 
+   
+  3. Flickr user name 不是URL上面的userID 而是user definded 的名字，為了這個我還以為是我安裝有問題~ 認真的trace 下[Linq.Flickr](http://linqflickr.codeplex.com/)去。 

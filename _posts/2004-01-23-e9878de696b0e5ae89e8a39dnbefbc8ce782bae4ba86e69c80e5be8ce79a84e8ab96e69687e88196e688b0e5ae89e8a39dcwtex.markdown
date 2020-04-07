@@ -1,0 +1,38 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2004-01-23 03:37:53+00:00
+slug: '%e9%87%8d%e6%96%b0%e5%ae%89%e8%a3%9dnb%ef%bc%8c%e7%82%ba%e4%ba%86%e6%9c%80%e5%be%8c%e7%9a%84%e8%ab%96%e6%96%87%e8%81%96%e6%88%b0%e5%ae%89%e8%a3%9dcwtex'
+title: 重新安裝NB，為了最後的論文聖戰安裝CWTEX
+wordpress_id: 43
+categories:
+- 學習文件
+---
+
+![41](http://ccms.ntu.edu.tw/~ntut019/cwtex/cxbook.gif)  
+
+雖然老師一直叫我用WORD來排版我的論文，不過我還是不習慣使用WORD來排版一些軟體，主要原因還是對於WORD裡面格式得過於混亂。但是在LATEX中，使用中文一直還是很麻煩的事情，
+
+
+
+
+
+不過國內的一些學者倒是開發了[Cwtex](http://www.math.ccu.edu.tw/chinese/theequipment.htm)
+算是蠻好用的軟體。只是裡面對於 Winedt 與 Miktex 的軟體版本有比較大的問題，在這次的安裝之中，雖然一開始安裝的不是很好。
+
+
+
+
+不過這個[目錄](ftp://ftp1.sinica.edu.tw/pub2/tex/cwTeX/)裡面有相關安裝需要的軟體與配件
+
+
+
+
+也有相關的文件，只要看清楚 setup.pdf 更該都會看的懂！！
+
+
+
+
+[Winedt 1.414的破解碼(keygen)在這裡](http://www.cracks4u.com/download/conspy/tno-we14.zip)

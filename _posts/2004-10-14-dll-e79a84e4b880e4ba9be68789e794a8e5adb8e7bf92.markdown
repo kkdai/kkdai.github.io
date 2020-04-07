@@ -1,0 +1,21 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2004-10-14 14:56:04+00:00
+slug: dll-%e7%9a%84%e4%b8%80%e4%ba%9b%e6%87%89%e7%94%a8%e5%ad%b8%e7%bf%92
+title: DLL 的一些應用學習
+wordpress_id: 153
+categories:
+- VC++程式設計
+---
+
+[![MSDN](http://msdn.microsoft.com/library/toolbar/3.0/images/banners/msdn_masthead_ltr.gif)](http://www.microsoft.com/msdn)
+
+利用呼叫DLL的方式來建置程式, 是一個很方便的事情. 但是有許多東西需要注意才對!!
+
+  1. 對於DLL呼叫時, 由於會使用到許多COM本身的共同參數,對於共通參數的使用時, 容易產生無法抓取參數的情形(尤其是 Resource檔內的資料), 可以使用AFX_MANAGE_STATE(AfxGetStaticModuleState()); 在每段程式的前段, 可以讓VC自己產生一個靜態的ModuleSate而不會有抓取不到資源檔的問題.
+  2. 再呼叫DLL裡面的參數也要注意, 若是在所謂的[Synchronization Call ](http://msdn.microsoft.com/library/default.asp?url=/library/en-us/com/htm/asyncall_9g32.asp) 中需要呼叫DLL, 會產生直接跳過, 而無任何動作的情況, [參考PRB: Synch OLE Call Fails in Inter-Process/Thread SendMessage](http://support.microsoft.com/kb/q131056/) 對於這種情況, 解決方式, 可使用自傳訊息的方式來解決.
+
+最近小小心得...

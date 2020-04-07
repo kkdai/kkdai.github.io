@@ -1,0 +1,72 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2006-01-25 15:49:22+00:00
+slug: links-for-2006-01-25
+title: links for 2006-01-25
+wordpress_id: 331
+categories:
+- 每日網摘
+---
+
+
+	
+  * 
+		
+
+[精神奕奕 ? 架設 WordPress 的一些經驗,使用 Windows XP   IIS](http://ying.homedns.org/wp/archives/2005/03/17/22/20/35/)
+
+
+		
+
+講解利用IIS去安裝WordPress的文章~~
+
+
+		
+
+(tags: [WordPress](http://del.icio.us/kkdai/WordPress))
+
+
+	
+
+	
+  * 
+		
+
+[:::zonble’s promptbook ? 怎樣從MovableType轉換到WordPress？:::](http://zonble.twbbs.org/archives/2004_05/495.php)
+
+
+		
+
+參考看看~~ 畢竟現在有需要用到IIS
+
+
+		
+
+(tags: [WordPress](http://del.icio.us/kkdai/WordPress))
+
+
+	
+
+	
+  * 
+		
+
+[憂鬱馬戲團 Blue Circus: 視覺魔術](http://blog.bluecircus.net/archives/006902.html)
+
+
+		
+
+如果你盯著中間的黑色的“+”，運動的點將會變成綠色。如果繼續盯住黑色的“+”過一會兒，所有的粉紅色慢慢全部消失，你將只會看到一個綠色的點在運動。
+
+
+		
+
+(tags: [funny](http://del.icio.us/kkdai/funny))
+
+
+	
+
+

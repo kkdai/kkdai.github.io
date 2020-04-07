@@ -1,0 +1,48 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2007-07-04 20:29:48+00:00
+slug: wordpress-%e5%88%9d%e9%ab%94%e9%a9%97-%e5%bf%ab%e9%80%9f%e5%ae%89%e8%a3%9d%e8%88%87%e4%b8%ad%e6%96%87%e5%8c%96%e6%89%8b%e5%86%8a
+title: WordPress 初體驗–快速安裝與中文化手冊
+wordpress_id: 692
+categories:
+- WordPress學習心得
+---
+
+[![](http://tbn0.google.com/images?q=tbn:p1GuKD01xXXyOM:http://aptgetanarchy.org/files/pictures/wordpress.png)](http://images.google.com.tw/imgres?imgurl=http://aptgetanarchy.org/files/pictures/wordpress.png&imgrefurl=http://blog.matteocorti.ch/%3Fp%3D25&h=500&w=500&sz=30&hl=zh-TW&start=1&sig2=5E7lIhvoqB53btRRMUYDFA&um=1&tbnid=p1GuKD01xXXyOM:&tbnh=130&tbnw=130&ei=3JGLRtidMIHegQOC3KCiCw&prev=/images%3Fq%3Dwordpress%26svnum%3D10%26um%3D1%26complete%3D1%26hl%3Dzh-TW%26sa%3DN)
+
+由於最近忽然不太爽~ MT沒有page view(就是可以一直往上頁去看文章，MT 雖然有一篇篇的移動~ 但是卻不能在同一類~ 或是main page 做page view)MT3 可以，MT4 我現在還在尋找之下~~ 基於WordPress 有很多漂漂亮亮的Themes~ 而且有很多大大也在用WordPress~~ 
+
+<blockquote>偷偷試試看吧~~~   
+           我心裡是這樣想的~~
+> 
+> </blockquote>
+
+後來發現~~ 還真是好安裝~~~轉眼間～　已經裝好了～　並且中文化～　（還沒說～　我換了一個Themes...)～～　以下就簡單的說吧～　　大家看看有多輕鬆～　多快速:
+
+  1. 去這裡下載[最新的WordPress](http://wordpress.org/latest.zip).
+  2. 建立一個資料庫（my SQL)
+  3. 解壓縮檔案
+  4. 把wp-config-sample.php 改成wp-config.php
+  5. 打開wp-config.php
+  6. 寫入MySQL資料庫名稱~使用者名稱與密碼
+  7. 登入 [http://yourdomain/yourpath/wp-admin/install.php](http://yourdomain/yourpath/wp-admin/install.php)
+  8. 依序打入資料
+  9. 安裝完成~~~ (夠快吧~ 我都可以背起來)
+  10. 去這[裡下載中文化檔案](http://rt.openfoundry.org/Foundry/Project/Download/Attachment/57477/40218/zhtw.tgz)
+  11. 在wp-content 目錄下解壓縮
+  12. 再度打開wp-config.php
+  13. 修改define('WPLANG','zh_TW');
+  14. 中文化完成~~~
+  15. [這裡有個不錯的Theme](http://wpthemes.info/downloads/ShadedGrey.zip)
+  16. 解開在wp-content/Themes
+  17. 在外觀那邊點選一下~~
+  18. 連Theme 都換好了~~
+
+沒騙你~ 夠快吧!!
+
+連寫BLOG的我~ 都覺得快的嚇人~~~
+
+不過MT4已經改良很多了~~ 基本上安裝就是學習WordPress 不過~ 講真實的~ MT4 的執行還是走CGI整體速度卻比MT2.661 慢上許多~~ 要好好改善才是~~ (而且沒有中文化~~)

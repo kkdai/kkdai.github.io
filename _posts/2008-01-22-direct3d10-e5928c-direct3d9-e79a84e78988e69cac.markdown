@@ -1,0 +1,630 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2008-01-22 18:00:44+00:00
+slug: direct3d10-%e5%92%8c-direct3d9-%e7%9a%84%e7%89%88%e6%9c%ac
+title: Direct3D10 和 Direct3D9 的版本
+wordpress_id: 804
+categories:
+- VC++程式設計
+---
+
+  
+
+    
+
+      
+
+        
+
+#### Direct3D 10
+
+         
+
+          <table border="0" cellspacing="1" class="style_table" >               <tr >                 
+<td style="text-align:center;" class="style_td" >Version
+</td>                  
+<td style="text-align:center;" class="style_td" >End-User                      
+Redistributable
+</td>                  
+<td style="text-align:center;" class="style_td" >SDK
+</td>                  
+<td style="text-align:center;" class="style_td" >SymbolFiles
+</td>                  
+<td style="text-align:center;" class="style_td" >dxsdkver.h[*1](http://www.nbrains.net/php/pukiwiki/index.php?link%BD%B8%2FDirectX#notefoot_1)
+</td>               </tr>             <tbody >               <tr >                 
+<td class="style_td" >Direct3D 10 (June 2007)
+</td>                  
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=b406cf67-d926-463b-99e8-27199d6626b5&DisplayLang=ja)
+</td>                  
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=371f6ba4-2737-46ab-b275-0dcab31459b5&DisplayLang=en)
+</td>                  
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=c0eb193d-3262-453a-807c-c9f2774d3d27&DisplayLang=en)
+</td>                  
+<td style="text-align:center;" class="style_td" >9.19.1005
+</td>               </tr>                <tr >                 
+<td class="style_td" >Direct3D 10 (April 2007)
+</td>                  
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=d2e2cae1-6aef-4a40-bd00-f0fb2a71e99f&DisplayLang=ja)
+</td>                  
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=86cf7fa2-e953-475c-abde-f016e4f7b61a&DisplayLang=en)
+</td>                  
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/info.aspx?na=22&p=1&SrcDisplayLang=ja&SrcCategoryId=&SrcFamilyId=&u=%2fdownloads%2fdetails.aspx%3fFamilyID%3db30b9fca-00a4-4d00-9517-204d6226554c%26DisplayLang%3den)
+</td>                  
+<td style="text-align:center;" class="style_td" >9.18.944
+</td>               </tr>                <tr >                 
+<td class="style_td" >Direct3D 10 (February 2007)
+</td>                  
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=4b1f5d0c-5e44-4864-93cd-464ef59da050&DisplayLang=en)
+</td>                  
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=09f7578c-24aa-4e0a-bf91-5fec24c8c7bf&DisplayLang=en)
+</td>                  
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=46093a0c-f49d-4cc9-8f50-cfc98d172053&DisplayLang=en)
+</td>                  
+<td style="text-align:center;" class="style_td" >9.17.892
+</td>               </tr>                <tr >                 
+<td class="style_td" >Direct3D 10 (December 2006)
+</td>                  
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=77bc0499-19d0-46b6-a178-033d9e6c626b&DisplayLang=en)
+</td>                  
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=05da7623-f2f9-4f57-91aa-6db27fb8305f&DisplayLang=en)
+</td>                  
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=8aedebb2-7fa6-4f1c-bb3d-be66b61e91e2&DisplayLang=en)
+</td>                  
+<td style="text-align:center;" class="style_td" >0x1002 / 1000
+</td>               </tr>                <tr >                 
+<td class="style_td" >Direct3D 10 (October 2006)
+</td>                  
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=013c0f78-3c9b-44dc-b8be-46783bcac3cb&DisplayLang=en)
+</td>                  
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=d625324c-59b4-4951-849e-640b508dc442&DisplayLang=en)
+</td>                  
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=39814446-3941-4308-baea-fd0cd2ddc403&DisplayLang=en)
+</td>                  
+<td style="text-align:center;" class="style_td" >0x1002 / 1000
+</td>               </tr>                <tr >                 
+<td class="style_td" >Direct3D 10 (August 2006) [*2](http://www.nbrains.net/php/pukiwiki/index.php?link%BD%B8%2FDirectX#notefoot_2)
+</td>                  
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=a1788990-5e11-4ae2-b5e7-cc576822aed4&DisplayLang=ja)
+</td>                  
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=c72d9f1e-53f3-4747-8490-6801d8e8b4ef&DisplayLang=en)
+</td>                  
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=32e34a8c-195c-48e7-81e8-f81aff475984&DisplayLang=en)
+</td>                  
+<td style="text-align:center;" class="style_td" >0x1002 / 1000
+</td>               </tr>                <tr >                 
+<td class="style_td" >Direct3D 10 (June 2006)
+</td>                  
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=1c190175-7b26-4916-8e5f-6f88a5bc09c5&DisplayLang=en)
+</td>                  
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=1fd20df1-dec6-47d0-8bef-10e266dfdab8&DisplayLang=en)
+</td>                  
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=2797ea7a-4a65-4cd2-8a73-18b28b386b48&DisplayLang=en)
+</td>                  
+<td style="text-align:center;" class="style_td" >0x1002 / 1000
+</td>               </tr>                <tr >                 
+<td class="style_td" >Direct3D 10 (April 2006)
+</td>                  
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=fb73d860-5af1-45e5-bac0-9bc7a5254203&DisplayLang=en)
+</td>                  
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=7ab978b5-5f1a-4f6a-88eb-fc646138beca&DisplayLang=en)
+</td>                  
+<td style="text-align:center;" class="style_td" >[O
+](http://www.microsoft.com/downloads/details.aspx?FamilyID=562d72fc-61c8-41a3-8bff-509466f3d6aa&DisplayLang=en)
+</td>                  
+<td style="text-align:center;" class="style_td" >0x1002 / 1000
+</td>               </tr>                <tr >                 
+<td class="style_td" >Direct3D 10 (February 2006)
+</td>                  
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=fff5ed7d-3446-4583-b2c9-8db1bc10b16e&DisplayLang=ja)
+</td>                  
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/info.aspx?na=22&p=1&SrcDisplayLang=ja&SrcCategoryId=&SrcFamilyId=&u=%2fdownloads%2fdetails.aspx%3fFamilyID%3dedb98ffa-a59c-4c23-9b92-ba304f188314%26DisplayLang%3den)
+</td>                  
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=28064886-d35d-4d86-9182-ffe8b58dc775&DisplayLang=en)
+</td>                  
+<td style="text-align:center;" class="style_td" >0x1002 / 1000
+</td>               </tr>                <tr >                 
+<td class="style_td" >Direct3D 10 (December 2005) [*3](http://www.nbrains.net/php/pukiwiki/index.php?link%BD%B8%2FDirectX#notefoot_3) [*4](http://www.nbrains.net/php/pukiwiki/index.php?link%BD%B8%2FDirectX#notefoot_4)
+</td>                  
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=3f2828fa-0e3c-4837-afc0-6c67dcaa54bf&DisplayLang=ja)
+</td>                  
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=7d29004e-7a8d-4f0a-b199-6a740d8f27bb&DisplayLang=en)
+</td>                  
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=91e70943-77dd-4743-9ffd-e5b04b82df39&DisplayLang=en)
+</td>                  
+<td style="text-align:center;" class="style_td" >0x1002 / 1000
+</td>               </tr>             </tbody></table>         
+
+         
+
+            
+
+
+         
+
+[DirectX 9.0c - End-User EULAs](http://www.microsoft.com/downloads/details.aspx?FamilyId=8B5CD64E-B4BE-4135-95F8-ECFCF9182431&displaylang=en)
+
+        
+
+                 
+
+              <table border="0" cellspacing="1" class="style_table" >                   <tr >                     
+<td style="text-align:center;" class="style_td" >Version
+</td>                      
+<td style="text-align:center;" class="style_td" >Release                          
+Notes
+</td>                      
+<td style="text-align:center;" class="style_td" >End-User                          
+Redistributable
+</td>                      
+<td style="text-align:center;" class="style_td" >SDK
+</td>                      
+<td style="text-align:center;" class="style_td" >Symbol                          
+Files
+</td>                      
+<td style="text-align:center;" class="style_td" >Extras
+</td>                      
+<td style="text-align:center;" class="style_td" >d3dx9core.h                          
+[*5](http://www.nbrains.net/php/pukiwiki/index.php?link%BD%B8%2FDirectX#notefoot_5)
+</td>                   </tr>                 <tbody >                   <tr >                     
+<td class="style_td" >Direct3D 10.0 (June 2007)
+</td>                      
+<td style="text-align:center;" class="style_td" >X
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=b406cf67-d926-463b-99e8-27199d6626b5&DisplayLang=ja)
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=371f6ba4-2737-46ab-b275-0dcab31459b5&DisplayLang=en)
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=c0eb193d-3262-453a-807c-c9f2774d3d27&DisplayLang=en)
+</td>                      
+<td style="text-align:center;" class="style_td" >X
+</td>                      
+<td style="text-align:center;" class="style_td" >0x0902 / 34
+</td>                   </tr>                    <tr >                     
+<td class="style_td" >Direct3D 10.0 (April 2007) [*6](http://www.nbrains.net/php/pukiwiki/index.php?link%BD%B8%2FDirectX#notefoot_6)
+</td>                      
+<td style="text-align:center;" class="style_td" >X
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=d2e2cae1-6aef-4a40-bd00-f0fb2a71e99f&DisplayLang=ja)
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=86cf7fa2-e953-475c-abde-f016e4f7b61a&DisplayLang=en)
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/info.aspx?na=22&p=1&SrcDisplayLang=ja&SrcCategoryId=&SrcFamilyId=&u=%2fdownloads%2fdetails.aspx%3fFamilyID%3db30b9fca-00a4-4d00-9517-204d6226554c%26DisplayLang%3den)
+</td>                      
+<td style="text-align:center;" class="style_td" >X
+</td>                      
+<td style="text-align:center;" class="style_td" >0x0902 / 33
+</td>                   </tr>                    <tr >                     
+<td class="style_td" >Direct3D 10 (February 2007)
+</td>                      
+<td style="text-align:center;" class="style_td" >X
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=4b1f5d0c-5e44-4864-93cd-464ef59da050&DisplayLang=en)
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=09f7578c-24aa-4e0a-bf91-5fec24c8c7bf&DisplayLang=en)
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=46093a0c-f49d-4cc9-8f50-cfc98d172053&DisplayLang=en)
+</td>                      
+<td style="text-align:center;" class="style_td" >X
+</td>                      
+<td style="text-align:center;" class="style_td" >0x0902 / 32
+</td>                   </tr>                    <tr >                     
+<td class="style_td" >Direct3D 10 (December 2006)
+</td>                      
+<td style="text-align:center;" class="style_td" >X
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=77bc0499-19d0-46b6-a178-033d9e6c626b&DisplayLang=en)
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=05da7623-f2f9-4f57-91aa-6db27fb8305f&DisplayLang=en)
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=8aedebb2-7fa6-4f1c-bb3d-be66b61e91e2&DisplayLang=en)
+</td>                      
+<td style="text-align:center;" class="style_td" >X
+</td>                      
+<td style="text-align:center;" class="style_td" >0x0902 / 32
+</td>                   </tr>
+              <tr >                     
+<td class="style_td" >Direct3D 10 (October 2006) [*7](http://www.nbrains.net/php/pukiwiki/index.php?link%BD%B8%2FDirectX#notefoot_7)
+</td>                      
+<td style="text-align:center;" class="style_td" >X
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=013c0f78-3c9b-44dc-b8be-46783bcac3cb&DisplayLang=en)
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=d625324c-59b4-4951-849e-640b508dc442&DisplayLang=en)
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=39814446-3941-4308-baea-fd0cd2ddc403&DisplayLang=en)
+</td>                      
+<td style="text-align:center;" class="style_td" >X
+</td>                      
+<td style="text-align:center;" class="style_td" >0x0902 / 31
+</td>                   </tr>                    <tr >                     
+<td class="style_td" >Direct3D 10 (August 2006)
+</td>                      
+<td style="text-align:center;" class="style_td" >X
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=a1788990-5e11-4ae2-b5e7-cc576822aed4&DisplayLang=ja)
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=c72d9f1e-53f3-4747-8490-6801d8e8b4ef&DisplayLang=en)
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=32e34a8c-195c-48e7-81e8-f81aff475984&DisplayLang=en)
+</td>                      
+<td style="text-align:center;" class="style_td" >X
+</td>                      
+<td style="text-align:center;" class="style_td" >0x0902 / 30
+</td>                   </tr>                    <tr >                     
+<td class="style_td" >Direct3D 10 (June 2006)
+</td>                      
+<td style="text-align:center;" class="style_td" >X
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=1c190175-7b26-4916-8e5f-6f88a5bc09c5&DisplayLang=en)
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=1fd20df1-dec6-47d0-8bef-10e266dfdab8&DisplayLang=en)
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=2797ea7a-4a65-4cd2-8a73-18b28b386b48&DisplayLang=en)
+</td>                      
+<td style="text-align:center;" class="style_td" >X
+</td>                      
+<td style="text-align:center;" class="style_td" >0x0902 / 30
+</td>                   </tr>                    <tr >                     
+<td class="style_td" >Direct3D 10 (April 2006)
+</td>                      
+<td style="text-align:center;" class="style_td" >X
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=fb73d860-5af1-45e5-bac0-9bc7a5254203&DisplayLang=en)
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=7ab978b5-5f1a-4f6a-88eb-fc646138beca&DisplayLang=en)
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=562d72fc-61c8-41a3-8bff-509466f3d6aa&DisplayLang=en)
+</td>                      
+<td style="text-align:center;" class="style_td" >X
+</td>                      
+<td style="text-align:center;" class="style_td" >0x0902 / 30
+</td>                   </tr>                    <tr >                     
+<td class="style_td" >Direct3D 10 (February 2006)
+</td>                      
+<td style="text-align:center;" class="style_td" >X
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=fff5ed7d-3446-4583-b2c9-8db1bc10b16e&DisplayLang=ja)
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/info.aspx?na=22&p=1&SrcDisplayLang=ja&SrcCategoryId=&SrcFamilyId=&u=%2fdownloads%2fdetails.aspx%3fFamilyID%3dedb98ffa-a59c-4c23-9b92-ba304f188314%26DisplayLang%3den)
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=28064886-d35d-4d86-9182-ffe8b58dc775&DisplayLang=en)
+</td>                      
+<td style="text-align:center;" class="style_td" >X
+</td>                      
+<td style="text-align:center;" class="style_td" >0x0902 / 29
+</td>                   </tr>                    <tr >                     
+<td class="style_td" >Direct3D 10 (December 2005) [*8](http://www.nbrains.net/php/pukiwiki/index.php?link%BD%B8%2FDirectX#notefoot_8)
+</td>                      
+<td style="text-align:center;" class="style_td" >X
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=3f2828fa-0e3c-4837-afc0-6c67dcaa54bf&DisplayLang=ja)
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=7d29004e-7a8d-4f0a-b199-6a740d8f27bb&DisplayLang=en)
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=91e70943-77dd-4743-9ffd-e5b04b82df39&DisplayLang=en)
+</td>                      
+<td style="text-align:center;" class="style_td" >X
+</td>                      
+<td style="text-align:center;" class="style_td" >0x0902 / 28
+</td>                   </tr>                    <tr >                     
+<td class="style_td" >DirectX 9.0 Update (October 2005)
+</td>                      
+<td style="text-align:center;" class="style_td" >X
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=9930efa6-9f7b-4c8a-aea2-97dd6ab307a2&DisplayLang=ja)
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=1c8dc451-2dbe-4ecc-8c57-c52eea50c20a&DisplayLang=en)
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=0acabd84-74e7-4a8c-8b42-d5a2468126af&DisplayLang=en)
+</td>                      
+<td style="text-align:center;" class="style_td" >X
+</td>                      
+<td style="text-align:center;" class="style_td" >0x0902 / 27
+</td>                   </tr>                    <tr >                     
+<td class="style_td" >DirectX 9.0 Update (August 2005)
+</td>                      
+<td style="text-align:center;" class="style_td" >X
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=136a7b29-aa12-4c3b-aa7d-15cd98a9a59c&DisplayLang=ja)
+</td>                      
+<td style="text-align:c enter;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=3904b19a-02b9-447b-ab58-c12e2456e9ba&DisplayLang=en)
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=e3419600-bba6-472d-a748-6990fbb0e99f&DisplayLang=en)
+</td>                      
+<td style="text-align:center;" class="style_td" >X
+</td>                      
+<td style="text-align:center;" class="style_td" >0x0902 / 27
+</td>                   </tr>                    <tr >                     
+<td class="style_td" >DirectX 9.0 Update (June 2005)
+</td>                      
+<td style="text-align:center;" class="style_td" >X
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=3ad9f0d1-8d81-40c8-9815-924dcd4cd2c5&DisplayLang=en)
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=69bf704d-cd35-40c4-91a5-aa0e27c8f410&DisplayLang=en)
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=eb59dd86-b5cc-4ca9-b5f0-188e4512b503&DisplayLang=en)
+</td>                      
+<td style="text-align:center;" class="style_td" >X
+</td>                      
+<td style="text-align:center;" class="style_td" >0x0902 / 26
+</td>                   </tr>                    <tr >                     
+<td class="style_td" >DirectX 9.0 Update (April 2005)
+</td>                      
+<td style="text-align:center;" class="style_td" >X
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=402111c4-6478-46c1-bbd9-1bf9fcce52f4&DisplayLang=en)
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=afc15f29-d7c9-4cf7-a8d5-8ab81f14ae1b&DisplayLang=en)
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=5a7f6385-df6a-4e8c-9415-463c4863aa02&DisplayLang=en)
+</td>                      
+<td style="text-align:center;" class="style_td" >X
+</td>                      
+<td style="text-align:center;" class="style_td" >0x0902 / 25
+</td>                   </tr>                    <tr >                     
+<td class="style_td" >DirectX 9.0 Update (February 2005)
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=112bcd74-3367-478a-aad1-0a8bc48f3cde&DisplayLang=en)
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=03c30962-4b78-4e59-8c70-32998dceffe5&DisplayLang=en)
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=77960733-06e9-47ba-914a-844575031b81&DisplayLang=en)
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=4224bd4e-74da-4634-ab6a-3b98d89f0382&DisplayLang=en)
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=8af0afa9-1383-44b4-bc8b-7d6315212323&DisplayLang=en)
+</td>                      
+<td style="text-align:center;" class="style_td" >0x0902 / 24
+</td>                   </tr>                    <tr >                     
+<td class="style_td" >DirectX 9.0 Update (December 2004)
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=358cbc1e-f5ab-417d-9f6f-779be38efb69&DisplayLang=en)
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=2c40a7a5-7742-44d2-9f5c-420815448ea4&DisplayLang=en)
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=4e825a37-0c94-4421-9ec8-156e52525d11&DisplayLang=en)
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=09abab79-f272-4b04-8652-ab62ac1d763b&DisplayLang=en)
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=a8667cc6-22ca-4195-a4fa-71dec1f454f9&DisplayLang=en)
+</td>                      
+<td style="text-align:center;" class="style_td" >0x0902 / 23
+</td>                   </tr>                    <tr >                     
+<td class="style_td" >DirectX 9.0 Update (October 2004)
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=97cdcc31-7d0c-4f4f-81b1-16a0a7c29fb9&DisplayLang=en)
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=143ef8c6-cff7-4af0-8209-1cdf49c58bc0&DisplayLang=en)
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=b7bc31fa-2df1-44fd-95a4-c2555446aed4&DisplayLang=en)
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=87336cee-864d-440e-840f-25c53d5deee4&DisplayLang=en)
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=d6f237de-a6ee-4ded-8bb6-139536162eb8&DisplayLang=en)
+</td>                      
+<td style="text-align:center;" class="style_td" >0x0902 / 22
+</td>                   </tr>                    <tr >                     
+<td class="style_td" >DirectX 9.0 Update (Summer 2004)
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=6cdfccd3-6eff-456e-ae90-e424105ab69e&DisplayLang=en)
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=9226a611-62fe-4f61-aba1-914185249413&DisplayLang=en)
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=fd044a42-9912-42a3-9a9e-d857199f888e&DisplayLang=en)
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=e29fc2d5-c20c-444f-a956-ac318c42433c&DisplayLang=en)
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=736585e1-10f0-4e85-b940-828cba9971f1&DisplayLang=en)
+</td>                      
+<td style="text-align:center;" class="style_td" >0x0902 / 22
+</td>                   </tr>                    <tr >                     
+<td class="style_td" >DirectX 9.0 Update (Summer 2003)
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=746ce60b-525a-4014-ad2b-5c24a17fd569&DisplayLang=en)
+</td>                      
+<td style="text-align:center;" class="style_td" >X
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=9216652f-51e0-402e-b7b5-feb68d00f298&DisplayLang=en)
+</td>                      
+<td style="text-align:center;" class="style_td" >X
+</td>                      
+<td style="text-align:center;" class="style_td" >[O](http://www.microsoft.com/downloads/details.aspx?FamilyID=42da4820-7de1-494a-b43d-f930b1649f93&DisplayLang=en)
+</td>                      
+<td style="text-align:center;" class="style_td" >0x0901 / 21
+</td>                   </tr>                 </tbody></table>             
+
+          
+
+         
+       
+
+        
+  * Compilerの対応状況            
+
+            <table border="0" cellspacing="1" class="style_table" >                 <tr >                   
+<td style="text-align:center;" class="style_td" >Compiler
+</td>                    
+<td style="text-align:center;" class="style_td" >対応開始
+</td>                    
+<td style="text-align:center;" class="style_td" >対応終了
+</td>                 </tr>               <tbody >                 <tr >                   
+<td class="style_td" >VisualC++ 6.0
+</td>                    
+<td style="text-align:center;" class="style_td" >-
+</td>                    
+<td class="style_td" >[DirectX 9.0 Update (October 2004)](http://www.microsoft.com/downloads/details.aspx?FamilyID=b7bc31fa-2df1-44fd-95a4-c2555446aed4&DisplayLang=en)
+</td>                 </tr>                  <tr >                   
+<td class="style_td" >VisualC++ .NET 2002
+</td>                    
+<td class="style_td" >[DirectX 9.0 SDK](http://www.microsoft.com/downloads/details.aspx?FamilyID=124552ff-8363-47fd-8f3b-36c226e04c85&DisplayLang=en)
+</td>                    
+<td class="style_td" >[DirectX 9.0 Update (October 2005)](http://www.microsoft.com/downloads/details.aspx?FamilyID=1c8dc451-2dbe-4ecc-8c57-c52eea50c20a&DisplayLang=en)
+</td>                 </tr>                  <tr >                   
+<td class="style_td" >VisualC++ .NET 2003
+</td>                    
+<td class="style_td" >[DirectX 9.0 Update (Summer 2003)](http://www.microsoft.com/downloads/details.aspx?FamilyID=9216652f-51e0-402e-b7b5-feb68d00f298&DisplayLang=en)
+</td>                    
+<td class="style_td" >
+</td>                 </tr>                  <tr >                   
+<td class="style_td" >VisualC++ 2005
+</td>                    
+<td class="style_td" >[DirectX 9.0 Update (June 2005)](http://www.microsoft.com/downloads/details.aspx?FamilyID=69bf704d-cd35-40c4-91a5-aa0e27c8f410&DisplayLang=en)
+</td>                    
+<td class="style_td" >
+</td>                 </tr>               </tbody></table>           
+
+        
+       OSの対応状況         <table border="0" cellspacing="1" class="style_table" >           <tr >             
+<td style="text-align:center;" class="style_td" >OS
+</td>              
+<td style="text-align:center;" class="style_td" >対応開始
+</td>              
+<td style="text-align:center;" class="style_td" >対応終了
+</td>           </tr>         <tbody >           <tr >             
+<td class="style_td" >Windows 2000
+</td>              
+<td class="style_td" >DirectX 7.0 SDK
+</td>              
+<td class="style_td" >[DirectX 9.0 Update (April 2005)](http://www.microsoft.com/downloads/details.aspx?FamilyID=afc15f29-d7c9-4cf7-a8d5-8ab81f14ae1b&DisplayLang=en)
+</td>           </tr>            <tr >             
+<td class="style_td" >Windows XP
+</td>              
+<td class="style_td" >DirectX 8.1b SDK
+</td>              
+<td class="style_td" >
+</td>           </tr>            <tr >             
+<td class="style_td" >Windows Server 2003[*9](http://www.nbrains.net/php/pukiwiki/index.php?link%BD%B8%2FDirectX#notefoot_9)
+</td>              
+<td class="style_td" >[DirectX 9.0b SDK](http://www.microsoft.com/downloads/details.aspx?FamilyID=1d97f320-9dfd-4e7a-b947-3a037ccf84af&DisplayLang=en)
+</td>              
+<td class="style_td" >
+</td>           </tr>            <tr >             
+<td class="style_td" >Windows XP Professional x64 Edition
+</td>              
+<td class="style_td" >[DirectX 9.0 Update (February 2005)](http://www.microsoft.com/downloads/details.aspx?FamilyID=77960733-06e9-47ba-914a-844575031b81&DisplayLang=en)
+</td>              
+<td class="style_td" >
+</td>           </tr>            <tr >             
+<td class="style_td" >Windows Vista
+</td>              
+<td class="style_td" >[Direct3D 10 (December 2006)](http://www.microsoft.com/downloads/details.aspx?FamilyID=05da7623-f2f9-4f57-91aa-6db27fb8305f&DisplayLang=en)
+</td>              
+<td class="style_td" >
+</td>           </tr>         </tbody></table>          
+         
+       <table border="0" cellspacing="1" class="style_table" >           <tr >             
+<td style="text-align:center;" class="style_td" >DirectX SDK Version
+</td>              
+<td style="text-align:center;" class="style_td" >Release Build
+</td>              
+<td style="text-align:center;" class="style_td" >Debug Build [*10](http://www.nbrains.net/php/pukiwiki/index.php?link%BD%B8%2FDirectX#notefoot_10)
+</td>           </tr>         <tbody >           <tr >             
+<td class="style_td" >Direct3D 10 (June 2007)
+</td>              
+<td class="style_td" >d3dx10_34.dll
+</td>              
+<td class="style_td" >d3dx10d_34.dll
+</td>           </tr>            <tr >             
+<td class="style_td" >Direct3D 10 (April 2007)
+</td>              
+<td class="style_td" >d3dx10_33.dll
+</td>              
+<td class="style_td" >d3dx10d_33.dll
+</td>           </tr>            <tr >             
+<td class="style_td" >Direct3D 10 (February 2007)                  
+Direct3D 10 (December 2006)
+</td>              
+<td class="style_td" >StaticLinkLibraryなので外部依存なし
+</td>              
+<td class="style_td" >d3dx10d.dll
+</td>           </tr>         </tbody></table>          
+         
+       <table border="0" cellspacing="1" class="style_table" >           <tr >             
+<td style="text-align:center;" class="style_td" >DirectX SDK Version
+</td>              
+<td style="text-align:center;" class="style_td" >Release Build
+</td>              
+<td style="text-align:center;" class="style_td" >Debug Build [*11](http://www.nbrains.net/php/pukiwiki/index.php?link%BD%B8%2FDirectX#notefoot_11)
+</td>           </tr>         <tbody >           <tr >             
+<td class="style_td" >Direct3D 10 (June 2007)
+</td>              
+<td class="style_td" >d3dx9_34.dll
+</td>              
+<td class="style_td" >d3dx9d_34.dll
+</td>           </tr>            <tr >             
+<td class="style_td" >Direct3D 10 (April 2007)
+</td>              
+<td class="style_td" >d3dx9_33.dll
+</td>              
+<td class="style_td" >d3dx9d_33.dll
+</td>           </tr>            <tr >             
+<td class="style_td" >Direct3D 10 (February 2007)                  
+Direct3D 10 (December 2006)
+</td>              
+<td class="style_td" >d3dx9_32.dll
+</td>              
+<td class="style_td" >d3dx9d_32.dll
+</td>           </tr>            <tr >             
+<td class="style_td" >Direct3D 10 (October 2006)
+</td>              
+<td class="style_td" >d3dx9_31.dll
+</td>              
+<td class="style_td" >d3dx9d_31.dll
+</td>           </tr>            <tr >             
+<td class="style_td" >Direct3D 10 (August 2006)                  
+Direct3D 10 (June 2006)                   
+Direct3D 10 (April 2006)
+</td>              
+<td class="style_td" >d3dx9_30.dll
+</td>              
+<td class="style_td" >d3dx9d_30.dll
+</td>           </tr>            <tr >             
+<td class="style_td" >Direct3D 10 (February 2006)
+</td>              
+<td class="style_td" >d3dx9_29.dll
+</td>              
+<td class="style_td" >d3dx9d_29.dll
+</td>           </tr>            <tr >             
+<td class="style_td" >Direct3D 10 (December 2005)
+</td>              
+<td class="style_td" >d3dx9_28.dll
+</td>              
+<td class="style_td" >d3dx9d_28.dll
+</td>           </tr>            <tr >             
+<td class="style_td" >DirectX 9.0 Update (October 2005)                  
+DirectX 9.0 Update (August 2005)
+</td>              
+<td class="style_td" >d3dx9_27.dll
+</td>              
+<td class="style_td" >d3dx9d_27.dll
+</td>           </tr>            <tr >             
+<td class="style_td" >DirectX 9.0 Update (June 2005)
+</td>              
+<td class="style_td" >d3dx9_26.dll
+</td>              
+<td class="style_td" >d3dx9d_26.dll
+</td>           </tr>            <tr >             
+<td class="style_td" >DirectX 9.0 Update (April 2005)
+</td>              
+<td class="style_td" >d3dx9_25.dll
+</td>              
+<td class="style_td" >d3dx9d_25.dll
+</td>           </tr>            <tr >             
+<td class="style_td" >DirectX 9.0 Update (February 2005)
+</td>              
+<td class="style_td" >d3dx9_24.dll
+</td>              
+<td class="style_td" >d3dx9d_24.dll
+</td>           </tr>            <tr >             
+<td class="style_td" >DirectX 9.0 Update (December 2004)以前
+</td>              
+<td class="style_td" >StaticLinkLibraryなので外部依存なし
+</td>              
+<td class="style_td" >d3dx9d.dll
+</td>           </tr>         </tbody></table>     
+
+  

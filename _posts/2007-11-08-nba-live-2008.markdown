@@ -1,0 +1,93 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2007-11-08 15:49:35+00:00
+slug: '%e5%8b%81%e7%88%86%e7%be%8e%e5%9c%8b%e8%81%b7%e7%b1%83-nba-live-2008-%e6%89%80%e6%9c%89%e5%a5%bd%e7%94%a8%e8%a3%9c%e4%b8%81%e5%9c%a8%e9%80%99%e8%a3%a1'
+title: 勁爆美國職籃-NBA Live 2008 所有好用補丁在這裡
+wordpress_id: 772
+categories:
+- 遊戲天國
+---
+
+![](http://www.ea.com.tw/images/store/easports/15349_th.jpg)  
+
+EA Sport, It is XXX GAME!!  
+
+話說~ 我的[NBA Live 2008](http://www.evanlin.com/blog/archives/000883.html)總算到手了，加上最近專案忙碌~ 這兩天總算GM之後可以好好的玩玩。 但是一玩起來，缺點也是不少，我把它列在下面:  
+
+  1. 08的畫質真的比起07遜色不少，但是整體執行速度快很多~ 舊電腦也不用升級(話說~ 我還是用P4主機板)  
+  2. 王朝模式的薪水不見了!!!!  
+
+[](http://www.flickr.com/photos/27643002@N00/1915061162/)
+
+[](http://www.flickr.com/photos/27643002@N00/1914228981/)
+
+  3. 不能夠交換隊伍的換人順序~~~ (最佳第六人)的順序~~~  
+  4. 光線不漂亮  
+  5. 竟然有沒有臉的球員????!!!
+
+**買NBA Live PC系列~~ 最大的好處是~~~~ 有補丁(Patch)會出來~~~**
+
+**而且~ 越不是官方出的~~ 越好~~~~**
+
+**NLSC的讓你到薪資情況的patch：**
+
+下載後解壓縮以後放在sgsm目錄下，(可能是C:Program FilesEA SPORTSNBA LIVE 08sgsm)，你的遊戲畫面就會出現以下的資訊。
+
+真是太神奇了~~~ 我根本懷疑是官方的RD 釋出的~~~
+
+[![JAZZ_SALARY.JPG](http://farm3.static.flickr.com/2234/1915061162_fbdce1ba5b.jpg)](http://www.flickr.com/photos/27643002@N00/1915061162/)
+
+**NLSC的讓你排列球員上場表的patch：**
+
+下載後解壓縮以後放在sgsm目錄下，(可能是C:Program FilesEA SPORTSNBA LIVE 08sgsm)，你的遊戲畫面就會出現以下的資訊。
+
+[![JAZZ_Trans.JPG](http://farm3.static.flickr.com/2040/1914228981_9b0306bbb9.jpg)](http://www.flickr.com/photos/27643002@N00/1914228981/)
+
+ 
+
+其他的補丁如下: (感謝網友ptt: Kreen)  
+
+****
+
+**一般和電腦、朋友對打模式：  
+**連結我都學網分流了，什麼時候會砍掉不一定，要下就快吧！
+
+安裝方式解壓縮後的名叫 Read me的文字檔內都會有！  
+燈光的是直接丟到SGSM裡面去。  
+
+球員名單：  
+
+**Jimmy's IRPT roster V1.21 Released  
+**[http://0rz.tw/3d3gY](http://0rz.tw/3d3gY)  
+
+燈光（兩個選一個自己喜歡的）：  
+
+**Jimmy's XBOX360 lighting v1 （我喜歡這個）  
+**[http://0rz.tw/bd3gK](http://0rz.tw/bd3gK)  
+
+**NLSC light**  
+[http://0rz.tw/fb3i0](http://0rz.tw/fb3i0)  
+
+ 
+
+**球：**  
+
+**Looser's 08 misc patches  
+**[http://0rz.tw/653h8](http://0rz.tw/653h8)  
+
+European Live Jerseys 球衣：  
+
+**Looser's 08 misc patches 1X**  
+[http://0rz.tw/f13g1](http://0rz.tw/f13g1)  
+
+**Looser's 08 misc patches 2X**  
+[http://0rz.tw/d33iT](http://0rz.tw/d33iT)  
+
+ 
+
+ 
+
+之後如果有更多的patch(補丁)~~ 我患在補上來~~~~

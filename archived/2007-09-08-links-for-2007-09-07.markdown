@@ -1,0 +1,121 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2007-09-08 00:20:02+00:00
+slug: links-for-2007-09-07
+title: links for 2007-09-07
+wordpress_id: 760
+categories:
+- 未分類
+---
+
+
+	
+  * 
+		
+
+[[小王分享]用Excel抓取網路資料教學文--以股市投資績效表為例 永不老論壇 投資理財與休閒論壇 - powered by phpwind.net](http://www.yongbulao.com/read.php?tid=13334)
+
+
+		
+
+很好的教學文~~~ 可以很快的學習如何用EXCE:L來抓取需要的資訊
+
+
+		
+
+(tags: [StOCK](http://del.icio.us/kkdai/StOCK) [WEB](http://del.icio.us/kkdai/WEB) [EXCEL](http://del.icio.us/kkdai/EXCEL))
+
+
+	
+
+	
+  * 
+		
+
+[[小王分享]用Excel管理你的基金 永不老論壇 投資理財與休閒論壇 - powered by phpwind.net](http://www.yongbulao.com/read.php?tid=13337)
+
+
+		
+
+一個基金的EXCEL 可以快速的由網路抓取現在的價值來看到你的報酬率為何~~~~ 對於有多個基金的人最適合了~~~
+
+
+		
+
+(tags: [stock](http://del.icio.us/kkdai/stock) [found](http://del.icio.us/kkdai/found) [excel](http://del.icio.us/kkdai/excel))
+
+
+	
+
+	
+  * 
+		
+
+[yam天空-新聞-元智凱歌攜手 打造數位家庭服務](http://news.yam.com/udn/computer/200709/20070903693861.html)
+
+
+		
+
+想不到學弟妹有做類似的東西??
+
+
+	
+
+	
+  * 
+		
+
+[rootkit 自我檢查法](http://linux.tnc.edu.tw/techdoc/check-rootkit-by-u-self.htm)
+
+
+		
+
+告訴你什麼是Rootkit
+
+
+		
+
+(tags: [rookit](http://del.icio.us/kkdai/rookit) [anti-virus](http://del.icio.us/kkdai/anti-virus))
+
+
+	
+
+	
+  * 
+		
+
+[Rootkit - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Rootkit)
+
+
+		
+
+Rootkit 的WIKI 說明
+
+
+		
+
+(tags: [english](http://del.icio.us/kkdai/english) [Linux](http://del.icio.us/kkdai/Linux) [WIKI](http://del.icio.us/kkdai/WIKI) [SONY](http://del.icio.us/kkdai/SONY) [reference](http://del.icio.us/kkdai/reference))
+
+
+	
+
+	
+  * 
+		
+
+[Mark's Blog : Sony, Rootkits and Digital Rights Management Gone Too Far](http://blogs.technet.com/markrussinovich/archive/2005/10/31/sony-rootkits-and-digital-rights-management-gone-too-far.aspx)
+
+
+		
+
+與SONY 有關的Rookit 資料
+
+
+
+	
+
+
+

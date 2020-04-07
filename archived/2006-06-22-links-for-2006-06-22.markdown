@@ -1,0 +1,129 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2006-06-22 15:42:11+00:00
+slug: links-for-2006-06-22
+title: links for 2006-06-22
+wordpress_id: 421
+categories:
+- 每日網摘
+---
+
+
+	
+  * 
+		
+
+[Keith's Blog  原來洪志鵬是跳槽到微軟了... ~~](http://www.keith503.com/blog/blog.php?job=art&articleid=a_20060610_232558)
+
+
+		
+
+前ＳＵＮ的重要幹部，洪志鵬 經過短暫的作家時光之後~ 原來是到競爭對手MS去了~~  世事變遷真大~~
+
+
+		
+
+(tags: [SUN](http://del.icio.us/kkdai/SUN) [Microsoft](http://del.icio.us/kkdai/Microsoft))
+
+
+	
+
+	
+  * 
+		
+
+[Xbox-Scene News: Fully Internal Watercooled Xbox 360 by Dano2k0](http://www.xbox-scene.com/xbox1data/sep/EEVpZZAklllHlcrxQY.php)
+
+
+		
+
+關於ＸＢＯＸ３６０過熱的問題～　如果你有錢、有技術～～可以試試看水冷式的XBOX360
+
+
+		
+
+(tags: [XBOX360](http://del.icio.us/kkdai/XBOX360))
+
+
+	
+
+	
+  * 
+		
+
+[Mobile01-窮人的XBOX360風扇](http://www.mobile01.com/topicdetail.php?f=179&t=175727&last=1345329)
+
+
+		
+
+如果沒有錢的玩家~~~ 可以試試看窮人牌風扇~~~~ 不過M$的東西怎麼會這麼多問題???
+
+
+		
+
+(tags: [XBOX360](http://del.icio.us/kkdai/XBOX360))
+
+
+	
+
+	
+  * 
+		
+
+[Touch-DS.jp - Media Gallery](http://touch-ds.jp/mediagallery/index.html)
+
+
+		
+
+許多NDS 遊戲的電視廣告~~ 可以讓你事先感受一下NDS 動人的魅力~~~
+
+
+		
+
+(tags: [NDSL](http://del.icio.us/kkdai/NDSL))
+
+
+	
+
+	
+  * 
+		
+
+[Microsoft Robotics Studio](http://msdn.microsoft.com/robotics/)
+
+
+		
+
+微軟這個軟體王者也可以鑽研機器人的開發市場，並且也研發出可以使用的機器人專用的開發軟體~~ 可以來這裡下載BETA
+
+
+		
+
+(tags: [microsoft](http://del.icio.us/kkdai/microsoft) [Robot](http://del.icio.us/kkdai/Robot))
+
+
+	
+
+	
+  * 
+		
+
+[Microsoft Robotics Studio](http://channel9.msdn.com/ShowPost.aspx?PostID=206574)
+
+
+		
+
+微軟機器人團隊的影片介紹~~ 也介紹了他們的開發懷境
+
+
+		
+
+(tags: [Microsoft](http://del.icio.us/kkdai/Microsoft) [Robot](http://del.icio.us/kkdai/Robot))
+
+
+	
+
+

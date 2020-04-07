@@ -1,0 +1,26 @@
+---
+layout: page
+title: 標籤
+header: Posts By Tags
+group: navigation
+---
+
+{% assign tags_list = site.tags %}
+  {% for tag in tags_list %}
+    <div id="{{ tag[0] | replace:' ','-' }}-ref">
+    <h3> {{ tag[0] | capitalize }} </h3>
+    <ul>
+      {% assign pages_list = tag[1] %}
+      {% for node in pages_list %}
+        {% if node.title != null %}
+          {% if group == null or group == node.group %}
+            <li><a href="{{ site.BASE_PATH }}{{node.url}}">{{node.title}}</a> <span class="text-muted">- {{ node.date | date: "%B %d, %Y" }}</span></li>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </ul>
+    {% assign pages_list = nil %}
+    {% endfor %}
+{% assign tags_list = nil %}
+
+<div class="clearfix"></div>

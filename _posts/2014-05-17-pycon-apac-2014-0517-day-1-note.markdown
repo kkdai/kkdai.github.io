@@ -1,0 +1,1121 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2014-05-17 07:56:22+00:00
+slug: pycon-apac-2014-0517-day-1-note
+title: "[研討會心得][PyCon APAC 2014] 05/17 Day 1 note"
+wordpress_id: 1397
+categories:
+- Django
+- Python
+- 研討會心得
+tags: []
+---
+
+
+Python-powered Analysts @WesMackinn
+
+
+  * Author for “Python for Data Analysis”
+  * Python’s role in 2014 for analysis
+  * BI
+    * Query 
+    * Report ordinary
+    * Alert when trend change
+  * ETL (Extract Transform Load)
+    * moving data between storage format
+    * Normalization
+
+
+
+
+
+  * How did we get here?
+
+
+  * 
+
+
+    * Good develop tool —  iPython
+
+
+    * Learning resource:
+
+
+    * 
+
+
+      * [nbviewer.ipython.org](http://nbviewer.ipython.org/)
+
+
+      * 
+
+
+        * **static html share space**
+
+
+
+
+
+
+
+
+    * The libraries packaging tech become more maturing.
+
+
+
+
+
+  * Why did [pandas ](http://pandas.pydata.org/)succeed?
+
+
+  * 
+
+
+    * tasteful and consistent solutions
+
+
+    * passionate user base
+
+
+    * An API optimized for 
+
+
+    * 
+
+
+      * terminal-freindliness
+
+
+      * composability 
+
+
+
+
+
+
+
+
+  *  Tools before Data Analysis
+
+
+  * 
+
+
+    * Cython
+
+
+    * NumPy
+
+
+    * matplotlib
+
+
+    * ipython
+
+
+
+
+
+  * **Python might not best language for Data Analysis, but everyone can using python to discussion.**
+
+
+  * Scikit-learn [http://scikit-learn.org/stable/](http://scikit-learn.org/stable/)
+
+
+  * 
+
+
+    * Machine learning in python.
+
+
+
+
+
+  * [Pandas](http://pandas.pydata.org/): The good and bad
+
+
+  * 
+
+
+    * Ecosystem compatibility
+
+
+    * Design for broad appeal
+
+
+    * The big data problem.
+
+
+
+
+
+  * Big Data Trend
+
+
+  * 
+
+
+    * Python/R/**Julia **growing 
+
+
+    * JVM-base big data ecosystem
+
+
+    * Concurrent / multicore programming challenges
+
+
+
+
+
+  * Staying competitive
+
+
+  * 
+
+
+    * “Enterprise money” is still stay in JVM-Ecpsystem
+
+
+
+
+
+  * A bit about DataPad [http://www.datapad.io/](http://www.datapad.io/)
+
+
+  * 
+
+
+    * Exploratory analytics and report-building environment
+
+
+    * Powerful analysis tool
+
+
+    * No coding
+
+
+    * Collaboration and sharing tools for teams
+
+
+    * 
+
+
+
+
+  * Note - FAQ:
+
+
+  * 
+
+
+    * What DB is DataPad.io
+
+
+    * 
+
+
+      * DB is propitiatory 
+
+
+
+
+
+
+
+
+
+
+* * *
+
+d3 with Python
+
+
+
+
+[https://pyconapac2014.hackpad.com/Real-time-visualization-with-Python-and-d3.js-73-LGLyhjzr5qY](https://pyconapac2014.hackpad.com/Real-time-visualization-with-Python-and-d3.js-73-LGLyhjzr5qY)
+
+
+
+
+ 
+
+
+
+
+* * *
+
+Python to LiveScript
+
+
+
+
+
+
+
+A speech for how to jump LiveScript to Python
+
+
+
+
+
+
+
+
+
+  * LiveScript
+
+
+  * 
+
+
+    * Concise Syntax
+
+
+    * say bye to bad parts of javascript
+
+
+    * many improvement for OOP
+
+
+    * many features of FP
+
+
+
+
+
+  * Language Change:
+
+
+  * 
+
+
+    * JS+Ruby = CoffeeScript
+
+
+    * CoffeeScrip
+
+
+
+
+
+  * Some note:
+
+
+  * 
+
+
+    * $ is “this”
+
+
+    * Bond range for indent
+
+
+    *  string until space  =>    abc = “abc"
+
+
+    * comment
+
+
+
+
+
+  * Check how to use module (or check API)
+
+
+  * 
+
+
+    * Python
+
+
+    * 
+
+
+      * dir(path)
+
+
+
+
+
+    * LiveScript
+
+
+    * 
+
+
+      * Object.keys path
+
+
+
+
+
+
+
+
+  * Object access
+
+
+  * 
+
+
+    * Python [0]
+
+
+    * LS: .0 
+
+
+
+
+
+
+
+* * *
+
+LiveMedia and ffmpeg
+
+
+
+
+[https://pyconapac2014.hackpad.com/VapourSynth-comes-does-it-indicate-that-AviSynth-will-shutdown-29-Dr34xdWrkzz](https://pyconapac2014.hackpad.com/VapourSynth-comes-does-it-indicate-that-AviSynth-will-shutdown-29-Dr34xdWrkzz)
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+  * AviSynth [avisynth.nl/](http://avisynth.nl/)
+
+
+  * Pros
+
+
+  * 
+
+
+    * to be intergrated or glued easily
+
+
+    * easy to construct procedural filtering
+
+
+
+
+
+  * Cons
+
+
+  * 
+
+
+    * too hard to understand by non-programmer
+
+
+    * occupy memory like a monster
+
+
+    * specific script language
+
+
+
+
+
+  * VapourSynth [http://www.vapoursynth.com/doc/index.html](http://www.vapoursynth.com/doc/index.html)
+
+
+  * Pros (better than AviSynth)
+
+
+  * 
+
+
+    * Frame level multithreading
+
+
+    * Generalized colorspaces
+
+
+    * Per frame blabla…
+
+
+
+
+
+  * Resource:
+
+
+  * 
+
+
+    * AviSynth official wiki: [http://avisynth.nl/](http://avisynth.nl/)
+
+
+    * VapourSynth official site: [http://www.vapoursynth.com/](http://www.vapoursynth.com/)
+
+
+    * FFMS2 project: [https://code.google.com/p/ffmpegsource/](https://code.google.com/p/ffmpegsource/)
+
+
+
+
+
+
+
+
+
+
+* * *
+
+Docker shipping Python project by Docker
+
+
+
+
+
+
+
+
+
+
+
+
+  * different between VM container
+
+
+  * 
+
+
+    * VM need run OS
+
+
+    * container is architect under VM/OS
+
+
+
+
+
+  * Simple  flask app
+
+
+  * 
+
+
+    * it is simple python web page package
+
+
+
+
+
+  * Just install related component in docker image and build it up 
+
+
+  * Docker CI
+
+
+  * 
+
+
+    * [https://github.com/drone/drone](https://github.com/drone/drone)
+
+
+
+
+
+  * Docker configuration tool
+
+
+  * 
+
+
+    * [https://github.com/coreos/etcd](https://github.com/coreos/etcd)
+
+
+
+
+
+  * TBC?
+
+
+  * 
+
+
+    * [https://flynn.io/](https://flynn.io/)
+
+
+
+
+
+
+
+* * *
+
+Python and Science [http://fperez.org/](http://fperez.org/)
+
+
+
+
+
+
+
+
+
+
+
+
+  * The ideal and reality of science
+
+
+  * 
+
+
+    * Using code to validate 
+
+
+    * More cited in CV
+
+
+
+
+
+  * Open Source Software in this context
+
+
+  * 
+
+
+    * Open, collaborative by definition
+
+
+    * Response
+
+
+
+
+
+  * **The second best program language in the world**
+
+
+  * 
+
+
+    * **Maybe it is not the best solution but everyone can use it to communicate.**
+
+
+
+
+
+  * **SciPy, NumPy are tool for scientist **
+
+
+  * Python for scientists
+
+
+  * 
+
+
+    * separation of concerns
+
+
+    * huge collaborate
+
+
+
+
+
+  * Software-carpentry.org [http://software-carpentry.org/](http://software-carpentry.org/)
+
+
+  * Data Science in Python CS 109 in harvad 
+
+
+  * iPython
+
+
+  * 
+
+
+    * Has graphic UI
+
+
+    * kernel can parse any content (HTML/PDF)
+
+
+    * **Can join Julia code and Python code.**
+
+
+    * Deep language integration
+
+
+    * iPython can integrate in http part as a listener to hook web site to run python code and return result instantly.
+
+
+    * One line code to get integrate UI for python result.
+
+
+    * Can establish blog system
+
+
+
+
+
+  * iPython on OSS
+
+
+  * 
+
+
+    * Enthoughy
+
+
+    * Wakari.io
+
+
+    * MSFT VS2013 has iPython integrated
+
+
+    * StarCluster
+
+
+    * IBM Watson (machine learning)
+
+
+    * Authorea
+
+
+    * Plotly (iPython with d3)
+
+
+    * NBDiff.org [http://nbdiff.org/](http://nbdiff.org/)
+
+
+    * Google Research and iPython experiment
+
+
+    * 
+
+
+      * Collaborator Notebook (like [http://nbviewer.ipython.org/](http://nbviewer.ipython.org/) collaborate version)
+
+
+
+
+
+
+
+
+
+
+* * *
+
+小海嚴選
+
+
+
+
+
+
+
+
+
+
+
+
+  * 為何想做小海嚴選
+
+
+  * 
+
+
+    * 個人興趣
+
+
+    * 工作需求（老婆是經紀人)
+
+
+
+
+
+  * FB “Like” is hard to collect and summarized (only in activity log)
+
+
+  * 資訊爆炸的年代 （策展時代)
+
+
+  * 
+
+
+    * 資訊爆炸有人要你過濾資訊
+
+
+
+
+
+  * FQL
+
+
+  * 
+
+
+    * **select object_id from like where user_id is “me”**
+
+
+
+
+
+  * How to development
+
+
+  * 
+
+
+    * Using iPad for prototyping 
+
+
+    * 
+
+
+      * **Prompt**
+
+
+
+
+
+    * Django framework
+
+
+    * 
+
+
+      * 會員系統  pip install django-userena
+
+
+      * API djangorestframework
+
+
+      * django-oauth2-provider
+
+
+
+
+
+
+
+
+  * **動態縮圖**
+
+
+  * 
+
+
+    * **thumbor + CDN**
+
+
+
+
+
+  * 免費營運
+
+
+  * 
+
+
+    * 0元營運～
+
+
+    * Heroku dyno 1
+
+
+
+
+
+  * API 應用
+
+
+  * **Hubot plugin [https://hubot.github.com/](https://hubot.github.com/)**
+
+
+
+
+* * *
+
+Python in VIM
+
+
+
+
+
+
+
+
+
+  * Python interface to VIM
+
+
+  * 
+
+
+    * :help python
+
+
+    * :python :py   REPL python
+
+
+    * :pydo return str(sum(map(int, line.split())))
+
+
+    * 
+
+
+      * 累加每一行
+
+
+      * line 是每一行的代表
+
+
+
+
+
+    * :pyf :pyfile
+
+
+    * 
+
+
+      * run current python code with python.
+
+
+
+
+
+
+
+
+  * vim module
+
+
+  * 
+
+
+    * :py import vim
+
+
+    * 
+
+
+      * import vim as module using for
+
+
+
+
+
+    * vim windows
+
+
+    * vim.tabpages
+
+
+    * vim.current
+
+
+    * 
+
+
+      * vim.current
+
+
+
+
+
+    * vim buffer
+
+
+    * vim.command(str)
+
+
+    * 
+
+
+      * using vim to operate this file or other file
+
+
+
+
+
+    * vim.eval
+
+
+    * 
+
+
+      * the same with python.eval
+
+
+
+
+
+    * vim.vars
+
+
+    * Windows Object
+
+
+
+
+
+  * example - Conque
+
+
+  * 
+
+
+    * [https://code.google.com/p/conque/](https://code.google.com/p/conque/)
+
+
+    * Tool for vim, it could separate windows or get into IRC.
+
+
+
+
+
+  * example - python-mode
+
+
+  * 
+
+
+    * It could run python directly (lead key+R) lead key is assign by self
+
+
+    * file syntax check
+
+
+
+
+
+
+
+* * *
+
+OpenStack 簡介
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  * What is OpenStack
+
+
+  * 
+
+
+    * OpenStack build your own cloud
+
+
+    * Restful api
+
+
+
+
+
+  * Trystack
+
+
+  * 
+
+
+    * http://trystack.org/
+
+
+    * Need FB account
+
+
+
+
+
+  * devStack
+
+
+  * Component
+
+
+  * 
+
+
+    * keystone - auth and service catalog 
+
+
+    * nova - VM
+
+
+    * glance - image service
+
+
+    * cinder - block storage service
+
+
+    * swift - object storage service
+
+
+    * neutron -  network
+
+
+
+
+
+  * Project
+
+
+  * 
+
+
+    * trove - database as service
+
+
+    * sahar - provision a Hadoop cluster on top of OpenStack
+
+
+    * taskflow - look like sql transaction
+
+
+    * oslo messaging -
+
+
+
+
+
+  * Component communication
+
+
+  * 
+
+
+    * REST api
+
+
+    * AMQP
+
+
+
+
+
+

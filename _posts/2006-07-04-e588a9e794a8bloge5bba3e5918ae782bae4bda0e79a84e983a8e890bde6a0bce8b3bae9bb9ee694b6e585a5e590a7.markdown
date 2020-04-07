@@ -1,0 +1,22 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2006-07-04 15:07:07+00:00
+slug: '%e5%88%a9%e7%94%a8blog%e5%bb%a3%e5%91%8a%e7%82%ba%e4%bd%a0%e7%9a%84%e9%83%a8%e8%90%bd%e6%a0%bc%e8%b3%ba%e9%bb%9e%e6%94%b6%e5%85%a5%e5%90%a7'
+title: 利用BLOG廣告為你的部落格賺點收入吧
+wordpress_id: 431
+categories:
+- 網路上好玩的事情
+---
+
+[![](https://www.google.com/adsense/images/google_sm.gif)](https://www.google.com/adsense/home)
+
+暨[Google](http://google.com)推出了[Google AdSense](https://www.google.com/adsense) 的服務之後。功能倒是越來越多了~~ 而且現在也推廣安裝安裝Picasa與Firefox的話就有一美元的收入喔~~大家可以去試試看。
+
+而台灣的廠商也推出了一個類似的活動，~~ 各位可以在我的左下角看到那個廠商的廣告
+
+[![](http://www.bloggerads.net/images/blog2.gif)](http://ad1.bloggerads.net/1755639781.4vsCEEuG/20060704000015/20060320000001/click.aspx)
+
+大家也可以進去點點看~~ 雖然只是個新的創意~ 但是這倒也是國內的新創舉~~ 你說是吧?

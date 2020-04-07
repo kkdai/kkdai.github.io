@@ -1,0 +1,26 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2007-02-13 05:50:20+00:00
+slug: '%e5%8f%88%e6%84%9b%e5%8f%88%e6%81%a8%e7%9a%84google-adsense'
+title: 又愛又恨的Google Adsense
+wordpress_id: 597
+categories:
+- 關於Gmail
+---
+
+[![](https://www.google.com/adsense/images/google_sm.gif)](https://www.google.com/adsense/home)
+
+隨著~~Google廣告的擺設~~~ 我似乎~~離一百美元大關越來越近了~ (大概在八個月 @__@")
+
+近鄉情怯的我~~ 又發現有許多大大的的文章顯示出~~Google 大爺似乎由於廣告顯示的方式與點擊的頻率去停用並且沒收你的利潤~
+
+這邊是幾個大大的文章
+
+  * [一切GOOGLE AD，如夢幻泡影 ](http://swalk.blogspot.com/2007/01/google-ad.html)
+  * [[Unexpected] 自古紅顏多薄命](http://sdkfz251.blogspot.com/2007/02/unexpected.html)
+  * [GoogleAdSense懶人包更新](http://chinabookie.blogspot.com/2007/02/googleadsense.html)
+
+我看~~ [我也快得Google Ad 恐懼症](http://www.javaworld.com.tw/roller/page/ingramchen?entry=2007_1_15_FearAdsense)~

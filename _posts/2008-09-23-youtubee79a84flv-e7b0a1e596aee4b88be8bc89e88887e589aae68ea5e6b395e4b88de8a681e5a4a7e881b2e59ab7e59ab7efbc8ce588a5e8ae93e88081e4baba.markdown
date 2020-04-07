@@ -1,0 +1,93 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2008-09-23 14:50:29+00:00
+slug: youtube%e7%9a%84flv-%e7%b0%a1%e5%96%ae%e4%b8%8b%e8%bc%89%e8%88%87%e5%89%aa%e6%8e%a5%e6%b3%95%e4%b8%8d%e8%a6%81%e5%a4%a7%e8%81%b2%e5%9a%b7%e5%9a%b7%ef%bc%8c%e5%88%a5%e8%ae%93%e8%80%81%e4%ba%ba
+title: Youtube的FLV 簡單下載與剪接法(不要大聲嚷嚷，別讓老人家知道！)
+wordpress_id: 957
+categories:
+- 網路上好玩的事情
+---
+
+[![](http://www.evanlin.com/wp/wp-content/uploads/2008/09/videoefa0e0de9ceb.jpg)](http://www.youtube.com/watch?v=S3HHV438puU)
+
+ 
+
+不知道為什麼，最近"不要大聲嚷嚷，別讓老人家知道！"這句台詞一直在我腦海裡面跑來跑去。腦袋裡面也一直在撥放這個片段。 但是跟其他人講這句話的時候，好像很難得到共鳴，於是很想把這段影片找出來。
+
+ 
+
+<blockquote>  
+> 
+> 其實這是家有囍事92 版本的一個橋段，裡面講到的是由於周星馳的頭撞到了～好像又發瘋了。 而當天剛好是家裡老人家的大壽之日，裡頭演周星馳哥哥的黃百鳴把周星馳抬上去一邊告訴旁邊的毛舜筠不要驚動老人家。 但是少根筋的毛舜筠就大喊"不要大聲嚷嚷，別讓老人家知道！" "不要大聲嚷嚷，別讓老人家知道！"~~~~
+> 
+> </blockquote>
+
+ 
+
+我很想找這段影片~~~~但是呢~~~ 我怎麼找~~~
+
+ 
+
+於是~~~ 我先去Youtube 裡面找了。家有囍事(發現找不太到全部的影片) 於是~~~我用了家有囍事英文片（all's well end's well) 就找到了
+
+ 
+
+ 
+
+[![](http://www.evanlin.com/wp/wp-content/uploads/2008/09/videoecd65bb90bf5.jpg)](http://www.youtube.com/watch?v=u_cVKlmPjFM)
+
+   
+(家有囍事92 第九段~~ 有點長)  
+
+ 
+
+其實後來發現網路上有全部的電影~ 果然是星爺威力無法檔。 
+
+ 
+
+那要怎麼下載呢????
+
+ 
+
+ 
+
+<blockquote>  
+> 
+> [http://keepvid.com/](http://keepvid.com/) 下載YOUTUBE 影片網站
+> 
+>    
+> 
+> 可以提供下載~ 並且可以下載高畫質的AVI版本
+> 
+> </blockquote>
+
+ 
+
+選取高畫質的AVI版本下載。
+
+ 
+
+然後~~~ 去安裝Total Video converter 3.11
+
+ 
+
+<blockquote>  
+> 
+> Total Video converter可說是一款功能強大、全方位的影音播放以及轉檔的軟體。不但可以讓我們開啟數種不同的影音檔案外，還可以轉換成數種不同的影音檔案。        
+       
+它可以開啟數十種不同的影音檔案，並且將之轉換成於行動裝置（例如：行動電話、PSP、PDA、iPod）專屬的檔案，例如mp4, 3gp, xvid, divx mpeg4 avi, amr audio。         
+       
+它對於RMVB或是RM影音，擁有著及高的效率以及整合性，讓我們可以利用Total Video Converter轉換成其他類型的影片檔或是聲音。其至是將不同類型的影檔案，轉換成標準的DVD、SVCD或是VCD，讓我們的影片可以
+> 
+>    
+> 
+> 軟體王介紹: [http://www.softking.com.tw/soft/clickcount.asp?fid3=23570](http://www.softking.com.tw/soft/clickcount.asp?fid3=23570)
+> 
+> </blockquote>
+
+ 
+
+你可以自行設定你要轉換檔案的時間，就可以把你想要的檔案內容擷取出來啦!!!! 而且用試用版的功能就可以了。

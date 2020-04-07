@@ -1,0 +1,26 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2006-03-10 20:06:19+00:00
+slug: '%e5%93%aa%e8%a3%a1%e6%89%bemt-list'
+title: 哪裡找MT-LIST??
+wordpress_id: 353
+categories:
+- 關於MT的學習心得
+---
+
+[![20060310.JPG](http://www.evanlin.com/blog/archives/20060310/20060310-thumb.JPG)](http://www.evanlin.com/blog/archives/20060310/20060310.JPG)
+
+在公司的時候一直很羨慕能夠像[博客堂](http://blog.joycode.com/)一樣，能夠做出一個中心的聯播網站。利用這樣的系統來做出一些人的部落格聯播系統。
+
+雖然公司裡面的人似乎都認為部落格只是個收集資料的地方，但是我卻是很重視自己的部落格，希望透過有效的資料整理習慣與撰寫文章的鍛鍊來讓自己更容易利用文字來表達自己想解釋的以及想說的道理。或許~~ 這是一種部落格族的心聲吧     (感嘆~~)
+
+話說回來吧~~ 那要怎麼去弄出這樣的系統呢??[Yuren的部落格](http://wshlab2.ee.kuas.edu.tw/personal/yurenju/archives/2004_08.php)裡面有講解了很清楚的方式MT的plugin (RSS Feed與MT-List)來完成這樣的聯播系統~~~~甚至可以利用這兩個plugin 來完成"[最近正在閱讀的書籍(WAIR)](http://cerqueira.org/software/wair.html)"。但是~~問題來了~~ 我竟然找不到去哪裡下載 mt-list????  找了半天~~[Yuren的部落格](http://wshlab2.ee.kuas.edu.tw/personal/yurenju/archives/2004_08.php)似乎說在[Jedi](http://jedi.org/blog/)大大幫人家整理的中文化MT裡面有。找了半天~~有mtrssfeed.pl 卻沒有mt-list ？？
+
+想努力的沼MT的plugin，卻也只能到[萬惡的SixPart的網站去看到空蕩蕩的plugin](http://www.sixapart.com/pronet/plugins/)。
+
+雖然後來透過[憂鬱馬戲團 Blue Circus: 你也可以有「新聞聯播」](http://blog.bluecircus.net/archives/003187.html)也利用了[Newsgator](http://www.newsgator.com/)來完成[RssTesting](http://www.evanlin.com/blogtest/)的測試網站～～但是少一個mt-list的功能還真是讓人不太滿意的呢～～～
+
+有知道的人提供一下吧～～

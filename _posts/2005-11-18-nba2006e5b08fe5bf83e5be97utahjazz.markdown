@@ -1,0 +1,41 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2005-11-18 20:13:39+00:00
+slug: nba2006%e5%b0%8f%e5%bf%83%e5%be%97utahjazz
+title: NBA2006小心得~~UtahJAzz
+wordpress_id: 296
+categories:
+- 遊戲天國
+---
+
+![](http://images.amazon.com/images/P/B000930DMI.01.LZZZZZZZ.jpg)
+
+對於[NBA Live 06](http://www.easports.com/nbalive06/index.jsp)，每天練習一場的我，總算也從一個Starter的等級，慢慢的打的過一般等級的電腦。而從2005到2006一路玩下來，可以發現一些基本的原則，對於要在這塊遊戲玩的好相當的重要。
+
+![](http://images.ea.com/sports/marchmadness06/_img/screenshots/1ps2.jpg)  
+(圖片來源: [官方網站](http://www.easports.com/theater.jsp?media=screenshots))
+
+  * **千萬不要自幹**: 我覺得這點是EA在AI與整體遊戲的設定上，越來越強調的一點，不論在你手上操縱的是哪一個巨星，貿然的切入去硬得分，往往只會落的球掉且犯規的下場，因為電腦對於你的黏性特別的強(當電腦球員靠近你的球員時，你的球員會有種被黏住的情況~ 這個情況再[06](http://www.easports.com/nbalive06/index.jsp)更加的明顯)。建議~~ 多多用速度快的PG來快速切入，[Keith McLeod](http://www.nba.com/playerfile/keith_mcleod/index.html?nav=page) 或是[Deron Williams](http://www.nba.com/playerfile/deron_williams/index.html?nav=page) 都還是個不錯的決定。  
+![](http://images.ea.com/sports/marchmadness06/_img/screenshots/3xbox.jpg)  
+(圖片來源: [官方網站](http://www.easports.com/theater.jsp?media=screenshots))  
+  
+
+  * **傳球數字的增多，得到的分數越多**: 這點也是應映[06](http://www.easports.com/nbalive06/index.jsp)AI的處理上，雖然已經相當接近真實的明星球員(當然是開Computer Assisnt的等級)，但是球員包夾的能力，不論你怎麼去調整Slider，還是會有相當的程度容易被包抄走，所以~~ 好的傳球可以幫助你去引開人，千萬別忘了，在[06](http://www.easports.com/nbalive06/index.jsp)的時候，即使是個明星球員，在中距離遭到防守時，還是~~很容易(根本是不可能~~)投進的。根據這個原則~~ 一個切入、一個導傳是相當的重要。我一場比賽(每節五分鐘)打下來，平均也有16~20個助攻的產生，[06](http://www.easports.com/nbalive06/index.jsp)球員空手切位的AI有大幅度的增加，由於有傳球所以也就增加更多機會的第一時間灌籃，或是快攻。對於得分效率而言~~是相當的重要。傳球可以讓OKur去在內線導傳到外線的射手(Brown、Deron Williams)，然後投三分，或是傳給攔下的Boozer去灌藍也是不賴的決定。  
+![](http://images.ea.com/sports/marchmadness06/_img/screenshots/5ps2.jpg)  
+(圖片來源: [官方網站](http://www.easports.com/theater.jsp?media=screenshots))  
+  
+
+  * **良好防守是進攻的開始**:常常在很多導演的訓示下，都可以知道一個防守好的球隊，才是贏球的保證。([這篇報導](http://sports.people.com.cn/GB/22134/22136/3848739.html))更是告訴我們(雖然跟籃球無關)，防守不是被動的，而是主動的，甚至可以說防守是一種無球的進攻。因為你主動  
+積極防守的同時，是給對手施加壓力的一種方式，逼迫對手丟球也就是展開有球進攻的開始。所以在打[06](http://www.easports.com/nbalive06/index.jsp)的時候，可以多操作抄截能力好的球員(Jazz 的AK，Piston的Billups)， 在我操縱的爵士隊(UtahJAzz)內[Andrei Kirilenko](http://www.nba.com/playerfile/andrei_kirilenko/index.html?nav=page) 絕對是抄截的冠軍，任何對方的PG相要切入，我就會使用[Deron Williams](http://www.nba.com/playerfile/deron_williams/index.html?nav=page)來擋著，或是使用[Keith McLeod](http://www.nba.com/playerfile/keith_mcleod/index.html?nav=page) 與[Andrei Kirilenko](http://www.nba.com/playerfile/andrei_kirilenko/index.html?nav=page) 的包夾來將對方的球夾掉。這時候~~ 快攻的機會就來了~~ 快傳給前場的[Gordan Giricek](http://www.nba.com/playerfile/gordan_giricek/index.html?nav=page) 就可以快速的得分(雖然[Gordan Giricek](http://www.nba.com/playerfile/gordan_giricek/index.html?nav=page) 的OVERALL不高，但是在得分上還蠻好用的，防守就不太好用) 。![](http://images.ea.com/sports/marchmadness06/_img/screenshots/5xbox.jpg)  
+(圖片來源: [官方網站](http://www.easports.com/theater.jsp?media=screenshots))  
+  
+
+
+最後，我將我的先發名單貼給大家分享一下，當然[Carlos Boozer](http://www.nba.com/playerfile/carlos_boozer/index.html?nav=page) 與[Andrei Kirilenko](http://www.nba.com/playerfile/andrei_kirilenko/index.html?nav=page) 雖然憲在是受傷的情況下，我還是把他們放在先發(唉~~沒有他們兩個~~真的很難贏~~)，我在新手階段主要是用Piston在練習，由於他們全隊最平均，而且防守最好，所以我覺得也是最容易上手的隊伍。
+
+[![NBAFive.JPG](http://www.evanlin.com/blog/archives/20051119/NBAFive-thumb.JPG)](http://www.evanlin.com/blog/archives/20051119/NBAFive.JPG)
+
+[![](http://www.nba.com/media/jazz/ultimate-fan-mobile-pop-up.gif)](http://www.nba.com/webAction?actionId=jumpMaster&ref=jazz'Popup&dest=/jazz/promotions/Ultimate_Jazz_FanMobile.jsp) 

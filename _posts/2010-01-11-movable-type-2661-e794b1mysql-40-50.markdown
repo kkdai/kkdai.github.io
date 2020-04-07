@@ -1,0 +1,34 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2010-01-11 09:23:48+00:00
+slug: movable-type-2661-%e7%94%b1mysql-40-50
+title: Movable Type 2.661 由MySQL 4.0 –> 5.0
+wordpress_id: 1083
+categories:
+- 關於MT的學習心得
+- 柴米油鹽的東西
+---
+
+ 
+
+  
+  1. 透過MySQL dump 的方式會比較麻煩(參考: ~~~ 比較方便的方式~ 這樣也不擔心後來資料庫是否是UTF8或是Bug5. 
+   
+  2. 轉移過去後要記得把 m5.cfg 裡面~~~改好        
+CGIPath [http://YOUR_DOMAIN/cgi-bin/mt/](http://YOUR_DOMAIN/cgi-bin/mt/)   
+請注意~ 這裡YOUR_DOMAIN，不要改成 “localhost"，因為這樣會造成登入不進去~~~~ 之前我就是這樣改~ 結果一直卡在 “Melody”跟 “Nelson”。 一直進不去!! 
+   
+  3. 其實資料庫轉換在MT上到是沒有太大問題~~~ 
+ 
+
+ 
+
+備註: 
+
+ 
+
+  
+  * MT4 真的很慢~~~ 還是MT2.661 快多了~~~~ 

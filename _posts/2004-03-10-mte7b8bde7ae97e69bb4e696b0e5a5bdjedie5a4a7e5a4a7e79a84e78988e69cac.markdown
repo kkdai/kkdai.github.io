@@ -1,0 +1,114 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2004-03-10 05:54:51+00:00
+slug: mt%e7%b8%bd%e7%ae%97%e6%9b%b4%e6%96%b0%e5%a5%bdjedi%e5%a4%a7%e5%a4%a7%e7%9a%84%e7%89%88%e6%9c%ac
+title: MT總算更新好Jedi大大的版本
+wordpress_id: 56
+categories:
+- 關於MT的學習心得
+---
+
+![除錯～～～](http://www.evanlin.com/blog/archives/0310/debug.gif)抓到錯誤的地方了，或許許多人會更我一樣，明明就是從[Jedi大大所寫的MTbook網站](http://mtbook.net/download.html)上download最新版本的linux更新版，但是依照著[書上的安裝方式](http://mtbook.net)，卻一直在建制好資料庫之後_(mt-load.cgi)_，無法讀取_(mt.cgi)_而一直導致出現
+
+
+
+
+
+  
+  <table cellpadding="0" cellspacing="0" border="1" width="70%" >
+
+<td align="left" >
+
+
+
+    <tr >
+      
+<td width="100%" align="left" >
+        <table >
+          <tr >
+            
+<td align="left" id="tableProps" valign="top" >![](pagerror.gif)
+</td>
+            
+<td width="360" align="left" id="tableProps2" valign="center" >
+              
+
+# 無法顯示網頁
+
+
+            
+</td>
+          </tr>
+          <tr >
+            
+<td width="400" id="tablePropsWidth" colspan="2" >要連線的網頁發生問題，因此無法顯示。
+</td>
+          </tr>
+          <tr >
+            
+<td width="400" id="tablePropsWidth" colspan="2" >
+              
+
+* * *
+
+
+              
+
+請嘗試下列:
+
+
+              
+
+
+                
+  * 開啟
+                  XXXX 首頁，然後查詢您想索取之資訊的連結。
+                
+  * 請按 ![refresh.gif (82 個位元組)](refresh.gif)
+                  [重新整理]
+                
+                  按鈕，或者稍後再試一次。  
+
+                
+  * 按一下![search.gif (114 位元組)](search.gif)
+                  [搜尋]
+                來查詢網際網路資訊。
+                
+  * 您也可以參閱相關網站清單。
+              
+
+              
+              
+              
+
+## HTTP
+              500 - 內部伺服器錯誤  
+
+              Internet Explorer
+
+
+              
+</td>
+          </tr>
+        </table>
+      
+</td>
+    </tr>
+  </table>
+  
+
+
+
+
+
+後來到了[部落格討論區](http://phpbb.elixus.org)中慢慢的爬文，總算找到解決的方法，就是將 
+plugins/mt-rebuild.pl
+這個檔案刪除，而這個檔案主要是用來定期重建Blog用的，若你將其刪除可以利用其他方式來設定定期重建
+
+
+
+
+所以各位現在看到的版本，就是利用最新的2.661並且是[Jedi大大](http://mtbook.net/download.html)版本的東西

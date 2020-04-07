@@ -1,0 +1,72 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2006-02-10 15:46:41+00:00
+slug: links-for-2006-02-10
+title: links for 2006-02-10
+wordpress_id: 336
+categories:
+- 每日網摘
+---
+
+
+	
+  * 
+		
+
+[C# Station: Introduction to the C# Tutorial](http://www.csharp-station.com/Tutorial.aspx)
+
+
+		
+
+一些基礎教學For C Sharp，很值得一看~~~
+
+
+		
+
+(tags: [VC.NET](http://del.icio.us/kkdai/VC.NET))
+
+
+	
+
+	
+  * 
+		
+
+[上海商銀的每週精選基金報告](http://fund.scsb.com.tw/ReportFile/MarketComment/MarketWeek.pdf)
+
+
+		
+
+蠻值得參考的每週基金報告~~~
+
+
+		
+
+(tags: [Finance](http://del.icio.us/kkdai/Finance))
+
+
+	
+
+	
+  * 
+		
+
+[Microsoft details Windows anti-virus pricing | The Register](http://www.theregister.co.uk/2006/02/08/windows_antivirus_protection/)
+
+
+		
+
+微軟也出防毒軟體了~~$49.95的價位比起Symantec 的$89.99要便宜多了
+
+
+		
+
+(tags: [news](http://del.icio.us/kkdai/news))
+
+
+	
+
+

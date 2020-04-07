@@ -1,0 +1,69 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2004-03-04 03:15:57+00:00
+slug: mt-%e5%87%ba%e5%95%8f%e9%a1%8c%e4%ba%86
+title: MT 出問題了
+wordpress_id: 52
+categories:
+- 關於MT的學習心得
+---
+
+![03042.jpg](http://www.evanlin.com/blog/archives/0304/03042.jpg)最近遇到很大的問題了，我的[MT](http://www.movabletype.org)在刪除迴響的時候無法刪除，在網路上找了半天也找不到，卻出現了以下的問題：
+
+
+　
+
+
+
+
+　
+
+
+
+
+　
+
+
+
+
+　
+
+
+
+
+　
+
+
+
+
+
+  
+  <table cellpadding="0" cellspacing="0" border="0" bgcolor="#000000" width="20%" >
+    <tr >
+      
+<td width="100%" >
+        MT::App::CMS=HASH(0x8065fa8) Use of uninitialized value in concatenation (.)   
+
+        or string at /var/www/cgi-bin/mt/lib/MT/App/CMS.pm line 1263.
+
+        
+
+　
+</td>
+    </tr>
+  </table>
+  
+
+
+
+
+
+[可以連過去這個網頁看敘述](http://www.ideaspace.net/users/wkearney/archives/entries/000413.html)　
+
+
+
+
+有解答的告訴我吧 ~_____~

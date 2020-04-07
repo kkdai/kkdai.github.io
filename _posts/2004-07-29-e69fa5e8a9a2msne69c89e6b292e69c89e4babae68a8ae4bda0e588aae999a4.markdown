@@ -1,0 +1,29 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2004-07-29 16:41:53+00:00
+slug: '%e6%9f%a5%e8%a9%a2msn%e6%9c%89%e6%b2%92%e6%9c%89%e4%ba%ba%e6%8a%8a%e4%bd%a0%e5%88%aa%e9%99%a4'
+title: 查詢MSN有沒有人把你刪除
+wordpress_id: 128
+categories:
+- 網路上好玩的事情
+---
+
+[![](http://images.google.com.tw/images?q=tbn:TiTIJiJxBX4J:www.prettymichel.com/icon/wocuole.jpg)](http://images.google.com.tw/imgres?imgurl=http://www.prettymichel.com/icon/wocuole.jpg&imgrefurl=http://www.xici.net/main.asp%3Fdoc%3D36153575&h=288&w=352&sz=81&tbnid=TiTIJiJxBX4J:&tbnh=94&tbnw=114&start=2&prev=/images%3Fq%3D%25E6%2588%2591%25E9%258C%25AF%25E4%25BA%2586%26hl%3Dzh-TW%26lr%3D%26ie%3DUTF-8%26sa%3DN)
+
+對不起，聽說MSN Block Detect 是一個木馬程式（我本人也深受其害，電腦變的很慢～～～），所以提供另外一個方式去探測人家有沒有把你砍掉
+
+  1. MSN本身就能查了..   
+-- 在MSN Messenger的工具列裡 選擇   
+「工具」→「選項」→「隱私」   
+然後 點選「朋友名單」也就是點選他們的暱稱 按右鍵   
+如顯示 [刪除] 的這個選項 是反白的 那表示你沒被刪除   
+要是顯示可以刪除..那表示你被刪啦!!
+  2. [http://www.blockstatus.com/msnsta.php](http://www.blockstatus.com/msnsta.php)  
+  
+只要輸入你朋友的帳號，就可以了，但是不能保證100％都可以查得到  
+
+
+原諒我ㄅㄟ～～～～～～～

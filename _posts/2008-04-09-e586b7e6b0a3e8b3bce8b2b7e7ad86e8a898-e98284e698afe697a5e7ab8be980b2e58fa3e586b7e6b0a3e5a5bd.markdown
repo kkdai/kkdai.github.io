@@ -1,0 +1,122 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2008-04-09 03:52:18+00:00
+slug: '%e5%86%b7%e6%b0%a3%e8%b3%bc%e8%b2%b7%e7%ad%86%e8%a8%98-%e9%82%84%e6%98%af%e6%97%a5%e7%ab%8b%e9%80%b2%e5%8f%a3%e5%86%b7%e6%b0%a3%e5%a5%bd'
+title: 冷氣購買筆記– 還是日立進口冷氣好
+wordpress_id: 847
+categories:
+- 我的生活
+- 柴米油鹽的東西
+---
+
+![](http://www.airconditioner.com.tw/image/2-ht/ht01-01.jpg)
+
+1. BTU 與噸數互算
+
+冷氣機並不是日立生產製造.當 然壓縮機不一樣.保固也不一樣.所以價錢有差別.一分錢一分貨.還有冷氣機一定要買足噸才可省電  
+一般建議正常環境可使用(一頓吹三坪).如有西曬.鐵皮屋.木造.頂樓.總坪數須*1.22在換算噸數  
+如此才會涼又省電.有某一些店家會告數你.一頓可吹4-6平.這是10年前的數據.當時室外溫度只有28度.要降至25度只有三度.現在室外溫度最高已達34度須降9度.所以現在1噸的冷氣都吹不到4坪(除非是在通風良好.又不太熱的地方)  
+以下是噸數換算表(僅供參考)  
+(一). 0.8T=1800K=7200BTU  
+(二). 1T=2000K=8000BTU  
+(三). 1.3T=2500K=10000BTU  
+(四). 1.5T=3200K=12800BTU  
+(五). 1.8T=3600K=14200BTU  
+(六). 2T=4000K=16000BTU  
+(七). 2.3T=4500K=18000BTU  
+(八). 2.5T=4800K=19200BTU  
+(九). 3T=6000K=24000BTU  
+(十). 3.5T=7100K=28400BTU  
+(十 一). 4T=8000K=32000BTU
+
+<blockquote>[http://www.mobile01.com/topicdetail.php?f=168&t=174295](http://www.mobile01.com/topicdetail.php?f=168&t=174295) [求助]冷氣坪數問題?海帝冷氣值不值得買?
+> 
+> </blockquote>
+
+2. 冷氣比較 (From Mobile01)
+
+  * [LG冷氣好嗎?](http://www.mobile01.com/topicdetail.php?f=168&t=330356&p=1) 似乎評價不高  
+  * [[感言]歌林真的是高品質國貨嗎、讓我為您一一道來](http://www.mobile01.com/topicdetail.php?f=168&t=159691&p=4)  
+  * [日本ECCJ省能源局2006年夏天統計](http://www.eccj.or.jp/catalog/2006s/aircon/28.html) (SHARP 夏普的省電效率是排在第一名的)  
+  * [[請求協助]三菱的冷氣好嗎?](http://www.mobile01.com/topicdetail.php?f=168&t=200243&p=1) 三菱電機似乎比三菱重工好一點  
+  * [該現在買嗎(日立冷氣好禮6選1)](http://www.mobile01.com/topicdetail.php?f=168&t=319178&p=1) 日立冷氣畢竟還是王道~~ 裝過都說好  
+  * [分享 日立 日本原裝 RAS-28ST DC變頻冷暖空調機 日本型號RAS-S28T](http://www.mobile01.com/topicdetail.php?f=168&t=536539&p=1)  
+  * [請問變頻空調應該選擇哪一家的？](http://www.mobile01.com/topicdetail.php?f=168&t=145180&p=1) 如果買到的是台灣日立似乎也沒多好~~~~ 而且日立公司上網血還被罵 [**台灣日立公司的申明**](http://www.airconditioner.com.tw/xoops/modules/newbb/viewtopic.php?viewmode=flat&topic_id=356&forum=1) 也可以查[**請問日立何時會有新款上市?**](http://www.airconditioner.com.tw/xoops/modules/newbb/viewtopic.php?viewmode=flat&topic_id=340&forum=1)  
+
+3. 冷房能力與省電比較 (來自: [http://www.mobile01.com/topicdetail.php?f=168&t=145180&p=2#1078840](http://www.mobile01.com/topicdetail.php?f=168&t=145180&p=2#1078840))
+
+[![mobile01-bfbb3571108796df544fb422e3d7624b.jpg](http://farm4.static.flickr.com/3131/2399381016_bffee9155e.jpg)](http://www.flickr.com/photos/27643002@N00/2399381016/)
+
+[![mobile01-62eafe83b094a0fd58daad9ec17d12bf.jpg](http://farm3.static.flickr.com/2021/2399380624_266653d799.jpg)](http://www.flickr.com/photos/27643002@N00/2399380624/)
+
+[![mobile01-c8a9ad8975a1e5f546421a2c99c1e7b1.jpg](http://farm3.static.flickr.com/2194/2399380252_e205d48cd2.jpg)](http://www.flickr.com/photos/27643002@N00/2399380252/)
+
+4. EER 如何計算?
+
+資料來源：  
+http://www.energypark.org.tw/main/01_life/option_102_4.asp  
+EER：  
+能源效率比值（EER）=（冷氣能力Kcal(BTU)/h）/消耗電力(瓦)，單位是Kcal/h.w或BTU/h.w。  
+冷氣能力指每小時可從室內移走的最大熱量，冷氣產生多少冷房能力所需耗用之電力即為能源效率比值。若冷房能力相同，但所耗電力愈少，EER值則愈高，即代表愈省電。各品牌之EER值有高有低，因此採購時請多比較，選擇高EER值，或通過節能標章認證的冷氣機。  
+變頻式冷氣：  
+一般冷氣機壓縮機的控制，僅有運轉及停止兩種模式，其對於室內溫度的調整也只有依照以上兩種模式，壓縮機運轉吸熱氣吹出冷氣及壓縮機停止保持送風狀態。此種控制方式易造成室內溫度不穩定，容易產生噪音，震動等現象。  
+變頻式冷氣，是利用電力電子的技術，提供壓縮機不同的電源頻率，而改變壓縮機的運轉速度，達到調整冷氣輸出的目的，當室內溫度與設定溫度差距過大時，壓縮機轉速加快，可快速達到設定的冷度，當溫度差距變小時，則以較慢轉速運轉，冷氣輸出減緩，使冷氣輸出及室內溫度保持平穩狀態。若再加上微電腦控制系統對周圍溫度，溼度，空氣對流和輻射熱等加以檢測，將可提供人們更為舒適，健康之生活環境。  
+　變頻式冷氣的優點：  
+1. 啟動時震動及噪音較小： 變頻式冷氣機啟動時，是由低轉速慢慢加速，所以啟動較為安靜。  
+2. 節省能源及電費： 變頻式冷氣之EER值，於低頻時顯著提高，所以可節省電費支出。  
+3. 能快速的達到舒適程度： 變頻式冷氣於開始運轉時，是以高於一般冷氣2倍速的頻率運轉，使室內溫度可以快速冷卻，迅速達到舒適的環境。  
+4. 不會有供電電壓之脈衝： 傳統冷氣機啟動時的高啟動電流，造成電壓下降，會使燈光閃動。變頻式冷氣機係屬低速啟動，啟動電流小，不會造成電力系統之不穩  
+定。  
+
+5. 相關網站
+
+  * [SHARP冷氣網站](http://www.sharp.com.tw/products/air_conditioner/air_conditioner.asp)  
+  * **[台灣冷氣空調網 討論區](http://www.airconditioner.com.tw/xoops/modules/newbb/)**
+
+9. 結論:
+
+準備看
+
+[M01文章](http://www.mobile01.com/topicdetail.php?f=168&t=315590&last=2678909)  
+http://tw.knowledge.yahoo.com/question/question?qid=1607012108150  
+日立RAS-28ST  
+定格冷房能力(未變頻時) 2500千卡 適合5坪上下的房間  
+變頻範圍 : 880~2500~3490千卡  
+消耗功率 : 172~483~963W  
+EER值 : 5.81~5.81~4.0 (W/W)  
+
+
+拍賣與規格 [http://goods.ruten.com.tw/item/show?11070212165524](http://goods.ruten.com.tw/item/show?11070212165524)
+
+**室內機   
+RAS-28ST  
+![](http://www.taiwan-hitachi.com.tw/pdct/images/thproductx24.gif)  
+‧冷氣能力：1.0~3.85kW (880~3430kcal/h)   
+‧暖氣能力：1.0~5.0kW (880~4500kcal/h)   
+‧除濕能力：1.6 l/h   
+‧外形尺寸(mm)：寬870×高298×深223   
+‧冷媒配管：粗3/8"(3分) 細1/4"(2分)   
+‧電源：1φ 110V 60Hz   
+![](http://www.taiwan-hitachi.com.tw/pdct/images/thproductx24.gif)  
+****‧日本省能源大賞   
+‧榮獲經濟部節能標章   
+‧世界首創-給氣,排氣,雙氣流空氣制御系統   
+‧日本最新機體自動清洗   
+‧全平面式面板   
+‧面板上運轉指示燈   
+‧超大液晶顯示遙控器   
+‧不降溫除濕系統   
+‧超強除濕力(相當7.5台除濕機)   
+‧舒眠裝置   
+‧預約定時開關機   
+‧全直流DC變頻控制   
+‧自動風向調節裝置(Auto-Sweep)   
+‧奈米鈦脫臭熱交換器   
+‧奈米鈦負離子空氣清淨   
+‧奈米鈦給氣系統   
+‧日本原裝進口  
+![](http://www.taiwan-hitachi.com.tw/pdct/images/thproductx24.gif)  
+‧製品重量：11.5kg**

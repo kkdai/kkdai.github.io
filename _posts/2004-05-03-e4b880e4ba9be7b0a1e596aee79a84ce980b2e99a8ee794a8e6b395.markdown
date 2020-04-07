@@ -1,0 +1,385 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2004-05-03 18:00:47+00:00
+slug: '%e4%b8%80%e4%ba%9b%e7%b0%a1%e5%96%ae%e7%9a%84c%e9%80%b2%e9%9a%8e%e7%94%a8%e6%b3%95'
+title: 一些簡單的C++進階用法
+wordpress_id: 85
+categories:
+- STL學習心得
+---
+
+在程式語言之中，C++一直是我最熟悉的語言之一，也由於之前在五專時代曾經寫過物件導向SCSI驅動程式的經驗，讓我的C的程式語言能力有一定的水準。不過自從上了大學之後，就一路忙著學習著Linux的架設與網頁程式（PHP，ASP，ZOPE...等）其實C++已經忘記的差不多。所以最近去幾家公司面試的時候也著實讓我吃盡了苦頭。
+
+
+
+
+由於我之前去許多家公司面試軟體研發工程師（RD）的職位，也由於我本身喜歡挑戰新的領域與事物，於是我在面試的時候，全部避開之前熟悉網站程式設計或是Linux的架設部分，而盡量選擇系統軟體程式設計師或是LINUX的程式設計師。所以去每家公司自然而然要考一些基本的C++基礎與一些程式設計的概念。或許大家看到這邊，會覺得很簡單，C++不就是基本的程式概念，有哪一些需要學習呢？但是自從我去幾家軟體公司面試以來，有一些題目還真是有點刁鑽與難懂，明明是很簡單的概念，卻往往容易疏忽而犯錯。以下就將幾題我之前去面試的題目提供出來，你又能答對幾題呢？
+
+
+<!-- more -->
+
+
+　
+
+
+
+
+
+  <table cellpadding="0" cellspacing="1" border="1" width="80%" >
+    <tr >
+      
+<td width="100%" bgcolor="#000000" >
+        
+
+1.
+        
+
+#include <iostream.h>  
+
+        void main()  
+
+        {  
+
+         int i=3,j=5;  
+
+          
+
+         if ((i=3)||(j=6)){  
+
+         cout <<"i="<<i<<"   j="<<j;}  
+
+        }  
+
+      
+</td>
+    </tr>
+  
+    <tr >
+      
+<td width="100%" >Q: What is the output? i=?? j=??
+</td>
+    </tr>
+  </table>
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  <table cellpadding="0" cellspacing="1" border="1" width="80%" >
+    <tr >
+      
+<td width="100%" bgcolor="#000000" >
+        
+
+2.
+          
+
+#include <iostream.h>  
+
+            
+
+          class C1  
+
+          {  
+
+           public:  
+
+           int i;  
+
+           C1( ){ cout <<"1--------"<<endl;}  
+
+           ~C1( ){ cout <<"2--------"<<endl;}  
+
+          };  
+
+          class C2  
+
+          {  
+
+           public:  
+
+           int i;  
+
+           C2(){ cout <<"3--------"<<endl;}  
+
+           ~C2( ){cout <<"4--------"<<endl;  
+
+	}  
+
+          };  
+
+          int fun1( )  
+
+          {  
+
+           static C2 aa;  
+
+           C1( );  
+
+           cout <<"test_function--------"<<endl;  
+
+          }  
+
+          void main()  
+
+          {  
+
+           int x=0;  
+
+           C1 c;  
+
+           C2 * v;   
+
+           cout <<"test1--------"<<endl;  
+
+           <strike>*v=C2( ); </strike>**v=&C2(
+          );**  
+
+           cout <<"test2--------"<<endl;  
+
+           fun1( );  
+
+           v->i =111;   
+
+           cout <<v->i<<endl;  
+
+            
+
+          }  
+
+          
+
+
+
+      
+</td>
+    </tr>
+  
+    <tr >
+      
+<td width="100%" >Q: What is the output?
+</td>
+    </tr>
+  </table>
+  
+
+
+
+
+
+　
+
+
+
+
+
+  <table cellpadding="0" cellspacing="1" border="1" width="80%" >
+    <tr >
+      
+<td width="100%" bgcolor="#000000" >
+        
+
+3.
+        
+
+
+        Static i;  
+
+         
+        Global j;
+</td>
+    </tr>
+  
+    <tr >
+      
+<td width="100%" >Q: What is difference between i,j?? and what is
+        difference between Static and Global??
+</td>
+    </tr>
+  </table>
+  
+
+
+
+
+
+　
+
+
+
+
+
+  <table cellpadding="0" cellspacing="1" border="1" width="80%" >
+    <tr >
+      
+<td width="100%" bgcolor="#000000" >
+        
+
+4.
+        
+
+string s1("test1");  
+
+         string s2("test2~~~");  
+
+          
+
+         string & rs=s1;  
+
+         string * ps=&s1;  
+
+          
+
+         cout <<"rs1="<<&rs<<"    ps1="<<*ps;  
+
+          
+
+         rs=s2; 
+        //_Label 1_  
+
+         ps=&s2; 
+        //_Label 2_  
+
+           
+
+         cout <<"rs2="<<&rs<<"    ps2="<<*ps;  
+
+        
+</td>
+    </tr>
+  
+    <tr >
+      
+<td width="100%" >Q: What is the output aboute between Label1 and Label2?
+</td>
+    </tr>
+  </table>
+  
+
+
+
+
+
+　
+
+
+
+
+**解答1：**
+
+
+
+
+第一題的答案是 i=3 j=5，並不會執行 j=6
+這個給定值，由於C++是左手邊優先(Left hand side)，所以當OR( ||
+)給值出現的時候，所出現的就是第一個成立就不再往下看。所以並不會執行到
+j=6 自然而然 j=5
+
+
+
+
+**解答2：**
+
+
+
+
+針對這一題，可真是難倒我了，答案就是 
+
+
+
+
+  1---------
+   test1-----
+   3---------
+   4---------
+   test2-----
+   3--------
+   1--------
+   2--------
+   test_function----------
+   2---------
+   4---------
+
+
+  
+
+在類別的建構者函數與解構者函數之中，會呼叫到建構者函數就是當物件成立的時候，所以當
+  C1 c; 的時候就會呼叫 C1 的建構者函數。但是
+  在建立類別指標的時候（物件指標）並不會呼叫建構者函數與解構者函數，反倒是在指向位址時所使用的 
+  C2( )
+  所代表的就是將『類別當成靜態函數來使用』這樣一來可以讓指標去指定該物件，但是由於是當成函數使用所以
+  C2的建構者函數與解構者函數都會一併執行。而在Scope方面，由於
+  Static 的Scope
+  是最大的，所以相對的解構者函數也會比較慢出現～～～
+
+
+
+
+**解答3：**
+
+
+
+
+在Scope方面，大家都知道 Static 與 Global的用法，就是比起一般區域變數的Scope都還大，但是這兩個到底有什麼差距呢？原來，比起來Global比Static
+更廣大的Scope，也就是 Static 代表該變數的 Scope範圍到『整個檔案』，但是
+Global卻是橫跨數個檔案，皆可以呼叫Global的參數（只要使用
+extern來呼叫即可～～～）所以大家都會忘記，其實 Global的範圍才最大，但是記得使用外部檔案的變數還是要宣告一下。
+
+
+
+
+**解答4：**
+
+
+
+
+這一題只要是在考『指標』(pointer)與『物件化身』(reference)兩者的差別，根據去查書『More
+Effective C++』裡面有提到，其實兩者用法很像，確有以下的不同
+
+
+
+
+
+  
+  * Reference 沒有空值（NULL）存在
+
+  
+  * Pointer 的位置可以變動而 Reference 則否
+
+
+
+
+所以以上的題目中 rs =s2 是將 s1中的值改為 s2的數值，而 ps=&s2
+則是將指標 ps 指向 s2而已罷了～～～
+
+
+
+
+　
+
+
+
+
+　
+
+
+  
+
+大家對幾題阿？有題目的話歡迎來分享～～～
+
+
+
+
+　

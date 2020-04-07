@@ -1,0 +1,29 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2006-05-09 06:07:09+00:00
+slug: msn8-beta%e5%87%ba%e4%be%86%e4%ba%86
+title: MSN8 BETA出來了
+wordpress_id: 393
+categories:
+- 網路上好玩的事情
+---
+
+![](http://ideas.live.com/images/title.jpg)
+
+[http://ideas.live.com/signup.aspx?versionId=0eccd94b-eb48-497c-8e60-c6313f7ebb73](http://ideas.live.com/signup.aspx?versionId=0eccd94b-eb48-497c-8e60-c6313f7ebb73)
+
+Windowns LIVE Messenger(俗稱的MSN8) 繁體中文邀請函立即啟用區
+
+需要輸入帳號申請試用後才能將帳號在MSN8上面啟用
+
+主要新增功能有:
+
+  * 新增別名: 可以將別人長長的暱稱改成你認識的
+  * 群組訊息: 一次傳簡訊給多人
+  * 離線訊息: ICQ早就有超過五年，MSN才做~~
+  * ...  還在試用中~~ 嘿嘿
+
+此外[Messenger Plus! Live 4.0.0.214 leaked—找到使用方法](http://spaces.msn.com/michsun/blog/cns!DB3E67A17268A540!5415.entry) 告訴我們如何使用新的MSN plus (雖然我都不用的，喜歡的試試看~~)

@@ -1,0 +1,53 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2006-09-23 16:26:22+00:00
+slug: links-for-2006-09-23
+title: links for 2006-09-23
+wordpress_id: 485
+categories:
+- 每日網摘
+---
+
+
+	
+  * 
+		
+
+[Vista替换Flip3D的快捷方式_操作系统_使用技巧_PC WORLD中国网](http://www.pcworld.com.cn/how_to_use/1/2006/0809/7337.shtml)
+
+
+		
+
+Flip3D 是非常COOL 的功能~~ 在最新的RC1已經被擋掉了~~ 這是一個叫回來的方式
+
+
+		
+
+(tags: [Vista](http://del.icio.us/kkdai/Vista))
+
+
+	
+
+	
+  * 
+		
+
+[Rexiology::Life : 在 XP 上玩 Vista 才會有的 Flip3D Task Manager...](http://rextang.net/blogs/life/archive/2006/02/07/3404.aspx)
+
+
+		
+
+在XP上如果要使用 Flip3D 則是要使用一些模擬的商業軟體
+
+
+		
+
+(tags: [Vista](http://del.icio.us/kkdai/Vista))
+
+
+	
+
+

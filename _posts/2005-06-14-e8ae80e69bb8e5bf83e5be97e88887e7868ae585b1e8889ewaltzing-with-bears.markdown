@@ -1,0 +1,36 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2005-06-14 18:20:27+00:00
+slug: '%e8%ae%80%e6%9b%b8%e5%bf%83%e5%be%97%e8%88%87%e7%86%8a%e5%85%b1%e8%88%9ewaltzing-with-bears'
+title: 讀書心得~~與熊共舞(Waltzing with Bears)
+wordpress_id: 245
+categories:
+- 書海裡的漫遊
+---
+
+![](http://addons.books.com.tw/G/5/0010277845.jpg)
+
+<blockquote><p 繁體中文  
+作者：湯姆.狄馬克、提摩西.李斯特/著  
+出版社：經濟新潮社  
+出版日期：2004 年 11 月 30 日  
+(資料提供: [博客來網路書店](http://www.books.com.tw/exep/prod/booksfile.php?item=0010277845))
+> 
+> </blockquote>
+
+專案管理之中，最容易被忽略的~也最容易發生的----往往就是專案風險的發生。我相信～不論組織架構多好的專案，或多或少在進行的過程中，都會有風險的發生～～　然而對於這些風險～～　有多少人願意去預估進而解決呢？
+
+這本書裡提供了許多有效率的風險評估法，因為專案的進行中～～最不可改變的就是專案的時間～～但是往往隨著專案的進行～這個是一定會被改變的，所以～～　專案完成的日期也就一而再、再而三的拖延。甚至可能變成專案草草結束與被取消的局面。
+
+回歸到這本書所提到的風險管理上，本書也利用風險圖與奈米機率，幫助我們了解專案的截止日與風險發生的可能比，當然～截止日越早，風險自然而然就越高，但是這一點在實作上就變得相當的困難，截止日往往是不合理的情況下。於是，家上風險的事情規劃無法釐清之下。也只能從專案進行中，逐一的針對風險的發生加以解決　（規格的修訂、技術的拖延、設備的問題、人員的短缺）。
+
+其中～人員的短缺的風險上，最有名的一本書莫過於是["人月神話＂](http://www.books.com.tw/exep/prod/booksfile.php?item=0010254508)，也就是當我們以為可以在專案進行中，以人員的增加來達成專案準時交付的可能性，往往卻因為我人員的訓練使得整體專案更加的延遲交付，甚至人員的健康狀況與離職，都會是專案中最大的風險～～～　（不過～～我自己是認為～針對離職與健康問題所帶來的風險～～就像是本書所提的　＂隕石掉落一樣＂　無法預知與避免）
+
+關於＂規格的修改＂方面，著名軟體高手Joel,曾經在自己的Blog"[周思博趣談軟體](http://www.joelonsoftware.com/)"(基本上是英文，不過也是有[繁體中文的啦～～](http://chinesetrad.joelonsoftware.com/)）裡面一篇很有名的文章＜[無痛軟體流程](http://chinesetrad.joelonsoftware.com/Articles/PainlessSoftwareSchedules.html)＞，對於專案進行中許多規格的修改，形容的相當有趣而有深度。其中也舉了一個很好的例子(Nescape 6.0)的例子，針對技術與規格的大大修改，對於軟體專案的流程規劃，無疑是個重大的打擊。別忘記了，["人月神話＂](http://www.books.com.tw/exep/prod/booksfile.php?item=0010254508)中的第二系統效應，我想～～～　應該跟[星際大戰](http://www.starwars.com/)裡的黑暗原力一樣，危險而又令人著迷吧？
+
+所以專案時程的訂定，變成了最大的難題～～而且風險的預測與規避也變成不可或缺的工作。畢竟沒有良好的風險規避，你的專案時程也就變得完全不可靠。
+
+**參考閱讀**："[周思博趣談軟體](http://www.joelonsoftware.com/)"([無痛軟體時程](http://chinesetrad.joelonsoftware.com/Articles/PainlessSoftwareSchedules.html))

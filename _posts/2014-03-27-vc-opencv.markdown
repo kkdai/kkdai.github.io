@@ -1,0 +1,95 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2014-03-27 10:54:03+00:00
+slug: vc-opencv%e7%9b%b8%e6%a9%9f%e4%bd%bf%e7%94%a8%e7%9b%b8%e9%97%9c
+title: '[VC++] OpenCV相機使用相關...'
+wordpress_id: 1363
+categories:
+- opencv
+- VC++程式設計
+---
+
+[OpenCV](http://opencv.org/)是個非常簡單而且好用的影像相關處理的library．  
+而針對相機的處理上，其實[OpenCV](http://opencv.org/)也是可以快速寫出一個sample application  
+之前要處理相機旋轉上作了一些查詢，這裡記錄一下
+
+
+
+
+**安裝[OpenCV](http://opencv.org/):**
+
+
+
+
+
+
+  * 抓下最新的code
+
+
+  * 增加 buildinclude 到VC設定(記得選取到正確的VC版本)
+
+
+  * 增加buildx86vc12lib 到library 設定
+
+
+  * 記得複製相關的dll 到執行目錄
+
+
+
+
+**關於旋轉方面:**
+
+
+
+
+相機拍照的時候如果去旋轉你的相機，你也要把拍進來的資料做旋轉．  
+關於Rotation的部分，其實找了不少的方式．不過發現最方便的方法還是使用cvTranspose 跟 cvFlip  
+不過當初為了讓[OpenCV](http://opencv.org/)瘦身，拔除了不少的function 很難在現在的狀況下去debug．  
+於是去把[OpenCV](http://opencv.org/)重新安裝起來，並且自己弄了一個camera的測試小app ，想不到比想像中的快速多  
+這裡僅僅去備份一下，這個測試app：功能很簡單，開啟相機～並且可以用 “T” “ “R” “F” 來旋轉圖片 “Q"離開 
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+**參考資料：** 
+
+
+
+
+
+
+  * [http://stackoverflow.com/questions/2259678/easiest-way-to-transpose-an-image-rotate-by-90-degrees-using-opencv](http://stackoverflow.com/questions/2259678/easiest-way-to-transpose-an-image-rotate-by-90-degrees-using-opencv)
+
+
+  * [http://stackoverflow.com/questions/15043152/rotate-opencv-matrix-by-90-180-270-degrees](http://stackoverflow.com/questions/15043152/rotate-opencv-matrix-by-90-180-270-degrees)
+
+
+  * [http://www.tuicool.com/articles/UFZJzm](http://www.tuicool.com/articles/UFZJzm)
+
+
+  * [http://stackoverflow.com/questions/2289690/opencv-how-to-rotate-iplimage](http://stackoverflow.com/questions/2289690/opencv-how-to-rotate-iplimage)
+
+
+  * [http://opencv-srf.blogspot.tw/2010/09/rotating-images.html](http://opencv-srf.blogspot.tw/2010/09/rotating-images.html) 
+
+

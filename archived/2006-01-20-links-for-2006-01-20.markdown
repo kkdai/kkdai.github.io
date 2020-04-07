@@ -1,0 +1,168 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2006-01-20 15:55:00+00:00
+slug: links-for-2006-01-20
+title: links for 2006-01-20
+wordpress_id: 330
+categories:
+- 每日網摘
+---
+
+
+	
+  * 
+		
+
+[Web Services and Other Distributed Technologies Developer Center: Windows Communication Foundation](http://msdn.microsoft.com/webservices/indigo/default.aspx)
+
+
+		
+
+WCF(Windows Communication Foundat)的入口網站~~很多介紹的資料
+
+
+		
+
+(tags: [WCF](http://del.icio.us/kkdai/WCF))
+
+
+	
+
+	
+  * 
+		
+
+[浅析Win Vista中的通信专家：Indigo - Vista - 操作系统 - 破釜沉舟: 源码下载,素材下载,为网站站长.设计师.编程开发者. 提供资源!](http://www.7880.com/Info/Article-73236720.html)
+
+
+		
+
+一些簡單的介紹~~ 關於Indigo
+
+
+		
+
+(tags: [MCF](http://del.icio.us/kkdai/MCF))
+
+
+	
+
+	
+  * 
+		
+
+[Web cast: Windows Vista系列课程(2)：Indigo技术入门](http://www.microsoft.com/china/msdn/events/webcasts/shared/webcast/episode.aspx?newsID=1242359)
+
+
+		
+
+Indigo 的系列課程~~ 利用NetMeeting 的方式來傳送課程
+
+
+
+		
+
+(tags: [MCF](http://del.icio.us/kkdai/MCF))
+
+
+	
+
+	
+  * 
+		
+
+[Windows Communication Foundation ("Indigo") - MSDN Forums](http://forums.microsoft.com/MSDN/ShowForum.aspx?ForumID=118&SiteID=1)
+
+
+		
+
+Indigo 在MSDN 的論壇~~~
+
+
+		
+
+(tags: [MCF](http://del.icio.us/kkdai/MCF))
+
+
+	
+
+	
+  * 
+		
+
+[.NET高手請出列](http://www.104sms.com.tw/project/microsoft_051229/index.jsp)
+
+
+		
+
+.NET 程式碼的大考驗~~~
+
+
+		
+
+(tags: [.NET](http://del.icio.us/kkdai/.NET))
+
+
+	
+
+	
+  * 
+		
+
+[Distributed .NET: Learn The ABCs Of Programming Windows Communication Foundation -- MSDN Magazine, February 2006](http://msdn.microsoft.com/msdnmag/issues/06/02/WindowsCommunicationFoundation/default.aspx)
+
+
+		
+
+學習WCF 程式設計裡面的ABC
+
+
+		
+
+(tags: [WCF](http://del.icio.us/kkdai/WCF))
+
+
+	
+
+	
+  * 
+		
+
+[15 Seconds : Hosting Indigo Web Services](http://www.15seconds.com/issue/050707.htm)
+
+
+		
+
+一篇教導你如何Host Indigo Web Service.
+
+
+		
+
+(tags: [WCF](http://del.icio.us/kkdai/WCF))
+
+
+	
+
+	
+  * 
+		
+
+[The Windows Communication Foundation: A Primer](http://www.devx.com/dotnet/Article/29414/0/page/1)
+
+
+		
+
+有一些WCF的簡介，並且有提到SVC設定與一個簡單的INDIGO 程式~~
+
+
+		
+
+(tags: [WCF](http://del.icio.us/kkdai/WCF))
+
+
+	
+
+

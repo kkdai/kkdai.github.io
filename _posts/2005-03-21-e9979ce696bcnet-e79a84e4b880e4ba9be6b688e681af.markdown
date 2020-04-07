@@ -1,0 +1,20 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2005-03-21 12:47:36+00:00
+slug: '%e9%97%9c%e6%96%bcnet-%e7%9a%84%e4%b8%80%e4%ba%9b%e6%b6%88%e6%81%af'
+title: 關於.NET 的一些消息
+wordpress_id: 214
+categories:
+- 網路上好玩的事情
+---
+
+![Designing .NET Class Libraries: API Usability](http://msdn.microsoft.com/netframework/art/NETFw.jpg)
+
+[Richard Grimes](http://www.grimes.demon.co.uk/index.htm) 是我一個蠻欣賞的專欄作家，他對於 [Managed Extensions](http://www.amazon.com/exec/obidos/tg/detail/-/0735617244/qid=1111132667/sr=8-1/ref=sr_8_xs_ap_i1_xgl14/103-9970321-9491862?v=glance&s=books&n=507846)的相關研究，最近一直是我研讀的範本，不過由CSDN上面的一篇新聞 [[.NET陣營在些波瀾~微軟專家.NET失望之極~](http://www.csdn.net/news/newstopic/20/20044.shtml)]，[Richard Grimes](http://www.grimes.demon.co.uk/index.htm)[ ](http://www.grimes.demon.co.uk/index.htm)卻一語道出許多[他對於.Net Framework 的失望](http://www.ddj.com/documents/s=9211/ddj050201dnn/)，~~~
+
+當然~他的批判中的許多內容，我還需要一些時間與功力去參透它，當然[微軟.NET 產品經理](http://blogs.msdn.com/danielfe/archive/2005/02/22/378343.aspx)的回覆也相當的經典~~
+
+當然[Dan Fernanderz](http://blogs.msdn.com/danielfe/)提到，有[利用到.NET Framework 所建立出的軟體](http://blogs.msdn.com/danielfe/archive/2004/11/02/251254.aspx)，到也解答我心中很久的問題...

@@ -1,0 +1,148 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2007-05-11 08:26:06+00:00
+slug: links-for-2007-05-10
+title: links for 2007-05-10
+wordpress_id: 639
+categories:
+- 每日網摘
+---
+
+
+	
+  * 
+		
+
+[Overview of Windows SideShow](http://msdn2.microsoft.com/en-us/library/ms744147.aspx)
+
+
+		
+
+可以讓電腦裡面的資料~~ 顯示在NB旁邊小視窗的 SideShow技術~~~  可以開始參考看看
+
+
+		
+
+(tags: [WindowsSideShow](http://del.icio.us/kkdai/WindowsSideShow) [Vista](http://del.icio.us/kkdai/Vista))
+
+
+	
+
+	
+  * 
+		
+
+[Vista 特別功能](http://www.microsoft.com/taiwan/windowsvista/features/foreveryone/sideshow.mspx#more)
+
+
+		
+
+微軟官方網頁介紹關於SideShow 的技術~~~
+
+
+		
+
+(tags: [WindowsSideShow](http://del.icio.us/kkdai/WindowsSideShow) [Vista](http://del.icio.us/kkdai/Vista))
+
+
+	
+
+	
+  * 
+		
+
+[SideShow 小工具: 開始撰寫 Windows SideShow 裝置的小工具 -- MSDN Magazine, January 2007](http://msdn.microsoft.com/msdnmag/issues/07/01/SideShow/default.aspx?loc=zx)
+
+
+		
+
+MSDN上面一個簡單的SAMPLE 介紹SideShow技術與撰寫的方法~~~~
+
+
+		
+
+(tags: [WindowsSideShow](http://del.icio.us/kkdai/WindowsSideShow) [Vista](http://del.icio.us/kkdai/Vista))
+
+
+	
+
+	
+  * 
+		
+
+[NVIDIA Preface白皮書  PDF 檔案](http://www.nvidia.com/content/portal_player/preface/whitepaper.pdf)
+
+
+		
+
+PDF 檔案 有相當多好用的資料~~~
+
+
+		
+
+(tags: [WindowsSideShow](http://del.icio.us/kkdai/WindowsSideShow) [Vista](http://del.icio.us/kkdai/Vista) [NVIDIA](http://del.icio.us/kkdai/NVIDIA))
+
+
+	
+
+	
+  * 
+		
+
+[WinHEC 2007 Taipei：議程表與議程內容](http://www.microsoft.com/taiwan/winhec/2007/AgendaSession.mspx)
+
+
+		
+
+關於WindowsSideShow  的座談會~~~
+
+
+		
+
+(tags: [WindowsSideShow](http://del.icio.us/kkdai/WindowsSideShow) [Vista](http://del.icio.us/kkdai/Vista) [Concert](http://del.icio.us/kkdai/Concert))
+
+
+	
+
+	
+  * 
+		
+
+[Windows SideShow Team Blog](https://blogs.msdn.com/sideshow/default.aspx)
+
+
+		
+
+SideShow的blog~~ 裡面也可以找到最新的simulator
+
+
+		
+
+(tags: [WindowsSideShow](http://del.icio.us/kkdai/WindowsSideShow) [Vista](http://del.icio.us/kkdai/Vista))
+
+
+	
+
+	
+  * 
+		
+
+[改編S.H.E.中國話之超high的台灣話 - 歡樂搞笑影音 - 優仕網共產檔](http://share.youthwant.com.tw/sh.php?do=D&id=13034877)
+
+
+		
+
+改編的中國話~~~~ 還真的是蠻搞笑的~~~~
+
+
+		
+
+(tags: [kuso](http://del.icio.us/kkdai/kuso) [搞笑](http://del.icio.us/kkdai/搞笑))
+
+
+	
+
+

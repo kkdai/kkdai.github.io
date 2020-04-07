@@ -1,0 +1,88 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2013-06-17 11:04:20+00:00
+slug: maciphone-%e9%97%9c%e6%96%bc%e6%89%8b%e6%a9%9f%e5%8d%87%e7%b4%9a%e6%b8%ac%e8%a9%a6%e7%89%88%e8%88%87%e9%80%80%e7%89%88%e6%9c%ac%ef%bc%88%e9%99%8d%e7%89%88%e3%80%81%e9%99%8d%e5%88%b7%ef%bc%89
+title: '[Mac/iPhone] 關於手機升級測試版與退版本（降版、降刷）的方法'
+wordpress_id: 1252
+categories:
+- iOS的程式開發
+---
+
+由於大概是今年年初，總算下定決心去買iOS Developer License所以這次WWDC 2013發表的iOS7 就有收到通知有測試版本  
+但是由於近期最紅的話題就是iOS7 的試用報告，所以不免俗的也去下載iOS7 Beta 1 下來試用～  
+其實真的不穩定，我也就退回了iOS6.1。  
+我想細節網路上有太多的文章了，在這裡不再做任何備註。
+
+
+
+
+
+
+  * **升級測試版的注意事項：**
+
+
+
+    * 測試版代表的是相當的不穩定（耗電跟app容易閃退)
+
+
+    * 很多人不建議使用自己的手機來裝（我裝過以後也是這樣建議大家）
+
+
+    * 千萬要備份，使用iTune的電腦備份把檔案備份起來。
+
+
+    * 如果有喜愛的App怕已經被下架或是其他因素～記得用iTools備份起來
+
+
+
+  * **升級測試版的方法：**
+
+
+
+    * 取得測試版的iOS (需要開發者帳號）
+
+
+    * 打開iTune 在 "更新"的地方按下 Shift 
+
+
+    * 選取剛剛下載下來的iOS測試版
+
+
+    * 等待更新
+
+
+
+  * **退回舊版的方法：**
+
+
+
+    * 進入DFU模式(參考以下參考文件)
+
+
+    * iTune會顯示有一台恢復模式的設備，點選接受是下載目前正式版的iOS
+
+
+    * (這裡也可以自己先下載後，去shift＋點選"回復"來回復特定版本)
+
+
+    * 回復之後，點選由備份復原把你的App都就回來
+
+
+
+  * **參考文件:**
+
+
+
+    * [iOS7 搶先玩](http://ifans.pixnet.net/blog/post/150015628-%E4%B8%8B%E8%BC%89%E5%AE%89%E8%A3%9D-ios-7-%E6%B8%AC%E8%A9%A6%E7%89%88(beta-1)%E6%90%B6%E9%AE%AE%E7%8E%A9....)(ifans)
+
+
+    * [教學 如何從iOS7 降回6](http://www.newmobilelife.com/2013/06/13/ios-7-restore-to-ios-6/) (New Mobile Life)
+
+
+    * [如何正確進入DFU](http://iamferrari.pixnet.net/blog/post/30364657-%5Biphone%5D%E5%A6%82%E4%BD%95%E3%80%8C%E6%AD%A3%E7%A2%BA%E3%80%8D%E9%80%B2%E5%85%A5dfu%E6%A8%A1%E5%BC%8F-)
+
+
+

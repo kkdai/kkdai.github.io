@@ -1,0 +1,39 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2007-04-20 02:25:51+00:00
+slug: '%e4%bd%a0%e7%9a%84%e9%83%a8%e8%90%bd%e6%a0%bcblog%e6%98%af%e7%94%b7%e7%9a%84%e9%82%84%e6%98%af%e5%a5%b3%e7%9a%84'
+title: 你的部落格(Blog)是男的還是女的???
+wordpress_id: 628
+categories:
+- 網路上好玩的事情
+---
+
+[![](http://www.youvegotblogs.com/resserver.php?blogId=5&resource=%E9%A6%96%E9%A0%81.jpg&mode=medium)](http://www.yodao.com/blogender/index.htm)
+
+[Yodao有道 博客男女](http://www.yodao.com/blogender/index.htm) 是個很有趣的網站~~ 只要到網站裡面去填出你的Blog的RSS~~你就可以得到~~ 你的部落格有多少的男生成分~ 或是有多少女生成分~~~
+
+很悲情的~~ 本站~~ 100%的女性?!!
+
+是怎樣??? 我寫的東西~~ 很娘嗎?
+
+
+<table cellpadding="0" cellspacing="7" style="background-color:#FFFFFF;border:1px solid #E7E7E7;" border="0" width="225" ><tbody ><tr >
+<td align="center" >Blog E
+</td></tr><tr >
+<td ><table cellpadding="0" cellspacing="0" style="background-color:#F6F9FF;text-align:center;font-size:12px;color:#323232;" border="0" width="100%" ><tbody ><tr >
+<td valign="bottom" >0.0%男性倾向,100.0%女性倾向
+</td></tr><tr >
+<td align="center" ><table cellpadding="0" cellspacing="0" style="background-color:#F6F9FF;text-align:center;font-size:12px;color:#323232;" border="0" width="165" ><tbody ><tr >
+<td bgcolor="#91cdff" width="0" height="9" >
+</td>
+<td bgcolor="#ffb1cd" width="165" height="9" >
+</td></tr></tbody></table>
+</td></tr><tr >
+<td align="left" >评点：明净雅致的语言让人为之倾倒，人生的感悟、生活情趣都融合在其中，自有一番细腻的心思在其间。
+</td></tr><tr >
+<td >[yodao](http://www.yodao.com/) | [博客男女](http://www.yodao.com/blogender/)
+</td></tr></tbody></table>
+</td></tr></tbody></table>

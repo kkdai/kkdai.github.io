@@ -1,0 +1,22 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2006-04-11 10:24:40+00:00
+slug: '%e4%b8%80%e4%ba%9bwcf%e7%9a%84%e8%a3%9c%e5%85%85%e8%b3%87%e6%96%99'
+title: 一些WCF的補充資料
+wordpress_id: 377
+categories:
+- NET程式設計
+---
+
+![](http://windowscommunication.net/collateral/imagevault/VistaButton.jpg)
+
+官方網頁:  
+[http://windowscommunication.net/](http://windowscommunication.net/)
+
+  1. [Windows Communication Foundation入门(Part One)](http://blog.joycode.com/wayfarer/archive/2006/04/05/74011.aspx)
+  2. [Windows Communication Foundation入门（Part Two）](http://blog.joycode.com/wayfarer/archive/2006/04/10/74266.aspx)
+
+等之後手邊輕鬆一點就來弄~~

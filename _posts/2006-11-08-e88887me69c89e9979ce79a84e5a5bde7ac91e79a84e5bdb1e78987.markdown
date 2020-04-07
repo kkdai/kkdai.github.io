@@ -1,0 +1,28 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2006-11-08 21:41:43+00:00
+slug: '%e8%88%87m%e6%9c%89%e9%97%9c%e7%9a%84%e5%a5%bd%e7%ac%91%e7%9a%84%e5%bd%b1%e7%89%87'
+title: 與m$有關的好笑的影片~~
+wordpress_id: 518
+categories:
+- 網路上好玩的事情
+---
+
+以下的影片都是由[Simply Patrick](http://baby.homeip.net/patrick/)那邊看來的
+
+**Windows 1.0**
+
+[youtube http://www.youtube.com/watch?v=W6YgZc5th6g]
+
+整部影片是在讓微軟的總裁[Steve Ballmer](http://www.microsoft.com/presspass/exec/steve/default.mspx) 介紹自己家的產品~ 不過有點令人懷疑倒是真的~~ 因為有點像電視購物的感覺~~
+
+[youtube http://www.youtube.com/watch?v=EUXnJraKM3k]
+
+這部影片呢~~ 我看了兩三次才看懂~~ 其實就是嘲笑許多軟體廠商對於產品包裝的搞笑~~ 
+
+利用不斷的說明~ 相容的系統~ 雜誌的介紹~ 不對增加的功能需求~  超過一夜的系統需求
+
+我想~ 沒搞過軟體的人~~ 還真是不知道怎麼弄~~~~

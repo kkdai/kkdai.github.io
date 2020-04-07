@@ -1,0 +1,52 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2009-03-17 23:51:02+00:00
+slug: links-for-2009-03-17
+title: links for 2009-03-17
+wordpress_id: 1037
+categories:
+- 未分類
+---
+
+  * 
+                
+
+[You can no longer access the CD drive or the DVD drive, or you receive an error message after you remove a CD recording program or a DVD recording program in Windows XP: "error code 31"](http://support.microsoft.com/default.aspx?scid=kb%3Ben-us%3B314060)
+
+
+                
+
+Since QA will using after B786 for beta next week.
+According #7, reassign back to Wayne Fu and mark it as fixed.
+
+QA will verify it on Beta testing.
+
+有時候移除一些燒錄軟體~  忽然光碟機會不見~~ 這原來是微軟的問題
+
+
+                
+
+(tags: [Vista](http://delicious.com/kkdai/Vista) [xp](http://delicious.com/kkdai/xp))
+
+
+            
+  * 
+                
+
+[Windows Performance Analysis Developer Center](http://msdn.microsoft.com/en-us/performance/default.aspx)
+
+
+                
+
+Windows Performance tool
+
+
+                
+
+(tags: [performance](http://delicious.com/kkdai/performance) [vista](http://delicious.com/kkdai/vista))
+
+
+            

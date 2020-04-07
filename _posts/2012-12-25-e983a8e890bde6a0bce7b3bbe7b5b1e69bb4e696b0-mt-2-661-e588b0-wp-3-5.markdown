@@ -1,0 +1,23 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2012-12-25 09:51:50+00:00
+slug: '%e9%83%a8%e8%90%bd%e6%a0%bc%e7%b3%bb%e7%b5%b1%e6%9b%b4%e6%96%b0-mt-2-661-%e5%88%b0-wp-3-5'
+title: 部落格系統更新 MT 2.661 到 WP 3.5
+wordpress_id: 1185
+categories:
+- WordPress學習心得
+- 柴米油鹽的東西
+---
+
+用了快十年的MT (Movable Type) 2.661，最近一直無法抵擋~ 廣告comment的攻擊。 由於MT3與MT4的系統資源實在是太高~ 加上的確WordPress的外掛真的是好用多了~ 與MT越來越式微的原因。 (參考[MR JAMIE : 為什麼WordPress 大受歡迎，_Movable Type_ 卻沒有](http://mrjamie.cc/2011/02/11/wordpress-movable-type/))
+
+ 
+
+今天早上決定把自己的部落格系統轉換過去~ 順便把Blogger上面 的備份網站[BlogE on Blogger](http://evan-bloge.blogspot.tw/)打開權限~ 作為異地備援部落格。
+
+ 
+
+接下來就是要把[SyntaxHighlighter](http://alexgorbatchev.com/SyntaxHighlighter/)弄過去應該就沒問題了~~~~

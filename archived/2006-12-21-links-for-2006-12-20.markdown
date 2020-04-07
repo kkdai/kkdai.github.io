@@ -1,0 +1,72 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2006-12-21 08:20:53+00:00
+slug: links-for-2006-12-20
+title: links for 2006-12-20
+wordpress_id: 548
+categories:
+- 每日網摘
+---
+
+
+	
+  * 
+		
+
+[A candid interview with Seagate's CEO - Nov. 30, 2006](http://money.cnn.com/2006/11/30/magazines/fortune/obrienseagate.fortune/index.htm?section=money_latest)
+
+
+		
+
+Seagate's CEO Bill Watkins談到Seagete的營運目標是：我們做的不是什麼偉大產品，只是幫助消費者買更多的垃圾（內容）和看A片
+
+
+		
+
+(tags: [funny](http://del.icio.us/kkdai/funny) [news](http://del.icio.us/kkdai/news))
+
+
+	
+
+	
+  * 
+		
+
+[Taiwan.CNET.com : 新聞專區 : 企業軟體 : 微軟WPF/E新計畫不只是視覺效果](http://taiwan.cnet.com/news/software/0,2000064574,20105330,00.htm)
+
+
+		
+
+微軟新的顯示技術 Windows Presentation Foundation/Everywhere
+
+
+		
+
+(tags: [news](http://del.icio.us/kkdai/news) [WPF](http://del.icio.us/kkdai/WPF))
+
+
+	
+
+	
+  * 
+		
+
+[我們此刻需要WPF嗎？-DotNet開發聖殿-新浪部落](http://blog.sina.com.tw/4907/article.php?pbgid=4907&entryid=128469)
+
+
+		
+
+換個角度來看WPF~~~
+
+
+		
+
+(tags: [news](http://del.icio.us/kkdai/news) [WPF](http://del.icio.us/kkdai/WPF))
+
+
+	
+
+

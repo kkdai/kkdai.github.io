@@ -1,0 +1,106 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2004-04-07 10:04:20+00:00
+slug: '%e6%88%91%e7%9a%84mt%e8%ae%8a%e6%88%90%e4%b8%89%e5%88%97'
+title: 我的mt變成三列
+wordpress_id: 71
+categories:
+- 關於MT的學習心得
+---
+
+![CSS 令人難懂得東西](http://www.evanlin.com/blog/archives/0407/css-g.gif)
+
+
+
+最近看到[學弟的Blog](http://longhow.blogdns.net/)變成了三列的形式，對於功能眾多的我來說，三列的表達方式似乎是最好的。所以我也學習他一樣去修改CSS來貼上自己的StyleSheet，大家也可以[下載這個CSS檔案](http://www.evanlin.com/blog/styles-site.css)，然後修改成自己的顏色，放入自己的MT之中。
+
+
+
+
+
+不過現在問題來了，就如同各位看到的一樣，這個CSS似乎沒有對齊。因為我使用的是絕對定址(position:absolute)的方式，所以在不同的顯示模式下，跑出的樣子也會不太一樣。
+
+
+<!-- more -->
+
+
+後來我用相對位置（position:relation)但是卻無法正常的顯示，真是怪怪的，那個CSS強的大哥好好告訴我，以下這幾行為何出錯呢？
+
+
+
+
+
+
+
+
+
+
+　
+
+
+
+
+
+
+
+
+
+
+　
+
+
+
+
+
+
+
+
+
+
+　
+
+
+
+
+
+
+
+
+
+
+
+	#content {
+	                position:relative;
+	                width:40%;
+               	                z-index: 3;
+	                padding: 10px;
+			background:#FFF;
+	                margin-right:30%;
+	                margin-left: 30%;
+	                margin-bottom:20px;
+		}
+
+	#links {
+		z-index:1;
+		position:relative;
+		top:   120px;
+		margin-left: 70%;
+	        width: 25%;
+		background:#999;
+		color: #FFE478;
+		text-align:center;
+		}
+
+	#llinks {
+		z-index:2;
+		position:absolute;
+		top:   120px;
+		left: 5%;
+		width: 25%;
+		background:#999;
+		color: #DAA520;
+		text-align:center;
+		}

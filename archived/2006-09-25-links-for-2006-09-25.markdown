@@ -1,0 +1,53 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2006-09-25 16:25:52+00:00
+slug: links-for-2006-09-25
+title: links for 2006-09-25
+wordpress_id: 488
+categories:
+- 每日網摘
+---
+
+
+	
+  * 
+		
+
+[DirectShow Filter调试方法　文章查看 【关注VC MFC C# .NET Windows 软件开发技术 软件工程 项目管理的开发人员个人专栏】](http://www.vchelp.net/itbookreview/view_paper.asp?paper_id=1601)
+
+
+		
+
+陸其明大哥的好文章~~ 如何利用GraphEdit 來debug 你所建立的filter
+
+
+		
+
+(tags: [Filter](http://del.icio.us/kkdai/Filter) [DirectX](http://del.icio.us/kkdai/DirectX))
+
+
+	
+
+	
+  * 
+		
+
+[陆其明 - 逐日: [CSDN转帖]手下的人就是不干活怎么办？](http://jemylu.spaces.live.com/blog/cns!E1C9F572B6A2D19!487.entry)
+
+
+		
+
+轉載來的一篇文章~~ 談到蠻多基本的管理概念~~ 值得好好學學
+
+
+		
+
+(tags: [manage](http://del.icio.us/kkdai/manage))
+
+
+	
+
+

@@ -1,0 +1,30 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2005-01-17 18:09:36+00:00
+slug: 818%e5%85%a5%e6%89%8b
+title: 818入手
+wordpress_id: 186
+categories:
+- PocketPC相關軟體
+---
+
+[![](http://www.sogi.com.tw/img_mobile/200/818.jpg)](http://www.sogi.com.tw/newsogi/sogiIndex.asp?pro_no=1307)
+
+暨上次去敗了四張CD之後，由於同事間在討論PPC(PocketPC) Phone的性能與外觀，自然而然講到了[Dopod](http://www.dopod.com.tw/index.aspx)的最新[PocketPC手機818](http://www.dopod.com.tw/product/pro.aspx?Product_Class_id=4&Product_id=5)。而我自然而然又去敗了這支回來，我也為了這隻手機開始學習(PocketPC)系統的一些操作習慣。
+
+以下有幾個使用818得到的心得，要跟大家分享:
+
+  1. 在PocketPC中，所有安裝程式需要透過ActiveSync去操作。不可以直接將檔案COPY至PDA中就執行安裝程式。
+  2. 818的相機，基本上只是可以勉強接受的等級，比起Sharp的相機(Sharp的30萬像素相機(GX-21、GX-31)，是我看過30萬手機相機中，拍攝效果最佳的)，而818的相機，只是還可使用罷了。
+  3. 818的外觀與手感真是有夠棒，大小剛好、整體操作又流暢，算是不錯的。
+  4. 818裡針對各家電信的"自動配置"功能，對於台灣大哥大的GPRS配置是錯誤的，正確的使用者名稱應該為: wap 密碼應該為:wap，網域名稱: 010.001.001.002。
+  5. 如果要將軟體安裝在擴充卡之中，在安裝過程中，ActiveSync會抓不到擴充卡大小而說無法使用，此時還是可以安裝。(不然就得安裝在小小的主記憶體)
+
+**網路相關資源:**
+
+  * [![Sogi! 手機王](http://www.sogi.com.tw/images/logo2.gif)](http://www.sogi.com.tw/index.asp)
+  * [![Mobile01 - 敗家前先來的地方](http://attach.mobile01.com/image/mobile01ver2.gif)](http://www.mobile01.com/)
+  * [![PocketGear.com](http://trials.pocketgear.com/Product_images/8/87/pglogo225right.gif)](http://www.pocketgear.com/index.asp) 

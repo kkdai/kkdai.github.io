@@ -1,0 +1,35 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2004-07-30 19:16:09+00:00
+slug: '%e6%b8%ac%e8%a9%a6%e4%bd%a0%e9%98%b2%e7%81%ab%e7%89%86%e7%9a%84%e5%ae%89%e5%85%a8%e5%ba%a6'
+title: 測試你防火牆的安全度
+wordpress_id: 129
+categories:
+- 網路上好玩的事情
+---
+
+<img height="190" alt="Network Security - Keeping things under lock and key" src="http://www.pneservices.com/graphics/securitylock.jpg" span=""
+
+在[摩尼社區論壇看到的](http://bbs.moninet.com.tw/board/topic.cgi?forum=9&topic=1284&show=0)算是不錯的網址，給大家分享一下
+
+線上測試你家防火牆的能耐  
+  
+是一個國外線上測試 FireWall 的網站, 測試電腦內或防火牆中 1500 多個對外連接埠(port) 是否安全及網路隱密性等問題. 作為修正防火牆設定的重要參考.  
+  
+網頁開始後, 按下網頁中  " Proceed"  
+  
+再分別選擇測試項目:  
+  
+**File sharing進行測試  :**  別人是否可以透過網路瀏覽你共享的檔案;   
+**Common Ports 進行測試 : ** 駭客透過特定的連接埠入侵你的電腦;   
+**All Service Ports 進行測試  :** 測試所有可能的1056個連接埠;   
+**Messenger Spam 進行測試 :** 測試有沒有不必要的跳出視窗;   
+  
+網址如下  
+  
+[https://grc.com/x/ne.dll?bh0bkyd2](https://grc.com/x/ne.dll?bh0bkyd2)  
+  
+

@@ -1,0 +1,25 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2006-06-26 08:31:02+00:00
+slug: ppc%e4%b8%8a%e9%9d%a2%e5%a5%bd%e7%94%a8%e7%9a%84%e6%96%b0%e8%81%9e%e9%96%b1%e8%ae%80%e5%99%a8egress
+title: PPC上面好用的新聞閱讀器Egress
+wordpress_id: 423
+categories:
+- PocketPC相關軟體
+---
+
+[![](http://www.garishkernels.net/images/egress/Animation.gif)](http://www.garishkernels.net/egress.html)  
+(圖片來源: [Egress](http://www.garishkernels.net/egress.html))
+
+塞車的時候，總是喜歡拿我的818出來四處把玩，雖然也沒灌什麼遊戲(只有一個四川~~ )很多時候，也陪我度過很多時候的塞車。不過以後如果可以看新聞的一些頭條當然是更棒啦~~ [Egress](http://www.garishkernels.net/egress.html) 雖然要收費~ 但是好東西總是需要你的支持~~~ 
+
+  * 支援中文的新聞閱讀~~
+  * 可以在TODAY上面顯示~~
+  * [教學文章一(阿祥的網路筆記本)](http://www.axiang.idv.tw/MyBlog/index.php/index.php?p=78)
+  * [教學文章二(醫生日記)](http://macao_surgery.mysinablog.com/index.php?op=ViewArticle&articleId=185177)
+  * [官方網站](http://www.garishkernels.net/egress.html)
+  * [RSS YAHOO~~(雅虎、奇摩新聞)](http://tw.news.yahoo.com/rss/index.html)
+  * [RSS YAM~~    (蕃薯藤新聞)](http://news.yam.com/rss_1.html)

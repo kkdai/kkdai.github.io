@@ -1,0 +1,106 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2004-03-15 16:00:37+00:00
+slug: '%e6%8f%9b%e4%ba%86%e6%96%b0%e7%9a%84%e7%b6%b2%e5%9d%80-domain-name'
+title: 換了新的網址 Domain Name
+wordpress_id: 60
+categories:
+- 我的生活
+---
+
+
+
+
+
+
+
+
+![你也註冊一個自己的網址吧](http://www.evanlin.com/blog/archives/0316/Domainname.gif)之前網址：http://evan.scutec.net/是從學校時代帶領的社團時候去買的網址，
+
+
+但是由於是跟[國內的廠商](http://taipeinic.net)買的，一年要950塊台幣
+
+
+
+
+所以學弟們決定要將他換一家廠商
+
+
+
+
+[GF](http://www.evanlin.com/janifor)於是建議我說，不如弄個自己的Domain
+Name
+
+
+
+
+也不用擔心每次網址要更換的問題
+
+
+
+
+於是我找了幾家的註冊公司，以下列出簡單的幾家
+
+
+
+
+
+  <table cellpadding="0" cellspacing="0" border="0" bgcolor="#000000" width="38%" >
+    <tr >
+      
+<td width="100%" >
+        
+
+
+        幾個DN的服務  
+
+          
+
+        http://register.com  
+
+        dn for $19.5/per year(附贈滿多服務的）  
+
+          
+
+        http://mydomain.com  
+
+        dn for $8.5/per year(nothing without DNS forwarding)  
+
+          
+
+        http://www.directnic.com  
+
+        dn for $15/per year(DNS and 20 free HD)  
+
+      
+</td>
+    </tr>
+  </table>
+  
+
+而我自己由於自己有架設主機，所以選擇了最便宜服務
+
+
+  
+
+[http://mudomain.com](http://mudomain.com) 
+  一年才＄8.5，不到300台幣
+
+
+  
+
+不過這家廠商一直讓我詬病的是，DNS更新的相當慢，
+
+
+  
+
+也就是當你購買這個網址服務，你可能需要等快24H才會更新唷
+
+
+  
+
+不過～～真的很便宜～～ 跟大家報個便宜吧
+

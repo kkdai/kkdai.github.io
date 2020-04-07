@@ -1,0 +1,52 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2009-01-13 00:00:39+00:00
+slug: links-for-2009-01-12
+title: links for 2009-01-12
+wordpress_id: 1013
+categories:
+- 未分類
+---
+
+  * 
+                
+
+[最方便的無名搬家到Blogger方式 (可搬留言，無一天五十篇限制)](http://gaagaaga.blogspot.com/2008/09/blogger.html)
+
+
+                
+
+最方便的無名搬家到Blogger方式 (可搬留言，無一天五十篇限制)
+喵的失眠才有這些程式進度....語無輪次的長話短說一下....
+
+很久很久以前，因為無名小站太丁丁，導致很多鄉民都想要從無名小站逃離出來。gslin大神製作的無名匯出工具+xdite大神協助架設的Blogger匯入工具 ，應該是最有名的搬家方案，造福了許多鄉民們。但這套工具卻有兩大限制：不能夠搬留言、一天只能匯入五十篇
+
+Blogtrans是我一年前左右開發的一個Blog搬家工具，主要功能就是從無名小站搬家到Blogger，過去的開發記錄在我舊的Blog中。其實Blogtrans目前可以做到：
+
+
+                
+
+(tags: [blogger](http://delicious.com/kkdai/blogger) [movabletype](http://delicious.com/kkdai/movabletype) [Movable](http://delicious.com/kkdai/Movable) [blog](http://delicious.com/kkdai/blog))
+
+
+            
+  * 
+                
+
+[NBA 2K9%u7C21%u9AD4%u4E2D%u6587%u6E2C%u8A66%u7248%u767C%u4F48(1/12%u66F4%u65B0BETA3) @ Where Amazing Happens NBA 2K9 :: %u75DE%u5BA2%u90A6 PIXNET ::](http://labanchen.pixnet.net/blog/post/25205913)
+
+
+                
+
+NBA 2K9 簡體中文漢化版
+
+
+                
+
+(tags: [2k9](http://delicious.com/kkdai/2k9) [nba](http://delicious.com/kkdai/nba) [game](http://delicious.com/kkdai/game))
+
+
+            

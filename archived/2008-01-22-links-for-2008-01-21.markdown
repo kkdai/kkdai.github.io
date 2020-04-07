@@ -1,0 +1,73 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2008-01-22 00:15:09+00:00
+slug: links-for-2008-01-21
+title: links for 2008-01-21
+wordpress_id: 803
+categories:
+- 未分類
+---
+
+
+	
+  * 
+		
+
+[DirectX D3DX DLLs](http://www.toymaker.info/Games/html/d3dx_dlls.html)
+
+
+		
+
+查詢DirectX 所有相關DLL與版本的搭配~  可以根據這張列表來查
+
+
+		
+
+(tags: [DirectX](http://del.icio.us/kkdai/DirectX) [DOWNLOAD](http://del.icio.us/kkdai/DOWNLOAD) [Windows](http://del.icio.us/kkdai/Windows))
+
+
+	
+
+	
+  * 
+		
+
+[Download details: DirectX December 2005 - Redistributable for Software Developers](http://www.microsoft.com/downloads/details.aspx?FamilyID=3F2828FA-0E3C-4837-AFC0-6C67DCAA54BF&displaylang=en)
+
+
+		
+
+比較舊版的DirectX 安裝版本
+
+
+		
+
+(tags: [DirectX](http://del.icio.us/kkdai/DirectX))
+
+
+	
+
+	
+  * 
+		
+
+[ダウンロードの詳細 : DirectX Redist (April 2007)](http://www.microsoft.com/downloads/details.aspx?displaylang=ja&FamilyID=d2e2cae1-6aef-4a40-bd00-f0fb2a71e99f)
+
+
+		
+
+完全安裝DirectX 最新版本~~ 如果沒有d3dx9_29.dll 至少要裝到這一版
+
+
+		
+
+(tags: [directx](http://del.icio.us/kkdai/directx))
+
+
+	
+
+
+

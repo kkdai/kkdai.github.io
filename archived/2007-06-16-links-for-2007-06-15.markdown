@@ -1,0 +1,110 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2007-06-16 08:29:10+00:00
+slug: links-for-2007-06-15
+title: links for 2007-06-15
+wordpress_id: 676
+categories:
+- 每日網摘
+---
+
+
+	
+  * 
+		
+
+[Bill Crow's HD Photo Blog : Introducing HD Photo](http://blogs.msdn.com/billcrow/archive/2006/11/17/introducing-hd-photo.aspx)
+
+
+		
+
+蠻多ＨＤ　ＰＨＯＴＯ的資料可以好好參考～～～
+
+
+		
+
+(tags: [Microsoft](http://del.icio.us/kkdai/Microsoft) [photo](http://del.icio.us/kkdai/photo) [windows](http://del.icio.us/kkdai/windows) [media](http://del.icio.us/kkdai/media) [HDPhoto](http://del.icio.us/kkdai/HDPhoto))
+
+
+	
+
+	
+  * 
+		
+
+[Download details: HD Photo Feature Spec 1.0](http://www.microsoft.com/downloads/details.aspx?FamilyID=6fe1ebac-c7b3-4768-90bc-13d330d5ec02&DisplayLang=en)
+
+
+		
+
+SPEC of Windows  HD Photo Feature
+
+
+		
+
+(tags: [HDphoto](http://del.icio.us/kkdai/HDphoto) [microsoft](http://del.icio.us/kkdai/microsoft))
+
+
+	
+
+	
+  * 
+		
+
+[很白目的快打炫風 - 歡樂搞笑影音 - 優仕網共產檔](http://share.youthwant.com.tw/sh.php?do=D&id=13036046)
+
+
+		
+
+很確切的配音～～但是好可憐的小孩
+
+
+		
+
+(tags: [kuso](http://del.icio.us/kkdai/kuso) [street](http://del.icio.us/kkdai/street) [fighter](http://del.icio.us/kkdai/fighter))
+
+
+	
+
+	
+  * 
+		
+
+[Roodo! ─ 樂多拍賣](http://auction.roodo.com/item/all/2800569)
+
+
+		
+
+WIIC 的拍賣~~還有比照圖表～～～
+
+
+		
+
+(tags: [WIIKEY](http://del.icio.us/kkdai/WIIKEY) [WIIC](http://del.icio.us/kkdai/WIIC))
+
+
+	
+
+	
+  * 
+		
+
+[Wii 玩家俱樂部 :: 觀看文章 - [Wii改機] WIIC 升級程式](http://www.wii.club.tw/phpbb/viewtopic.php?t=1311)
+
+
+		
+
+Wi-IC 的最新更新～～.提升光驅運行倍數爲6X，兼容質量更差的組裝光盤。 .修正GC遊戲運行兼容度，以及部分GC音效問題。 .修正WII遊戲運行兼容度。完美兼容火影忍者、使命召喚3、足球2007、大
+
+
+		
+
+(tags: [WIIKEY](http://del.icio.us/kkdai/WIIKEY) [WIIC](http://del.icio.us/kkdai/WIIC) [WII](http://del.icio.us/kkdai/WII))
+
+
+	
+
+

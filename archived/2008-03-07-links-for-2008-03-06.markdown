@@ -1,0 +1,191 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2008-03-07 00:17:04+00:00
+slug: links-for-2008-03-06
+title: links for 2008-03-06
+wordpress_id: 825
+categories:
+- 未分類
+---
+
+
+	
+  * 
+		
+
+[馬語錄](http://myangelsays.com/blog/)
+
+
+		
+
+追蹤英九的足跡 — 徹底解構馬英九
+
+
+		
+
+(tags: [blog](http://del.icio.us/kkdai/blog) [funny](http://del.icio.us/kkdai/funny) [kuso](http://del.icio.us/kkdai/kuso))
+
+
+	
+
+	
+  * 
+		
+
+[司林巴地曝露格:用MSN把妹的危機 - 樂多日誌](http://blog.roodo.com/rasheed/archives/5618343.html)
+
+
+		
+
+現在很流行用MSN把妹，因為搭訕時要MSN比要電話還容易，也比較不會讓女生有戒心，而且聊天也比較不會有壓力，也不會緊張，可以發揮比較正常的實力。
+
+
+	
+
+	
+  * 
+		
+
+[CodeProject: Versioning Controlled Build. Free source code and programming help](http://www.codeproject.com/KB/macros/versioningcontrolledbuild.aspx#UsingTheDemoProject)
+
+
+		
+
+CodeProject 上相當有用幫助你控制版本用的程式~
+
+
+	
+
+	
+  * 
+		
+
+[白木怡言](http://www.yubou.tw/Content.asp?iblogid=32)
+
+
+		
+
+好文，曾經/想要/幻想/正在創業的人都應該看一看
+
+
+		
+
+(tags: [blog](http://del.icio.us/kkdai/blog))
+
+
+	
+
+	
+  * 
+		
+
+[YouTube - 2008frankwin的頻道](http://tw.youtube.com/user/2008frankwin)
+
+
+		
+
+謝長廷無碼自拍
+
+
+	
+
+	
+  * 
+		
+
+[Yahoo BBAuth 結合 act_as_authenticated (VeryXD)](http://sites.google.com/a/veryxd.com/veryxd/Home/Yahoo-BBAuth-%E7%B5%90%E5%90%88-act-as-authenicated)
+
+
+		
+
+基本上，Yahoo! BBAuth 就像是 Google 先前發表的 Google Auth 一樣，提供了一個認證的機制，而且更進一步地可以在認證成功之後取得該使用者存放在 Yahoo! 服務裡面的資料，例如說照片等等
+
+
+		
+
+(tags: [yahoo](http://del.icio.us/kkdai/yahoo))
+
+
+	
+
+	
+  * 
+		
+
+[SlideShare (share powerpoint presentations online, slideshows, slide shows, download presentations, widgets, MySpace codes)](http://www.slideshare.net/)
+
+
+		
+
+可以分享ppt與線上觀看的網站~ 算是挺方便使用的web slide viewer
+
+
+		
+
+(tags: [freeware](http://del.icio.us/kkdai/freeware) [DOWNLOAD](http://del.icio.us/kkdai/DOWNLOAD) [webdesign](http://del.icio.us/kkdai/webdesign) [web](http://del.icio.us/kkdai/web) [web2.0](http://del.icio.us/kkdai/web2.0))
+
+
+	
+
+	
+  * 
+		
+
+[Nelson 的遊樂場 - [分享] 三款常見的免費檔案複製工具的比較 :: PIXNET BLOG ::](http://blog.pixnet.net/Nelson/post/4812820)
+
+
+		
+
+檔案複製工具~ 不僅支援command line 還支援~續傳~  值得研究一下~~~~
+
+
+		
+
+(tags: [Software](http://del.icio.us/kkdai/Software) [freeware](http://del.icio.us/kkdai/freeware) [tools](http://del.icio.us/kkdai/tools))
+
+
+	
+
+	
+  * 
+		
+
+[KillCopy](http://killprog.narod.ru/killcopye.html)
+
+
+		
+
+好用的檔案複製軟體 KillCopy 還支援續傳~ 真是不錯~~~
+
+
+		
+
+(tags: [freeware](http://del.icio.us/kkdai/freeware) [Software](http://del.icio.us/kkdai/Software) [tools](http://del.icio.us/kkdai/tools) [free](http://del.icio.us/kkdai/free))
+
+
+	
+
+	
+  * 
+		
+
+[Microsoft Office Binary (doc, xls, ppt) File Formats](http://www.microsoft.com/interop/docs/OfficeBinaryFormats.mspx)
+
+
+		
+
+想查詢OFFICE 的檔案格式? 微軟已經把他公開了~來看看熱騰騰的ＦＩＬＥ　ＳＰＥＣ
+
+
+		
+
+(tags: [blog](http://del.icio.us/kkdai/blog) [documentation](http://del.icio.us/kkdai/documentation) [EXCEL](http://del.icio.us/kkdai/EXCEL) [microsoft](http://del.icio.us/kkdai/microsoft) [Office](http://del.icio.us/kkdai/Office) [opensource](http://del.icio.us/kkdai/opensource) [programming](http://del.icio.us/kkdai/programming) [specification](http://del.icio.us/kkdai/specification))
+
+
+	
+
+
+

@@ -1,0 +1,38 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2004-11-07 03:46:54+00:00
+slug: '%e8%83%96%e5%ad%90%e4%b9%8b%e6%92%9e%e8%a1%ab%e9%b4%bf%e7%b1%a0%e5%ae%9a%e7%90%86'
+title: 胖子之撞衫鴿籠定理
+wordpress_id: 157
+categories:
+- 我的生活
+---
+
+![](http://images.google.com.tw/images?q=tbn:uaj4aHZwxCQJ:china.pigeonnet.com.tw/images/Cosmos_Products/p007.jpg)
+
+昨天跟女友去買衣服, 在百貨公司內想找一件好看並且可以搭配襯衫的外衣, 卻一直找不到比較好看的款式, 這時候我女友忽然問我一個問題(以下 J為我女友, E就是我)
+
+E:男生衣服的款式真是老套說....看來看去就那麼幾種~~~
+
+J:對阿!  這一些款式你好像都有了, 而且你買的衣服都會跟人家撞衫說~~~
+
+E:你知道我為什麼常跟別人撞衫嗎??
+
+J:為什麼~~~??
+
+E:這種扯到很深的數學原理了~~ 鴿籠定理([http://episte.math.ntu.edu.tw/articles/mm/mm_02_4_07/](http://episte.math.ntu.edu.tw/articles/mm/mm_02_4_07/))
+
+J:什麼是鴿籠定理~~??
+
+E:如果一個養鴿子的地方, 有11隻鴿子, 卻只有10個歌籠, 那要裝的下這些鴿子, 至少有兩隻鴿子住在同一個籠子, 對吧?
+
+J:那跟撞衫有啥關係??
+
+E:假設全世界的胖子的衣服種類有k種, 因為台灣胖子實在太多了~那麼全世界的胖子一定超過K個(假設是k+i) , 那麼~~~ 一定有兩個胖子穿一樣的衣服阿..... @__@"""
+
+離散數學老師~~~ 原諒我  ==________==""
+
+P.S.[詳細鴿籠定理請看](http://episte.math.ntu.edu.tw/articles/mm/mm_02_4_07/)

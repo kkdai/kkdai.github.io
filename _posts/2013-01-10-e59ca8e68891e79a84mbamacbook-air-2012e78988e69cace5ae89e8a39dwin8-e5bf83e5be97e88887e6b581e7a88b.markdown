@@ -1,0 +1,134 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2013-01-10 18:12:19+00:00
+slug: '%e5%9c%a8%e6%88%91%e7%9a%84mbamacbook-air-2012%e7%89%88%e6%9c%ac%e5%ae%89%e8%a3%9dwin8-%e5%bf%83%e5%be%97%e8%88%87%e6%b5%81%e7%a8%8b'
+title: 在我的MBA(MacBook Air) 2012版本安裝Win8~~ 心得與流程
+wordpress_id: 1214
+categories:
+- 學習文件
+- 柴米油鹽的東西
+---
+
+由於覺得公司的筆電越來越慢~加上我現在幾乎已經完全習慣了MBA的鍵盤配置與整體速度  
+(IVB with 8G RAM 實在很順暢)  
+所以打算在筆電上灌個Win8~順便可以說服老婆要買新筆電應該買MAC  
+以下的一些步驟就是我灌Win8的一些心得與步驟紀錄~
+
+
+
+
+首先最大的問題是出在原來的筆電剩餘容量~  
+由於我是使用MBA 13吋搭配128G的SSD硬碟~所以原來APPLE使用的空間已經剩下約30左右
+
+
+
+
+好吧~來開始清清看~~~  首先先MAC上面的DropBox先關閉  
+然後再把iclound也關閉(原來這些網路服務都是浪費我的硬碟阿)  
+這樣也節省了 2XG
+
+
+
+
+接下來~   但是這樣還是有2XG不見了~~  仔細查看過後發現原來是在time machine裡面有浪費掉了  
+關閉掉time machine之後~  空間就大概足夠了
+
+
+
+
+灌Win8 跟VS2012在 MBA 2012 需求:
+
+
+
+
+
+
+  * 硬碟剩餘至少要剩餘20G (基本上建議35G 如果要灌VS2012的話)
+
+
+  * 一台USB光碟機搭配正版Win8光碟 （usb要連著）
+
+
+  * 一個小的USB硬碟主要是放一些Apple驅動程式（usb要連著）
+
+
+
+
+**安裝流程如下**:
+
+
+
+
+
+
+  * 啟動Boot Camp
+
+
+  * 這裡有三個選項~
+
+
+
+    * 製作Win7或以上開機光碟 --> (你有光碟~所以不用選取)
+
+
+    * 從Apple 下載最新的軟體（要點）
+
+
+    *  安裝Win7或是以上的版本（要點）
+
+
+
+  * 之後就會進入～分割磁區的畫面～記得最少放個30~35G給 Win8 不然 Win8 X64基本也要花費20G
+
+
+  * 切割完就會開始下載Apple的驅動程式到你的usb去～依據網路速度～大概要花半個小時左右
+
+
+  * 接下來就會重開機～  正常而就會到光碟機的安裝畫面
+
+
+
+    * 注意： 如果再這時候出現 找不到開機磁區～代表光碟機找不到～就需要壓住 "Option" 重開機來選取Mac OS
+
+
+    * 之後可以到偏好設定->啟動磁碟  去更改啟動硬碟順序
+
+
+
+  * 在安裝Win8的時候要記得把Mac幫你切割好的BootCamp 分割去格式化
+
+
+  * 開始安裝～  完成後再放入usb去點擊裡面的驅動程式
+
+
+  * 安裝完後記得去Win8右下角去啟動BootCamp的控制台～ 
+
+
+  * 不過我有碰到控制台無法正常啟動～ 請到這個[鏈結去](http://blog.lansea-chu.com/index.php/archives/1108)下載檔案來解決～不然觸控版沒有右鍵可以使用
+
+
+
+
+**參考網站**:
+
+
+
+
+
+
+  * [http://www.umpcfever.com/news/?postid=5150](http://blog.lansea-chu.com/index.php/archives/1108)  
+
+
+
+  * [http://blog.lansea-chu.com/index.php/archives/1108](http://blog.lansea-chu.com/index.php/archives/1108)
+
+
+  * [http://ipluto.wordpress.com/2009/08/19/bootcamp-windows/](http://ipluto.wordpress.com/2009/08/19/bootcamp-windows/)
+
+
+  * [http://iphone4.tw/forums/showthread.php?t=182444](http://iphone4.tw/forums/showthread.php?t=182444)
+
+

@@ -1,0 +1,180 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2004-07-21 14:29:15+00:00
+slug: '%e5%a5%bd%e7%94%a8%e7%9a%84css%e7%9b%b8%e6%a1%86'
+title: 好用的CSS相框
+wordpress_id: 122
+categories:
+- 關於MT的學習心得
+---
+
+![](http://www.evanlin.com/blog/archives/0721/panda2.jpg)
+
+熊貓的睡姿很正點吧  
+**~~^____^~~~  
+photo by 由Email上看到的**
+
+
+
+
+
+
+　
+
+
+
+
+　
+
+
+
+
+　
+
+
+
+
+　
+
+
+
+
+　
+
+
+
+
+　
+
+
+
+
+　
+
+
+
+
+　
+
+
+
+
+　
+
+
+
+
+　
+
+
+
+
+　
+
+
+
+
+　
+
+
+
+
+　
+
+
+
+
+　
+
+
+
+
+　
+
+
+
+
+　
+
+
+
+
+　
+
+
+
+
+　
+
+
+
+
+　
+
+
+
+
+　
+
+
+
+
+　
+
+
+
+
+　
+
+
+
+
+　
+
+
+
+
+　
+
+
+<!-- more -->
+
+
+
+  
+  
+
+文字來自於[『酋長部落格』](http://www.chieftain.idv.tw/blog/)  
+從[RoyBoy](http://roy.nicetypo.com/nt/roylee.nsf/ContentBypermaLink/8C74133EB6343FAA48256EA100516ECC)"那裏學來的。
+
+語法如下:
+
+
+<blockquote>
+  
+> 
+> <div style="width:232px;padding:10px 10px
+  20px 10px; border-width:1px 2px 2px 1px; border-style:solid; border-color:black;
+  background:white;float:right;"><img src="圖片路徑"
+  style="border:1px solid #999999" /><p style="margin:4px
+  0; font:7pt/180%
+  verdana;letter-spacing:1px;color:#999999;text-align:right">照片描述<br><b>照片日期<br>photo
+  by ???</b></p></div>
+> 
+> 
+</blockquote>
+
+
+
+
+  
+
+分別修改紅字部份的width:為圖片的寬度並+20，加入圖片路徑及照片描述/日期/名稱後即可!  
+
+
+
+
+

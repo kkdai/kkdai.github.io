@@ -1,0 +1,110 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2007-05-31 08:25:11+00:00
+slug: links-for-2007-05-30
+title: links for 2007-05-30
+wordpress_id: 660
+categories:
+- 未分類
+---
+
+
+	
+  * 
+		
+
+[Xexex's Java 和其他二三事](http://www.javaworld.com.tw/roller/page/ingramchen?entry=2007_5_25_SimplePostgreSQLBackup)
+
+
+		
+
+Simple PostgreSQL Backup 的一些筆記～～　寫的相當好
+
+
+		
+
+(tags: [PostgreSQL](http://del.icio.us/kkdai/PostgreSQL) [Backup](http://del.icio.us/kkdai/Backup) [linux](http://del.icio.us/kkdai/linux) [howto](http://del.icio.us/kkdai/howto))
+
+
+	
+
+	
+  * 
+		
+
+[syntaxhighlighter - Google Code](http://code.google.com/p/syntaxhighlighter/)
+
+
+		
+
+可以放在ＢＬＯＧ上面去顯示程式碼的工具～～　會根據不同程式碼的特性～　去　hight light 你的程式碼
+
+
+		
+
+(tags: [GOOGLE](http://del.icio.us/kkdai/GOOGLE) [BLOG](http://del.icio.us/kkdai/BLOG) [syntaxhighlighter](http://del.icio.us/kkdai/syntaxhighlighter))
+
+
+	
+
+	
+  * 
+		
+
+[ShiningRay @ Blogger: dp.SyntaxHighlighter代码高亮](http://shiningr.blogspot.com/2006/10/dpsyntaxhighlighter.html)
+
+
+		
+
+SyntaxHighlighter 的安裝心得～～　與在blogger 上使用的方式～～
+
+
+		
+
+(tags: [SyntaxHighlighter](http://del.icio.us/kkdai/SyntaxHighlighter) [blogger](http://del.icio.us/kkdai/blogger) [google](http://del.icio.us/kkdai/google))
+
+
+	
+
+	
+  * 
+		
+
+[信用卡繳所得稅？比利網教你！ - 信用卡比利網 卡神訓練班](http://www.billy.com.tw/finance_article.php?permalink=2286)
+
+
+		
+
+刷卡繳稅要Ａ好康～～～　這個網站介紹的真是清楚～～～～
+
+
+		
+
+(tags: [tax](http://del.icio.us/kkdai/tax) [creditcard](http://del.icio.us/kkdai/creditcard))
+
+
+	
+
+	
+  * 
+		
+
+[信用卡繳房屋稅超級比一比！ - 信用卡比利網 卡神訓練班](http://www.billy.com.tw/finance_article.php?permalink=3818)
+
+
+		
+
+刷卡繳房屋稅～～　Ａ好康
+
+
+		
+
+(tags: [tax](http://del.icio.us/kkdai/tax) [信用卡](http://del.icio.us/kkdai/信用卡))
+
+
+	
+
+

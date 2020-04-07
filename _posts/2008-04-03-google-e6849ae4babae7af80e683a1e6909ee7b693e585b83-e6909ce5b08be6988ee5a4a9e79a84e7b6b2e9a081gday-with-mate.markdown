@@ -1,0 +1,23 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2008-04-03 03:24:51+00:00
+slug: google-%e6%84%9a%e4%ba%ba%e7%af%80%e6%83%a1%e6%90%9e%e7%b6%93%e5%85%b83-%e6%90%9c%e5%b0%8b%e6%98%8e%e5%a4%a9%e7%9a%84%e7%b6%b2%e9%a0%81gday-with-mate
+title: Google 愚人節惡搞經典(3) — 搜尋明天的網頁(gDay™ with MATE™)
+wordpress_id: 841
+categories:
+- 關於Gmail
+- 不惡搞~ 怎麼行
+---
+
+[![gday_logo.gif](http://farm3.static.flickr.com/2211/2382755217_c1a10c78b5.jpg)](http://www.flickr.com/photos/27643002@N00/2382755217/)
+
+[![googleFunny3.JPG](http://farm3.static.flickr.com/2402/2383586354_3c0ced9757.jpg)](http://www.flickr.com/photos/27643002@N00/2383586354/)
+
+[http://www.google.com.au/intl/en/gday/index.html](http://www.google.com.au/intl/en/gday/index.html)
+
+第三個惡搞經典~~ 當然是_one day in advance_的未來搜尋，這個功能更是無比的屌。你可以查詢明天的網頁，真是太棒了。只要讓我尋找5個小時後的大樂透首頁就好了，我就可以去買海島了~~~ 哈哈
+
+而且gDay™ 這個商標也真的很有趣~ 哈哈~ [FAQ更酷](http://www.google.com.au/intl/en/gday/faq.html)~~

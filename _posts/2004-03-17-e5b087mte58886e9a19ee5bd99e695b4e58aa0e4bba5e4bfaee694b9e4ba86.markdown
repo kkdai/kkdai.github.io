@@ -1,0 +1,167 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2004-03-17 14:54:05+00:00
+slug: '%e5%b0%87mt%e5%88%86%e9%a1%9e%e5%bd%99%e6%95%b4%e5%8a%a0%e4%bb%a5%e4%bf%ae%e6%94%b9%e4%ba%86'
+title: 將MT[分類彙整]加以修改了
+wordpress_id: 62
+categories:
+- 關於MT的學習心得
+---
+
+![利用摘要出來的彙整](http://www.evanlin.com/blog/archives/0317/0317-1.jpg)最近再修改彙整，使得彙整方式變得比較人性化，因為大家在MT使用彙整(Archive)的時候，不論你是使用日期彙整（Date
+Archive)、還是分類彙整(Category Archive)。彙整在顯示的方面，原本是採取顯示全部的文章、使得在觀看的角度上變的非常的不方便，這樣、不是很不人性化嗎？所以我又參考[Jedi大大模版](http://jedi.z6i.org/blog/)讓整個在彙整模版上，變得比較有人性化～～ 
+
+
+　
+
+
+
+
+　
+
+
+
+
+　
+
+
+
+
+　
+
+
+
+
+　
+
+
+
+
+　
+<!-- more -->
+
+
+請將以下的程式碼，加入您的[模版]-->[分類彙整](Category
+Archive)將以下的程式碼貼上去～～
+
+
+
+
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=" />
+
+:  彙整
+
+<link rel="stylesheet" href="styles-site.css" type="text/css" />
+<link rel="alternate" type="application/rss+xml" title="RSS" href="index.rdf" />
+
+
+function OpenComments (c) {
+    window.open(c,
+                    'comments',
+                    'width=480,height=480,scrollbars=yes,status=yes');
+}
+
+function OpenTrackback (c) {
+    window.open(c,
+                    'trackback',
+                    'width=480,height=480,scrollbars=yes,status=yes');
+}
+
+
+
+
+
+
+
+
+
+
+
+# <a href="" accesskey="1">
+<!--  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="date" title="以下的文章都是在  那一天所發表的">
+
+
+
+
+
+
+
+
+<a id="entry">
+
+
+### 
+
+<a href="">
+()
+
+<a href="#entry" title="閱讀文章的詳細內容">
+
+
+
+
+
+
+
+	由  於 
+	 所發表 | <a href="">單篇文章 
+	| <a href="?entry_id=" onclick="OpenComments(this.href); return false" title="任何讀者對於這篇文章所發表的回應或評論">迴響 ()
+	
+	
+	| <a href="?__mode=view&entry_id=" onclick="OpenTrackback(this.href); return false" title="從這一篇文章所延伸出去，而發展出來的其他文章">引用 ()
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+　
+
+
+
+
+接下來我會希望將主索引的部分進行一些修改～～近期會放上！！

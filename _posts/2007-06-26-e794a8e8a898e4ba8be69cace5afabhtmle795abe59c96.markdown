@@ -1,0 +1,20 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2007-06-26 21:45:12+00:00
+slug: '%e7%94%a8%e8%a8%98%e4%ba%8b%e6%9c%ac%e5%af%abhtml%e7%95%ab%e5%9c%96'
+title: 用記事本寫HTML畫圖???
+wordpress_id: 685
+categories:
+- 網路上好玩的事情
+---
+
+[youtube http://www.youtube.com/watch?v=NqFOB77jLaE]
+
+由[發霉客](http://www.youvegotblogs.com/post/5/2948)看到的
+
+暨之前[小畫家勇者](http://www.evanlin.com/blog/archives/000703.html)之後~~果然神人界總是不會停止的～～～　現在出現了利用記事本來寫html去畫圖的人～～　　
+
+利用記事本寫code ，其實對於軟體工程師而言算是蠻簡單的～～　（雖然後來ultraEdit 實在看到鬼的好用～～　）但是很多時基於快速～　我們還是會使用記事本來修改程式～～　不過～　利用記事本寫html 裡面的table 並且將每個td 去著色的技巧～　只能說太神奇了~~~~

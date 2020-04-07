@@ -1,0 +1,29 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2007-02-10 01:56:34+00:00
+slug: c%e4%b8%8a%e9%9d%a2%e5%88%a9%e7%94%a8xml%e4%be%86%e5%ae%a2%e8%a3%bd%e5%8c%96build-%e7%9a%84%e9%81%8e%e7%a8%8b%e7%9a%84%e5%b7%a5%e5%85%b7-msbuild
+title: C#上面利用XML來客製化build 的過程的工具- MSBuild
+wordpress_id: 593
+categories:
+- 網路上好玩的事情
+---
+
+![](http://msbuild.members.winisp.net/images/msbuild_poster.jpg)  
+(PIC: [MSBuild Blog](http://blogs.msdn.com/msbuild/))  
+
+
+<blockquote>MSBuild允許開發人員使用XML撰寫/定義Build流程，因此對於大型，複雜的專案而言，這允許開發工具藉由MSBuild提供更為彈性的Build流程，更重要的是MSBuild允許開發人員拆解Build流程，讓複雜專案中相同的部份可以執行相同的Build工作，或是在不同的專案中共用相同的Build流程。如果好好利用這個特點，那麼開發人員在Build複雜專案時可以大幅減少需要的Build時間，或是對於像C++這樣需要2到3個Pass的編譯器而言，這可以大幅減少編譯，連結等Build的時間。  
+(摘自: [李維](http://gordonliwei.spaces.live.com/default.aspx?_c02_owner=1)--[Window平台的通用Build工具 : MSBuild](http://gordonliwei.spaces.live.com/blog/cns!CCE1F10BD8108687!1300.entry))
+> 
+> </blockquote>
+
+這是我從[李維](http://gordonliwei.spaces.live.com/default.aspx?_c02_owner=1)大哥的部落格裡面看到的一句話，當然我本身對於C#與.Net 的了解並不深~  於是我將一些基本資料整理了一下~~ 有時間再來好好看看。
+
+  * [MSBuild Team的部落格~~ 所有最新資料就在這裡查吧](http://blogs.msdn.com/msbuild/)
+  * [由原來從事J builder 的李維~~ 來講解 為何MSBuild 會被重視](http://gordonliwei.spaces.live.com/blog/cns!CCE1F10BD8108687!1300.entry)
+  * [MSDN 上面關於MSBuild 的整理資料~~~](http://msdn2.microsoft.com/en-us/library/ms171452.aspx)
+  * [一篇教導如何使用MSBuild 的中文文件~~ 算是有很多link 的整理](http://big5.webasp.net/article/9/8387_print.htm)
+  * [MSBuild首席工程師~~來教導你如何使用MSBuild 來客製化你自己最好的build C#的方式](http://msdn.microsoft.com/msdntv/episode.aspx?xml=episodes/en/20040122VSNETAK/manifest.xml)

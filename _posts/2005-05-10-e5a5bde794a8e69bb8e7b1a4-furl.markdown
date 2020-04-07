@@ -1,0 +1,21 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2005-05-10 12:32:04+00:00
+slug: '%e5%a5%bd%e7%94%a8%e6%9b%b8%e7%b1%a4-furl'
+title: 好用書籤~ Furl
+wordpress_id: 237
+categories:
+- 網路上好玩的事情
+---
+
+[![Furl](http://www.furl.net/i/logo_furl_2004.gif)](http://www.furl.net/)感謝 [水瓶子](http://nextservices.blogspot.com/)提供[這個網站](http://www.furl.net/index.jsp)，基本上這個功能跟[del.icio.us](http://del.icio.us/)有點相像，並且還提供了點選計數、評分與主動有輸出到網頁的涵是可以使用。只要選取[MyTool](http://www.furl.net/tools.jsp)裡的[Add Furl to My Site](http://www.furl.net/shareSite.jsp) 就可以輕易的得到JavaScriptCode，使用那些JavaScript不需要任何的RSS2JS就可以快速的顯示在自己的網頁上面。
+
+不過這樣的服務不知道有沒有流量限制?之前，就因為我的流量太大，造成[del.icio.us](http://del.icio.us/)的管理員發信件給我，要求我改善流量，不然就停止我的所有服務~~~~加上我之前有提到[del.icio.us](http://del.icio.us/)所提供的RSS服務[有一些限制](http://www.evanlin.com/blog/archives/000226.html#1523)(後來經過[水瓶子](http://nextservices.blogspot.com/)告知，原來是RSS的Standard)
+
+不過~~~[Furl](http://www.furl.net/) 他的[Add Furl to My Site](http://www.furl.net/shareSite.jsp) 並無法根據Topic (也就是[del.icio.us](http://del.icio.us/)裡面的Tag)來分類~~不過~卻可以利用Rating的方式，將你喜歡的網站放在前端(這個我覺得很好用~~~)
+
+總而言之，我就跟換到[Furl](http://www.furl.net/)，如果要看輸出的結果~可以參考我的[好站連結](http://www.evanlin.com/blog/archives/000295.html)。  
+

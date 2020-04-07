@@ -1,0 +1,35 @@
+---
+layout: post
+layout: post
+author: kkdai
+comments: true
+date: 2007-11-29 00:20:41+00:00
+slug: links-for-2007-11-28
+title: links for 2007-11-28
+wordpress_id: 787
+categories:
+- 未分類
+---
+
+
+	
+  * 
+		
+
+[starlife672 's Blog - 大放頌KTV點歌系統(更新至v1.7.0)](http://www.wretch.cc/blog/starlife672&article_id=15527073)
+
+
+		
+
+好用的家用KTV功能~~ 現在是免費~ 我們應該要好好支持原作者阿~~ 讓他繼續開發下去~~
+
+
+		
+
+(tags: [freeware](http://del.icio.us/kkdai/freeware))
+
+
+	
+
+
+

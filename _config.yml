@@ -1,0 +1,51 @@
+# visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
+#port: 4040
+
+permalink: /:title/ 
+production_url: http://www.evanlin.com
+gems: ['jekyll-lunr-js-search']
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+paginate: 6 # pagination based on number of posts
+paginate_path: "page:num"
+
+highlighter: rouge
+markdown: kramdown
+disqus: evanlin1007
+google_analytics: UA-54721520-1
+
+comments :
+    provider : disqus
+    disqus :
+      short_name : evanlin1007
+
+
+defaults:
+  -
+    scope:
+      path: "" # empty string for all files
+    values:
+      title: Blog E
+
+description: Attitude is everything
+author:
+  name: Evan
+  email: evanslin@gmail.com
+  github: kkdai
+  twitter: Evan_Lin
+  #pinterest: 
+  linkedin: evanlin1977
+  bio: Attitude is everything
+  email_md5: 670eb312a14e540fee9f24d740275774
+
+rss_path: feed.xml
+archive_path: archive
+categories_path: categories
+tags_path: tags
+
+# set it as url of an image
+# sidebar_background_image: https://www.dropbox.com/s/g9h23zrycedxtk5/sky.png?raw=1
+
+BASE_PATH:
+
+gems:
+  - jekyll-paginate
