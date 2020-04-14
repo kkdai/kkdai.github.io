@@ -79,7 +79,7 @@ https://github.com/kkdai/line-login-go
     - 填入 Chatbot  channel Token
 
   - LINECORP_PLATFORM_SERVERURL
-    - 這個資訊根據你的 heroku app 名稱來決定，假設你的 Heroku app 名稱叫做 `test-api-1234` 那麼你就該填 `https://test-api-1234.herokuapp.com/`
+    - 這個資訊根據你的 heroku app 名稱來決定，假設你的 Heroku app 名稱叫做 `test-api-1234` 那麼你就該填 `https://test-api-1234.herokuapp.com`
 
 - 回到 LINE Login 的帳號設定，[App setting] 將以下位置寫入 callback URL `https://test-api-1234.herokuapp.com/auth`
 
