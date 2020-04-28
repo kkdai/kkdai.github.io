@@ -28,7 +28,7 @@ LINE LINE Bot 朋友您好，根據 LINE Chat Bot的個人經驗，發現有一�
 
 如果有人想分享 Flex Message，請在下面的鏈接中分享。原作惡將在這裡收集。謝謝參加的每個人都可以提供幫助。非常感謝你。
 
-https://www.facebook.com/groups/LINEDEVTH/permalink/497494880914423/
+[https://www.facebook.com/groups/LINEDEVTH/permalink/497494880914423/](https://www.facebook.com/groups/LINEDEVTH/permalink/497494880914423/)
 
 請選擇您喜歡的一個，複製圖片下方的鏈接要點，以一起使用 ^^
 
@@ -94,7 +94,7 @@ https://www.facebook.com/groups/LINEDEVTH/permalink/497494880914423/
 
 *（*[*CR.Siratee Kittiwitchaowakul*](https://www.facebook.com/sirateek)*）*
 
-https://gist.github.com/sirateek/f7ad9562bbdc500d87cfa27768e83292
+[https://gist.github.com/sirateek/f7ad9562bbdc500d87cfa27768e83292](https://gist.github.com/sirateek/f7ad9562bbdc500d87cfa27768e83292)
 
 <script src="https://gist.github.com/sirateek/f7ad9562bbdc500d87cfa27768e83292.js"></script>
 
@@ -108,7 +108,7 @@ https://gist.github.com/sirateek/f7ad9562bbdc500d87cfa27768e83292
 
 *（*[*CR。Pamorn Trivorrarat*](https://www.facebook.com/pamornt)*）*
 
-https://gist.github.com/PamornT/086a249fad9b99a6d49db4b1b57ee116
+[https://gist.github.com/PamornT/086a249fad9b99a6d49db4b1b57ee116](https://gist.github.com/PamornT/086a249fad9b99a6d49db4b1b57ee116)
 
 <script src="https://gist.github.com/PamornT/086a249fad9b99a6d49db4b1b57ee116.js"></script>
 
@@ -122,9 +122,7 @@ https://gist.github.com/PamornT/086a249fad9b99a6d49db4b1b57ee116
 
 （[CR.Sitthi Thiammekha）](https://www.facebook.com/sitthi.thiammekha)
 
-[https://medium.com/linedevth/worldcup-flex-864fb27db1a2](https://medium.com/linedevth/worldcup-flex-864fb27db1a2?fbclid=IwAR0ojbGEKIKYvfyvKJn-qBYZS4gKPZtOXenuq1urK7PEerjaNwyZVpwJ8vc)[https://medium.com/linedevth/worldcup-flex-864fb27db1a2](https://medium.com/linedevth/worldcup-flex-864fb27db1a2)
-
-
+[https://medium.com/linedevth/worldcup-flex-864fb27db1a2](https://medium.com/linedevth/worldcup-flex-864fb27db1a2)
 
 ------
 
