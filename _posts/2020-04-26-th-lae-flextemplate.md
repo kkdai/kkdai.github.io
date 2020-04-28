@@ -26,7 +26,7 @@ LINE LINE Bot 朋友您好，根據 LINE Chat Bot的個人經驗，發現有一�
 
 當嘗試與同時創建 LINE Chat Bot 的朋友交談時，他們也必須使用相同的 Flex，我們認為應該共享不同類型的 Flex Message 的樣板作為資源，以節省開發 LINE Chat  Bot 的時間，提供開發人員使用和使用。
 
-如果有人想分享 Flex Message，請在下面的鏈接中分享。原作惡將在這裡收集。謝謝參加的每個人都可以提供幫助。非常感謝你。
+如果有人想分享 Flex Message，請在下面的鏈接中分享。原作者在這裡收集。謝謝參加的每個人都可以提供幫助。非常感謝你。
 
 [https://www.facebook.com/groups/LINEDEVTH/permalink/497494880914423/](https://www.facebook.com/groups/LINEDEVTH/permalink/497494880914423/)
 
