@@ -57,12 +57,27 @@ LINE Emoji 是指在 LINE App 中可以使用的 LINE 表情集，其中有分�
 
 ### Getting LINE emoji information from the text object of a webhook event (2020/May)
 
-在四月提供了新的發送 API 之後，五月的 Webhook 也提供了新的 Webhook 資訊可以讓聊天機器人有效的處理 LINE Emoji 。  透過 `emojis` 可以取得所有訊息中出現的 LINE Emoji 詳細資訊與
+在四月提供了新的發送 API 之後，五月的 Webhook 也提供了新的 Webhook 資訊可以讓聊天機器人有效的處理 LINE Emoji 。  透過 `emojis` 可以取得所有訊息中出現的 LINE Emoji 詳細資訊如下：
+
+![](../images/2020/0522_3.jpg)
+
+可以參考新的 API :  [Text message webhook](https://developers.line.biz/en/reference/messaging-api/#wh-text) 或是參考新的公告：[Messaging API update for May 2020](https://developers.line.biz/en/news/2020/05/12/messaging-api-update-may-2020/)。
 
 
 
+## 使用 Golang 開發一個 LINE Emoji Echo Bot:
 
-## 程式碼解析:
+接下來的會使用 Golang ，根據 [https://github.com/line/line-bot-sdk-go]( https://github.com/line/line-bot-sdk-go) 提供的功能來開發 Echo Bot 。也就是一個會依照使用者講的文字來回覆的聊天機器人。 但是不同於一般 Echo Chatbot ，這個 Echo Bot 將會回傳使用者傳過來的 LINE Emoji ，所以需要具有以下幾個功能：
+
+- 擷取 Webhook text Message 中的 `emojis` 資訊 。
+- 將原先文字中的 `(xxx)` (作為表示表情符號的意思，舉例來說 (heart) 是愛心)，替換成 `$`。
+- 組合需要回覆使用者的文字與表情，需要注意的事情有兩件：
+  - 將使用者回覆的文字加上 `emoji` 資訊，裡面需要注意，相關的 `index` 資訊需要調整。
+  - 傳送 `emoji` 前要注意，是否是存在於`可發送的表情清單(sendable LINE Emoji list)`。 由於某一些表情包是需要付費的，只有免費且是 LINE 官方提供使用的可以透過聊天機器人來傳送。 詳情請看： [https://d.line-scdn.net/r/devcenter/sendable_line_emoji_list.pdf](https://d.line-scdn.net/r/devcenter/sendable_line_emoji_list.pdf)
+
+接下來將透過原始碼的說明來解釋相關的流程：
+
+### 擷取 Webhook text Message 中的 `emojis` 資訊 :
 
 
 
