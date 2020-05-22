@@ -57,7 +57,8 @@ LINE Emoji 是指在 LINE App 中可以使用的 LINE 表情集，其中有分�
 
 ### Getting LINE emoji information from the text object of a webhook event (2020/May)
 
-在四月提供了新的發送 API 之後，五月的 Webhook 也提供了新的 Webhook 資訊可以讓聊天機器人有效的處理 LINE Emoji 。
+在四月提供了新的發送 API 之後，五月的 Webhook 也提供了新的 Webhook 資訊可以讓聊天機器人有效的處理 LINE Emoji 。  透過 `emojis` 可以取得所有訊息中出現的 LINE Emoji 詳細資訊與
+
 
 
 
