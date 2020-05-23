@@ -79,6 +79,23 @@ LINE Emoji 是指在 LINE App 中可以使用的 LINE 表情集，其中有分�
 
 ### 擷取 Webhook text Message 中的 `emojis` 資訊 :
 
+![](../images/2020/0522_4.jpg)
+
+收到 text message 的 webhook 之後，會多了一個資料可以讀取 `msg.Emojis` 的 array structure 。 每一格資料可能是類似一下的資料格式：
+
+![](../images/2020/0522_5.jpg)
+
+根據以上收到的資料可以發現以下資訊：
+
+- `text`: 為 `Hello, world! (love)`，其中 Emoji 也會轉成文字在原先的 text 之中為 `(love)`。
+- `emojis`: 為出現的所有 Emoji ，並且提供起始的 `index` 跟 `length` 。其中 `index` 為 zero-based ， `length` 包括了 `()`。
+
+根據以上的資訊，如果你需要將表情符號去掉來做 Language Understanding (語意分析)的話。需要透過以下步驟：
+
+- `Hello, world! (love)` 參考 `Emojis` 資料將 `(love)`去除，並且重新組合為  `Hello, world!`。
+
+
+
 
 
 
