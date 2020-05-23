@@ -98,9 +98,16 @@ LINE Emoji 是指在 LINE App 中可以使用的 LINE 表情集，其中有分�
 
 <script src="https://gist.github.com/kkdai/4763c72c801c08f24102410826432010.js"></script>
 
+根據以上的範例程式碼，可以知道要發送的資料格式如下：
+
+- `text`: `"$%s 你好 \n , 這是新的傳送 Emoji 的方式。"` 其中 `$` 為你要傳 LINE Emoji 的位子，而 `%s` 是要跟使用者傳來的訊息組合成的訊息。
+- `AddEmoji`: 就是你要傳遞的 LINE Emoji ，其中有 `ProductID` 與 `EmojiID` 需要去 [LINE Sendable LINE Emoji List](https://d.line-scdn.net/r/devcenter/sendable_line_emoji_list.pdf) 查詢。 本段範例為 熊大的範例 (`ProdctID=5ac1bfd5040ab15980c9b435`, `EmojiID=086`)
+
+根據這樣的方式所完成的 Echo Bot 只能夠完整的傳遞使用者的文字，但是使用者傳送的 LINE Emoji 無法正確被顯示。 （會顯示為 `(love)` 或是 `(heart)` ）。
 
 
 
+### 完整回傳
 
 
 
