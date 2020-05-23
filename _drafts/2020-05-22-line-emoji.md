@@ -119,7 +119,13 @@ LINE Emoji 是指在 LINE App 中可以使用的 LINE 表情集，其中有分�
 
 接下來，會稍微分享一下相關的轉換方式：
 
+<script src="https://gist.github.com/kkdai/43191af7fbe8156b89c2205f547a14d2.js"></script>
 
+這部分主要功用是將使用者傳來具有 LINE Emoji 的訊息，轉換為 `$` 。 (e.g. `Hello, world! (love)` --> `Hello, world! $`) 。  裡面主要用到字串的拆解方式，也就是 `string(msgArray[:index]), "$", string(msgArray[index+v.Length:]` 來拆解文字並且重新組合。
+
+因為可能會遇到的種類相當的多（e.g. `hi`, `_(brown)_`, `yo (love) (love)` )，所以為了怕可能遇到的問題。我們也準備好相當多的測試程式碼。在此先附上部分的，完整的測試範例建議到 [https://github.com/kkdai/LineBot-emoji/blob/master/tool_test.go]( https://github.com/kkdai/LineBot-emoji/blob/master/tool_test.go) 查看。
+
+<script src="https://gist.github.com/kkdai/bf95cf7277704e71e5e400b2460c3861.js"></script>
 
 
 
