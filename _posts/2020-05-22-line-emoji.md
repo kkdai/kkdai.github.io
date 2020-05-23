@@ -73,7 +73,7 @@ LINE Emoji 是指在 LINE App 中可以使用的 LINE 表情集，其中有分�
 - 將原先文字中的 `(xxx)` (作為表示表情符號的意思，舉例來說 (heart) 是愛心)，替換成 `$`。
 - 組合需要回覆使用者的文字與表情，需要注意的事情有兩件：
   - 將使用者回覆的文字加上 `emoji` 資訊，裡面需要注意，相關的 `index` 資訊需要調整。
-  - 傳送 `emoji` 前要注意，是否是存在於`可發送的表情清單(sendable LINE Emoji list)`。 由於某一些表情包是需要付費的，只有免費且是 LINE 官方提供使用的可以透過聊天機器人來傳送。 詳情請看： [https://d.line-scdn.net/r/devcenter/sendable_line_emoji_list.pdf](https://d.line-scdn.net/r/devcenter/sendable_line_emoji_list.pdf)
+  - 傳送 `emoji` 前要注意，是否是存在於`可發送的表情清單(sendable LINE Emoji list)`。 由於某一些表情包是需要付費的，只有免費且是 LINE 官方提供使用的可以透過聊天機器人來傳送。 詳情請看： [LINE Sendable LINE Emoji List](https://d.line-scdn.net/r/devcenter/sendable_line_emoji_list.pdf) 。
 
 接下來將透過原始碼的說明來解釋相關的流程：
 
@@ -123,15 +123,41 @@ LINE Emoji 是指在 LINE App 中可以使用的 LINE 表情集，其中有分�
 
 這部分主要功用是將使用者傳來具有 LINE Emoji 的訊息，轉換為 `$` 。 (e.g. `Hello, world! (love)` --> `Hello, world! $`) 。  裡面主要用到字串的拆解方式，也就是 `string(msgArray[:index]), "$", string(msgArray[index+v.Length:]` 來拆解文字並且重新組合。
 
+#### 撰寫相關文字轉換的測試案例：
+
 因為可能會遇到的種類相當的多（e.g. `hi`, `_(brown)_`, `yo (love) (love)` )，所以為了怕可能遇到的問題。我們也準備好相當多的測試程式碼。在此先附上部分的，完整的測試範例建議到 [https://github.com/kkdai/LineBot-emoji/blob/master/tool_test.go]( https://github.com/kkdai/LineBot-emoji/blob/master/tool_test.go) 查看。
 
 <script src="https://gist.github.com/kkdai/bf95cf7277704e71e5e400b2460c3861.js"></script>
 
+本段測試程式碼，僅僅對於整段文字裡面出現一個或是沒有的測試案例。 透過撰寫足夠完善的測試案例，可以讓整個 chatbot 的穩定度更好，也不需要透過部署就能夠把一些預先可見的錯誤找出來。
+
+### 檢查是否是“可傳送的表情服務”：
+
+ 由於某一些表情包是需要付費的，只有免費且是 LINE 官方提供使用的可以透過聊天機器人來傳送。 詳情請看： [LINE Sendable LINE Emoji List](https://d.line-scdn.net/r/devcenter/sendable_line_emoji_list.pdf) 。
+
+<script src="https://gist.github.com/kkdai/a838876c153d08d73ec87636553e36a9.js"></script>
+
+如果傳送非免費的 LINE Emoji 資料給伺服器，則會收到錯誤訊息。所以這段是透過整理出來的資料來做檢查。
 
 
-## 總結
 
+### 完整的轉換與檢查流程：
 
+<script src="https://gist.github.com/kkdai/8525f14ceca730a135aeaa1f4b6e4f4a.js"></script>
+
+快速講解一下，相關應用程式碼：
+
+- (5) `workMsg := ReplaceEmoji(msg.Text, msg.Emojis)`: 將收到的使用者文字取代為 `$` 。
+- (17)`lastLength = lastLength + v.Length`: 這邊值得分享的是計算轉換後的 `$` 位址，需要透過原本 Emoji 的長度來計算出來。 這樣才能算出每一個表情符號取代文字 `$` 應該出現的 `index` 。 
+
+## 總結與展望未來 (Summary and Future Work)
+
+透過 LINE Emoji 的 API ，讓開發者在傳送表情符號的處理上變得更加的直覺與簡單。也讓聊天機器人跟使用者之之間的互動變得更沒有距離。 不過如果需要將使用者傳過來的文字（加上表情符號）回傳回去的話，就需要有許多額外的處理。
+
+之後可能針對這些部分可以有以下的相關處理：
+
+- **自然語言前處理：** 如果想要針對使用者回覆的文字來做語意分析（Language Understanding) 那麼勢必要定義對於 LINE Emoji 的處理方式。開發者可以選擇全部忽略，或是將其放入分析器中。
+- **針對表情符號來互動：** 使用者會使用表情符號，都會是有相對意義的。某些狀況下，可以透過表情符號（emoji) 來判斷使用者的情緒。 這也是一門相當大的學問才是。
 
 
 
