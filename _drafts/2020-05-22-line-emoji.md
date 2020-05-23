@@ -79,7 +79,7 @@ LINE Emoji 是指在 LINE App 中可以使用的 LINE 表情集，其中有分�
 
 ### 擷取 Webhook text Message 中的 `emojis` 資訊 :
 
-![](../images/2020/0522_4.jpg)
+<script src="https://gist.github.com/kkdai/4ef57afb48273ea20095e8dcb81a0d28.js"></script>
 
 收到 text message 的 webhook 之後，會多了一個資料可以讀取 `msg.Emojis` 的 array structure 。 每一格資料可能是類似一下的資料格式：
 
@@ -93,6 +93,10 @@ LINE Emoji 是指在 LINE App 中可以使用的 LINE 表情集，其中有分�
 根據以上的資訊，如果你需要將表情符號去掉來做 Language Understanding (語意分析)的話。需要透過以下步驟：
 
 - `Hello, world! (love)` 參考 `Emojis` 資料將 `(love)`去除，並且重新組合為  `Hello, world!`。
+
+### 透過新的 LINE Emoji API 來發送表情符號：
+
+<script src="https://gist.github.com/kkdai/4763c72c801c08f24102410826432010.js"></script>
 
 
 
