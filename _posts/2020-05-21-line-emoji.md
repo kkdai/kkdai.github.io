@@ -20,6 +20,12 @@ LINE Emoji 是指在 LINE App 中可以使用的 LINE 表情集，其中有分�
 
 
 
+## 投影片:
+
+<script async class="speakerdeck-embed" data-id="dba7ec85d94840d38746d516542ba609" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+
+
 ## 範例程式碼
 
 #### [https://github.com/kkdai/linebot-emoji](https://github.com/kkdai/linebot-emoji)
