@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[TIL][Golang] 如何抓取 Youtube 影片的相關資訊，與使用 Go 下載 Youtube 影片 "
+title: "[TIL][Golang] 如何抓取 Youtube 影片的相關資訊，與使用 Go 下載 Youtube 影片 (2020/06/03 更新) "
 description: ""
 category: 
 - TodayILearn
@@ -16,9 +16,16 @@ tags: ["Golang", "Go"]
 
 由於 Youtube 其實對於資料格式也有修改（截至 2019/12/10 當下） ，這裡也針對目前的資訊來探討如何透過 Golang 來抓取相關資訊，並且取得影片標題，作者姓名，甚至是取得下載鏈結的方式。
 
+(更新: 2020/06/02 ) 由於 YouTube 又再一次更新了影片網址的取得方式，個人也認爲相當適合分享。在此整理一下相關更新部分在同一篇文章中。
 
 
-## 專案: github.com/kkdai/youtube 
+
+## 開源專案: [github.com/kkdai/youtube](github.com/kkdai/youtube )
+
+
+## 投影片:
+<script async class="speakerdeck-embed" data-id="a230f4015f8e402b9b734c10e45a9d1d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
 
 ####  Github: https://github.com/kkdai/youtube
 
@@ -33,15 +40,11 @@ youtubedr -o "Campaign Diary".mp4 https://www.youtube.com/watch\?v\=XbNghLqsVwU
 youtubedr https://www.youtube.com/watch\?v\=XbNghLqsVwU
 ```
 
-這邊提供幾個簡單的操作方式，目前該套件只支援 mov (mpeg4) 的格式，如果需要另外轉檔 (mkv) 則需要透過 FFMPEG 跟其它套件的幫忙。這邊會放在之後支援的部分(issue [#20](https://github.com/kkdai/youtube/issues/20)) ，當然也歡迎各位的貢獻一起來幫忙。
-
 
 
 ## 抓取 Youtube 影片資訊 
 
 ### 取得 Youtube 影片 ID 與取得資訊:
-
-
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rFejpH_tAHM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 舉個例子 Rob Pike 在 dotGo 2015 裡面的一個很棒的 talk -  Simplicity is Complicated ，該影片的位置如下：
@@ -68,13 +71,13 @@ https://youtube.com/get_video_info?video_id={YOUR_VIDEO_ID}
  因為取得下來的是 URK-encoded query string 的資料，需要透過以下的處理方式。
 
 <script src="https://gist.github.com/kkdai/58e776a1387d3db2c032492269601d58.js"></script>
-首先，你需要處理一下錯誤訊息。由於許多的影片本身只有 MKV 的格式，或是禁止下載分享，如此一來在取得相關資訊的時候則會發生錯誤的 status ，這裡需要處理一下。
+首先，你需要處理一下錯誤訊息。由於許多的影片是禁止下載分享，如此一來在取得相關資訊的時候則會發生錯誤的 status ，這裡需要處理一下。
 
 
 
 ### 取得影片標題與影片作者資訊：
 
-如果沒有錯誤訊息，接下來可以繼續處理相關資訊。 這裡得說一下，其實大多數的資料有修改過。跟網路上可以找得到的資訊不同。所以後來花了很多的時間重新搜尋相關資訊，並且整理與轉換。 透過上述的 `parseVideoInfo` 轉換後可以取的 `url.Values` 也就是變數名稱的 `answer`。
+這裡得說一下，其實大多數的資料有修改過。跟網路上可以找得到的資訊不同。所以後來花了很多的時間重新搜尋相關資訊，並且整理與轉換。 透過上述的 `parseVideoInfo` 轉換後可以取的 `url.Values` 也就是變數名稱的 `answer`。
 
 處理上可以參考下列的方式，由於發現 ``answer["player_response"]` 裡面有 Map 結構的資料格式，於是透過以下的方式可以取得相關資訊。
 
@@ -96,25 +99,34 @@ if err := json.Unmarshal([]byte(playResponse[0]), &personMap); err != nil {
 
 ### 下載影片:
 
-最後～來講解一下所有的影片格式搜尋方式，還有如何找到最高解析度的影片。
+來講解一下所有的影片格式搜尋方式，還有如何找到最高解析度的影片。
 
-<script src="https://gist.github.com/kkdai/6f8ab73c16927f233cfccc1d656a33e6.js"></script>
-首先影片的資訊都在  `streamMap, ok := data["url_encoded_fmt_stream_map"]`透過以下的切割方式可以把所有的 stream format 分割出來。
+<script async class="speakerdeck-embed" data-slide="9" data-id="a230f4015f8e402b9b734c10e45a9d1d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-```
-streamsList := strings.Split(streamMap[0], ",")
-```
+這邊可以從 `player_response` 去拿出 stream Map 也就一個 Array 的 JSON 資料。 (如同投影片內敘述的）。
 
-而裡面可以透過 `streamQry["quality"]` 來讀取資訊，透過以上的範例可以了解，通常第一個 stream 也就是解析度最高的影片。 而他的下載鏈結就在 `streamQry["url"]`裡面就可以取得。
+<script async class="speakerdeck-embed" data-slide="10" data-id="a230f4015f8e402b9b734c10e45a9d1d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-透過 Parse stream list 之後，找到最高解析度的影片，也就可以開始下載影片了。
+這時候需要針對取得的 JSON 資料開始做處理，建議方式如下：
+
+- 先到 JSON Lint 網站去將取得的 JSON raw data 加以轉換成可讀型態。
+- 再來複製貼上到 editor 去除掉一些 web css tag 
+- 最後將資料貼到 JSON-TO-GO 就可以得到 Go structure
+
+### 看起來可以得到下載鏈結 (but..)
+
+看起來這樣從 ["streamingData"]["formats"][0]["url"] 取得下載網址，但是似乎不是每個影片都有提供這樣的資料。
+
+<script async class="speakerdeck-embed" data-slide="12" data-id="a230f4015f8e402b9b734c10e45a9d1d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+
 
 
 
 ## 注意:
 
 1. 並非所有影片都可以下載，如果不提供分享的影片則無法下載。
-2. 如果原本來源不是 MPEG4 的 mov 影片，無法順利下載，需要 transcode 。
+
 
 ## 結論：
 
