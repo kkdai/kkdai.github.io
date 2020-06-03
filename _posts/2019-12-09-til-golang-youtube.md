@@ -119,24 +119,48 @@ if err := json.Unmarshal([]byte(playResponse[0]), &personMap); err != nil {
 
 <script async class="speakerdeck-embed" data-slide="12" data-id="a230f4015f8e402b9b734c10e45a9d1d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-某個影片去尋找資料的時候，卻發現沒有 `url` 的資料可以找，但是卻多了一個資料 `cipher` ??
+某個影片去尋找資料的時候，卻發現沒有 `url` 的資料可以找，但是卻多了一個資料 `cipher` ?? 
 
+#### Cipher and Decipher:
 
+這時候開始需要尋找相關資訊，還好找到[這篇文章](https://stackoverflow.com/questions/60607291/youtube-video-downloader-with-php)。 裡面
+有提到相關的說明，主要就是以下幾件事情：
 
+- `cipher` 是一個加密後的資訊，需要做 `decipher` 來取得 `url`。
+- 至於 `decipher` 主要透過三個 functions 來處理：
+  - EQ() 負責某個字元跟第一個字元交換。
+  - Splice() 負責只取前面 n 個字元。
+  - Reverse() 負責將字串整個反向。
+- 但是每次的 decipher 其實會由順序不同的這三個 functions 組合而成。 
+- 該組合需要去查看 base.js 才能得知。
 
+<script async class="speakerdeck-embed" data-slide="16" data-id="a230f4015f8e402b9b734c10e45a9d1d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-## 注意:
+#### Retrieval base.js and migrate to Go code
 
-1. 並非所有影片都可以下載，如果不提供分享的影片則無法下載。
+那麼要如何正確取得 base.js 以及如何取得完整的 decipher 資料流程呢？
+
+- 首先先到 `https://www.youtube.com/embed/{VIDEO_ID}?hl=en` 取得 base.js 位址。
+- 其中位址可能是  `https://www.youtube.com/s/player/e3cd195e/player_ias.vflset/en_US/base.js` 這樣的資訊。
+- 之後開啟 `base.js` 內容，尋找 decipher 的整個內容。
+- 將相關內容透過對應韓式來將 `cipher` 做相關的處理。
+
+<script async class="speakerdeck-embed" data-slide="17" data-id="a230f4015f8e402b9b734c10e45a9d1d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+這一段程式碼展示如何來找到 base.js 內的 decipher function 內容，並且將 `EQ()` ， `splice()` 跟 `reverse()` 做紀錄，並且也找出 Args (arguments) 。 
+
+(相關技巧主要透過 regular expression 的方式，細節可以參考官方文件 [regexp](https://golang.org/pkg/regexp/)。)
+
+之後要透過相關的 Mapping 方式透過 Go 的函式來對 `cipher` 字串做處理。最後～～最後就可以取得 `url` 啦。（撒花
 
 
 ## 結論：
 
-原本是使用者的建議，希望如果在抓取 MPEG4 的時候可以預設使用影片的標題，而不一定要抓取檔案的一定要輸入檔名。 這樣的追下去才發現資料格式有修改，在此也分享給各位如何搜尋相關的資料。
+透過網路爬蟲的方式，透過後台轉換的方式來取得 YouTube 相關資訊。 這是一個漫長但是很有趣的過程，不僅僅可以學習網路爬蟲技巧與相關的字串搜尋與處理技巧。 
 
-是說～～好久沒寫扣了。真的心血來潮又是寫到天快亮。 orz
+目前已經完整專案開源，並且希望能有更多人的加入來一起幫忙。 詳情可以看 
 
-
+####  Github: https://github.com/kkdai/youtube
 
 ## **Reference:**
 
