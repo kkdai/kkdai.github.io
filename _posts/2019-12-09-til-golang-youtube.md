@@ -119,6 +119,8 @@ if err := json.Unmarshal([]byte(playResponse[0]), &personMap); err != nil {
 
 <script async class="speakerdeck-embed" data-slide="12" data-id="a230f4015f8e402b9b734c10e45a9d1d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
+某個影片去尋找資料的時候，卻發現沒有 `url` 的資料可以找，但是卻多了一個資料 `cipher` ??
+
 
 
 
