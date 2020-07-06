@@ -27,6 +27,8 @@ The Dumb Things Smart People Do with Their Money : Thirteen Ways to Right Your F
 
 ## 前言:
 
+這一本是今年所讀完的第七本書。
+
 當初會讓我注意到這一本書，其實是以下的「文森說書」的內容讓我吸引到。尤其是開頭的第一句話，「生命中最棒的事情是免費的，第二棒的東西則非常非常貴 - Co Co Chanel」。
 
 這樣的一句話，讓我開始想看看這一本書究竟在談些什麼。歡迎各位一起來往下去了解吧！
