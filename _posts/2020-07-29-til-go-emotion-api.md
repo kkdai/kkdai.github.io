@@ -18,6 +18,7 @@ tags: ["Golang", "MachineLearning"]
 - 不過輸入跟輸出的內容好像沒什麼變？ 
 - 要玩測試可以在 https://azure.microsoft.com/zh-tw/services/cognitive-services/face/#demo
 - 不過範例好像也沒有改過誒
+- 微軟自己提供了 C#  SDK https://github.com/microsoft/Cognitive-Emotion-Windows
 
 
 
