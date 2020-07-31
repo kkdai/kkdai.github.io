@@ -4,7 +4,6 @@ title: "[TIL] Emotion detection API on Go - oxford-emotion 2020 update"
 description: ""
 category: 
 - TodayILearn
-- Podcast
 tags: ["Golang", "MachineLearning"]
 ---
 
