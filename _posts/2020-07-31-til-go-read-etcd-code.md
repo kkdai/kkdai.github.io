@@ -43,6 +43,8 @@ tags: ["Golang", "OpenSource"]
 
 `因為 bbolt db 的page 儲存區會出現效能問題，設計了一套 segregrated hashmap 去解決`
 
+相關程式碼: [https://github.com/etcd-io/bbolt/blob/master/freelist_hmap.go](https://github.com/etcd-io/bbolt/blob/master/freelist_hmap.go)
+
 快速搜尋一下，整理一下:
 
 ### segregated hashmap
