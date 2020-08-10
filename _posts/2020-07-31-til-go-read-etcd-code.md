@@ -51,10 +51,16 @@ tags: ["Golang", "OpenSource"]
 
 由阿里巴巴發起的優化，根據他們事業業務所發現的效能瓶頸。
 
-- 英文: [https://www.cncf.io/blog/2019/05/09/performance-optimization-of-etcd-in-web-scale-data-scenario/](https://www.cncf.io/blog/2019/05/09/performance-optimization-of-etcd-in-web-scale-data-scenario/)
-- 中文: [https://www.infoq.cn/article/Dit9YCy2-ziDrLfFeQzq](https://www.infoq.cn/article/Dit9YCy2-ziDrLfFeQzq)
-- 中文： （相關研究）
-  - [https://www.cnblogs.com/passzhang/p/12556525.html](https://www.cnblogs.com/passzhang/p/12556525.html)
+- **英文:** 
+
+  - CNCF 關於 etcd performance improvement 介紹 [https://www.cncf.io/blog/2019/05/09/performance-optimization-of-etcd-in-web-scale-data-scenario/](https://www.cncf.io/blog/2019/05/09/performance-optimization-of-etcd-in-web-scale-data-scenario/)
+  - 來自 Alibaba cloud 的整理介紹:
+
+- **中文:**
+
+  - CNCF 該篇文章的翻譯版本  [https://www.infoq.cn/article/Dit9YCy2-ziDrLfFeQzq](https://www.infoq.cn/article/Dit9YCy2-ziDrLfFeQzq)
+
+  - segregated hashmap 相關研究 https://www.cnblogs.com/passzhang/p/12556525.html](https://www.cnblogs.com/passzhang/p/12556525.html)
 
 ##### 成效很威
 
