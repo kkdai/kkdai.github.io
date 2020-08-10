@@ -53,6 +53,8 @@ tags: ["Golang", "OpenSource"]
 
 - 英文: [https://www.cncf.io/blog/2019/05/09/performance-optimization-of-etcd-in-web-scale-data-scenario/](https://www.cncf.io/blog/2019/05/09/performance-optimization-of-etcd-in-web-scale-data-scenario/)
 - 中文: [https://www.infoq.cn/article/Dit9YCy2-ziDrLfFeQzq](https://www.infoq.cn/article/Dit9YCy2-ziDrLfFeQzq)
+- 中文： （相關研究）
+  - [https://www.cnblogs.com/passzhang/p/12556525.html](https://www.cnblogs.com/passzhang/p/12556525.html)
 
 ##### 成效很威
 
