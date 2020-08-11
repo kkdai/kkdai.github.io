@@ -52,7 +52,7 @@ tags: ["Golang", "OpenSource"]
 
 ### Segregated Hashmap
 
-由阿里巴巴發起的優化，根據他們事業業務所發現的效能瓶頸。
+由阿里巴巴發起的優化，根據他們事業業務所發現的效能瓶頸。 主要的點子是致敬 tcmalloc 裡面的 [Segregated Freelist](https://zhuanlan.zhihu.com/p/29415507) 。
 
 - **英文:** 
 
