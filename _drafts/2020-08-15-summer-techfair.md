@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[研討會心得] 2020/08/15 Summer Tech Fair - "
+title: "[研討會心得] 2020/08/15 Summer Tech Fair"
 description: ""
 category: 
 - 研討會心得
