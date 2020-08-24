@@ -7,24 +7,51 @@ category:
 tags: ["研討會心得", "DevRel", "TECH-FRESH"]
 ---
 
-
 大家好，我是 LINE Tech Evangelist - Evan Lin 。LINE 致力於舉辦對內的技術交流、教育訓練，以及對外的社群聚會、校園演講、開發者徵才日與開發者大會等各式各樣的活動。我們希望創造更多技術分享與跨國交流的機會，同時持續招募優秀人才加入 LINE 台灣開發工程團隊! 
+
+這是參加到今年第一個聯合徵才的台灣科技就業博覽會，希望能讓更多的學生朋友能了解 LINE 所帶來的學生實習計畫。「 LINE 技術新星人才計劃 - LINE TECHFRERSH 」。
+
+首先先來介紹第一場也就是 LINE 台灣的 LINE TECH FRESH 與相關團隊的介紹。
 
 
 
 ## ** TECHFRESH 計畫介紹 - Evan Lin**
 
+<script async class="speakerdeck-embed" data-slide="1" data-id="6e0e7afe98124bf08f13f200f1b45010" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+首先還是先讓大家了解 LINE 的成立是因為 2011 年東京發生大地震的時候，許多人因為擔心著朋友的近況。於是開發了透過貼圖的訊息溝通軟體。 正也是呼應了 LINE 的成立宗旨：「 Closing The Disctance 」。 希望透過科技來拉近人與人，人與資訊，人與科技之間的距離。 
+
+
+
 LINE 台灣工程團隊每年透過 [LINE TECH FRESH – 技術新星人才計劃](https://career.linecorp.com/linecorp/career/detail/20000111/704/5570?classId=&locationCd=TW&page=)，招募資訊科技相關科系，或對此領域有所涉略的大學生 / 研究生加入 LINE 團隊進行長期實習 (一年期)，讓同學們能在國際級科技公司中觀摩學習。
 
 更多內容，可以參考這篇文章： [LINE TECH FRESH – 技術新星人才計劃，實習經驗大公開](https://engineering.linecorp.com/zh-hant/blog/tech-fresh-2020/)
 
+每一位實習同學都會分配到不同的團隊中，擔任著團隊裡面的種子工程師。經過一些內部與訓練型專案的指導，讓每一位參與的同學能夠了解跨國產品的開發流程與大公司的軟體工程技巧。 
+
+接下來由各個不同團隊來分享不論是擔任 TECH FRESH 的心得，或是許多有 TECH FRESH 的用人主管來分享他們專案的訓練方式與負責的業務範圍。
+
+
+
 ## ** TECHFRESH 實習心得分享  - Wei**
+
+<script async class="speakerdeck-embed" data-slide="7" data-id="6e0e7afe98124bf08f13f200f1b45010" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+
+
+
 
 ## ** LINE Music 團隊介紹  - Cid**
 
 ## ** LINE HR ONLINE 專案分享  - Libra**
 
 ## ** LINE QA 團隊介紹  - John Wu**
+
+
+
+## 攤位活動
+
+
 
 
 
