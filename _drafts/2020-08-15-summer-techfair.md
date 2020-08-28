@@ -67,9 +67,32 @@ LINE 台灣工程團隊每年透過 [LINE TECH FRESH – 技術新星人才計�
 
 <script async class="speakerdeck-embed" data-slide="7" data-id="6e0e7afe98124bf08f13f200f1b45010" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
+接著上場的目前在 LINE Music 擔任正職開發工程師的 Wei ，講者之前也是由 TECH-FRESH 實習計畫畢業後獲得正職的機會。因為剛畢業的新鮮人要直接能獲得 LINE 的面試機會是相當的難得，往往面試官在挑選上都會希望畢業生或是新鮮人是經過 LINE 實習計畫出來的。才能夠確認是否符合公司文化外，透過為期一年的培養下，讓有潛力的開發人員能夠獲得有制度的訓練。
+
+
+
 #### 為何想加入 TECH-FRESH
 
-講者首先在分享就有提到
+講者首先在分享就有提到當初由於在校園的場子，偶然聽到 LINE 提供了實習計畫。於是馬上在 [LINE Career 網頁](https://career.linecorp.com/linecorp/career/detail/20000111/704/5570?classId=&locationCd=TW&page=)上面提出申請。 經過了線上測試與線上作業後。獲得了面試的機會，面試官透過講者所繳交的專案來相互討論設計的想法與更多可以改善的空間。 進而獲得近來實習的機會。
+
+#### TECH-FRESH 的實習生活
+
+<script async class="speakerdeck-embed" data-slide="12" data-id="6e0e7afe98124bf08f13f200f1b45010" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+除了有相當高檔的辦公室椅子與個人工作電腦之外，最讓講者覺得驚奇的是工作方式的自由與鼓勵創意的方式。
+
+- **開發方式的自由:**
+  - 可以透過與 mentor 的討論，提議想要開發使用的框架與方法。
+- **跨部門合作:**
+  - 透過與其他 TECH-FRESH 的相互合作，甚至是學習到跨部門的合作（往往都是與日本的跨國合作。）。讓講者感受到跨國產品的開發流程。
+- **有制度的開發與上線流程:**
+  - 身為國內前幾大的網路服務提供商，所有的服務在上架之前都有嚴格的審核機制。在內部開發的時候更有詳細規定好該如何做 code review 與相關的測試規範。 讓當時身為學生的講者，學習到許多的經驗。
+- **優渥的福利：**
+  - 雖然身為實習的學生，但是應該要有的員工訓練與相關的同仁聚餐也都不會少。 隨著許多專案的上線，身為專案的貢獻者，更是有著跟著 LINE 工程團隊一起慶祝。
+
+#### 給想報名 TECH-FRESH 的學生建議
+
+<script async class="speakerdeck-embed" data-slide="24" data-id="6e0e7afe98124bf08f13f200f1b45010" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 
 
