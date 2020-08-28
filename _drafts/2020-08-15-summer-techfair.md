@@ -31,6 +31,13 @@ tags: ["研討會心得", "DevRel", "TECH-FRESH"]
 - 中午逛街的時候，經過捷運站可能會觸發 LINE Beacon 的服務，並且 LINE 貼圖的購買也會根據圖片內容下一些關鍵字協助搜尋。
 - 朋友間討論 LINE 功能，需要知道更進一步的使用方式。不需要真人客服的服務，可以透過 [LINE 客服小幫手](http://official-blog.line.me/tw/archives/79423075.html)給予適當的協助。
 - 收到一些疑似的假訊息，可以馬上透過 [LINE 訊息查證小幫手](https://fact-checker.line.me/) 的人工智慧判別機制，馬上告訴你假消息。讓你不會成為假消息的幫兇。
+- 晚餐想找點特別的餐廳，可以透過 [LINE SPOT](http://official-blog.line.me/tw-biz/archives/78600425.html) 來尋找最近的地點。並且透過 AI 的方式來推薦你可能有興趣的景點或是店家。
+- 回到家之後可以透過 [LINE Music](https://event-web.line.me/ECTW/article/Qq5Njl) 來播放令人覺得放鬆的音樂，並且可以透過 AI 來快速找尋到你喜歡的歌曲與歌手。
+- 睡覺前意猶未竟？可以透過 [LINE 購物](https://buy.line.me/)的 AI 購物推薦，馬上找到你最有興趣的商品，節省下單時間。
+
+#### LINE TECH FRESH 介紹
+
+<script async class="speakerdeck-embed" data-slide="6" data-id="6e0e7afe98124bf08f13f200f1b45010" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 LINE 台灣工程團隊每年透過 [LINE TECH FRESH – 技術新星人才計劃](https://career.linecorp.com/linecorp/career/detail/20000111/704/5570?classId=&locationCd=TW&page=)，招募資訊科技相關科系，或對此領域有所涉略的大學生 / 研究生加入 LINE 團隊進行長期實習 (一年期)，讓同學們能在國際級科技公司中觀摩學習。
 
@@ -42,16 +49,27 @@ LINE 台灣工程團隊每年透過 [LINE TECH FRESH – 技術新星人才計�
 
 #### 相關內容
 
--  [「LINE 客服小幫手」智能客服全新升級～對談中解決用LINE大小事](http://official-blog.line.me/tw/archives/79423075.html)
--  [LINE 貼圖小舖](https://store.line.me/home/zh-Hant)
--  [LINE 訊息查證小幫手](https://fact-checker.line.me/)
--  
+- [「LINE 客服小幫手」智能客服全新升級～對談中解決用LINE大小事](http://official-blog.line.me/tw/archives/79423075.html)
+
+- [LINE 貼圖小舖](https://store.line.me/home/zh-Hant)
+
+- [LINE 訊息查證小幫手](https://fact-checker.line.me/)
+
+- [LINE 全新服務即將登場！LINE SPOT 店家召集令正式展開！](http://official-blog.line.me/tw-biz/archives/78600425.html)
+
+- [LINE MUSIC 去人聲功能上線](https://event-web.line.me/ECTW/article/Qq5Njl)
+
+- [LINE購物｜先LINE購物再購物· LINE POINTS回饋賺不停](https://buy.line.me/)
+
+  
 
 ## ** TECHFRESH 實習心得分享  - Wei**
 
 <script async class="speakerdeck-embed" data-slide="7" data-id="6e0e7afe98124bf08f13f200f1b45010" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
+#### 為何想加入 TECH-FRESH
 
+講者首先在分享就有提到
 
 
 
