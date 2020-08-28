@@ -7,6 +7,8 @@ category:
 tags: ["研討會心得", "DevRel", "TECH-FRESH"]
 ---
 
+![](../images/2020/0815_1.jpg)
+
 大家好，我是 LINE Tech Evangelist - Evan Lin 。LINE 致力於舉辦對內的技術交流、教育訓練，以及對外的社群聚會、校園演講、開發者徵才日與開發者大會等各式各樣的活動。我們希望創造更多技術分享與跨國交流的機會，同時持續招募優秀人才加入 LINE 台灣開發工程團隊! 
 
 這是參加到今年第一個聯合徵才的台灣科技就業博覽會，希望能讓更多的學生朋友能了解 LINE 所帶來的學生實習計畫。「 LINE 技術新星人才計劃 - LINE TECHFRERSH 」。
@@ -16,6 +18,8 @@ tags: ["研討會心得", "DevRel", "TECH-FRESH"]
 
 
 ## ** TECHFRESH 計畫介紹 - Evan Lin**
+
+![](../images/2020/0815_2.jpg)
 
 <script async class="speakerdeck-embed" data-slide="1" data-id="6e0e7afe98124bf08f13f200f1b45010" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
@@ -65,6 +69,8 @@ LINE 台灣工程團隊每年透過 [LINE TECH FRESH – 技術新星人才計�
 
 ## ** TECHFRESH 實習心得分享  - Wei**
 
+![](../images/2020/0815_3.jpg)
+
 <script async class="speakerdeck-embed" data-slide="7" data-id="6e0e7afe98124bf08f13f200f1b45010" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 接著上場的目前在 LINE Music 擔任正職開發工程師的 Wei ，講者之前也是由 TECH-FRESH 實習計畫畢業後獲得正職的機會。因為剛畢業的新鮮人要直接能獲得 LINE 的面試機會是相當的難得，往往面試官在挑選上都會希望畢業生或是新鮮人是經過 LINE 實習計畫出來的。才能夠確認是否符合公司文化外，透過為期一年的培養下，讓有潛力的開發人員能夠獲得有制度的訓練。
@@ -101,13 +107,34 @@ LINE 台灣工程團隊每年透過 [LINE TECH FRESH – 技術新星人才計�
 - **網路教學影片與多看原始碼:**
   - 對於自我學習部分，除了網路上有相當多的教學影片外。更建議同學們要經常主動閱讀開源程式裡面的原始碼，這樣除了能自行找尋問題之外。對於許多 coding style 與 coding convention 才能習慣，對於應徵實習機會的時候會相當的佔優勢。
 - **多做 Side Project ，作為熟悉技術的方法:**
-  -   
+  - 透過作多 side project ，除了可以了解 git 的基本流程，了解開源專案的進行方式外，更能夠熟悉許多技術與了解該技術開發上可能會遇到的困難。
 
-## ** LINE Music 團隊介紹  - Cid**
+#### 參考資料:
 
-## ** LINE HR ONLINE 專案分享  - Libra**
+- [LINE Career - TECH FRESH 職務說明與應徵（英文）](https://career.linecorp.com/linecorp/career/detail/20000111/704/5570?classId=&locationCd=TW&page=)
 
-## ** LINE QA 團隊介紹  - John Wu**
+
+
+## LINE Music 團隊介紹  - Cid
+
+![](../images/2020/0815_4.jpg)
+
+<script async class="speakerdeck-embed" data-slide="26" data-id="6e0e7afe98124bf08f13f200f1b45010" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+接下來由 [LINE Music](https://event-web.line.me/ECTW/article/Qq5Njl) 的開發團隊 lead - Cid 來分享與介紹。
+
+#### 什麼是 LINE Music 
+
+LINE Music 是 LINE 所提出的線上音樂串流播放平台。並且與許多 LINE 的功能有深入的整合：
+
+- *來電達鈴*：可以將 LINE Call 鈴聲替換成你喜歡的音樂。
+- 
+
+
+
+## LINE HR ONLINE 專案分享  - Libra
+
+## LINE QA 團隊介紹  - John Wu
 
 
 
