@@ -94,7 +94,14 @@ LINE 台灣工程團隊每年透過 [LINE TECH FRESH – 技術新星人才計�
 
 <script async class="speakerdeck-embed" data-slide="24" data-id="6e0e7afe98124bf08f13f200f1b45010" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
+最後對於 LINE TECH-FRESH 有興趣的人，講者也有一些建議。
 
+- **良好查資料能力：**
+  - 在 LINE 中經常會使用新的技術與架構來嘗試專案，並且透過這些技術來改善許多舊有的工作流程。工程師的自學能力相當的重要，所以要建立好如何能快速找尋到需要的資料是相當的重要。
+- **網路教學影片與多看原始碼:**
+  - 對於自我學習部分，除了網路上有相當多的教學影片外。更建議同學們要經常主動閱讀開源程式裡面的原始碼，這樣除了能自行找尋問題之外。對於許多 coding style 與 coding convention 才能習慣，對於應徵實習機會的時候會相當的佔優勢。
+- **多做 Side Project ，作為熟悉技術的方法:**
+  -   
 
 ## ** LINE Music 團隊介紹  - Cid**
 
