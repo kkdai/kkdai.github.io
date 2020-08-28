@@ -21,7 +21,16 @@ tags: ["研討會心得", "DevRel", "TECH-FRESH"]
 
 首先還是先讓大家了解 LINE 的成立是因為 2011 年東京發生大地震的時候，許多人因為擔心著朋友的近況。於是開發了透過貼圖的訊息溝通軟體。 正也是呼應了 LINE 的成立宗旨：「 Closing The Disctance 」。 希望透過科技來拉近人與人，人與資訊，人與科技之間的距離。 
 
+<script async class="speakerdeck-embed" data-slide="5" data-id="6e0e7afe98124bf08f13f200f1b45010" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
+#### LIFE on LINE with AI
+
+由這張圖可以看到，感謝台灣群眾的喜愛。其實日常生活中充滿著許多 LINE 的相關服務。 而其中更是有許多服務都透過 AI 的技術來提供讓使用者更方便的服務。
+
+- 早上一起來看著 LINE Today 提供的個人化新聞，根據使用者經常閱讀的新聞來猜你喜歡的頭條。
+- 中午逛街的時候，經過捷運站可能會觸發 LINE Beacon 的服務，並且 LINE 貼圖的購買也會根據圖片內容下一些關鍵字協助搜尋。
+- 朋友間討論 LINE 功能，需要知道更進一步的使用方式。不需要真人客服的服務，可以透過 [LINE 客服小幫手](http://official-blog.line.me/tw/archives/79423075.html)給予適當的協助。
+- 收到一些疑似的假訊息，可以馬上透過 [LINE 訊息查證小幫手](https://fact-checker.line.me/) 的人工智慧判別機制，馬上告訴你假消息。讓你不會成為假消息的幫兇。
 
 LINE 台灣工程團隊每年透過 [LINE TECH FRESH – 技術新星人才計劃](https://career.linecorp.com/linecorp/career/detail/20000111/704/5570?classId=&locationCd=TW&page=)，招募資訊科技相關科系，或對此領域有所涉略的大學生 / 研究生加入 LINE 團隊進行長期實習 (一年期)，讓同學們能在國際級科技公司中觀摩學習。
 
@@ -31,7 +40,12 @@ LINE 台灣工程團隊每年透過 [LINE TECH FRESH – 技術新星人才計�
 
 接下來由各個不同團隊來分享不論是擔任 TECH FRESH 的心得，或是許多有 TECH FRESH 的用人主管來分享他們專案的訓練方式與負責的業務範圍。
 
+#### 相關內容
 
+-  [「LINE 客服小幫手」智能客服全新升級～對談中解決用LINE大小事](http://official-blog.line.me/tw/archives/79423075.html)
+-  [LINE 貼圖小舖](https://store.line.me/home/zh-Hant)
+-  [LINE 訊息查證小幫手](https://fact-checker.line.me/)
+-  
 
 ## ** TECHFRESH 實習心得分享  - Wei**
 
