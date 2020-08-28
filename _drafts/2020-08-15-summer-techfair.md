@@ -27,7 +27,7 @@ tags: ["研討會心得", "DevRel", "TECH-FRESH"]
 
 <script async class="speakerdeck-embed" data-slide="5" data-id="6e0e7afe98124bf08f13f200f1b45010" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-#### LIFE on LINE with AI
+### LIFE on LINE with AI
 
 由這張圖可以看到，感謝台灣群眾的喜愛。其實日常生活中充滿著許多 LINE 的相關服務。 而其中更是有許多服務都透過 AI 的技術來提供讓使用者更方便的服務。
 
@@ -39,7 +39,7 @@ tags: ["研討會心得", "DevRel", "TECH-FRESH"]
 - 回到家之後可以透過 [LINE Music](https://event-web.line.me/ECTW/article/Qq5Njl) 來播放令人覺得放鬆的音樂，並且可以透過 AI 來快速找尋到你喜歡的歌曲與歌手。
 - 睡覺前意猶未竟？可以透過 [LINE 購物](https://buy.line.me/)的 AI 購物推薦，馬上找到你最有興趣的商品，節省下單時間。
 
-#### LINE TECH FRESH 介紹
+### LINE TECH FRESH 介紹
 
 <script async class="speakerdeck-embed" data-slide="6" data-id="6e0e7afe98124bf08f13f200f1b45010" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
@@ -51,7 +51,7 @@ LINE 台灣工程團隊每年透過 [LINE TECH FRESH – 技術新星人才計�
 
 接下來由各個不同團隊來分享不論是擔任 TECH FRESH 的心得，或是許多有 TECH FRESH 的用人主管來分享他們專案的訓練方式與負責的業務範圍。
 
-#### 相關內容
+### 相關內容
 
 - [「LINE 客服小幫手」智能客服全新升級～對談中解決用LINE大小事](http://official-blog.line.me/tw/archives/79423075.html)
 
@@ -77,11 +77,11 @@ LINE 台灣工程團隊每年透過 [LINE TECH FRESH – 技術新星人才計�
 
 
 
-#### 為何想加入 TECH-FRESH
+### 為何想加入 TECH-FRESH
 
 講者首先在分享就有提到當初由於在校園的場子，偶然聽到 LINE 提供了實習計畫。於是馬上在 [LINE Career 網頁](https://career.linecorp.com/linecorp/career/detail/20000111/704/5570?classId=&locationCd=TW&page=)上面提出申請。 經過了線上測試與線上作業後。獲得了面試的機會，面試官透過講者所繳交的專案來相互討論設計的想法與更多可以改善的空間。 進而獲得近來實習的機會。
 
-#### TECH-FRESH 的實習生活
+### TECH-FRESH 的實習生活
 
 <script async class="speakerdeck-embed" data-slide="12" data-id="6e0e7afe98124bf08f13f200f1b45010" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
@@ -96,7 +96,7 @@ LINE 台灣工程團隊每年透過 [LINE TECH FRESH – 技術新星人才計�
 - **優渥的福利：**
   - 雖然身為實習的學生，但是應該要有的員工訓練與相關的同仁聚餐也都不會少。 隨著許多專案的上線，身為專案的貢獻者，更是有著跟著 LINE 工程團隊一起慶祝。
 
-#### 給想報名 TECH-FRESH 的學生建議
+### 給想報名 TECH-FRESH 的學生建議
 
 <script async class="speakerdeck-embed" data-slide="24" data-id="6e0e7afe98124bf08f13f200f1b45010" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
@@ -109,7 +109,7 @@ LINE 台灣工程團隊每年透過 [LINE TECH FRESH – 技術新星人才計�
 - **多做 Side Project ，作為熟悉技術的方法:**
   - 透過作多 side project ，除了可以了解 git 的基本流程，了解開源專案的進行方式外，更能夠熟悉許多技術與了解該技術開發上可能會遇到的困難。
 
-#### 參考資料:
+### 參考資料:
 
 - [LINE Career - TECH FRESH 職務說明與應徵（英文）](https://career.linecorp.com/linecorp/career/detail/20000111/704/5570?classId=&locationCd=TW&page=)
 
@@ -123,12 +123,18 @@ LINE 台灣工程團隊每年透過 [LINE TECH FRESH – 技術新星人才計�
 
 接下來由 [LINE Music](https://event-web.line.me/ECTW/article/Qq5Njl) 的開發團隊 lead - Cid 來分享與介紹。
 
-#### 什麼是 LINE Music 
+### 什麼是 LINE Music 
 
 LINE Music 是 LINE 所提出的線上音樂串流播放平台。並且與許多 LINE 的功能有深入的整合：
 
-- *來電達鈴*：可以將 LINE Call 鈴聲替換成你喜歡的音樂。
-- 
+- 「LINE鈴聲自造」功能讓用戶能從LINE MUSIC中離線下載任何歌曲，剪輯喜歡的音樂片段製作成個人化的LINE音樂鈴聲及來電答鈴。
+- 還能在LINE個人檔案頁面設定背景音樂。
+- 「AI智慧推薦」功能將根據千萬首的曲庫及個人音樂點擊狀況，每天更新個人特選歌單。
+- 「聊天室一鍵分享」功能讓用戶可以在聊天室中將30秒歌曲片段分享給朋友，即使對方不是LINE MUSIC會員也能免費收聽。
+- 最新的更有 [LINE MUSIC 去人聲功能上線](https://event-web.line.me/ECTW/article/Qq5Njl)
+
+
+
 
 
 
