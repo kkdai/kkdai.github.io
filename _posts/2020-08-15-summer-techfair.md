@@ -67,7 +67,7 @@ LINE 台灣工程團隊每年透過 [LINE TECH FRESH – 技術新星人才計�
 
   
 
-## ** TECHFRESH 實習心得分享  - Wei**
+## TECHFRESH 實習心得分享  - Wei
 
 ![](../images/2020/0815_3.jpg)
 
