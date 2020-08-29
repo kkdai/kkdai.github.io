@@ -137,16 +137,54 @@ LINE 台灣工程團隊每年透過 [LINE TECH FRESH – 技術新星人才計�
 
 
 
-
 ## LINE HR ONLINE 專案分享  - Libra
 
+![](../images/2020/0815_5.jpg)
+
+<script async class="speakerdeck-embed" data-slide="30" data-id="6e0e7afe98124bf08f13f200f1b45010" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+LINE 除了注重著產品的快速迭代與使用者的體驗外，更是在意工作同仁的效率與權益。所以開發團隊也會協助內部相關系統的建置，務必希望每一個內部系統能夠適應上 LINE 的敏捷開發的工法，也希望能讓工作同仁節省更多的時間。
+
+平時工作中，員工可能有許多表單與流程上的問題，經常會透過內部溝通系統來跟 HR 詢問。 但是隨著公司的擴展，那個問題的量可能一天高達十多間，造成 HR 無法有專注的時間處理，於是乎「 HR onLINE」就這樣產生了。
+
+HR onLINE 透過 LINE 聊天機器人與自然語言處理的相關 AI 進階功能，透過將每一位同仁的問題加以分類，並且可以記錄與相關排程每一位工作同仁的需求。不僅可以加速 HR 的工作效率，更可以滿足每一個洽談的同仁。
+
+
+
 ## LINE QA 團隊介紹  - John Wu
+
+![](../images/2020/0815_6.jpg)
+
+<script async class="speakerdeck-embed" data-slide="34" data-id="6e0e7afe98124bf08f13f200f1b45010" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+接下來 Johnny 帶來分享 LINE QA 團隊的介紹，LINE 因為有許多的，並且都是高用量的產品。每一個產品上線的時候，面臨的都是數以百萬的使用者流量，所以高品質的把關者更加的重要。
+
+講者分享 QA 團隊的重點是 「 Diversity 」（多樣化），除了男女比相當的均衡外。並且也有來自於各國的工作同仁。測試團隊在每一家的公司都會有，但是 LINE 的團隊有以下的不同點：
+
+- **有著多種截然不同的產品與服務:**  地理資訊服務的 LINE SPOT ，音樂服務的 LINE Music 也有新聞提供平台的 LINE TODAY。
+- **與開發團隊的緊密結合：** 除了最終的產品測試外， QA 團隊更是在開發的初期就會一起討論，務求能了解使用者的需求。 並且也有自動化工程師（Automation Engineer），除了協助完相關部署的功能，更強化了其中的自動化測試與驗證的功能。
+
+<script async class="speakerdeck-embed" data-slide="40" data-id="6e0e7afe98124bf08f13f200f1b45010" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+當然身為 LINE 的每一個工程團隊，都有著無比的好奇心與旺盛的學習精神。 QA 團隊定期的舉辦讀書會，透過學習「實例化需求」（Spec by Example) 的學習，讓軟體開發流程與測試流程都能夠更符合使用者的需求，讓每一個工程師都能夠更高效的開發。
+
+
+
+## LINE FRESH 校園競賽
+
+<script async class="speakerdeck-embed" data-slide="41" data-id="6e0e7afe98124bf08f13f200f1b45010" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+**LINE FRESH** 代表著 LINE 台灣與學生之間的深度連結，而「LINE FRESH 實習計畫」已連續舉辦6年，不僅藉此發掘校園中的各領域優秀人才，同時也有不少年輕學子由此作為職涯起點。相信有許多學生都好奇，這個學年要結束了怎麼遲遲還沒有消息實習計畫的消息？
+在過去半年間，世界各地與台灣都面臨受疫情影響的大環境變動，LINE台灣團隊成員們也苦惱著，要如何在這個艱困的時刻，仍繼續、甚至擴大與年輕學子、校園系所維持深度連結和溝通，同時也能發掘人才、並發揮正向影響力，盡到企業社會責任。
+於是LINE台灣團隊決定，在今年這個特別的時刻，我們轉為舉辦第一屆的校園競賽，期望透過競賽的形式，廣邀校園中的優秀好手發揮創意，運用LINE旗下多元服務或開放的平台技術，為台灣產業創造更多商業可能性、為台灣用戶提供更全面的便利生活體驗。
+
+手刀報名▶︎▶︎[**LINE FRESH 2020校園競賽活動官網**](https://lin.ee/U20VASw/newf/TWBlog)
 
 
 
 ## 攤位活動
 
-
+![](../images/2020/0815_T.jpg)
 
 
 
