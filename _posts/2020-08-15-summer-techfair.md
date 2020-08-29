@@ -17,7 +17,7 @@ tags: ["研討會心得", "DevRel", "TECH-FRESH"]
 
 
 
-## ** TECHFRESH 計畫介紹 - Evan Lin**
+## TECHFRESH 計畫介紹 - Evan Lin
 
 ![](../images/2020/0815_2.jpg)
 
