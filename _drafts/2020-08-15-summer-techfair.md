@@ -125,7 +125,7 @@ LINE 台灣工程團隊每年透過 [LINE TECH FRESH – 技術新星人才計�
 
 ### 什麼是 LINE Music 
 
-LINE Music 是 LINE 所提出的線上音樂串流播放平台。並且與許多 LINE 的功能有深入的整合：
+[LINE Music](https://event-web.line.me/ECTW/article/Qq5Njl)  是 LINE 所提出的線上音樂串流播放平台。並且與許多 LINE 的功能有深入的整合：
 
 - 「LINE鈴聲自造」功能讓用戶能從LINE MUSIC中離線下載任何歌曲，剪輯喜歡的音樂片段製作成個人化的LINE音樂鈴聲及來電答鈴。
 - 還能在LINE個人檔案頁面設定背景音樂。
@@ -133,7 +133,7 @@ LINE Music 是 LINE 所提出的線上音樂串流播放平台。並且與許多
 - 「聊天室一鍵分享」功能讓用戶可以在聊天室中將30秒歌曲片段分享給朋友，即使對方不是LINE MUSIC會員也能免費收聽。
 - 最新的更有 [LINE MUSIC 去人聲功能上線](https://event-web.line.me/ECTW/article/Qq5Njl)
 
-
+有更多關於 [LINE Music](https://event-web.line.me/ECTW/article/Qq5Njl)  架構與相關功能歡迎查看投影片的介紹。
 
 
 
