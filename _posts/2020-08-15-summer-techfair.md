@@ -151,7 +151,7 @@ HR onLINE 透過 LINE 聊天機器人與自然語言處理的相關 AI 進階功
 
 
 
-## LINE QA 團隊介紹  - John Wu
+## LINE QA 團隊介紹  - Johnny Wu
 
 ![](../images/2020/0815_6.jpg)
 
