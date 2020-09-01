@@ -52,7 +52,7 @@ tags: ["TIL", "vscode", "GitHub"]
 - #### **powerline font**
 
   - `brew tap homebrew/cask-fonts`
-  - `brew cask install font-sourcecodepro-nerd-font`
+  - `brew cask install font-source-code-pro`
   - "SourceCodePro Nerd Font", 18, 
 
 - **ZSH**
