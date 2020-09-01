@@ -51,7 +51,7 @@ tags: ["TIL", "vscode", "GitHub"]
 
 - #### **powerline font**
 
-  - `brew tap caskroom/fonts`
+  - `brew tap homebrew/cask-fonts`
   - `brew cask install font-sourcecodepro-nerd-font`
   - "SourceCodePro Nerd Font", 18, 
 
