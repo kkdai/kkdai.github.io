@@ -64,13 +64,11 @@ tags: ["TIL", "vscode", "GitHub"]
   - ```
     brew install zsh
     ```
-```
-
 - Install **oh-my-zsh**
 
   - ```
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-```
+    ```
 
 - Install zsh integration for iTerm2
 
@@ -94,7 +92,7 @@ tags: ["TIL", "vscode", "GitHub"]
       git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
       git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
       ```
-
+    
   - 有些用不到的可以先不要
     - miniconda
     - kubetcl
@@ -123,3 +121,5 @@ tags: ["TIL", "vscode", "GitHub"]
 
 - https://medium.com/statementdog-engineering/prettify-your-zsh-command-line-prompt-3ca2acc967f
 - https://github.com/kkdai/zsh
+
+```
