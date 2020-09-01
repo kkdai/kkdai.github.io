@@ -51,17 +51,26 @@ tags: ["TIL", "vscode", "GitHub"]
 
 - #### **powerline font**
 
-  - `brew tap homebrew/cask-fonts`
-  - `brew cask install font-source-code-pro`
+  - ``` 
+    brew tap homebrew/cask-fonts
+    ```
+  - ```
+    brew cask install font-source-code-pro
+    ```
   - "SourceCodePro Nerd Font", 18, 
 
 - **ZSH**
 
-  - `brew install zsh`
+  - ```
+    brew install zsh
+    ```
+```
 
 - Install **oh-my-zsh**
 
-  - `sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
+  - ```
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
 
 - Install zsh integration for iTerm2
 
