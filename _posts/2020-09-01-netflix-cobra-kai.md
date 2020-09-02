@@ -88,3 +88,12 @@ tags: ["Netflix", "Movie"]
 
 ![](../images/2020/0902.jpeg)
 
+
+
+## 相關鏈結:
+
+- [https://www.netflix.com/tw/title/81002370](https://www.netflix.com/tw/title/81002370)
+- [https://en.wikipedia.org/wiki/Cobra_Kai](https://en.wikipedia.org/wiki/Cobra_Kai)
+- [https://en.wikipedia.org/wiki/The_Karate_Kid](https://en.wikipedia.org/wiki/The_Karate_Kid)
+- [https://en.wikipedia.org/wiki/Pat_Morita](https://en.wikipedia.org/wiki/Pat_Morita)
+- [https://www.youtube.com/watch?v=xlnm0NtPoVs](https://www.youtube.com/watch?v=xlnm0NtPoVs)
