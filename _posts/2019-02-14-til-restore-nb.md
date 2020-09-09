@@ -34,10 +34,30 @@ tags: ["TIL", "vscode", "GitHub"]
   - [Gitlens](https://github.com/eamodio/vscode-gitlens) 基本上懶得打 git 或是查資料用
   - [Go](https://github.com/Microsoft/vscode-go) 這不用問
   - Run vscode from your terminal https://code.visualstudio.com/docs/setup/mac
+  - 關於設定部分，其實可以登入 Settings Sync 來[儲存設定](https://code.visualstudio.com/docs/editor/settings-sync)。
 - [typora 寫部落格用的工具](https://typora.io/) ，之前有寫過[推廣文](http://www.evanlin.com/til-mdeditor-typora/)
 - [PasteApp](https://pasteapp.me/) 方便你複製貼上的工具，免費七天。買下去你絕對不會後悔的。
+- **Vim 相關安裝**
+  - [GitHub.com/kkdai/vimrc](https://GitHub.com/kkdai/vimrc)
+  - https://github.com/tpope/vim-pathogen
+  - https://github.com/preservim/nerdtree
+  - `:PluginInstall`
 
 
+
+## 漂亮的字型很重要
+
+![](https://github.com/ryanoasis/nerd-fonts/raw/master/images/nerd-fonts-logo.svg)
+
+```
+> github clone https://github.com/ryanoasis/nerd-fonts
+> cd nerd-fonts
+> ./install.sh
+```
+
+
+
+# 
 
 # 順手的東西 zsh + oh-my-zsh
 
@@ -121,5 +141,7 @@ tags: ["TIL", "vscode", "GitHub"]
 
 - https://medium.com/statementdog-engineering/prettify-your-zsh-command-line-prompt-3ca2acc967f
 - https://github.com/kkdai/zsh
+
+```
 
 ```
