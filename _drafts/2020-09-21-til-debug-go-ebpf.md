@@ -26,6 +26,8 @@ tags: ["Golang", "OpenSource"]
 
 就如同大家熟悉的，使用 `fmt.Println()` 或是 `log.Println()` 。
 
+
+
 ### **Using debugger (delve or GDB)**
 
 不論是透過 vscode 內建的 delve ，或是透過 GDB 來做 debugging 。 透過 debugger 來除錯，其實是相當消耗系統資源，並且經常會中斷整體應用程式的運行。
@@ -33,6 +35,10 @@ tags: ["Golang", "OpenSource"]
 
 
 ### Tracing 
+
+這裡指的是透過外部的 tracing tool ，不論事 USDT 還是 strace 都算是一種方式。
+
+
 
 
 
