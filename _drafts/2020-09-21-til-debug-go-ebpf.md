@@ -46,7 +46,13 @@ tags: ["Golang", "OpenSource"]
 
 ![](../images/2020/0921-3.png)
 
+eBPF (extended Berkeley Packet Filter) 根據官方網站 (https://ebpf.io/) ，是一個技術可以讓 application 跑在 sandbox 上面，並且可以透過 Syscall hook 方式來查看相關的資料而不需要修改任何的 kernel source code 。
 
+應用範圍有:
+
+![](https://ebpf.io/static/intro_security-e714bea99d4351c1097477e8920d94ec.png)
+
+- **Secuerity:**  透過 eBPF 可以做為
 
 
 
