@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[TIL][Golang] note for Debugging Go in prod using eBPF"
+title: "[TIL][Golang] Debugging Go in prod using eBPF 心得"
 description: ""
 category: 
 - TodayILearn
@@ -52,7 +52,13 @@ eBPF (extended Berkeley Packet Filter) 根據官方網站 (https://ebpf.io/) ，
 
 ![](https://ebpf.io/static/intro_security-e714bea99d4351c1097477e8920d94ec.png)
 
-- **Secuerity:**  透過 eBPF 可以做為
+**Secuerity:**  透過 eBPF 可以做為一個與系統呼叫 (Syscall) 與硬體設備的中間層。
+
+![](https://ebpf.io/static/intro_tracing-ffa5e3fa3407ecb445b1549f85f590f5.png)
+
+**Tracking and Profiling**:由於 Linux 系統都有提供 eBPF 的接口，可以透過這個直接 tracking 與 Profiling 你的應用。 (with very low latency) 。
+
+這也是這篇文章提到的主要技巧。
 
 
 
@@ -60,9 +66,13 @@ eBPF (extended Berkeley Packet Filter) 根據官方網站 (https://ebpf.io/) ，
 
 ![](../images/2020/0921-2.png)
 
+既然提到 Debugging Go App 的所有工具，必須要跟其他方式做個比較。可以看到 eBPF 具有以下特性：
+
+- Performance Impact 非常的低（disruption 也很低），類似於 Tracing tool 。但是跟 GDE 與 Delve 一樣可以追蹤到 Application Code。
+- 但是無法作分散式系統的測量，因為一次 eBPF 只能針對你需要 hook 的應用來做 debugging 跟 tracing 。
 
 
 
+## 更多介紹：
 
-## 相關問題：
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7pmXdG8-7WU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
