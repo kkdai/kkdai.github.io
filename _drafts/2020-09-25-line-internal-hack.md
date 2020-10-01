@@ -19,7 +19,9 @@ tags: ["研討會心得", "DevRel", "TECH-FRESH"]
 
 ## 第一屆回顧
 
-第一屆的 LINE Taiwan Internal Hackathon 主旨為 「AI is new Attitude」，也是希望每一個
+第一屆的 LINE Taiwan Internal Hackathon 主旨為 「AI is new Attitude」，由於 LINE 是一家注重 AI 的公司，我們也希望每一位員工都能透過機器學習為出發點，來反思每一個服務，一些內部應用是否可以透過機器學習與人工智慧的方式來優化。
+
+
 
 <script async class="speakerdeck-embed" data-slide="24" data-id="b18c2025be694abc9a87dc20e83e588f" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
