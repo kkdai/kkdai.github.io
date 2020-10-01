@@ -4,7 +4,7 @@ title: "[研討會心得] 2020/09/25 LINE Internal Hackathon 2020"
 description: ""
 category: 
 - 研討會心得
-tags: ["研討會心得", "DevRel", "TECH-FRESH"]
+tags: ["研討會心得", "DevRel", "Hackathon"]
 ---
 
 
@@ -17,15 +17,21 @@ tags: ["研討會心得", "DevRel", "TECH-FRESH"]
 
 
 
-## 第一屆回顧
+## 第一屆回顧 LINE Internal Hackathon 2019 -  LINE Attitude
+
+<script async class="speakerdeck-embed" data-slide="24" data-id="5e0fd8e4633d4fb892dd2ee930057642" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 第一屆的 LINE Taiwan Internal Hackathon 主旨為 「AI is new Attitude」，由於 LINE 是一家注重 AI 的公司，我們也希望每一位員工都能透過機器學習為出發點，來反思每一個服務，一些內部應用是否可以透過機器學習與人工智慧的方式來優化。
 
+第一屆的 LINE Internal Hackathon 我們收到許多有趣的應用，在 TECHPULSE 2019 上我們也分享了第一名的成果與技術。 也就是透過人工智慧的方式來幫助出差報帳的系統。
 
+### 20019 LINE Internal Hackathon 第一名：自動報帳系統
 
 <script async class="speakerdeck-embed" data-slide="24" data-id="b18c2025be694abc9a87dc20e83e588f" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
+LINE 的開發團隊遍及許多國家，於是 LINE 的工程團隊有許多的機會可以到不同國家的分公司去合作與討論。但是回來後最令出差人員困擾的就是要將許多的單據一步步的用人工的方式要輸入到系統與表單之中，這樣的作業流程往往要半個小時左右，相當的消耗人力。
 
+去年的參賽隊伍透過人工智慧學習的方式，透過超過數百張出差表單的學習經驗。透過 iPhone 的軟體拍照之好，透過 OCR 的辨識與學習經驗，自動將不同表單填寫到正確的表單位置。並且產出報帳需要的表單文件。大大的節省報帳的流程到兩分鐘之內。（原本三十分鐘）
 
 ## 今年新增
 
