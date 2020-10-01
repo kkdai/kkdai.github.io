@@ -9,32 +9,51 @@ tags: ["研討會心得", "DevRel", "TECH-FRESH"]
 
 
 
+![](../images/2020/0925_1.jpg)
+
 大家好，我是 LINE Tech Evangelist - Evan Lin 。LINE 很重視員工們的自主創新與團隊合作，所以各地都會舉辦 LINE Internal Hackathon 
 
-所以第二屆的 LINE 內部黑客松競賽的主題就是 「Team up for A+」 
-
-目標希望同仁們能團隊合作，共同優化與創新出更令人驚豔（WOW) 的產品服務。
-
-這是參加到今年第一個聯合徵才的台灣科技就業博覽會，希望能讓更多的學生朋友能了解 LINE 所帶來的學生實習計畫。「 LINE 技術新星人才計劃 - LINE TECHFRERSH 」。
-
-首先先來介紹第一場也就是 LINE 台灣的 LINE TECH FRESH 與相關團隊的介紹。
+所以第二屆的 LINE 內部黑客松競賽的主題就是 「Team up for A+」 ，目標希望同仁們能團隊合作，共同優化與創新出更令人驚豔（WOW) 的產品服務。
 
 
 
 ## 成立起因
 
+<script async class="speakerdeck-embed" data-slide="24" data-id="b18c2025be694abc9a87dc20e83e588f" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+
+
+## 今年新增
+
+
+
 
 
 ## Hacking Space
 
+![](../images/2020/0925_4.jpg)
 
 
+
+## 總決賽
+
+![](../images/2020/0925_2.jpg)
+
+
+
+## 猜謎小活動
 
 
 
 ## 活動小結
 
-第一次參與綜合徵才的博覽會，看到許多同學們與社會新鮮人的求職熱情。希望透過這次的活動參與，除了讓每一位參與者更了解 LINE 的工程團隊外，更希望好手們不要害羞，加入我們一起來打造令人驚豔 WoW 的服務吧！
+![](../images/2020/0925_3.jpg)
+
+
+
+
+
+
 
 立即加入「LINE開發者官方社群」官方帳號，就能收到第一手Meetup活動，或與開發者計畫有關的最新消息的推播通知。▼
 
