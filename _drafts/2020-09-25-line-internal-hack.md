@@ -11,13 +11,15 @@ tags: ["研討會心得", "DevRel", "TECH-FRESH"]
 
 ![](../images/2020/0925_1.jpg)
 
-大家好，我是 LINE Tech Evangelist - Evan Lin 。LINE 很重視員工們的自主創新與團隊合作，所以各地都會舉辦 LINE Internal Hackathon 
+大家好，我是 LINE Tech Evangelist - Evan Lin 。LINE 很重視員工們的自主創新與團隊合作，所以各地都會舉辦 LINE Internal Hackathon 。 在 LINE 台灣這已經是第二屆的內部黑客松競賽，也期待能夠看到不同團隊激盪後滿滿的創意。
 
-所以第二屆的 LINE 內部黑客松競賽的主題就是 「Team up for A+」 ，目標希望同仁們能團隊合作，共同優化與創新出更令人驚豔（WOW) 的產品服務。
+第一屆內部舉辦的時候，受到許多的迴響。不少非工程團隊也希望能夠一起參與，所以今年特定修改參賽方式，第二屆的 LINE 內部黑客松競賽的主題就是 「Team up for A+」 ，目標希望同仁們能團隊合作，共同優化與創新出更令人驚豔（WOW) 的產品服務。
 
 
 
-## 成立起因
+## 第一屆回顧
+
+第一屆的 LINE Taiwan Internal Hackathon 主旨為 「AI is new Attitude」，也是希望每一個
 
 <script async class="speakerdeck-embed" data-slide="24" data-id="b18c2025be694abc9a87dc20e83e588f" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
