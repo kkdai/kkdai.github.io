@@ -94,7 +94,7 @@ No Java runtime present, requesting install.
 - 就算你試著更新 MacOSX 的 Java (參考[這篇官方文件](https://www.java.com/zh_TW/download/help/mac_java_update.xml)) 還是會跑出錯誤，那麼就要[安裝"下載 - Java for OS X 2017-001"這個套件](https://support.apple.com/kb/DL1572?locale=zh_TW)。
 - 完整錯誤請查看[這個說明](https://java.com/en/download/faq/yosemite_java.xml)。
 
-### 更新: 安裝 Java 在 Mac OSX Catalina
+### 更新: 安裝 Java 在 Mac OSX Catalina (2020/10/15)
 
 - 下載新版 [AdoptOpenJDK](https://adoptopenjdk.net/installation.html?variant=openjdk11&jvmVariant=hotspot#x64_mac-jdk)
 - 解壓縮 `tar -xf OpenJDK11U-jdk_x64_mac_hotspot_11.0.8_10.tar.gz`
