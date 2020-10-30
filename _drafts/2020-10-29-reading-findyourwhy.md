@@ -24,6 +24,12 @@ tags: ["書海裡的漫遊", "Books", "DevRel"]
 
 這一本是今年所讀完的第八本書。
 
+賽門．西奈克曾經在一段影片中提出「黃金圈激勵理論」，裡面提到驅使人類去行動的三個圓圈。外層是做什麼的「WHAT」，中間而是如何做的「HOW]，而在中心點就是最重要的「WHY」。
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/L1-0TQZaswA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+這一本書就是再將這段影片的內容加以詳述的一本書，也是我推薦給每一個想要激勵別人的人都該看的一本書。
+
 
 
 
