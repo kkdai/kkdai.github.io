@@ -17,15 +17,37 @@ tags: ["研討會心得", "DevRel", "Hackathon"]
 
 ## 寫在前面：
 
-大家好，我是 LINE Tech Evangelist - Evan Lin 。LINE 很重視員工們的自主創新與團隊合作，所以各地都會舉辦 LINE Internal Hackathon 。 並且在[日前也舉辦了 在 LINE 台灣這已經是第二屆的內部黑客松競賽](https://engineering.linecorp.com/zh-hant/blog/line-taiwan-internal-hackathon-2020/)，而這次很開心跟新竹市政府與梅竹黑客松主辦單位一同支持學生們創新的 Hacking 精神，一起舉辦了 「新竹 x 梅竹黑客松」 LINE 的競賽組別。
+大家好，我是 LINE Tech Evangelist - Evan Lin 。LINE 很重視員工們的自主創新與團隊合作，所以各地都會舉辦 LINE Internal Hackathon 。 並且在[日前也舉辦了 在 LINE 台灣這已經是第二屆的內部黑客松競賽](https://engineering.linecorp.com/zh-hant/blog/line-taiwan-internal-hackathon-2020/)，而這次很開心跟新竹市政府與梅竹黑客松主辦單位一同支持學生們創新的 Hacking 精神，一起舉辦了 [「新竹 x 梅竹黑客松」](https://www.facebook.com/HackMeiChu) LINE 的競賽組別。
 
 在決賽前一週， LINE 的開發工程師也應邀出席了企業工作坊透過教導同學們 LIFF 與 LIFF Share Target Picker 來讓每一個參賽的同學能夠了解。 （詳情請看： [梅竹黑客松賽前企業工作坊 – LIFF shareTargetPicker](https://engineering.linecorp.com/zh-hant/blog/meichu-liff-share-target-picker-workshop/) )
 
 
 
-## 決賽當天
 
-10
+
+## 活動擺攤
+
+![](../images/2020/1024_4.jpg)
+
+
+
+## 決賽第一天
+
+![](../images/2020/1024_2.jpg)
+
+![](../images/2020/1024_3.jpg)
+
+
+
+
+
+
+
+
+
+## 決賽報告
+
+![](../images/2020/1025_1.jpg)
 
 
 
