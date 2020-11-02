@@ -49,7 +49,7 @@ tags: ["研討會心得", "DevRel", "Hackathon"]
 
 ![](../images/2020/1025_1.jpg)
 
-
+(照片來源： [梅竹黑客松官方粉絲團](https://www.facebook.com/HackMeiChu))
 
 
 
@@ -57,11 +57,29 @@ tags: ["研討會心得", "DevRel", "Hackathon"]
 
 ![](../images/2020/1025_f_3.jpg)
 
+(照片來源： [梅竹黑客松官方粉絲團](https://www.facebook.com/HackMeiChu))
+
+
+
+
+
 ![](../images/2020/1025_f_2.jpg)
+
+(照片來源： [梅竹黑客松官方粉絲團](https://www.facebook.com/HackMeiChu))
+
+
+
+
 
 
 
 ![](../images/2020/1025_f_1.jpg)
+
+(照片來源： [梅竹黑客松官方粉絲團](https://www.facebook.com/HackMeiChu))
+
+
+
+
 
 
 
