@@ -88,7 +88,7 @@ LIFF (LINE Frontend Framework) 是 LINE 為網頁應用 (Web Application）所�
 
 ![](../images/2020/1025_f_3.jpg)
 
-(照片來源： [梅竹黑客松官方粉絲團](https://www.facebook.com/HackMeiChu))
+(照片來源： [梅竹黑客松官方粉絲團](https://www.facebook.com/HackMeiChu)， 頒獎人 Nijia Lin)
 
 **題目：**
 
@@ -107,7 +107,7 @@ LIFF (LINE Frontend Framework) 是 LINE 為網頁應用 (Web Application）所�
 
 ![](../images/2020/1025_f_2.jpg)
 
-(照片來源： [梅竹黑客松官方粉絲團](https://www.facebook.com/HackMeiChu))
+(照片來源： [梅竹黑客松官方粉絲團](https://www.facebook.com/HackMeiChu)，頒獎人 Sing-Ming Chen)
 
 
 
@@ -115,9 +115,9 @@ LIFF (LINE Frontend Framework) 是 LINE 為網頁應用 (Web Application）所�
 
 
 
-![](../images/2020/1025_f_1.jpg)
+![Ｍ](../images/2020/1025_f_1.jpg)
 
-(照片來源： [梅竹黑客松官方粉絲團](https://www.facebook.com/HackMeiChu))
+(照片來源： [梅竹黑客松官方粉絲團](https://www.facebook.com/HackMeiChu)，頒獎人: Evan Lin)
 
 
 
