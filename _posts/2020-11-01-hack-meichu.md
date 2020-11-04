@@ -110,7 +110,7 @@ LIFF (LINE Frontend Framework) 是 LINE 為網頁應用 (Web Application）所�
 - 交大資工系郭乃恩
 - 交大資工系褚又嘉
 - 交大資工系許哲瑋
-- 台大資工系沈郁均
+- 台大資工系沈郁鈞
 
 該團隊透過 LINE 的 Share Target Picker 可以分享在 Twitter 上面看到有趣的訊息，你可以直接在 tweet 網址傳給他們的官方帳號，之後就會得到相關的 LIFF 頁面。 點取該頁面就可以開啟 Share Target Picker 來分享給你的好友。 好友看到的訊息也都透過 FLEX Message 來包裝過，整個就相當的精美與漂亮。
 
