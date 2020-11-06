@@ -25,7 +25,7 @@ tags: ["書海裡的漫遊", "Books", "Growthing", "g0v", "hacking"]
 <blockquote class="twitter-tweet"><p lang="zh" dir="ltr">熱騰騰的，唐鳳的新書，上架囉！<a href="https://t.co/WC4TxhnoTH">https://t.co/WC4TxhnoTH</a> <a href="https://t.co/H9qfsKcvaT">https://t.co/H9qfsKcvaT</a></p>&mdash; Readmoo讀墨電子書 (@Readmoo) <a href="https://twitter.com/Readmoo/status/1323658517723574272?ref_src=twsrc%5Etfw">November 3, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 會注意到這本書，好像是因為 Suiting Tseng 的 twitter 在問 Readmoo 能不能進這本電子書。結果一天就有了（驚！）。 也就忍不住手滑，買下去了。
-一開始會好奇，這本書竟然是由「親子天下」這一個專門出版親子相關議題的書局所出版。後來讀了以後發現內容相當的吸引人，除了講出了一段精彩的資訊屆的歷史外（Perl6 相關的開發），也提到了太陽花學運與 g0v 的崛起。 相關的教育互動方便，更是發人深省，尤其是新手父母更是推薦要看。
+一開始會好奇，這本書竟然是由「親子天下」這一個專門出版親子相關議題的書局所出版。後來讀了以後發現內容相當的吸引人，除了講出了一段精彩的資訊屆的歷史外（Perl6 相關的開發），也提到了太陽花學運與 g0v 的崛起。 相關的教育互動方面，更是發人深省，尤其是新手父母更是推薦要看。
 
 
 ## 內容簡介與心得:
