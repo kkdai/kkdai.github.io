@@ -16,7 +16,7 @@ tags: ["書海裡的漫遊", "Books", "Growthing", "g0v", "hacking"]
 出版日期：2020/11/04 
 ```
 
-#### 買書推薦網址：[http://moo.im/a/5dvIOY](http://moo.im/a/5dvIOY)
+#### 買書推薦網址：[http://moo.im/a/1hsPQX](http://moo.im/a/1hsPQX)
 
 ## 前言:
 
