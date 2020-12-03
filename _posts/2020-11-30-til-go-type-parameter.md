@@ -13,11 +13,11 @@ tags: ["Golang", "OpenSource"]
 
 ## 前言:
 
-Generics (泛型)一直是 Golang 這個程式語言比較受到 C++ 與 Java 轉過來的開發者們經常訓問的問題。 這個問題不僅僅算是經常被語言戰爭中主要的攻防端，更有許多發了需求要加入 `generics` （[參考](https://github.com/golang/go/wiki/ExperienceReports#generics))
+Generics (泛型)一直是 Golang 這個程式語言比較受到 C++ 與 Java 轉過來的開發者們經常訓問的問題。 這個問題不僅僅算是經常被語言戰爭中主要的攻防端，更有許多發了需求要加入  generics（[參考](https://github.com/golang/go/wiki/ExperienceReports#generics)) 。這邊幫大家整理一下與嘗試一下最新版本的 Go2 到底 Generics 狀況如何了。
 
-這邊幫大家整理一下與嘗試一下最新版本的 Go2 到底 Generics 狀況如何了。
+感謝 TG 上面討論的網友提供的鏈結， 試玩一下 Go2 Playground 並且看了一下 Type Parameters 的 proposal 變更後，寫了一下心得。大家可以玩玩看，一起來更了解一下 Type Parameters 的提案內容。
 
-
+> 我得了一個重大活動前，就很想要寫程式或是讀 Spec 的病。 投影片明明在等我
 
 ## 為何程式語言需要 Generics
 
