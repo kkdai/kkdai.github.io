@@ -1,16 +1,20 @@
 ---
 layout: post
-title: "[好書分享] 發掘你的微細領導力"
+title: "[好書分享] 發掘你的微細領導力 (This Is Day One)"
 description: ""
 category: 
 - 書海裡的漫遊
-tags: ["書海裡的漫遊", "Books", "Netflix", "Growthing"]
+tags: ["書海裡的漫遊", "Books", "DevRel"]
 ---
 
 <div><a href="http://moo.im/a/7afCJN" title="發掘你的微細領導力"><img src="https://cdn.readmoo.com/cover/d6/k65kjif_210x315.jpg?v=0"></a></div>
 
 ```
-
+發掘你的微細領導力: 運用「第一天」模式覺察自身價值，成為更有分量的人
+This Is Day One : A Practical Guide to Leadership That Matters
+作者： 卓杜立  
+原文作者： Drew Dudley  
+出版日期：2019/10/03
 ```
 
 
@@ -27,7 +31,6 @@ tags: ["書海裡的漫遊", "Books", "Netflix", "Growthing"]
 ## 內容簡介與心得:
 
 ```
-
 請記住以下這句話：你對周遭的人、所屬組織發揮的最大影響力，幾乎都是日常無心插柳的意外結果。
 
 大多數人把領導力想得過於狹隘，認為自己既沒做大事，也不在高位，需要有財富、頭銜及影響力等外在光環加持才能算是領導人。然而這種能力其實人人都有，甚至天天都在實際運用，只是肇因於陳舊思維與教育洗腦，矮化了自己的重要性與領導能力。
@@ -38,11 +41,9 @@ tags: ["書海裡的漫遊", "Books", "Netflix", "Growthing"]
 
 ### 章節條列
 
-1. 第一部　就從這一天開始
-2. 第二部　領導力的六個關鍵價值
-3. 第三部　你如何定義你自己
-
-
+#### 第一部　就從這一天開始
+####  第二部　領導力的六個關鍵價值
+####  第三部　你如何定義你自己
 
 
 
