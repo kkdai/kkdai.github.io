@@ -113,3 +113,4 @@ This Is Day One : A Practical Guide to Leadership That Matters
 
 
 
+每個人都會影響其他人的，希望我們都可以帶給身邊的人正向的影響。
