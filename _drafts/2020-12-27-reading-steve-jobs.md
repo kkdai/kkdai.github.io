@@ -22,13 +22,15 @@ Steve Jobs
 
 ## 前言:
 
-這一本是今年所讀完的第十五本書。 
+這一本是今年所讀完的第十五本書。  其實這本書很捨不得看完，因為邊看這本書我習慣邊看著電影。或是邊看著蘋果的發表會來了解其中的一些細節。其實當年對於賈伯斯的認知，都是來自於早期的矽谷相關電影「[微軟英雄](https://zh.wikipedia.org/zh-tw/%E5%BE%AE%E8%BB%9F%E8%8B%B1%E9%9B%84)」。 雖然這部電影其實也蠻久的了，但是許多的描述也是相當的深入，對其他相關的書籍與電影都影響相當的大。
 
-
+後來由艾希頓庫奇所拍攝的「賈伯斯」，則更深入得探討到賈伯斯的內心轉折。也很建議大家來看。
 
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SkjUi3z0IzI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+最後，來談到這本書。高達六七百頁的書籍。內容包含了學生時期的賈伯斯，一直到賈伯斯因為癌症過世之前的心路歷程。都包含在其中，很值得推薦一看。
 
 
 
