@@ -3,8 +3,8 @@ layout: post
 title: "2020 年度回顧與展望"
 description: ""
 category: 
-- TodayILearn
-tags: ["OpenSource"]
+- 我的生活
+tags: ["OpenSource", "我的生活"]
 ---
 
 
