@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[TIL] 分散式系統現實世界的拜占庭將軍問題 (note from A Byzantine failure in the real world)"
+title: "[TIL] 分散式系統現實世界的拜占庭將軍問題 (note from CloudFlare - A Byzantine failure in the real world)"
 description: ""
 category: 
 - TodayILearn
