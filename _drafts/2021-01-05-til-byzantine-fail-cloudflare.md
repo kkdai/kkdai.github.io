@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[TIL] 分散式系統現實世界的拜占庭將軍問題 (note from CloudFlare - A Byzantine failure in the real world)"
+title: "[TIL][讀後心得] 分散式系統現實世界的拜占庭將軍問題 (note from CloudFlare - A Byzantine failure in the real world)"
 description: ""
 category: 
 - TodayILearn
@@ -29,7 +29,15 @@ tags: ["TIL", "distributed_system", "etcd", "golfing"]
 
 ## 關於 CloudFlare 的復原機制
 
-探討比較複雜的問題之前，其實這篇文章還有一個有趣的角度可以觀察。 就是如何透過 CloudFlare 的 Postmortem Report 來查看他們針對系統維護上有那一些備援機制。 
+探討比較複雜的問題之前，其實這篇文章還有一個有趣的角度可以觀察。 就是如何透過 CloudFlare 的 Incident Report 來查看他們針對系統維護上有那一些備援機制。 
+
+### 服務備援機制
+
+- 每一個服務都是一系列的 Rack Servers
+- 每台機器有兩個 switches 
+- 每個機器主機架有兩個以上的電源供應設備
+- 每個 server 都使用 RAID-10 的備份機制 ([也就是 RAID 1 + RAID 0 的備份機制](https://en.wikipedia.org/wiki/Nested_RAID_levels#RAID_10_(RAID_1+0)))
+- 每一個 Rack 至少都是三台機器以上。
 
 
 
