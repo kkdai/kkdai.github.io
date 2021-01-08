@@ -41,6 +41,22 @@ tags: ["TIL", "distributed_system", "etcd", "golfing"]
 
 
 
+## 發生的問題
+
+![](https://blog.cloudflare.com/content/images/2020/11/image1-20.png)
+
+（**圖片解釋**： 左上角為 Server 1, 右側為 Server 2，下方為 Server 3 也是 Leader )
+
+- 由於 Server 1 到 Server 2 的網路發生問題。
+- 造成 Server 1 與 Server 2 發生不同步的資訊問題。
+  - Server1 認為 Leader (Server 3) 已經下線
+  - Server 2 認為 Leader 是正常運行。
+- 也是因為這樣的原因， CloudFlare 將這個問題在為 Byzantine Failure
+
+
+
+
+
 
 
 
