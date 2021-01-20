@@ -28,7 +28,7 @@ tags: ["coursera", "moocs", "cassandra", "gossip"]
 這整堂課主要是圍繞著 Cloud Computing 經常會使用到的技術與相關的概念． 整堂課其實只有一個程式語言作業:
 
 		使用 C++ 寫 Gossip Protocol
-		
+
 雖然課程裡面程式語言的作業不多，但是整體上的內容還算不少． 除了有談到一些雲端技術的基本概念:
 
 - Map Reduce
@@ -49,8 +49,7 @@ tags: ["coursera", "moocs", "cassandra", "gossip"]
 
 **Global Snapshot** =
 
-- Global State =
-- Individual state + communication channel
+- Global State =Individual state + communication channel
 
 **時間不同步的時候所造成 Global Snapshot 會失敗的原因**
 
