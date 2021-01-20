@@ -3,7 +3,7 @@ layout: post
 title: "[Google] Google ML Study Jam - Machine Learning APIs"
 description: ""
 category: 
-- coursera
+- 學習文件
 tags: ["google", "MachineLearning", "GoogleCloudPlatform"]
 
 ---
