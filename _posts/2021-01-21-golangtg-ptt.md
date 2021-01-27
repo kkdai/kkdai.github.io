@@ -15,9 +15,11 @@ tags: ["TIL", "Golang", "bbs", "ptt"]
 
 # 前提
 
-一個關於 PTT BBS 後台 Golang 後端夥伴（因爲是交朋友專案，沒有薪水）的討論，在 Golang TG 的討論上也帶出關於 PTT 後台需求的討論。 以下經過整理後，貼上相關的討論內容。
+一個關於 [PTT BBS 後台 Golang 後端夥伴（因爲是交朋友專案，沒有薪水）的討論](https://moptt.tw/p/Soft_Job.M.1610976994.A.2C8)，在 Golang TG 的討論上也帶出關於 PTT 後台需求的討論。 以下經過整理後，貼上相關的討論內容。
 
 以下先整理一些關於徵夥伴文的相關脈絡，裡面許多內容都是引用原文作者。
+
+PTT 原文在這：  https://moptt.tw/p/Soft_Job.M.1610976994.A.2C8
 
 
 
@@ -63,7 +65,7 @@ tags: ["TIL", "Golang", "bbs", "ptt"]
 
 
 
-# 其他： 關於 BBS 資料庫格式
+# 其他：
 
 - PTT BBS source code https://github.com/ptt/pttbbs
 - PTT File struct https://github.com/ptt/pttbbs/wiki/STRUCTURE
