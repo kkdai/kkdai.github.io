@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[TIL]Golang 社群上關於 PTT BBS 的討論"
+title: "[TIL]Golang TG社群上關於 PTT BBS 的討論"
 description: ""
 category: 
 - TodayILearn
