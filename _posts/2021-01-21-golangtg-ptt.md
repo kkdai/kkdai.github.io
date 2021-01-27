@@ -63,11 +63,15 @@ tags: ["TIL", "Golang", "bbs", "ptt"]
 
 
 
-# 關於 BBS
+# 其他： 關於 BBS 資料庫格式
+
+- PTT BBS source code https://github.com/ptt/pttbbs
+- PTT File struct https://github.com/ptt/pttbbs/wiki/STRUCTURE
+- MapleBBS 3.0 簡報文件 https://hackmd.io/@holishing/BkJHevM4f?type=view
 
 
 
-# 全文檢索:
+# TG 討論全文:
 
 作為查詢之用
 
