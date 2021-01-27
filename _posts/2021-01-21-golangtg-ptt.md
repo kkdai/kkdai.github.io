@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[TIL]Golang TG社群上關於 PTT BBS 的討論"
+title: "[TIL]Golang TG社群上關於 PTT BBS 的討論懶人包"
 description: ""
 category: 
 - TodayILearn
@@ -42,7 +42,7 @@ PTT 原文在這：  https://moptt.tw/p/Soft_Job.M.1610976994.A.2C8
 ## PTT 目前的問題 (由輕重緩急排列)
 
 1. 介面/商業邏輯/資料庫的程式碼混在一起，造成調整使用者體驗上以及使用者介面上調整困難。  
-2. 2程式碼缺乏註解，可讀性極低。  
+2. 程式碼缺乏註解，可讀性極低。  
 3. 原先的程式碼完全沒有 testing code.  
 4. 程式碼完全沒有 benchmark 機制，修改架構仰賴設計者的威望而非科學證據。  
 5. 大部分的架構仍然使用 32 位元的時間表示方式，這會導致 2038 問題。  
