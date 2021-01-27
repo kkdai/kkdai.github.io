@@ -19,7 +19,10 @@ tags: ["TIL", "Golang", "bbs", "ptt"]
 
 以下先整理一些關於徵夥伴文的相關脈絡，裡面許多內容都是引用原文作者。
 
-PTT 原文在這：  https://moptt.tw/p/Soft_Job.M.1610976994.A.2C8
+PTT 原文在這：  
+
+- moptt https://moptt.tw/p/Soft_Job.M.1610976994.A.2C8
+- ptt.cc https://www.ptt.cc/bbs/Soft_Job/M.1610976994.A.2C8.html
 
 
 
