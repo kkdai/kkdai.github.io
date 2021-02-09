@@ -30,11 +30,44 @@ tags: ["Golang", "DevOps"]
 
 ## 以前要如何打包你的 Golang CLI ?
 
-在以前的時候，曾經有出過一個很方便可以快速打包所有平台執行檔案的小工具。 Gox 
+在以前的時候，曾經有出過一個很方便可以快速打包所有平台執行檔案的小工具。 Gox 就是一個很方便的小工具：
+
+### GOX 快速快平台打包工具（以前）
+
+https://github.com/mitchellh/gox 
+
+```
+$ go get github.com/mitchellh/gox
+...
+$ gox -h
+...
+```
+
+就這麼簡單，就可以快速編譯跨平台的工具。 其實因為 Golang 從 1.5 之後就支援跨平台編譯。可以參考這篇 Dave Cheney 的文章。
+
+- [Cross compilation with Go 1.5](https://dave.cheney.net/2015/08/22/cross-compilation-with-go-1-5)
+
+- [An introduction to cross compilation with Go](https://dave.cheney.net/2012/09/08/an-introduction-to-cross-compilation-with-go)
+
+其實跨平台編譯透過 
+
+```
+env GOOS=linux GOARCH=arm go build -v github.com/constabulary/gb/cmd/gb
+```
+
+透過這個方式就可以快速的打包你的工具，所以其實後來 gox 就也比較沒人在用。
 
 
 
+## GoReleaser 一個好用的打包發佈的工具
 
+![](https://goreleaser.com/static/logo.png)
+
+後來我也看到 https://github.com/kkdai/youtube 一起在打造的夥伴們有導入 [GoReleaser](https://goreleaser.com/) 。 看了一下，發現還真的蠻好用的。
+
+
+
+## 整合進 github action
 
 ## 如何產生 Changelog
 
