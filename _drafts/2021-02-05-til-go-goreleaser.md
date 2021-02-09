@@ -25,6 +25,21 @@ tags: ["Golang", "DevOps"]
 
 
 
+## 如何產生 Changelog
+
+記得不要打任何 Describe 在你的 release
+
+記得不要打任何 Describe 在你的 release
+
+記得不要打任何 Describe 在你的 release
+
+
+
+## Github Repo 
+
+https://github.com/kkdai/go-cli-template
+
+
 
 
 
