@@ -9,7 +9,7 @@ tags: ["Golang", "DevOps", "CICD"]
 
 
 
-![](https://avatars2.githubusercontent.com/u/24697112?v=3&s=200)
+![](https://img.carlosbecker.dev/goreleaser-github.png)
 
 ## 前言:
 
@@ -120,8 +120,6 @@ env GOOS=linux GOARCH=arm go build -v github.com/constabulary/gb/cmd/gb
   - `goreleaser release`
 
 - 就會在 Github release 直接產生一個 Release ，並且把 ChangeLog 都包進去
-
-![](https://img.carlosbecker.dev/goreleaser-github.png)
 
 是不是很方便？
 
