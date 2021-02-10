@@ -129,27 +129,51 @@ env GOOS=linux GOARCH=arm go build -v github.com/constabulary/gb/cmd/gb
 
 ### 可能會有的問題
 
+第一次使用 GoReleaser 可能會遇到以下問題:
 
+- 確認 Github Token 有確切的當成環境變數
+
+- 每一次要 Release 前，需要手動將 git tag 打好 Push 
+
+- 沒有出現 ChangeLog?
+
+  - 記得不要打任何 Description 在你的 release
+  - 記得不要打任何 Description 在你的 release
+  - 記得不要打任何 Description 在你的 release
+
+  
 
 ## 整合進 github action
 
 <a id="github_action"></a>
 
-## 如何產生 Changelog
+![](https://ezcook.de/gallery/thumbnails/github_actions.png)
 
-記得不要打任何 Describe 在你的 release
+Github Action 可以讓你更方便的，更直覺的來發布你的專案。而 [GoReleaser 的 Github Actions 專案](https://github.com/marketplace/actions/goreleaser-action)只需要透過以下方式：
 
-記得不要打任何 Describe 在你的 release
+- 建立一個檔案在 `.github/workflows/release_project.yml` (檔名可換)
+- 內容參考官方範例 
 
-記得不要打任何 Describe 在你的 release
+<script src="https://gist.github.com/kkdai/5dd2dadcd2765d082a70d21fd4bc072d.js"></script>
 
+- 記得加入專案的 Secrets
+  - [Settings] -> [Secrets] -> (右上角) [New repository secre]
+  - 名稱: `GO_RELEASER_GITHUB_TOKEN` Token 就照之前申請的
+- 由於設定 yaml 檔裡面有設定是 
 
+```
+push:
+    tags:
+      - "*" 
+```
+
+這樣就會每次有打 Tag 才會執行。
+
+- 接下來只要在 github 上頁上的 Release -> [Draft a new release]  就可以了。
 
 ## 想找一個打包好的樣板，試試看？ Github Command-line Template Repo  
 
 https://github.com/kkdai/go-cli-template
-
-
 
 
 
@@ -159,3 +183,4 @@ https://github.com/kkdai/go-cli-template
 - GoReleaser Quick Star https://goreleaser.com/quick-start/
 - [🚀 GitHub Action for release your Go projects as fast and easily as possible](https://dev.to/koddr/github-action-for-release-your-go-projects-as-fast-and-easily-as-possible-20a2)
 - [Golang Github Actions Starter](https://github.com/actions/starter-workflows/blob/c59b62dee0eae1f9f368b7011cf05c2fc42cf084/ci/go.yml)
+
