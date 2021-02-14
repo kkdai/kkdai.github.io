@@ -25,13 +25,13 @@ Instagram崛起的內幕與代價-以及它如何改變了文化、商業、科�
 
 ## 前言:
 
-這一本是今年所讀完的第二本書。   會讀這本書主要是因為聽「星箭傳播」的Podcast 節目第八十七集（不能再多？）的節目介紹到這本書。雖然有一個多小時的 Podcast 介紹這本書，但是還是讓人欲罷不能，很想買來好好的閱讀。
+這一本是今年所讀完的第二本書。   會讀這本書主要是因為[聽「星箭傳播」的Podcast 節目第八十七集](https://blog.starrocket.io/posts/star-rocket-podcast-ep87-the-book-no-filter-the-inside-story-of-instagram/)（不能再多？）的節目介紹到這本書。雖然有一個多小時的 Podcast 介紹這本書，但是還是讓人欲罷不能，很想買來好好的閱讀。
 
-這本書主要是
+這本書主要是介紹 Instagram  的崛起，到了 2012 被臉書以十億美金的收購價格收購。一開始雖然承諾會讓 Instagram 以獨立的方式來發展，但是隨著臉書的使用者逐漸地轉移到了 Instagram ，也讓臉書的人做了許多相關的干涉，最後導致創辦人 Kevin Systrom 離開了臉書。 裡面有許多詳細的描述，也讓人更了解臉書是如何併購一家公司。
 
+#### 參考節目：
 
-
-
+- [《星箭廣播》87 集——10 億個世界：Instagram 的「無濾鏡」創業故事](https://blog.starrocket.io/posts/star-rocket-podcast-ep87-the-book-no-filter-the-inside-story-of-instagram/)
 
 ## 內容簡介與心得:
 
