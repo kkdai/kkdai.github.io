@@ -14,7 +14,7 @@ tags: ["Golang", "DevOps", "CICD"]
 
 ## 前言:
 
-Go 1.1
+Go Module 在 1.11 的版本正式導入了 [Golang Modules](https://blog.golang.org/using-go-modules) 
 
 
 
@@ -33,8 +33,6 @@ Go 1.1
 - <a href="#retraction-reference">相關學習資源</a>
 
   
-
-
 
 
 
@@ -71,6 +69,7 @@ Go 1.1
 
 ## 相關文章：
 
+- [Using Go Modules](https://blog.golang.org/using-go-modules)
 - [Go Dev Playground: Retract Module Versions](https://play-with-go.dev/retract-module-versions_go116_en/)
 - [Retract Go Module Versions in Go 1.16](https://golangtutorial.dev/tips/retract-go-module-versions/)
 
