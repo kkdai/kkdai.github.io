@@ -44,15 +44,15 @@ Go Module 在 1.11 的版本正式導入了 [Golang Modules](https://blog.golang
 
 <a id="what-is-retraction"></a>
 
-顧名思義就是版本的撤回
-
-
+顧名思義就是版本的撤回，也就是將「有問題」的版本將以撤回。
 
 
 
 ## 為何需要 Retraction ?
 
 <a id="why-retraction"></a>
+
+通常有兩類的問題
 
 
 
