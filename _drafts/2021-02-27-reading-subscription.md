@@ -63,11 +63,15 @@ tags: ["書海裡的漫遊", "Books", "Subscribed"]
 
 ![](https://miro.medium.com/max/4800/0*i-JZP34fMhDjKekg)
 
-產品銷售
+如果要將產品銷售模式的從舊有的販賣方式改變成訂閱模式，可能會經歷一個利潤下降，但是成本上升的時段。主要原因是因為客戶轉換到訂閱模式後，造成當下的現金流減少。並且需要相關系統轉換的成本與人員的訓練。 這一系列的變換，被稱為「The Fish Model 」。
+
+大家可以參考一下由微軟執行長曾經在某次演講上提到的相關內容 -  [The Secret to Satya Nadella’s Success is a Fish-Shaped Curve](https://marker.medium.com/how-satya-nadella-made-microsoft-into-a-fish-bf2034136d60)。 這也是許多人經常提到的，企業轉型重點在能不能吃得下那一條「魚」。
 
 
 
 #### 第二部　顧客導向，成為訂閱新贏家
+
+假設經過了內部的討論後，公司內部也決定要將產品的銷售方式轉換到訂閱模式的話。那麼有那些地方需要變動呢？ 這一個部分在書上也有許多的著墨的地方。並且透過系統面，人事面，心理層面有許多相當實際的討論。
 
 
 
