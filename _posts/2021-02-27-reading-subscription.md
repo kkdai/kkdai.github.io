@@ -17,7 +17,11 @@ tags: ["書海裡的漫遊", "Books", "Subscribed"]
 出版社：天下雜誌出版 
 ```
 
-#### 買書推薦網址：<http://moo.im/a/59drPY>
+#### 買書推薦網址：
+
+- 博客來: [購買網址](https://www.books.com.tw/exep/assp.php/kkdailin/products/0010819588?sloc=main&utm_source=kkdailin&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202103)
+
+- 電子書: [Readmoo](http://moo.im/a/59drPY>)
 
 ## 前言:
 

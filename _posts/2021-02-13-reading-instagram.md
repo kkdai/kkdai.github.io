@@ -21,7 +21,13 @@ Instagram崛起的內幕與代價-以及它如何改變了文化、商業、科�
 
 ```
 
-#### 買書推薦網址：<http://moo.im/a/1bqGJY>
+#### 買書推薦網址：
+
+- 博客來: [購買網址](https://www.books.com.tw/exep/assp.php/kkdailin/products/0010875728?sloc=main&utm_source=kkdailin&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202103)
+
+- 電子書: [Readmoo](http://moo.im/a/1bqGJY)
+
+
 
 ## 前言:
 
