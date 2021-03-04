@@ -52,13 +52,19 @@ Go Module 在 1.11 的版本正式導入了 [Golang Modules](https://blog.golang
 
 <a id="why-retraction"></a>
 
-通常有兩類的問題
+通常有兩類的問題:
+
+- 「已經發佈」的版本中，有某個版本發現致命的錯誤需要撤回。
+  - 其中「已經發佈」代表已經公開發佈在 github (或其他 repository) ，並且有人使用。
+- 不小心將版本號碼打錯了，比如說 0.4.0 的版本，後來不小心打成 1.0.0 但是又被人拿去使用。
 
 
 
-## 以往要如合作撤回版本的方式
+## 以前要如合作撤回版本的方式
 
 <a id="old-way-retraction"></a>
+
+由於以往並沒有提供 Go Module Retraction ，所以發生以上情形，只能在 README 上面註解。 並沒有方式在 `go get ` 同時獲得足夠的資訊。
 
 
 
