@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[學習心得][Golang] Go 1.16 之後的版本撤回方式 Go Modules retraction"
+title: "[學習心得][Golang] Go 1.16 之後的版本撤回(下架)方式 Go Modules retraction"
 description: ""
 category: 
 - TodayILearn
@@ -71,6 +71,18 @@ Go Module 在 1.11 的版本正式導入了 [Golang Modules](https://blog.golang
 ## 如何使用 Go modules Retraction 
 
 <a id="howto-retraction"></a>
+
+這裡透過線上 [Go Dev Playground](https://play-with-go.dev/retract-module-versions_go116_en/)，直接一步步講解主要的問題解決方式。 
+
+
+
+### 問題 1: 發現有某個版本出現了重大問題怎麼辦?
+
+假設你管理套件 `gopher.live/ue0ddd4a99c02/proverb` ，目前已經發佈到了 `0.2.0` 的版本出去。但是發現你這個版本有重大的問題。需要把這個版本撤回（或是下架），那麼你可以在套件的 repo 中輸入以下的指令:
+
+- `go mod edit -retract=v0.2.0`
+  - 
+
 
 
 
