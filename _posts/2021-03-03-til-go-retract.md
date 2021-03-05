@@ -72,7 +72,7 @@ Go Module 在 1.11 的版本正式導入了 [Golang Modules](https://blog.golang
 
 <a id="howto-retraction"></a>
 
-這裡透過線上 [Go Dev Playground](https://play-with-go.dev/retract-module-versions_go116_en/)，直接一步步講解主要的問題解決方式。 
+這裡透過線上 [Go Dev Playground](https://play-with-go.dev/retract-module-versions_go116_en/)，直接一步步講解主要的問題解決方式。  詳細的程式碼，可以到[裡面去](https://play-with-go.dev/retract-module-versions_go116_en/)查看。
 
 
 
@@ -80,19 +80,57 @@ Go Module 在 1.11 的版本正式導入了 [Golang Modules](https://blog.golang
 
 假設你管理套件 `gopher.live/ue0ddd4a99c02/proverb` ，目前已經發佈到了 `0.2.0` 的版本出去。但是發現你這個版本有重大的問題。需要把這個版本撤回（或是下架），那麼你可以在套件的 repo 中輸入以下的指令:
 
-- `go mod edit -retract=v0.2.0`
-  - 
+`go mod edit -retract=v0.2.0`
+
+這樣一來，就會發現 `go.mod` 檔案變成以下的內容
+
+```
+module gopher.live/ue0ddd4a99c02/proverb
+
+go 1.16
+
+// Go proverb was totally wrong
+retract v0.2.0
+```
+
+這時候，我們可以加上一些註解在 `go.mod` 檔案內，這樣一來其他人要使用的時候，也會出現相關註解。
+
+```
+git add -A
+$ git commit -q -m "Fix severe error in Go proverb"
+$ git push -q origin main
+remote: . Processing 1 references        
+remote: Processed 1 references in total        
+$ git tag v0.3.0
+$ git push -q origin v0.3.0
+```
+
+透過以上方式，可以將版號推進一號。也已經把正確的內容修正好了。
 
 
+
+如果其他人想要拉下有問題的版本，就會出現相關警告。
+
+```
+go get gopher.live/ue0ddd4a99c02/proverb@v0.2.0
+go: warning: gopher.live/ue0ddd4a99c02/proverb@v0.2.0: retracted by module author: Go proverb was totally wrong
+go: to switch to the latest unretracted version, run:
+	go get gopher.live/ue0ddd4a99c02/proverb@latestgo get: downgraded gopher.live/ue0ddd4a99c02/proverb v0.3.0 => v0.2.0
+```
+
+這樣的方式，就可以透過這個方式來達到撤回版本的流程。 
+
+
+
+### 相關疑問：
+
+- 如果沒有執行 `go get `來連接查詢，是不是沒有辦法取得版本撤回的資訊？
+  - 沒有錯，目前依舊需要透過 `go get` 或是 `go list` 來取得資料。
 
 
 ## 相關學習資源
 
 <a id="retraction-reference"></a>
-
-
-
-## 相關文章：
 
 - [Using Go Modules](https://blog.golang.org/using-go-modules)
 - [Go Dev Playground: Retract Module Versions](https://play-with-go.dev/retract-module-versions_go116_en/)
