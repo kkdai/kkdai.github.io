@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[學習心得][Golang] Go 1.16 之後的版本撤回(下架)方式 Go Modules retraction"
+title: "[學習心得][Golang] Go 1.16 新功能的「版本撤回(下架)」(Go Modules retraction)"
 description: ""
 category: 
 - TodayILearn
