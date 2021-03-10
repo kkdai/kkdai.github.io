@@ -18,9 +18,6 @@ Creative Selection: Inside Apple's Design Process During the Golden Age of Steve
 譯者： 洪慧芳  
 出版社：臉譜 
 出版日期：2021/01/26 
-語言：繁體中文 ISBN: 9789862358924 
-字數： 120,670
-
 ```
 
 #### 買書推薦網址：
@@ -30,7 +27,14 @@ Creative Selection: Inside Apple's Design Process During the Golden Age of Steve
 
 ## 前言:
 
-這一本是今年所讀完的第四本書。
+這一本是今年所讀完的第四本書。 當初也是聽到 「[「現在開始你們都是鍵盤工程師！」iPhone 鍵盤的誕生與賈伯斯時代的蘋果軟體設計流程](https://podcast.starrocket.io/97)」的結果馬上就買了這一本書的電子版（週日買），作天晚上（週三）就看完了。 為什麼會這麼想要看這本呢？ 我的理由如下：
+
+- 這是第一本由 「蘋果首席iPhone軟體開發工程師」（註解： Principle iPhone Software Engineer，通常在外商科技公司中， Principle Software Engineer 通常就是非管理職的最高職位）所寫的書籍。
+- 這也是一本講解有賈伯斯在的時候蘋果所產生出來的氛圍，還有一個好的功能是如何挑選出來的。
+
+蠻推薦給大家看的，有興趣可以買來看。
+
+
 
 
 ## 內容簡介與心得:
@@ -47,12 +51,28 @@ Creative Selection: Inside Apple's Design Process During the Golden Age of Steve
 
 ### 章節條列
 
+- Introduction前言
+- The Demo演示
+- The Crystal Ball水晶球
+- The Black Slab黑色方碑
+- One Simple Rule大道至簡
+- The Hardest Problem最難的問題
+- The Keyboard Derby鍵盤大賽
+- QWERTY英打鍵盤QWERTY
+- Convergence聚合
+- The Intersection交會點
+- At This Point此時此刻
+- Epilogue後記
+
+整本書從一個 iPad 的鍵盤設計展示開始（也是作者最後一次在公司看到賈伯斯），慢慢回想到
+
 
 
 
 #### 參考文章
 
-
+- [「現在開始你們都是鍵盤工程師！」iPhone 鍵盤的誕生與賈伯斯時代的蘋果軟體設計流程](https://podcast.starrocket.io/97)
+- 
 
 ## 心得:
 
