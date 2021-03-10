@@ -64,7 +64,13 @@ Creative Selection: Inside Apple's Design Process During the Golden Age of Steve
 - At This Point此時此刻
 - Epilogue後記
 
-整本書從一個 iPad 的鍵盤設計展示開始（也是作者最後一次在公司看到賈伯斯），慢慢回想到
+整本書從一個 iPad 的鍵盤設計展示開始（也是作者最後一次在公司看到賈伯斯），慢慢回想到作者如何被找來蘋果開發軟體。 如何協助開發 Mac 上面的瀏覽器，也是因為瀏覽器的開發讓作者第一次感受到十倍工程師的能力。裡面的小故事是： 一開始作者想透過 Mozila 的原始碼修改移植到 Mac OS 上面。但是因為 Mozilla 實在太龐大了，所以導致作者花了六個禮拜還不能讓 Mozilla 在 Mac OS 上面正確的執行（應該說連編譯 compile 都不行）。  但是新成員查理的加入，他用了兩天的時間就就透過自己寫的一層 Shim 讓 Mac OS 能跑 KDE 上面的瀏覽器（Shim 是一層欺騙層，一方面騙 KDE 瀏覽器正在 KDE 上面，一方面騙 Mac OS 他跑的是 Mac 軟體。 (類似 Kubernetes 裡面的 Dockershim )
+
+這也是一個很特別的故事分享（原來強者可以兩天內寫好一個 shim 啊啊啊啊啊)
+
+
+
+
 
 
 
