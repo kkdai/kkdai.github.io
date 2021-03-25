@@ -156,7 +156,7 @@ Github Action 可以讓你更方便的，更直覺的來發布你的專案。而
 
 - 記得加入專案的 Secrets
   - [Settings] -> [Secrets] -> (右上角) [New repository secre]
-  - 名稱: `GO_RELEASER_GITHUB_TOKEN` Token 就照之前申請的
+  - 名稱: `GITHUB_TOKEN` Token 就照之前申請的
 - 由於設定 yaml 檔裡面有設定是 
 
 ```
