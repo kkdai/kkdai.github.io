@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[學習心得][Golang] 簡單介紹幾個 Golang 1.16 的新功能"
+title: "[學習心得][Golang] 開源專案開啟 Go Modules 可能會遇到的問題"
 description: ""
 category: 
 - 學習文件
@@ -9,13 +9,11 @@ tags: ["Golang", "DevOps", "CICD"]
 
 
 
-![](https://pbs.twimg.com/media/EuX3lDOXAAcP4hl?format=png&name=900x900)
+![](/Users/evanlin/Downloads/Go_SDK.png)
 
 ## 前言:
 
-這篇文章拖得有點久（再不寫完 1.17 就要出了）
 
-整理一下 Go 1.16 最新的幾個重要功能，其中最重要就是 Retract 跟 Embed  Package 。大家趕快來試試看。
 
 
 
