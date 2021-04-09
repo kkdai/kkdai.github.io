@@ -51,7 +51,7 @@ tags: ["Golang", "Go Modules", "OpenSource"]
 
 原本版本更新後，看起來也沒有太多問題。但是版本更新後卻發生了以下兩個問題：
 
-## 無法更新版本  (Cannot update version by "go get")
+### 無法更新版本  (Cannot update version by "go get")
 
 <a id="not-update-by-go-get"></a>
 
@@ -63,7 +63,33 @@ go: finding module for package github.com/line/line-bot-sdk-go/linebot
 go: found github.com/line/line-bot-sdk-go/linebot in github.com/line/line-bot-sdk-go v7.8.0+incompatible
 ```
 
-問題出來了，我明明有
+問題出來了，我明明有更新版本到 `v7.9.0` 但是卻無法抓到最新的版本？ 
+
+於是我拿了一個新的專案，重頭試試看。
+
+1. Copy https://github.com/line/line-bot-sdk-go/tree/master/examples/echo_bot to your go path
+2. `go mod init`
+3. `go mod tidy`
+
+結果一樣是出現：
+
+```
+>> go mod init                                                                       
+go: creating new go.mod: module github.com/kkdai/echo_bot 
+go: to add module requirements and sums:
+	go mod tidy
+ 
+>> go mod tidy                                                                            
+go: finding module for package github.com/line/line-bot-sdk-go/linebot
+go: found github.com/line/line-bot-sdk-go/linebot in github.com/line/line-bot-sdk-go v7.8.0+incompatible
+```
+大家可以參考這個 [issue](https://github.com/line/line-bot-sdk-go/issues/274) 。 不論使用 `go get` 還是使用 `go mod tidy` 都無法順利將版號更新的最新的版本。  這個問題，讓我困擾了一陣子。 
+
+
+### pkg.go.dev  上面版本是舊的 
+
+<a id="go-dev-out-of-date""></a>
+
 
 
 ## 相關文章：
