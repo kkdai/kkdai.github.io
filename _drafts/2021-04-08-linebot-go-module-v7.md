@@ -20,7 +20,7 @@ tags: ["Golang", "Go Modules", "OpenSource"]
 
 ## TL;DR 
 
-本篇文將要介紹：
+本篇文將要介紹以下一些的部分：
 
 - <a href="#legacy-support-go-modules">如何將舊的開源專案支援 Go Modules </a>
 - <a href="#problems">發生問題了 </a>
@@ -49,8 +49,21 @@ tags: ["Golang", "Go Modules", "OpenSource"]
 
 <a id="problems"></a>
 
+原本版本更新後，看起來也沒有太多問題。但是版本更新後卻發生了以下兩個問題：
 
+## 無法更新版本  (Cannot update version by "go get")
 
+<a id="not-update-by-go-get"></a>
+
+這時候我試著去更新一個本來有使用到 https://github.com/line/line-bot-sdk-go 的套件，正常的更新流程如下：
+
+```
+>> go mod tidy                                                           
+go: finding module for package github.com/line/line-bot-sdk-go/linebot
+go: found github.com/line/line-bot-sdk-go/linebot in github.com/line/line-bot-sdk-go v7.8.0+incompatible
+```
+
+問題出來了，我明明有
 
 
 ## 相關文章：
