@@ -96,7 +96,24 @@ go: found github.com/line/line-bot-sdk-go/linebot in github.com/line/line-bot-sd
 
 <a id="go-dev-out-of-date""></a>
 
-先來稍微解釋一下 https://pkg.go.dev 是一個 Golang 社群的套件說明網站。開發者可以透過關鍵字搜尋套件，並且
+先來稍微解釋一下 https://pkg.go.dev 是一個 Golang 社群的套件說明網站。開發者可以透過關鍵字搜尋套件，並且可以查看相關的說明（所有內容都是根據 github.com 上面的資訊）。
+
+而透過  https://pkg.go.dev  也可以很輕鬆的查許多專案版本方面的資訊，比如說 https://pkg.go.dev/github.com/appleboy/gofight 可以看到有最新版本 `v2` - https://pkg.go.dev/github.com/appleboy/gofight/v2 
+
+雖然  https://github.com/line/line-bot-sdk-go 已經加上了 `go.mod` 的檔案，但是卻無法找到 https://pkg.go.dev/github.com/github.com/line/line-bot-sdk-go/v7 這個資料夾。
+
+這時候感謝台灣網友提供的 Pull Request 提供給我相關的想法。 
+
+## Go Modules 對於 v2 之後的支援方式
+<a id="go-module-v2"></a>
+
+
+
+## 結論：
+
+<a id="summary"></a>
+
+
 
 
 
@@ -104,7 +121,7 @@ go: found github.com/line/line-bot-sdk-go/linebot in github.com/line/line-bot-sd
 <a id="refer"></a>
 
 - [Go Modules: v2 and Beyond](https://blog.golang.org/v2-go-modules)
-
-- [Module release and versioning workflow]https://golang.org/doc/modules/release-workflow)
-
+- [Module release and versioning workflow](https://golang.org/doc/modules/release-workflow)
 - [Go Module 如何發佈 v2 以上版本](https://blog.wu-boy.com/2019/06/how-to-release-the-v2-or-higher-version-in-go-module/)
+- [line-bot-sdk-go #273 upgrade major version to v7 for meets the specification of go module](https://github.com/line/line-bot-sdk-go/pull/273)
+- [line-bot-sdk-go #274 Bug Report - Could not update to latest version v7.9.0](https://github.com/line/line-bot-sdk-go/issues/274)
