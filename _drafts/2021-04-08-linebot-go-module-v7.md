@@ -7,7 +7,9 @@ category:
 tags: ["Golang", "Go Modules", "OpenSource"]
 ---
 
-![](/Users/evanlin/Downloads/Go_SDK.png)
+![](../images/2021/go-modules.jpeg)
+
+
 
 ## 前言:
 
@@ -35,6 +37,10 @@ tags: ["Golang", "Go Modules", "OpenSource"]
 ## 如何將舊的開源專案支援 Go Modules 
 
 <a id="legacy-support-go-modules"></a>
+
+<img src="../images/2021/Go_SDK.png" width="400px">
+
+LINE-BOT-SDK-GO 是 LINE 開源出來的對於 LINE Messanging API 所釋放出的開源套件，並且支援多個語言版本（Go., PHP, Java, Python) 。 
 
 原本這個 https://github.com/line/line-bot-sdk-go 的版本已經超過 v7 ，但是遲遲沒有支援 go modules 。 也就是並沒有 `go.mod` 在該專案的檔案下面。所以需要透過以下方式來啟動 Go Modules (Enable Go Modules)
 
@@ -89,6 +95,8 @@ go: found github.com/line/line-bot-sdk-go/linebot in github.com/line/line-bot-sd
 ### pkg.go.dev  上面版本是舊的 
 
 <a id="go-dev-out-of-date""></a>
+
+先來稍微解釋一下 https://pkg.go.dev 是一個 Golang 社群的套件說明網站。開發者可以透過關鍵字搜尋套件，並且
 
 
 
