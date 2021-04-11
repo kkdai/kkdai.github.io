@@ -133,11 +133,23 @@ $ go mod edit -module github.com/YOU/YOUR_PROJECT/v2 go.mod
 
 ### 使用到的套件，要如何能夠正確的更新版本？
 
+如果你是使用  https://github.com/line/line-bot-sdk-go  這個套件的人，請根據以下方式來正確地取得最新的版本。
 
+1. 所有 import 的地方，修成到 `v7`
 
+   1. AS-IS: `import "github.com/line/line-bot-sdk-go/linebot" `
+   2. TO-BE:  `import "github.com/line/line-bot-sdk-go/v7/linebot" `
 
+2. 重新修改 `go.mod. 透過執行
 
+   1. `go mod tidy`
+   2. `go mod vendor`
 
+3. 測試你本地端的程式碼，確定沒問題。
+
+4. 更新到 GitHub 
+
+   
 
 ## 結論：
 
