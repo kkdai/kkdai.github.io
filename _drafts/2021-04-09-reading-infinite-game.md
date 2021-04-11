@@ -74,7 +74,7 @@ tags: ["書海裡的漫遊", "Books", "Subscribed"]
 
 #### 參考文章
 
-- 
+- [[好書分享\] 先問，為什麼？顛覆慣性思考的黃金圈理論，啟動你的感召領導力](http://www.evanlin.com/reading-why-first/)
 - [The Secret to Satya Nadella’s Success is a Fish-Shaped Curve](https://marker.medium.com/how-satya-nadella-made-microsoft-into-a-fish-bf2034136d60)
 
 
