@@ -28,9 +28,15 @@ tags: ["書海裡的漫遊", "Books", "Subscribed"]
 
 ## 前言:
 
-這一本是今年所讀完的第五本書。賽門，西奈克（Simon Sinek) 一直是我很喜歡的作者，我似乎也買了（讀了）他的不少創作，從
+這一本是今年所讀完的第五本書。賽門，西奈克（Simon Sinek) 一直是我很喜歡的作者，我似乎也買了（讀了）他的不少創作，從『[先問為什麼](http://www.evanlin.com/reading-why-first/)」，到這一本書。
 
+這一本書本來認為是講解有限思維與無限思維的書籍，但是有不少關於公司經營策略的方向。 如果公司透過了有限思維來制定公司的願景，那麼公司的前景是堪憂的，相反過來許多的公司都透過「無限賽局」的思維來訂定的公司的目標企業形象。這樣一來不僅僅能夠帶來源源不絕的動力，對于公司的進步也是可以期待的。
 
+對於代表公司在外頭常做企業形象演講的我，這樣的思維是相當的重要的。這本書也蠻推薦給常需要代表公司在外頭演講的相關職業。
+
+最後獻上天下的推薦影片，其實蠻讚的。
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EX4tYHR06Ho" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 
