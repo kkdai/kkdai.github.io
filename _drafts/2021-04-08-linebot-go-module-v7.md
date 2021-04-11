@@ -107,11 +107,30 @@ go: found github.com/line/line-bot-sdk-go/linebot in github.com/line/line-bot-sd
 ## Go Modules 對於 v2 之後的支援方式
 <a id="go-module-v2"></a>
 
+根據官方的文件 - [Golang-Blog Publishing v2 and beyond](https://blog.golang.org/v2-go-modules) 上面有提到，如果需要發布 v2 之後的版本由於是具有不向後兼容的方式。 所以在發布得時候，官方建議有兩個方式：
 
+- 建立一個新的資料夾 `v2` 並且把東西全部更新到該資料夾上面。並且更改 `go.mod` 將版本號碼改成 `v2` 。
+- 或是直接更改目前資料夾的 `go.mod` 將版本號碼改成 `v2` 。
+
+#### 修改 go.mod 檔案到 v2 (或是之後)的方式
+
+```
+$ go mod edit -module github.com/YOU/YOUR_PROJECT/v2 go.mod
+```
+
+  這邊要注意，因爲 `go mod init` 並不會自動幫你加上相關的版本（如果超過 v2），只得自行加上。所以需要「手動」加上相關的版號，也就是說如果你的套件可能已經超過了 `v2` 以上，但是一直沒有啟動過 go modules 那麼你可能就會踩到這個雷。
+
+關於  https://github.com/line/line-bot-sdk-go 的修復方式，大家可以參考這個 [pull request](https://github.com/line/line-bot-sdk-go/pull/273) 。
+
+  
 
 ## 結論：
 
 <a id="summary"></a>
+
+對於
+
+
 
 
 
@@ -125,3 +144,5 @@ go: found github.com/line/line-bot-sdk-go/linebot in github.com/line/line-bot-sd
 - [Go Module 如何發佈 v2 以上版本](https://blog.wu-boy.com/2019/06/how-to-release-the-v2-or-higher-version-in-go-module/)
 - [line-bot-sdk-go #273 upgrade major version to v7 for meets the specification of go module](https://github.com/line/line-bot-sdk-go/pull/273)
 - [line-bot-sdk-go #274 Bug Report - Could not update to latest version v7.9.0](https://github.com/line/line-bot-sdk-go/issues/274)
+- [Golang-Blog Publishing v2 and beyond](https://blog.golang.org/v2-go-modules)
+- [Go Doc:  Publishing breaking API changes](https://golang.org/doc/modules/release-workflow#breaking)
