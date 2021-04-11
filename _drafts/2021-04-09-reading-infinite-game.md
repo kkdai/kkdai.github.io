@@ -34,7 +34,7 @@ tags: ["書海裡的漫遊", "Books", "Subscribed"]
 
 對於代表公司在外頭常做企業形象演講的我，這樣的思維是相當的重要的。這本書也蠻推薦給常需要代表公司在外頭演講的相關職業。
 
-最後獻上天下的推薦影片，其實蠻讚的。
+最後獻上天下雜誌所製作的推薦影片，其實蠻讚的。
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EX4tYHR06Ho" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -74,7 +74,7 @@ tags: ["書海裡的漫遊", "Books", "Subscribed"]
 
 #### 參考文章
 
-- [微軟重拾升勢的祕訣？魚形曲線！| 海外頭條](https://www.mdeditor.tw/pl/prIG/zh-tw)
+- 
 - [The Secret to Satya Nadella’s Success is a Fish-Shaped Curve](https://marker.medium.com/how-satya-nadella-made-microsoft-into-a-fish-bf2034136d60)
 
 
