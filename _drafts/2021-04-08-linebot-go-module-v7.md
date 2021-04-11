@@ -128,11 +128,9 @@ $ go mod edit -module github.com/YOU/YOUR_PROJECT/v2 go.mod
 
 <a id="summary"></a>
 
-對於
+因為 Go Modules 其實是兩年前的 1.11 才開始使用，但是許多專案其實也沒有馬上啟動。 如果沒有啟動 Go Modules 其實版本更新也不會出錯。 但是只要一啟動 Go Modules 的話，就要小心本篇文章所提供的相關案例。  
 
-
-
-
+其實啟動 Go Modules 是相當方便的，也應該要提早準備好相關的修正。希望每一個套件管理者能儘早的準備升級到  Go Modules 的套件支援。
 
 
 
