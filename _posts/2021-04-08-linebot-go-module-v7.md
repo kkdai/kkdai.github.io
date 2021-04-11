@@ -29,6 +29,7 @@ tags: ["Golang", "Go Modules", "OpenSource"]
   - <a href="#not-update-by-go-get">無法更新版本  (Cannot update version by "go get")</a>
   - <a href="#go-dev-out-of-date"> pkg.go.dev  上面版本是舊的 </a>
 - <a href="#go-module-v2"> Go Modules 對於 v2 之後的支援方式  </a>
+- <a href="#how-to-fix"> 如何修復？ 有用到的人該如何修改？ </a>
 - <a href="#summary">結論</a>
 - <a href="#refer">參考文章</a>
   
@@ -120,9 +121,23 @@ $ go mod edit -module github.com/YOU/YOUR_PROJECT/v2 go.mod
 
   這邊要注意，因爲 `go mod init` 並不會自動幫你加上相關的版本（如果超過 v2），只得自行加上。所以需要「手動」加上相關的版號，也就是說如果你的套件可能已經超過了 `v2` 以上，但是一直沒有啟動過 go modules 那麼你可能就會踩到這個雷。
 
+  
+
+## 如何修復？ 有用到的人該如何修改？ 
+
+<a id="how-to-fix"></a>
+
+### 原始套件啟動 Go Modules 的修復方式
+
 關於  https://github.com/line/line-bot-sdk-go 的修復方式，大家可以參考這個 [pull request](https://github.com/line/line-bot-sdk-go/pull/273) 。
 
-  
+### 使用到的套件，要如何能夠正確的更新版本？
+
+
+
+
+
+
 
 ## 結論：
 
