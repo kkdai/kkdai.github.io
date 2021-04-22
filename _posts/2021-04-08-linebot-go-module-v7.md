@@ -101,7 +101,7 @@ go: found github.com/line/line-bot-sdk-go/linebot in github.com/line/line-bot-sd
 
 而透過  https://pkg.go.dev  也可以很輕鬆的查許多專案版本方面的資訊，比如說 https://pkg.go.dev/github.com/appleboy/gofight 可以看到有最新版本 `v2` - https://pkg.go.dev/github.com/appleboy/gofight/v2 
 
-雖然  https://github.com/line/line-bot-sdk-go 已經加上了 `go.mod` 的檔案，但是卻無法找到 https://pkg.go.dev/github.com/github.com/line/line-bot-sdk-go/v7 這個資料夾。
+雖然  https://github.com/line/line-bot-sdk-go 已經加上了 `go.mod` 的檔案，但是卻無法找到 https://pkg.go.dev/github.com/line/line-bot-sdk-go/v7 這個資料夾。
 
 這時候感謝台灣網友提供的 Pull Request 提供給我相關的想法。 
 
