@@ -34,7 +34,7 @@ tags: ["Android", "Kotlin"]
 
 <a id="setup"></a>
 
-
+跟著這次的 Kotlin coroutine codelab [你會找到 Android Studio 下載的地方](https://developer.android.com/studio/)。 你也會找到相關的 [github for Kotlin coroutine](https://github.com/googlecodelabs/kotlin-coroutines) 。 然後透過 Android Studio 來打開 `coroutines-codelab` 的資料夾，你可能會出現以下的 Error 。
 
 > License for package Android SDK Build-Tools 29.0.2 not accepted
 >
