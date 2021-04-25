@@ -24,17 +24,27 @@ tags: ["Android", "Kotlin"]
 
 本篇文將要介紹以下一些的部分：
 
-- <a href="#legacy-support-go-modules">如何將舊的開源專案支援 Go Modules </a>
+- <a href="#setup">如何將舊的開源專案支援 Go Modules </a>
 - <a href="#summary">結論</a>
 - <a href="#refer">參考文章</a>
   
 
 
-## 如何將舊的開源專案支援 Go Modules 
+## 如何設定環境(How to setup your Android 4.1 on Mac Catalina)
 
-<a id="legacy-support-go-modules"></a>
+<a id="setup"></a>
 
 
+
+> License for package Android SDK Build-Tools 29.0.2 not accepted
+>
+> License for package Android SDK Platform 29 not accepted.
+
+
+
+> Could not resolve all dependencies for configuration ':start:debugRuntimeClasspath'.
+> Could not create task ':start:minifyReleaseWithR8'.
+> Cannot query the value of this provider because it has no value available.
 
 
 
