@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[學習心得][Android] Android Study Jam 2021 - 跟著我來複習一下"
+title: "[TIL][Android]  Android Studio 開啟專案可能會遇到的問題"
 description: ""
 category: 
 - 學習文件
@@ -13,21 +13,9 @@ tags: ["Android", "Kotlin"]
 
 ## 前言:
 
+最近 Google Taiwan 開啟一個計畫「[Android App 開發培訓計劃 2021](https://events.withgoogle.com/android-study-jam-twhk-2021/)」，透過 Android Studio 跟著 Kotlin 這個語言來讓大家寫 Android App 。雖然我之前有寫過，但是也很久沒使用 Android Studio 了，來開啟專案看看吧。 不過一開始好像開啟錯誤的 codelabs www 不小心開到後面的 [Use Kotlin Coroutines in your Android App](https://developer.android.com/codelabs/kotlin-coroutines)，出現了一些問題，也順便解決一下。
 
 
-
-
-
-
-
-## TL;DR 
-
-本篇文將要介紹以下一些的部分：
-
-- <a href="#setup">如何將舊的開源專案支援 Go Modules </a>
-- <a href="#summary">結論</a>
-- <a href="#refer">參考文章</a>
-  
 
 
 ## 如何設定環境(How to setup your Android 4.1 on Mac Catalina)
@@ -56,14 +44,6 @@ tags: ["Android", "Kotlin"]
 `[Preference] -> [System Setting] -> [Android SDK] -> Enable Android Platform 29`
 
 這樣下載 Android SDK 29 的時候，就會同時去同意 License 。 就可以正常的 Compile。 範例也可以正常執行在 Android Simulator 上才是。
-
-
-
-
-
-## 結論：
-
-<a id="summary"></a>
 
 
 
