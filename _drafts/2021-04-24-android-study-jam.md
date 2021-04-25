@@ -40,6 +40,10 @@ tags: ["Android", "Kotlin"]
 >
 > License for package Android SDK Platform 29 not accepted.
 
+[Preference] -> [System Setting] -> [Android SDK] -> Enable Android Platform 29
+
+這樣下載 Android SDK 29 的時候，就會同時去同意 License 。
+
 
 
 > Could not resolve all dependencies for configuration ':start:debugRuntimeClasspath'.
@@ -59,5 +63,5 @@ tags: ["Android", "Kotlin"]
 ## 相關文章：
 <a id="refer"></a>
 
-- 
+- [Stackoverflow: You have not accepted the license agreements of the following SDK components duplicate](https://stackoverflow.com/questions/39760172/you-have-not-accepted-the-license-agreements-of-the-following-sdk-components)
 
