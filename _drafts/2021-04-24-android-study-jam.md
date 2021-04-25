@@ -36,21 +36,30 @@ tags: ["Android", "Kotlin"]
 
 跟著這次的 Kotlin coroutine codelab [你會找到 Android Studio 下載的地方](https://developer.android.com/studio/)。 你也會找到相關的 [github for Kotlin coroutine](https://github.com/googlecodelabs/kotlin-coroutines) 。 然後透過 Android Studio 來打開 `coroutines-codelab` 的資料夾，你可能會出現以下的 Error 。
 
+```
 > License for package Android SDK Build-Tools 29.0.2 not accepted
->
 > License for package Android SDK Platform 29 not accepted.
-
-[Preference] -> [System Setting] -> [Android SDK] -> Enable Android Platform 29
-
-這樣下載 Android SDK 29 的時候，就會同時去同意 License 。
-
-
 
 > Could not resolve all dependencies for configuration ':start:debugRuntimeClasspath'.
 > Could not create task ':start:minifyReleaseWithR8'.
 > Cannot query the value of this provider because it has no value available.
+```
+
+#### 原因:
+
+因為最新版本的 Android Studio 4.1.3 ，預設使用的 Android SDK 版本是 30 ，但是這次的 codelab 是使用舊版本的 29 來準備的。所以需要下載舊版本的 SDK 並且同意相關的 License 授權。
 
 
+
+#### 解決方式:
+
+[Preference] -> [System Setting] -> [Android SDK] -> Enable Android Platform 29
+
+這樣下載 Android SDK 29 的時候，就會同時去同意 License 。 就可以正常的 Compile。 也可以正常執行才是。
+
+
+
+> 
 
 ## 結論：
 
