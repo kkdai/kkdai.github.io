@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[學習心得][Android] Android Study Jam 2021 - 心得"
+title: "[學習心得][Android] Android Study Jam 2021 - 跟著我來複習一下"
 description: ""
 category: 
 - 學習文件
@@ -53,13 +53,13 @@ tags: ["Android", "Kotlin"]
 
 #### 解決方式:
 
-[Preference] -> [System Setting] -> [Android SDK] -> Enable Android Platform 29
+`[Preference] -> [System Setting] -> [Android SDK] -> Enable Android Platform 29`
 
-這樣下載 Android SDK 29 的時候，就會同時去同意 License 。 就可以正常的 Compile。 也可以正常執行才是。
+這樣下載 Android SDK 29 的時候，就會同時去同意 License 。 就可以正常的 Compile。 範例也可以正常執行在 Android Simulator 上才是。
 
 
 
-> 
+
 
 ## 結論：
 
