@@ -26,11 +26,20 @@ tags: ["Android", "Kotlin"]
 
 由於有點懶得安裝環境跟相關的 IDE 設定，所有的練習其實可以快速的在 [Kotlin Playground](https://play.kotlinlang.org/) 上面完成。
 
-#### 相關語法教學 Koans
+#### 語法Tutorial - Koans
 
 可以透過網頁上面的 [Koans](https://play.kotlinlang.org/koans) 或是內建在 JetBrains [IntelliJ IDEA or Android Studio 的 JetBrains educational plugin](https://www.jetbrains.com/help/education/learner-start-guide.html?section=Kotlin Koans) 
 
+
+
+## 學習建議：
+
+由於這個語言我不是很熟習，但是熟悉新的語法其實蠻建議透過 Tutorial 來先有個概念性的了解，方便你開始相關的查詢。 所以這邊建議先跑過一次  [Koans](https://play.kotlinlang.org/koans)  再來把相關資料結構與語法來做一個語法的相關脈絡整理。
+
+
+
 ## 相關文章：
+
 <a id="refer"></a>
 
 - [Stackoverflow: You have not accepted the license agreements of the following SDK components duplicate](https://stackoverflow.com/questions/39760172/you-have-not-accepted-the-license-agreements-of-the-following-sdk-components)
