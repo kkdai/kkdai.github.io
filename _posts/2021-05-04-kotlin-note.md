@@ -18,13 +18,17 @@ tags: ["Android", "Kotlin"]
 
 
 
-## 相關工具 Kotlin Playground
+## 相關工具 
 
 <a id="setup"></a>
 
+#### Kotlin Playground
+
 由於有點懶得安裝環境跟相關的 IDE 設定，所有的練習其實可以快速的在 [Kotlin Playground](https://play.kotlinlang.org/) 上面完成。
 
+#### 相關語法教學 Koans
 
+可以透過網頁上面的 [Koans](https://play.kotlinlang.org/koans) 或是內建在 JetBrains [IntelliJ IDEA or Android Studio 的 JetBrains educational plugin](https://www.jetbrains.com/help/education/learner-start-guide.html?section=Kotlin Koans) 
 
 ## 相關文章：
 <a id="refer"></a>
