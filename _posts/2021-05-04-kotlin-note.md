@@ -38,6 +38,34 @@ tags: ["Android", "Kotlin"]
 
 
 
+## 特別資料結構語法說明
+
+### LIST 
+
+```
+val numbers: List<Int> = listOf(1, 2, 3, 4, 5, 6)
+```
+
+透過 `List` 關鍵字來加上 generic type 來建立出相關 List 物件。也可以透過 Inferred 方式建立。
+
+```
+val numbers = listOf(1, 2, 3, 4, 5, 6)
+```
+
+Kotlin 是 Zero-based Index 的語言（延伸自 Java) 。
+
+### MutableList
+
+參考[官方文件](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/) ， MutableList 為長度可變的 List 。也就是可以針對 List 去 add, addAll, listIterator, remove, removeAll... 相關操作。 宣告方式參考如下：
+
+```
+val entrees = mutableListOf<String>()
+```
+
+
+
+
+
 ## 相關文章：
 
 <a id="refer"></a>
