@@ -42,6 +42,11 @@ LINE Login 是一可以幫助開發者快速開發一個第三方登入的工具
 ## OAuth 有什麼樣的缺點
 
 <a id="oauth-issue"></a>
+![](https://developers.line.biz/assets/img/new-user-login-without-pkce-en.54bd0a4b.svg)
+
+
+
+![](../images/2021/pkce-diagram.jpg)
 
 
 
@@ -49,7 +54,7 @@ LINE Login 是一可以幫助開發者快速開發一個第三方登入的工具
 
 <a id="what-is-pkce"></a>
 
-![](../images/2021/pkce-diagram.jpg)
+![](https://developers.line.biz/assets/img/new-user-login-with-pkce-en.8be182f5.svg)
 
 ## 如何在 LINE Login 之中導入 PKCE?
 <a id="how-to-migrate-pkce"></a>
