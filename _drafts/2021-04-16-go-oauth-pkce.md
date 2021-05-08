@@ -27,24 +27,27 @@ tags: ["Golang", "OAuth2", "PKCE"]
 - <a href="#legacy-support-go-modules">如何將舊的開源專案支援 Go Modules </a>
 - <a href="#summary">結論</a>
 - <a href="#refer">參考文章</a>
-  
 
 
-## 如何將舊的開源專案支援 Go Modules 
+## 什麼是 LINE Login? 什麼又是 OAuth ? 
 
-<a id="legacy-support-go-modules"></a>
+<a id="OAuth"></a>
 
 <img src="../images/2021/Go_SDK.png" width="400px">
 
-LINE-BOT-SDK-GO 是 LINE 開源出來的對於 LINE Messanging API 所釋放出的開源套件，並且支援多個語言版本（Go., PHP, Java, Python) 。 
 
-原本這個 https://github.com/line/line-bot-sdk-go 的版本已經超過 v7 ，但是遲遲沒有支援 go modules 。 也就是並沒有 `go.mod` 在該專案的檔案下面。所以需要透過以下方式來啟動 Go Modules (Enable Go Modules)
 
-```
-- go mod init
-- go mod tidy
-- go mod vendor
-```
+## OAuth 有什麼樣的缺點
+
+<a id="oauth-issue"></a>
+
+
+
+##   什麼是 PKCE 
+
+<a id="what-is-pkce"></a>
+
+## 如何在 LINE Login 之中導入 PKCE
 
 
 
