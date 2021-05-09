@@ -22,7 +22,8 @@ tags: ["Golang", "OAuth2", "PKCE"]
 
 - <a href="#line-login-oauth">什麼是 LINE Login? 什麼又是 OAuth ? </a>
 - <a href="#when-line-login">什麼樣的情況會建議使用 LINE Login?</a>
-- - <a href="#oauth-issue">OAuth2 有什麼樣的缺點?</a>
+- <a href="#line-login-flow">LINE Login 的流程 </a>
+- <a href="#oauth-issue">OAuth2 有什麼樣的缺點?</a>
 - <a href="#what-is-pkce">什麼是 PKCE?</a>
 - <a href="#how-to-migrate-pkce">如何在 LINE Login 之中導入 PKCE?</a>
 - <a href="#summary">結論</a>
@@ -42,9 +43,8 @@ tags: ["Golang", "OAuth2", "PKCE"]
 
 LINE Login 除了提供一個方式來登入之外，也可以提供使用者名稱，大頭照的相關資訊。並且透過 LINE Login 也可以同時讓使用者加入商業服務的 LINE官方帳號，讓使用者更無時無可都可以使用到相關的服務。
 
-
-
 # 什麼樣的情況會建議使用 LINE Login
+
 <a id="when-line-login"></a>
 
 這裡會條列出哪些情況建議需使用 LINE Login 作為讀者來評量自己有沒有需要使用 LINE Login :
@@ -56,6 +56,31 @@ LINE Login 除了提供一個方式來登入之外，也可以提供使用者名
 了解為什麼使用 LINE Login 以及甚麼狀況下建議使用之後，接下來就引導讀者如何使用範例程式碼
 
 
+
+# LINE Login 的流程 
+<a id="line-login-flow"></a>
+
+![](https://developers.line.biz/assets/img/web-login-flow.2af66354.svg)
+
+(使用 `Profile` (也就是 OAuth 2.0) 方式來讓使用者透過 LINE Login 之後取得使用者資訊)
+
+LINE Login 提供了兩種方式來讓開發者可以安全地取得使用者資訊：
+
+-  [OAuth 2.0 authorization code grant flow (opens new window)](https://tools.ietf.org/html/rfc6749)
+-  [OpenID Connect](https://openid.net/connect/)
+
+兩種方式的不同點在於開發者可以再請求 `scope` 的時候標注是透過 `openid` 或是 `profile` 方式來索取相關資訊。 
+
+以下的內容均參照 [Integrating LINE Login with your web app](https://developers.line.biz/en/docs/line-login/web/integrate-line-login/)
+
+- (1). 首先瀏覽器訪問該網站 （假設你直接使用 `https://login-tester-evan.herokuapp.com/`)，進入了 `browse()` 顯示出三個 LINE Login 按鈕。
+- (2). 使用者按下了 LINE Web Login 的話，就會進入 `gotoauthpage()` 直接產生一組 API URL 直接導向到 `https://access.line.me/oauth2/v2.1/authorize` 。這邊其實有一些參數可以設定，可以參考 [LINE Login 參數設定](https://developers.line.biz/en/docs/line-login/web/integrate-line-login/#spy-making-an-authorization-request)。
+- (3). 使用者這時候會連到 LINE Platform 來進行登入的步驟，不論是透過 App 登入還是輸入帳號密碼的登入方式。登入完成後會透過 `redirect_uri` 網址的位址傳回一組 code ，作為使用者資料的存取之用。 這時候會呼叫到 `auth()` 來解析 code 。
+- (4). 在同一個 `auth()` 之中解析 code, state, 與 friendship_status_changed 後，檢查 state 正確性之後。就可以透過 code 去抓取使用者的資料了。 這時候會呼叫 `https://api.line.me/oauth2/v2.1/token` 的 API ，相關必要參數也可以參考[這個網址](https://developers.line.biz/en/docs/line-login/web/integrate-line-login/#spy-getting-an-access-token)。
+- (5). 一樣在 `auth()` 之中，回傳的結果可以得到 id_token ，透過 id_token 需要透過解譯的方式來將它還原成使用者的資料。這邊也已經包裝好為 `DecodeIDToken()`
+- 透過 `DecodeIDToken()` 就可以得到使用這名稱與大頭照。 (email 需要額外申請)
+
+以上就是一般的電子商務網站的導入流程，接下來就介紹如何在導入 LINE Login 的時候直接加入官方帳號 (聊天機器人) 為好友的步驟。
 
 ## OAuth 有什麼樣的缺點
 
