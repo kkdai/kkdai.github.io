@@ -9,8 +9,7 @@ tags: ["Golang", "OAuth2", "PKCE"]
 
 <img src="../images/2021/Go_SDK.png" width="400px">
 
-
-##前言:
+## 前言:
 
 [在 2021/04/09 的新聞](https://developers.line.biz/en/news/2021/04/09/line-login-pkce-support/)上， LINE Login 正是支持了 PKCE (Proof Key for Code Exchange) 的流程。 本篇文章將清楚地解釋一下，什麼是 LINE Login ？ 為何 LINE Login 需要支持 PKCE ? 最後會透過一個範例，帶領著讀者們一起來支持 LINE Login with PKCE 。
 
@@ -55,7 +54,32 @@ LINE Login 除了提供一個方式來登入之外，也可以提供使用者名
 
 了解為什麼使用 LINE Login 以及甚麼狀況下建議使用之後，接下來就引導讀者如何使用範例程式碼
 
+# 範例程式碼
 
+https://github.com/kkdai/line-login-go
+
+# 如何部署範例程式碼:
+
+- 到 [LINE Developer Console](https://developers.line.biz/console/) 建立相關的 Provider 跟 Channel。
+- 建立一個 LINE Login 的帳號，並且將以下兩個資訊記住:
+  - Channel ID
+  - Channel Secret
+- 另外建立一個 [LINE@](https://at.line.me/tw/) 並且打開 MessageAPI 的功能（也就是建置 chatbot 用），並且將以下兩個資訊記住:
+  - Channel Secret
+  - Channel Token
+- 到 https://github.com/kkdai/line-login-go 按下 Heroku Deploy ，建立該帳號並且部署該服務。這時候會要輸入三個資訊:
+  - LINECORP_PLATFORM_CHANNEL_CHANNELID
+    - 填入 LINE login channel ID
+  - LINECORP_PLATFORM_CHANNEL_CHANNELSECRET
+    - 填入 LINE login channel Secret
+  - LINECORP_PLATFORM_CHATBOT_CHANNELSECRET
+    - 填入 Chatbot channel Secret
+  - LINECORP_PLATFORM_CHATBOT_CHANNELTOKEN
+    - 填入 Chatbot channel Token
+  - LINECORP_PLATFORM_SERVERURL
+    - 這個資訊根據你的 heroku app 名稱來決定，假設你的 Heroku app 名稱叫做 `test-api-1234` 那麼你就該填 `https://test-api-1234.herokuapp.com`
+- 回到 LINE Login 的帳號設定，[App setting] 將以下位置寫入 callback URL `https://test-api-1234.herokuapp.com/auth`
+- 回到 LINE chatbot 的帳號設定，記得把 `https://test-api-1234.herokuapp.com/callback` 加到 LINE chatbot web hook 才能正確地啟動聊天機器人。
 
 # LINE Login 的流程 
 <a id="line-login-flow"></a>
