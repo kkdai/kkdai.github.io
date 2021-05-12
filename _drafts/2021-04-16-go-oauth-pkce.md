@@ -11,7 +11,7 @@ tags: ["Golang", "OAuth2", "PKCE"]
 
 ## 前言:
 
-[在 2021/04/09 的新聞](https://developers.line.biz/en/news/2021/04/09/line-login-pkce-support/)上， LINE Login 正是支持了 PKCE (Proof Key for Code Exchange) 的流程。 本篇文章將清楚地解釋一下，什麼是 LINE Login ？ 為何 LINE Login 需要支持 PKCE ? 最後會透過一個範例，帶領著讀者們一起來支持 LINE Login with PKCE 。
+[在 2021/04/09 的新聞](https://developers.line.biz/en/news/2021/04/09/line-login-pkce-support/)上， LINE Login 正是支持了 PKCE (Proof Key for Code Exchange) 的流程。 本篇文章將清楚地解釋一下，什麼是 LINE Login ？ 為何 LINE Login 需要支持 PKCE ? 最後會透過一個範例，帶領著讀者們一起來導入與體驗 LINE Login with PKCE 。
 
 其中本篇文章的程式碼分為三個部分，以下快速說明：
 
@@ -65,9 +65,13 @@ LINE Login 除了提供一個方式來登入之外，也可以提供使用者名
 
 了解為什麼使用 LINE Login 以及甚麼狀況下建議使用之後，接下來就引導讀者如何使用範例程式碼
 
-# 範例程式碼
+###  範例程式碼
 
 https://github.com/kkdai/line-login-go
+
+### 測試網站
+
+https://login-tester-evan.herokuapp.com/
 
 # 如何部署範例程式碼:
 
