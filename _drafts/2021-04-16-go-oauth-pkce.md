@@ -119,16 +119,21 @@ LINE Login 提供了兩種方式來讓開發者可以安全地取得使用者資
 - (5). 一樣在 `auth()` 之中，回傳的結果可以得到 id_token ，透過 id_token 需要透過解譯的方式來將它還原成使用者的資料。這邊也已經包裝好為 `DecodeIDToken()`
 - 透過 `DecodeIDToken()` 就可以得到使用這名稱與大頭照。 (email 需要額外申請)
 
-以上就是一般的電子商務網站的導入流程，接下來就介紹如何在導入 LINE Login 的時候直接加入官方帳號 (聊天機器人) 為好友的步驟。
+以上就是一般的電子商務網站的導入流程。
 
-## OAuth 有什麼樣的缺點
+
+
+## OAuth2 有什麼樣的缺點
 
 <a id="oauth-issue"></a>
-![](https://developers.line.biz/assets/img/new-user-login-without-pkce-en.54bd0a4b.svg)
-
-
 
 ![](../images/2021/pkce-diagram.jpg)
+
+在 OAuth2 提出後， Google 也在 2015 Google 提出的 [RFC 7636](https://tools.ietf.org/html/rfc7636)中也提出了一些值得考量的點。
+
+
+
+![](https://developers.line.biz/assets/img/new-user-login-without-pkce-en.54bd0a4b.svg)
 
 
 
