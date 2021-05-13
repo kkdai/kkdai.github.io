@@ -131,25 +131,39 @@ LINE Login 提供了兩種方式來讓開發者可以安全地取得使用者資
 
 在 OAuth2 提出後， Google 也在 2015 Google 提出的 [RFC 7636](https://tools.ietf.org/html/rfc7636)中也提出了一些值得考量的點。 本篇文章有提到在手機端的 App 如果導入了 OAuth2 的流程中，有可能傳輸過程中被其他惡意安裝的手機 App 竊取相關資訊。 相關細節可以參考 [LINE Login 官網提供的詳細案例](https://developers.line.biz/en/docs/line-login/integrate-pkce/#pkce-merit)。
 
-
-
-
-
 ![](https://developers.line.biz/assets/img/new-user-login-without-pkce-en.54bd0a4b.svg)
 
 （詳細說明，請參考 [Benefits of implementing PKCE for LINE Login](https://developers.line.biz/en/docs/line-login/integrate-pkce/#pkce-merit))
 
 這裡稍微跟大家說明相關的流程與發生的問題：
 
-- 
+- 使用者透過手機上有串接 OAuth2 的 App 來做 Authorization 
+- 進入 OAuth2 服務提供商的帳號登入畫面
+- 認證完成後， OAuth2 坪台商會根據當初登記的 URL （手機上為某個登入的 URI Scheme) ，開啟相關 App。
+- 這時候，如果有使用者不小心安裝了惡意的 App ，他可以登記同一個 URI Scheme ，但是因為手機設計原理兩個 App 都會收到相關的 URI Callback 。
+- `惡意程式(Malicious App)` 收到 URI Callback 呼叫並且取的 `code` 與 `state` 並且透過其他方式取得 Channel ID 跟 Channel Secret  (原理透過 App 掃瞄，這裡就不詳細敘述)。
+- 這時候，取的 `code` 與 `state` 的惡意程式，就可以透過呼叫 `GetAccessToken` 取的相關 Token 並且獲得權限。
 
-
+由於原先的 OAuth2 在 client App 端有這樣的缺陷，所以透過 PKCE 的方式可以來補救相關問題。
 
 ##   什麼是 PKCE? 
 
 <a id="what-is-pkce"></a>
 
 ![](https://developers.line.biz/assets/img/new-user-login-with-pkce-en.8be182f5.svg)
+
+(from [LINE Login 導入 PKCE in LINE Login 的流程示意圖](https://developers.line.biz/en/docs/line-login/integrate-pkce/#how-to-integrate-pkce))
+
+PKCE (Proof Key for Code Exchange) 是由 Google 在 [RFC 7636](https://tools.ietf.org/html/rfc7636) 提出的 Code Exchange 機制，透過這樣的交換資訊方式。可以避免中間透過 Callback URI 所造成的竊取攻擊。 詳細的方式敘述如下：
+
+先解釋兩個參數:
+
+- `Code Verifier`:
+- `Code Chanllenge`:
+
+- 產生 Web Login URL 的時候，透
+
+
 
 ## 如何在 LINE Login 之中導入 PKCE?
 <a id="how-to-migrate-pkce"></a>
