@@ -129,11 +129,19 @@ LINE Login 提供了兩種方式來讓開發者可以安全地取得使用者資
 
 ![](../images/2021/pkce-diagram.jpg)
 
-在 OAuth2 提出後， Google 也在 2015 Google 提出的 [RFC 7636](https://tools.ietf.org/html/rfc7636)中也提出了一些值得考量的點。
+在 OAuth2 提出後， Google 也在 2015 Google 提出的 [RFC 7636](https://tools.ietf.org/html/rfc7636)中也提出了一些值得考量的點。 本篇文章有提到在手機端的 App 如果導入了 OAuth2 的流程中，有可能傳輸過程中被其他惡意安裝的手機 App 竊取相關資訊。 相關細節可以參考 [LINE Login 官網提供的詳細案例](https://developers.line.biz/en/docs/line-login/integrate-pkce/#pkce-merit)。
+
+
 
 
 
 ![](https://developers.line.biz/assets/img/new-user-login-without-pkce-en.54bd0a4b.svg)
+
+（詳細說明，請參考 [Benefits of implementing PKCE for LINE Login](https://developers.line.biz/en/docs/line-login/integrate-pkce/#pkce-merit))
+
+這裡稍微跟大家說明相關的流程與發生的問題：
+
+- 
 
 
 
