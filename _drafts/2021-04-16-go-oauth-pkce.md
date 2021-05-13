@@ -158,15 +158,39 @@ PKCE (Proof Key for Code Exchange) 是由 Google 在 [RFC 7636](https://tools.ie
 
 先解釋兩個參數:
 
-- `Code Verifier`:
-- `Code Chanllenge`:
+- `Code Verifier`: 一個特殊字串，長度限制為 43 ~ 128 之間。
+- `Code Chanllenge`: 透過 SHA 256 將 `Code Verifier`  轉換過的字串。
 
-- 產生 Web Login URL 的時候，透
+接下來要解釋一下，這兩個字串如何能夠讓 OAuth2 的流程中安全性增加：
+
+- 產生 Web Login URL 的時候，先丟 `Code Chanllenge` 在傳遞參數中。
+- 連接到 LINE 開始認證流程，完成認證流程後。透過 Callback URI 傳回 `code` 與 `state` 。
+- 這時候認證方會將 `Code Verifier`送給認證伺服器來取得 Access Token 。
+- 認證伺服器端會拿 `Code Verifier` 與 `Code Chanllenge` 來確認，是否是同一個需求端發出的需求。
+- 返回 `Access Token` ，完成認證跟取得資訊的需求。
 
 
 
 ## 如何在 LINE Login 之中導入 PKCE?
 <a id="how-to-migrate-pkce"></a>
+
+接下來會使用 line-login-SDK-go 與 LINE-login-pkce-go 兩個範例程式碼來展示：
+
+- **LINE Login Go SDK**:  
+  - Github: [github.com/kkdai/line-login-sdk-go](https://github.com/kkdai/line-login-sdk-go)
+- **LINE Login PKCE Starter:**
+  - GitHub:  [github.com/kkdai/line-login-go](https://github.com/kkdai/line-login-go)
+  - Website: https://line-login-pkce.herokuapp.com/
+
+### 如何產生 Code Verifier
+
+<script src="https://gist.github.com/kkdai/bad1aa6851057bffe1ae61e68910700b.js"></script>
+
+### 如何產生 Code Challenge 
+
+文件上面有提供 [Code Challenge 的 python psuedo code](https://developers.line.biz/en/docs/line-login/integrate-pkce/#generate-code-challenge) ，這邊將其轉換成 Golang 的程式碼。
+
+<script src="https://gist.github.com/kkdai/bbca6d6ab463bd53e7fa3b7c4d73ae33.js"></script>
 
 
 
