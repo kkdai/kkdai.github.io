@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[學習心得][Golang] 如何透過 Golang 開發 OAuth2 的 PKCE - 以 LINE Login SDK 為例"
+title: "[學習心得][Golang] 如何透過 Golang 開發 OAuth2 的 PKCE - 以 LINE Login 為例"
 description: ""
 category: 
 - 學習文件
