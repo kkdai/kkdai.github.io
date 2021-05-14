@@ -198,7 +198,29 @@ PKCE (Proof Key for Code Exchange) 是由 Google 在 [RFC 7636](https://tools.ie
 
 <script src="https://gist.github.com/kkdai/4376217f77028c6d23d3c74cf219b601.js"></script>
 
-這一段程式碼則是利用  [github.com/kkdai/line-login-sdk-go](https://github.com/kkdai/line-login-sdk-go) 所產生的網頁轉址的程式碼，主要就是產生 `codeVerifier` 與 `codeChallenge` 
+這一段程式碼則是利用  [github.com/kkdai/line-login-sdk-go](https://github.com/kkdai/line-login-sdk-go) 所產生的網頁轉址的程式碼，主要就是產生 `codeVerifier` 與 `codeChallenge` (Global 參數)。請注意，在 SPEC 中，每一個 Web Login request 的  `codeVerifier` 與 `codeChallenge`  都需要是不同的，才能確保資訊的安全。
+
+
+
+### 要求 Access Token 的程式碼修改
+
+<script src="https://gist.github.com/kkdai/fb1d441b14e05eb5e9e985bc34eb967c.js"></script>
+
+這裡只需要注意的是， `codeVerifier` 需要傳遞正確的，不需要重新產生即可。
+
+
+
+### 展示
+
+![](../images/2021/pkce.gif)
+
+(展示影片來自網站: [PKCE LINE Login Test Site](https://line-login-pkce.herokuapp.com/))
+
+這邊有個簡單的展示網站，也歡迎想了解如何開發的開發者們，可以直接使用以下的開源程式碼。  
+
+**LINE Login PKCE Starter:**
+
+- GitHub:  [github.com/kkdai/line-login-go](https://github.com/kkdai/line-login-go)
 
 
 
