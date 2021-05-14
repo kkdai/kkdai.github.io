@@ -216,7 +216,12 @@ PKCE (Proof Key for Code Exchange) 是由 Google 在 [RFC 7636](https://tools.ie
 
 (展示影片來自網站: [PKCE LINE Login Test Site](https://line-login-pkce.herokuapp.com/))
 
-這邊有個簡單的展示網站，也歡迎想了解如何開發的開發者們，可以直接使用以下的開源程式碼。  
+這邊有個簡單的展示網站，也歡迎想了解如何開發的開發者們，可以直接使用以下的開源程式碼。   範例程式碼提供兩種模式的來取得使用者的登入資料。
+
+- **OpenID**: 透過 OpenID 的格式，直接登入完成後，取得使用者登入資訊的 JWT 。並且提供相關解析的程式碼。
+- **GetUserProfile**:  透過取得 User Access Token 的方式，呼叫 Get User Profile 來取得登入使用者的資訊。
+
+更多的程式碼，歡迎參考。
 
 **LINE Login PKCE Starter:**
 
