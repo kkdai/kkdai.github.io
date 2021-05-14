@@ -188,7 +188,7 @@ PKCE (Proof Key for Code Exchange) 是由 Google 在 [RFC 7636](https://tools.ie
 
 ### 如何產生 Code Challenge 
 
-文件上面有提供 [Code Challenge 的 python psuedo code](https://developers.line.biz/en/docs/line-login/integrate-pkce/#generate-code-challenge) ，這邊將其轉換成 Golang 的程式碼。
+文件上面有提供 [Code Challenge 的 python psuedo code](https://developers.line.biz/en/docs/line-login/integrate-pkce/#generate-code-challenge) ，這邊將其轉換成 Golang 的程式碼。 主要比較複雜的部分是 `sha256.Sum256()`  跟字串要做 URLEncoding 處理。 主要要根據 [Base 64 Encoding with URL and Filename Safe Alphabet (opens new window)](https://tools.ietf.org/html/rfc4648#section-5) 的處理方式來做。 其實在 Golang 只要一行就可以搞定了。
 
 <script src="https://gist.github.com/kkdai/bbca6d6ab463bd53e7fa3b7c4d73ae33.js"></script>
 
