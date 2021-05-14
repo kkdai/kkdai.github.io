@@ -233,7 +233,7 @@ PKCE (Proof Key for Code Exchange) 是由 Google 在 [RFC 7636](https://tools.ie
 
 <a id="summary"></a>
 
-
+許多開發者在開發 Web App 的時候，最麻煩的往往是使用者資料的註冊。 因為複雜的註冊流程與多一個帳號密碼往往會讓使用者卻步。 LINE Login 提供
 
 
 
