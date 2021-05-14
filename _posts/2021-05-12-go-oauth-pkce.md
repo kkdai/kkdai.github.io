@@ -161,7 +161,9 @@ PKCE (Proof Key for Code Exchange) 是由 Google 在 [RFC 7636](https://tools.ie
 - `Code Verifier`: 一個特殊字串，長度限制為 43 ~ 128 之間。
 - `Code Chanllenge`: 透過 SHA 256 將 `Code Verifier`  轉換過的字串。
 
-接下來要解釋一下，這兩個字串如何能夠讓 OAuth2 的流程中安全性增加：
+接下來要解釋一下，這兩個字串如何能夠讓 OAuth2 的流程中安全性增加。由於 SHA256 是不可逆且較安全的加密模式，並且在資料的傳輸上先提供 `Code Chanllenge` 再來是 `Code Verifier` 可以確保著交握的兩端都是同一個人，因為必須要同時都有兩個才能正確地確認。 這樣就算原本的 `code` 被竊取到了，也會因為無法產生正確的 `Code Verifier` 讓惡意程式無法竊取到資料。
+
+那麼詳細的 **LINE LOGIN withg PKCE** 流程如下：
 
 - 產生 Web Login URL 的時候，先丟 `Code Chanllenge` 在傳遞參數中。
 - 連接到 LINE 開始認證流程，完成認證流程後。透過 Callback URI 傳回 `code` 與 `state` 。
@@ -191,6 +193,12 @@ PKCE (Proof Key for Code Exchange) 是由 Google 在 [RFC 7636](https://tools.ie
 文件上面有提供 [Code Challenge 的 python psuedo code](https://developers.line.biz/en/docs/line-login/integrate-pkce/#generate-code-challenge) ，這邊將其轉換成 Golang 的程式碼。 主要比較複雜的部分是 `sha256.Sum256()`  跟字串要做 URLEncoding 處理。 主要要根據 [Base 64 Encoding with URL and Filename Safe Alphabet (opens new window)](https://tools.ietf.org/html/rfc4648#section-5) 的處理方式來做。 其實在 Golang 只要一行就可以搞定了。
 
 <script src="https://gist.github.com/kkdai/bbca6d6ab463bd53e7fa3b7c4d73ae33.js"></script>
+
+### 產生 Web Login 網址
+
+<script src="https://gist.github.com/kkdai/4376217f77028c6d23d3c74cf219b601.js"></script>
+
+這一段程式碼則是利用  [github.com/kkdai/line-login-sdk-go](https://github.com/kkdai/line-login-sdk-go) 所產生的網頁轉址的程式碼，主要就是產生 `codeVerifier` 與 `codeChallenge` 
 
 
 
