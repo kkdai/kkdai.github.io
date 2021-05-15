@@ -139,7 +139,7 @@ LINE Login 提供了兩種方式來讓開發者可以安全地取得使用者資
 
 - 使用者透過手機上有串接 OAuth2 的 App 來做 Authorization 
 - 進入 OAuth2 服務提供商的帳號登入畫面
-- 認證完成後， OAuth2 坪台商會根據當初登記的 URL （手機上為某個登入的 URI Scheme) ，開啟相關 App。
+- 認證完成後， OAuth2 平台商會根據當初登記的 URL （手機上為某個登入的 URI Scheme) ，開啟相關 App。
 - 這時候，如果有使用者不小心安裝了惡意的 App ，他可以登記同一個 URI Scheme ，但是因為手機設計原理兩個 App 都會收到相關的 URI Callback 。
 - `惡意程式(Malicious App)` 收到 URI Callback 呼叫並且取的 `code` 與 `state` 並且透過其他方式取得 Channel ID 跟 Channel Secret  (原理透過 App 掃瞄，這裡就不詳細敘述)。
 - 這時候，取的 `code` 與 `state` 的惡意程式，就可以透過呼叫 `GetAccessToken` 取的相關 Token 並且獲得權限。
