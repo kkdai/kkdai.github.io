@@ -10,13 +10,13 @@ paginate_path: "page:num"
 
 highlighter: rouge
 markdown: kramdown
-disqus: evanlin1007
+#disqus: evanlin1007
 google_analytics: UA-54721520-1
 
-comments :
-    provider : disqus
-    disqus :
-      short_name : evanlin1007
+#comments :
+#    provider : disqus
+#    disqus :
+#      short_name : evanlin1007
 
 
 defaults:
