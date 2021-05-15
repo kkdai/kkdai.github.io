@@ -4,7 +4,7 @@ title: "[好書分享] 什麼時候是好時候：掌握完美時機的科學祕
 description: ""
 category: 
 - 書海裡的漫遊
-tags: ["書海裡的漫遊", "Books", "Subscribed"]
+tags: ["書海裡的漫遊", "Books"]
 ---
 
 <div><a href="http://moo.im/a/8klCEY" title="什麼時候是好時候"><img src="https://cdn.readmoo.com/cover/gm/8jicohk_210x315.jpg?v=0"></a></div>
@@ -98,14 +98,36 @@ When: The Scientific Secrets of Perfect Timing
 
 ### 第3部　同步與思考
 
+接下來探討的是群體的時間點，同步與思考的部分。 要如何在整個團體能夠同步到一個最佳的狀況呢？ 比如說合唱團要如何抓準時間表演？ 龍舟隊伍要如何才能同步大家划船的力量往前衝刺？ 擴大到整個組織要如何抓到好的時間點。讓整個團隊能夠在合諧的狀態？
 
+首先作者介紹了一個印度的奇特行業： 幫人送新鮮的午餐便當到手上的工作，在印度首都有許多的人，到每一個人家中收取剛剛包好的便當，送到工作人員的手中。這些人代表的中午吃飯的重要，也代表著一份情感的傳遞。  他們分工也很精密，收送的人，跟發放的人如何有默契的交接，讓便當可以快速的到人的手上，不會冷掉。 這些和諧的團體會有一種同步的機制與節奏，就是「同步者的快感」。
 
-#### 參考文章
+#### 團隊中協調技巧：
 
-- [讀書心得-動機、單純的力量(DRIVE: The Surprising Truth About What Motivates Us)](http://www.evanlin.com/e8-ae-80-e6-9b-b8-e5-bf-83-e5-be-97-e5-8b-95-e6-a9-9f-e3-80-81-e5-96-ae-e7-b4-94-e7-9a-84-e5-8a-9b-e9-87-8fdrive-the-surprising-truth-about-what-motivates-us/) 
-- 
+- 快速回覆電子信件
+- 分享彼此的奮鬥故事
+- 培養自律的團隊儀式
+- 由每個人都提供一點點的拼圖方式
+
+最後作者也分享一些名言：
+
+```
+以前我相信，時機就是一切。現在我相信，任何事情都有其時機
+```
 
 
 
 ## 心得:
+
+
+
+
+
+
+
+
+
+## 參考文章
+
+- [讀書心得-動機、單純的力量(DRIVE: The Surprising Truth About What Motivates Us)](http://www.evanlin.com/e8-ae-80-e6-9b-b8-e5-bf-83-e5-be-97-e5-8b-95-e6-a9-9f-e3-80-81-e5-96-ae-e7-b4-94-e7-9a-84-e5-8a-9b-e9-87-8fdrive-the-surprising-truth-about-what-motivates-us/) 
 
