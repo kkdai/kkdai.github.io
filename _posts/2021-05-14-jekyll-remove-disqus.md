@@ -16,9 +16,15 @@ tags: ["ruby", "Jekyll", "GitHub", "utteranc"]
 
 <img src="https://jekyllrb.com/img/jekyll-og.png" width="400px">
 
-一直以來本站是透過 Jekyll 來架設的，之前本來有使用 Disqus 作為文章評論系統，雖然很多人說廣告太多，太慢。只是覺得還好，可能沒仔細看。 [最近覺得 disqus 的廣告越來越嚴重，影響整個效能](https://asp.net-hacker.rocks/2018/11/19/github-comments.html)。決定拿掉了。 有需要參考的可以看一下這個 [commit](https://github.com/kkdai/kkdai.github.io/commit/3dfba4885874cb1cb0c06a09fd2f4fffd892623a)  主要就是先註解掉相關的設定。 然後發送 git push 即可。 
+疫情升溫打斷本來出遊計劃，還好女兒很乖在玩。 那我就來弄弄 Jekyll 的評論搬遷，結果發現最近有個好用系統  utteranc.es 可以讓你直接使用 github issue 來作為文章評論。 來看看吧。 
 
 本篇文章將告訴你如何移出，並且使用 Github Comment 作為文章評論用，現在也有個開源好用的工具。 https://utteranc.es/
+
+
+
+## 什麼是 Disqus
+
+一直以來本站是透過 Jekyll 來架設的，之前本來有使用 Disqus 作為文章評論系統，雖然很多人說廣告太多，太慢。只是覺得還好，可能沒仔細看。 [最近覺得 disqus 的廣告越來越嚴重，影響整個效能](https://asp.net-hacker.rocks/2018/11/19/github-comments.html)。決定拿掉了。 有需要參考的可以看一下這個 [commit](https://github.com/kkdai/kkdai.github.io/commit/3dfba4885874cb1cb0c06a09fd2f4fffd892623a)  主要就是先註解掉相關的設定。 然後發送 git push 即可。 
 
 
 
