@@ -75,7 +75,9 @@ utteranc 是一個完全 Open Source 並且使用 github comment 。並且提供
 
 ## 代辦事項：
 
-接下來就要把 disqus 的評論搬到 github comment， 這邊可以先 export 出來後，寫個 Golang 來 import 。 不過現在好像找不到 Disqus Export 了，怪怪的。 持續找找看吧。
+接下來就要把 disqus 的評論搬到 github comment， 這邊可以先 export 出來後，寫個 Golang 來 import 。找到了在這裡：  http://disqus.com/admin/discussions/export/
+
+接下來就是把文章評論搬過去。 
 
 ## 參考文章：
 
