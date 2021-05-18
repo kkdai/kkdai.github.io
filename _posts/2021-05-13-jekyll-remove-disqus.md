@@ -81,7 +81,7 @@ utteranc 是一個完全 Open Source 並且使用 github comment 。並且提供
 
 ## 代辦事項：
 
-接下來就要把 disqus 的評論搬到 github comment， 這邊可以先 export 出來後，寫個 Golang 來 import 。找到了在這裡：  http://disqus.com/admin/discussions/export/
+接下來就要把 disqus 的評論搬到 github comment， 這邊可以先 export 出來後，寫個 Golang 來 import 。找到了在這裡：  <http://disqus.com/admin/discussions/export/>
 
 接下來就是把文章評論搬過去。 
 
@@ -90,6 +90,6 @@ utteranc 是一個完全 Open Source 並且使用 github comment 。並且提供
 - [Removing Disqus and adding GitHub Issue Comments](https://asp.net-hacker.rocks/2018/11/19/github-comments.html)
 - [Enabling Jekyll Blog Comments with Utterances](https://www.benzy.xyz/utterances/)
 - 我的相關 commit:
-  - 拔掉 Disqus  https://github.com/kkdai/kkdai.github.io/commit/3dfba4885874cb1cb0c06a09fd2f4fffd892623a
-  - 增加 utteranc https://github.com/kkdai/kkdai.github.io/commit/b9606abd93c08bf131efa4db78c8762e8a26f1da
+  - 拔掉 Disqus  <https://github.com/kkdai/kkdai.github.io/commit/3dfba4885874cb1cb0c06a09fd2f4fffd892623a>
+  - 增加 utteranc <https://github.com/kkdai/kkdai.github.io/commit/b9606abd93c08bf131efa4db78c8762e8a26f1da>
 
