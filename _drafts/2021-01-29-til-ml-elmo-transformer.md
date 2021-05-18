@@ -32,3 +32,7 @@ tags: ["TIL", " MarchineLearning", "etcd", "golfing"]
 - 李宏毅: Transformer https://www.youtube.com/watch?v=ugWDIIOHtPA
 - Talk to Transformer https://app.inferkit.com/demo
 
+
+
+
+
