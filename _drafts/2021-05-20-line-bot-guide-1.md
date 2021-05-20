@@ -36,15 +36,13 @@ tags: ["LINEBot", "Chatbot", "DevRel"]
 - **[LINE Developer Doc:](https://developers.line.biz/en/docs/)**
   - 負責存放所有的相關產品說明文件， API 詳細說明。
 - [**LINE Developer Console:**](https://developers.line.biz/console/)
-  - 
+  - 這就是開發者稱為的控制台部分，跟[官方帳號 (Official Account) 的後台](https://manager.line.biz/)不同，這邊主要是負責設定相關的開發資源。 不論是建立新的 Channel 或是新增，修改 LIFF App 都可以利用控制來完成。
 
 
 
 ## 結論：
 
 <a id="summary"></a>
-
-許多開發者在開發 Web App 的時候，最麻煩的往往是使用者資料的註冊。 因為複雜的註冊流程與多一個帳號密碼往往會讓使用者卻步。 [LINE Login](https://developers.line.biz/en/docs/line-login/) 提供良好的機制可以讓許多開發者使用到國內最多人使用的 LINE 來登入，節省掉許多開發上的麻煩。 本篇文章介紹了新的登入機制: PKCE for LINE Login 。 讓登入機制符合最新的安全機制外，更可以讓使用上沒有開發後顧之憂。  並且提供[相關範例程式碼](https://github.com/kkdai/line-login-sdk-go)x，讓開發者可以無痛的導入最新的機制。
 
 
 
