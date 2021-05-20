@@ -21,7 +21,7 @@ tags: ["Golang", "OAuth2", "PKCE"]
   - GitHub:  [github.com/kkdai/line-login-go](https://github.com/kkdai/line-login-go)
   - Website: https://login-tester-evan.herokuapp.com/
 - **LINE Login PKCE Starter:**
-  - GitHub:  [github.com/kkdai/line-login-go](https://github.com/kkdai/line-login-go)
+  - GitHub:  [github.com/kkdai/line-login-pkce-go](https://github.com/kkdai/line-login-pkce-go)
   - Website: https://line-login-pkce.herokuapp.com/
 
 
@@ -181,7 +181,7 @@ PKCE (Proof Key for Code Exchange) 是由 Google 在 [RFC 7636](https://tools.ie
 - **LINE Login Go SDK**:  
   - Github: [github.com/kkdai/line-login-sdk-go](https://github.com/kkdai/line-login-sdk-go)
 - **LINE Login PKCE Starter:**
-  - GitHub:  [github.com/kkdai/line-login-go](https://github.com/kkdai/line-login-go)
+  - GitHub:  [github.com/kkdai/line-login-pkce-go](https://github.com/kkdai/line-login-pkce-go)
   - Website: https://line-login-pkce.herokuapp.com/
 
 ### 如何產生 Code Verifier
@@ -225,7 +225,7 @@ PKCE (Proof Key for Code Exchange) 是由 Google 在 [RFC 7636](https://tools.ie
 
 **LINE Login PKCE Starter:**
 
-- GitHub:  [github.com/kkdai/line-login-go](https://github.com/kkdai/line-login-go)
+- GitHub:  [github.com/kkdai/line-login-pkce-go](https://github.com/kkdai/line-login-pkce-go)
 
 
 
