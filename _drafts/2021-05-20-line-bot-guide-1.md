@@ -17,6 +17,8 @@ tags: ["LINEBot", "Chatbot", "DevRel"]
 
 ## 文章索引:
 
+#### 完整投影片鏈結： <https://speakerdeck.com/line_developers_tw2/line-bot-developer-guideline-chinese-7fa7b932-afc3-4b41-9e99-23319e162233>
+
 希望各位可以持續關注：
 
 1. 關於LINE Bot (本篇文章)
@@ -25,11 +27,11 @@ tags: ["LINEBot", "Chatbot", "DevRel"]
 4. LINE Login
 5.  其他相關功能
 
-
+本篇文章將專注在第一個段落，也就是 Page 3 ~ Page 8 的部分。
 
 ##  LINE Developers 相關資源
 
-
+<script async class="speakerdeck-embed" data-slide="4" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 這邊主要提到兩個網站，分別是：
 
@@ -37,6 +39,10 @@ tags: ["LINEBot", "Chatbot", "DevRel"]
   - 負責存放所有的相關產品說明文件， API 詳細說明。
 - [**LINE Developer Console:**](https://developers.line.biz/console/)
   - 這就是開發者稱為的控制台部分，跟[官方帳號 (Official Account) 的後台](https://manager.line.biz/)不同，這邊主要是負責設定相關的開發資源。 不論是建立新的 Channel 或是新增，修改 LIFF App 都可以利用控制來完成。
+
+## LINE Bot 的機制
+
+<script async class="speakerdeck-embed" data-slide="5" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 
 
