@@ -25,7 +25,6 @@ tags: ["Golang", "OAuth2", "PKCE"]
 - <a href="#package">套件: Disqus to github issue Go </a>
 - <a href="#features">包括哪些功能</a>
 - <a href="#disqus-xml">Disqus XML Format 解析</a>
-- <a href="#xml-go">XML Parser in Go</a>
 - <a href="#github-issue-go">Github issue created in Go</a> 
 - <a href="#summary">結論</a>
 - <a href="#result">成果</a>
@@ -102,15 +101,19 @@ tags: ["Golang", "OAuth2", "PKCE"]
 
 目前採取方式是根據在 Githib Issue 的 title 當作 key ，來做 map 。
 
-如果以 path 來當 title ， ` mapping := make(map[string] Issue)` 來管理，可以很快速的
+如果以 path 來當 title ， ` mapping := make(map[string] Issue)` 來管理，可以很快速的透過 Map 來尋找到相關的資訊。
+
+<script src="https://gist.github.com/kkdai/34e778f60b40e83a080ded84aedddfdb.js"></script>
 
 
 
+### 留言排序
 
+其中，每一篇文章的留言是需要排序的。為了確保留言可以在年度順序下呈現。需要相關 Sort 的準備如下：
 
-# XML Parser in Go
+<script src="https://gist.github.com/kkdai/4f08d942bf776035131c4f30e40ca2b8.js"></script>
 
-<a id="xml-go"></a>
+透過準備 [Sort Interfaces](https://golang.org/pkg/sort/#Interface) 的方式來讓 `[]Comment` 支援 `Sort()`。
 
 
 
@@ -118,7 +121,7 @@ tags: ["Golang", "OAuth2", "PKCE"]
 
 <a id="github-issue-go"></a>
 
-
+透過 
 
 
 
