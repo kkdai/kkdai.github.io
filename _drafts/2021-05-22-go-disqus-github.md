@@ -11,7 +11,7 @@ tags: ["Golang", "OAuth2", "PKCE"]
 
 ## 前言:
 
-
+前幾天的文章中 [[Jekyll] 移除 Disqu 替換到 utteranc 來使用 github issue 作為文章評論](https://www.evanlin.com/jekyll-remove-disqus/) ，我有提到我將本來部落格中的 Disqus 評論有搬到 
 
 
 
@@ -19,25 +19,39 @@ tags: ["Golang", "OAuth2", "PKCE"]
 
 本篇文將要介紹以下一些的部分：
 
-- <a href="#package">Pacakage Address </a>
-- <a href="#features">Disqus GitHub importor 包括哪些功能</a>
+- <a href="#export">如何導出 Disqus Comment</a>
+- <a href="#package">套件: Disqus to github issue Go </a>
+- <a href="#features">包括哪些功能</a>
 - <a href="#summary">結論</a>
 - <a href="#refer">參考文章</a>
 
 
 
-# 套件: Disqus GitHub importor
+# 如何導出 Disqus Comment
+
+<a id="export"></a>
+
+到 Disqus 管理介面，去導出：
+
+#### <http://disqus.com/admin/discussions/export/>
+
+大概需要過一兩天才會收到導出的檔案（不定時）。
+
+
+
+# 套件: Disqus to github issues Go
 
 <a id="package"></a>
 
+## <https://github.com/kkdai/disqus-to-github-issues-go>
 
 
 
-# Disqus GitHub importor 包括哪些功能
+# 包括哪些功能
 
 <a id="features"></a>
 
-
+- 讀取從
 
 
 
