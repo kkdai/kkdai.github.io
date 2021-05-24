@@ -100,7 +100,9 @@ tags: ["Golang", "OAuth2", "PKCE"]
 
 ### 如何作出準備 Import github issue 的資料
 
+目前採取方式是根據在 Githib Issue 的 title 當作 key ，來做 map 。
 
+如果以 path 來當 title ， ` mapping := make(map[string] Issue)` 來管理，可以很快速的
 
 
 
