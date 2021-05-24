@@ -121,9 +121,27 @@ tags: ["Golang", "OAuth2", "PKCE"]
 
 <a id="github-issue-go"></a>
 
-透過 
+關於發送 Github Issue 的部分，使用的是 Google 開源的 golang 套件。 <https://github.com/google/go-github> ，這邊記得要使用最新的版本（筆者時間最新版本是 v35）
+
+```
+import (
+   ...
+	"github.com/google/go-github/v35/github"
+	"golang.org/x/oauth2"
+)
+```
 
 
+
+相關程式碼如下： 
+
+
+
+<script src="https://gist.github.com/kkdai/1c628d5e08f540e57cfa6b24cb35f44d.js"></script>
+
+其中 `gIssue, _, err = client.Issues.Create(ctx, b.User, b.Repo, input)` 後會取得建立好的 Github Issue 相關訊息，需要相關的 ID 來後續加入 Comment 。
+
+這一段程式碼，其實對於許多開發者想使用 Github Issue 作為資料管理的方式可以參考（聽說有人拿 Github Issue 來當 DB www) 。
 
 
 
@@ -133,12 +151,15 @@ tags: ["Golang", "OAuth2", "PKCE"]
 
 ![](https://github.com/kkdai/disqus-importor-go/raw/master/img/blog_result.jpg)
 
+最後執行過後，可以將 Disqus 的留言全部整合進 Github Issue 之中，並且可以保留相關時間。也可以在部落格裡面正常的呈現。希望這個工具能夠幫助大家。
+
 
 
 ## 結論：
 
 <a id="summary"></a>
 
+本文分享了關於 Disqus 的輸出資料格式分析，並且分享了如何在 Github 上面建立 Issue 的相關程式碼。整合起來其實並不難，但是許多時候這些應用往往會變得很有趣。 大家可以參考筆者前一篇文章: [[TIL] 為了自己的習慣，弄了一個簡單的服務 Github issue bookmark](http://www.evanlin.com/til-2017-05-23/)。
 
 
 
@@ -153,5 +174,7 @@ tags: ["Golang", "OAuth2", "PKCE"]
 - <https://github.com/goreleaser/goreleaser>
 
 - <https://github.com/settings/tokens>
+
+-  [[TIL] 為了自己的習慣，弄了一個簡單的服務 Github issue bookmark](http://www.evanlin.com/til-2017-05-23/)
 
   
