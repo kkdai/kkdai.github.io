@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[TIL][Golang] 打包你用 Golang 寫的 CLI 工具 (Command Line Tool)，並且搭配 Github Actions 準備 Changelogs "
+title: "[TIL][Golang] 使用 GoReleaser 打包你用 Golang 寫的 CLI (Command Line Tool)，並且搭配 Github Actions 準備 Changelogs "
 description: ""
 category: 
 - TodayILearn
@@ -108,7 +108,7 @@ env GOOS=linux GOARCH=arm go build -v github.com/constabulary/gb/cmd/gb
 
 - 設定環境變數，讓你可以跟 Github 整合 `export GITHUB_TOKEN="YOUR_GH_TOKEN"`
 
-  - Github Token 產生方式，去這一頁. https://github.com/settings/tokens/new
+  - Github Token 產生方式，去這一頁.  <https://github.com/settings/tokens/new>
 
 - 如果需要發布新版本，依照以下兩個步驟:
 
@@ -171,7 +171,7 @@ push:
 
 ## 想找一個打包好的樣板，試試看？ Github Command-line Template Repo  
 
-https://github.com/kkdai/go-cli-template
+<https://github.com/kkdai/go-cli-template>
 
 
 
