@@ -17,7 +17,7 @@ tags: ["LINEBot", "Chatbot", "DevRel"]
 
 ## 文章索引:
 
-#### 完整投影片鏈結： <https://speakerdeck.com/line_developers_tw2/line-bot-developer-guideline-chinese-7fa7b932-afc3-4b41-9e99-23319e162233>
+#### 完整投影片鏈結： <https://speakerdeck.com/line_developers_tw2/line-bot-developer-guideline-chinese>
 
 希望各位可以持續關注：
 
@@ -42,7 +42,24 @@ tags: ["LINEBot", "Chatbot", "DevRel"]
 
 ## LINE Bot 的機制
 
-<script async class="speakerdeck-embed" data-slide="5" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<script async class="speakerdeck-embed" data-slide="4" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+這一張投影片解釋了一個使用者傳訊息給一個官方帳號後，訊息會如何透貴 LINE 的平台傳遞到開發者的（也就是圖上的客戶端）的 Bot 伺服器。 這邊表達了幾件事情：
+
+- 所有訊息都會透過 LINE 平台的 Talk 伺服器與 Channel Gateway 伺服器處理後傳給 「 Bot 伺服器」。訊息都是透過 Webhook 的方式傳遞，開發者只要依照官方文件開發好像關的 「Bot 伺服器」並且在登入好 webhook 的位置。就可以正確地收到訊息。
+- 開發者處理完訊息後，可以透過 API 的方式發送給 LINE Channel Gateway 。 會在依照相關的訊息發送人透過 Talk 伺服器來發送訊息。
+
+相關的開發者文件可以參考：  
+
+- [Receiving messages (webhooks)](https://developers.line.biz/en/docs/messaging-api/receiving-messages/)
+
+-  [Sending messages](https://developers.line.biz/en/docs/messaging-api/sending-messages/)
+
+
+## 關於 LINE Bot 與 Channel 之間的相關性
+
+<script async class="speakerdeck-embed" data-slide="6" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
 
 
 
