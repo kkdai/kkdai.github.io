@@ -60,6 +60,20 @@ tags: ["LINEBot", "Chatbot", "DevRel"]
 
 <script async class="speakerdeck-embed" data-slide="6" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
+這張投影片解釋了官方帳號與 Channel 之間的相關性，接下來將為讀者詳細解釋:
+
+- 首先使用者對於官方帳號（LINE Bot) 所做的所有動作，都有相關的訊息透過 Webhook 來傳給開發者的 LINE Bot 。
+- LINE Bot 收到訊息後，可以透過取得的 Access Token 來通過伺服器認證來發送訊息給使用者。
+- 透過 LINE Login 的認證部分也可以將使用者鏈結到相關 LINEE Bot 帳號。（ e.g.  透過網路商城的第三方登入 LINE Login ，可以讓使用者登入網路商城後，也直接加入 LINE Bot ）。 
+  - 相關部分可以參考文章：
+    - [如何透過 Golang 開發 OAuth2 的 PKCE – 以 LINE Login 為例](https://engineering.linecorp.com/zh-hant/blog/pkce-line-login/)
+    
+    -  [如何讓 Chatbot 透過 Account Link 來串接使用者體驗](https://engineering.linecorp.com/zh-hant/blog/how-to-use-account-link/) 。
+
+
+
+
+
 
 
 
