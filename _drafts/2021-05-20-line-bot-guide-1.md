@@ -70,7 +70,9 @@ tags: ["LINEBot", "Chatbot", "DevRel"]
     
     -  [如何讓 Chatbot 透過 Account Link 來串接使用者體驗](https://engineering.linecorp.com/zh-hant/blog/how-to-use-account-link/) 。
 
+此外，這一張投影片也希望帶給各位關於 Provider 的相關概念如下：
 
+- 同一個 Provider 底下的 Channel 
 
 
 
