@@ -15,13 +15,17 @@ tags: ["Golang", "DevOps", "CICD"]
 
 上個月曾經有一篇文章有提到 [使用 GoReleaser 打包你用 Golang 寫的 CLI (Command Line Tool)，並且搭配 Github Actions 準備 Changelogs](http://www.evanlin.com/til-go-goreleaser/) ，透過 [GoReleaser](https://goreleaser.com/) 可以跟 Github Action 整合之外，還可以幫你撰寫 Changelogs 讓版本管控上變得更加的簡單與方便。
 
-但是隨著功能的應用變廣，會有更多的狀況發生。那麼該如何讓你的 Github Action 能夠有更多樣的自訂設定呢？
+但是隨著服務與產品的應用變廣，會有更多的客製化需求發生。那麼該如何讓你的 Github Action 能夠有更多樣的自訂設定呢？
 
 
 
-## GoReleaser 一個好用的打包發佈的工具
+## 基本需求： GoReleaser with Github Action
 
-<a id="goreleaser"></a>
+大家可以參考前一篇文章，也可以快速學習本篇。
+
+<script src="https://gist.github.com/kkdai/d32ea8f7f99a7097e429b194d2c58c56.js"></script>
+
+把這個建立成檔案在 `.github/workflows/release_build.yml` 就可以了。
 
 
 
