@@ -31,6 +31,22 @@ tags: ["Golang", "DevOps", "CICD"]
 
 ## main.go 在子目錄 (sub-folder) Main program in sub-folder
 
+通常在開發一些套件的時候，有時候我們主要 Repository 會是相關的開發套件 (Package) 而會將 CLI 的部分放在 `cmd/xxx_cli` 的資料夾中。需要安裝的時候再跑 `go install xxx.com/xxx/uuu/cmd/xxx_cli` 來安裝。
+
+如果這時候你的 `main.go` 並不在 repo 的主目錄下，而是在 `cmd/test_cli` 的目錄下。 這個時候你就會發生錯誤。
+
+![](https://user-images.githubusercontent.com/2252691/119249210-4d062100-bbc9-11eb-9ee1-a60ec8dcc820.png)
+
+```
+goreleaser error: dones not contain a main function
+```
+
+這時候要如何修改呢?
+
+<script src="https://gist.github.com/kkdai/34e2167df032a859945b487593465bdb.js"></script>
+
+依照上面顯示，主要修改部分就在於 `workdir: ./cmd/test_cli` 放在 Steps Run GoReleaser 裡面的 `with:`。 這樣就可以正常的編譯出執行檔案，並且更新 changelogs 。
+
 
 
 
