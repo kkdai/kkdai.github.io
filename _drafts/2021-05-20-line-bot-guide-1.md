@@ -76,6 +76,12 @@ tags: ["LINEBot", "Chatbot", "DevRel"]
 
 ## LINE Bot Glossary
 
+<script async class="speakerdeck-embed" data-slide="7" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+關於 Glossary 部分，這邊講解了許多常被詢問的用字。這邊補充一些大家常用字詞。 大家可以針對這份上面的對照表尋找相關用語。 其實有更多的用字在 <https://developers.line.biz/en/glossary/> 可以找到。
+
+## 開發LINE Bot的開始步驟/發布前的確認事項
+
 
 
 
