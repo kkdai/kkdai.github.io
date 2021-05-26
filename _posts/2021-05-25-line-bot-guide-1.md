@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[學習心得] "LINE Bot 開發者指南" 詳解 -  1 關於 LINE Bot"
+title: "[學習心得] LINE Bot 開發者指南 詳解 - 1. 關於 LINE Bot"
 description: ""
 category: 
 - 學習文件
