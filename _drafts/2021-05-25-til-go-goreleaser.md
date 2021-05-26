@@ -25,9 +25,11 @@ tags: ["Golang", "DevOps", "CICD"]
 
 <script src="https://gist.github.com/kkdai/d32ea8f7f99a7097e429b194d2c58c56.js"></script>
 
-把這個建立成檔案在 `.github/workflows/release_build.yml` 就可以了。
+把這個建立成檔案在 `.github/workflows/release_build.yml` 就可以了。  這個其實比較適合 main.go 直接放在 github repo 下的，可以參考  <https://github.com/kkdai/go-cli-template> 的專案形式。
 
 
+
+## main.go 在子目錄 (sub-folder) Main program in sub-folder
 
 
 
