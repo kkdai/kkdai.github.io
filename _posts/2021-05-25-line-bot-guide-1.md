@@ -21,7 +21,7 @@ tags: ["LINEBot", "Chatbot", "DevRel"]
 
 希望各位可以持續關注：
 
-1. 關於LINE Bot (本篇文章)
+1. [關於LINE Bot (本篇文章)](https://www.evanlin.com/2021-05-25-line-bot-guide-1/)
 2. 使用Webhook URL接收請求時的注意事項
 3. 發送 API 請求時的注意事項
 4. LINE Login
