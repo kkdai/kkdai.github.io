@@ -70,9 +70,7 @@ tags: ["LINEBot", "Chatbot", "DevRel"]
     
     -  [如何讓 Chatbot 透過 Account Link 來串接使用者體驗](https://engineering.linecorp.com/zh-hant/blog/how-to-use-account-link/) 。
 
-此外，這一張投影片也希望帶給各位關於 Provider 的相關概念如下：
-
-- 同一個 Provider 底下的 Channel 
+此外，這一張投影片也希望帶給各位關於 Provider 的相關概念如下。同一個 Provider 底下的 Channel 拿到的使用者ＩＤ會是相同的，也就是 LINE Login 登入取得的使用者 ID 跟 LINE Bot 上面只要是同一個服務提供者（Service Provider) 是相同的。 也提醒 LINE Login 必須要發佈(Publish)， 才能被所有人使用。（參考 [開發者文件： Published LINE Login Channel](https://developers.line.biz/en/docs/line-login/getting-started/#step-5-publish-channel) ) 。
 
 
 
