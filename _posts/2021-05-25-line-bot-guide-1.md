@@ -42,7 +42,7 @@ tags: ["LINEBot", "Chatbot", "DevRel"]
 
 ## LINE Bot 的機制
 
-<script async class="speakerdeck-embed" data-slide="4" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<script async class="speakerdeck-embed" data-slide="5" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 這一張投影片解釋了一個使用者傳訊息給一個官方帳號後，訊息會如何透貴 LINE 的平台傳遞到開發者的（也就是圖上的客戶端）的 Bot 伺服器。 這邊表達了幾件事情：
 
