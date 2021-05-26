@@ -74,6 +74,8 @@ tags: ["LINEBot", "Chatbot", "DevRel"]
 
 
 
+## LINE Bot Glossary
+
 
 
 
