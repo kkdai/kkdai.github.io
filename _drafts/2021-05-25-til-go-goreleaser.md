@@ -51,7 +51,7 @@ goreleaser error: dones not contain a main function
 
 ## 多個相關的執行檔案需要編譯 / 客製化編譯選項
 
-因為原先在 `.github/workflows`資料夾中，有相關的
+因為原先在 `.github/workflows`資料夾中，有相關的指令限制，參考 [github action Workflow syntax](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#About-yaml-syntax-for-workflows)。
 
 如果有想要更多客製化編譯選項如下：
 
@@ -86,4 +86,5 @@ goreleaser error: dones not contain a main function
 - [🚀 GitHub Action for release your Go projects as fast and easily as possible](https://dev.to/koddr/github-action-for-release-your-go-projects-as-fast-and-easily-as-possible-20a2)
 - [Golang Github Actions Starter](https://github.com/actions/starter-workflows/blob/c59b62dee0eae1f9f368b7011cf05c2fc42cf084/ci/go.yml)
 - [GoReleaser Builds Configuration](https://goreleaser.com/customization/build/)
+- [github action Workflow syntax](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#About-yaml-syntax-for-workflows)
 
