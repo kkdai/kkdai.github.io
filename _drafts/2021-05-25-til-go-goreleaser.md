@@ -51,6 +51,32 @@ goreleaser error: dones not contain a main function
 
 ## 多個相關的執行檔案需要編譯 / 客製化編譯選項
 
+因為原先在 `.github/workflows`資料夾中，有相關的
+
+如果有想要更多客製化編譯選項如下：
+
+- 多個資料夾在 `/cmd/` 底下。
+- 讓 GoReleaser 的編譯選項多一些，預設會全部 Compile 。可以挑選只要 Mac + UNIX ，或是加上 x64 選項。
+- 加上一些 enviironment variable (e.g. `CGO_ENABLED=0`)
+- 打 LDFLAGS 給 go build (e.g. `-s -w -X main.build={{.Version}}`)
+- 透過 hooks 來跑某一個 compile shell script (e.g. `post: ./script.sh {{ .Path }}`)
+
+如果有以上相關的客製化選項，可能就需要將 GoReleaser config 獨立出來成一個檔案，相關做法如下：
+
+<script src="https://gist.github.com/kkdai/bbc626648c51f37e297237a1ae7867f6.js"></script>
+
+主要修改就是透過 `args: release -f .goreleaser.yml --rm-dist` 來將設定透過 `.goreleaser.yml` 來跑。該檔案內容可以參考文件上面的檔案。
+
+
+
+<script src="https://gist.github.com/kkdai/d82791da7e1a4ea853231ad839b4154b.js"></script>
+
+也可以參考 PR <https://github.com/kkdai/disqus-to-github-issues-go/pull/4>
+
+
+
+## 結論
+
 
 
 
