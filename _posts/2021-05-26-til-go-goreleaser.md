@@ -65,7 +65,9 @@ goreleaser error: dones not contain a main function
 
 <script src="https://gist.github.com/kkdai/bbc626648c51f37e297237a1ae7867f6.js"></script>
 
-主要修改就是透過 `args: release -f .goreleaser.yml --rm-dist` 來將設定透過 `.goreleaser.yml` 來跑。該檔案內容可以參考文件上面的檔案。
+主要修改就是透過 `args: release -f .goreleaser.yml --rm-dist` 來將設定透過 `.goreleaser.yml` 來跑。 這樣就等於 `goreleaser release -f .goreleaser.yml --rm-dist`的意思。
+
+該檔案內容可以參考文件上面的檔案。
 
 
 
@@ -73,11 +75,9 @@ goreleaser error: dones not contain a main function
 
 也可以參考 PR <https://github.com/kkdai/disqus-to-github-issues-go/pull/4>
 
+## 結論與未來
 
-
-## 結論
-
-
+透過引用到 external config file 的方式，來讓 Github Action 的 GoReleaser 可以有更多的客製化選項，其實不僅僅可以只打包，還有更多的方式可以使用 [上傳檔案到其他的 Artifactory](https://goreleaser.com/customization/artifactory/) 或是 [Docker build](https://goreleaser.com/customization/docker/) 。 這樣也可以讓打包產品上，變得更加的簡單方便。
 
 
 ## 相關文章：
