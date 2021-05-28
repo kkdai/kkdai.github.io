@@ -82,7 +82,7 @@ goreleaser error: dones not contain a main function
 
 ## 相關文章：
 
-- GoReleaser Quick Star https://goreleaser.com/quick-start/
+- GoReleaser Quick Star <https://goreleaser.com/quick-start/>
 - [🚀 GitHub Action for release your Go projects as fast and easily as possible](https://dev.to/koddr/github-action-for-release-your-go-projects-as-fast-and-easily-as-possible-20a2)
 - [Golang Github Actions Starter](https://github.com/actions/starter-workflows/blob/c59b62dee0eae1f9f368b7011cf05c2fc42cf084/ci/go.yml)
 - [GoReleaser Builds Configuration](https://goreleaser.com/customization/build/)
