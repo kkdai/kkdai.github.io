@@ -49,7 +49,7 @@ LINE Login 除了提供一個方式來登入之外，也可以提供使用者名
 
 # 範例程式碼
 
-https://github.com/kkdai/line-login-go
+<https://github.com/kkdai/line-login-go>
 
 
 
@@ -67,7 +67,7 @@ https://github.com/kkdai/line-login-go
   - Channel Secret
   - Channel Token
 
-- 到 https://github.com/kkdai/line-login-go 按下  Heroku Deploy ，建立該帳號並且部署該服務。這時候會要輸入三個資訊:
+- 到 <https://github.com/kkdai/line-login-go> 按下  Heroku Deploy ，建立該帳號並且部署該服務。這時候會要輸入三個資訊:
 
   - LINECORP_PLATFORM_CHANNEL_CHANNELID
     - 填入 LINE login channel ID
@@ -89,7 +89,7 @@ https://github.com/kkdai/line-login-go
 
 ![](../images/2019/linelogin-1.PNG)
 
-- 當部屬好網站服務後，直接用瀏覽器登入網站即可。如果沒有部署的人，可以使用 https://login-tester-evan.herokuapp.com/
+- 當部屬好網站服務後，直接用瀏覽器登入網站即可。如果沒有部署的人，可以使用 <https://login-tester-evan.herokuapp.com/>
 - 連線到網站後會看到有三個 LOGIN botton 選項
   - LINE Web Login
   - LINE Web Login with chatbot (normal)
