@@ -67,11 +67,11 @@ LINE Login 除了提供一個方式來登入之外，也可以提供使用者名
 
 ###  範例程式碼
 
-https://github.com/kkdai/line-login-go
+<https://github.com/kkdai/line-login-go>
 
 ### 測試網站
 
-https://login-tester-evan.herokuapp.com/
+<https://login-tester-evan.herokuapp.com/>
 
 # 如何部署範例程式碼:
 
@@ -82,7 +82,7 @@ https://login-tester-evan.herokuapp.com/
 - 另外建立一個 [LINE@](https://at.line.me/tw/) 並且打開 MessageAPI 的功能（也就是建置 chatbot 用），並且將以下兩個資訊記住:
   - Channel Secret
   - Channel Token
-- 到 https://github.com/kkdai/line-login-go 按下 Heroku Deploy ，建立該帳號並且部署該服務。這時候會要輸入三個資訊:
+- 到 <https://github.com/kkdai/line-login-go> 按下 Heroku Deploy ，建立該帳號並且部署該服務。這時候會要輸入三個資訊:
   - LINECORP_PLATFORM_CHANNEL_CHANNELID
     - 填入 LINE login channel ID
   - LINECORP_PLATFORM_CHANNEL_CHANNELSECRET
