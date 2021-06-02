@@ -33,9 +33,16 @@ tags: ["LINEBot", "Chatbot", "DevRel"]
 
 <script async class="speakerdeck-embed" data-slide="10" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
+#### A 考量安全性的通訊環境
 
+這部分提醒大家需要提升 Webhook 伺服器的安全環境，這邊也提醒大家根據 2021/01 的新聞 ([[Updated\] TLS 1.0 and TLS 1.1 support by the webhook notification source will be discontinued at the end of January 2021](https://developers.line.biz/en/news/2020/10/06/update-webhook-client-and-root-certificate/))，如果要能正常地接受到 LINE 平台的 Webhook 必須要讓伺服器支援到 TLS 1.3 。
 
+- 平台開始支援 TLS 1.3  [LINE's APIs now support TLS 1.3](https://developers.line.biz/en/news/2020/07/01/enabled-tls1.3/) 
+- 將不在支援 TLS 1.1 與 1.2 [[Updated\] TLS 1.0 and TLS 1.1 support by the webhook notification source will be discontinued at the end of January 2021](https://developers.line.biz/en/news/2020/10/06/update-webhook-client-and-root-certificate/)
 
+#### B 接受到請求的時候，回覆狀態代碼 200
+
+在 「[開發LINE聊天機器人不可不知的十件事](https://engineering.linecorp.com/zh-hant/blog/line-device-10/)」的文章中，
 
 
 ## 結論：
