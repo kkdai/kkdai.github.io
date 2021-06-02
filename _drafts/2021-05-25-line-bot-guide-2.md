@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "[學習心得] LINE Bot 開發者指南 詳解 - 1. 關於 LINE Bot"
+title: "[學習心得] LINE Bot 開發者指南 詳解 - 2. 使用 Webhook URL 接收請求時的注意事項"
 description: ""
 category: 
 - 學習文件
 tags: ["LINEBot", "Chatbot", "DevRel"]
 ---
 
-<img src="../images/2021/linebot001.jpg">
+<img src="../images/2021/linebot002.jpg">
 
 ## 前言:
 
