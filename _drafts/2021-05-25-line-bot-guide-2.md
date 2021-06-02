@@ -42,7 +42,19 @@ tags: ["LINEBot", "Chatbot", "DevRel"]
 
 #### B 接受到請求的時候，回覆狀態代碼 200
 
-在 「[開發LINE聊天機器人不可不知的十件事](https://engineering.linecorp.com/zh-hant/blog/line-device-10/)」的文章中，
+在 「[開發LINE聊天機器人不可不知的十件事](https://engineering.linecorp.com/zh-hant/blog/line-device-10/)」的文章中，也有提到
+
+```
+LINE平台在傳送事件訊息到開發者Webhook伺服器之後，若是等待1秒鐘沒有得到任何HTTP狀態碼的回覆，就會發生逾時（Timeout）錯誤，LINE平台會關閉該次HTTP連線並認為該次傳送結果失敗；若是一直發生傳送失敗的狀況，LINE平台可能會將該Webhook伺服器封鎖或進行其他處置，造成開發者的應用服務無法正常運作。
+```
+
+請開發者們要注意到相關的事項。
+
+#### C 防止來自於 LINE 以外未經授權的請求
+
+在 「[開發LINE聊天機器人不可不知的十件事](https://engineering.linecorp.com/zh-hant/blog/line-device-10/)」的文章中也有提到，當開發者的[Webhook](https://devdocs.line.me/en/#webhooks)伺服器收到以POST方式所傳送的LINE事件訊息時，必須要立即驗證該事件訊息是否真的來自LINE平台，以避免被偽造的訊息所欺騙造成資訊安全危機。標準的驗證方式是檢查所收到[HTTP請求標頭](http://terms.naer.edu.tw/detail/2377105/)（HTTP request header）中的數位簽章。如果該HTTP POST訊息是來自LINE平台，在HTTP請求標頭中一定會包括X-Line-Signature項目，該項目的內容值是即為數位簽章。
+
+
 
 
 ## 結論：
