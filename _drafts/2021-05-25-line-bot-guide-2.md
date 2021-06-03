@@ -35,9 +35,16 @@ tags: ["LINEBot", "Chatbot", "DevRel"]
 
 本篇注意事項中，其實在「[開發LINE聊天機器人不可不知的十件事](https://engineering.linecorp.com/zh-hant/blog/line-device-10/)」。有許多著墨，這裡稍微帶到與解釋。以下個別根據不同頁面來解釋。
 
-<script async class="speakerdeck-embed" data-slide="11" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+- A 考量安全性的通訊環境
+- B 接受到請求的時候，回覆狀態代碼 200
+- C 防止來自於 LINE 以外未經授權的請求
+- D 對於大規模訊息處理的考量
+-  
 
 ### A 考量安全性的通訊環境
+
+<script async class="speakerdeck-embed" data-slide="11" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
 
 這部分提醒大家需要提升 Webhook 伺服器的安全環境，這邊也提醒大家根據 2021/01 的新聞 ([[Updated\] TLS 1.0 and TLS 1.1 support by the webhook notification source will be discontinued at the end of January 2021](https://developers.line.biz/en/news/2020/10/06/update-webhook-client-and-root-certificate/))，如果要能正常地接受到 LINE 平台的 Webhook 必須要讓伺服器支援到 TLS 1.3 。
 
@@ -57,9 +64,11 @@ tags: ["LINEBot", "Chatbot", "DevRel"]
 
 
 
-<script async class="speakerdeck-embed" data-slide="12" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 ### B 接受到請求的時候，回覆狀態代碼 200
+
+<script async class="speakerdeck-embed" data-slide="12" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
 
 在 「[開發LINE聊天機器人不可不知的十件事](https://engineering.linecorp.com/zh-hant/blog/line-device-10/)」的文章的(第三件事：盡快回覆LINE平台正確的HTTP狀態碼). 中，也有提到 LINE平台在傳送事件訊息到開發者Webhook伺服器之後，若是等待1秒鐘沒有得到任何HTTP狀態碼的回覆，就會發生逾時（Timeout）錯誤，LINE平台會關閉該次HTTP連線並認為該次傳送結果失敗；若是一直發生傳送失敗的狀況，LINE平台可能會將該Webhook伺服器封鎖或進行其他處置，造成開發者的應用服務無法正常運作。 請開發者們要注意到相關的事項。
 
@@ -67,9 +76,11 @@ tags: ["LINEBot", "Chatbot", "DevRel"]
 
 -  [開發LINE聊天機器人不可不知的十件事](https://engineering.linecorp.com/zh-hant/blog/line-device-10/)
 
-<script async class="speakerdeck-embed" data-slide="13" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 ### C 防止來自於 LINE 以外未經授權的請求
+
+<script async class="speakerdeck-embed" data-slide="13" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
 
 在 「[開發LINE聊天機器人不可不知的十件事](https://engineering.linecorp.com/zh-hant/blog/line-device-10/)」的文章中(第二件事：驗證訊息來源)也有提到，當開發者的[Webhook](https://devdocs.line.me/en/#webhooks)伺服器收到以POST方式所傳送的LINE事件訊息時，必須要立即驗證該事件訊息是否真的來自LINE平台，以避免被偽造的訊息所欺騙造成資訊安全危機。標準的驗證方式是檢查所收到[HTTP請求標頭](http://terms.naer.edu.tw/detail/2377105/)（HTTP request header）中的數位簽章。如果該HTTP POST訊息是來自LINE平台，在HTTP請求標頭中一定會包括X-Line-Signature項目，該項目的內容值是即為數位簽章。
 
@@ -77,11 +88,11 @@ tags: ["LINEBot", "Chatbot", "DevRel"]
 
 -  [開發LINE聊天機器人不可不知的十件事](https://engineering.linecorp.com/zh-hant/blog/line-device-10/)
 
-<script async class="speakerdeck-embed" data-slide="17" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 ### D 對於大規模訊息處理的考量
 
 <script async class="speakerdeck-embed" data-slide="14" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
 
 這邊有分享一些給開發者的經驗分享，根據業務的發展狀況下，以下幾個時間將會有大量的訊息灌入開發者們的 LINE Bot ，希望開發者們可能要注意到。 （訊息集中的部分）
 
@@ -93,7 +104,13 @@ tags: ["LINEBot", "Chatbot", "DevRel"]
 
 - 請勿對 GW 伺服器進行壓力測試，如果開發流程需要做壓力測試請透過其他方式來進行。 參考 [Development guidelines](https://developers.line.biz/en/docs/messaging-api/development-guidelines/#prohibiting-mass-requests-to-line-platform)。
 
+### E-1 Webhook 的 ON/OFF 社定
+
+<script async class="speakerdeck-embed" data-slide="15" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+
 ### F 其他注意事項（一個請求包含多格訊息格式）
+
 
 在 「[開發LINE聊天機器人不可不知的十件事](https://engineering.linecorp.com/zh-hant/blog/line-device-10/)」的文章中(第四件事：LINE平台所傳送的事件是一個陣列) 有更多清楚解釋，歡迎大家去了解一下。 因為 Messaging API 
 帳號沒有大量的事件訊息傳入，每次所收到事件幾乎都只有一筆資料，所以開發者會誤以為每個事件訊息只需要處理一筆資料。事實上，LINE平台傳送給Webhook伺服器的HTTP請求本體是包括一個或多個[Webhook事件物件](https://devdocs.line.me/en/#webhook-event-object)的JSON格式物件
