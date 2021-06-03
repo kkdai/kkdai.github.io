@@ -104,9 +104,7 @@ tags: ["LINEBot", "Chatbot", "DevRel"]
 
 - 請勿對 GW 伺服器進行壓力測試，如果開發流程需要做壓力測試請透過其他方式來進行。 參考 [Development guidelines](https://developers.line.biz/en/docs/messaging-api/development-guidelines/#prohibiting-mass-requests-to-line-platform)。
 
-### E-1 Webhook 的 ON/OFF 社定
-
-<script async class="speakerdeck-embed" data-slide="15" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+### E-1 Webhook 的 ON/OFF <script async class="speakerdeck-embed" data-slide="15" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 
 ### F 其他注意事項（一個請求包含多格訊息格式）
