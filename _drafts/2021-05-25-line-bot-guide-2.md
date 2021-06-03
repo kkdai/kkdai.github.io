@@ -104,8 +104,11 @@ tags: ["LINEBot", "Chatbot", "DevRel"]
 
 - 請勿對 GW 伺服器進行壓力測試，如果開發流程需要做壓力測試請透過其他方式來進行。 參考 [Development guidelines](https://developers.line.biz/en/docs/messaging-api/development-guidelines/#prohibiting-mass-requests-to-line-platform)。
 
-### E-1 Webhook 的 ON/OFF <script async class="speakerdeck-embed" data-slide="15" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+### E-1 Webhook 的 ON/OFF
 
+<script async class="speakerdeck-embed" data-slide="15" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+這邊提到的是切換 Webhook 開關跟「自動回覆訊息」還有「加入好友的歡迎訊息」的解釋。 這邊主要提醒開發者們，如果忘記將「自動回覆訊息」關閉的話，即便你開起來 Webhook 的開關，可能還是無法正常地收到訊息。
 
 ### F 其他注意事項（一個請求包含多格訊息格式）
 
