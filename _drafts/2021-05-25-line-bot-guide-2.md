@@ -145,12 +145,21 @@ tags: ["LINEBot", "Chatbot", "DevRel"]
 
 #### F-1.  一個請求包含多格訊息格式
 
-在 「[開發LINE聊天機器人不可不知的十件事](https://engineering.linecorp.com/zh-hant/blog/line-device-10/)」的文章中(第四件事：LINE平台所傳送的事件是一個陣列) 有更多清楚解釋，歡迎大家去了解一下。 因為 Messaging API 
-帳號沒有大量的事件訊息傳入，每次所收到事件幾乎都只有一筆資料，所以開發者會誤以為每個事件訊息只需要處理一筆資料。事實上，LINE平台傳送給Webhook伺服器的HTTP請求本體是包括一個或多個[Webhook事件物件](https://devdocs.line.me/en/#webhook-event-object)的JSON格式物件
+在 「[開發LINE聊天機器人不可不知的十件事](https://engineering.linecorp.com/zh-hant/blog/line-device-10/)」的文章中(第四件事：LINE平台所傳送的事件是一個陣列) 有更多清楚解釋，歡迎大家去了解一下。 因為 Messaging API 帳號沒有大量的事件訊息傳入，每次所收到事件幾乎都只有一筆資料，所以開發者會誤以為每個事件訊息只需要處理一筆資料。事實上，LINE平台傳送給Webhook伺服器的HTTP請求本體是包括一個或多個[Webhook事件物件](https://devdocs.line.me/en/#webhook-event-object)的JSON格式物件
 
 
 
 #### F-2. Webhook 新增屬性的對應方式
+
+這邊有建議開發者們，對於屬性的判斷上儘量要當成獨立個體之外，對於可能的新增屬性建議也要有比較好的處理方式。 建議方式可以透過 switch case 的方式來判斷，僅僅對於有處理的事件(event) 來處理，其他都略過。
+
+相關文件：
+
+- [LINE Dev Doc: Receiving messages (webhooks)](https://developers.line.biz/en/docs/messaging-api/receiving-messages/)
+
+#### F-3. 關於請求標題中的驗證
+
+在 「[開發LINE聊天機器人不可不知的十件事](https://engineering.linecorp.com/zh-hant/blog/line-device-10/)」的文章中(第四件事：LINE平台所傳送的事件是一個陣列) 有更多清楚解釋
 
 
 
