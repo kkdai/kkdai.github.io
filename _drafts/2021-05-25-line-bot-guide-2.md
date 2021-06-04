@@ -184,6 +184,17 @@ tags: ["LINEBot", "Chatbot", "DevRel"]
 
 ### H-1. 關於 Error Notification 
 
+這部分可以參考以下的流程圖：
+
+![](https://developers.line.biz/assets/img/normal-error-notification-en.2c2a24c1.png)
+
+這邊是敘述說如果 LINE 平台有問題發生的時候（或是無法正確收到開發者的回覆時），將會另行發信給開發者的信箱中。相關的信件內中如文件上。
+
+參考以下文章：
+
+- [LINE Dev Doc: Error notification](https://developers.line.biz/en/docs/partner-docs/error-notification/#page-title)
+- [LINE Dev Doc: Notification email](https://developers.line.biz/en/docs/partner-docs/error-notification/#mail)
+
 
 
 ## 結論：
