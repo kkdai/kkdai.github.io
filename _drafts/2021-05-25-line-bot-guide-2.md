@@ -108,13 +108,51 @@ tags: ["LINEBot", "Chatbot", "DevRel"]
 
 <script async class="speakerdeck-embed" data-slide="15" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-這邊提到的是切換 Webhook 開關跟「自動回覆訊息」還有「加入好友的歡迎訊息」的解釋。 這邊主要提醒開發者們，如果忘記將「自動回覆訊息」關閉的話，即便你開起來 Webhook 的開關，可能還是無法正常地收到訊息。
+這邊提到的是切換 Webhook 開關跟「自動回覆訊息」還有「加入好友的歡迎訊息」的解釋。 這邊主要提醒開發者們，如果忘記將「自動回覆訊息」關閉的話，即便你開起來 Webhook 的開關，雖然可以收到，還是會透過「自動回覆訊息」來回覆。 相關的細節在下一頁會有更多解釋：
 
-### F 其他注意事項（一個請求包含多格訊息格式）
+相關資料：
 
+- [LINE 官方帳號自動回覆訊息說明](https://tw.linebiz.com/manual/line-official-account/oa-manager-autoreply)
+- [4 招學會吸引好友想點一下的歡迎訊息– LINE商家報– LINE企業](https://www.linebiz-blog.com.tw/4招學會吸引好友想點一下的歡迎訊息/)
+
+
+
+### E-2 Webhook 的 ON/OFF 選項設定（跟「自動回覆訊息」還有「自動歡迎訊息」的互動）
+
+<script async class="speakerdeck-embed" data-slide="16" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+-  **使用**「Webhook]，**使用**自動回覆與加入好友歡迎訊息：
+
+   - 訊息來了，同時會送到 Webhook 與自動回覆。
+   - 但是因為自動回覆會先回覆，Webhook  不需要再回覆即可。
+
+- **使用**「Webhook]，**不使用**自動回覆與加入好友歡迎訊息：
+
+   - 建議開發者使用這個方式，完全透過 Webhook 來收取訊息與發送訊息。
+
+- **不使用**「Webhook]，**使用**自動回覆與加入好友歡迎訊息：
+
+   - 這樣 Webhook 將不會收到訊息，完全透過自動回覆來回覆。
+
+- **不使用**「Webhook]，**不使用**自動回覆與加入好友歡迎訊息：
+
+   - 如同投影片介紹，目前不開放也不建議開發者這樣設定。
+
+   
+### F 其他注意事項
+
+<script async class="speakerdeck-embed" data-slide="17" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+#### F-1.  一個請求包含多格訊息格式
 
 在 「[開發LINE聊天機器人不可不知的十件事](https://engineering.linecorp.com/zh-hant/blog/line-device-10/)」的文章中(第四件事：LINE平台所傳送的事件是一個陣列) 有更多清楚解釋，歡迎大家去了解一下。 因為 Messaging API 
 帳號沒有大量的事件訊息傳入，每次所收到事件幾乎都只有一筆資料，所以開發者會誤以為每個事件訊息只需要處理一筆資料。事實上，LINE平台傳送給Webhook伺服器的HTTP請求本體是包括一個或多個[Webhook事件物件](https://devdocs.line.me/en/#webhook-event-object)的JSON格式物件
+
+
+
+#### F-2. Webhook 新增屬性的對應方式
+
+
 
 
 
