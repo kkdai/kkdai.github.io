@@ -159,10 +159,20 @@ tags: ["LINEBot", "Chatbot", "DevRel"]
 
 #### F-3. 關於請求標題中的驗證
 
-在 「[開發LINE聊天機器人不可不知的十件事](https://engineering.linecorp.com/zh-hant/blog/line-device-10/)」的文章中(第四件事：LINE平台所傳送的事件是一個陣列) 有更多清楚解釋
+在 「[開發LINE聊天機器人不可不知的十件事](https://engineering.linecorp.com/zh-hant/blog/line-device-10/)」的文章中(第二件事：驗證訊息來源) 有更多清楚解釋。文章中建議[驗證方式](https://devdocs.line.me/en/#signature-validation)如下：
+
+1. 以Channel secret作為密鑰（Secret key），使用HMAC-SHA256演算法取得HTTP請求本體（HTTP request body）的[文摘](http://terms.naer.edu.tw/detail/2359094/)值（Digest value）。
+2. 將上述文摘值以Base64編碼，比對編碼後的內容與X-Line-Signature項目內容值是否相同；若是相同，表示該事件訊息是來自LINE平台，否則拒絕處理該事件訊息。
+
+相關文件：
+
+-  「[開發LINE聊天機器人不可不知的十件事](https://engineering.linecorp.com/zh-hant/blog/line-device-10/)」
 
 
 
+## G 建議的請求處理步驟
+
+<script async class="speakerdeck-embed" data-slide="18" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 
 
