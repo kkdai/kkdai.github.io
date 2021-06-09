@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "[學習心得] LINE Bot 開發者指南 詳解 - 2. 使用 Webhook URL 接收請求時的注意事項"
+title: "[學習心得] LINE Bot 開發者指南 詳解 - 3. 發送 API 請求時的注意事項"
 description: ""
 category: 
 - 學習文件
 tags: ["LINEBot", "Chatbot", "DevRel"]
 ---
 
-<img src="../images/2021/linebot002.jpg">
+<img src="../images/2021/linebot003.jpg">
 
 ## 前言:
 
@@ -22,14 +22,14 @@ tags: ["LINEBot", "Chatbot", "DevRel"]
 希望各位可以持續關注：
 
 1. [關於LINE Bot ](https://www.evanlin.com/2021-05-25-line-bot-guide-1/)
-2. [使用Webhook URL接收請求時的注意事項(本篇文章)](https://www.evanlin.com/line-bot-guide-2/)
-3. 發送 API 請求時的注意事項
+2. [使用Webhook URL接收請求時的注意事項](https://www.evanlin.com/line-bot-guide-2/)
+3. [發送 API 請求時的注意事項(本篇文章)](http://www.evanlin.com/line-bot-guide-3/)
 4. LINE Login
 5.  其他相關功能
 
 本篇文章將專注在第一個段落，也就是 Page 3 ~ Page 8 的部分。
 
-##  Webhook URL 接受請求時的注意事項
+##  發送 API 請求時的注意事項
 
 <script async class="speakerdeck-embed" data-slide="10" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
