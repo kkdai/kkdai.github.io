@@ -51,9 +51,21 @@ tags: ["LINEBot", "Chatbot", "DevRel"]
 
 <script async class="speakerdeck-embed" data-slide="22" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
+Channel Access Token 是整個 Channel 最重要的憑證，透過該憑證可以有許多權限可以修改該 LINE Bot 的設定。所以在授權上要務必小心。 這邊也提供一些小訣竅：
 
+- 建議不要使用沒有時效性的 Channel Access Token ，建議使用 API 來要求。
+- 使用 API 來申請 Channel Access Token 建議使用 v2.1 的方式來發出需求。 
+
+如此一來除了可以確保整個頻道(channel) 憑證的安全性，必要時也可以將有暴露考量的 token 撤銷掉。
+
+#### 參考文章:
+
+- [LINE Dev Doc: Issue channel access tokens v2.1](https://developers.line.biz/en/docs/messaging-api/generate-json-web-token/)
 
 ## B. Channel Access Token 自動更新
+
+<script async class="speakerdeck-embed" data-slide="23" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
 
 ## C. Channel Access Token 有效上限數量
 
