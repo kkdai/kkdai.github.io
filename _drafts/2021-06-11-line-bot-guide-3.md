@@ -66,6 +66,8 @@ Channel Access Token 是整個 Channel 最重要的憑證，透過該憑證可�
 
 <script async class="speakerdeck-embed" data-slide="23" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
+接續前一頁，針對 Channel Access Token 的管理上，
+
 
 ## C. Channel Access Token 有效上限數量
 
