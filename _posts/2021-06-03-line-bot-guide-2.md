@@ -23,7 +23,7 @@ tags: ["LINEBot", "Chatbot", "DevRel"]
 
 1. [關於LINE Bot ](https://www.evanlin.com/2021-05-25-line-bot-guide-1/)
 2. [使用Webhook URL接收請求時的注意事項(本篇文章)](https://www.evanlin.com/line-bot-guide-2/)
-3. 發送 API 請求時的注意事項
+3. [發送 API 請求時的注意事項](https://www.evanlin.com/line-bot-guide-3/)
 4. LINE Login
 5.  其他相關功能
 
@@ -49,7 +49,7 @@ tags: ["LINEBot", "Chatbot", "DevRel"]
 這部分提醒大家需要提升 Webhook 伺服器的安全環境，這邊也提醒大家根據 2021/01 的新聞 ([[Updated\] TLS 1.0 and TLS 1.1 support by the webhook notification source will be discontinued at the end of January 2021](https://developers.line.biz/en/news/2020/10/06/update-webhook-client-and-root-certificate/))，如果要能正常地接受到 LINE 平台的 Webhook 必須要讓伺服器支援到 TLS 1.3 。
 
 - 平台開始支援 TLS 1.3  [LINE's APIs now support TLS 1.3](https://developers.line.biz/en/news/2020/07/01/enabled-tls1.3/) 
-- 將不在支援 TLS 1.1 與 1.2 [Updated: TLS 1.0 and TLS 1.1 support by the webhook notification source will be discontinued at the end of January 2021](https://developers.line.biz/en/news/2020/10/06/update-webhook-client-and-root-certificate/)
+- 將不在支援 TLS 1.0 與 1.1(參考 [Updated: TLS 1.0 and TLS 1.1 support by the webhook notification source will be discontinued at the end of January 2021](https://developers.line.biz/en/news/2020/10/06/update-webhook-client-and-root-certificate/) )
 - 第一件事：正確設定HTTPS from 在 「[開發LINE聊天機器人不可不知的十件事](https://engineering.linecorp.com/zh-hant/blog/line-device-10/)」 也有提到相關的支援，請開發者們務必要注意。 
   - 在設定HTTPS伺服器時，有下列幾點必須注意的事項：
     - HTTPS伺服器所使用的[根憑證](https://zh.wikipedia.org/zh-tw/根证书)（[Root CA](https://en.wikipedia.org/wiki/Root_certificate)）必須是在LINE平台的[白名單列表](https://developers.line.me/wp-content/uploads/2017/02/ca_root_v2.txt)中，否則LINE平台會拒絕傳送訊息。在白名單列表中大多數的憑證都需要付費申請，但是LINE平台也支援常用的免費憑證，例如[Let’s Encrypt](https://letsencrypt.org/)。
