@@ -92,13 +92,76 @@ Channel Access Token 是整個 Channel 最重要的憑證，透過該憑證可�
 
 <script async class="speakerdeck-embed" data-slide="25" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
+這一頁投影片是敘述，如果開發者使用  [Send push message](https://developers.line.biz/en/reference/messaging-api/#send-push-message) 或是  [Send reply message](https://developers.line.biz/en/reference/messaging-api/#send-reply-message) 的系統伺服器的回應狀況。通常成功的話，就不會回覆任何資訊（empty json ) ，如果有誤才會回覆詳細的錯誤資訊。
 
+#### 相關文件：
+
+-  [Send push message](https://developers.line.biz/en/reference/messaging-api/#send-push-message) 
+-  [Send reply message](https://developers.line.biz/en/reference/messaging-api/#send-reply-message) 
 
 ## E. API 請求重試
 
+<script async class="speakerdeck-embed" data-slide="26" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+有些時候發送大量的 API 呼叫的時候，因為有一些不可預期的狀況，造成 API 呼叫無法成功，或是無法收到回應的狀況。這時候為了能夠確認前一次的呼叫是否有成功，平台這邊有設計相關的重試 (Retry) 機制可以檢查。
+
+![](https://developers.line.biz/assets/img/retry-key-flowchart-en.df00acef.png)
+
+透過 “Safely retrying” 機制。 可以讓開發者測試一下上次的訊息是否有正確的發送成功，並且也可以確保有無任何的使用者被漏發了。 相關的使用情境如下：
+
+- 上次不知道有無法送完成，呼叫 “Safely retrying” 可以重複發送同一則訊息。 有收過得不會收到重複訊息，沒收到的可以確保收到。
+- 上次發送發生了平台無法完成指令的意外，透過 “Safely retrying” 可以跟平台確認上次的狀況。 如果上次有完整發送完畢，也不會有重複計費的疑慮。
+
+#### 相關文件
+
+- [Retrying a failed API request](https://developers.line.biz/en/docs/messaging-api/retrying-api-request/)
+
+
+
 ## F. 請求的相關限制
 
+<script async class="speakerdeck-embed" data-slide="27" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+開發者在使用 API 的時候應該要避免大量的呼叫 API 超過設定的 Rate Limit 而造成系統判斷為惡意的呼叫。 其中 [Rate Limits](https://developers.line.biz/en/reference/messaging-api/#rate-limits) 可以參考以下相關訊息：
+
+- 比較需要處理資源部分的 API 呼叫都是 一小時 60 次。
+  - [Send a narrowcast message](https://developers.line.biz/en/reference/messaging-api/#send-narrowcast-message)
+  - [Send a broadcast message](https://developers.line.biz/en/reference/messaging-api/#send-broadcast-message)
+  - [Get number of sent messages](https://developers.line.biz/en/reference/messaging-api/#get-number-of-delivery-messages)
+  - [Get number of friends](https://developers.line.biz/en/reference/messaging-api/#get-number-of-followers)
+  - [Get friend demographics](https://developers.line.biz/en/reference/messaging-api/#get-demographic)
+  - [Get user interaction statistics](https://developers.line.biz/en/reference/messaging-api/#get-message-event)
+  - [Test webhook endpoint](https://developers.line.biz/en/reference/messaging-api/#test-webhook-endpoint)
+- 處理資源較少的 API 可以接受一分鐘 60 次的呼叫。
+  - [Create audience for uploading user IDs (by JSON)](https://developers.line.biz/en/reference/messaging-api/#create-upload-audience-group)
+  - [Create audience for uploading user IDs (by file)](https://developers.line.biz/en/reference/messaging-api/#create-upload-audience-group-by-file)
+  - [Add user IDs or Identifiers for Advertisers (IFAs) to an audience for uploading user IDs (by JSON)](https://developers.line.biz/en/reference/messaging-api/#update-upload-audience-group)
+  - [Add user IDs or Identifiers for Advertisers (IFAs) to an audience for uploading user IDs (by file)](https://developers.line.biz/en/reference/messaging-api/#update-upload-audience-group-by-file)
+  - [Create audience for click-based retargeting](https://developers.line.biz/en/reference/messaging-api/#create-click-audience-group)
+  - [Create audience for impression-based retargeting](https://developers.line.biz/en/reference/messaging-api/#create-imp-audience-group)
+  - [Rename an audience](https://developers.line.biz/en/reference/messaging-api/#set-description-audience-group)
+  - [Delete audience](https://developers.line.biz/en/reference/messaging-api/#delete-audience-group)
+  - [Get audience data](https://developers.line.biz/en/reference/messaging-api/#get-audience-group)
+  - [Get data for multiple audiences](https://developers.line.biz/en/reference/messaging-api/#get-audience-groups)
+  - [Get the authority level of the audience](https://developers.line.biz/en/reference/messaging-api/#get-authority-level)
+  - [Change the authority level of the audience](https://developers.line.biz/en/reference/messaging-api/#change-authority-level)
+- 有一些測試或是檢驗類型的則可以更高，到達一分鐘 1000 次。
+  - [Set webhook endpoint URL](https://developers.line.biz/en/reference/messaging-api/#set-webhook-endpoint-url)
+  - [Get webhook endpoint information](https://developers.line.biz/en/reference/messaging-api/#get-webhook-endpoint-information)
+
+如果超過了這些次數的限制，則會獲得 `420 Too Many Requests` 的回應。請開發者們一定要注意。
+
+#### 相關文章:
+
+- [Rate limits](https://developers.line.biz/en/reference/messaging-api/#rate-limits)
+
+- [Prohibiting mass requests to the LINE platform](https://developers.line.biz/en/docs/messaging-api/development-guidelines/#prohibiting-mass-requests-to-line-platform)
+
 ## G. 回應 ( reply ) 訊息與推播( push )訊息
+
+<script async class="speakerdeck-embed" data-slide="28" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+
 
 ## H. HTTPS 內容的使用
 
