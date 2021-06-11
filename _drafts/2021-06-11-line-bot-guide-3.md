@@ -161,9 +161,22 @@ Channel Access Token 是整個 Channel 最重要的憑證，透過該憑證可�
 
 <script async class="speakerdeck-embed" data-slide="28" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
+這邊則是詳細敘述關於 Reply Message 跟 Push Message 的差別：
 
+- Reply Token 有時效性。更多資訊可以參考  「[開發LINE聊天機器人不可不知的十件事](https://engineering.linecorp.com/zh-hant/blog/line-device-10/)」  裡面的相關註解。
+- LINE Messaging API的Webhook的下列事件物件會帶有Reply token：message、follow、join、postback與beacon。使用Reply token傳送訊息請注意以下二點：
+  - Reply token的有效期間非常短，在收到Webhook事件後必須盡快使用。有效期間會隨著系統狀況而調整，所以我們也不便對外提供精確的數字。可以確定的是這個數字會以秒為單位，開發者是無法以Reply token回覆需要經過數分鐘以上處理時間才能獲得結果的訊息。這個目的是希望開發者能夠在最短的時間內回覆用戶的訊息，提供更好的使用者體驗。
+  - Reply token僅可以使用一次，如果有需要在收到Webhook事件後分多次回覆，就必須使用[Push message](https://devdocs.line.me/en/#push-message)的方式來傳送訊息。
+
+#### 相關文件：
+
+-  [Send push message](https://developers.line.biz/en/reference/messaging-api/#send-push-message) 
+-  [Send reply message](https://developers.line.biz/en/reference/messaging-api/#send-reply-message) 
+-  [開發LINE聊天機器人不可不知的十件事](https://engineering.linecorp.com/zh-hant/blog/line-device-10/)
 
 ## H. HTTPS 內容的使用
+
+<script async class="speakerdeck-embed" data-slide="29" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 
 
