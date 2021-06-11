@@ -66,12 +66,33 @@ Channel Access Token 是整個 Channel 最重要的憑證，透過該憑證可�
 
 <script async class="speakerdeck-embed" data-slide="23" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-接續前一頁，針對 Channel Access Token 的管理上，
-
+接續前一頁，針對 Channel Access Token 的管理上。建議使用短期有效的 Channel Access Token ，並且在期限即將到期的時候， Issue 新的 Token。 請注意 Access Token 個數有上限（下一頁解釋），所以超過個數時需要將多的撤銷 (Revoke) 掉。
 
 ## C. Channel Access Token 有效上限數量
 
+<script async class="speakerdeck-embed" data-slide="24" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+這一篇有詳細敘述關於 Channel Access Token 的個數：
+
+- Short-lived channel access token (短期) : 
+  - **申請方式**： 透過 API ，參考[說明文件](https://developers.line.biz/en/docs/messaging-api/generate-json-web-token/#issue_a_channel_access_token_v2_1)。
+  - **個數**：  30 個
+  - **期限**:  30 天
+- Long-lived channel access token (長期):
+  - **申請方式**： LINE Developer Console 
+  - **個數**: 1 個
+  - **期限**： 直到重新申請為止。
+
+#### 相關文件：
+
+-  [Issue channel access token v2.1](https://developers.line.biz/en/reference/messaging-api/#issue-channel-access-token-v2-1)
+-  [Issue short-lived channel access token](https://developers.line.biz/en/reference/messaging-api/#issue-shortlived-channel-access-token)
+
 ## D. 訊息發送完成後接收回應
+
+<script async class="speakerdeck-embed" data-slide="25" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+
 
 ## E. API 請求重試
 
