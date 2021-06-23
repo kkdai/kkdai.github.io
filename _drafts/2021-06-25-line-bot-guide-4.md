@@ -70,8 +70,7 @@ LINE Login 除了提供一個方式來登入之外，也可以提供使用者名
 ## LINE Login authentication
 <script async class="speakerdeck-embed" data-slide="32" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-而在提到關於 LINE Login 的認證流程上
-
+而在提到關於 LINE Login 的認證流程詳細解釋，基於 OAuth2 與 OpenID 協議的 LINE Login 不僅僅可以打造一個安全沒有疑慮的登入服務外，還可以幫助網站的開發者快速打造相關的服務。
 
 #### 相關文章
 -[如何透過 Golang 開發 OAuth2 的 PKCE – 以 LINE Login 為例](https://engineering.linecorp.com/zh-hant/blog/pkce-line-login/)
