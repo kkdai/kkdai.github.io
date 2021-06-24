@@ -73,16 +73,43 @@ LINE Login 除了提供一個方式來登入之外，也可以提供使用者名
 而在提到關於 LINE Login 的認證流程詳細解釋，基於 OAuth2 與 OpenID 協議的 LINE Login 不僅僅可以打造一個安全沒有疑慮的登入服務外，還可以幫助網站的開發者快速打造相關的服務。
 
 #### 相關文章
--[如何透過 Golang 開發 OAuth2 的 PKCE – 以 LINE Login 為例](https://engineering.linecorp.com/zh-hant/blog/pkce-line-login/)
+- [如何透過 Golang 開發 OAuth2 的 PKCE – 以 LINE Login 為例](https://engineering.linecorp.com/zh-hant/blog/pkce-line-login/)
 
 ## (1) Callback URL 的設定 
 <script async class="speakerdeck-embed" data-slide="33" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
+關於 Callback URL 的設定上，這邊有一些相關資訊。
+
+- Callback URL 必須符合 HTTPS 。
+- 伺服器本身必須要符合 TLS 1.2 與 1.3 。
+- 如果需要支援一個以上的 Callback URL，請記得使用換行來分隔。
+
+#### 相關文章
+-  [LINE’s APIs now support TLS 1.3](https://developers.line.biz/en/news/2020/07/01/enabled-tls1.3/)
+-  [Updated: TLS 1.0 and TLS 1.1 support by the webhook notification source will be discontinued at the end of January 2021](https://developers.line.biz/en/news/2020/10/06/update-webhook-client-and-root-certificate/)
+-  [開發LINE聊天機器人不可不知的十件事](https://engineering.linecorp.com/zh-hant/blog/line-device-10/)
+
+
+
 ## (2) 驗證與授權
 <script async class="speakerdeck-embed" data-slide="34" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
+關於 LINE Login 的認證網址，有相當多的相關參數可以使用。大概講幾個比較容易被開發者使用到的參數。
+
+- `prompt`: 透過這個參數可以強制性跳出，使用者同意的簽署頁面。可以了解該 App 目前需要哪些權限。
+- `bot_prompt` : 可以將你的 LINE Login App 跟 LINE 官方帳號綁定。也就是使用者登入完成後，可以直接將官方帳號加成好友。
+
+更多的相關使用方式與範例可以參考： [Add a LINE Official Account as a friend when logged in (bot link)](https://developers.line.biz/en/docs/line-login/link-a-bot/).
+
+
+#### 相關文章
+
+- [Dev Doc: LINE Login: User authentication](https://developers.line.biz/en/docs/line-login/integrate-line-login/#making-an-authorization-request)
+- [如何透過 Golang 開發 OAuth2 的 PKCE – 以 LINE Login 為例](https://engineering.linecorp.com/zh-hant/blog/pkce-line-login/)
+- [Add a LINE Official Account as a friend when logged in (bot link)](https://developers.line.biz/en/docs/line-login/link-a-bot/).
 
 ## (3) 重新導向
+
 <script async class="speakerdeck-embed" data-slide="35" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 ## (4) 取得 access token API 
