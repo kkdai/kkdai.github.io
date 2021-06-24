@@ -108,13 +108,19 @@ LINE Login 除了提供一個方式來登入之外，也可以提供使用者名
 - [如何透過 Golang 開發 OAuth2 的 PKCE – 以 LINE Login 為例](https://engineering.linecorp.com/zh-hant/blog/pkce-line-login/)
 - [Add a LINE Official Account as a friend when logged in (bot link)](https://developers.line.biz/en/docs/line-login/link-a-bot/).
 
-## (3) 重新導向
+## (3) 重新導向後的資料處理：
 
 <script async class="speakerdeck-embed" data-slide="35" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 這篇投影片提到了，當使用者輸入完帳號跟密碼完成 LINE Login 註冊之後。 LINE 平台會將結果發送到 Callback URL 所登記的伺服器。這時候會收到相關的資訊需要做後續的處理。
 
 ![](https://developers.line.biz/assets/img/web-login-flow.2af66354.svg)
+這時候會有兩種方式可以取得，也就是接下來兩頁投影片的方式：
+
+- 取得 Access Token API
+- 取得 ID Token 
+
+此外，如果在手機端開發 LINE Login 
 
 #### 相關文章
 
@@ -123,6 +129,13 @@ LINE Login 除了提供一個方式來登入之外，也可以提供使用者名
 
 ## (4) 取得 access token API 
 <script async class="speakerdeck-embed" data-slide="36" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+這邊討論取得 Access Token API 
+
+#### 相關文章
+
+- [Dev Doc: LINE Login : Get Access Token](https://developers.line.biz/en/docs/line-login/integrate-line-login/#get-access-token)
+- [如何透過 Golang 開發 OAuth2 的 PKCE – 以 LINE Login 為例](https://engineering.linecorp.com/zh-hant/blog/pkce-line-login/)
 
 ## (5) 取得 ID Token
 <script async class="speakerdeck-embed" data-slide="37" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
