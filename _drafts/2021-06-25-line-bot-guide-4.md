@@ -120,22 +120,24 @@ LINE Login 除了提供一個方式來登入之外，也可以提供使用者名
 - 取得 Access Token API
 - 取得 ID Token 
 
-此外，如果在手機端開發 LINE Login 
+此外，如果在手機端開發 LINE Login 請記得要使用 PKCE 的呼叫認證方式。讓您的安全性更加全面。  細節可以參考 [如何透過 Golang 開發 OAuth2 的 PKCE – 以 LINE Login 為例](https://engineering.linecorp.com/zh-hant/blog/pkce-line-login/) 或是技術文件  [PKCE support for LINE Login](https://developers.line.biz/en/docs/line-login/integrate-pkce/)
 
 #### 相關文章
 
 - [Dev Doc: LINE Login: Receiving the authorization code](https://developers.line.biz/en/docs/line-login/integrate-line-login/#receiving-the-authorization-code)
 - [如何透過 Golang 開發 OAuth2 的 PKCE – 以 LINE Login 為例](https://engineering.linecorp.com/zh-hant/blog/pkce-line-login/)
+- [PKCE support for LINE Login](https://developers.line.biz/en/docs/line-login/integrate-pkce/)
 
 ## (4) 取得 access token API 
 <script async class="speakerdeck-embed" data-slide="36" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-這邊討論取得 Access Token API 
+這邊討論取得 Access Token API 呼叫需要注意的參數，相關文章介紹一樣可以參考 [如何透過 Golang 開發 OAuth2 的 PKCE – 以 LINE Login 為例](https://engineering.linecorp.com/zh-hant/blog/pkce-line-login/) ，也可以查看技術文件  [Getting an access token with a web app](https://developers.line.biz/en/docs/line-login/integrate-line-login/#get-access-token) 。
 
 #### 相關文章
 
 - [Dev Doc: LINE Login : Get Access Token](https://developers.line.biz/en/docs/line-login/integrate-line-login/#get-access-token)
 - [如何透過 Golang 開發 OAuth2 的 PKCE – 以 LINE Login 為例](https://engineering.linecorp.com/zh-hant/blog/pkce-line-login/)
+-   [Getting an access token with a web app](https://developers.line.biz/en/docs/line-login/integrate-line-login/#get-access-token)
 
 ## (5) 取得 ID Token
 <script async class="speakerdeck-embed" data-slide="37" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
