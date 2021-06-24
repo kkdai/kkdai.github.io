@@ -139,11 +139,25 @@ LINE Login 除了提供一個方式來登入之外，也可以提供使用者名
 - [如何透過 Golang 開發 OAuth2 的 PKCE – 以 LINE Login 為例](https://engineering.linecorp.com/zh-hant/blog/pkce-line-login/)
 -   [Getting an access token with a web app](https://developers.line.biz/en/docs/line-login/integrate-line-login/#get-access-token)
 
-## (5) 取得 ID Token
+## (5) 
 <script async class="speakerdeck-embed" data-slide="37" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+取得 ID Token 的前提是必須使用 `scope` 為 `openid` ，才能在收到 response 的時候收到。收到 `id_token` 後有兩個方式可以取得使用者資訊：
+
+- **使用 ID Token 的 Verify API**: 參考 [Use a LINE Login API endpoint](https://developers.line.biz/en/docs/line-login/verify-id-token/)。
+- **直接透過程式碼來解析** `id_token`： 參考 [Write code to validate ID tokens](https://developers.line.biz/en/docs/line-login/verify-id-token/#write-original-code) 。
+
+#### 相關文章
+
+- [Dev Doc: LINE Login : Get Access Token](https://developers.line.biz/en/docs/line-login/integrate-line-login/#get-access-token)
+- [如何透過 Golang 開發 OAuth2 的 PKCE – 以 LINE Login 為例](https://engineering.linecorp.com/zh-hant/blog/pkce-line-login/)
+-  [Write code to validate ID tokens](https://developers.line.biz/en/docs/line-login/verify-id-token/#write-original-code) 
+-  [Use a LINE Login API endpoint](https://developers.line.biz/en/docs/line-login/verify-id-token/)
 
 ## (6) 取得用戶資料
 <script async class="speakerdeck-embed" data-slide="38" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+這邊指的是透過
 
 ## LINE Login 處理流程
 <script async class="speakerdeck-embed" data-slide="39" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
