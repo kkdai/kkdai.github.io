@@ -112,6 +112,15 @@ LINE Login 除了提供一個方式來登入之外，也可以提供使用者名
 
 <script async class="speakerdeck-embed" data-slide="35" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
+這篇投影片提到了，當使用者輸入完帳號跟密碼完成 LINE Login 註冊之後。 LINE 平台會將結果發送到 Callback URL 所登記的伺服器。這時候會收到相關的資訊需要做後續的處理。
+
+![](https://developers.line.biz/assets/img/web-login-flow.2af66354.svg)
+
+#### 相關文章
+
+- [Dev Doc: LINE Login: Receiving the authorization code](https://developers.line.biz/en/docs/line-login/integrate-line-login/#receiving-the-authorization-code)
+- [如何透過 Golang 開發 OAuth2 的 PKCE – 以 LINE Login 為例](https://engineering.linecorp.com/zh-hant/blog/pkce-line-login/)
+
 ## (4) 取得 access token API 
 <script async class="speakerdeck-embed" data-slide="36" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
