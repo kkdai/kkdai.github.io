@@ -216,7 +216,11 @@ LINE Login 除了提供一個方式來登入之外，也可以提供使用者名
 ## 好友狀態檢查 API 
 <script async class="speakerdeck-embed" data-slide="46" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
+如果跑完 LINE Login 是否還有方式可以知道使用者有沒有把官方帳號加入為好友呢？ 就可以使用這個 `friendship_status_changed` 的參數來了解。
 
+### 參考資料：
+
+- [Use the `friendship_status_changed` query parameter](https://developers.line.biz/en/docs/line-login/link-a-bot/#use-friendship_status_changed)
 
 
 ## 結論：

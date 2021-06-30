@@ -24,8 +24,9 @@ tags: ["LINEBot", "Chatbot", "DevRel"]
 1. [關於LINE Bot ](https://www.evanlin.com/2021-05-25-line-bot-guide-1/)
 2. [使用Webhook URL接收請求時的注意事項](https://www.evanlin.com/line-bot-guide-2/)
 3. [發送 API 請求時的注意事項(本篇文章)](http://www.evanlin.com/line-bot-guide-3/)
-4. LINE Login
-5.  其他相關功能
+4. [LINE Login](http://www.evanlin.com/line-bot-guide-4/)
+5. LINE Login (補充）
+6. 其他相關功能
 
 本篇文章將專注在第一個段落，也就是 Page 20 ~ Page 30 的部分。
 
