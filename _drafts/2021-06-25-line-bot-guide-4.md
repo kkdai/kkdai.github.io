@@ -139,7 +139,7 @@ LINE Login 除了提供一個方式來登入之外，也可以提供使用者名
 - [如何透過 Golang 開發 OAuth2 的 PKCE – 以 LINE Login 為例](https://engineering.linecorp.com/zh-hant/blog/pkce-line-login/)
 -   [Getting an access token with a web app](https://developers.line.biz/en/docs/line-login/integrate-line-login/#get-access-token)
 
-## (5) 
+## (5) 取得 ID Token 
 <script async class="speakerdeck-embed" data-slide="37" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 取得 ID Token 的前提是必須使用 `scope` 為 `openid` ，才能在收到 response 的時候收到。收到 `id_token` 後有兩個方式可以取得使用者資訊：
@@ -157,12 +157,17 @@ LINE Login 除了提供一個方式來登入之外，也可以提供使用者名
 ## (6) 取得用戶資料
 <script async class="speakerdeck-embed" data-slide="38" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-這邊指的是透過
+這邊指的是透過 [Get User Profile](https://developers.line.biz/en/docs/line-login/managing-users/#get-profile) 的方式來取得使用者的資料，但是這邊需要事先取得 Access Token 也就是在 Request Access Token 完成後的資訊才可以。
+
+
 
 ## LINE Login 處理流程
 <script async class="speakerdeck-embed" data-slide="39" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
+
+
 ## 透過 LINE Login 建立帳號關聯性的機制
+
 <script async class="speakerdeck-embed" data-slide="40" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 <script async class="speakerdeck-embed" data-slide="41" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
