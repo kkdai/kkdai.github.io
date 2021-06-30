@@ -159,37 +159,59 @@ LINE Login 除了提供一個方式來登入之外，也可以提供使用者名
 
 這邊指的是透過 [Get User Profile](https://developers.line.biz/en/docs/line-login/managing-users/#get-profile) 的方式來取得使用者的資料，但是這邊需要事先取得 Access Token 也就是在 Request Access Token 完成後的資訊才可以。
 
+#### 相關文章
 
+- [Dev Doc: LINE Login : Get Access Token](https://developers.line.biz/en/docs/line-login/integrate-line-login/#get-access-token)
+- [如何透過 Golang 開發 OAuth2 的 PKCE – 以 LINE Login 為例](https://engineering.linecorp.com/zh-hant/blog/pkce-line-login/)
+- [Write code to validate ID tokens](https://developers.line.biz/en/docs/line-login/verify-id-token/#write-original-code) 
 
 ## LINE Login 處理流程
 <script async class="speakerdeck-embed" data-slide="39" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
+這邊也有另外一張圖型顯示一樣的事情，主要就是 "Request Access Token" 之後，有以下兩種狀況:
+
+- 使用 `scope` 為 `openid` ，才能在收到 response 的時候收到，收到 `id_token` ，可以直接取得使用者資訊。
+- 如果沒有 `id_token` 可以透過 access token 再去取得 Get User Profile 來取得相關資訊。
+
+#### 相關文章
+
+- [Dev Doc: LINE Login : Get Access Token](https://developers.line.biz/en/docs/line-login/integrate-line-login/#get-access-token)
+- [如何透過 Golang 開發 OAuth2 的 PKCE – 以 LINE Login 為例](https://engineering.linecorp.com/zh-hant/blog/pkce-line-login/)
+- [Write code to validate ID tokens](https://developers.line.biz/en/docs/line-login/verify-id-token/#write-original-code) 
 
 
-## 透過 LINE Login 建立帳號關聯性的機制
-
-<script async class="speakerdeck-embed" data-slide="40" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-
-<script async class="speakerdeck-embed" data-slide="41" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 ## 自動加好友功能 (1)
+
 <script async class="speakerdeck-embed" data-slide="42" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
+在建立 LINE Login Channel 的時候，當初的設定「將 Bot 加入好友選項」有啟動的話，可以將官方帳號一起加入成好友。 本篇投影提供更多相關的參考資料：
+
+#### 【必要的設定】
+
+•要啟用將Bot加成好友的選項時，必須執行「將Bot連結到LINE Login channel」的作業。
+
+#### 【啟用選項的要件】
+
+- 具有被授予LINE Login使用權限（「WEB」或「NATIVE_APP」）的channel。
+- 至少存在一個以上的Bot，Bot的Messaging API channel和LINE Login channel是隸屬同Provider。
+- 進行設定的用戶，具有在**LINE Official Account Manager關聯****的官方帳號Admin權限**。**
+- **進行設定的用戶，具有在**LINE Developers中的** **Login** **channel Admin權限**。
+
+#### 【注意事項】
+
+- 登入時選擇加成好友則和官方帳號關係將被更新。
+- 原則上在選擇官方帳號時，除了該channel的正式官方帳號以外，禁止與其餘官方帳號建立關聯性。
+- 由於更新會立即反映，因此為了避免誤設到其他帳號（測試帳號等），請在操作時特別小心。
+- 如果LINE Login channel是建立在Certified Provider之下，則預設值將會是已勾選加成好友（解除封鎖）的狀態。
 
 
-## 自動加好友功能 (2)
-<script async class="speakerdeck-embed" data-slide="43" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+#### 【關於 bot_prompt 參數的介紹】
 
+- `normal`: 透過設定方式，提供使用者自己選擇是否要加入官方帳號為好友。
+- `aggresive`: 比較積極的方式，透過多彈出一個視窗，可以讓使用者來加入好友。（如果前一個頁面沒有加入的話）。
 
-
-## 自動加好友功能 (3)
-<script async class="speakerdeck-embed" data-slide="44" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-
-
-
-## 自動加好友功能 (4)
-<script async class="speakerdeck-embed" data-slide="45" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-
+![](https://developers.line.biz/assets/img/bot-prompt.1dd4e585.png)
 
 ## 好友狀態檢查 API 
 <script async class="speakerdeck-embed" data-slide="46" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
