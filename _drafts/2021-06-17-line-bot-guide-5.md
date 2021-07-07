@@ -7,7 +7,7 @@ category:
 tags: ["LINEBot", "Chatbot", "DevRel"]
 ---
 
-<img src="../images/2021/linebot004.jpg">
+<img src="../images/2021/linebot005.jpg">
 
 ## 前言:
 
@@ -25,12 +25,12 @@ tags: ["LINEBot", "Chatbot", "DevRel"]
 2. [使用Webhook URL接收請求時的注意事項](https://www.evanlin.com/line-bot-guide-2/)
 3. [發送 API 請求時的注意事項](http://www.evanlin.com/line-bot-guide-3/)
 4. [LINE Login (本篇文章)](http://www.evanlin.com/line-bot-guide-4/)
-5. LINE Login (補充）
+5. [LINE Login (補充）(本篇文章)](http://www.evanlin.com/line-bot-guide-5/)
 5.  其他相關功能
 
 本篇文章將專注在第一個段落，也就是 Page 47 ~ Page 30 的部分。
 
-##  LINE Login
+##  LINE Login (補充)
 
 <script async class="speakerdeck-embed" data-slide="47" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
