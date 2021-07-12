@@ -49,6 +49,12 @@ tags: ["LINEBot", "Chatbot", "DevRel"]
 
 <script async class="speakerdeck-embed" data-slide="48" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
+這邊主要是提到 state 參數的使用方式， 詳細的步驟可以參考教學部落格 [如何透過 Golang 開發 OAuth2 的 PKCE – 以 LINE Login 為例](https://engineering.linecorp.com/zh-hant/blog/pkce-line-login/) 。這邊也有列出在官方文章中的使用
+
+![img](https://developers.line.biz/assets/img/web-login-flow.2af66354.svg)
+
+
+
 
 
 #### 參考文章:
