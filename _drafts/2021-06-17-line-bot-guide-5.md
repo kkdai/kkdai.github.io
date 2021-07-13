@@ -92,17 +92,31 @@ tags: ["LINEBot", "Chatbot", "DevRel"]
 
 <script async class="speakerdeck-embed" data-slide="50" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
+最後是指在外部瀏覽器（通常是指桌機的狀況）的瀏覽行為，這裡也稍微解釋一下：
 
+- 登入取得使用者同意( User Consent) 
+- 查看瀏覽器是否有過去登入的紀錄
+- 如果沒有登入過，會查看是否有 Universal Link (註解： 也就是可以直接開啟 App 的方式，通常在桌面系統是不會有的)。如果沒有，就會開啟網頁登入 LINE 。
+- 完成登入，繼續 Redirect 到當初 LINE Login 設定的網址。
+
+這邊主要差別就是，使用者如果是在桌面上來透過 LINE Login 這時候可能會進入帳號密碼的輸入畫面。但是許多使用者往往都忘記當初申請 LINE 的帳號跟密碼，這時候其實也是可以透過 QR Code 來登入。
+
+並且， LINE Login  也可以知道使用者是如何登入:
+
+- [Auto login](https://developers.line.biz/en/docs/line-login/integrate-line-login/#line-auto-login) 指的透過自動登入的設定，直接登入到該系統。
+- [Log in with email address](https://developers.line.biz/en/docs/line-login/integrate-line-login/#mail-or-qrcode-login) 這邊就是使用 Email 的帳號跟密碼來登入。
+- [Log in with QR code](https://developers.line.biz/en/docs/line-login/integrate-line-login/#mail-or-qrcode-login) 這邊是使用 QR Code 然後透過手機掃描來登入ˋ。
+- [Single Sign On (SSO) login](https://developers.line.biz/en/docs/line-login/integrate-line-login/#line-sso-login) 透過 SSO 來登入。
 
 #### 相關文件：
 
--  
+- [LINE Login: User authentication](https://developers.line.biz/en/docs/line-login/integrate-line-login/#authentication-process)
 
 ## 關於轉換目標端瀏覽器的設定方法
 
 <script async class="speakerdeck-embed" data-slide="51" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-
+在使用 LINE Login 的時候，有許多
 
 #### 相關文件
 
