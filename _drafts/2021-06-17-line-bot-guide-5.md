@@ -88,10 +88,6 @@ tags: ["LINEBot", "Chatbot", "DevRel"]
 - **外部瀏覽器登入 (Safari, Chrome):**
   - **詢問是否要開啟 LINE App** -> 自動開啟 LINE App ->  同意畫面（僅第一次） -> 開啟自動登入畫面 ->  開啟應用程式內瀏覽器（IAP: In-App-Browser) 的網站。
 
-#### 相關文件：
-
--  
-
 ## 外部瀏覽器的登入流程（示意圖）
 
 <script async class="speakerdeck-embed" data-slide="50" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
