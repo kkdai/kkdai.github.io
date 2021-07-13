@@ -11,7 +11,7 @@ tags: ["LINEBot", "Chatbot", "DevRel"]
 
 ## 前言:
 
-各位好， 我是 LINE Taiwan 資深開發技術推廣工程師 – Evan Lin。 今天這篇文章為各位詳細解釋 「 LINE Bot 開發指南」這一份投影片文件。這一份文件是來自於 [Development guidelines](https://developers.line.biz/en/docs/partner-docs/development-guidelines/) 的投影片，考量到在台灣還沒有正式的公布與中文化。這一次跟總部共同合作準備中文版本之外，並且特定用這一系列文章加以解釋，希望可以讓更多開發者有更多的了解。  [Development guidelines](https://developers.line.biz/en/docs/partner-docs/development-guidelines/)  文件內容很多，本份投影片也將以五篇文章的篇幅來加以解釋。本篇文章為第四篇文章，主要講解的會是關於 LINE Login 與開發時候需要注意的事項。
+各位好， 我是 LINE Taiwan 資深開發技術推廣工程師 – Evan Lin。 今天這篇文章為各位詳細解釋 「 LINE Bot 開發指南」這一份投影片文件。這一份文件是來自於 [Development guidelines](https://developers.line.biz/en/docs/partner-docs/development-guidelines/) 的投影片，考量到在台灣還沒有正式的公布與中文化。這一次跟總部共同合作準備中文版本之外，並且特定用這一系列文章加以解釋，希望可以讓更多開發者有更多的了解。  [Development guidelines](https://developers.line.biz/en/docs/partner-docs/development-guidelines/)  文件內容很多，本份投影片也將以五篇文章的篇幅來加以解釋。本篇文章為第五篇文章，主要講解的會是關於 LINE Login 與開發時候需要注意的事項。
 
 
 
@@ -116,11 +116,16 @@ tags: ["LINEBot", "Chatbot", "DevRel"]
 
 <script async class="speakerdeck-embed" data-slide="51" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-在使用 LINE Login 的時候，有許多
+在使用 LINE Login 的時候，就是依照上述三頁投影片的方式來載入。 也就是 iOS 與 Android 中 App 中的 In-App-Browser 以及透過外部瀏覽器的方式來登入。但是如果有需要指定開啟某一個登入方式（比如說：一定要透過外部瀏覽器），可以參考本篇的內容：
+
+- **外部瀏覽器 (External Browser):**
+  - 在 URL 的參數中加上 `openExternalBrowser=1` ，相關的文件可以參考 [Opening a URL in an external browser](https://developers.line.biz/en/docs/line-login/using-line-url-scheme/)
+- **在 Android 中指定使用 Chrome In-App-Browser 開啟 (Opens target URL in a Chrome custom tab ):**
+  - 在 URL 的參數中使用 `openInAppBrowser=0` ，相關文件可以參考 [Opening a URL in an external browser](https://developers.line.biz/en/docs/line-login/using-line-url-scheme/)
 
 #### 相關文件
 
-- 
+-  [Opening a URL in an external browser](https://developers.line.biz/en/docs/line-login/using-line-url-scheme/)
 
 
 
@@ -128,7 +133,7 @@ tags: ["LINEBot", "Chatbot", "DevRel"]
 
 <a id="summary"></a>
 
-以上就是「LINE Bot 開發指南」第四部分的補充與分享，想要知道更多內容可以查看完整投影片，或是找到其他篇的文章來了解。 
+以上就是「LINE Bot 開發指南」第五部分的補充與分享，想要知道更多內容可以查看完整投影片，或是找到其他篇的文章來了解。 
 
 想了解更多開發者的活動？  立即加入「LINE 開發者官方社群」官方帳號，就能收到第一手 Meetup 活動，或與開發者計畫有關的最新消息的推播通知。▼
 
