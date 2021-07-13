@@ -49,11 +49,14 @@ tags: ["LINEBot", "Chatbot", "DevRel"]
 
 <script async class="speakerdeck-embed" data-slide="48" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-這邊主要是提到 state 參數的使用方式， 詳細的步驟可以參考教學部落格 [如何透過 Golang 開發 OAuth2 的 PKCE – 以 LINE Login 為例](https://engineering.linecorp.com/zh-hant/blog/pkce-line-login/) 。這邊也有列出在官方文章中的使用
+這邊主要是提到 state 參數的使用方式， 詳細的步驟可以參考教學部落格 [如何透過 Golang 開發 OAuth2 的 PKCE – 以 LINE Login 為例](https://engineering.linecorp.com/zh-hant/blog/pkce-line-login/) 。這邊也有列出在官方文章中的使用流程說明：
 
 ![img](https://developers.line.biz/assets/img/web-login-flow.2af66354.svg)
 
+有兩張圖來對照可以看得更清楚，由於 `state` 是網站（或是 App) 開發商所隨機產生出來的一串文字。可以做為檢查之用，避免 Open ID 的需求被中間人攻擊後發送奇怪的訊息。這邊也提供一些作為 `state` 的開發指南：
 
+- `state` 文字本身應該是沒有任何意義的，無法被其他人所猜透。
+- `state` 文字每一次的認證請求應該都需要不同，才能做到保護。
 
 
 
