@@ -62,19 +62,31 @@ tags: ["LINEBot", "Chatbot", "DevRel"]
 
 #### 參考文章:
 
-- 
+-  [如何透過 Golang 開發 OAuth2 的 PKCE – 以 LINE Login 為例](https://engineering.linecorp.com/zh-hant/blog/pkce-line-login/) 
+- [開發LINE聊天機器人不可不知的十件事](https://engineering.linecorp.com/zh-hant/blog/line-device-10/) 
+
+
 
 ## 依照不同流程 OS 進行 LINE Login 的用戶流程範例 (iOS)
 
 <script async class="speakerdeck-embed" data-slide="49" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
+以下兩個是根據不同的 OS 進行 LINE Login 的時候產生的使用者流程的範例，因為 iOS 跟 Android 兩者有些許的差異，特地使用兩張投影片來解釋。首先在這張 iOS 的投影片裡面有敘述在 LINE 裡面跟外部瀏覽器（Safari, Chrome) 使用 LINE Login 的流程：
 
+- **應用程式內瀏覽器 (LINE)** ：
+  - 開啟 LINE App -> 同意畫面（僅第一次） -> 開啟應用程式內瀏覽器（IAP: In-App-Browser) 的網站。
+- **外部瀏覽器登入 (Safari, Chrome):**
+  - 自動開啟 LINE App ->  同意畫面（僅第一次） -> 開啟自動登入畫面 ->  開啟應用程式內瀏覽器（IAP: In-App-Browser) 的網站。
 
 
 ## 依照不同流程 OS 進行 LINE Login 的用戶流程範例 (Android)
 
 <script async class="speakerdeck-embed" data-slide="49" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
+可以發現 Android 開啟上跟 iOS 差別就是使用外部瀏覽器開啟網址的時候，唯一的差異就是開啟 LINE App 會有相關的詢問。以下詳細敘述如下:
+
+- **外部瀏覽器登入 (Safari, Chrome):**
+  - **詢問是否要開啟 LINE App** -> 自動開啟 LINE App ->  同意畫面（僅第一次） -> 開啟自動登入畫面 ->  開啟應用程式內瀏覽器（IAP: In-App-Browser) 的網站。
 
 #### 相關文件：
 
