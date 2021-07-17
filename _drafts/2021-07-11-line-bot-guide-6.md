@@ -96,7 +96,7 @@ tags: ["LINEBot", "Chatbot", "DevRel"]
 
 <script async class="speakerdeck-embed" data-slide="55" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-LIFF (LINE Frontend Framework) 除了有許多強大的功能外，更是讓網頁開發者可以快速結合許多 LINE 的功能的開發套件。 蠻多相關文章跟可以使用的功能都建議大家參考一下：
+LIFF (LINE Frontend Framework) 除了有許多強大的功能外，更是讓網頁開發者可以快速結合許多 LINE 的功能的開發套件。尤其是 LIFF v2 可以在外部瀏覽器使用的功能跟 Share Target Picker 的相關功能，都有 蠻多相關文章跟可以使用的功能都建議大家參考一下：
 
 #### 參考文章:
 
@@ -111,6 +111,10 @@ LIFF (LINE Frontend Framework) 除了有許多強大的功能外，更是讓網�
 - [在 Vue3 中引入 LIFF 的 ShareTargetPicker 分享 FlexMessage 訊息給 LINE 好友](https://engineering.linecorp.com/zh-hant/blog/how-to-use-liff-in-vue3/)
 
 - [使用 liff.isApiAvailable() 來讓舊的版本 LINE App 可以跑新的 LIFF 功能](https://engineering.linecorp.com/zh-hant/blog/liff-isapiavailable/)
+
+- [Share Target Picker: LIFF（LINE Frontend Framework）中的新功能](https://engineering.linecorp.com/zh-hant/blog/share-target-picker-liff/)
+
+- [Share Target Picker 已經公開，透過 LIFF 來分享訊息將更加的便利](https://engineering.linecorp.com/zh-hant/blog/liff-share-target-picker/)
 
 
 
