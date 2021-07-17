@@ -96,7 +96,21 @@ tags: ["LINEBot", "Chatbot", "DevRel"]
 
 <script async class="speakerdeck-embed" data-slide="55" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
+LIFF (LINE Frontend Framework) 除了有許多強大的功能外，更是讓網頁開發者可以快速結合許多 LINE 的功能的開發套件。 蠻多相關文章跟可以使用的功能都建議大家參考一下：
 
+#### 參考文章:
+
+- [轉移你的 LIFF: 從 Replace 到 Concatenate 模式](https://engineering.linecorp.com/zh-hant/blog/liff-replace-to-concatenate/)
+
+- [梅竹黑客松賽前企業工作坊 – LIFF shareTargetPicker](https://engineering.linecorp.com/zh-hant/blog/meichu-liff-share-target-picker-workshop/)
+
+- [讓我們使用 Cypress 開始為 LIFF app 撰寫單元測試](https://engineering.linecorp.com/zh-hant/blog/cypress-liff-unit-test/)
+
+- [開啟 LINE LIFF v2 的無限潛力 — liff.shareTargetPicker](https://engineering.linecorp.com/zh-hant/blog/start-liff-v2-sharetargetpicker-power/)
+
+- [在 Vue3 中引入 LIFF 的 ShareTargetPicker 分享 FlexMessage 訊息給 LINE 好友](https://engineering.linecorp.com/zh-hant/blog/how-to-use-liff-in-vue3/)
+
+- [使用 liff.isApiAvailable() 來讓舊的版本 LINE App 可以跑新的 LIFF 功能](https://engineering.linecorp.com/zh-hant/blog/liff-isapiavailable/)
 
 
 
