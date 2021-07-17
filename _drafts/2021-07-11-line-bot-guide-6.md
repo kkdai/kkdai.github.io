@@ -54,13 +54,41 @@ tags: ["LINEBot", "Chatbot", "DevRel"]
 - 要怎麼讓使用者直接加 OA 好友？
 - 如何直接開啟跟 OA 的聊天視窗？
 - 如何讓使用者開啟分享地點的功能？
-- 
+- 如何開啟上傳照片的選項？
+- 如何快速到開啟設置畫面？可以讓使用者更好的調整一些選項？
+
+這些問題都是很常被開發者們詢問到，或許大家都覺得這些功能都牽扯到跟 LINE 相關的設定或是選項的時候。其實也是有提供官方的方式來讓開發者跟使用者互動的。 那麼就是 URL Scheme ，透過以下方式就可以：
+
+1. `https://line.me/R/oaMessage/{%40ACCOUNT_ID}/?{TEXT_MESSAGE}`
+
+   點擊連結開啟官方帳號的聊天畫面，指定的文字訊息將出現在輸入欄內。如果該官方帳號尚未被加入好友，則聊天視窗會顯示加好友畫面。 如果要填寫的訊息包含多字節時，請使用UTF-8進行URL編碼。
+
+   範例：[https://line.me/R/oaMessage/%40linejpen/?%e3%81%93%e3%82%93%e3%81%ab%e3%81%a1%e3%81%af](https://line.me/R/oaMessage/@linejpen/?こんにちは)
+
+2. `https://line.me/R/ti/p/{%40ACCOUNT_ID}`
+
+   點擊連結，以進入到任何官方帳號的加入好友畫面。如果從PC開啟頁面，將顯示QRCode。
+
+   範例：[https://line.me/R/ti/p/%40linenews](https://line.me/R/ti/p/@linenews)
+
+3. `https://line.me/R/msg/text/?{TEXT_MESSAGE}`
+
+   `https://line.me/R/share?text={TEXT_MESSAGE}`
+
+   開啟分享畫面，分享指定文字的訊息。如果要填寫的訊息包含多字節時，請使用UTF-8進行URL編碼。
+
+   範例：[https://line.me/R/msg/text/?%e3%81%93%e3%82%93%e3%81%ab%e3%81%a1%e3%81%af](https://line.me/R/msg/text/?こんにちは)
+
+4. `https://line.me/R/nv/location/`
+
+   在與用戶聊天畫面上，將開啟分享位置資訊的畫面。
+    此 LINE URLscheme 不支援 1-1 和 Bot 聊天以外的形式或 `LIFF Apps`。
 
 
 
 #### 參考文章:
 
--  
+-  [Using LINE features with the LINE URL scheme](https://developers.line.biz/en/docs/line-login/using-line-url-scheme)
 
 
 
