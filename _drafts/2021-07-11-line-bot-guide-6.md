@@ -49,7 +49,12 @@ tags: ["LINEBot", "Chatbot", "DevRel"]
 
 <script async class="speakerdeck-embed" data-slide="54" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
+經常收到許多開發者類似的詢問如下：
 
+- 要怎麼讓使用者直接加 OA 好友？
+- 如何直接開啟跟 OA 的聊天視窗？
+- 如何讓使用者開啟分享地點的功能？
+- 
 
 
 
