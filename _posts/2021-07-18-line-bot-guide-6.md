@@ -59,17 +59,17 @@ tags: ["LINEBot", "Chatbot", "DevRel"]
 
 這些問題都是很常被開發者們詢問到，或許大家都覺得這些功能都牽扯到跟 LINE 相關的設定或是選項的時候。其實也是有提供官方的方式來讓開發者跟使用者互動的。 那麼就是 URL Scheme ，透過以下方式就可以：
 
-1. `https://line.me/R/oaMessage/{%40ACCOUNT_ID}/?{TEXT_MESSAGE}`
+1. `https://line.me/R/oaMessage/{ACCOUNT_ID}/?{TEXT_MESSAGE}`
 
    點擊連結開啟官方帳號的聊天畫面，指定的文字訊息將出現在輸入欄內。如果該官方帳號尚未被加入好友，則聊天視窗會顯示加好友畫面。 如果要填寫的訊息包含多字節時，請使用UTF-8進行URL編碼。
 
-   範例：[https://line.me/R/oaMessage/%40linejpen/?%e3%81%93%e3%82%93%e3%81%ab%e3%81%a1%e3%81%af](https://line.me/R/oaMessage/@linejpen/?こんにちは)
+   範例：[https://line.me/R/oaMessage/linejpen/?%e3%81%93%e3%82%93%e3%81%ab%e3%81%a1%e3%81%af](https://line.me/R/oaMessage/@linejpen/?こんにちは)
 
-2. `https://line.me/R/ti/p/{%40ACCOUNT_ID}`
+2. `https://line.me/R/ti/p/{ACCOUNT_ID}`
 
    點擊連結，以進入到任何官方帳號的加入好友畫面。如果從PC開啟頁面，將顯示QRCode。
 
-   範例：[https://line.me/R/ti/p/%40linenews](https://line.me/R/ti/p/@linenews)
+   範例：[https://line.me/R/ti/p/linenews](https://line.me/R/ti/p/@linenews)
 
 3. `https://line.me/R/msg/text/?{TEXT_MESSAGE}`
 
