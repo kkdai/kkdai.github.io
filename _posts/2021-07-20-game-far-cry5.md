@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[遊戲] Far Cry5  極地戰嚎5 遊戲心得"
+title: "[遊戲心得][PS4] Far Cry5  極地戰嚎5 遊戲心得"
 description: ""
 category: 
 - 遊戲天國
