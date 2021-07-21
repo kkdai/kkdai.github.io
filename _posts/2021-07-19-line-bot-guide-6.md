@@ -123,15 +123,47 @@ LIFF (LINE Frontend Framework) 除了有許多強大的功能外，更是讓網�
 
 <script async class="speakerdeck-embed" data-slide="56" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
+對於每一個 Channel （不論是 LINE Login， Messaging API 或是 LIFF) 的權限控管都是相當重要的。
 
+**設定權限**
 
+可以對於該channel進行編輯／查看／測試的權限。
 
+- Admin：可以執行與該channel有關的所有操作。
+- Member：可以查看該channel的名稱和圖示等基本資訊，以及統計資訊。
+- Tester：可以查看該channel的名稱。另外，可以在非公開狀態的channel上進行測試。
+   ※具有管理員權限的用戶，將自動成為測試人員，並且可以在終端上進行測試。
+
+這裡有一些相關建議如下：
+
+- 請控管好權限，切勿隨意開給所有專案參與者 Admin 全縣。
+- 對於測試人員需求或是外部工作同仁，建議使用 Tester 。
+
+#### 參考文章:
+
+- [Managing Roles](https://developers.line.biz/en/docs/line-developers-console/managing-roles/)
 
 ## 貼圖的使用方法
 
 <script async class="speakerdeck-embed" data-slide="57" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
+官方帳號可以發送以下2種類型的貼圖。
 
+- 官方預設貼圖
+  - 請從此處確認ID對應表。**[點擊此處查看對應表](https://developers.line.me/media/messaging-api/sticker_list.pdf)**
+- 由企業提供，並且自己公司擁有授權的貼圖
+
+  發送此類貼圖時，本公司需要將其貼圖設定為白名單才可進行發送。
+
+  有關申請方法與相關遵守規範，請洽詢承辦業務人員。
+
+關於在聊天機器人中使用貼圖的相關 API ，可以參考以下文章：
+
+- [LINE 開發者社群計畫: Chatbot Developer Meetup 29 – 四月平台更新與貼圖抽獎範例分享](https://engineering.linecorp.com/zh-hant/blog/chatbot-meetups-29/)
+
+- [使用LINE Notify傳送貼圖與上傳圖像](https://engineering.linecorp.com/zh-hant/blog/using-line-notify-to-send-stickers-and-upload-images/)
+
+- [嘗試透過貼圖建立 Sticker-Driven Conversations 的 Chatbot](https://engineering.linecorp.com/zh-hant/blog/sticker-driven-conversations-chatbot/)
 
 
 
@@ -139,7 +171,21 @@ LIFF (LINE Frontend Framework) 除了有許多強大的功能外，更是讓網�
 
 <script async class="speakerdeck-embed" data-slide="58" data-id="0e9f6182ae864568a5940cbad5ef4bec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
+建議使用的Emoji有以下2種: Unicode emoji和 LINE emoji。
 
+有關詳細資訊，請參閱LINE Developers的文件。 [https://developers.line.biz/en/reference/messaging-api/#text-message](https://developers.line.biz/en/reference/messaging-api/)
+
+可以傳送的表情符號(Emoji) 清單 Sendable LINE emoji list: 
+
+https://d.line-scdn.net/r/devcenter/sendable_line_emoji_list.pdf
+
+ 這裡也提供相關的開發者說明文章給各位參考，裡面包括了如何透過程式碼來發送表情符號 (Emoji) 之外，也可以辨識使用者發送過來的表情符號，讓你的聊天機器人更有生命力:
+
+- [關於 LINE Emoji 的一些細節（以 Golang 為例)](https://engineering.linecorp.com/zh-hant/blog/line-emoji-with-golang/)
+
+- [「How ML Powers LINE Services」機器學習如何的讓 LINE 的服務能更貼近使用者](https://engineering.linecorp.com/zh-hant/blog/how-ml-powers-line-services/)
+
+- [LINE 開發社群計畫: 2020/05/27 Chatbots 19 @online 與 2020 May LINE 平台更新整理報告](https://engineering.linecorp.com/zh-hant/blog/2020-05-27-chatbots19/)
 
 
 
