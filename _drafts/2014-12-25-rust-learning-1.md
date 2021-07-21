@@ -17,6 +17,8 @@ tags: []
 
 **學習紀錄:**
 
+學習
+
 **相關資訊**
 
 - [Cargo is  tool to create or manage RUST project](http://doc.crates.io/guide.html)
