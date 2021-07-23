@@ -3,7 +3,7 @@ layout: post
 author: kkdai
 comments: true
 date: 2010-08-21 11:28:06+00:00
-slug: 'e8ae80e69bb8e5bf83e5be97-e58b95e6a99fe38081e596aee7b494e79a84e58a9be9878fdrive-the-surprising-truth-about-what-motivates-us'
+slug: '%e8%ae%80%e6%9b%b8%e5%bf%83%e5%be%97-%e5%8b%95%e6%a9%9f%e3%80%81%e5%96%ae%e7%b4%94%e7%9a%84%e5%8a%9b%e9%87%8fdrive-the-surprising-truth-about-what-motivates-us'
 title: '讀書心得-動機、單純的力量(DRIVE: The Surprising Truth About What Motivates Us)'
 wordpress_id: 1107
 categories:
