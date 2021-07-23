@@ -1,53 +1,47 @@
 ---
 layout: post
-layout: post
 author: kkdai
 comments: true
 date: 2010-08-21 11:28:06+00:00
-slug: '%e8%ae%80%e6%9b%b8%e5%bf%83%e5%be%97-%e5%8b%95%e6%a9%9f%e3%80%81%e5%96%ae%e7%b4%94%e7%9a%84%e5%8a%9b%e9%87%8fdrive-the-surprising-truth-about-what-motivates-us'
+slug: 'drive-the-surprising-truth-about-what-motivates-us'
 title: '讀書心得-動機、單純的力量(DRIVE: The Surprising Truth About What Motivates Us)'
 wordpress_id: 1107
 categories:
 - 書海裡的漫遊
 ---
 
-<blockquote>  
-> 
-> ### 動機，單純的力量：把工作做得像投入嗜好一樣有最單純的動機，才有最棒的表現
-> 
->    
-> 
->     
->   * 作者：[丹尼爾．品克](http://search.books.com.tw/exep/prod_search.php?key=%A4%A6%A5%A7%BA%B8%A1D%AB%7E%A7J&f=author)
->      
->   * 原文作者：[Daniel H. Pink](http://search.books.com.tw/exep/prod_search.php?key=Daniel%20H.%20Pink&f=author)
->      
->   * 譯者：[席玉蘋](http://search.books.com.tw/exep/prod_search.php?key=%AEu%A5%C9%C4%AB&f=author)
->      
->   * 出版社：[大塊文化](http://www.books.com.tw/exep/pub_book.php?pubid=locus)
->      
->   * 出版日期：2010年07月29日 
->      
->   * 語言：繁體中文 ISBN：9789570316445 
->      
->   * 裝訂：平裝 
->       
-> 
-> 過去，我們大部分的人都遵循著如下的行為模式：老闆答應我們加薪，我們工作就格外賣力；用功可望拿到好分數，我們就花更多時間讀書；遲到要扣薪水，我們就乖乖準時上班……這一切係由外在動機所構築出的回報系統──只是我們所有人都是追著棍子上的胡蘿蔔跑的驢子。這種動機論在大量生產的工業時代或許行之有效，但隨著資訊時代取代工業時代以降，短期獎勵和依據績效計酬的薪資制度往往效果不彰甚至弊多於利，而外在動機論也往往讓有關創意的問題解決陷入困境。人類天生就有追求新奇與挑戰、延伸並鍛鍊自己能力、主動探索與學習的內在傾向，如今我們所從事的那些非制式化、藝術創意，或是宏大遠景的工作，在在需要經由內在動機來達成目標。這種內在動機論已然超越外在動機論，成為現代生活最有希望的一種力量，不僅是個人轉型圖進最有力的一個工具，同時也是你我必須瞭解並活用的最新人才趨勢。
-> 
->    
-> 
-> 資料來源: [博客來網路書局](http://www.books.com.tw/exep/prod/booksfile.php?item=0010476180)
-> 
-> </blockquote>
+ ## 動機，單純的力量：把工作做得像投入嗜好一樣有最單純的動機，才有最棒的表現
 
- 
 
-**讀書心得**:
 
- 
+   * 作者：[丹尼爾．品克](http://search.books.com.tw/exep/prod_search.php?key=%A4%A6%A5%A7%BA%B8%A1D%AB%7E%A7J&f=author)
+     
+   * 原文作者：[Daniel H. Pink](http://search.books.com.tw/exep/prod_search.php?key=Daniel%20H.%20Pink&f=author)
+     
+   * 譯者：[席玉蘋](http://search.books.com.tw/exep/prod_search.php?key=%AEu%A5%C9%C4%AB&f=author)
+     
+   * 出版社：[大塊文化](http://www.books.com.tw/exep/pub_book.php?pubid=locus)
+     
+   * 出版日期：2010年07月29日 
+     
+   * 語言：繁體中文 ISBN：9789570316445 
+     
+   * 裝訂：平裝 
+     
 
-[youtube http://www.youtube.com/watch?v=u6XAPnuFjJc&hl;=en]
+
+
+過去，我們大部分的人都遵循著如下的行為模式：老闆答應我們加薪，我們工作就格外賣力；用功可望拿到好分數，我們就花更多時間讀書；遲到要扣薪水，我們就乖乖準時上班……這一切係由外在動機所構築出的回報系統──只是我們所有人都是追著棍子上的胡蘿蔔跑的驢子。這種動機論在大量生產的工業時代或許行之有效，但隨著資訊時代取代工業時代以降，短期獎勵和依據績效計酬的薪資制度往往效果不彰甚至弊多於利，而外在動機論也往往讓有關創意的問題解決陷入困境。人類天生就有追求新奇與挑戰、延伸並鍛鍊自己能力、主動探索與學習的內在傾向，如今我們所從事的那些非制式化、藝術創意，或是宏大遠景的工作，在在需要經由內在動機來達成目標。這種內在動機論已然超越外在動機論，成為現代生活最有希望的一種力量，不僅是個人轉型圖進最有力的一個工具，同時也是你我必須瞭解並活用的最新人才趨勢。
+
+​    
+
+ 資料來源: [博客來網路書局](http://www.books.com.tw/exep/prod/booksfile.php?item=0010476180)
+
+
+
+### **讀書心得**:
+
+[YouTube](http://www.youtube.com/watch?v=u6XAPnuFjJc)
 
  
 
@@ -65,9 +59,7 @@ categories:
 > 
 > </blockquote>
 
- 
 
- 
 
 這樣的準則看起來相當的正常，但是根據這本書的研究發現，往往這樣的準則會讓例行性人員拼命衝刺。(這裡指的例行性人員指的就是像是作業員、組裝人員…等等不需要創造力的工作。)但是如果這樣的準則施行到研發人員的身上，本書發現那樣會使研發人員的目光變的狹隘、無法對於更寬廣、更有效率的思索與進行研究。 沒錯"獎賞"與"懲罰"，在這裡的狀況下，會讓馬(員工)跑得更快，但是也會狹隘了他的視野~ 所以當你需要衝刺的時候，這才是能夠使用的方式。
 
