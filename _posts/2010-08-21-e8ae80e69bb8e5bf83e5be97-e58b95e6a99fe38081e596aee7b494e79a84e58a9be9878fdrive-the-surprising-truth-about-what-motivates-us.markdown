@@ -10,8 +10,8 @@ categories:
 - 書海裡的漫遊
 ---
 
- ## 動機，單純的力量：把工作做得像投入嗜好一樣有最單純的動機，才有最棒的表現
 
+## 動機，單純的力量：把工作做得像投入嗜好一樣有最單純的動機，才有最棒的表現
 
 
    * 作者：[丹尼爾．品克](http://search.books.com.tw/exep/prod_search.php?key=%A4%A6%A5%A7%BA%B8%A1D%AB%7E%A7J&f=author)
