@@ -33,7 +33,7 @@ Zero to One : Notes on Startups, or How to Build the Future
 
 ## 前言:
 
-這一本是今年所讀完的第九本書。 
+這一本是今年所讀完的第九本書。 作者Peter Thiel 是 PayPal 的共同創辦人，現在是創業基金(Founder Fund) 的合夥人。對於創業有相當多的想法的人。而這一本書則是他在史丹佛大學的一堂課，
 
 
 
