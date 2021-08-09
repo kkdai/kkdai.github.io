@@ -65,7 +65,7 @@ Apple Notes (也就是 iOS / Mac OSX 上面的「備忘錄」) 是一個強大�
 
 [Bear notes App](https://bear.app/) 是一個很強大的筆記軟體，使用 Markdown  作為語法外，使用標籤與相互串連的方式。讓你整理資訊更加的方便。而且他提供一個方式可以將 Apple Notes 搬移到 Bear Notes。
 
-[Migrate from Apple Notes](https://bear.app/faq/Import%20&%20export/Migrate%20from%20Apple%20Notes/) 這篇文章教導你透過一個小工具，可以把 Apple Notes 備份出來，然後透過 Bear Notes 強大的 Import 功能可以匯入到他的筆記之內。加上 Bear Notes 如果沒有付費，本身也是將資訊存在本地端。並且可以透過 [Backup and Restore Your Notes in Bear](https://bear.app/faq/Backup%20&%20Restore/) 來備份你的 Bear Notes 。
+[Migrate from Apple Notes](https://bear.app/faq/Import%20&%20export/Migrate%20from%20Apple%20Notes/) 這篇文章教導你透過一個小工具，可以把 Apple Notes 備份出來，然後透過 Bear Notes 強大的 Import 功能可以匯入到他的筆記之內。加上 Bear Notes 如果沒有付費，本身也是將資訊存在本地端。並且可以透過 [Backup and Restore Your Notes in Bear](https://bear.app/faq/Backup%20&%20Restore/) 來備份你的 Bear Notes 。（作為電腦更換時候使用）。
 
 目前會朝向這個方向，繼續研究中。
 
