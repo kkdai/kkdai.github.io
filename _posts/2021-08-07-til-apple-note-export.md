@@ -71,11 +71,21 @@ Apple Notes (也就是 iOS / Mac OSX 上面的「備忘錄」) 是一個強大�
 
 
 
+## 額外：
+
+其實我一開始都使用 Markdown 加上 vscode 來管理筆記，搜尋起來也快也可以放在雲端資料夾控管。但是不能直接從簡貼簿來貼圖片。現在看到這個可能會考慮一下。
+
+[https://github.com/telesoho/vscode-markdown-paste-image](https://github.com/telesoho/vscode-markdown-paste-image)
+
+![](https://github.com/telesoho/vscode-markdown-paste-image/blob/master/res/markdown_paste_demo_min.gif?raw=true)
+
+這個我也可能會考慮一下。
+
+
 
 ## 相關文章：
 
 - [Migrate from Apple Notes](https://bear.app/faq/Import%20&%20export/Migrate%20from%20Apple%20Notes/) 
-
--  [Backup and Restore Your Notes in Bear](https://bear.app/faq/Backup%20&%20Restore/)
-
+- [Backup and Restore Your Notes in Bear](https://bear.app/faq/Backup%20&%20Restore/)
 - [Create local backup of notes in Notes.app on macOS](https://apple.stackexchange.com/questions/343221/create-local-backup-of-notes-in-notes-app-on-macos)
+- [https://github.com/telesoho/vscode-markdown-paste-image](https://github.com/telesoho/vscode-markdown-paste-image)
