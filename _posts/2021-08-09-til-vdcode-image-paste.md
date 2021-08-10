@@ -27,8 +27,14 @@ tags: ["vscode", "Tools"]
 
 ![](../images/2021/2021-08-10-16-56-16.png)
 
+這個功能相當好用（主要也是為了這個功能來用的）。有一個比較麻煩的是，下載的圖片位置預設會放在 `./` 這邊可以稍微修改，透過修改設定就可以。
 
+![](../images/2021/2021-08-10-17-01-28.png)
 
+上面這張圖就是透過剪貼簿，馬上貼上。真的很方便，也不用管命名問題。（你之到 RD 很怕叫他取名字，檔案名稱也是一樣 XD)。
+
+其實還有很多功能，大家可以到 Marketplace 網頁去查看。我也會持續研究，慢慢看有哪些習慣的功能。
 ## 相關文章：
 
 - [[TIL][markdown] 好用的編輯器 - typora](https://www.evanlin.com/til-mdeditor-typora/)
+- [VSCode Marketplace: Markdown Paste](https://marketplace.visualstudio.com/items?itemName=telesoho.vscode-markdown-paste-image)
