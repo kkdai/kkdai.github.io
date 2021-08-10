@@ -35,10 +35,26 @@ tags: ["vscode", "Tools"]
 
 上面這張圖就是透過剪貼簿，馬上貼上。真的很方便，也不用管命名問題。（你之到 RD 很怕叫他取名字，檔案名稱也是一樣 XD)。
 
-
-
 其實還有很多功能，大家可以到 Marketplace 網頁去查看。我也會持續研究，慢慢看有哪些習慣的功能。
+
+
+
+## Typora 沒有嗎？
+
+<img src="../images/2021/image-20210810214250200.png" width="500px">
+
+(更新 2021/08/10) 貼完臉書後，看到社群大大們的建議，發現好像 Typora 今年也有相關的更新了。其實今年(2021/02)的版本更新 (0.9.9.32) 更新的 ([Typora 更新](https://support.typora.io/What's-New-0.9.84/))。但是實際使用後，發現需要相關的設定如下。
+
+<img src="../images/2021/image-20210810214602485.png" width="600px" >
+
+- 需要修改複製圖片到「自訂資料夾」(注意原本的變數要移除)
+
+- 因為檔案要放到 github page ，記得要優先使用相對路徑。
+
+  
+
 ## 相關文章：
 
 - [[TIL][markdown] 好用的編輯器 - typora](https://www.evanlin.com/til-mdeditor-typora/)
 - [VSCode Marketplace: Markdown Paste](https://marketplace.visualstudio.com/items?itemName=telesoho.vscode-markdown-paste-image)
+- [Typora Image Upload](https://support.typora.io/What's-New-0.9.84/)
