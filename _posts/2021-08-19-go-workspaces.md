@@ -56,9 +56,13 @@ The commands are:
 
 
 
+## Editor (VSCode) 要怎麼改
 
+`[Preference] -> [Setting] -> [Extension]`
 
+![image-20210820143857744](../images/2021/image-20210820143857744.png)
 
+這樣可以讓 VSCode 裡面的
 
 
 
