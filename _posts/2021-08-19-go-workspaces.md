@@ -64,6 +64,30 @@ The commands are:
 
 如果改成 `gotip` 這樣可以讓 VSCode 裡面的 `Go` 使用到最新版本的 `gotip` 來用最新功能。
 
+# 如何使用 Muti-Module Workspaces
+
+## 情境假設 
+
+現在有兩個套件:
+
+- https://github.com/kkdai/iloveptt
+- https://github.com/kkdai/photomgr
+
+其中 https://github.com/kkdai/iloveptt 會引用到 https://github.com/kkdai/photomgr 套件。 以往在修 bug 的時候，需要回到他的 upstream `photomgr` 去修。 這時候只有兩個方式：
+
+1. 先發 PR 到 `photomgr`，然後進版號。  iloveptt 在抓新的版本，再來測試。
+   1. 這個有時候會有一個問題，就是 local module cache 會造成你的困擾。要抓好幾次才會看到新的版本。
+2. 透過 Vendor 的方式，先改 local 。但是很多時候會忘記要送 PR 到上一層。
+
+可以透過 module replace 來改，但是每一個得寫一次，如果你用到很多個檔案，就會相當的複雜。
+
+## 如何透過 Muti-Module Workspaces 解決問題：
+
+這時候解決方式為： (註解： 以下 `gotip` 因為是嘗鮮版本，之後整進去後就會使用 `go` )
+
+- 在上一層 `/Users/evanlin/src/go/src/github.com/kkdai` 使用 `gotip mod initwork iloveptt photomgr`
+
+就這麼簡單，現在修改檔案 https://github.com/kkdai/photomgr 不用在送 PR 了，可以先在 Local 改。 改完後再分別送 PR 即可。
 
 
 
