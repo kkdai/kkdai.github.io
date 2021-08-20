@@ -60,9 +60,11 @@ The commands are:
 
 `[Preference] -> [Setting] -> [Extension]`
 
-![image-20210820143857744](../images/2021/image-20210820143857744.png)
+![image-20210820171314071](../images/2021/image-20210820171314071.png)
 
-這樣可以讓 VSCode 裡面的
+如果改成 `gotip` 這樣可以讓 VSCode 裡面的 `Go` 使用到最新版本的 `gotip` 來用最新功能。
+
+
 
 
 
