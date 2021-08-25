@@ -8,7 +8,7 @@ category:
 tags: ["研討會心得", "DevRel", "LINE", "TECHPULSE", "LINEDev"]
 ---
 
-
+![可能是顯示的文字是「 2021.08 手把手教導你如何建置開源專案 LINE Developer Relations Evan Lin LINE 」的圖像](https://scontent.ftpe8-2.fna.fbcdn.net/v/t39.30808-6/237290503_10222305088389882_6303611173398782921_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_ohc=zbmFUweBrE4AX_neJPW&tn=fE5B7NFKKVXKPnFB&_nc_ht=scontent.ftpe8-2.fna&oh=00e5c7a5f754629bf6189ace57171a44&oe=612A8844)
 
 # 前言
 
