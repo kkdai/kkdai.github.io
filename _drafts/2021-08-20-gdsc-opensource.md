@@ -76,7 +76,30 @@ tags: ["研討會心得", "DevRel", "LINE", "TECHPULSE", "LINEDev"]
 
 - [什麼是 PR: Pull Request](https://yingchencheng.medium.com/github-%E4%B8%8A%E5%B8%B8%E5%B8%B8%E5%87%BA%E7%8F%BE%E7%9A%84%E7%B8%AE%E5%AF%AB-b7aa396971a1#:~:text=PR%20(Pull%20Request)&text=%E4%BF%AE%E6%94%B9%E5%AE%8C%E6%88%90%E5%BE%8C%EF%BC%8C%E5%85%88%E6%8E%A8,%E7%9C%8B%E4%B8%80%E4%B8%8B%E4%BD%A0%E7%9A%84%E4%BF%AE%E6%94%B9%E3%80%82&text=%E4%B8%8A%E9%9D%A2%E7%9A%84%E6%B5%81%E7%A8%8B%E4%B8%AD%EF%BC%8C%E3%80%8C%E7%99%BC,%E5%8B%95%E4%BD%9C%E5%B0%B1%E5%8F%AB%E5%81%9APull%20Request%E3%80%82) 
 
-  
+
+
+## 找到你的第一個貢獻者 / Find your first contributor 
+
+<script async class="speakerdeck-embed" data-slide="12" data-id="7c88264dc5594cc2846386c275f1989a" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+當你為了你的開源專案準備好了文件，也準備好所有的流程後。接下來就是開門來歡迎第一位一起開發的人員了。（這邊往往需要很多的時間）。到底要如何找到你的第一位貢獻者呢？ 
+
+這時候第一步建議你可以先為了自己的專案寫下幾個讓想要貢獻的夥伴們可以上手的部分。這個在開源社群被稱為是 「Good First Issue」。 透過這些比較容易上手的問題：
+
+- 可能是文件修改（中文化，日文化等等）
+- 可能是加參數。
+- 相關文件補充需求。
+
+這些可以讓想要幫忙的人有一個好的開始，也是可以吸引到更多願意幫忙的人的方式。
+
+### 參考資料：
+
+- [Good First Issue: Issues for your first open-source contribution](https://goodfirstissue.dev/)
+- [Encouraging helpful contributions to your project with labels](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/encouraging-helpful-contributions-to-your-project-with-labels#:~:text=On GitHub%2C navigate to the,start typing good first issue .)
+
+## 宣傳! 宣傳! 宣傳! / Promote ! Promote ! 
+
+
 
 # 關於 TECH FRESH 介紹
 
@@ -94,6 +117,19 @@ LINE 台灣工程團隊每年透過 [LINE TECH FRESH – 技術新星人才計�
 - [TECHPULSE 2020 青春主場 – TECH FRESH 議程與攤位介紹](
 
 # 同學們的相關詢問：
+
+
+## 1. 如何讓自己的 Github 容易被找到?
+
+
+
+## 2. Github 專案建議以 Quality 為主，還是 Quantaty 最主？
+
+
+## 3. 會不會擔心自己的專案被人家抄走?
+
+## 4. 哪一些 Github 是企業比較在意的？
+
 
 
 # 關於 LINE  開發者官方社群
