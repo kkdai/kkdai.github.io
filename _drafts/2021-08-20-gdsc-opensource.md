@@ -14,6 +14,32 @@ tags: ["研討會心得", "DevRel", "LINE", "TECHPULSE", "LINEDev"]
 
 大家好，我是 LINE Developer Relations 團隊的資深開發技術推廣工程師 - Evan Lin 。主要的工作項目就是平台技術推廣與技術品牌的建立與溝通。 這次很榮幸受到邀請幫 DSC (Developer Students Club) 開發者學生社群的暑期夏令營活動 (Summer BootCamp) 分享關於如何打造自己的開源專案的經驗分享。 
 
+## 投影片
+
+<script async class="speakerdeck-embed" data-id="7c88264dc5594cc2846386c275f1989a" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+# LINE 有參與開源專案嗎？
+
+經常在參與許多開源聚會上，許多開發者朋友都不了解 LINE 有參與過相關的開源專案。但 LINE 其實也已經開源了超過 93 個專案，不僅有訊息平台的軟體開發工具套件，更有 LINE 開發內部專案過程中也在使用的套件：包括 [Armeria](https://github.com/line/armeria) 與 [Central Dogma](https://github.com/line/centraldogma) 等數個知名的開源專案，並且也開始經營相關的開源社群。大家可以參考一下 2019 年的 [COSCUP Keynote 分享 LINE 企業內部的開源流程](https://engineering.linecorp.com/zh-hant/blog/line-coscup-2019/)，並說明 LINE 企業文化鼓勵員工分享，更以開放的心胸接觸開源及參與開發者社群。
+
+![img](https://engineering.linecorp.com/wp-content/uploads/2019/09/keynote_armeria-1024x768.jpg)
+
+# 如何打造一個成功的開源專案
+
+<script async class="speakerdeck-embed" data-slide="8" data-id="7c88264dc5594cc2846386c275f1989a" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+要打造一個知名的開源專案，建議各位同學們的步驟如下：
+
+- 找到一個好點子 / Find a great idea 
+- 良好的說明 / Well Documentation
+- 完整的 CI/CD 流程 / Well Workflow
+- 找到你的第一個貢獻者 / Find your first contributor 
+- 宣傳! 宣傳! 宣傳! / Promote ! Promote ! 
+
+這邊依序開始講解這些步驟，其中「找到一個好點子」放在最後（因為最難 :p )。
+
+## 良好的說明 / Well Documentation
+
 
 
 # 關於 TECH FRESH 介紹
