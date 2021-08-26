@@ -76,8 +76,6 @@ tags: ["研討會心得", "DevRel", "LINE", "TECHPULSE", "LINEDev"]
 
 - [什麼是 PR: Pull Request](https://yingchencheng.medium.com/github-%E4%B8%8A%E5%B8%B8%E5%B8%B8%E5%87%BA%E7%8F%BE%E7%9A%84%E7%B8%AE%E5%AF%AB-b7aa396971a1#:~:text=PR%20(Pull%20Request)&text=%E4%BF%AE%E6%94%B9%E5%AE%8C%E6%88%90%E5%BE%8C%EF%BC%8C%E5%85%88%E6%8E%A8,%E7%9C%8B%E4%B8%80%E4%B8%8B%E4%BD%A0%E7%9A%84%E4%BF%AE%E6%94%B9%E3%80%82&text=%E4%B8%8A%E9%9D%A2%E7%9A%84%E6%B5%81%E7%A8%8B%E4%B8%AD%EF%BC%8C%E3%80%8C%E7%99%BC,%E5%8B%95%E4%BD%9C%E5%B0%B1%E5%8F%AB%E5%81%9APull%20Request%E3%80%82) 
 
-
-
 ## 找到你的第一個貢獻者 / Find your first contributor 
 
 <script async class="speakerdeck-embed" data-slide="12" data-id="7c88264dc5594cc2846386c275f1989a" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
@@ -98,6 +96,15 @@ tags: ["研討會心得", "DevRel", "LINE", "TECHPULSE", "LINEDev"]
 - [Encouraging helpful contributions to your project with labels](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/encouraging-helpful-contributions-to-your-project-with-labels#:~:text=On GitHub%2C navigate to the,start typing good first issue .)
 
 ## 宣傳! 宣傳! 宣傳! / Promote ! Promote ! 
+
+<script async class="speakerdeck-embed" data-slide="13" data-id="7c88264dc5594cc2846386c275f1989a" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+做好了相關的說明後，建議要經常去推廣你的專案。畢竟你需要透過不段的推廣，你也才知道哪些東西是大家有興趣的。推廣的方式可以有以下幾個方式：
+
+-  準備一些說明文章，透過文章的說明來解釋這個 Github Repository 的主要功能。雖然在 README 會提到，但是透過文章的敘事方式往往可以讓更多的人願意去了解你的專案本質，體會專案主要解決的痛點。
+- 分享！ 就是不斷的第透過線上分享，線上演講去分享。這也是最直接的方式可以讓你接觸到你的潛在用戶。相當推薦可以在「[開源者年會](https://en.wikipedia.org/wiki/COSCUP)」去分享你的專案，每一次的分享就會直接有許多星星（Github Like ) 的進帳。
+
+## 找到一個好點子 / Find a great idea 
 
 
 
@@ -129,6 +136,11 @@ LINE 台灣工程團隊每年透過 [LINE TECH FRESH – 技術新星人才計�
 ## 3. 會不會擔心自己的專案被人家抄走?
 
 ## 4. 哪一些 Github 是企業比較在意的？
+
+## 5. 是不是一定要學會 Git 指令才能開始做開源專案？
+
+## 6. 還有問題該如何問？
+
 
 
 
