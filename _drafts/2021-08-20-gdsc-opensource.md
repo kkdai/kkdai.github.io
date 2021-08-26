@@ -49,7 +49,21 @@ tags: ["研討會心得", "DevRel", "LINE", "TECHPULSE", "LINEDev"]
 - **專案說明**： 
   - 一句短短話，讓路過的人知道你專案的摘要。
 - **如何安裝 (install) /引用 (include)**: 
-  - 這個往往是許多初期開源專案開發者遺忘的。你需要讓路過的人知道如何安裝，如何能夠正確 include 。這樣想要使用的人，不會第一部卡在環境設定上的相關問題。 
+  - 這個往往是許多初期開源專案開發者遺忘的。你需要讓路過的人知道如何安裝，如何能夠正確 include 。這樣想要使用的人，不會第一部卡在環境設定上的相關問題。  比如說有一些 Python 相關的專案，在許多套件的相依性處理上，沒有寫清楚的話。往往之後看到的人都無法正確使用。自然而然就不會使用。
+- **如何貢獻 / How to contribute :**
+  - 這也是很重要的部分，包括了說明白開源專案的授權方式。 （可以參考 [自由及開放原始碼軟體授權條款比較](https://zh.wikipedia.org/wiki/%E8%87%AA%E7%94%B1%E5%8F%8A%E9%96%8B%E6%94%BE%E5%8E%9F%E5%A7%8B%E7%A2%BC%E8%BB%9F%E9%AB%94%E8%A8%B1%E5%8F%AF%E8%AD%89%E6%AF%94%E8%BC%83) ) 還有就是可以告訴想要貢獻的人，你希望他們能跑過哪一些基本的 unit testing 。越多的說明就可以讓你的貢獻者越安心。
+
+### 參考資料：
+
+-  [自由及開放原始碼軟體授權條款比較](https://zh.wikipedia.org/wiki/%E8%87%AA%E7%94%B1%E5%8F%8A%E9%96%8B%E6%94%BE%E5%8E%9F%E5%A7%8B%E7%A2%BC%E8%BB%9F%E9%AB%94%E8%A8%B1%E5%8F%AF%E8%AD%89%E6%AF%94%E8%BC%83) 
+- 徽章列表 [badges](https://github.com/badges)/[shields](https://github.com/badges/shields)
+- [How to Write a Good README File for Your GitHub Project](https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/)
+
+## 完整的 CI/CD 流程 / Well Workflow
+
+
+
+
 
 # 關於 TECH FRESH 介紹
 
