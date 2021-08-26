@@ -40,7 +40,16 @@ tags: ["研討會心得", "DevRel", "LINE", "TECHPULSE", "LINEDev"]
 
 ## 良好的說明 / Well Documentation
 
+<script async class="speakerdeck-embed" data-slide="10" data-id="7c88264dc5594cc2846386c275f1989a" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
+首先先分享給各位（也是最容易被開發者們忽略的）就是好的文件。（也許可能是開發者們刻意不想寫的 :p ) 。 對於軟體開發來說，好的文件相當的重要。 而開源專案最重要的就是 `README.md` 這個檔案往往會出現在 github 的專案頁面。透過上面的範例，這邊有一幾個重點希望同學們能注意到：
+
+- **足夠多的 Badge （徽章）：**
+  - 徽章本身是講解相關的狀況（ build 成功，有說明文件...)，此外也可以比較漂亮啦。
+- **專案說明**： 
+  - 一句短短話，讓路過的人知道你專案的摘要。
+- **如何安裝 (install) /引用 (include)**: 
+  - 這個往往是許多初期開源專案開發者遺忘的。你需要讓路過的人知道如何安裝，如何能夠正確 include 。這樣想要使用的人，不會第一部卡在環境設定上的相關問題。 
 
 # 關於 TECH FRESH 介紹
 
