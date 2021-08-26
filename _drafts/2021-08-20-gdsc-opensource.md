@@ -61,9 +61,22 @@ tags: ["研討會心得", "DevRel", "LINE", "TECHPULSE", "LINEDev"]
 
 ## 完整的 CI/CD 流程 / Well Workflow
 
+<script async class="speakerdeck-embed" data-slide="11" data-id="7c88264dc5594cc2846386c275f1989a" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
+這邊指的是相關的 Github Action ， Github Action 可以幫助開源專案以下幾個部分：
 
+- 如果有 Pull Request 發進來，如果有好的 Github Action 設置，可以檢查程式碼有無編譯錯誤( Build Failed) 。
+  - [actions/setup-go: Set up your GitHub Actions](https://github.com/actions/setup-go)
+  - [Building and testing Python - GitHub Docs](https://docs.github.com/en/actions/guides/building-and-testing-python)
+- 編譯好的執行檔，讓人可以直接下載發布版本 (Release Version)。透過好的設置，甚至想使用的人不需要設定環境，可以直接下載可以執行的版本，就可以直接使用。這邊可以參考:
+  - [GoReleaser Action - GitHub](https://github.com/goreleaser/goreleaser-action)
+  - [How to release Python package from GitHub Actions](https://blog.chezo.uno/how-to-release-python-package-from-github-actions-d5a1d8edba6e)
 
+### 參考資料：
+
+- [什麼是 PR: Pull Request](https://yingchencheng.medium.com/github-%E4%B8%8A%E5%B8%B8%E5%B8%B8%E5%87%BA%E7%8F%BE%E7%9A%84%E7%B8%AE%E5%AF%AB-b7aa396971a1#:~:text=PR%20(Pull%20Request)&text=%E4%BF%AE%E6%94%B9%E5%AE%8C%E6%88%90%E5%BE%8C%EF%BC%8C%E5%85%88%E6%8E%A8,%E7%9C%8B%E4%B8%80%E4%B8%8B%E4%BD%A0%E7%9A%84%E4%BF%AE%E6%94%B9%E3%80%82&text=%E4%B8%8A%E9%9D%A2%E7%9A%84%E6%B5%81%E7%A8%8B%E4%B8%AD%EF%BC%8C%E3%80%8C%E7%99%BC,%E5%8B%95%E4%BD%9C%E5%B0%B1%E5%8F%AB%E5%81%9APull%20Request%E3%80%82) 
+
+  
 
 # 關於 TECH FRESH 介紹
 
