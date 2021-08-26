@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "手把手教你建立自己的開源專案"
+title: "演講內容分享:「手把手教你建立自己的開源專案」"
 description: ""
 category: 
 - 研討會心得
 - DevRel
-tags: ["研討會心得", "DevRel", "LINE", "TECHPULSE", "LINEDev"]
+tags: ["研討會心得", "DevRel", "LINE", "TECHFRESH", "LINEDev", "OpenSource"]
 ---
 
 ![可能是顯示的文字是「 2021.08 手把手教導你如何建置開源專案 LINE Developer Relations Evan Lin LINE 」的圖像](https://scontent.ftpe8-2.fna.fbcdn.net/v/t39.30808-6/237290503_10222305088389882_6303611173398782921_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_ohc=zbmFUweBrE4AX_neJPW&tn=fE5B7NFKKVXKPnFB&_nc_ht=scontent.ftpe8-2.fna&oh=00e5c7a5f754629bf6189ace57171a44&oe=612A8844)
@@ -174,11 +174,28 @@ LINE 台灣工程團隊每年透過 [LINE TECH FRESH – 技術新星人才計�
 
 ## 4. 哪一些 Github 是企業比較在意的？
 
+### A:
+
+- 如果以 LINE 而言，如果你有 LINE Bot 的開源專案，我們除了可以知道你已經對於公司相關聊天機器人瞭解之外。也能了解你對於錯誤控管的方式（也就是對於使用者隨意輸入文字的處理），可以透過這些方是來了解每一個開發者細心的程度。
+- 跟前面呼應類似的話題，主要是看你每一個專案處理的細緻程度。有沒有文件化，有沒有良好的流程。
+
 ## 5. 是不是一定要學會 Git 指令才能開始做開源專案？
+
+### A:
+
+- 不需要，許多同學也來問我是否需要買一本 Git 教學手冊才開始做開源專案？
+- 其實不需要，建議先開始建立專案。往往許多基本指令，可以透過 VSCode 等等相關軟體都可以快速協助你處理。
+- 真正等你需要更底層的指令，你就會去查詢 `git pull -rebase` 等等相關指令。
+
+
 
 ## 6. 還有問題該如何問？
 
+### A:
 
+- 如果你還沒開啟你的 Github 帳號，而且你有許多疑問。可以考慮透過 Github 來詢問我。
+- 任何開源問題都歡迎： [https://github.com/kkdai/AMA](https://github.com/kkdai/AMA) ，你也可以學習如何開啟一個 issue。
+- 小絕竅： Github Issue 也算是一種 Contribution 喔！
 
 
 # 關於 LINE  開發者官方社群
