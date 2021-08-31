@@ -31,11 +31,22 @@ ISBN: 9789571388304
 
 ## 前言:
 
-這一本是今年所讀完的第十本書。 老實說，這一本書是我看歷史相關的 [YouTuber Cheap](https://www.youtube.com/channel/UCGGrblndNzi86WY5lJkQJiA) 介紹的。
 
+這一本是今年所讀完的第十本書。 老實說，這一本書是我看歷史相關的 [YouTuber Cheap](https://www.youtube.com/channel/UCGGrblndNzi86WY5lJkQJiA) 介紹的。這是一本介紹關於稅賦在人類歷史上扮演的角色，算是一本相當有趣的書籍。 並不是說書本的語法有多有趣，而是作者很巧妙了找了很多歷史上的案例分享稅賦在其中扮演了那一些的角色，讓我相當的驚奇啊。
 
+富蘭克林說「**唯死亡**和交**稅**無可避免」，最近剛好 [Google Play](https://www.inside.com.tw/article/22882-google-play-cut-commissions-to-15-from-30) 與 [Apple Store](https://www.bnext.com.tw/article/64765/apple-app-store-tax) 的地皮稅也吵得沸沸攘攘的，更容易透過這本書裡面的說明來了解吧！
 
+#### 新聞：
+
+- [跟進蘋果減稅！Google Play 宣布開發商前 100 萬美元營收調降 15%抽成](https://www.inside.com.tw/article/22882-google-play-cut-commissions-to-15-from-30)
+- [30%「蘋果稅」頻被抗議、審查！蘋果再妥協，推降低App Store費用新計畫](https://www.bnext.com.tw/article/64765/apple-app-store-tax)
+
+### 關於歷史與地理知識型 YouTuber - Cheap 
+
+關於 Cheap 的影片在下方，這是我近期相當喜歡的知識型 YouTuber 。他喜歡透過世紀帝國的遊戲畫面，或是精美的美工繪圖來講解許多讓人經常誤會的歷史故事。很推薦追蹤一下。
 <iframe width="560" height="315" src="https://www.youtube.com/embed/bJNmQavrzbw?start=559" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 
 ## 內容簡介與心得:
 
