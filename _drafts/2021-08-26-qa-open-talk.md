@@ -15,13 +15,34 @@ tags: ["QA", "DevRel", "LINE", "LINEDev"]
 
 大家好，我是 LINE Developer Relations 團隊的資深開發技術推廣工程師 - Evan Lin 。主要的工作項目就是平台技術推廣與技術品牌的建立與溝通。「LINE 工程團隊的訪談」是一個新的系列活動，裡面包括了許多團隊的成員的分享。我們希望藉由這個活動，可以讓外部的夥伴可能夠了解在身為開發團隊在 LINE 台灣的生活狀況，會有許多有趣的小故事或是分享在相關的訪談中。 上個月[【訪談】TECH FRESH 工作老實說 – 後續花絮與相關資訊整理](https://engineering.linecorp.com/zh-hant/blog/what-is-tech-fresh-interview/) 我們邀請了兩位技術新星實習生(LINE TECH FRESH)來談談實習生的有趣生活。
 
-經常在許多社群聚會 (Test Corner) 上經常有夥伴好奇跑來問，聽說 LINE 的服務上線的是幾百萬，幾千萬人用。那這樣 QA 會很累嗎？ 聽說 LINE 有跑敏捷開發， QA 在敏捷開發之中扮演著什麼角色呢？ 這一次很開心邀請到負責全球化共用模組產品的 QA Manager - Yvonne Wang ，還有負責過 LINE SPOT 與目前要參與 Live Commerce 的 QA Manager - Johnny Wu  一起來談談許多大家了解的
+經常在許多社群聚會 (Test Corner) 上經常有夥伴好奇跑來問，聽說 LINE 的服務上線的是幾百萬，幾千萬人用。那這樣 QA 會很累嗎？ 聽說 LINE 有跑敏捷開發， QA 在敏捷開發之中扮演著什麼角色呢？ 這一次很開心邀請到負責全球化共用模組產品的 QA Manager - Yvonne Wang ，還有負責過 LINE SPOT 與目前要參與 Live Commerce 的 QA Manager - Johnny Wu  一起來談談 LINE 台灣開發團隊有趣的分享。 
 
  
 
 ## 直播影片:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/NNc_L9Npsu0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## 講者自我介紹
+
+首先先有
+
+### Live Commerce 的 QA Manager - Johnny Wu
+
+![image-20210903100331262](../images/2021/image-20210903100331262.png)
+
+([按下去直接跳到該片段](https://youtu.be/NNc_L9Npsu0?t=653))
+
+Johnny Wu 有了十二年的從業經驗，在 LINE 台灣也有五年左右的工作經驗。算是對於整體工作流程相當的熟悉的管理人員。主要工作角色有兩個：
+
+- **身為 Service QA**:  撰寫準備測試計畫，籌劃好產品服務的自動化測試，壓力測試與整個 Release Management 有參與。
+- **身為 QA Lead**: 身為 QA Manager 主要工作在於人力資源的調配，相關的資訊跟員工訓練，設定目標與招募等等。
+
+### Global Product 的 QA Manager - Yvonne Wang
+
+![image-20210903105210890](../images/2021/image-20210903105210890.png)
+
+([按下去直接跳到該片段](https://youtu.be/NNc_L9Npsu0?t=859))
 
 
 
@@ -36,6 +57,11 @@ tags: ["QA", "DevRel", "LINE", "LINEDev"]
 
 - 
 
+## 想投履歷
+
+- **[QA 測試工程師（派遣）]( https://m.104.com.tw/job/6o9hg)**
+- **[QA Automation Engineer](https://careers.linecorp.com/jobs/18)** 
+- **[QA Engineer](https://careers.linecorp.com/jobs/19)**
 
 # 關於 LINE  開發者官方社群
 
