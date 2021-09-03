@@ -38,11 +38,23 @@ Johnny Wu 有了十二年的從業經驗，在 LINE 台灣也有五年左右的�
 - **身為 Service QA**:  撰寫準備測試計畫，籌劃好產品服務的自動化測試，壓力測試與整個 Release Management 有參與。
 - **身為 QA Lead**: 身為 QA Manager 主要工作在於人力資源的調配，相關的資訊跟員工訓練，設定目標與招募等等。
 
+![image-20210903163441556](../images/2021/image-20210903163441556.png)
+
+而 LIVE Commerce 更是近幾個月才剛上市的新功能，大家可以參考「 [LINE購物直播＋1 喊單功能上線，最有趣的互動式購物等你來 ](https://event-web.line.me/ectw/v2/article/Baw8pQ) 」的介紹。 直播主透過 LIVE Commerce 的購物直撥平台可以透過影音直播的方式，快速將商品讓參與的人來了解，一起透過 「 +1 」來快速購買。 相關直播內容可以看 [LINE購物 超級直播天團](https://event-web.line.me/ectw/publication/ef313846be6e89b76f3f21595110a9c7404b31ef9543c6bee27eaa567996ca99) 來了解。
+
 ### Global Product 的 QA Manager - Yvonne Wang
 
 ![image-20210903105210890](../images/2021/image-20210903105210890.png)
 
 ([按下去直接跳到該片段](https://youtu.be/NNc_L9Npsu0?t=859))
+
+第二位 Global Product 的 QA Manager - Yvonne Wang 則是有著相當有趣的經歷，曾經有當過工程師的她，在擔任 Global Products Team
+
+![image-20210903163409139](../images/2021/image-20210903163409139.png)
+
+
+
+
 
 
 
