@@ -7,11 +7,15 @@ category:
 tags: ["QA", "DevRel", "LINE", "LINEDev"]
 ---
 
+![image-20210903093915221](../images/2021/image-20210903093915221.png)
+
 ![image-20210830154959584](../images/2021/image-20210830154959584.png)
 
 # 前言
 
-大家好，我是 LINE Developer Relations 團隊的資深開發技術推廣工程師 - Evan Lin 。主要的工作項目就是平台技術推廣與技術品牌的建立與溝通。「LINE 工程團隊的訪談」是一個新的系列活動，裡面包括了許多團隊的成員的分享。我們希望藉由這個活動，可以讓外部的夥伴可能夠了解在身為開發團隊在 LINE 台灣的生活狀況，會有許多有趣的小故事或是分享在相關的訪談中。 上個月，
+大家好，我是 LINE Developer Relations 團隊的資深開發技術推廣工程師 - Evan Lin 。主要的工作項目就是平台技術推廣與技術品牌的建立與溝通。「LINE 工程團隊的訪談」是一個新的系列活動，裡面包括了許多團隊的成員的分享。我們希望藉由這個活動，可以讓外部的夥伴可能夠了解在身為開發團隊在 LINE 台灣的生活狀況，會有許多有趣的小故事或是分享在相關的訪談中。 上個月[【訪談】TECH FRESH 工作老實說 – 後續花絮與相關資訊整理](https://engineering.linecorp.com/zh-hant/blog/what-is-tech-fresh-interview/) 我們邀請了兩位技術新星實習生(LINE TECH FRESH)來談談實習生的有趣生活。
+
+經常在許多社群聚會 (Test Corner) 上經常有夥伴好奇跑來問，聽說 LINE 的服務上線的是幾百萬，幾千萬人用。那這樣 QA 會很累嗎？ 聽說 LINE 有跑敏捷開發， QA 在敏捷開發之中扮演著什麼角色呢？ 這一次很開心邀請到負責全球化共用模組產品的 QA Manager - Yvonne Wang ，還有負責過 LINE SPOT 與目前要參與 Live Commerce 的 QA Manager - Johnny Wu  一起來談談許多大家了解的
 
  
 
