@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "演講內容分享:「手把手教你建立自己的開源專案」"
+title: "演講內容分享:「如何培養競爭力與軟實力」"
 description: ""
 category: 
 - 研討會心得
@@ -8,124 +8,64 @@ category:
 tags: ["研討會心得", "DevRel", "LINE", "TECHFRESH", "LINEDev", "OpenSource"]
 ---
 
-![image-20210901171621512](../images/2021/image-20210901171621512.png)
+![image-20210908183738530](../images/2021/image-20210908183738530.png)
 
 # 前言
 
-大家好，我是 LINE Developer Relations 團隊的資深開發技術推廣工程師 - Evan Lin 。主要的工作項目就是平台技術推廣與技術品牌的建立與溝通。 這次很榮幸受到邀請幫 DSC (Developer Students Club) 開發者學生社群的暑期夏令營活動 (Summer BootCamp) 分享關於如何打造自己的開源專案的經驗分享。 
+大家好，我是 LINE Developer Relations 團隊的資深開發技術推廣工程師 - Evan Lin 。主要的工作項目就是平台技術推廣與技術品牌的建立與溝通。 這次很榮幸受到邀請幫 DSC (Developer Students Club) 開發者學生社群的暑期夏令營活動 (Summer BootCamp) 分享關於如何打造自己的對於軟實力(Soft Skill) 的一些見解，也希望透過增強軟實力來讓同學們提升職場的競爭力。
 
 ## 投影片
 
-<script async class="speakerdeck-embed" data-id="7c88264dc5594cc2846386c275f1989a" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<script async class="speakerdeck-embed" data-id="a62ae4f456db4615bf54a6337005b2ea" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-# LINE 有參與開源專案嗎？
+# 軟實力 - 寫作
 
-經常在參與許多開源聚會上，許多開發者朋友都不了解 LINE 有參與過相關的開源專案。但 LINE 其實也已經開源了超過 93 個專案，不僅有訊息平台的軟體開發工具套件，更有 LINE 開發內部專案過程中也在使用的套件：包括 [Armeria](https://github.com/line/armeria) 與 [Central Dogma](https://github.com/line/centraldogma) 等數個知名的開源專案，並且也開始經營相關的開源社群。大家可以參考一下 2019 年的 [COSCUP Keynote 分享 LINE 企業內部的開源流程](https://engineering.linecorp.com/zh-hant/blog/line-coscup-2019/)，並說明 LINE 企業文化鼓勵員工分享，更以開放的心胸接觸開源及參與開發者社群。
+第一個希望同學們了解的寫作 (Writing) ，寫作是一個很好的習慣，尤其是資訊科技的從業人員。 寫作能力可以帶來好的文件撰寫，更可以讓你有「技術溝通」的能力。
 
-![img](https://engineering.linecorp.com/wp-content/uploads/2019/09/keynote_armeria-1024x768.jpg)
+這邊的寫作，不要想得太困難，建議用以下方式來寫：
 
-# 如何打造一個成功的開源專案
+- 請透過 Today I Learn (今天我學到什麼) 來開始，今年你學到什麼，不需要太多的內容。可以單純的流水帳即可。
+- 如果撰寫過一些的文章，可以試著讓其他人了解文章的內容。 如果有人看不太懂，可以試著寫得更簡單一點。
 
-<script async class="speakerdeck-embed" data-slide="8" data-id="7c88264dc5594cc2846386c275f1989a" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+# 軟實力 - 技術溝通力
 
-要打造一個知名的開源專案，建議各位同學們的步驟如下：
+<script async class="speakerdeck-embed" data-slide="12" data-id="a62ae4f456db4615bf54a6337005b2ea" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-- 找到一個好點子 / Find a great idea 
-- 良好的說明 / Well Documentation
-- 完整的 CI/CD 流程 / Well Workflow
-- 找到你的第一個貢獻者 / Find your first contributor 
-- 宣傳! 宣傳! 宣傳! / Promote ! Promote ! 
+「技術溝通能力」通常指的是技術事件的溝通，是有「目的性」的。通常都是為了工作上的事情而溝通，或是為了專案上台報告。許多人在學生時代的專案報告都會相當的簡章，到了公司後反而更是徬徨無措。以下有一些建議可以給同學們。
 
-這邊依序開始講解這些步驟，其中「找到一個好點子」放在最後（因為最難 :p )。
+- **為了聽眾著想 / Think about your audience**: 你今天是跟誰溝通？ 跟同專案的同事，跟其他專案的同事？還是跟你老闆？ 記得對方的角色，如果不是同專案的同事，請千萬不要用太多艱深的專案名詞，反之需要用簡單的方式來解釋。
+- **練習！ / Practice**:  要做專案報告或是技術分享時，對於任何人都是一個困難的。建議可以把要講的事情寫成講稿，不斷的練習。才能讓你的報告更加的簡短而清楚。。
+- **儘量讓報告簡單 / Explain in simple** ： 不要試著讓你的報告或是分享看起來很艱深難懂，如果你無法讓你的聽眾了解，那麼你的報告就沒有達到目的。這邊有些脈絡的經驗分享：
+  - **背景介紹**： 這個專案的一些簡單背景分享。
+  - **目前問題**：目前的專案有哪些問題，或是目前專案有那些進度。
+  - **新的解決方式**：一個新技術的分享，往往是因為問題帶來的解法。
 
-## 良好的說明 / Well Documentation
+透過分享或是報告，可以讓你對於這個技術更容易理解。
 
-<script async class="speakerdeck-embed" data-slide="10" data-id="7c88264dc5594cc2846386c275f1989a" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+# 軟實力 - 自我行銷力
 
-首先先分享給各位（也是最容易被開發者們忽略的）就是好的文件。（也許可能是開發者們刻意不想寫的 :p ) 。 對於軟體開發來說，好的文件相當的重要。 而開源專案最重要的就是 `README.md` 這個檔案往往會出現在 github 的專案頁面。透過上面的範例，這邊有一幾個重點希望同學們能注意到：
+<script async class="speakerdeck-embed" data-slide="13" data-id="a62ae4f456db4615bf54a6337005b2ea" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-- **足夠多的 Badge （徽章）：**
-  - 徽章本身是講解相關的狀況（ build 成功，有說明文件...)，此外也可以比較漂亮啦。
-- **專案說明**： 
-  - 一句短短話，讓路過的人知道你專案的摘要。
-- **如何安裝 (install) /引用 (include)**: 
-  - 這個往往是許多初期開源專案開發者遺忘的。你需要讓路過的人知道如何安裝，如何能夠正確 include 。這樣想要使用的人，不會第一部卡在環境設定上的相關問題。  比如說有一些 Python 相關的專案，在許多套件的相依性處理上，沒有寫清楚的話。往往之後看到的人都無法正確使用。自然而然就不會使用。
-- **如何貢獻 / How to contribute :**
-  - 這也是很重要的部分，包括了說明白開源專案的授權方式。 （可以參考 [自由及開放原始碼軟體授權條款比較](https://zh.wikipedia.org/wiki/%E8%87%AA%E7%94%B1%E5%8F%8A%E9%96%8B%E6%94%BE%E5%8E%9F%E5%A7%8B%E7%A2%BC%E8%BB%9F%E9%AB%94%E8%A8%B1%E5%8F%AF%E8%AD%89%E6%AF%94%E8%BC%83) ) 還有就是可以告訴想要貢獻的人，你希望他們能跑過哪一些基本的 unit testing 。越多的說明就可以讓你的貢獻者越安心。
+雖然我們都是軟體開發相關科系，同學們未來也都會是軟體開發從業人員。但是自我行銷能力也是相當的重要，因為懂的如何分享，如何表現自我的專業形象，在公司裡面對於陞遷會相當有幫助。
 
-### 參考資料：
 
--  [自由及開放原始碼軟體授權條款比較](https://zh.wikipedia.org/wiki/%E8%87%AA%E7%94%B1%E5%8F%8A%E9%96%8B%E6%94%BE%E5%8E%9F%E5%A7%8B%E7%A2%BC%E8%BB%9F%E9%AB%94%E8%A8%B1%E5%8F%AF%E8%AD%89%E6%AF%94%E8%BC%83) 
-- 徽章列表 [badges](https://github.com/badges)/[shields](https://github.com/badges/shields)
-- [How to Write a Good README File for Your GitHub Project](https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/)
 
-## 完整的 CI/CD 流程 / Well Workflow
 
-<script async class="speakerdeck-embed" data-slide="11" data-id="7c88264dc5594cc2846386c275f1989a" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+# 如何找一份好的實習工作
 
-這邊指的是相關的 Github Action ， Github Action 可以幫助開源專案以下幾個部分：
+<script async class="speakerdeck-embed" data-slide="25" data-id="a62ae4f456db4615bf54a6337005b2ea" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-- 如果有 Pull Request 發進來，如果有好的 Github Action 設置，可以檢查程式碼有無編譯錯誤( Build Failed) 。
-  - [actions/setup-go: Set up your GitHub Actions](https://github.com/actions/setup-go)
-  - [Building and testing Python - GitHub Docs](https://docs.github.com/en/actions/guides/building-and-testing-python)
-- 編譯好的執行檔，讓人可以直接下載發布版本 (Release Version)。透過好的設置，甚至想使用的人不需要設定環境，可以直接下載可以執行的版本，就可以直接使用。這邊可以參考:
-  - [GoReleaser Action - GitHub](https://github.com/goreleaser/goreleaser-action)
-  - [How to release Python package from GitHub Actions](https://blog.chezo.uno/how-to-release-python-package-from-github-actions-d5a1d8edba6e)
 
-### 參考資料：
+在 Joel on Software 這本書裡面，有提供了給同學們的一些建議，該如何同學們的競爭力。
 
-- [什麼是 PR: Pull Request](https://yingchencheng.medium.com/github-%E4%B8%8A%E5%B8%B8%E5%B8%B8%E5%87%BA%E7%8F%BE%E7%9A%84%E7%B8%AE%E5%AF%AB-b7aa396971a1#:~:text=PR%20(Pull%20Request)&text=%E4%BF%AE%E6%94%B9%E5%AE%8C%E6%88%90%E5%BE%8C%EF%BC%8C%E5%85%88%E6%8E%A8,%E7%9C%8B%E4%B8%80%E4%B8%8B%E4%BD%A0%E7%9A%84%E4%BF%AE%E6%94%B9%E3%80%82&text=%E4%B8%8A%E9%9D%A2%E7%9A%84%E6%B5%81%E7%A8%8B%E4%B8%AD%EF%BC%8C%E3%80%8C%E7%99%BC,%E5%8B%95%E4%BD%9C%E5%B0%B1%E5%8F%AB%E5%81%9APull%20Request%E3%80%82) 
+- **畢業前學會寫作**：如同我在軟實力裡面提過，寫作能力與技術溝通能力。將讓你一輩子受用無窮。
+- **學會C語言**：這有一點歷史因素，但是學會 C 語言對於系統架構與資料結構絕對是有好處的。
+- **學會個體經濟學**: 懂的基本的供需關係，可以更了解如何挑選好的產業，好的工作。也能對於未來安排上更有計畫。
+- **不要因為CS 無聊就放棄**：CS (Computer Science) 資訊科學是資訊從業人員的基礎，不論是進階的資料結構，演算法，到許多相關的數理概念。 目前學校時候學習可能會很痛苦，但是其實每一個演算法與資料結構都被應用在許多的服務中。都是許多架構或是服務的基礎。
+- **研習撰寫大量程式的課程**：寫程式這種事情是需要練習與複習的，建議每一位同學都需要研習一到兩個需要大量實作的課程，除了可以保持程式撰寫能力外，更可以了解許多應用。
+- **找一門好的實習工作**： 找一個好的學生時代實習工作很重要，除了可以讓你知道軟體公司的工作流程外，更可以讓你了解你對於軟體產業的興趣在哪裡。
 
-## 找到你的第一個貢獻者 / Find your first contributor 
-
-<script async class="speakerdeck-embed" data-slide="12" data-id="7c88264dc5594cc2846386c275f1989a" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-
-當你為了你的開源專案準備好了文件，也準備好所有的流程後。接下來就是開門來歡迎第一位一起開發的人員了。（這邊往往需要很多的時間）。到底要如何找到你的第一位貢獻者呢？ 
-
-這時候第一步建議你可以先為了自己的專案寫下幾個讓想要貢獻的夥伴們可以上手的部分。這個在開源社群被稱為是 「Good First Issue」。 透過這些比較容易上手的問題：
-
-- 可能是文件修改（中文化，日文化等等）
-- 可能是加參數。
-- 相關文件補充需求。
-
-這些可以讓想要幫忙的人有一個好的開始，也是可以吸引到更多願意幫忙的人的方式。
-
-### 參考資料：
-
-- [Good First Issue: Issues for your first open-source contribution](https://goodfirstissue.dev/)
-- [Encouraging helpful contributions to your project with labels](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/encouraging-helpful-contributions-to-your-project-with-labels#:~:text=On GitHub%2C navigate to the,start typing good first issue .)
-
-## 宣傳! 宣傳! 宣傳! / Promote ! Promote ! 
-
-<script async class="speakerdeck-embed" data-slide="13" data-id="7c88264dc5594cc2846386c275f1989a" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-
-做好了相關的說明後，建議要經常去推廣你的專案。畢竟你需要透過不段的推廣，你也才知道哪些東西是大家有興趣的。推廣的方式可以有以下幾個方式：
-
--  準備一些說明文章，透過文章的說明來解釋這個 Github Repository 的主要功能。雖然在 README 會提到，但是透過文章的敘事方式往往可以讓更多的人願意去了解你的專案本質，體會專案主要解決的痛點。
-- 分享！ 就是不斷的第透過線上分享，線上演講去分享。這也是最直接的方式可以讓你接觸到你的潛在用戶。相當推薦可以在「[開源者年會](https://en.wikipedia.org/wiki/COSCUP)」去分享你的專案，每一次的分享就會直接有許多星星（Github Like ) 的進帳。
-
-## 找到一個好點子 / Find a great idea 
-
-<script async class="speakerdeck-embed" data-slide="16" data-id="7c88264dc5594cc2846386c275f1989a" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-
-最後，也就是最難的環節。 經常有同學與朋友問我，你怎麼有那麼多的點子可以準備那麼多的開源專案？（筆者的開源專案有接近 200 個 repositories)。這邊想要跟各位分享的是，建議方式有以下兩個：
-
-- 透過一些小工具 Trello 或是其他記事工具，把你想要打造的工具先記錄下來。 有空的時候把它拿出來開始寫。
-- 看到好的專案，先試著 Fork出來開始學習裡面相關內容。可以透過你喜歡的語言，或是練習寫一個更精簡的版本出來（也就是功能比較少的版本）。
-
-透過這兩個方式，主要分享給同學們的是：
-
-- 不要因為靈感而卡住，開源專案的重點就是努力寫，拼命寫。覺得有趣就可以寫。
-- 很多時候，學習其他人偉大的專案。往往是開啟自己專案的好契機。
-
-# 開源專案與學生實習工作的關係
-
-最近經常看到同學們在討論，到底從事開源專案或是寫一些自己的 side project 跟工作有沒有關係？ 這邊可以分享關於 LINE 的實習工作機會 LINE TECH FRESH  就很在意你的開源專案，因為從開源專案可以看出以下一些重點：
-
-- 你是否有良好的文件習慣（端看 README.md) 
-- 專案是否有良好的 CI/CD 流程，也代表了你是否懂一些基本的流程。
-- 看相關專案的程式碼，可以了解你對於 Git 了解的程度。
-- 除了這些之外，好的開源專案代表你也有良好的 Pull Request 的訓練與習慣。對於多國協作上，你也更容易能適應相關團隊合作的方式。
+接下來會跟各位分享， LINE 台灣提供的學生實習機會。 讓許多同學可以在正統的開發流程下學習跨國產品與服務的開發，除了可以參與許多跨國團隊的合作外，更可以學習到許多資深前輩帶領下面對龐大流量下的設計概念。
 
 # 關於 LINE 學生實習機會: LINE TECH FRESH 介紹
 
@@ -140,12 +80,16 @@ LINE 台灣工程團隊每年透過 [LINE TECH FRESH – 技術新星人才計�
 
 - [Life in LINE – 直擊 TECH FRESH 實習內容！](https://engineering.linecorp.com/zh-hant/blog/life-in-line-tech-fresh-sharing/)
 
-- [TECHPULSE 2020 青春主場 – TECH FRESH 議程與攤位介紹](
+- [TECHPULSE 2020 青春主場 – TECH FRESH 議程與攤位介紹](https://engineering.linecorp.com/zh-hant/blog/techpulse-2020-tech-fresh-session/)
 
 # 同學們的相關詢問：
 
 
-## 1. 如何讓自己的 Github 容易被找到?
+## 1. 履歷的撰寫上是否需要美工排版？
+
+###  A:
+
+## 2. 履歷的準備上是否有頁數的限制？
 
 ###  A:
 
