@@ -56,11 +56,36 @@ Font 變成是同步下載，可以讓相關資料顯示的正確且美觀。
 
 Shopify 透過 Pre-load Font 達成 50% 的呈現速度（約為 1.2 秒)
 
-# Server Push 
+# Server Push  
+
+
+
+![image-20211007150722497](../images/2021/image-20211007150722497.png)
+
+- 即便改成這個方式，最大的時程依舊在整個 HTML 的取得與解析
+- 想要使用 Server Push 的話要確保:
+  - 該資料不需要認證（FONT File)
+  - 該資料不需要完整解開才能知道資料(也是因為 HTTPS 的原因)
+  - 
 
 
 
 
+
+
+
+# 103 Early Hints
+
+
+
+![image-20211007152227703](../images/2021/image-20211007152227703.png)
+
+- 跟 Server Push 一樣的好處
+- 比較簡單（大部分在 client / CDN)
+- 可以知道 Browser cache ， Browser 來決定是否要用
+- 讓 Client 決定是否抓下來資料
+
+# Priority Hints
 
 
 
