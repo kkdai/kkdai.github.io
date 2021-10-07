@@ -12,7 +12,9 @@ tags: ["TIL", " HTTP/2"]
 
 
 
-# 前提
+# 前題：
+
+
 
 
 
@@ -56,7 +58,7 @@ Font 變成是同步下載，可以讓相關資料顯示的正確且美觀。
 
 Shopify 透過 Pre-load Font 達成 50% 的呈現速度（約為 1.2 秒)
 
-# Server Push  
+# Server Push  面臨的問題
 
 
 
@@ -66,13 +68,25 @@ Shopify 透過 Pre-load Font 達成 50% 的呈現速度（約為 1.2 秒)
 - 想要使用 Server Push 的話要確保:
   - 該資料不需要認證（FONT File)
   - 該資料不需要完整解開才能知道資料(也是因為 HTTPS 的原因)
-  - 
 
+# Cache Digest 
 
+![image-20211007223749061](../images/2021/image-20211007223749061.png)
 
+究竟要如何讓 Server 知道到底哪些需要 Push 哪些不需要 Push? 
 
+### 原本問題：
 
+所有資料需要 Auth (HTTPS) ，沒解開前無法知道哪一些資料需要。哪些資料已經有了。
 
+### 解決方式：
+
+透過一個由 [Cuckoo Filter (具有機率性的資料結構，可以看我之前的整理)](https://www.evanlin.com/CuckooFilter/) 傳送到 Server 端，由 Server 來決定哪一些資料要送，哪一些不要。這樣的好處是，傳送的資料（高機率）是 client 真正缺少的資料，而非已經有的資料。
+
+### 參考資料：
+
+- [https://datatracker.ietf.org/meeting/99/materials/slides-99-httpbis-sessb-cache-digest-00](https://datatracker.ietf.org/meeting/99/materials/slides-99-httpbis-sessb-cache-digest-00)
+- RFC [https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-cache-digest](https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-cache-digest)
 
 # 103 Early Hints
 
@@ -87,8 +101,27 @@ Shopify 透過 Pre-load Font 達成 50% 的呈現速度（約為 1.2 秒)
 
 # Priority Hints
 
+![image-20211007225756585](../images/2021/image-20211007225756585.png)
+
+將資料本身直接給優先權 `importance` 透過這個方式來讓 client 能正確（且有順序的）讀取到 critical resource 。
+
+
+
+# HTTP/2 所帶來的問題
+
+HTTP/2 帶來很多優點，但是不完全沒有問題需要被解決。以下列出：
+
+- Resource Loading in browser is hard 
+- Performance is for humans, optimise for user experiences
+
+## 最後建議：
+
+![image-20211007230108746](../images/2021/image-20211007230108746.png)
 
 
 # Reference
 
-- 
+- [https://www.youtube.com/watch?v=cznVISavm-k](https://www.youtube.com/watch?v=cznVISavm-k)
+- [https://datatracker.ietf.org/meeting/99/materials/slides-99-httpbis-sessb-cache-digest-00](https://datatracker.ietf.org/meeting/99/materials/slides-99-httpbis-sessb-cache-digest-00)
+- [https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-cache-digest](https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-cache-digest)
+
