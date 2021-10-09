@@ -4,8 +4,7 @@ title: "[TIL][學習] 學習 HTTP2 Server Push - To push, or not to push?! - The
 description: ""
 category: 
 - TodayILearn
-- 機器學習
-tags: ["TIL", " HTTP/2"]
+tags: ["TIL", "HTTP/2"]
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/cznVISavm-k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
