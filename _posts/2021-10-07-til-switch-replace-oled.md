@@ -56,6 +56,10 @@ tags: ["TIL", "SWITCH"]
 
 這樣就可以拿去賣了。
 
+(2021/10/15 更新： 羅卡大大也發了影片，直接看會清楚很多)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/g_IB0FvCrBo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 
 # SWTICH OLED 款式的使用心得
