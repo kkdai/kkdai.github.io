@@ -59,7 +59,7 @@ remote:  !!    The go.mod file for this project does not specify a Go version
 remote:  !!    
 remote:  !!    Defaulting to go1.12.17
 remote:  !!    
-remote:  !!    For more details see: https://devcenter.heroku.com/articles/go-apps-with-modules#build-configuration
+remote:  !!    For more details see: htxtps://devcenter.heroku.com/articles/go-apps-with-modules#build-configuration
 remote:  !!    
 remote: -----> Using go1.12.17
 remote: -----> Determining packages to install
