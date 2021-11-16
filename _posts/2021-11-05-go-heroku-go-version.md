@@ -14,6 +14,8 @@ tags: ["Golang", "TIL"]
 
 ## 前言：
 
+原來 Heroku 上面 #Golang  的版本需要有特殊 define 才會正確的讀取到。不然都會使用 1.12。
+
 最近在改一隻 [LINE Bot](http://www.evanlin.com/go-ptt-bot/) 把原來已經不在 Heroku 支援的 MongoDB 改成 PostgreSQL ，想幫他加上免費的 PostgreSQL 但是遇到一些問題。先寫一下相關的學習。
 
 
