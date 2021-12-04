@@ -51,7 +51,36 @@ FQ就是「財務智商、理財知識」，是一個人駕馭金錢的能力。
 
 ## 章節條列
 
-- 
+### **Part 1 讓投資理財事半功倍的致富觀** / **Part 2 真正的懶人投資，最基礎的FQ──定存、外幣**
+
+這邊比較基本，就先跳過。但是真的是從基本的開始分享。
+
+### **Part 3 幫財富開外掛，打造被動收入──基金、股票**
+
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/V__cjhFm0L8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+這一篇教導了關於 K 線的詳細說明，解釋經常看到的 紅K 跟 黑Ｋ 代表的意思。 有可能是一根紅Ｋ但是卻沒有賺錢嗎？並且也解釋了 KD 代表的涵意。這一個影片讓我受益良多。
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/U_A95yWC2eI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+這一篇教導了關於定期定額可能發生的問題。以往定期定額最好是買在上升的股市，可以不斷有穩定的獲利。但是如果是買到不斷下蝶的趨勢，該如何自救呢：
+
+- 適度停利，停扣或是轉換目標。畢竟定期定額還是要有一個好的標的。 建議挑選成分股不斷調整的 ETF 為主。
+- 長期後的定期定額，容易產生僵化（後期投入影響層面變小）。
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/o-0HkEYKzUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+
+
+### **Part 4  比賺錢更困難的事：保持賺錢**
+
+
+
+
 
 
 ## 心得:
