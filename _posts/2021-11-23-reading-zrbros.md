@@ -28,7 +28,7 @@ tags: ["書海裡的漫遊", "Books"]
 
 # 前言:
 
-這一本是今年所讀完的第十四本書。
+這一本是今年所讀完的第十四本書。當初會知道這本書，當然就是長期有追蹤「[柴鼠兄弟 ZRBros](https://www.youtube.com/c/%E6%9F%B4%E9%BC%A0%E5%85%84%E5%BC%9FZRBros/featured)」頻道的。 必須老實說，當初會買這本書，單純是想支持「[柴鼠兄弟 ZRBros](https://www.youtube.com/c/%E6%9F%B4%E9%BC%A0%E5%85%84%E5%BC%9FZRBros/featured)」而已。 但是發現書本的內容整理的很好，文字口吻也相當的貼近並且有趣。蠻建議大家可以一起來看看。如果是股市的新人，一定要看他們的頻道來學基本常識。
 
 # 內容簡介與心得:
 
@@ -72,16 +72,34 @@ FQ就是「財務智商、理財知識」，是一個人駕馭金錢的能力。
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/o-0HkEYKzUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+購買 ETF 是許多新手（像我）的一開始入門方式，但是 ETF 有幾個問題一直讓我想不清楚：
 
+- 既然是追蹤指數，那麼市場上買賣的價位是由什麼來決定？
+- 如果因為太紅，遠遠超過指數本身會如何？
+- 成分股的調整方式，造成的結果？
 
-
+這些問題在這一部影片都有解釋，真的是相當實用的影片。也讓我了解「溢價」「折價」造成的 ETF 發行商需要主動出來控制股價的動作。也讓我在今年幾個 ETF  的溢價情形下，避免在高點入場的知識。
 
 ### **Part 4  比賺錢更困難的事：保持賺錢**
 
+```
+股神巴菲特曾經說過：「投資的第一法則，就是*不要賠錢*，第二法則就是不要忘記第一法則。」
+```
 
 
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xts2RJgWWc0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+這一篇讓許多新手知道一些錯誤的迷思：
+
+- 分批，分散，不要槓桿
+- 避免交易錯誤，知道你的交易員。
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5MdDbP0oH-0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+關於定期定額的風險控管部分，這些也很重要。
 
 
 ## 心得:
 
+買這本主要是支持作用，但是也稍微把整本都看完。確定自己的許多想法跟書上是沒有違背的，也避免讓自己有錯誤的理解。蠻推薦大家可以買這本書，讓你的理財智商（FQ）能夠迅速成長。
