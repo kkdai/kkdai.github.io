@@ -59,9 +59,17 @@ FQ就是「財務智商、理財知識」，是一個人駕馭金錢的能力。
 
 
 
+#### 關於股市 K 線圖，什麼是紅Ｋ，什麼是黑Ｋ:
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/V__cjhFm0L8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 這一篇教導了關於 K 線的詳細說明，解釋經常看到的 紅K 跟 黑Ｋ 代表的意思。 有可能是一根紅Ｋ但是卻沒有賺錢嗎？並且也解釋了 KD 代表的涵意。這一個影片讓我受益良多。
+
+
+
+#### 關於定期定額存股，可能產生的問題:
+
+
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/U_A95yWC2eI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -69,6 +77,8 @@ FQ就是「財務智商、理財知識」，是一個人駕馭金錢的能力。
 
 - 適度停利，停扣或是轉換目標。畢竟定期定額還是要有一個好的標的。 建議挑選成分股不斷調整的 ETF 為主。
 - 長期後的定期定額，容易產生僵化（後期投入影響層面變小）。
+
+#### ETF 的優點跟缺點：
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/o-0HkEYKzUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -78,7 +88,21 @@ FQ就是「財務智商、理財知識」，是一個人駕馭金錢的能力。
 - 如果因為太紅，遠遠超過指數本身會如何？
 - 成分股的調整方式，造成的結果？
 
+可以看這篇了解一下。
+
+#### 關於 ETF 的溢價跟折價：
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CYJPOHiC9gA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 這些問題在這一部影片都有解釋，真的是相當實用的影片。也讓我了解「溢價」「折價」造成的 ETF 發行商需要主動出來控制股價的動作。也讓我在今年幾個 ETF  的溢價情形下，避免在高點入場的知識。
+
+那麼要如何查詢「溢價」跟「折價」呢？
+
+![image-20211207001426151](../images/2021/image-20211207001426151.png)
+
+
+
+
 
 ### **Part 4  比賺錢更困難的事：保持賺錢**
 
