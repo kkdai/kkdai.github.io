@@ -51,7 +51,7 @@ ISBN: 9789571388304
 ### 推薦鏈結:
 
 - [YouTuber Cheap](https://www.youtube.com/channel/UCGGrblndNzi86WY5lJkQJiA)
-- [cheap書單 https://tinyl.io/4QSG](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbUcwSGhGbEJoWHdwVWtDRTY5eVBDMWJhcjgyZ3xBQ3Jtc0tuU1RpdWhyYU9iMnhSQllmWWt6Z0Vkc2JPQ1dfb2dzSmZYUHd5ZEVORlhTQXFLRUE2cGtIenk1aE9Mb3k4dTJCQVd0WlpVRGpjX3d2WDUzal8xM050bWhSYU51c3BSVkl2NHB4QmdlYjVDQ296TnlZOA&q=https%3A%2F%2Ftinyl.io%2F4QSG)
+- [cheap書單 Excel 列表，定期更新](https://tinyl.io/4QSG)
 
 # 內容簡介與心得:
 
