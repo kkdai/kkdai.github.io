@@ -109,7 +109,9 @@ ISBN: 9789571388304
 
 一直很喜歡透過有趣的方式來看待歷史，而這本透過稅務的徵收，造成社會現象的改變甚至是戰爭的興起。許多個故事都是之前沒有想像過的。真的覺得相當的有趣，也能看待稅務再也不是只是單純國家要收你的錢而已。 
 
+`2022/01/15 更新： 由於最近參加公司的讀書會，也錄影一段分享。懶得看文章的可以看影片。`
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VGsasooHRvc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## 參考網站：
 
