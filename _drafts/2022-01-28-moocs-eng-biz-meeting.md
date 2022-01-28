@@ -20,3 +20,17 @@ tags: ["Coursera", "English"]
 
 ## 第一週課程
 
+## What make meeting successful
+
+### Vocabulary for Meeting
+
+- Agenda
+  - Item for a meeting
+- Action items
+- Chair : Who is host the meeting
+- Meeting Minutes 
+
+### Internal Meeting
+
+- 
+
