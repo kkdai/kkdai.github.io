@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "[MOOC] 华盛顿大学- Business English: Meetings"
+title: "[MOOC] Georgia Tech Language Institute- Better Business Writing in English"
 description: ""
 category: 
 - Coursera
 tags: ["Coursera", "English"]
 ---
 
-![image-20220128133546790](../images/2021/image-20220128133546790.png)
+![image-20220128163717165](../images/2021/image-20220128163717165.png)
 
 ## 前言
 
@@ -15,22 +15,22 @@ tags: ["Coursera", "English"]
 
 ## 課程資源
 
-- [專業系列課程](https://www.coursera.org/specializations/business-english)
-- [Business English Meeting 課程表](https://www.coursera.org/learn/business-english-meetings/home/welcome)
+- [Business English Meeting 課程表](https://www.coursera.org/learn/business-writing-english/home/info)
 
 ## 第一週課程
 
-## What make meeting successful
+### Three suggestion of make your own voice:
 
-### Vocabulary for Meeting
+1. Focus your reader
+2. Write Actively 
+   1. 透過主動式（儘量用主動式動詞）
+3. Be Positive & Sincere 
+   1. Make sure the reader can see your smile in your writing.
 
-- Agenda
-  - Item for a meeting
-- Action items
-- Chair : Who is host the meeting
-- Meeting Minutes 
+### Transition words
 
-### Internal Meeting
+- And, But, So,  （需要考慮前後句關係）
+- 可以用 a; b 來取代連接詞
 
-- 
+
 
