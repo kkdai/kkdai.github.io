@@ -11,7 +11,7 @@ tags: ["GCP", "Hugo", "Blog"]
 
 
 
-![image-20220207094444681](../images/2021/image-20220207094444681.png)
+
 
 ## 前言:
 
@@ -21,11 +21,25 @@ tags: ["GCP", "Hugo", "Blog"]
 
 流程大多是依照 [Automatic Deployment of Hugo Sites on Firebase Hosting and Drafts on Cloud Run](https://developers.googleblog.com/2020/08/automatic-deployment-of-hugo-sites-on-firebase-hosting.html) 來修改成中文版本。
 
+### 開啟 Cloud Run 
 
 
 
 
 
+
+
+### 成品
+
+![image-20220207094444681](../images/2021/image-20220207094444681.png)
+
+你會發現有兩個 Cloud Run ，一個是你設定的 Trigger 。 第二個 `hugo-site`  就是透過設定跑起來 CICD 的 Cloud Run 。
+
+![image-20220207133557965](../images/2021/image-20220207133557965.png)
+
+點進去之後，你會看到上面有一個完整的 URL ，就是可以對外的網址。
+
+最後網站: [https://hello-hugo-master-khga4c2v3a-de.a.run.app](https://hello-hugo-master-khga4c2v3a-de.a.run.app)
 
 
 ## 相關文章：
