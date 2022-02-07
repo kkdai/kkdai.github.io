@@ -106,3 +106,4 @@ To setup your production / CDN'd site, [login to the firebase console](https://c
 
 - [Automatic Deployment of Hugo Sites on Firebase Hosting and Drafts on Cloud Run](https://developers.googleblog.com/2020/08/automatic-deployment-of-hugo-sites-on-firebase-hosting.html)
 - [Google CloudRun 打造 hugo 靜態網站環境，並搭配CICD持續部署，用多少收多少無基本費](https://www.minwt.com/website/server/22837.html)
+- [Running a Hugo generated site on Github Pages and Google Cloud Storage](https://tunzor.github.io/posts/hugo-on-gh-and-gcs/)
