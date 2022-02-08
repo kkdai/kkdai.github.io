@@ -45,7 +45,7 @@ tags: ["Coursera", "English"]
 - Opinions
 - Habit, routines
 
-#### 履歷表內的相關重點:
+#### 作業： 寫一個求職信 (Cover Letter) - 其中的相關重點:
 
 - **第一段: Greeting**
 
@@ -70,5 +70,7 @@ tags: ["Coursera", "English"]
 
   
 
+  
+  
   
 
