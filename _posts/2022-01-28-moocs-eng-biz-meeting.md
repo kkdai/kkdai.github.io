@@ -38,19 +38,3 @@ Course Learning Objectives
 ```
 
 
-
-### Three suggestion of make your own voice:
-
-1. Focus your reader
-2. Write Actively 
-   1. 透過主動式（儘量用主動式動詞）
-3. Be Positive & Sincere 
-   1. Make sure the reader can see your smile in your writing.
-
-### Transition words
-
-- And, But, So,  （需要考慮前後句關係）
-- 可以用 a; b 來取代連接詞
-
-
-
