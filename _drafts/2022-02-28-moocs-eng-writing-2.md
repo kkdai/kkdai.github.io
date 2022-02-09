@@ -9,13 +9,13 @@ tags: ["Coursera", "English"]
 
 ![image-20220128163717165](../images/2021/image-20220128163717165.png)
 
-## 前言
+# 前言
 
 
 
 
 
-## 相關文章
+# 相關文章
 
 - [[MOOC] Georgia Tech Language Institute- Better Business Writing in English - 第一週](https://www.evanlin.com/moocs-eng-writing-1/)
 - [[MOOC] Georgia Tech Language Institute- Better Business Writing in English - 第二週](https://www.evanlin.com/moocs-eng-writing-2/)
@@ -26,8 +26,9 @@ tags: ["Coursera", "English"]
 
 - [Business English Writing 課程表](https://www.coursera.org/learn/business-writing-english/home/info)
 
+# 第二週： 3 Key Parts of a Proposal
 
-## 第二週： Strong Sentences Part 1: Verb Tense & Parallel Structure
+## Strong Sentences Part 1: Verb Tense & Parallel Structure
 
 ### Verb Tense
 
