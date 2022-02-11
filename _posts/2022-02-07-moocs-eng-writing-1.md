@@ -9,7 +9,7 @@ tags: ["Coursera", "English"]
 
 ![image-20220128163717165](../images/2021/image-20220128163717165.png)
 
-## 前言
+# 前言
 
 忙完一個大活動後，最好的充電方式就是繼續充實自己（操自己）。剛好公司也有一些訓練補助，來挑了一下相關的商用英文訓練課程來看。 這一個我旁聽後覺得很推薦，就是傳授你如何做商業寫作文章。 注重在文章的文法，詞性跟相關的寫作概念。 可以讓你的寫作變得更有條理，也更不容易有文法上的失誤。
 
@@ -22,17 +22,18 @@ tags: ["Coursera", "English"]
   - [MOOC] Georgia Tech Language Institute- Better Business Writing in English - 第三週
   - [MOOC] Georgia Tech Language Institute- Better Business Writing in English - 第四週
 
-  ## 課程資源
+  # 課程資源
 
   - [Business English Writing 課程表](https://www.coursera.org/learn/business-writing-english/home/info)
 
-  ### 額外補稱
+  ## 額外補充
 
   - [https://www.thesaurus.com/](https://www.thesaurus.com/)  查詢同義字網站
   - [https://www.merriam-webster.com/dictionary/hone](https://www.merriam-webster.com/dictionary/hone) 字典，顯示用法與相關例句。
 
+# 第一週: Write to Share and Achieve Your Goals
 
-## 第一週: Sentense Types
+## Sentense Types
 
 ### Three suggestion of make your own voice:
 
@@ -51,13 +52,13 @@ tags: ["Coursera", "English"]
 
 - Make it easy to read, keep it in short and focus.
 
-#### 現在式：
+### 現在式：
 
 - Facts
 - Opinions
 - Habit, routines
 
-#### 作業： 寫一個求職信 (Cover Letter) - 其中的相關重點:
+### 作業： 寫一個求職信 (Cover Letter) - 其中的相關重點:
 
 - **第一段: Greeting**
 
