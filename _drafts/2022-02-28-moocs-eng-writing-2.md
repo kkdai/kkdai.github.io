@@ -31,7 +31,7 @@ tags: ["Coursera", "English"]
 - [https://www.thesaurus.com/](https://www.thesaurus.com/)  查詢同義字網站
 - [https://www.merriam-webster.com/dictionary/hone](https://www.merriam-webster.com/dictionary/hone) 字典，顯示用法與相關例句。
 
-# 第二週： 3 Key Parts of a Proposal
+# 第二週： Write Clear and Complete Reports
 
 ## Strong Sentences Part 1: Verb Tense & Parallel Structure
 
