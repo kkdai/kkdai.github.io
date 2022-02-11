@@ -26,6 +26,11 @@ tags: ["Coursera", "English"]
 
 - [Business English Writing 課程表](https://www.coursera.org/learn/business-writing-english/home/info)
 
+### 額外補稱
+
+- [https://www.thesaurus.com/](https://www.thesaurus.com/)  查詢同義字網站
+- [https://www.merriam-webster.com/dictionary/hone](https://www.merriam-webster.com/dictionary/hone) 字典，顯示用法與相關例句。
+
 # 第二週： 3 Key Parts of a Proposal
 
 ## Strong Sentences Part 1: Verb Tense & Parallel Structure
