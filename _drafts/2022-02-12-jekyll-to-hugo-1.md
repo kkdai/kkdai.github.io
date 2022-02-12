@@ -48,6 +48,28 @@ remote: Total 178 (delta 0), reused 0 (delta 0), pack-reused 178
 
 
 
+```
+.gitmodules 
+
+[submodule "themes/m10c"]
+	path = themes/m10c
+	url = https://github.com/vaga/hugo-theme-m10c.git
+```
+
+
+
+```
+baseURL = "/"
+languageCode = "en-us"
+
+title = "Blog E"
+name = "Evan Lin"
+description = "Attitude is everything"
+
+theme = "m10c"
+paginate = "10"
+```
+
 
 
 
