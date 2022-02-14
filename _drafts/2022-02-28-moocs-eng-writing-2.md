@@ -51,6 +51,26 @@ tags: ["Coursera", "English"]
 - e.g.
   - Our estiumates are accurate, detailed, and thorough. (Adj)
 
+#### Subject Verbs Agreement
+
+- 其實就是 he/she/it 搭配 verb + -s 來搭配相同類型。
+- 總是當成單數:
+  - One of ...
+  - Every ...
+  - Everyone / Everybody ...
+  - Each ...
+
+#### 相關時態的重點:
+
+- 年度報告請用 「過去式」，因為要陳述過去的成就。
+- 展望文件請用「未來式」，因為要敘述未來要完成的事情。
+
+
+
+
+
+
+
 
 
 
