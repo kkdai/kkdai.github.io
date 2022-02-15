@@ -74,12 +74,12 @@ tags: ["Coursera", "English"]
 - 是否能滿足客戶需求
 - 是否能清楚了解
 
-兩個背景可以擇一來寫：
+#### 兩個背景可以擇一來寫：
 
 - 你是人力需求提供人，你有很多有潛力的應徵者。你要推薦給某個 IT 公司。
 - 你的網站提供網站與 SNS 服務給在地端的商業，他們希望透過網路來提升形象。
 
-文章結構必須包括：
+#### 文章結構必須包括：
 
 - The writer uses verb tenses correctly. 
 -  The writer uses parallel structure correctly. 
