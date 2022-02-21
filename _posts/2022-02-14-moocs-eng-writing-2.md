@@ -11,9 +11,7 @@ tags: ["Coursera", "English"]
 
 # 前言
 
-
-
-
+[之前](https://www.evanlin.com/moocs-eng-writing-1/)有提到，大活動之後就開始學習一些基礎的英文技巧希望讓自己的表達更好。這次到了第二週的課程，課程教到了 Parallel Structure 跟 Subject-Verb agreement 。並且作業也很有趣，試著寫一個商業提案給你的客戶來爭取合作。
 
 # 相關文章
 
