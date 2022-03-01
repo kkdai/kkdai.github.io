@@ -16,6 +16,38 @@ tags: ["研討會心得", "LINE"]
 
 
 
+
+
+# 來 LINE 台灣企業參訪
+
+你知道 LINE 台灣的辦公室在哪裡嗎？ 好奇 LINE 台灣的工程團隊都是在如何的辦公環境工作呢？ 這裡我們也歡迎所有的學校單位來申請企業參訪。透過企業參訪同學們可以暸解：
+
+## LINE 台灣辦公室開放空間參觀：
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vy58Kabmus4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+
+
+LINE 工程團隊的企業文化重視的就是 「 Be Open 」「 Trust and Respective」 跟 「Take Ownership」。而在新辦公室的裝潢上也是充滿了相關的理念，重視著高度開放與同仁間彼此信任的設施。 歡迎每一位同學們來了解，來感受一下外商的辦公環境。
+
+這裡也分享許多 YouTuber 的影片給各位參考：
+
+- [台灣LINE辦公室的福利竟然比蘋果好！HR直接透露提高錄取率的方法！連我們都想來上班！](https://www.youtube.com/watch?v=u6Gt3gxHbS4)
+- [LINE總部海外第一大新家開箱！導演竟然邊拍邊應徵詢問職缺？福利好成這樣！](https://www.youtube.com/watch?v=YXQE84_6gJM&t=285s)
+- [LINE全球海外最大辦公室在台灣｜4公尺新熊大有 3 個不同｜全新LINE Studio創作者空間首度曝光](https://www.youtube.com/watch?v=LAul_sE0s5k) 
+
+
+
+## 工程團隊的介紹
+
+
+
+
+
+<img src="../images/2021/image-20220301163559895.png" alt="image-20220301163559895" style="zoom:33%;" />
+
 # 在 LINE 台灣技術實習 - TECHFRESH 介紹與相關福利
 
 
