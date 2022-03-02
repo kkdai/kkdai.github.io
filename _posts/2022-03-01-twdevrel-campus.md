@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[TW_DevRel] 關於 LINE 台灣 Developer Relations 的校園相關資源"
+title: "[TW_DevRel] 關於 LINE 台灣開發者關係與技術推廣部門的校園相關資源"
 description: ""
 category: 
 - 研討會心得
@@ -14,9 +14,13 @@ tags: ["研討會心得", "LINE"]
 
 # 前言
 
+大家好，我們是來自 LINE 台灣開發者關係與技術推廣部門 (Developer Relations)。從 2019 LINE 啟動了「開發社群計畫」之後，已經有三年的時間。期間舉辦了許多的校園招募，技術社群聚會活動與 LINE 平台開發分享活動。 本篇文章將針對校園相關的資源來做一個相關的說明，團隊也期待能與各地校園有更深入的合作計畫。本次文章將針對以下的部分加以說明：
 
-
-
+- 來 LINE 台灣企業參訪
+- LINE FRESH 校園競賽
+- 校園授課與分享 
+- 與學校共同舉辦的活動
+- 在 LINE 台灣技術實習 - TECHFRESH 介紹與相關福利
 
 # 來 LINE 台灣企業參訪
 
@@ -48,7 +52,7 @@ LINE 工程團隊的企業文化重視的就是 「 Be Open 」「 Trust and Res
 
 ### 如何申請校園企業參訪:
 
-想知道如何申請校園企業參訪嗎？ 歡迎各個系學會與相關社團發送各位的需求到這個連絡信箱。 [dl_twn_devrel@linecorp.com](mailto:dl_twn_devrel@linecorp.com)
+想知道如何申請校園企業參訪嗎？ 歡迎各個系學會與相關社團發送各位的需求到這個連絡信箱： [dl_twn_devrel@linecorp.com](mailto:dl_twn_devrel@linecorp.com)
 
 # LINE FRESH 校園競賽
 
@@ -79,11 +83,44 @@ LINE 工程團隊的企業文化重視的就是 「 Be Open 」「 Trust and Res
 
 ![image-20220302100338622](../images/2021/image-20220302100338622.png)
 
-你知道 LINE Dev 其實也接受相關的授課合作嗎? 只要是跟 LINE 平台開發技術相關的議題， LINE Dev 都歡迎老師們，系學會或是相關社團邀請我們。 不論是 LINE 台灣的開發工程團隊，或者是 LAE (LINE API Expert) LINE 官方認證的技術專家，我們都樂意到校園去授課，去了解個多同學與老師開發上的需求。
+你知道 LINE 台灣工程團隊其實也接受相關的授課合作嗎? 只要是跟 LINE 平台開發技術相關的議題， LINE 台灣工程團隊都歡迎老師們，系學會或是相關社團邀請我們。 不論是 LINE 台灣的開發工程團隊，或者是 LAE (LINE API Expert) LINE 官方認證的技術專家，我們都樂意到校園去授課，去了解個多同學與老師開發上的需求。
 
-### 如何申請校園企業參訪:
+### 如何申請校園授課與分享 
 
-想知道如何申請校園企業參訪嗎？ 歡迎各個系學會與相關社團發送各位的需求到這個連絡信箱。 [dl_twn_devrel@linecorp.com](
+想知道如何申請校園授課與分享嗎？ 歡迎各個系學會與相關社團發送各位的需求到這個連絡信箱： [dl_twn_devrel@linecorp.com](mailto:dl_twn_devrel@linecorp.com)
+
+# 與學校共同舉辦的活動
+
+除了許多與學校的授課活動與參訪外，其實 LINE 台灣也有許多跟校園共同舉辦或是贊助的活動。這裡列出兩個固定支持的相關活動，也歡迎更多校園活動來找我們合作。請將需求發送到這個連絡信箱： [dl_twn_devrel@linecorp.com](mailto:dl_twn_devrel@linecorp.com)
+
+## LINE Chatbot 對話機器人設計大賽 (國立台北商業大學)
+
+LINE PROTOSTAR 新星計劃攜手國立臺北商業大學聯合主辦的「2021 LINE Chatbot 對話機器人設計大賽」連續第三年舉行，本屆吸引超過60組團隊、240人次參與，並邀請各界專業人士、貴賓與評審共襄盛舉，於10月23日在桃園市政府青年事務局多功能展演廳舉行總決賽。10組入圍最終決賽的團隊，皆為來自學界與業界的各路高手。
+
+其中除了有相關競賽外， LINE 台灣工程團隊也提供了相關的技術授課說明，希望能讓每一個參與競賽的夥伴能夠了解該如何開發 LINE Chatbot 。
+
+### 相關報導
+
+- [LINE Chatbot 對話機器人設計大賽官方網站](https://contest.bhuntr.com/tw/fklc6b98o0ueubrzel/home/)
+
+- [《2021 LINE Chatbot 對話機器人設計大賽》決選結果出爐 由「魚事 - 關魚產銷的大小事」奪冠](https://linecorp.com/zh-hant/pr/news/zh-hant/2021/3964)
+
+- [【2020 LINE CHATBOT 對話機器人設計大賽】課程A 林宜鋒 工程師](https://www.youtube.com/watch?v=bOGDRl1NoVQ)
+
+  
+
+## 梅竹黑客松
+
+![img](https://engineering.linecorp.com/wp-content/uploads/2020/11/1025_1-1024x768.jpg)
+
+除了 LINE Chatbot 設計競賽外， LINE 台灣也與新竹市政府與梅竹黑客松的主辦單位連續合作兩年。2020 年除了有競賽前的工作坊之外，也在活動當天有到了會場擺攤與同學們相見歡。  2021 年雖然改成線上，但是熱情不減我們依舊可以感覺到同學們透過 LINE 平台想要打造出的創意與令人讚嘆的想法。
+
+## 相關資源:
+
+- [LINE 開發社群計畫: 2020/10/24 新竹 x 梅竹黑客松決賽 – LINE 競賽組別活動紀錄](https://engineering.linecorp.com/zh-hant/blog/meichu-2020-liff/)
+- [梅竹黑客松賽前企業工作坊 – LIFF shareTargetPicker](https://engineering.linecorp.com/zh-hant/blog/meichu-liff-share-target-picker-workshop/)
+
+
 
 # 在 LINE 台灣技術實習 - TECHFRESH 介紹與相關福利
 
@@ -95,14 +132,16 @@ LINE 工程團隊的企業文化重視的就是 「 Be Open 」「 Trust and Res
 
 LINE 台灣工程團隊每年透過 LINE TECH FRESH – 技術新星人才計劃，招募資訊科技相關科系，或對此領域有所涉略的大學生 / 研究生加入 LINE 團隊進行長期實習 (一年期)，讓同學們能在國際級科技公司中觀摩學習。LINE TECH FRESH 由經驗豐富的技術專案經理帶領團隊，接觸多元化的專案與產品開發，學習業界實際的軟體專案分工，並體驗跨國團隊合作。往年工作內容包含 server、web、mobile app、chatbot、IoT、data、DevOps 等領域，並透過實習熟悉 LINE 平台系統、SDK、API 等。值得一提的是，LINE TECH FRESH 是有給薪的實習機會，對於軟體開發有熱情、有想法的同學們，千萬別錯過這個揮灑創意與衝勁的機會！
 
-更多關於 LINE TECH FRESH 介紹文章有:
+### 更多關於 LINE TECH FRESH 介紹文章有:
 
 - [TECH FRESH 實習的一年間，除了開發還有什麼內部活動呢？](https://engineering.linecorp.com/zh-hant/blog/line-tech-fresh-2020-graduate/)
 - [【訪談】TECH FRESH 工作老實說 – 後續花絮與相關資訊整理](https://engineering.linecorp.com/zh-hant/blog/what-is-tech-fresh-interview/)
 - [Life in LINE – 直擊 TECH FRESH 實習內容！](https://engineering.linecorp.com/zh-hant/blog/life-in-line-tech-fresh-sharing/)
 - [TECHPULSE 2020 青春主場 – TECH FRESH 議程與攤位介紹](https://engineering.linecorp.com/zh-hant/blog/techpulse-2020-tech-fresh-session/)
 
+### 如何申請 LINE TECH FRESH 技術新星的實習計畫呢？
 
+對於 [TECH FRESH 計畫](https://careers.linecorp.com/jobs/83)有興趣並想了解內容，歡迎大家參考 [LINE Career 中的細節](https://careers.linecorp.com/jobs/83)。
 
 
 
@@ -124,4 +163,4 @@ LINE 今年年初在台灣啟動「LINE 開發社群計畫」，將長期投入�
 - [2019 年 LINE 開發社群計畫活動時程表](https://engineering.linecorp.com/zh-hant/blog/line-taiwan-developer-relations-2019-plan/)
 - [LINE Taiwan Developer Relations 2019 回顧與 2019 開發社群計畫報告](https://engineering.linecorp.com/zh-hant/blog/line-taiwan-developer-relations-2019/)
 - [2020 年 LINE 開發社群計畫活動時程表](https://engineering.linecorp.com/zh-hant/blog/2020-line-tw-devrel/)
-- [2021 年 LINE 開發社群計畫活動時程表 (持續更新)](https://engineering.linecorp.com/zh-hant/blog/2021-line-tw-devrel/)
+- [2021 年 LINE 開發社群計畫活動時程表](https://engineering.linecorp.com/zh-hant/blog/2021-line-tw-devrel/)
