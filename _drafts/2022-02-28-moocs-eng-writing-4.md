@@ -33,7 +33,20 @@ tags: ["Coursera", "English"]
 
 # 第四週： Oraganize, Write, and Design Effective Slides
 
+## 如何有效編排投影片：
 
+- 注意句數應該不要太多
+
+## How to Use Articles and Count/Non-count Nouns
+
+- 注意文章中的可數跟不可數的名詞
+- 不可數名詞要接 singular verb 
+
+## 相關資料
+
+- 商業英文書寫測驗網站 [http://www.businessenglishsite.com/business-english-grammar-tests.html]( http://www.businessenglishsite.com/business-english-grammar-tests.html)
+
+  
 
 ## 本週作業： 
 
