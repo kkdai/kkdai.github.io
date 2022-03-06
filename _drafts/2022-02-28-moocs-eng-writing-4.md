@@ -50,10 +50,20 @@ tags: ["Coursera", "English"]
 
 ## 本週作業： 
 
-- 準備一份英文商業投影片
-- 
+- 準備一份英文商業投影片(真的要繳交一份英文投影片)
 
+- 提供一個問題的解決方案
 
+- 需要有以下特殊句型：
+
+  - Parallel structre
+  - Use artucles 
+  - Use correct sybject verb agreement 
+  - Use correct capitalization and spelling
+
+- 完成證書：
+
+  
 
 # 其他的類似學習資源：
 
