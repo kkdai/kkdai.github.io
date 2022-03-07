@@ -18,7 +18,7 @@ tags: ["Coursera", "English"]
 - [[MOOC] Georgia Tech Language Institute- Better Business Writing in English - 第一週](https://www.evanlin.com/moocs-eng-writing-1/)
 - [[MOOC] Georgia Tech Language Institute- Better Business Writing in English - 第二週](https://www.evanlin.com/moocs-eng-writing-2/)
 - [[MOOC] Georgia Tech Language Institute- Better Business Writing in English - 第三週](https://www.evanlin.com/moocs-eng-writing-3/)
-- [MOOC] Georgia Tech Language Institute- Better Business Writing in English - 第四週
+- [[MOOC] Georgia Tech Language Institute- Better Business Writing in English - 第四週](https://www.evanlin.com/moocs-eng-writing-4/)
 
 ## 課程資源
 
