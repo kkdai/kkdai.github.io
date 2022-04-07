@@ -28,7 +28,11 @@ tags: ["書海裡的漫遊", "Books", "History"]
 
 # 前言:
 
-這一本是今年所讀完的第七本書。
+這一本是今年所讀完的第七本書。呂捷是知名的補教名師，我也是在網路文章跟一些節目中有聽過他的大名。畢竟網路上經常在瘋傳他講歷史課生動有趣的樣子。想說就買這本來看看，當作我平常手邊的閒書之一（也就是看書看累了，調劑身心用的書）。
+
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4BWPTXHDiSU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # 內容簡介與心得:
 
@@ -42,27 +46,14 @@ tags: ["書海裡的漫遊", "Books", "History"]
 
 ## 章節條列
 
-### 第1章　這不是歷史是考古：史前時代
-
-
-
-### 第2章　傳說不只是傳說：三皇五帝與夏
-
-
-
-### 第3章 史上第一次革命：商湯伐桀
-
-
-
-###  第4章 制禮作樂定江山：西周
-
-
-
-### 第5章 亂世出英雄：春秋戰國
-
-
-
-### 第6章 真正的自由中國：諸子百家爭鳴
+```
+第1章　這不是歷史是考古：史前時代
+第2章　傳說不只是傳說：三皇五帝與夏
+第3章 史上第一次革命：商湯伐桀
+第4章 制禮作樂定江山：西周
+第5章 亂世出英雄：春秋戰國
+第6章 真正的自由中國：諸子百家爭鳴
+```
 
 
 
