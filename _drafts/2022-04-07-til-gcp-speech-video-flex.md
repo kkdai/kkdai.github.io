@@ -19,6 +19,8 @@ tags: ["GCP", "Hugo", "Blog"]
 
 這邊透過一些開發流程，來跟各位分享該如何在 LINE 聊天機器人中來完成這樣的開發：
 
+如何在 Heroku 上面開發 Golang 的
+
 ## 如何 LINE 聊天對話中的影片或是聲音檔案
 
 首先，當你收到圖片訊息(image)，影片訊息(video) 或是聲音訊息(audio) 的時候，通常會透過以下幾個 Message Hook.
