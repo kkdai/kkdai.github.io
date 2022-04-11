@@ -36,7 +36,21 @@ tags: ["GCP", "Hugo", "Blog"]
 
 以下提供範例的 Golang 程式碼，來展示如何取得上傳到 LINE 平台的影片檔案內容：
 
+```go
+	for _, event := range events {
+		if event.Type == linebot.EventTypeMessage {
+			switch message := event.Message.(type) {
+			.......
+      case *linebot.VideoMessage:
+              //Get Video binary from LINE server based on message ID.
+              content, err := bot.GetMessageContent(message.ID).Do()
+              if err != nil {
+                log.Println("Got GetMessageContent err:", err)
+              }
+              defer content.Content.Close()
+```
 
+這個方式就可以取得檔案餓 IO Reader 內容，就可以透過 `content` 這個 IO Reader 來將檔案抓下來，或是直接上傳到 Google Cloud Storage 。
 
 ## 如何將檔案到 Google Cloud Storage
 
