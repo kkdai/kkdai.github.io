@@ -19,7 +19,9 @@ tags: ["GCP", "Hugo", "Blog"]
 
 這邊透過一些開發流程，來跟各位分享該如何在 LINE 聊天機器人中來完成這樣的開發：
 
-如何在 Heroku 上面開發 Golang 的
+## 如何在 Heroku 上面開發 Golang 的 App 
+
+
 
 ## 如何 LINE 聊天對話中的影片或是聲音檔案
 
@@ -52,7 +54,7 @@ tags: ["GCP", "Hugo", "Blog"]
               defer content.Content.Close()
 ```
 
-這個方式就可以取得檔案餓 IO Reader 內容，就可以透過 `content` 這個 IO Reader 來將檔案抓下來，或是直接上傳到 Google Cloud Storage 。
+這個方式就可以取得檔案的 IO Reader 內容，就可以透過 `content` 這個 IO Reader 來將檔案抓下來，或是直接上傳到 Google Cloud Storage 。
 
 ## 如何將檔案到 Google Cloud Storage
 
