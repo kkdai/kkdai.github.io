@@ -21,11 +21,13 @@ tags: ["GCP", "Hugo", "Blog"]
 
 ## 如何在 Heroku 上面開發 Golang 的 App 
 
+![image-20220412143245984](../images/2021/image-20220412143245984.png)
 
+以往的時候，如果要使用 Google Cloud 相關的 API (比如說: Google Cloud Storage) 存取 API ，只能透過 JSON 檔案來操作。但是如果你想要放上 Heroku 的時候，就必須要放上 GitHub ，這個時候就很容易不小心誤放 JSON 檔案而被機器人掃走而盜用。透過環境變數跟 Golang Buildpack 可以幫助你在安全無慮的狀況下部署 Herokuu 專案，也可以開源到 Github ，歡迎[參考這篇文章](https://www.evanlin.com/til-heroku-gcp-key/)。
 
-## 如何 LINE 聊天對話中的影片或是聲音檔案
+## 如何投過官方帳號 (Official Account) 來抓取 LINE 聊天對話中的影片或是聲音檔案
 
-首先，當你收到圖片訊息(image)，影片訊息(video) 或是聲音訊息(audio) 的時候，通常會透過以下幾個 Message Hook.
+首先，當官方帳號收到圖片訊息(image)，影片訊息(video) 或是聲音訊息(audio) 的時候，通常會透過以下幾個 Message Hook.
 
 - [Image Messagge Webhook](https://developers.line.biz/en/reference/messaging-api/#wh-image)
 - [Video Message Webhook](https://developers.line.biz/en/reference/messaging-api/#message-event)
