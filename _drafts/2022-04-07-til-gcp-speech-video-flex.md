@@ -13,6 +13,10 @@ tags: ["GCP", "golfing", "Blog"]
 
 大家好，我是 LINE 台灣的資深技術推廣工程師的 Evan Lin 。 
 
+
+
+# 解決的問題痛點
+
 # Demo (展示) :
 
 # 開發流程記錄：
@@ -64,6 +68,55 @@ tags: ["GCP", "golfing", "Blog"]
 
 ## 如何將檔案上傳到 Google Cloud Storage
 
+<script src="https://gist.github.com/kkdai/9b8a82ccdf1294d8a7ae5f7999fd42f4.js"></script>
+
+
+
+先看程式碼，以下幾件事情要注意：
+
+- 需要有 cancel 的 context 避免上傳時間過久，造成 API Error 。
+- 依照前一個檔案範例，其實可以直接拿 `bot.GetMessageContent(message.ID).Do()` 裡面的 `content` IO Reader 來使用。不需要真的下載到本地端後，再上傳到 GCS 。
+- 上傳到 GCS 的檔名，建議不要重複了。 可以使用以下方式來產生唯一的名字。 
+
+```go
+func buildFileName() string {
+	return time.Now().Format("20060102150405")
+}
+```
+
+上傳到 GCS 之後，就可以進入下一個階段，將檔案送到 STT 服務 - Google Speech-To-Text 來判斷。
+
+## 如何將讓 STT 服務來判斷檔案裡面的文字
+
+### 透過 STT console 線上測試你的檔案
+
+<img src="../images/2021/image-20220413163042927.png" alt="image-20220413163042927" style="zoom:33%;" />
+
+這裡以 [Google Speech To Text](https://cloud.google.com/speech-to-text?hl=zh-tw) 為例子，先到控制台打開相關服務後到 [Speech Console](https://console.cloud.google.com/speech) 。並且可以在控制台上直接上傳測試一段小影片，這邊有幾個參數可以解釋一下：
+
+- 檔案選擇上，可以 `選擇 MP4 來作為 STT 的判斷檔案，只要 Audio Encoding 選擇正確就好` 。 
+- **Encoding** :記得選 **MP3**， 不然通常都會有問題。 iPhone  手機都是 MP4 container 加上 MP3 Audio Encoding 。
+- **Sample Rate** : 記得選 48000 
+
+<img src="../images/2021/image-20220413163735523.png" alt="image-20220413163735523" style="zoom:33%;" />
+
+
+
+下一個項目也有一些可以調整：
+
+- **Spoken language**: 記得選 zh-TW ，除非你講英文錄影。
+- **Transcription model**:選擇  Default 其實就很夠用。
+
+以上流程大概就是一個讓你透過 Console 來測試你的音訊檔案，這邊有幾件事情可以注意到。
+
+- Google STT 可以直接吃影片檔案，不用自己跑音訊擷取。
+- Google STT 可以直接吃影片檔案，不用自己跑音訊擷取。
+- Google STT 可以直接吃影片檔案，不用自己跑音訊擷取。
+
+並且要注意你的 Sample Rate 不要挑選錯誤。才能讓聲音正確被讀取到。
+
+## 使用 Go GCP STT SDK 來判斷
+
 
 
 
@@ -93,7 +146,7 @@ tags: ["GCP", "golfing", "Blog"]
 https://storage.googleapis.com/{{BucketName}}/{{ObjectName}}
 ```
 
-所以可以寫成一個簡單的 function ，來幫你結合。
+所以可以寫成一個簡單的 function ，來幫你產生。
 
 
 
