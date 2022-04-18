@@ -17,7 +17,17 @@ tags: ["GCP", "golfing", "Blog"]
 
 # 解決的問題痛點
 
-# Demo (展示) :
+# 如何用？如何架設？ :
+
+
+## 開源程式碼：
+不囉唆，先來看 code 。
+
+#### 開源程式碼： [https://github.com/kkdai/linebot-video-gcp]( https://github.com/kkdai/linebot-video-gcp)
+
+如何
+
+
 
 # 開發流程記錄：
 
@@ -117,9 +127,68 @@ func buildFileName() string {
 
 ## 使用 Go GCP STT SDK 來判斷
 
+首先要使用 Speech To Text 的 client API 來處理內容，需要有一個檔案位置。 為了讓網路處理比較快速，這裡改用 Google Cloud Storage 內部的 File URI 的方式。可以參考以下組成方式：
 
+```go
+	// The path to the remote audio file to transcribe.
+	fileURI := fmt.Sprintf("gs://%s/%s", c.bucketName, c.objectName)
+```
 
+接下來跟大家分享一下部分的程式碼：
 
+<script src="https://gist.github.com/kkdai/f014d96504bf490eb4308115339b338f.js"></script>
+
+這邊有些重要的事情跟大家分享:
+
+### 1. 必須使用 beta SDK 才能支援中文與 MP3 
+
+```
+// Must use "apiv1p1beta1" version to enable support on Chinese and MP3
+speech "cloud.google.com/go/speech/apiv1p1beta1" //v1p1beta1
+speechpb "google.golang.org/genproto/googleapis/cloud/speech/v1p1beta1" //v1p1beta1
+```
+
+目前 Golang 的 Speech SDK 尚未支援中文，所以必須要使用 beta1 的才能找到中文支援！
+目前 Golang 的 Speech SDK 尚未支援中文，所以必須要使用 beta1 的才能找到中文支援！
+目前 Golang 的 Speech SDK 尚未支援中文，所以必須要使用 beta1 的才能找到中文支援！
+
+這邊依據了這篇文章有提到，終於讓我找到解決方式。 「[iThome 鐵人賽 - Day 23 Google Cloud Speech-to-Text - 子系列最終章](https://ithelp.ithome.com.tw/articles/10223077?sc=iThelpR)」
+
+### 2. 關於 STT 的設定
+
+這邊已經透過 STT 控制台針對經常出現的檔案來測試，所以得出了以下的相關設定
+
+```
+Config: &speechpb.RecognitionConfig{
+			Encoding:        speechpb.RecognitionConfig_MP3,
+			SampleRateHertz: 48000,
+			LanguageCode:    "zh-TW",
+		}
+```
+
+- **Encoding**: 指的是音樂壓縮的格式，請注意只有 `v1p1beta1 才支援 MP3` 
+
+- **SampleRateHertz**: 取樣的 sample rate ，手機跟相機通常都使用 48000
+
+- **LanguageCode**: 這邊是指 STT 使用的 Model 語言包，請注意只有 `v1p1beta1 才支援中文 zh-TW` 
+
+### 3. 關於結果的使用
+
+```
+// Prints the results.
+	var resultStr string
+	for _, result := range resp.Results {
+		for _, alt := range result.Alternatives {
+			log.Printf("\"%v\" (confidence=%3f)\n", alt.Transcript, alt.Confidence)
+			resultStr = resultStr + alt.Transcript + " "
+		}
+	}
+```
+
+回傳的一系列的結果，並且有附上信心度。所以要一個個找出來處理。這邊有些東西建議要特別處理：
+
+- `resp.Results` 有可能是空的（因為沒有適當的答案），使用上需要特別處裡 empty case 。
+- 使用答案前，記得要看一下信心度是否夠高。
 
 ## 如何取得 GCS 對外的公開位置
 
@@ -148,7 +217,34 @@ https://storage.googleapis.com/{{BucketName}}/{{ObjectName}}
 
 所以可以寫成一個簡單的 function ，來幫你產生。
 
+## 如何發送 Video Flex Component Message 
 
+![image-20220418125020910](../images/2021/image-20220418125020910.png)
+
+這邊的 Video Componet Flex Message 格式如下：
+
+- Hero 本體有一個 Video Component ，並且上面有 「 More Information 」可以讓開發者連結到更多資訊的網站。可以是官方網站，或是相關的說明。
+- 下面 Body 中友文字有兩段，其中有翻譯的內容。
+
+<script src="https://gist.github.com/kkdai/5adc799f47a4644123be5c5aac80d724.js"></script>
+
+這邊給大家一些經驗分享：
+
+- 如果影片沒有 `PreviewURL` 可以先給一個範例，使用者播放一次影片後，會出現正確的 Preview 。
+- 如果有 TextComponent 要特別處理 empty 的 case ，不然會造成以下類似的 error message ：
+
+```
+> 2022/04/13 06:19:44 linebot: APIError 400 A message (messages[0]) in the request body is invalid
+> [/body/contents/1/contents/1] invalid text content
+>  [/body/contents/1/contents/1] `text` or `contents` must be specified
+```
+
+- 由於 Google STT 需要超過一分鐘左右的存取跟偵測的時間，建議使用 PushMsg 來回覆這則訊息。
+- 如果使用
+
+
+
+ 未來相關工作
 
 
 
