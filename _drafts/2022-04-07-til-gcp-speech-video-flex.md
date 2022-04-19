@@ -7,13 +7,15 @@ category:
 tags: ["GCP", "golfing", "Blog"]
 ---
 
-<img src="../images/2021/image-20220407212250046.png" alt="image-20220407212250046" style="zoom:50%;" />
+![Video component example](https://developers.line.biz/assets/img/video.fd15dfd4.png)
+
+
+
+
 
 # 前言:
 
-大家好，我是 LINE 台灣的資深技術推廣工程師的 Evan Lin 。 
-
-
+大家好，我是 LINE 台灣的資深技術推廣工程師的 Evan Lin 。 [Flex Message Update 3](https://developers.line.biz/en/news/2022/03/11/flex-message-update-3-released/) 在日前公佈了，除了帶來更多樣的客製化項目。 最讓人注意的莫過於可以在 Flex Message 中顯示影片元件的[ Flex Message including a video](https://developers.line.biz/en/docs/messaging-api/create-flex-message-including-video/) 了。本篇文章將透過一個長輩使用 LINE 來跟家裡人溝通很常看到的案例，並且展示如何透過 STT 的技術來讓 Flex Message 顯示更多，更有用的資訊來幫助你。
 
 # 解決的問題痛點
 
@@ -25,7 +27,9 @@ tags: ["GCP", "golfing", "Blog"]
 
 #### 開源程式碼： [https://github.com/kkdai/linebot-video-gcp]( https://github.com/kkdai/linebot-video-gcp)
 
-如何
+## 如何快速架設在自己平台：
+
+
 
 
 
@@ -240,18 +244,26 @@ https://storage.googleapis.com/{{BucketName}}/{{ObjectName}}
 ```
 
 - 由於 Google STT 需要超過一分鐘左右的存取跟偵測的時間，建議使用 PushMsg 來回覆這則訊息。
-- 如果使用
+- 在訊息的目標方面，針對群組（聊天室）需要有特殊處理：
+
+```
+				// Determine the push msg target.
+				target := event.Source.UserID
+				if event.Source.GroupID != "" {
+					target = event.Source.GroupID
+				} else if event.Source.RoomID != "" {
+					target = event.Source.RoomID
+				}
+```
+
+這樣就可以完成相關的工作，請大家可以來透過開源的程式碼自己來部署。  [https://github.com/kkdai/linebot-video-gcp]( https://github.com/kkdai/linebot-video-gcp)
+
+## 成果
+
+<img src="../images/2021/image-20220407212250046.png" alt="image-20220407212250046" style="zoom:50%;" />
 
 
-
- 未來相關工作
-
-
-
-
-
-
-# 相關文章：
+## 相關技術文件：
 
 - [GCS Doc: Make data public](https://cloud.google.com/storage/docs/access-control/making-data-public)
 - [iThome 鐵人賽 - Day 23 Google Cloud Speech-to-Text - 子系列最終章](https://ithelp.ithome.com.tw/articles/10223077?sc=iThelpR)
@@ -259,6 +271,28 @@ https://storage.googleapis.com/{{BucketName}}/{{ObjectName}}
 - [GCP: Speech-to-Text client libraries](https://cloud.google.com/speech-to-text/docs/libraries?hl=zh-tw#client-libraries-resources-go)
 -  [Stackoverflow: How do I retrieve a file from GCS using a browser if all I know is the gs scheme URI?](https://stackoverflow.com/questions/34214491/how-do-i-retrieve-a-file-from-gcs-using-a-browser-if-all-i-know-is-the-gs-scheme)
 
+
+# 未來相關工作
+
+這一篇文章透過大家經常聽到的功能 STT (Speech-To-Text) 結合這一次  [Flex Message Update 3 released](https://developers.line.biz/en/news/2022/03/11/flex-message-update-3-released/) 所更新的新功能 Video Component ，希望可帶給大家更多的想法，進而開發出更多可以幫助使用者的工具。
+
+其實有更多的點子可以讓大家一起來協作，比如說：
+
+- 透過 OA 自動上字幕的功能
+- 透過 Video Component 讓廣告文字變得更生動，因為上面有客製化選單，如何讓使用者透過 Video 跟影片互動變成遊戲也變成一個方式。也是一個很值得思考的。
+
+如果你有任何建議或是疑問，歡迎透過 [LINE Developers 的官方討論區](https://www.facebook.com/groups/linebot)或是[LINE 開發者官方社群的官方帳號跟我們聯絡](https://lin.ee/qZRsSTG)。
+
+
+# LINE Developers 相關技術文件與部落格：  
+
+- [[新聞\] Flex Message Update 3 released](https://developers.line.biz/en/news/2022/03/11/flex-message-update-3-released/)
+
+-  [文件: Creating a Flex Message including a video](https://developers.line.biz/en/docs/messaging-api/create-flex-message-including-video/)
+
+- [部落格: 2022 年 Flex Message 的 3 項新功能 LINE 中訊息設計釋放無限自由](https://engineering.linecorp.com/zh-hant/blog/2022-flex-message-v3/)
+
   
 
    
+
