@@ -29,7 +29,24 @@ tags: ["GCP", "golfing", "Blog"]
 
 ## 如何快速架設在自己平台：
 
+請根據以下的流程，來直接透過開源的程式碼來架設一個 LINE Bot 跟 GCP  STT 與 GCS (Google Cloud Storage) 的結合。
 
+### 事前準備
+
+- [LINE Developers 帳號](https://developers.line.biz/console/)
+  - 到 [LINE Developers Console](https://developers.line.biz/console/) 透過你的 LINE 帳號登入。
+  - 開啟 LINE Developers 帳號
+  - 開啟一個官方帳號 Message API Channel 並且取得 `channel secret` 與 `channel access token`。 請[參考這篇教學](https://developers.line.biz/en/docs/messaging-api/getting-started/#using-console)。
+- 需要一個免費的 [Heroku](https://dashboard.heroku.com/) 帳號。
+- 需要一個收費的 [Google Cloud Platform](https://cloud.google.com/) 帳號，並且取得 GCP JSON key file ，更多詳細流程請參考 [Cloud Storage client libraries](https://cloud.google.com/storage/docs/reference/libraries)。
+
+### 開始部署
+
+1. 請先到程式碼:  [https://github.com/kkdai/linebot-video-gcp]( https://github.com/kkdai/linebot-video-gcp)
+
+2. 按下： 
+
+   ## 
 
 
 
