@@ -19,6 +19,8 @@ tags: ["GCP", "golfing", "Blog"]
 
 # 解決的問題痛點
 
+不知道大家是否有類似的問題，有一些長輩或是朋友們由於可能不方便打字，經常都透過語音訊息來溝通。但是許多時候其實是不方便打開手機音量來「聽訊息」或者是「看語音影片」的，比如說在捷運上，或是在會議之中。 這個時候，經常會想到說是否有一個方便的服務可以透過上傳影片（或是語音檔案）的方式。 透過 STT ( Speech-To-Text )的技術來幫影片中的語音翻譯出文字，並且透過 LINE 這次開放的  [Flex Message Update 3](https://developers.line.biz/en/news/2022/03/11/flex-message-update-3-released/)  新格式 ，來讓使用者更快看得到你的訊息內容，而不需要打開影片內容。
+
 # 如何用？如何架設？ :
 
 
@@ -70,7 +72,13 @@ tags: ["GCP", "golfing", "Blog"]
 
 ### 如何使用:
 
+- 打開聊天機器人
+- 傳送影片訊息
+- 過一兩秒的判別時間，就會收到結果的 Flex Message
 
+### 成果
+
+<img src="../images/2021/image-20220407212250046.png" alt="image-20220407212250046" style="zoom:50%;" />
 
 # 開發流程記錄：
 
@@ -297,9 +305,7 @@ https://storage.googleapis.com/{{BucketName}}/{{ObjectName}}
 
 這樣就可以完成相關的工作，請大家可以來透過開源的程式碼自己來部署。  [https://github.com/kkdai/linebot-video-gcp]( https://github.com/kkdai/linebot-video-gcp)
 
-## 成果
 
-<img src="../images/2021/image-20220407212250046.png" alt="image-20220407212250046" style="zoom:50%;" />
 
 
 ## 相關技術文件：
