@@ -111,19 +111,7 @@ tags: ["GCP", "golfing", "Blog"]
 
 以下提供範例的 Golang 程式碼，來展示如何取得上傳到 LINE 平台的影片檔案內容：
 
-```go
-	for _, event := range events {
-		if event.Type == linebot.EventTypeMessage {
-			switch message := event.Message.(type) {
-			.......
-      case *linebot.VideoMessage:
-              //Get Video binary from LINE server based on message ID.
-              content, err := bot.GetMessageContent(message.ID).Do()
-              if err != nil {
-                log.Println("Got GetMessageContent err:", err)
-              }
-              defer content.Content.Close()
-```
+<script src="https://gist.github.com/kkdai/ad453ee5162c3c5cdd20319323d7573e.js"></script>
 
 這個方式就可以取得檔案的 IO Reader 內容，就可以透過 `content` 這個 IO Reader 來將檔案抓下來，或是直接上傳到 Google Cloud Storage 。
 
@@ -139,11 +127,7 @@ tags: ["GCP", "golfing", "Blog"]
 - 依照前一個檔案範例，其實可以直接拿 `bot.GetMessageContent(message.ID).Do()` 裡面的 `content` IO Reader 來使用。不需要真的下載到本地端後，再上傳到 GCS 。
 - 上傳到 GCS 的檔名，建議不要重複了。 可以使用以下方式來產生唯一的名字。 
 
-```go
-func buildFileName() string {
-	return time.Now().Format("20060102150405")
-}
-```
+<script src="https://gist.github.com/kkdai/660fec606ea7410654548255d7306cbb.js"></script>
 
 上傳到 GCS 之後，就可以進入下一個階段，將檔案送到 STT 服務 - Google Speech-To-Text 來判斷。
 
@@ -275,7 +259,7 @@ https://storage.googleapis.com/{{BucketName}}/{{ObjectName}}
 這邊的 Video Componet Flex Message 格式如下：
 
 - Hero 本體有一個 Video Component ，並且上面有 「 More Information 」可以讓開發者連結到更多資訊的網站。可以是官方網站，或是相關的說明。
-- 下面 Body 中友文字有兩段，其中有翻譯的內容。
+- 下面 Body 中有文字有兩段，其中有翻譯的內容。
 
 <script src="https://gist.github.com/kkdai/5adc799f47a4644123be5c5aac80d724.js"></script>
 
