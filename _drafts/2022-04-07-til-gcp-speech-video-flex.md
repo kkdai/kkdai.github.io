@@ -43,12 +43,32 @@ tags: ["GCP", "golfing", "Blog"]
 ### 開始部署
 
 1. 請先到程式碼:  [https://github.com/kkdai/linebot-video-gcp]( https://github.com/kkdai/linebot-video-gcp)
+2. 按下： "Deploy" 來部署到你的 Heroku 帳號
+   ![image-20220421101405675](../images/2021/image-20220421101405675.png)
+3. 除了填寫 App Name 以外，以下的參數必須要填入才能完整運行。
 
-2. 按下： 
+   1. **ChannelAccessToken**: 請到 LINE Developers Console issue 一個。
+   2. **ChannelSecret**: 請到 LINE Developers Console 拿一個。
+   3. **GCS_BUCKET_NAME**: Google Cloud Storage Bucket Name 你需要先建立一個 GCS bucket 並且依照稍後文章的內容來改成 public access 。
+   4. **GCS_PROJECT_ID**: Google Cloud Storage Project ID
+   5. **GOOGLE_APPLICATION_CREDENTIALS**: 這是必須要填寫，請勿修改。
+   6. **GOOGLE_CREDENTIALS**: 這邊請將 GCP JSON key file 的內容（對～就是整包檔案裡面的 JSON 資料），全部放上去。這樣是比較安全的。
+4. 請到 LINE 官方帳號的平台，到了右上角的「設定」中，選擇「帳號設定」
+   1. 將你官方帳號基本資料設定好，並且打開加入群組功能。
+      1. ![image-20220421103018014](../images/2021/image-20220421103018014.png)
+   
+   2. 到回應設定，將以下設定改好：
+      1. ![image-20220421103154889](../images/2021/image-20220421103154889.png)
+      2. 回應模式改成「聊天機器人」
+      3. 停用「自動回應訊息」
+      4. 啟用「Webhook」
+   3. 到 Messaging API 選項，將 Webhook 網址填入`: https://{YOUR_HEROKU_SERVER_ID}.herokuapp.com/callback
+   4. 關於如何快速部署的流程，可以參考另外一篇文章內的影片：
+     - [How to deploy LINE BotTemplate](https://www.youtube.com/watch?v=0BIknEz1f8k)
+     - [Hoe to modify your LINE BotTemplate code](https://www.youtube.com/watch?v=ckij73sIRik)
+   
 
-   ## 
-
-
+### 如何使用:
 
 
 
