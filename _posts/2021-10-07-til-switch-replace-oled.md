@@ -4,6 +4,7 @@ title: "[TIL][學習] 購買 SWITCH OLED 主機後，如何安全更換你的 SW
 description: ""
 category: 
 - TodayILearn
+- 遊戲天國
 tags: ["TIL", "SWITCH"]
 ---
 
