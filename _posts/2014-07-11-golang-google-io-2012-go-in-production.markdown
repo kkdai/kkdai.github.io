@@ -1,6 +1,5 @@
 ---
 layout: post
-layout: post
 author: kkdai
 comments: true
 date: 2014-07-11 01:24:45+00:00
@@ -314,5 +313,4 @@ categories:
 
 
   * [http://www.slideshare.net/weijr/coscup2013](http://www.slideshare.net/weijr/coscup2013) [COSCUP2013] Python, F#, Golang and Friends
-
 

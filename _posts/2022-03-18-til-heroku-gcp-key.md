@@ -4,7 +4,7 @@ title: "[學習文件] 如何在 Heroku 上面使用透過 Golang 來存取 Goog
 description: ""
 category: 
 - 學習文件
-tags: ["GCP", "Hugo", "Blog"]
+tags: ["GCP", "Hugo", "Blog", "golang"]
 ---
 
 ![image-20220321200254901](../images/2021/image-20220321200254901.png)
