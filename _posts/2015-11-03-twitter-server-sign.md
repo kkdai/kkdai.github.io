@@ -26,7 +26,7 @@ tags: [go, three-legged-auth]
 
 ## 關於Twitter的Three-legged Authentication
 
-![](https://g.twimg.com/dev/sites/default/files/images_documentation/sign-in-oauth-1_0.png)
+![How To Implement Sign in With Twitter - Web Solutions Blog](https://cdn.acodez.in/wp-content/uploads/2013/09/sign-in-oauth-1_0.png)
 
 
 上面這張圖清楚的顯示該如何做Twitter的OAuth Login，這裡講的主要都是Server-side的部分．簡單來說步驟主要分為以下數個:
@@ -58,8 +58,8 @@ tags: [go, three-legged-auth]
 
 如果你要寫server-side的oauth的話，你`必須要填入可以被接受的網址`． 這裡定義`可以被接受`網址如下:
 
-- 必須不是localhost
-- 必須有http://
+- 必須不是 localhost
+- 必須有 https://
 
 如果你沒有填入資料到`Callback URL`的話，你就會被當成是Desktop App而無法進行`Three-legged Authentication`．
 
@@ -80,7 +80,7 @@ tags: [go, three-legged-auth]
 
 ## 常見的錯誤
 
-###Desktop applications only support the oauth_callback value 'oob'
+### Desktop applications only support the oauth_callback value 'oob'
 
 詳細討論看[這裡](https://twittercommunity.com/t/desktop-applications-only-support-the-oauth-callback-value-oob-oauth-request-token/252)
 
@@ -97,7 +97,8 @@ tags: [go, three-legged-auth]
 
 最後，我還是整理整個架構與將幾個我馬上會用到的API成一個packagey．放在[https://github.com/kkdai/twitter](https://github.com/kkdai/twitter)		
 		
-##參考鏈結
+
+## 參考鏈結
 
 - [Twitter API authentication in Go](http://venkat.io/posts/twitter-api-auth-golang/)		
 - [https://github.com/mrjones/oauth](https://github.com/mrjones/oauth)
