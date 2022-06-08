@@ -68,15 +68,26 @@ Passkey 是一個溝通協定，可以比起舊的 Password 機制來說更佳�
 要導入 Passkeys 須要導入以下相關流程:
 
 - FIDO2 套件
-- 透過 WebAuthn
+- 透過 WebAuthn 開發伺服器相關套件
 
+聽起來有點麻煩，不過有看到有一家公司 [HANKO](https://www.hanko.io/) 有相關的 SaaS API 服務（免費應該很夠用），可以參考 [Passkeys for web authentication](https://www.hanko.io/blog/passkeys-part-1) 這篇文章，裡面也有一個 Open Source 套件可以用。
 
+### Golang 上開發 WebAuthn 與 Passkey
 
+[https://github.com/teamhanko/apple-wwdc21-webauthn-example](https://github.com/teamhanko/apple-wwdc21-webauthn-example)
 
+他也有給出[範例網站](https://apple-passkey.demo.hanko.io/)，如果你想直接玩的話。
 
+<img src="../images/2021/image-20220608182120053.png" alt="image-20220608182120053" style="zoom:33%;" />
+(link: [https://apple-passkey.demo.hanko.io/]( https://apple-passkey.demo.hanko.io/))
 
+有點想把它改成其他版本，好像也沒有完整一整套整理的流程。 其實就流程上，真的還有一點麻煩。 除了要存使用者名稱外，還要把 Public Key 存起來備用。 雖然使用者相當簡單，但是後端開發者其實要用的東西還真不少。 目前  [HANKO](https://www.hanko.io/)  提供的 WebAuthn 整合方案看起來還蠻方便的。 也有一個 [https://github.com/duo-labs/webauthn](https://github.com/duo-labs/webauthn)  (https://webauthn.io/) 的 WebAuthn 套件，也都完整有支援。需要的人可以玩玩看。
 
+# 結語：
 
+Passkey 是去年 WWDC 就提出的 Passwordless 的解決方案，不僅僅可以把密碼交易金鑰產生放在手機上，更可以讓登入變成簡單而快速。 開啟了未來網站與服務新的認證方式，但是整個開發流程在伺服器端還是相當的繁瑣，許多各大網站的 OpenID 也沒有支援。 如果未來能支援的網站越來越多，相信真正 Passwordless 的日子就會來臨。
+
+這幾個範例，這次先不提開發的部分。 我來玩個幾天弄個快速部署版本給大家吧！
 
 # Reference
 
@@ -87,6 +98,7 @@ Passkey 是一個溝通協定，可以比起舊的 Password 機制來說更佳�
 -  [Passkeys for web authentication](https://www.hanko.io/blog/passkeys-part-1)
 -  [What Apple's WWDC Passkeys Announcement Means for Enterprise IAM](https://blog.hypr.com/what-apples-wwdc-passkeys-announcement-means-for-enterprise-iam)
 -  [https://github.com/duo-labs/webauthn](https://github.com/duo-labs/webauthn)
+- [WebAuthn.io: A demo of the WebAuthn specification](https://webauthn.io/)
 
 
 
