@@ -55,13 +55,31 @@ Passkey 是一個溝通協定，可以比起舊的 Password 機制來說更佳�
 - 可以使用 iCloud 備份（這邊[也是很多開發者說](https://blog.hypr.com/what-apples-wwdc-passkeys-announcement-means-for-enterprise-iam)，唯一不安全點）
 - 可以把 Passkeys 分享給其他信任的人。
 
-![image-20220608152153013](../images/2021/image-20220608152153013.png)
 
-整個流程如上：
 
-- Server 會透過 Public Key 去加密一段資料。
-- 透過手機端上（或是瀏覽器）上的 Private Key 解開後回傳資料。
-- 認證過後，確認資料是正確的。
+**整個流程 (參考[What is WebAuthn? How to Authenticate Users Without a Password](https://www.freecodecamp.org/news/intro-to-webauthn/)) 如上：**
+
+## 註冊
+
+![image-20220615175557038](../images/2021/image-20220615175557038.png)
+
+- 使用者透過瀏覽器(User Agent) 登入網站(Relying Party)，要求認證。
+- 按下登入資料
+- 瀏覽器透過 WebAuthn 開啟驗證
+  - 可以是 Touch ID, Face ID 或是 YubiKey
+
+- Yubikey / FaceID / Touch ID  產生 public key 
+- 傳輸 Public Key 到伺服器端儲存
+- 註冊完成
+
+## 登入驗證（Sign-in)
+
+![image-20220615175328204](../images/2021/image-20220615175328204.png)
+
+- 使用者按下登入
+- 收到網站透過該使用者的 Public 產生的 Challenge
+- 透過使用這本地端的 Private Key 解開該 Challenge 並且回傳答案
+- 伺服器驗證後，確認無誤確認使用者登入。
 
 # 身為後端開發者，你該怎麼應用 WebAuthn?
 
@@ -113,6 +131,7 @@ Passkey 是去年 WWDC 就提出的 Passwordless 的解決方案，不僅僅可�
 -  [What Apple's WWDC Passkeys Announcement Means for Enterprise IAM](https://blog.hypr.com/what-apples-wwdc-passkeys-announcement-means-for-enterprise-iam)
 -  [https://github.com/duo-labs/webauthn](https://github.com/duo-labs/webauthn)
 - [WebAuthn.io: A demo of the WebAuthn specification](https://webauthn.io/)
+- [What is WebAuthn? How to Authenticate Users Without a Password](https://www.freecodecamp.org/news/intro-to-webauthn/)
 
 
 
