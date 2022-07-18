@@ -43,3 +43,4 @@ tags: ["TIL", "ereader"]
 # Reference
 
 -  [比全是漫畫更實用的漫畫 APP！讓您的平板電腦變成專屬漫畫閱讀器 Tachiyomi 使用教學](https://mobileai.net/2021/09/13/tachiyomi/)
+-  [[TIL\][Kindle] Kindle Paperwhite 充電無法作用（充不進去）怎麼辦？](https://www.evanlin.com/til-Kindle-cannot-charge/)
