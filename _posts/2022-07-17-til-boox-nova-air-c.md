@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[TIL][BOOX] 新玩具 - BOOX Nova Air C 7.8 吋電子紙閱讀器到手，可能有問題與心得"
+title: "[TIL][BOOX] 新玩具 - BOOX Nova Air C 7.8 吋電子紙閱讀器到手，可能會有的問題與使用一個月心得"
 description: ""
 category: 
 - TodayILearn
