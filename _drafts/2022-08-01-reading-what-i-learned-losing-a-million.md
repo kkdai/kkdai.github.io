@@ -60,7 +60,9 @@ What I Learned Losing a Million Dollars
 
 # 章節條列
 
+## Part 1 操盤手回憶錄
 
+這一個章節就是作者分享他從小開始接觸投資相關的事情，
 
 # 心得
 
