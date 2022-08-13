@@ -7,7 +7,7 @@ category:
 tags: ["書海裡的漫遊", "Books", "Investing"]
 ---
 
-<div><a href="http://moo.im/a/kxzGOV" title="一個操盤手的虧損自白"><img src="https://cdn.readmoo.com/cover/gm/lei9oam_210x315.jpg?v=0"></a></div
+<div><a href="http://moo.im/a/kxzGOV" title="一個操盤手的虧損自白"><img src="https://cdn.readmoo.com/cover/gm/lei9oam_210x315.jpg?v=0"></a></div>
 
 
 ```
