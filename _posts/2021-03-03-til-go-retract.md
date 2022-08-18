@@ -5,7 +5,7 @@ description: ""
 category: 
 - TodayILearn
 - 學習文件
-tags: ["Golang", "DevOps", "CICD"]
+tags: ["Golang", "DevOps", "CICD", "Gotips"]
 ---
 
 
