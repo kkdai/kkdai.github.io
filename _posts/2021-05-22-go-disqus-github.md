@@ -4,7 +4,7 @@ title: "[學習心得][Golang] 透過撰寫 Disqus 評論轉移到 Github Issue 
 description: ""
 category: 
 - 學習文件
-tags: ["Golang", "OAuth2", "PKCE"]
+tags: ["Golang", "Github Page", "Disqus"]
 ---
 
 <img src="https://github.com/kkdai/disqus-importor-go/raw/master/img/imported.jpg">
