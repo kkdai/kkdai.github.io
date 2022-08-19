@@ -41,7 +41,47 @@ docker run -p 8000:8000 shumc/imagor -imagor-unsafe -imagor-auto-webp
 
 ## 修改流程：
 
+其實 [https://github.com/cshum/imagor](https://github.com/cshum/imagor) 本來已經有 Docker Image 了，只要參考一下文章 [Building Docker Images with heroku.yml](https://devcenter.heroku.com/articles/build-docker-images-heroku-yml) 可以知道。 這邊講一些基本導入流程：
 
+### 加上 Heroku 支援:
+
+### 1. 加入新檔案 `app.json` 
+
+```
+{
+    "name": "imagor",
+    "description": "Fast, Docker-ready image processing server in Go with libvips",
+    "keywords": [
+        "image",
+        "resize-images",
+        "crop-image",
+        "microservice",
+        "docker",
+        "jpeg",
+        "png",
+        "libvips"
+    ],
+    "repository": "https://github.com/cshum/imagor",
+    "stack": "container",
+    "env": {
+        "IMAGOR_UNSAFE": {
+            "description": "Use Unsafe mode, default 1 for testing. In production environment, it is highly recommended turning off `IMAGOR_UNSAFE` and setting up URL signature using `IMAGOR_SECRET`, to prevent DDoS attacks that abuse multiple image operations.",
+            "required": true,
+            "value": "1"
+        },
+        "IMAGOR_SECRET": {
+            "description": "Secret key for URL signature.",
+            "required": false
+        }
+    }
+}
+```
+
+- 幾個重要的寫一下：
+  - `    "repository": "https://github.com/cshum/imagor",`:  讓 Heroku 知道要去哪找其他檔案。
+  - `"stack": "container",`：這就是告訴 Heroku 要去找 `Heroku.yml` 這個檔案來繼續接下來流程。
+
+### 2. 加上 heroku.yml 
 
 
 
