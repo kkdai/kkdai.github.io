@@ -143,8 +143,8 @@ LABEL maintainer="Adrian Shum <adrian@cshum.com>"
 
 ## 相關文章：
 
-- [Building Docker Images with heroku.yml](https://devcenter.heroku.com/articles/build-docker-images-heroku-yml)
-- [How to Deploy Docker Container on Heroku? | Part - 2](https://medium.com/featurepreneur/how-to-deploy-docker-container-on-heroku-part-2-eaaaf1027f0b)
+- [Heroku: Building Docker Images with heroku.yml](https://devcenter.heroku.com/articles/build-docker-images-heroku-yml)
+- [How to Deploy Docker Container on Heroku?](https://medium.com/featurepreneur/how-to-deploy-docker-container-on-heroku-part-2-eaaaf1027f0b)
 - [站在 Docker 的肩膀上，部署任何語言的 Web 應用到 Heroku](https://medium.com/starbugs/deploy-any-web-application-to-heroku-with-docker-b64b9b0eb93)
 - 兩套 Golang 寫的圖片編輯伺服器透過 [libvips](https://www.libvips.org/) 
   - [https://github.com/imgproxy/imgproxy](https://github.com/imgproxy/imgproxy)
