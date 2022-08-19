@@ -41,7 +41,7 @@ docker run -p 8000:8000 shumc/imagor -imagor-unsafe -imagor-auto-webp
 
 ## 修改流程：
 
-其實 [https://github.com/cshum/imagor](https://github.com/cshum/imagor) 本來已經有 Docker Image 了，只要參考一下文章 [Building Docker Images with heroku.yml](https://devcenter.heroku.com/articles/build-docker-images-heroku-yml) 可以知道。 這邊講一些基本導入流程：
+其實 [https://github.com/cshum/imagor](https://github.com/cshum/imagor) 本來已經有 Docker Image 了， 這邊講一些基本導入流程：
 
 ### 加上 Heroku 支援:
 
@@ -80,10 +80,49 @@ docker run -p 8000:8000 shumc/imagor -imagor-unsafe -imagor-auto-webp
 - 幾個重要的寫一下：
   - `    "repository": "https://github.com/cshum/imagor",`:  讓 Heroku 知道要去哪找其他檔案。
   - `"stack": "container",`：這就是告訴 Heroku 要去找 `Heroku.yml` 這個檔案來繼續接下來流程。
+  - `IMAGOR_UNSAFE 這個參數因為這個套件預設要 url signature （可以參考 [這篇說明文章](https://docs.aws.amazon.com/zh_tw/AmazonS3/latest/userguide/PresignedUrlUploadObject.html))
 
 ### 2. 加上 heroku.yml 
 
+```
+build:
+  docker:
+    web: heroku/Dockerfile
+```
 
+稍後會繼續寫 `heroku/Dockerfile` 的內容。 但是其實這邊除了 `build:` 以外，還有以下功能：
+
+- **參數設定:** 這個例子，設定了一個 ENV `S3_BUCKET` 
+
+  ```
+  setup:
+    config:
+      S3_BUCKET: my-example-bucket
+  ```
+
+  
+
+- **其他 Pluging 設定:** 這個例子，起了一個 postgresql 並且用 DATABASE 的 alias 
+
+  ```
+  setup:
+    addons:
+    - plan: heroku-postgresql
+      as: DATABASE
+  ```
+
+只要參考一下文章 [Building Docker Images with heroku.yml](https://devcenter.heroku.com/articles/build-docker-images-heroku-yml) 可以查到更多關於 `Heroku.yml` 的用法。
+
+### 3. 專屬 Heroku 的 Dockerfile
+
+```
+FROM shumc/imagor:latest
+LABEL maintainer="Adrian Shum <adrian@cshum.com>"
+```
+
+這邊沒有太多預設流程，可以每次 build ，但是我選擇讓 release management 回歸本來 image owner。所以這邊直接引用就可以。
+
+完整的內容可以參考這次 PR  [https://github.com/cshum/imagor/pull/142](https://github.com/cshum/imagor/pull/142)
 
 # 成果：
 
@@ -91,18 +130,22 @@ docker run -p 8000:8000 shumc/imagor -imagor-unsafe -imagor-auto-webp
 
 也可以透過以下伺服器來看成果:
 
+- [顯示一個 Gopher 圖片](https://imagor-kkdai.herokuapp.com/unsafe/fit-in/200x200/filters:fill(white)/https://raw.githubusercontent.com/cshum/imagor/master/testdata/gopher.png)
+  ![](https://imagor-kkdai.herokuapp.com/unsafe/fit-in/200x200/filters:fill(white)/https://raw.githubusercontent.com/cshum/imagor/master/testdata/gopher.png)
 
+- [那隻跳舞的香蕉](https://imagor-kkdai.herokuapp.com/unsafe/30x40:100x150/filters:fill(cyan)/raw.githubusercontent.com/cshum/imagor/master/testdata/dancing-banana.gif)
+  ![](https://imagor-kkdai.herokuapp.com/unsafe/30x40:100x150/filters:fill(cyan)/raw.githubusercontent.com/cshum/imagor/master/testdata/dancing-banana.gif)
+
+- [兩張圖片結合](https://imagor-kkdai.herokuapp.com/unsafe/fit-in/200x150/filters:fill(yellow):watermark(raw.githubusercontent.com/cshum/imagor/master/testdata/gopher-front.png,repeat,bottom,0,40,40)/raw.githubusercontent.com/cshum/imagor/master/testdata/dancing-banana.gif)
+  ![](https://imagor-kkdai.herokuapp.com/unsafe/fit-in/200x150/filters:fill(yellow):watermark(raw.githubusercontent.com/cshum/imagor/master/testdata/gopher-front.png,repeat,bottom,0,40,40)/raw.githubusercontent.com/cshum/imagor/master/testdata/dancing-banana.gif)
+
+  
 
 ## 相關文章：
 
 - [Building Docker Images with heroku.yml](https://devcenter.heroku.com/articles/build-docker-images-heroku-yml)
-
 - [How to Deploy Docker Container on Heroku? | Part - 2](https://medium.com/featurepreneur/how-to-deploy-docker-container-on-heroku-part-2-eaaaf1027f0b)
-
 - [站在 Docker 的肩膀上，部署任何語言的 Web 應用到 Heroku](https://medium.com/starbugs/deploy-any-web-application-to-heroku-with-docker-b64b9b0eb93)
-
 - 兩套 Golang 寫的圖片編輯伺服器透過 [libvips](https://www.libvips.org/) 
   - [https://github.com/imgproxy/imgproxy](https://github.com/imgproxy/imgproxy)
   - [https://github.com/cshum/imagor](https://github.com/cshum/imagor)
-
-- 
