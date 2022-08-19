@@ -18,7 +18,7 @@ Go 1.19 的 Sort 已經從 QuickSort 換成跟 #Rustlang 還有 C++ #Boost 一�
 ### 快速解釋什麼是 PD Quicksort？ 
 
 - 從 QuickSort 優化，最佳狀況從 O(n log n) --> O(n)
--  - 最差狀況 O(n log n) 
+-  最差狀況 O(n log n) 
 
 ## 相關文章：
 
