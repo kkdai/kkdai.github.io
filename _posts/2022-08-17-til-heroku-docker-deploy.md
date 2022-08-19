@@ -11,6 +11,8 @@ tags: ["Golang", "Heroku", "Docker"]
 
 ## 前言:
 
+最近看到一個套件 imagor 蠻有趣的 ，可以透過 Golang binding C 的 libvips 來做類似 ImageMagick 的圖片編輯。 但是我喜歡的一鍵部署到 Heroku 按鍵卻沒有，就幫他送了一個 PR 。
+
 我一直蠻喜歡在 Github Repo 直接加上「一鍵部署到 Heroku 」的按鈕，隨著近期不少的 Golang Repo 因為有使用到一些 C 語言相關的底層套件。 不少的服務都有打包成 Docker 的方式來做 Github 的 CICD 。 但是對於只是想要透過 Heroku 快速使用這個套件功能的開發者，如何快速導入 Heroku 的 Deploy on Heroku 就是本文敘述的重點。
 
 # 一個關於圖片編輯的套件 imagor
