@@ -11,7 +11,7 @@ tags: ["Golang", "test-tool"]
 
 有一天這樣的 [tweet](https://twitter.com/mvdan_/status/1561967605073723392) 吸引到我，加上裡面有提到
 
-- 前Google 資安大神  [@FiloSottile](https://twitter.com/FiloSottile?ref_src=twsrc^tfw|twcamp^tweetembed|twterm^1561967605073723392|twgr^|twcon^s1_&ref_url=about%3Asrcdoc) 
+- 前Google 資安大神  [@FiloSottile](https://twitter.com/FiloSottile) 
 - Power of Go 作者 [@bitfield](https://twitter.com/bitfield)
 
 讓我認真的想去了解一下什麼是 [Go-Internal](https://github.com/rogpeppe/go-internal)  。
