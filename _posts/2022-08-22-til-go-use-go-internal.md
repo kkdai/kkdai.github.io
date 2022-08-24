@@ -22,7 +22,7 @@ tags: ["Golang", "test-tool"]
 
 不知道有沒有人跟我一樣，有時候在看 golang source code 的時候，會看到一些工具或是 func 相當好用。 當下可能會複製拿出來使用。或是擷取某些精髓。 但是很多時候，有很多 func 整理過後往往可以成為很方便的工具。
 
-而 https://github.com/rogpeppe/go-internal 就是一個將 Go Internal source code 重新整理後，獨立出來使用的小套件。其實裡面有許多很好用的小工具可以使用。
+而 [https://github.com/rogpeppe/go-internal](https://github.com/rogpeppe/go-internal) 就是一個將 Go Internal source code 重新整理後，獨立出來使用的小套件。其實裡面有許多很好用的小工具可以使用。
 
 以下挑選幾個小工具，稍微分享一下：
 
