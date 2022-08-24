@@ -15,10 +15,27 @@ Go 1.19 的 Sort 已經從 QuickSort 換成跟 #Rustlang 還有 C++ #Boost 一�
 
 想知道多關於 PD Quicksort 可以[參考這篇字節跳動團隊 “”打造 Go 语言最快的排序算法""(簡中)](https://blog.csdn.net/ByteDanceTech/article/details/124464192)
 
+## 關於 Pattern-Defeating Quicksort 解釋
+
 ### 快速解釋什麼是 PD Quicksort？ 
 
 - 從 QuickSort 優化，最佳狀況從 O(n log n) --> O(n)
 -  最差狀況 O(n log n) 
+
+### 假設前提設定
+
+<img src="../images/2021/image-20220825004251117.png" alt="image-20220825004251117" style="zoom:33%;" />
+
+- In-memory random access
+- Cheap comparison / moves
+
+### Pivot 挑選很重要
+
+<img src="../images/2021/image-20220825004022080.png" alt="image-20220825004022080" style="zoom:33%;" />
+
+### 根據不同場景，有其他更好建議
+
+<img src="../images/2021/image-20220825003748676.png" alt="image-20220825003748676" style="zoom:33%;" />
 
 ## 相關文章：
 
