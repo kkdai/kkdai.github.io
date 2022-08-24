@@ -17,6 +17,10 @@ Go 1.19 的 Sort 已經從 QuickSort 換成跟 #Rustlang 還有 C++ #Boost 一�
 
 ## 關於 Pattern-Defeating Quicksort 解釋
 
+強烈建議，這個影片可以看。
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jz-PBiWwNjc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### 快速解釋什麼是 PD Quicksort？ 
 
 - 從 QuickSort 優化，最佳狀況從 O(n log n) --> O(n)
