@@ -9,7 +9,12 @@ tags: ["Golang", "test-tool"]
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Released a new version of <a href="https://twitter.com/rogpeppe?ref_src=twsrc%5Etfw">@rogpeppe</a>&#39;s go-internal with some notable changes to testscript, used heavily in <a href="https://twitter.com/cue_lang?ref_src=twsrc%5Etfw">@cue_lang</a> :) A special thanks to <a href="https://twitter.com/bitfield?ref_src=twsrc%5Etfw">@bitfield</a>, <a href="https://twitter.com/tomwpayne?ref_src=twsrc%5Etfw">@tomwpayne</a>, and <a href="https://twitter.com/FiloSottile?ref_src=twsrc%5Etfw">@FiloSottile</a> for their recent contributions! <a href="https://twitter.com/hashtag/golang?src=hash&amp;ref_src=twsrc%5Etfw">#golang</a><a href="https://t.co/hDAqsecssu">https://t.co/hDAqsecssu</a></p>&mdash; Daniel Martí (@mvdan_) <a href="https://twitter.com/mvdan_/status/1561967605073723392?ref_src=twsrc%5Etfw">August 23, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-有一天這樣的 [tweet](https://twitter.com/mvdan_/status/1561967605073723392) 吸引到我，加上裡面有提到前Google 資安大神  [@FiloSottile](https://twitter.com/FiloSottile?ref_src=twsrc^tfw|twcamp^tweetembed|twterm^1561967605073723392|twgr^|twcon^s1_&ref_url=about%3Asrcdoc) 。 讓我認真的去了解一下什麼是 [Go-Internal](https://github.com/rogpeppe/go-internal) 
+有一天這樣的 [tweet](https://twitter.com/mvdan_/status/1561967605073723392) 吸引到我，加上裡面有提到
+
+- 前Google 資安大神  [@FiloSottile](https://twitter.com/FiloSottile?ref_src=twsrc^tfw|twcamp^tweetembed|twterm^1561967605073723392|twgr^|twcon^s1_&ref_url=about%3Asrcdoc) 
+- Power of Go 作者 [@bitfield](https://twitter.com/bitfield)
+
+讓我認真的想去了解一下什麼是 [Go-Internal](https://github.com/rogpeppe/go-internal)  。
 
 ## 什麼是 Go-Internal 
 
