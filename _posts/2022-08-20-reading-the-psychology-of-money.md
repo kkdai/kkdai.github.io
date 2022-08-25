@@ -105,7 +105,7 @@ The Psychology of Money : Timeless Lessons on Wealth, Greed, and Happiness
 
 ### 7. 自由
 
-![image-20220822000143232](../images/2021/image-20220822000143232.png)
+<img src="../images/2021/image-20220825151419983.png" alt="image-20220825151419983" style="zoom:50%;" />
 
 掌握你的時間，就是金錢付給你的最高紅利。 財富就讓是你可以儘可能地把時間拿來做你想做的事情。 金錢最高的價值就是給予你掌握時間的能力，很可惜沒有人能夠清楚的知道這一點。為了節省一點點小錢，而消耗掉自己得時間。
 
