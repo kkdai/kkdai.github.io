@@ -26,9 +26,7 @@ tags: ["書海裡的漫遊", "Books", "Growthing"]
 
 # 前言:
 
-這一本是今年所讀完的第十九本書。
-
-
+這一本是今年所讀完的第十九本書。 當初這一本書是由 LAE 所推薦的，買來後看了發現真的蠻有趣的。疫情過後，許多人在探討的已經不是 work life balance ，而是如何讓工作跟生活可以有效的結合不會互相干擾。 而這一本書更是有趣的思考了工作與生活的目的，在經濟允許的狀況下，作為一人公司要如何讓自己的生活更有品質。
 
 # 內容簡介:
 
@@ -42,9 +40,9 @@ tags: ["書海裡的漫遊", "Books", "Growthing"]
 一個小型企業主可以創立一人公司，一小群志同道合的夥伴也可以。本書介紹如何以你的自身條件建立自己的公司，決定你期望的收入；如何處理意外的危機，讓重要客戶感到滿意。「一人公司」是一種新穎的經營方法，專注於變得更好而不是更大，維持小規模進而帶來自由，讓你可以去追求生活中更有意義的樂事。
 ```
 
+我把內容簡介，弄成投影片。
 
-
-
+<iframe src="https://www.slideshare.net/slideshow/embed_code/key/89gNar9SNG9qRa?hostedIn=slideshare&page=upload" width="476" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
 
 
 # 心得
