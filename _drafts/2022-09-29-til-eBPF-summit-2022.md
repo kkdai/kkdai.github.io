@@ -27,6 +27,14 @@ Linux kernel  正式整合 Rust 之後，透過 Rust 可以做更多 eBPF 相關
 
 隨著 Linux kernel 6.1 的提升，其實能增加的部分也越來越多了。
 
+![image-20221004141207932](../images/2021/image-20221004141207932.png)
+
+許多 e[bpf 的相關小工具](https://ebpf.io/applications):  其實這些工具不是專門為了 ebpf 而開發，但是這個頁面有告訴你如何應在 BPF 裏面。
+
+![image-20221004142430192](../images/2021/image-20221004142430192.png)
+
+
+
 
 
 ## 小結論：
