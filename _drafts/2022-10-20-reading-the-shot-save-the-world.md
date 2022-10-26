@@ -72,7 +72,7 @@ A Shot to Save the World : The Inside Story of the Life-or-Death Race for a COVI
 
 ![image-20221025225905988](../images/2021/image-20221025225905988.png)
 
-1980 年末期的沃爾夫是一個專注研究透過
+1980 年末期的沃爾夫是一個專注研究透過 mRNA 將抗體如何躲避掉免疫系統後來產生蛋白質，進而達到可以解決許多難解的遺傳缺陷相關的疾病。
 
 
 # 心得
