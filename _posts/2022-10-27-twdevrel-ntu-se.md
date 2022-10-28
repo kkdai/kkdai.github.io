@@ -9,7 +9,7 @@ tags: ["研討會心得", "LINE"]
 
 
 
-
+![image-20221028171825695](../images/2021/image-20221028171825695.png)
 
 
 # 前言
@@ -23,6 +23,8 @@ tags: ["研討會心得", "LINE"]
 
 <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/77c10453fedc4b0c900a0f2b7fc0be77" title="台大資工所企業訪談 - TPM (Technical Project Manager) 技術專案管理經理的分享" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
 
+![image-20221028172009633](../images/2021/image-20221028172009633.png)
+
 首先由 LINE 台灣的 TPM (Technical Prject Manage) Zephyr 帶來的分享，先提到軟體開發流程並且帶出軟體開發的生命週期。並且說明清楚在軟體生命週期中，每一個階段有哪一些角色的協力合作。也會詳細的說明每一個角色的相關職責，為什麼他們在這個專案的流程中如此重要。
 
 ## 相關問與答
@@ -31,9 +33,9 @@ tags: ["研討會心得", "LINE"]
 
 針對軟體工程的角度來說，事先需要有相關的準備，並且針對 HA (high availability) 有相關的設計與防範。在各種重大災害的演練上，有各種面向的演練。
 
-### 問: 對於各種故障的排練與偵測是否有哪一些特殊的偵測方式？
+### 問: 對於各種故障的偵測是否有哪一些特殊的偵測方式？
 
-每一個服務都有相關的監控，任何時候發生問題得時候，都會有監控的服務可以立即偵測，並且通知相關的處理團隊來處理。
+每一個服務都有相關的監控，任何時候發生問題的時候，都會有監控的服務可以立即偵測，並且通知相關的處理團隊來處理。
 
 ### 問: TPM 跟軟體開發的主管有點像，那執行面有哪一些的不同？
 
@@ -48,6 +50,8 @@ tags: ["研討會心得", "LINE"]
 
 <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/df7b84399f5d41dfbf82d6cf54fe1671" title="台大資工所企業訪談 - QA 相關討論" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
 
+![image-20221028171847233](../images/2021/image-20221028171847233.png)
+
 Richad 先透過跟同學的互動，分享了 QA 跟 Testing 兩者的差別？ 首先 Richard 先透過 Bug Fixing Cost 來點出一個問題在每個流程中找出來所引出的成本。 如果在設計階段就能夠將問題找出來，那麼他的成本會是最低的。
 
 也就是在設計階段，當需求端（可能是 PM ，可能是 Business Owner）有新的需求，身為測試人員就要協助審視設計端的需求。盡可能地找出裡面可能有的問題。
@@ -58,16 +62,12 @@ Richad 先透過跟同學的互動，分享了 QA 跟 Testing 兩者的差別？
 
 到了正式上線之後，測試人員也有許多工作要做。 如何透過 CI/CD 流程的優化，如何定期確認服務的狀態。
 
-## 相關問與答
-
 
 ## 相關職缺
 
 - [TECH FRESH](https://careers.linecorp.com/jobs/83)
 - [Service QA Engineer](https://careers.linecorp.com/jobs/19)
 - [QA Automation Engineer](https://careers.linecorp.com/jobs/18)
-
-
 
 # 在 LINE 台灣技術實習 - TECHFRESH 介紹與相關福利
 
