@@ -19,8 +19,15 @@ tags: ["研討會心得", "LINE"]
 
 
 
+# TPM (Technical Project Manager) 技術專案管理經理的分享 - Zephyr Chang
 
-# QA 開發人員相關分享 - Richard Chang
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/77c10453fedc4b0c900a0f2b7fc0be77" title="台大資工所企業訪談 - TPM (Technical Project Manager) 技術專案管理經理的分享" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
+
+
+## 相關職缺
+
+
+# 從測試出發談 LINE 軟體開發流程 - Richard Chang
 
 <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/df7b84399f5d41dfbf82d6cf54fe1671" title="台大資工所企業訪談 - QA 相關討論" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
 
