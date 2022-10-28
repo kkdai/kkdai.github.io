@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[TW_DevRel] 2022-10-28 台灣大學軟體工程課程企業參訪 "
+title: "[TW_DevRel] 2022-10-28 台灣大學軟體工程課程企業參訪"
 description: ""
 category: 
 - 研討會心得
@@ -19,7 +19,7 @@ tags: ["研討會心得", "LINE"]
  這一次則是收到台灣大學資工所的軟體工程的課程上，有許多不同系所同學一起來了解。透過兩位講者 Zephyr 與 Richard 的分享，讓同學對於軟體工程可以有更深入的了解。
 
 
-# TPM (Technical Project Manager) 技術專案經理的分享 - Zephyr Chang
+# **TPM (Technical Project Manager) 技術專案經理的分享 - Zephyr Chang**
 
 <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/77c10453fedc4b0c900a0f2b7fc0be77" title="台大資工所企業訪談 - TPM (Technical Project Manager) 技術專案管理經理的分享" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
 
@@ -43,23 +43,25 @@ tags: ["研討會心得", "LINE"]
 
 ## 相關職缺
 
-- ### [2022 TECH FRESH - Summer Class](https://careers.linecorp.com/jobs/83)
+- [TECH FRESH](https://careers.linecorp.com/jobs/83)
 
 
-# 從測試出發談 LINE 軟體開發流程 - Richard Chang
+# **從測試出發談 LINE 軟體開發流程 - Richard Chang**
 
 <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/df7b84399f5d41dfbf82d6cf54fe1671" title="台大資工所企業訪談 - QA 相關討論" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
 
+Richad 先透過跟同學的互動，分享了 QA 跟 Testing 兩者的差別？ 首先 Richard 先透過 Bug Fixing Cost 來點出一個問題在每個流程中找出來所引出的成本。 如果在設計階段就能夠將問題找出來，那麼他的成本會是最低的。也就是在設計階段，當需求端（可能是 PM ，可能是 Business Owner）有新的需求，身為測試人員就要協助審視設計端的需求。盡可能地找出裡面可能有的問題。
 
 
+
+## 相關問與答
 
 
 ## 相關職缺
 
-- [2022 TECH FRESH - Summer Class](https://careers.linecorp.com/jobs/83)
+- [TECH FRESH](https://careers.linecorp.com/jobs/83)
 - [Service QA Engineer](https://careers.linecorp.com/jobs/19)
 - [QA Automation Engineer](https://careers.linecorp.com/jobs/18)
-- 
 
 
 
