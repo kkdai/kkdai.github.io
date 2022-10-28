@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[TW_DevRel] 台灣大學軟體工程課程企業參訪"
+title: "[TW_DevRel] 2022-10-28 台灣大學軟體工程課程企業參訪 "
 description: ""
 category: 
 - 研討會心得
@@ -16,15 +16,18 @@ tags: ["研討會心得", "LINE"]
 
 大家好，我們是來自 LINE 台灣開發者關係與技術推廣部門 (Developer Relations)。 LINE Taiwan 開發工程團隊於 2022 年初的 「[關於 LINE 台灣開發者關係與技術推廣部門的校園相關資源](https://engineering.linecorp.com/zh-hant/blog/line-devrel-campus/)」文章中，有敘述到關於 LINE Taiwan 所提供給理工相關科系學校同學的企業參訪機會，除了讓學校同學可以了解 [LINE 的研發工程文化](https://engineering.linecorp.com/zh-hant/culture)之外，更可以了解相關的技術實習的機會。
 
+ 這一次則是收到台灣大學資工所的軟體工程的課程上，有許多不同系所同學一起來了解。透過兩位講者 Zephyr 與 Richard 的分享，讓同學對於軟體工程可以有更深入的了解。
 
 
-
-# TPM (Technical Project Manager) 技術專案管理經理的分享 - Zephyr Chang
+# TPM (Technical Project Manager) 技術專案經理的分享 - Zephyr Chang
 
 <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/77c10453fedc4b0c900a0f2b7fc0be77" title="台大資工所企業訪談 - TPM (Technical Project Manager) 技術專案管理經理的分享" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
 
+首先由 LINE 台灣的 TPM (Technical Prject Manage) Zephyr 帶來的分享，先提到軟體開發流程並且帶出軟體開發的生命週期。並且說明清楚在軟體生命週期中，每一個階段有哪一些角色的協力合作。
 
 ## 相關職缺
+
+- ### [2022 TECH FRESH - Summer Class](https://careers.linecorp.com/jobs/83)
 
 
 # 從測試出發談 LINE 軟體開發流程 - Richard Chang
@@ -37,7 +40,7 @@ tags: ["研討會心得", "LINE"]
 
 ## 相關職缺
 
-
+- [2022 TECH FRESH - Summer Class](https://careers.linecorp.com/jobs/83)
 
 
 
