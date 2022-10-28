@@ -23,7 +23,23 @@ tags: ["研討會心得", "LINE"]
 
 <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/77c10453fedc4b0c900a0f2b7fc0be77" title="台大資工所企業訪談 - TPM (Technical Project Manager) 技術專案管理經理的分享" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
 
-首先由 LINE 台灣的 TPM (Technical Prject Manage) Zephyr 帶來的分享，先提到軟體開發流程並且帶出軟體開發的生命週期。並且說明清楚在軟體生命週期中，每一個階段有哪一些角色的協力合作。
+首先由 LINE 台灣的 TPM (Technical Prject Manage) Zephyr 帶來的分享，先提到軟體開發流程並且帶出軟體開發的生命週期。並且說明清楚在軟體生命週期中，每一個階段有哪一些角色的協力合作。也會詳細的說明每一個角色的相關職責，為什麼他們在這個專案的流程中如此重要。
+
+## 相關問與答
+
+### 問: 針對重大災害影響，是否專案管理與軟體工程的影響上該如何處理
+
+針對軟體工程的角度來說，事先需要有相關的準備，並且針對 HA (high availability) 有相關的設計與防範。在各種重大災害的演練上，有各種面向的演練。
+
+### 問: 對於各種故障的排練與偵測是否有哪一些特殊的偵測方式？
+
+每一個服務都有相關的監控，任何時候發生問題得時候，都會有監控的服務可以立即偵測，並且通知相關的處理團隊來處理。
+
+### 問: TPM 跟軟體開發的主管有點像，那執行面有哪一些的不同？
+
+在 LINE 來說以專業分工來切割工作， TPM 是屬於一種技術端的專案管理工作，負責專案與服務開發上的大大小小事情。在 LINE 的文化上，我們的組織相當的扁平並且都是透過專業分工。所以即便 TPM 不是屬於主管職務，也是有他專業分工管理的範圍。
+
+
 
 ## 相關職缺
 
