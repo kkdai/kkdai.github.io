@@ -57,6 +57,9 @@ tags: ["研討會心得", "LINE"]
 ## 相關職缺
 
 - [2022 TECH FRESH - Summer Class](https://careers.linecorp.com/jobs/83)
+- [Service QA Engineer](https://careers.linecorp.com/jobs/19)
+- [QA Automation Engineer](https://careers.linecorp.com/jobs/18)
+- 
 
 
 
