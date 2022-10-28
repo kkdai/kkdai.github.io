@@ -39,8 +39,6 @@ tags: ["研討會心得", "LINE"]
 
 在 LINE 來說以專業分工來切割工作， TPM 是屬於一種技術端的專案管理工作，負責專案與服務開發上的大大小小事情。在 LINE 的文化上，我們的組織相當的扁平並且都是透過專業分工。所以即便 TPM 不是屬於主管職務，也是有他專業分工管理的範圍。
 
-
-
 ## 相關職缺
 
 - [TECH FRESH](https://careers.linecorp.com/jobs/83)
@@ -50,9 +48,15 @@ tags: ["研討會心得", "LINE"]
 
 <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/df7b84399f5d41dfbf82d6cf54fe1671" title="台大資工所企業訪談 - QA 相關討論" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
 
-Richad 先透過跟同學的互動，分享了 QA 跟 Testing 兩者的差別？ 首先 Richard 先透過 Bug Fixing Cost 來點出一個問題在每個流程中找出來所引出的成本。 如果在設計階段就能夠將問題找出來，那麼他的成本會是最低的。也就是在設計階段，當需求端（可能是 PM ，可能是 Business Owner）有新的需求，身為測試人員就要協助審視設計端的需求。盡可能地找出裡面可能有的問題。
+Richad 先透過跟同學的互動，分享了 QA 跟 Testing 兩者的差別？ 首先 Richard 先透過 Bug Fixing Cost 來點出一個問題在每個流程中找出來所引出的成本。 如果在設計階段就能夠將問題找出來，那麼他的成本會是最低的。
 
+也就是在設計階段，當需求端（可能是 PM ，可能是 Business Owner）有新的需求，身為測試人員就要協助審視設計端的需求。盡可能地找出裡面可能有的問題。
 
+到了開發階段，雖然開發人員開始去撰寫開發程式碼，身為測試人員需要準備好相關的測試資料（假資料），甚至開始開發相關的 MockServe 或是自動化測試的相關串接方式。
+
+到了測試階段的時候，則是大量的測試工具來協助。 不論是 CUJ (Critical User Journey) 的流程測試，或者是探索性的測試，甚至是 E2E (End-To-End)的測試流程。
+
+到了正式上線之後，測試人員也有許多工作要做。 如何透過 CI/CD 流程的優化，如何定期確認服務的狀態。
 
 ## 相關問與答
 
