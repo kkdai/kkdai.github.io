@@ -22,12 +22,15 @@ tags: ["研討會心得", "LINE"]
 
 
 
-## 透過 Web3 來一起發想新的產品
+## 透過 AI 與 Web3 來一起發想新的產品
 
 2022 年今年是充滿許多驚喜的一年， 集團中的 LINE NEXT 公司也在今年正式啟動了 NFT 商城 - DOSI (韓語的"都市") ，這裡有相關的新聞給大家參考一下：
 
 - [LINE NEXT 為全球 NFT 平台 DOSI 上線做準備，先推出 DOSI Wallet錢包服務](https://linecorp.com/zh-hant/pr/news/zh-hant/2022/4243)
 - [LINE NEXT 推出DOSI Teaser前導網站 5大品牌商店進駐，發行品牌NFT項目與專屬福利](https://linecorp.com/zh-hant/pr/news/zh-hant/2022/4316)
+- [LINE NEXT宣布全球NFT平台DOSI開放C2C交易](https://linecorp.com/zh-hant/pr/news/zh-hant/2022/4393)
+
+
 
 ## 以往黑客松所帶來的回饋與嶄新的福利
 
