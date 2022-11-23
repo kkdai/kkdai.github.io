@@ -16,9 +16,9 @@ Img
 
 ## 投影片
 
-<script async class="speakerdeck-embed" data-id="7c88264dc5594cc2846386c275f1989a" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/93aa38e46a4b47d199a7db57918f1df1" title="如何建立自己的開源專案" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
 
-內容有一些部分歡迎參考這篇文章[LINE 開發社群計畫: 「手把手教你建立自己的開源專案」](https://engineering.linecorp.com/zh-hant/blog/gdsc-opensource/)，以下將特別列出
+內容有一些部分歡迎參考這篇文章[LINE 開發社群計畫: 「手把手教你建立自己的開源專案」](https://engineering.linecorp.com/zh-hant/blog/gdsc-opensource/)，以下將特別列出這一次演講分享其他相關的新內容。
 
 # 開源專案與學生實習工作的關係
 
@@ -28,6 +28,8 @@ Img
 - 專案是否有良好的 CI/CD 流程，也代表了你是否懂一些基本的流程。
 - 看相關專案的程式碼，可以了解你對於 Git 了解的程度。
 - 除了這些之外，好的開源專案代表你也有良好的 Pull Request 的訓練與習慣。對於多國協作上，你也更容易能適應相關團隊合作的方式。
+
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/93aa38e46a4b47d199a7db57918f1df1?slide=32" title="如何建立自己的開源專案" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
 
 # 關於 LINE 學生實習機會: LINE TECH FRESH 介紹
 
@@ -42,7 +44,18 @@ LINE 台灣工程團隊每年透過 [LINE TECH FRESH – 技術新星人才計�
 
 - [Life in LINE – 直擊 TECH FRESH 實習內容！](https://engineering.linecorp.com/zh-hant/blog/life-in-line-tech-fresh-sharing/)
 
-- [TECHPULSE 2020 青春主場 – TECH FRESH 議程與攤位介紹](
+- [TECHPULSE 2020 青春主場 – TECH FRESH 議程與攤位介紹](https://engineering.linecorp.com/zh-hant/blog/techpulse-2020-tech-fresh-session/)
+
+- [LINE TECH FRESH 2022 面試分享](https://engineering.linecorp.com/zh-hant/blog/line-tech-fresh-interview-2022/)
+
+- [【LINE TECH FRESH】2021 屆畢業囉！這一年來又有什麼新鮮事呢？](https://engineering.linecorp.com/zh-hant/blog/line-tech-fresh-2021-gradute/)
+
+- [Data Dev Team 實習生在做什麼？LINE TECH FRESH 生活心得分享](https://engineering.linecorp.com/zh-hant/blog/data-dev-team-tech-fresh-life-2/)
+
+- [資料工程團隊 TECH FRESH 實習生活分享](https://engineering.linecorp.com/zh-hant/blog/data-dev-team-tech-fresh-life-1/)
+
+- [LINE Dev Meetup 16 TECH FRESH 校園招募現場活動分享](https://engineering.linecorp.com/zh-hant/blog/line-dev-meetup-16/)
+
 
 # 同學們的相關詢問：
 
