@@ -8,28 +8,56 @@ category:
 tags: ["研討會心得", "DevRel", "LINE", "TECHFRESH", "LINEDev", "OpenSource"]
 ---
 
-Img
+![img](https://lh3.googleusercontent.com/pw/AL9nZEVlzhyxWZjbu88nkA87feJoVYHRrv5OuAwLTH7hrFzuFxISNwaBh99z8SE6Coc6wb5m-VfuFvfL27a40mbob42MYIAVYgDB3KOjeSbSNME4WO6ArvE4eyLxttuIg7QUSb4CVqZjyRofVu_vr3ZHtFz9Qw=w2362-h1578-no?authuser=0)
 
 # 前言
 
-大家好，我是 LINE Developer Relations 團隊的資深開發部門的 - Evan Lin 。主要的工作項目就是平台技術推廣與技術品牌的建立與溝通。 這次很榮幸受到邀請幫陽明交大的 DSC (Developer Students Club) 開發者學生社群的來分享關於如何打造自己的開源專案的經驗。 
+大家好，我是 LINE Developer Relations 團隊的資深開發部門的 - Evan Lin 。主要的工作項目就是平台技術推廣與技術品牌的建立與溝通。 這次很榮幸受到邀請幫陽明交大的 DSC (Developer Students Club) 開發者學生社群的來分享關於如何打造自己的開源專案的經驗這次的同學相當的踴躍，很感謝同學在下雨的晚上願意聽我講解如何參與開源專案的開發。
+
+
 
 ## 投影片
 
 <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/93aa38e46a4b47d199a7db57918f1df1" title="如何建立自己的開源專案" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
 
-內容有一些部分歡迎參考這篇文章[LINE 開發社群計畫: 「手把手教你建立自己的開源專案」](https://engineering.linecorp.com/zh-hant/blog/gdsc-opensource/)，以下將特別列出這一次演講分享其他相關的新內容。
+內容有一些部分歡迎參考這篇文章[LINE 開發社群計畫: 「手把手教你建立自己的開源專案」](https://engineering.linecorp.com/zh-hant/blog/gdsc-opensource/)，裡面內容有包括：
 
-# 開源專案與學生實習工作的關係
+- 找到一個好點子 / Find a great idea
+- 良好的說明 / Well Documentation
+- 完整的 CI/CD 流程 / Well Workflow
+- 找到你的第一個貢獻者 / Find your first contributor
+- 宣傳! 宣傳! 宣傳! / Promote ! Promote !
+
+以下將特別列出本次演講分享新內容:
+
+# 開源專案對於工作的關係有沒有用?
+
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/93aa38e46a4b47d199a7db57918f1df1?slide=32" title="如何建立自己的開源專案" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
 
 最近經常看到同學們在討論，到底從事開源專案或是寫一些自己的 side project 跟工作有沒有關係？ 這邊可以分享關於 LINE 的實習工作機會 LINE TECH FRESH  就很在意你的開源專案，因為從開源專案可以看出以下一些重點：
 
-- 你是否有良好的文件習慣（端看 README.md) 
+- 你是否有良好的文件習慣（這看你專案的  README.md 就能展現出來) 
 - 專案是否有良好的 CI/CD 流程，也代表了你是否懂一些基本的流程。
 - 看相關專案的程式碼，可以了解你對於 Git 了解的程度。
 - 除了這些之外，好的開源專案代表你也有良好的 Pull Request 的訓練與習慣。對於多國協作上，你也更容易能適應相關團隊合作的方式。
 
-<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/93aa38e46a4b47d199a7db57918f1df1?slide=32" title="如何建立自己的開源專案" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
+
+
+# 刷題目到底重不重要？
+
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/93aa38e46a4b47d199a7db57918f1df1?slide=31" title="如何建立自己的開源專案" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
+
+YES, YES and YES。
+
+如果你是軟體研發相關工作，這個絕對重要。就像你考上大學聯考一樣，如果進入這些國立大學的路途只有考試。即便你有各種才藝，考試的分數依舊是你唯一證明的依據之一。
+
+刷題目對研發工程師來說，最重要莫過：
+
+- **對於問題的分析：**能夠精準的閱讀題目，了解真正的問題。
+- **對於資料結構的熟悉：**熟悉資料結構與它能解決的問題。
+- **演算法：** 熟悉每一種演算法與它可能的時間複雜度，才能針對題目來使用。
+
+這些都是身為程式設計師重要的技能，所以我認為這個只是基本。 而你面對的是當所有人都是刷題刷過了，而你有開源的經驗。那麼對面試官來說，你就有相當的優勢。（重要是不需要花時間教你）。
 
 # 關於 LINE 學生實習機會: LINE TECH FRESH 介紹
 
@@ -60,13 +88,7 @@ LINE 台灣工程團隊每年透過 [LINE TECH FRESH – 技術新星人才計�
 # 同學們的相關詢問：
 
 
-## 1. 如何讓自己的 Github 容易被找到?
-
-###  A:
-
-
-
-
+## 1. 
 
 ## 6. 還有問題該如何問？
 
