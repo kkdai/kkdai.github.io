@@ -12,7 +12,7 @@ tags: ["研討會心得", "DevRel", "LINE", "TECHFRESH", "LINEDev", "OpenSource"
 
 # 前言
 
-大家好，我是 LINE Developer Relations 團隊的資深開發部門的 - Evan Lin 。主要的工作項目就是平台技術推廣與技術品牌的建立與溝通。 這次很榮幸受到邀請幫陽明交大的 DSC (Developer Students Club) 開發者學生社群的來分享關於如何打造自己的開源專案的經驗這次的同學相當的踴躍，很感謝同學在下雨的晚上願意聽我講解如何參與開源專案的開發。
+大家好，我是 LINE Developer Relations 團隊的資深開發部門的 - Evan Lin 。主要的工作項目就是平台技術推廣與技術品牌的建立與溝通。 這次很榮幸受到陽明交大的 DSC (Developer Students Club) 開發者學生社群的邀請到了陽明交大工程四館的 117 教室，分享關於如何打造自己的開源專案的經驗這次的同學相當的踴躍，很感謝同學在下雨的晚上願意聽我講解如何參與開源專案的開發。
 
 
 
@@ -60,6 +60,8 @@ YES, YES and YES。
 這些都是身為程式設計師重要的技能，所以我認為這個只是基本。 而你面對的是當所有人都是刷題刷過了，而你有開源的經驗。那麼對面試官來說，你就有相當的優勢。（重要是不需要花時間教你）。
 
 # 關於 LINE 學生實習機會: LINE TECH FRESH 介紹
+
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/93aa38e46a4b47d199a7db57918f1df1?slide=40" title="如何建立自己的開源專案" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
 
 
 LINE 台灣工程團隊每年透過 [LINE TECH FRESH – 技術新星人才計劃](https://career.linecorp.com/linecorp/career/detail/20000111/704/5570?classId=&locationCd=TW&page=)，招募資訊科技相關科系，或對此領域有所涉略的大學生 / 研究生加入 LINE 團隊進行長期實習 (一年期)，讓同學們能在國際級科技公司中觀摩學習。LINE TECH FRESH 由經驗豐富的技術專案經理帶領團隊，接觸多元化的專案與產品開發，學習業界實際的軟體專案分工，並體驗跨國團隊合作。往年工作內容包含 server、web、mobile app、chatbot、IoT、data、DevOps 等領域，並透過實習熟悉 LINE 平台系統、SDK、API 等。值得一提的是，LINE TECH FRESH 是有給薪的實習機會，對於軟體開發有熱情、有想法的同學們，千萬別錯過這個揮灑創意與衝勁的機會！
