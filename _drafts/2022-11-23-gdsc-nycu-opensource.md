@@ -41,8 +41,6 @@ tags: ["研討會心得", "DevRel", "LINE", "TECHFRESH", "LINEDev", "OpenSource"
 - 看相關專案的程式碼，可以了解你對於 Git 了解的程度。
 - 除了這些之外，好的開源專案代表你也有良好的 Pull Request 的訓練與習慣。對於多國協作上，你也更容易能適應相關團隊合作的方式。
 
-
-
 # 刷題目到底重不重要？
 
 <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/93aa38e46a4b47d199a7db57918f1df1?slide=31" title="如何建立自己的開源專案" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
@@ -89,8 +87,24 @@ LINE 台灣工程團隊每年透過 [LINE TECH FRESH – 技術新星人才計�
 
 # 同學們的相關詢問：
 
+## 1. 為什麼在演講過程中，講師很在意 CICD 的相關概念，而非如何尋找一個好的開源點子？
 
-## 1. 
+### A:
+
+主要原因是因為，「千金難買好點子 XD」，如果一定要有個好點子才能開始你的開源專案。 那麼你可能永遠不會開始。
+
+我反而建議每一個同學可以反其道而行，你可以什麼都嘗試使用 Github 來管理。
+
+即便因為學校的作業有機會使用到 Github。 可以嘗試著，多一些 README 來說明，並且加上一些 Test case 透過 Github Actions 來測試自己的程式碼。不論是透過編譯程式來測試是否可以完整編譯外，也可以考慮透過 SonarCube （一個來了解 testing coverge 的工具）結合與 Github 的方式來跑 （這篇[網路文章教得蠻好的](https://blog.marsen.me/2020/04/27/2020/sonarqube_run_with_github_action/))。
+
+## 2. 當初從事開源專案的起因？
+
+### A:
+
+原本主要也只是一個 Open Source 的使用者，但是由於當初學習 Golang 的原因。想說透過每週一個小專案的方式挑戰自己，來讓自己努力學習這個語言。 [可以參考這篇文章與 2016 COSCUP 演講內容](https://www.evanlin.com/coscup2016/)。 說實話，透過高強度的自我約束與挑戰，可以讓自己有效的學習並且了解到開源專案的許多相關知識，也因此真正的享受到從事開源專案開發的樂趣。
+
+
+
 
 ## 6. 還有問題該如何問？
 
