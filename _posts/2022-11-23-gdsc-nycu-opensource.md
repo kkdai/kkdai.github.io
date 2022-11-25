@@ -104,9 +104,7 @@ LINE 台灣工程團隊每年透過 [LINE TECH FRESH – 技術新星人才計�
 原本主要也只是一個 Open Source 的使用者，但是由於當初學習 Golang 的原因。想說透過每週一個小專案的方式挑戰自己，來讓自己努力學習這個語言。 [可以參考這篇文章與 2016 COSCUP 演講內容](https://www.evanlin.com/coscup2016/)。 說實話，透過高強度的自我約束與挑戰，可以讓自己有效的學習並且了解到開源專案的許多相關知識，也因此真正的享受到從事開源專案開發的樂趣。
 
 
-
-
-## 6. 還有問題該如何問？
+## 3. 還有問題該如何問？
 
 ### A:
 
@@ -126,7 +124,7 @@ LINE 台灣工程團隊每年透過 [LINE TECH FRESH – 技術新星人才計�
 
 ## 關於「LINE開發社群計畫」
 
-LINE今年年初在台灣啟動「LINE開發社群計畫」，將長期投入人力與資源在台灣舉辦對內對外、線上線下的開發者社群聚會、徵才日、開發者大會等，已經舉辦30場以上的活動。歡迎讀者們能夠持續回來察看最新的狀況。詳情請看:
+LINE 於2019 年初在台灣啟動「LINE開發社群計畫」，將長期投入人力與資源在台灣舉辦對內對外、線上線下的開發者社群聚會、徵才日、開發者大會等，已經舉辦30場以上的活動。歡迎讀者們能夠持續回來察看最新的狀況。詳情請看:
 
 - [2019 年LINE 開發社群計畫活動時程表](https://engineering.linecorp.com/zh-hant/blog/line-taiwan-developer-relations-2019-plan/)
 - [LINE Taiwan Developer Relations 2019 回顧與 2019 開發社群計畫報告](https://engineering.linecorp.com/zh-hant/blog/line-taiwan-developer-relations-2019/)
