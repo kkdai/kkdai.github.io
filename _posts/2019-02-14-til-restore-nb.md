@@ -24,7 +24,7 @@ tags: ["TIL", "vscode", "GitHub"]
 - [Homebrew](https://brew.sh/) 列幾個會用的
   - vim
     - Install Vundle first`git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
-    - vim 設定 https://github.com/kkdai/vimrc
+    - vim 設定 [https://github.com/kkdai/vimrc](https://github.com/kkdai/vimrc)
   - go
   - zsh (等等會提到)
   - heroku (heroku cli 超常用)
@@ -33,14 +33,14 @@ tags: ["TIL", "vscode", "GitHub"]
 
   - [Gitlens](https://github.com/eamodio/vscode-gitlens) 基本上懶得打 git 或是查資料用
   - [Go](https://github.com/Microsoft/vscode-go) 這不用問
-  - Run vscode from your terminal https://code.visualstudio.com/docs/setup/mac
+  - Run vscode from your terminal [https://code.visualstudio.com/docs/setup/mac](https://code.visualstudio.com/docs/setup/mac)
   - 關於設定部分，其實可以登入 Settings Sync 來[儲存設定](https://code.visualstudio.com/docs/editor/settings-sync)。
 - [typora 寫部落格用的工具](https://typora.io/) ，之前有寫過[推廣文](http://www.evanlin.com/til-mdeditor-typora/)
 - [PasteApp](https://pasteapp.me/) 方便你複製貼上的工具，免費七天。買下去你絕對不會後悔的。
 - **Vim 相關安裝**
   - [GitHub.com/kkdai/vimrc](https://GitHub.com/kkdai/vimrc)
-  - https://github.com/tpope/vim-pathogen
-  - https://github.com/preservim/nerdtree
+  - [https://github.com/tpope/vim-pathogen](https://github.com/tpope/vim-pathogen)
+  - [https://github.com/preservim/nerdtree](https://github.com/preservim/nerdtree)
   - `:PluginInstall`
 
 
@@ -67,7 +67,7 @@ tags: ["TIL", "vscode", "GitHub"]
 
   - `brew tap caskroom/cask`
   - `brew cask instal iterm2`
-  - Use `iTerm2-Color-Schemes `https://github.com/mbadolato/iTerm2-Color-Schemes
+  - Use `iTerm2-Color-Schemes ` [https://github.com/mbadolato/iTerm2-Color-Schemes](https://github.com/mbadolato/iTerm2-Color-Schemes)
 
 - #### **powerline font**
 
@@ -92,7 +92,7 @@ tags: ["TIL", "vscode", "GitHub"]
 
 - Install zsh integration for iTerm2
 
-  - Refer https://www.iterm2.com/documentation-shell-integration.html
+  - Refer [https://www.iterm2.com/documentation-shell-integration.html](https://www.iterm2.com/documentation-shell-integration.html)
   - `curl -L https://iterm2.com/shell_integration/zsh \
   -o ~/.iterm2_shell_integration.zsh`
   - `source ~/.iterm2_shell_integration.zsh`
@@ -103,7 +103,7 @@ tags: ["TIL", "vscode", "GitHub"]
 
 - 復原 zsh configuration 
 
-  - https://github.com/kkdai/zsh
+  - [https://github.com/kkdai/zsh](https://github.com/kkdai/zsh)
 
   - Install related plugin
 
@@ -117,7 +117,7 @@ tags: ["TIL", "vscode", "GitHub"]
     - miniconda
     - kubetcl
 
-- 讓 vscode terminal 顯示 zsh  http://www.evanlin.com/til-zsh/ 
+- 讓 vscode terminal 顯示 zsh  [http://www.evanlin.com/til-zsh/](http://www.evanlin.com/til-zsh/ ) 
 
   - `user.setting` (cmd+,) 
 
@@ -139,8 +139,8 @@ tags: ["TIL", "vscode", "GitHub"]
 
 # Reference
 
-- https://medium.com/statementdog-engineering/prettify-your-zsh-command-line-prompt-3ca2acc967f
-- https://github.com/kkdai/zsh
+- [https://medium.com/statementdog-engineering/prettify-your-zsh-command-line-prompt-3ca2acc967f](https://medium.com/statementdog-engineering/prettify-your-zsh-command-line-prompt-3ca2acc967f)
+- [https://github.com/kkdai/zsh](https://github.com/kkdai/zsh)
 
 ```
 
