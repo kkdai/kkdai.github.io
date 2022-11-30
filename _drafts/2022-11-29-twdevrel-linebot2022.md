@@ -15,56 +15,11 @@ tags: ["研討會心得", "LINE"]
 
 日前「LINE新星計劃」連續第四年攜手國立台北市商業大學，共同主辦「2022 LINE CHATBOT對話機器人設計大賽」，本屆共吸引55組企業與學生團隊、超過200人次報名參加，參賽作品包括應用對話機器人於旅遊、消費、金融理財、美妝、寵物、運動、教育及生活等各種主題。 [並且在 2022/10/30 當天進行決賽，選出了優秀的作品](https://linecorp.com/zh-hant/pr/news/zh-hant/2022/4385)。
 
+這一次我們邀請了前幾名的參賽同學，來公司內企業參訪並且與開發團隊同仁們交流。
 
-# **TPM (Technical Project Manager) 技術專案經理的分享 - Zephyr Chang**
+# ** 公司簡介與 LINE TECH FRESH 2023 Spring 梯次招募說明
 
-<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/77c10453fedc4b0c900a0f2b7fc0be77" title="台大資工所企業訪談 - TPM (Technical Project Manager) 技術專案管理經理的分享" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
-
-![image-20221028172009633](../images/2021/image-20221028172009633.png)
-
-首先由 LINE 台灣的 TPM (Technical Prject Manage) Zephyr 帶來的分享，先提到軟體開發流程並且帶出軟體開發的生命週期。並且說明清楚在軟體生命週期中，每一個階段有哪一些角色的協力合作。也會詳細的說明每一個角色的相關職責，為什麼他們在這個專案的流程中如此重要。
-
-## 相關問與答
-
-### 問: 針對重大災害影響，是否專案管理與軟體工程的影響上該如何處理
-
-針對軟體工程的角度來說，事先需要有相關的準備，並且針對 HA (high availability) 有相關的設計與防範。在各種重大災害的演練上，有各種面向的演練。
-
-### 問: 對於各種故障的偵測是否有哪一些特殊的偵測方式？
-
-每一個服務都有相關的監控，任何時候發生問題的時候，都會有監控的服務可以立即偵測，並且通知相關的處理團隊來處理。
-
-### 問: TPM 跟軟體開發的主管有點像，那執行面有哪一些的不同？
-
-在 LINE 來說以專業分工來切割工作， TPM 是屬於一種技術端的專案管理工作，負責專案與服務開發上的大大小小事情。在 LINE 的文化上，我們的組織相當的扁平並且都是透過專業分工。所以即便 TPM 不是屬於主管職務，也是有他專業分工管理的範圍。
-
-## 相關職缺
-
-- [TECH FRESH](https://careers.linecorp.com/jobs/83)
-
-
-# **從測試出發談 LINE 軟體開發流程 - Richard Chang**
-
-<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/df7b84399f5d41dfbf82d6cf54fe1671" title="台大資工所企業訪談 - QA 相關討論" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 560px; height: 314px;" data-ratio="1.78343949044586"></iframe>
-
-![image-20221028171847233](../images/2021/image-20221028171847233.png)
-
-Richad 先透過跟同學的互動，分享了 QA 跟 Testing 兩者的差別？ 首先 Richard 先透過 Bug Fixing Cost 來點出一個問題在每個流程中找出來所引出的成本。 如果在設計階段就能夠將問題找出來，那麼他的成本會是最低的。
-
-也就是在設計階段，當需求端（可能是 PM ，可能是 Business Owner）有新的需求，身為測試人員就要協助審視設計端的需求。盡可能地找出裡面可能有的問題。
-
-到了開發階段，雖然開發人員開始去撰寫開發程式碼，身為測試人員需要準備好相關的測試資料（假資料），甚至開始開發相關的 MockServe 或是自動化測試的相關串接方式。
-
-到了測試階段的時候，則是大量的測試工具來協助。 不論是 CUJ (Critical User Journey) 的流程測試，或者是探索性的測試，甚至是 E2E (End-To-End)的測試流程。
-
-到了正式上線之後，測試人員也有許多工作要做。 如何透過 CI/CD 流程的優化，如何定期確認服務的狀態。
-
-
-## 相關職缺
-
-- [TECH FRESH](https://careers.linecorp.com/jobs/83)
-- [Service QA Engineer](https://careers.linecorp.com/jobs/19)
-- [QA Automation Engineer](https://careers.linecorp.com/jobs/18)
+![image-20221130100141331](../images/2021/image-20221130100141331.png)
 
 # 在 LINE 台灣技術實習 - TECHFRESH 介紹與相關福利
 
@@ -80,6 +35,34 @@ Richad 先透過跟同學的互動，分享了 QA 跟 Testing 兩者的差別？
 ### 如何申請 LINE TECH FRESH 技術新星的實習計畫呢？
 
 對於 [TECH FRESH 計畫](https://careers.linecorp.com/jobs/83)有興趣並想了解內容，歡迎大家參考 [LINE Career 中的細節](https://careers.linecorp.com/jobs/83)。
+
+
+
+# **參賽團隊分享的部分**
+
+### 【亞軍】真好味—市場好味夠 HOW WAY GO
+
+來自台北市商業大學隊伍「真好味」，以「市場好味夠 HOW WAY GO」作品獲得評審青睞，這個作品表達市場不僅是城市生活的縮影，更是大眾日常的風景，致力向年輕族群推廣台灣市場，提供完整的資訊及親切易懂的介面，讓使用者更有意願踏入傳統市場。功能設計方面，透過市場買菜(味)、料理(胃)，及美食尋寶(WAY)，找回年輕人心中傳統市場的存在價值與優勢。
+
+![image-20221130100251104](../images/2021/image-20221130100251104.png)
+
+
+
+### 【季軍】非常遜baby—WearRU
+
+來自元智大學的隊伍「非常遜baby」，作品「WearRU」將「服裝檢索系統」以對話機器人的方式呈現，運用成衣資料庫生成的標籤，提供方便查找的搜尋服務，用戶可以依照服裝的不同風格、類型，設定篩選條件找到符合需求的衣服，並可以透過圖像辨識的功能，上傳圖片尋找相似商品，快速找到有購買意願的品項，進而創造電商導流，並提高商品成交率。
+
+![image-20221130100355195](../images/2021/image-20221130100355195.png)
+
+### 【佳作】伴你來管理—個人管理聊天群
+
+佳作由「個人管理聊天群」奪得，該服務是由用戶與五種不同人格對話機器人共同組成的群聊聊天室，不同個性的對話機器人，將依據其設定的人格屬性，針對用戶丟出的訊息分別進行回覆，以創造貼近真實聊天感受的情境為宗旨，讓更多的社群邊緣人體驗被朋友圍繞的感覺，也可以透過與機器人的對話，鼓勵用戶做好理財、運動等自我管理。
+
+![image-20221130100441799](../images/2021/image-20221130100441799.png)
+
+
+
+
 
 
 
