@@ -17,11 +17,11 @@ tags: ["研討會心得", "LINE"]
 
 這一次我們邀請了前幾名的參賽同學，來公司內企業參訪並且與開發團隊同仁們交流。
 
-# ** 公司簡介與 LINE TECH FRESH 2023 Spring 梯次招募說明
+# 公司簡介與 LINE TECH FRESH 2023 Spring 梯次招募說明
 
 ![image-20221130100141331](../images/2021/image-20221130100141331.png)
 
-# 在 LINE 台灣技術實習 - TECHFRESH 介紹與相關福利
+## 在 LINE 台灣技術實習 - TECHFRESH 介紹與相關福利
 
 如果對於 LINE TECH FRESH 技術新星實習計畫有興趣的同學，歡迎了解以下的相關文章。
 
@@ -36,9 +36,20 @@ tags: ["研討會心得", "LINE"]
 
 對於 [TECH FRESH 計畫](https://careers.linecorp.com/jobs/83)有興趣並想了解內容，歡迎大家參考 [LINE Career 中的細節](https://careers.linecorp.com/jobs/83)。
 
+## 如果想要應徵 LINE 台灣的技術實習，最近一個梯次是什麼時候?
 
+![image-20221130102740659](../images/2021/image-20221130102740659.png)
 
-# **參賽團隊分享的部分**
+就是現在到 **2022/12/02** 前為止，這次 TECH FRESH 職缺採取分團隊投遞，請根據你的專長到以下職缺投遞：
+
+- [Front-end](https://careers.linecorp.com/jobs/1932) 
+- [Back-end](https://careers.linecorp.com/jobs/1933) 
+- [Data Dev](https://careers.linecorp.com/jobs/1931) 
+- [Central Dev](https://careers.linecorp.com/jobs/1929)
+- [iOS Dev](https://careers.linecorp.com/jobs/1930)
+- [Blockchain Dev](https://careers.linecorp.com/jobs/1928)
+
+# 參賽團隊分享的部分
 
 ### 【亞軍】真好味—市場好味夠 HOW WAY GO
 
