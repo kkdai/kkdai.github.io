@@ -50,7 +50,7 @@ tags: ["TIL", "vscode", "GitHub"]
 ![](https://github.com/ryanoasis/nerd-fonts/raw/master/images/nerd-fonts-logo.svg)
 
 ```
-> github clone https://github.com/ryanoasis/nerd-fonts
+> git clone https://github.com/ryanoasis/nerd-fonts
 > cd nerd-fonts
 > ./install.sh
 ```
