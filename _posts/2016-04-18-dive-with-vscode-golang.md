@@ -162,6 +162,19 @@ tags: ["vscode", "golang"]
 
 關於要用 vs code debugging CLI ,  想要跑 vs code 去 attach 看起來有點問題..  回過頭來說 delve debug 看起來對於 `bufio.scanner` 會跳掉... 又得花時間去看 delve. gdb 就沒這個問題． 持續觀察與更新．
 
+
+
+## 讓你在 Mac Terminal 直接把 VS Code 叫起來
+
+1. Open Visual Studio Code
+2. Open the command pallette with Command + Shift + P (or F1)
+3. Type `Shell` in command palette
+4. Select `Shell Command: Install code in PATH` from suggested list
+
+![img](https://i.stack.imgur.com/Ng886.png)
+
+
+
 ## 心得:
 
 目前還在持續使用，雖然可以將 Python, Node.js 跟 Golang 全部整合在同一個 IDE ，不過因為他是 Project-based 你還是得開很多個 IDE ．
