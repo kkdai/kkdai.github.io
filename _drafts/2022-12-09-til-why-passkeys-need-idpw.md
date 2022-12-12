@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "[TIL] 為蛇魔 Passkeys 流程在建立帳號的時候，依舊需要帳號跟密碼？"
+title: "[TIL] 為什麼 Passkeys 流程在建立帳號的時候，依舊需要帳號跟密碼？"
 description: ""
 category: 
 - TodayILearn
 - Golang
-tags: ["TIL", "login", "golang"]
+tags: ["TIL", "OAuth", "Passkeys", "Golang"]
 ---
 
 <img src="../images/2021/image-20220608151748839.png" alt="image-20220608151748839" style="zoom:50%;" />
@@ -42,9 +42,25 @@ tags: ["TIL", "login", "golang"]
 
 
 
+# Passkeys 的登入體驗
+
+![img](../images/2022/626bb73342428b103f9762fc_Frame2_4.svg)
+
+![img](../images/2022/626b91ad953301480820e9d3_Frame2_2.svg)
+
+# 對於相關設備的支援
+
+![image-20221212092215898](../images/2022/image-20221212092215898.png)
+
+(From: [https://www.passkeys.io/](https://www.passkeys.io/))
 
 
 
+
+
+![image-20221212085622584](../images/2022/image-20221212085622584.png)
+
+(From: [WWDC22 Session: Meet passkeys](https://developer.apple.com/videos/play/wwdc2022/10092/) )
 
 # Reference
 
