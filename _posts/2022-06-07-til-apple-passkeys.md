@@ -81,6 +81,12 @@ Passkey 是一個溝通協定，可以比起舊的 Password 機制來說更佳�
 - 透過使用這本地端的 Private Key 解開該 Challenge 並且回傳答案
 - 伺服器驗證後，確認無誤確認使用者登入。
 
+# (2022/12/10更新)如果是第一次創建帳號，需要幾次手續？ 為什麼？
+
+請參考這篇文章 [[TIL] 為什麼 Passkeys 流程在建立帳號的時候，依舊需要帳號跟密碼？](https://www.evanlin.com/til-why-passkeys-need-idpw/)
+
+
+
 # 身為後端開發者，你該怎麼應用 WebAuthn?
 
 要導入 Passkeys 須要導入以下相關流程:
