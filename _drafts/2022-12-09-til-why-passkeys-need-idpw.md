@@ -39,7 +39,9 @@ tags: ["TIL", "OAuth", "Passkeys", "Golang"]
   - 這時候可以產生 credential ID (optional) 回傳給 client 端作為 client agent 產生的數值。
     - User-Agent 可能傳過來 Challenge + credential command + credential ID
 
-- 
+- **Step 9 ~ 18:**
+  - 這裡就是會啟動 Cliet Agent 去開啟 Passkeys 的支援登入流程。
+
 
 
 
