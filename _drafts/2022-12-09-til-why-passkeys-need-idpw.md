@@ -28,15 +28,18 @@ tags: ["TIL", "OAuth", "Passkeys", "Golang"]
 
 (Pic from [https://github.com/Yubico/java-webauthn-server#architecture]( https://github.com/Yubico/java-webauthn-server#architecture))
 
-根據這個元件的說明圖，大家會很好奇：
+根據這個元件的說明圖，大家會很好奇。這裡需要合併跟另外一張圖一起來看：
 
-- **Step: 1~ 4:** 
+- **Step: 1 ~ 4:** 
   - 帳號建立的時候，由於需要支援比較舊型的瀏覽設備（瀏覽器/OS) ，所以這裡還是要帳號跟密碼。整個流程跟以往的資料庫一樣，但是接下來流程有一些不同。
+  - 如果是有支援 Passkeys 的 User-Agent 並且沒有要 Backward Compatability 的話，其實不需要 1 ~ 4 (不過應該都要有)。
 - **Step: 5:**
   - 這裡是參考 [PKCE 的方式](https://www.evanlin.com/go-oauth-pkce/)來生成Challenge ，也就事某個 AES 加密過後的數值。
-- **Step 6:**
-  - 
+- **Step 6 ~ 9:**
+  - 這時候可以產生 credential ID (optional) 回傳給 client 端作為 client agent 產生的數值。
+    - User-Agent 可能傳過來 Challenge + credential command + credential ID
 
+- 
 
 
 
@@ -56,11 +59,17 @@ tags: ["TIL", "OAuth", "Passkeys", "Golang"]
 
 
 
-
+# 最後
 
 ![image-20221212085622584](../images/2022/image-20221212085622584.png)
 
 (From: [WWDC22 Session: Meet passkeys](https://developer.apple.com/videos/play/wwdc2022/10092/) )
+
+如同這一篇影片最後的一樣， Passkeys 並不是在節省整個登入流程。 而是在加強整個登入流程的安全性與使用者便利性。為了達到真正的 Password-less 的境界，其實需要許多業界的配合：
+
+- 伺服器端需要都使用 WebAythn 來寫自己的登入端應用。
+- 並且讓相關伺服器的版本更新到最新版本
+- 也提醒使用者要使用新的版本的手機（好像比較簡單）。
 
 # Reference
 
