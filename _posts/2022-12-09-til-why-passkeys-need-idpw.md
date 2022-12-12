@@ -30,6 +30,10 @@ tags: ["TIL", "OAuth", "Passkeys", "Golang"]
 
 根據這個元件的說明圖，大家會很好奇。這裡需要合併跟另外一張圖一起來看：
 
+![](https://www.evanlin.com/images/2021/image-20220615175557038.png)
+
+
+
 - **Step: 1 ~ 4:** 
   - 帳號建立的時候，由於需要支援比較舊型的瀏覽設備（瀏覽器/OS) ，所以這裡還是要帳號跟密碼。整個流程跟以往的資料庫一樣，但是接下來流程有一些不同。
   - 如果是有支援 Passkeys 的 User-Agent 並且沒有要 Backward Compatability 的話，其實不需要 1 ~ 4 (不過應該都要有)。
@@ -41,9 +45,20 @@ tags: ["TIL", "OAuth", "Passkeys", "Golang"]
 
 - **Step 9 ~ 18:**
   - 這裡就是會啟動 Cliet Agent 去開啟 Passkeys 的支援登入流程。
+  - 透過 private 加密的加密的 credential 傳給伺服器端。
+  - 透過之前存取過的 Public key 解開後，確認是否為同樣的 credential ID。
+
+- **Step 18 ~ 21:**
+  - Auth 完成後完成註冊。
 
 
 
+
+### 幾個重點是:
+
+- 相關的流程絕對比原有的 ID/PW 還要更繁瑣（可能更挑設備）。
+- 但是第一次註冊完成後，如果設備允許，之後是不需要輸入 ID / PW 的方式。
+  - Demo 範例也是從第一次就使用 Passkeys ，但是這樣往往無法對舊的設備來通用。
 
 
 
@@ -58,6 +73,8 @@ tags: ["TIL", "OAuth", "Passkeys", "Golang"]
 ![image-20221212092215898](../images/2022/image-20221212092215898.png)
 
 (From: [https://www.passkeys.io/](https://www.passkeys.io/))
+
+這邊可以知道，其實 Passkeys 裡面呼叫的 WebAuthn 會使用到瀏覽器端的 App 與 OS 版本有關。所以如果要希望早日完全導入 Passkeys 的系統，其實是瀏覽器支援外。 如果類似 Apple 的系統原生支援的話，在 App 的開發上也能夠早日導入。
 
 
 
