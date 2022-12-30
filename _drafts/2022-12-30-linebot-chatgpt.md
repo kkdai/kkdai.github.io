@@ -1,11 +1,10 @@
 ---
 layout: post
-title: "[學習文件] 如何透過 GCP STT (Speech To Text) 與 LINE Video Flex Message 來打造幫助長輩的影片翻譯（自動輸出文字）聊天機器人"
+title: "[學習文件] "
 description: ""
 category: 
 - 學習文件
-- DevRel
-tags: ["GCP", "Golang", "LINEBot"]
+tags: ["LINEBot", "Golang", "ChatGPT"]
 ---
 
 ![Video component example](https://developers.line.biz/assets/img/video.fd15dfd4.png)
