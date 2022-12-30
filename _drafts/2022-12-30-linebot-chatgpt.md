@@ -121,9 +121,14 @@ tags: ["LINEBot", "Golang", "ChatGPT"]
 
 ### 如何取得聊天群組 (group) 的資訊（透過 Webhook)，並且儲存訊息：
 
-首先，你需要知道你有在一個聊天群組內。所以如何取得 Group ID ，並且
+首先，你需要知道你有在一個聊天群組內。所以如何取得 Group ID ，並且記錄相關的訊息。 這裡也順便提到，在 2022/12/27 的最新新聞，以後已經無法從 LIFF 取得 Group ID 的相關資訊。也就是說在群組中，能取得 LINE 群組 ID 只剩下透過 Webhook 的方式。
 
+<script src="https://gist.github.com/kkdai/f67d3ece464876bfb4c5fcf09a1ad1ca.js"></script>
 
+快速總結：
+
+- **聊天群組的 ID** ( `event.Source.GroupID` ) : 請注意，如果是直接跟官方帳號的單獨一對一聊天。這邊的數值會是空的。
+- **儲存資料的方式**：這個範例程式主要是給大家有相關感受，
 
 
 
