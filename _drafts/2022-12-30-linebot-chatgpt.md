@@ -115,9 +115,13 @@ tags: ["LINEBot", "Golang", "ChatGPT"]
 
 
 
-# 開發流程記錄：
+# 開發流程記錄 (Golang 為主)：
 
+以下將逐步講解該如何開發出這樣的聊天機器人：
 
+### 如何取得聊天群組 (group) 的資訊（透過 Webhook)，並且儲存訊息：
+
+首先，你需要知道你有在一個聊天群組內。所以如何取得 Group ID ，並且
 
 
 
@@ -126,6 +130,7 @@ tags: ["LINEBot", "Golang", "ChatGPT"]
 
 ## 相關技術文件：
 
+- [LINE News: Plans to discontinue providing company internal identifiers of chat rooms to LIFF apps](https://developers.line.biz/en/news/2022/12/27/liff-spec-change/)
 - [LINE API: Getting user profiles](https://developers.line.biz/en/docs/android-sdk/managing-users/#get-profile)
 - [LINE API: Get group chat member profile](https://developers.line.biz/en/reference/messaging-api/#get-group-member-profile)
 - [LINE API: Get group chat summary](https://developers.line.biz/en/reference/messaging-api/#group)
@@ -136,17 +141,4 @@ tags: ["LINEBot", "Golang", "ChatGPT"]
 
 
 如果你有任何建議或是疑問，歡迎透過 [LINE Developers 的官方討論區](https://www.facebook.com/groups/linebot)或是[LINE 開發者官方社群的官方帳號跟我們聯絡](https://lin.ee/qZRsSTG)。
-
-
-# LINE Developers 相關技術文件與部落格：  
-
-- [[新聞\] Flex Message Update 3 released](https://developers.line.biz/en/news/2022/03/11/flex-message-update-3-released/)
-
--  [文件: Creating a Flex Message including a video](https://developers.line.biz/en/docs/messaging-api/create-flex-message-including-video/)
-
-- [部落格: 2022 年 Flex Message 的 3 項新功能 LINE 中訊息設計釋放無限自由](https://engineering.linecorp.com/zh-hant/blog/2022-flex-message-v3/)
-
-  
-
-   
 
