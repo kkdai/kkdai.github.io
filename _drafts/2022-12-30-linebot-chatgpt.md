@@ -143,6 +143,8 @@ tags: ["LINEBot", "Golang", "ChatGPT"]
 
 ## 如何透過 API 來幫你聊天室訊息摘要
 
+<script src="https://gist.github.com/kkdai/cc6a635c495bfefb6fcc35e8271e3216.js"></script>
+
 
 
 
