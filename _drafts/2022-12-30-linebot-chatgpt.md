@@ -125,10 +125,25 @@ tags: ["LINEBot", "Golang", "ChatGPT"]
 
 <script src="https://gist.github.com/kkdai/f67d3ece464876bfb4c5fcf09a1ad1ca.js"></script>
 
-快速總結：
+### 快速總結：
 
 - **聊天群組的 ID** ( `event.Source.GroupID` ) : 請注意，如果是直接跟官方帳號的單獨一對一聊天。這邊的數值會是空的。
-- **儲存資料的方式**：這個範例程式主要是給大家有相關感受，
+- **儲存資料的方式**：這個範例程式主要是給大家有相關感受，所以使用記憶體加上 map 的方式來儲存。如果大家真的要上線使用，請記得搭配資料庫來使用。
+
+
+
+## 如何透過 Golang 來使用 ChatGPT API
+
+<script src="https://gist.github.com/kkdai/7f099ee6613374805292f8b8e9ca1484.js"></script>
+
+### 快速總結：
+
+- 建議使用套件: [github.com/sashabaranov/go-gpt3](https://github.com/sashabaranov/go-gpt3)
+- Model 選擇上，大家可以稍微調整。 但是 `Davinci001` 成果真的不太好。
+
+## 如何透過 API 來幫你聊天室訊息摘要
+
+
 
 
 
