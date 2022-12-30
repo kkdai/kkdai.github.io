@@ -145,7 +145,10 @@ tags: ["LINEBot", "Golang", "ChatGPT"]
 
 <script src="https://gist.github.com/kkdai/cc6a635c495bfefb6fcc35e8271e3216.js"></script>
 
+### 快速總結：
 
+- 因為  [ChatGPT](https://chat.openai.com/chat) 的呼叫比較花時間，先回覆給使用者，再來呼叫等待答案比較好。
+- 總結就是在所有文字前面加上一個 `幫我總結` 即可。 記得後方要用符號包起來，避免太多簡體字的話，可以加上`請用繁體中文`。
 
 
 
@@ -160,7 +163,13 @@ tags: ["LINEBot", "Golang", "ChatGPT"]
 
 # 未來相關工作
 
+[ChatGPT](https://chat.openai.com/chat)  是個很有趣的服務，本次文章透過他可以幫忙摘要一段文章的功能。來幫我們把聊天群組的聊天記錄來做一個總結。
 
+這樣可以讓太久沒追到的人，可以快速跟上大家聊天的話題。
+
+這次的程式碼相當的簡單易懂，希望可以拋磚引玉看到各位更多的應用。
+
+[ChatGPT](https://chat.openai.com/chat) 其實還有更多的應用可以探討，相信也可以透過這個服務讓 LINE 官方帳號發揮強大的功能。
 
 如果你有任何建議或是疑問，歡迎透過 [LINE Developers 的官方討論區](https://www.facebook.com/groups/linebot)或是[LINE 開發者官方社群的官方帳號跟我們聯絡](https://lin.ee/qZRsSTG)。
 
