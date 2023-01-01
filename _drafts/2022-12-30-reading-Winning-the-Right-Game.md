@@ -151,7 +151,11 @@ Spotify 原本就是專注在串流音樂的廠商，但是 2015 年 Apple Music
 
 ### ASSA Abloy 的案例了舉例生態系：
 
-[ASSA Abloy](https://www.assaabloy.com/au/en) 是一個傳統得門鎖廠商，
+[ASSA Abloy](https://www.assaabloy.com/au/en) 是一個傳統的門鎖廠商，他們的生態系擴張方式如下：
+
+- **[ASSA Abloy](https://www.assaabloy.com/au/en) 階段一 建立生態環境**： 有著大量的門鎖系統，並且隨著產品演進也有著大量的數位門鎖系統。透過 CLIQ 的雲端們損系統，可以
+- **[ASSA Abloy](https://www.assaabloy.com/au/en) 階段二 階段性擴張**：開放給每一廠商都可以加入 Alexa 的人工智慧溝通能力的應用 -- Alexa Skill 。
+- **[ASSA Abloy](https://www.assaabloy.com/au/en) 階段三 生態系的傳遞**：人工智慧更加進化，每一個智慧家電可以直接使用 Alexa 。不在需要購買 Amazon Echo ，你只要跟他們合作，即便你是冷氣廠商，你也可以使用相關的功能。
 
 
 
