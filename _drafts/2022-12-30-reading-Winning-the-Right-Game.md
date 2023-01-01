@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[好書分享] 生態系競爭策略-重新定義價值結構，在轉型中辨識正確的賽局，掌握策略工具，贏得先機"
+title: "[好書分享] 生態系競爭策略-重新定義價值結構，在轉型中辨識正確的賽局，掌握策略工具，贏得先機 （書摘）"
 description: ""
 category: 
 - 書海裡的漫遊
@@ -153,9 +153,19 @@ Spotify 原本就是專注在串流音樂的廠商，但是 2015 年 Apple Music
 
 [ASSA Abloy](https://www.assaabloy.com/au/en) 是一個傳統的門鎖廠商，他們的生態系擴張方式如下：
 
-- **[ASSA Abloy](https://www.assaabloy.com/au/en) 階段一 建立生態環境**： 有著大量的門鎖系統，並且隨著產品演進也有著大量的數位門鎖系統。透過 CLIQ 的雲端們損系統，可以
-- **[ASSA Abloy](https://www.assaabloy.com/au/en) 階段二 階段性擴張**：開放給每一廠商都可以加入 Alexa 的人工智慧溝通能力的應用 -- Alexa Skill 。
-- **[ASSA Abloy](https://www.assaabloy.com/au/en) 階段三 生態系的傳遞**：人工智慧更加進化，每一個智慧家電可以直接使用 Alexa 。不在需要購買 Amazon Echo ，你只要跟他們合作，即便你是冷氣廠商，你也可以使用相關的功能。
+- **[ASSA Abloy](https://www.assaabloy.com/au/en) 階段一 建立生態環境**： 有著大量的門鎖系統，並且隨著產品演進也有著大量的數位門鎖系統。透過 CLIQ 的雲端們損系統。
+- **[ASSA Abloy](https://www.assaabloy.com/au/en) 階段二 階段性擴張**： 透過數位門鎖開始連接每一個門，讓門鎖本身跟著雲端連接起來。
+- **[ASSA Abloy](https://www.assaabloy.com/au/en) 階段三 生態系的傳遞**：鑰匙不在是一個鐵片，可以是你的手機，甚至是任合一個可以代表你的物品。 也讓著個「身份認證」變成他們的下一個生態系。（身份識別）
+
+這邊提出的生態，沒有那麼順利。這邊說明一下：
+
+- **[2004 Hi-O](https://dach.assaabloy.com/de/en/produktkatalog/effeff-t395536-hi-o-connectors)**:  統一的規格，讓大家得遵循門鎖的制定規格。但是卻限縮了門鎖廠商的自主性與客製化的空間，讓其他廠商都不願意加入。
+  ![image-20230102002425188](../images/2022/image-20230102002425188.png)
+- **[Aperio](https://www.assaabloy.com/pl/en/solutions/topics/access-control/aperio) **: 而 Aperio 並沒有統一門鎖的規格（孔數，大小等等），僅在於提供整個門鎖溝通的基本架構。 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lCcHf7ZJnKo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+後來 **[Aperio](https://www.assaabloy.com/pl/en/solutions/topics/access-control/aperio) ** 的機制讓其他廠商都願意加入， [ASSA Abloy](https://www.assaabloy.com/au/en)  的門鎖的生態系才這樣擴張起來。
 
 
 
@@ -166,8 +176,4 @@ Spotify 原本就是專注在串流音樂的廠商，但是 2015 年 Apple Music
 ## 第六章　領導生態系的思維：協調與執行
 
 ## 第七章　讓所有人都清楚公司策略
-
-## 後　記　應對生態系的顛覆：社會部門的挑戰
-
-
 
