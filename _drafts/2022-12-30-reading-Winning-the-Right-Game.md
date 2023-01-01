@@ -39,7 +39,8 @@ Winning the Right Game: How to Disrupt, Defend, and Deliver in a Changing World
 
 - [柯達](https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E5%A3%AB%E6%9B%BC%E6%9F%AF%E8%BE%BE%E5%85%AC%E5%8F%B8)的贏錯市場策略。
 - [Lexmark](https://en.wikipedia.org/wiki/Lexmark) 的積極轉型策略。
-- 
+
+以上兩個跟生態系的改變有關，但是如果是因為強大的競爭對手來的時候該怎麼辦？
 
 
 
@@ -118,11 +119,41 @@ Wayfaire 本來是做傢俱與相關商品的照片陳列與銷售的中間商�
 
 ### TomTom 對上 Googe Map 在圖資上的變通
 
-TomTom 原本跟 Germin 都是地圖圖資上領先的公司，但是
+TomTom 原本跟 Germin 都是地圖圖資上領先的公司，但是從 iPhone 3G 上市之後（又是 iPhone) 。 Google 也在 Android 2.0 的系統公佈得時候，開放了 Google Map 在手機 OS 上的服務。原本 Google 也是使用 TomTom 的子公司 Tele Atlas 的圖資，但是卻在之後開始從事自己圖資的建立。並且 Google Map 有著 API 的開放，讓整個地圖服務變成每一家軟體廠商都可以加入的案例，
+
+這時候 TomTom 該如何應對呢？ 對於 TomTom 來說，他們的利基就是一個成為客戶資訊的忠實提供商。不會拿去做廣告之用，這樣安全的圖資變成了客戶相信的重點。反過頭來，也或許是甘於第二的主要因素？
+
+
+
+### Spotify 與 Apple Music 
+
+Spotify 原本就是專注在串流音樂的廠商，但是 2015 年 Apple Music 在 iOS 8.4 登場之後。 Apple Music 花了六個月就有六百萬的全球付費使用者，這是 Spotify 花了四年才達到的成果。
+
+他們有點類似 TomTom 與 Google Map ，對於超巨大的競爭對手。他們的競爭點勁在於「我們不是巨頭，我們是大家的朋友。」雖然他們曾經因為做了「表演者實驗」的方案（讓個人創作者繞過唱片公司直接上架音樂），但是這個隨後馬上就取消了。
 
 
 
 ## 第三章　生態系的進攻：從增加競爭到改變競爭
+
+這邊提到了生態系的建立方式：
+
+- 建立「最低可行生態系統」 **MVE** (Minimum Viable ecosystem)
+- 遵循階段性擴張的路徑
+- 部署生態系的傳遞
+
+或許這樣講有點難懂，作者還用了一些例子來說明他的生態系建立系統。
+
+###  Amazon Alexa 的案例來舉例生態系：
+
+- **Alexa 階段一 建立生態環境**：透過便宜又具有智慧的藍芽喇叭，讓許多人一起來購買。
+- **Alexa 階段二 階段性擴張**：開放給每一廠商都可以加入 Alexa 的人工智慧溝通能力的應用 -- Alexa Skill 。
+- **Alexa 階段三 生態系的傳遞**：人工智慧更加進化，每一個智慧家電可以直接使用 Alexa 。不在需要購買 Amazon Echo ，你只要跟他們合作，即便你是冷氣廠商，你也可以使用相關的功能。
+
+### ASSA Abloy 的案例了舉例生態系：
+
+[ASSA Abloy](https://www.assaabloy.com/au/en) 是一個傳統得門鎖廠商，
+
+
 
 ## 第四章　顛覆生態系的時機：太早可能比太晚更糟糕
 
