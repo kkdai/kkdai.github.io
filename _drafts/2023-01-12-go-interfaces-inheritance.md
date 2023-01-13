@@ -36,3 +36,20 @@ tags: ["Golang", "LINEBot", "TIL"]
 
 # 相關程式碼
 
+
+
+### Basic
+
+<script src="https://gist.github.com/kkdai/e186c9ed2b088b3f30e5d2e9cee62668.js"></script>
+
+### Memory DB
+
+<script src="https://gist.github.com/kkdai/7ff6487458ee8691b9ddf6993872186d.js"></script>
+
+### 如何切換資料庫
+
+<script src="https://gist.github.com/kkdai/2b84fb24fef3e3313cd6b963dcd26a14.js"></script>
+
+### PostGresSQL DB 
+
+<script src="https://gist.github.com/kkdai/f1c4277ea2dfe7cabeb3a54e73aa7376.js"></script>
