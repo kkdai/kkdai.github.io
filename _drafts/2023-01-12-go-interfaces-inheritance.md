@@ -45,21 +45,30 @@ tags: ["Golang", "LINEBot", "TIL"]
 
 <script src="https://gist.github.com/kkdai/62dc8354e7ce3e7607aeda0513513a58.js"></script>
 
+這裡使用到定義成 Interfaces 的 `GroupDB` 的實作，根據不同的設定  `NewPGSql(url)` 或是  `NewMemDB()` 就可以讓裡面對應的實作不同。
+
 
 
 ## 詳細列出不同資料庫的開發方式
+
+接下來列出不同資料庫的實作方式。
 
 ### Basic (Data)
 
 <script src="https://gist.github.com/kkdai/e186c9ed2b088b3f30e5d2e9cee62668.js"></script>
 
+這是最基礎的設定，最重要記事 interface `GroupDB` 的宣告，然後其他兩個也必須要有
+
+- `ReadGroupInfo(string) GroupData`
+- `AppendGroupInfo(string, MsgDetail)`
+
+兩個 function 的實作，並且輸入參數跟輸出參數都要相同。 這樣才能使用到一樣的邏輯來操作資料。
+
 ### Memory DB
 
 <script src="https://gist.github.com/kkdai/7ff6487458ee8691b9ddf6993872186d.js"></script>
 
-### 如何切換資料庫
-
-<script src="https://gist.github.com/kkdai/2b84fb24fef3e3313cd6b963dcd26a14.js"></script>
+接下來這是使用 Memory 做為資料庫的實作，可以看到主要是透過 `map` 來操作相關資料處理。
 
 ### PostGresSQL DB 
 
