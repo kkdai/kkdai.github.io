@@ -30,7 +30,11 @@ tags: ["Golang", "LINEBot", "TIL"]
 
 # 範例程式碼 LINE Bot  群組聊天摘要生成器
 
-這次透過上一次的範例文章 [[學習文件] LINE Bot 群組聊天摘要生成器](https://www.evanlin.com/linebot-chatgpt/) 作為一個範例程式碼。 先來看整體切割方式。
+這次透過上一次的範例文章 [[學習文件] LINE Bot 群組聊天摘要生成器](https://www.evanlin.com/linebot-chatgpt/) 作為一個範例程式碼。 先來看整體切割方式。 
+
+#### Github Repo:  https://github.com/kkdai/LINE-Bot-ChatSummarizer
+
+
 
  ## 資料架構切割圖
 
