@@ -28,7 +28,7 @@ tags: ["Golang", "LINEBot", "TIL"]
 
 這一篇文章將開始敘述，如何透過 Golang 的 Interfaces 的方式來達到類似繼承的效果。 使用同一份的程式邏輯程式碼，可以根據你設定的參數不同來讀取不同得資料庫。
 
-# 使用的範例程式碼
+# 範例程式碼 LINE Bot  群組聊天摘要生成器
 
 這次透過上一次的範例文章 [[學習文件] LINE Bot 群組聊天摘要生成器](https://www.evanlin.com/linebot-chatgpt/) 作為一個範例程式碼。 先來看整體切割方式。
 
@@ -68,8 +68,29 @@ tags: ["Golang", "LINEBot", "TIL"]
 
 <script src="https://gist.github.com/kkdai/7ff6487458ee8691b9ddf6993872186d.js"></script>
 
-接下來這是使用 Memory 做為資料庫的實作，可以看到主要是透過 `map` 來操作相關資料處理。
+接下來這是使用 Memory 做為資料庫的實作，可以看到主要是透過 `map` 來操作相關資料處理。 這樣透過 memory 當作 DB 的方式，如果是在 FAAS (e.g. Heroku 或是 Render.com) 就會在服務睡眠的時候，失去你的儲存資料。
 
 ### PostGresSQL DB 
 
 <script src="https://gist.github.com/kkdai/f1c4277ea2dfe7cabeb3a54e73aa7376.js"></script>
+
+接下來這邊就是使用 PostGresSQL 的實作，主要是透過 `"github.com/go-pg/pg/v10"` 這個套件的版本，可以透過 ORM 的方式直接去操作 PostgresSQL 可以讓許多實情省下麻煩。但是很多時候，沒有直接使用 SQL 其實也是更加的麻煩。
+
+
+
+這邊的開發流程上，沒有要注意的事情。只需要注意到必須以下實作就好。
+
+- `ReadGroupInfo(string) GroupData`
+- `AppendGroupInfo(string, MsgDetail)`
+
+
+
+![img](../images/2022/sum_all-20230116203414058.png)
+
+
+
+## 未來發展
+
+透過 Interfaces 來當作資料庫存取的開發方式可以很方便，並且留下未來許多資料庫的資源空間。不論是支援 MongoDB 或是想要使用 MySQL 甚至是整個資料庫搬到 FireStore 也不需要改動我原版的商業邏輯部分。 只需要把基本的資料庫實作完成即可。
+
+希望這篇文章可以給大家一些想法。
