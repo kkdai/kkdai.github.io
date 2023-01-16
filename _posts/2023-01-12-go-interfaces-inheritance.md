@@ -8,7 +8,7 @@ category:
 tags: ["Golang", "LINEBot", "TIL"]
 ---
 
-![Inheritance in Go is not possible, so to use composition of struct or  interface to achieve the same goal? | The Startup](../images/2022/0*gkZ1djQY5PA1u3wU.jpg)
+![](../images/2022/0*gkZ1djQY5PA1u3wU.jpg)
 
 
 
