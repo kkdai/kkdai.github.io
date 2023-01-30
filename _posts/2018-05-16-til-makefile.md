@@ -112,3 +112,4 @@ all: $(TARGETS)
 
 - [8.2 Functions for String Substitution and Analysis](https://www.gnu.org/software/make/manual/html_node/Text-Functions.html)
 - [Makefile的一些用法](http://deanjai.blogspot.tw/2008/02/objs-foo.html)
+- [寫 Web 也可以用 Makefile：好好管理你的環境流程](https://blog.goodjack.tw/2023/01/use-makefile-to-manage-workflows-for-web-projects.html)
