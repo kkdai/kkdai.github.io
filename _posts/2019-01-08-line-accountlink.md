@@ -109,9 +109,9 @@ https://github.com/kkdai/line-account-link
 
 7. 使用者在商業服務平台輸入了自己的登入資訊。
 
-8. 商業服務平台透過使用者的帳號資訊產生了一個隨機數 (nounce)。
+8. 商業服務平台透過使用者的帳號資訊產生了一個隨機數 (nonce)。
 
-   > 雖然說 nounce 為隨機數，其實有產生的規則與限制
+   > 雖然說 nonce 為隨機數，其實有產生的規則與限制
    >
    > - 使用 secure random number generator
    > - 建議透過 base64 encode 
@@ -122,16 +122,16 @@ https://github.com/kkdai/line-account-link
 
 11. LINE 平台傳回同一組隨機數與使用者 ID (UID) 到商業服務平台的 webhook 用來作為綁定之用。 
 
-12. LINE bot 這時候收到該隨機數 (nounce) 的認證，透過這個隨機數 (nounce) 將使用者在 LINE 上面的身份與商業服務平台帳號取得綁定。
+12. LINE bot 這時候收到該隨機數 (nonce) 的認證，透過這個隨機數 (nonce) 將使用者在 LINE 上面的身份與商業服務平台帳號取得綁定。
 
     > 也就是最後要將這些資訊傳回給 Server ，作為綁定成功地確認`https://access.line.me/dialog/bot/accountLink?linkToken={link token}&nonce={nonce}`
 
-13. 這時候 chatbot 會收到 `EventTypeAccountLink` 的 event 並且透過結果可以知道該使用者綁定成功。 nounce 也會提供給你作為帳號比對的資訊。
-  
+13. 這時候 chatbot 會收到 `EventTypeAccountLink` 的 event 並且透過結果可以知道該使用者綁定成功。 nonce 也會提供給你作為帳號比對的資訊。
+
 
 # 為何要使用 Account Link 
 
-透過 account link 可以讓 chatbot 裡面的使用者與原先商業網站的帳號相互的綁定。透過的機制就是一開始 issue link token 並且在登入成功後將 token 帶回到 chatbot 裡面，並且透過產生的 nounce 可以確保雙方資料的無誤與正確性。 整體來說，使用 account link 具有以下的優點:
+透過 account link 可以讓 chatbot 裡面的使用者與原先商業網站的帳號相互的綁定。透過的機制就是一開始 issue link token 並且在登入成功後將 token 帶回到 chatbot 裡面，並且透過產生的 nonce 可以確保雙方資料的無誤與正確性。 整體來說，使用 account link 具有以下的優點:
 
 - **步驟簡單**：透過 `IssueLinkToken` 與 API call 即可完成整個綁定流程。
 - **安全**：透過改使用者申請的 token 才能夠作為 accountLink 的回傳 token ，可以確保手續完整性。
