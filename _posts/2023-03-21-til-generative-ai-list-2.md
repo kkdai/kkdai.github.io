@@ -22,7 +22,7 @@ tags: ["TIL", "ChatGPT", "Generative_AI"]
 
 # 相關資訊
 
-
+大多是轉貼資訊，搜集起來作為自己查詢用。
 
 1. **Bard：你最具有生產力、創造力、解答力的 AI 聊天機器人**
 
@@ -83,9 +83,4 @@ Demo：[https://zero123.cs.columbia.edu/](http://zero123.cs.columbia.edu/)
 # 相關文章
 
 - [生成式AI衝擊工作坊心得 (3/18~19)](https://t.co/nvZVPa1r6S)
-
 - [ 3天賣破 500 萬元！語音助理＋3D 投影＋ChatGPT＝召喚 AI 妹子？ - INSIDE](https://www.inside.com.tw/article/31049-Gatebox ChatGPT AI bride)
-
-- 
-
-  
