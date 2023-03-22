@@ -80,6 +80,9 @@ Demo：[https://zero123.cs.columbia.edu/](http://zero123.cs.columbia.edu/)
 
 ![Image](../images/2022/FroKojdaYAEHlzE.jpeg)
 
+7. https://www.descript.com/
+   分享上個月有玩這個train出自己的聲音，滿好玩的
+
 # 相關文章
 
 - [生成式AI衝擊工作坊心得 (3/18~19)](https://t.co/nvZVPa1r6S)
