@@ -93,6 +93,10 @@ Demo：[https://zero123.cs.columbia.edu/](http://zero123.cs.columbia.edu/)
 幫我把「個人知識管理」主題課程，整理成 5 頁簡報，每頁簡報有一個標題關鍵字，以及一個重點清單。並且，每一頁簡報搭配一張和其標題關鍵字相關的圖片，顯示圖片時使用 (https://source.unsplash.com/960x640/?<關鍵詞>)
 ```
 
+![image-20230323121125599](../images/2022/image-20230323121125599.png)
+
+
+
 
 
 
