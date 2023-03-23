@@ -83,6 +83,30 @@ Demo：[https://zero123.cs.columbia.edu/](http://zero123.cs.columbia.edu/)
 7. https://www.descript.com/
    分享上個月有玩這個train出自己的聲音，滿好玩的
 
+# Prompt 咒語搜集
+
+放一些我覺得相當有用的 ChatGPT 咒語 (prompt)
+
+## 投影片相關
+
+```
+幫我把「個人知識管理」主題課程，整理成 5 頁簡報，每頁簡報有一個標題關鍵字，以及一個重點清單。並且，每一頁簡報搭配一張和其標題關鍵字相關的圖片，顯示圖片時使用 (https://source.unsplash.com/960x640/?<關鍵詞>)
+```
+
+
+
+
+
+## 優化相關（給 ChatGPT Playground 用)
+
+```
+撰寫一個用於 openai fine-tune 情緒分類的範例，直接以 {'prompt':'', 'completion':''"} 格式呈現，符合的prompt與completion組成規則。
+```
+
+![image-20230323115925580](../images/2022/image-20230323115925580.png)
+
+
+
 # 相關文章
 
 - [生成式AI衝擊工作坊心得 (3/18~19)](https://t.co/nvZVPa1r6S)
