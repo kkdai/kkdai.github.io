@@ -4,7 +4,7 @@ title: "[TIL] 生成式 AI (Generative AI) 相關新聞跟應用 2023/03/17"
 description: ""
 category: 
 - TodayILearn
-- Golang
+- ChatGPT
 tags: ["TIL", "ChatGPT", "Generative_AI"]
 ---
 
