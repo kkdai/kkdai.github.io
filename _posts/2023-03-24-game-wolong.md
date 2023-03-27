@@ -39,12 +39,21 @@ tags: ["PS5", "WoLong"]
 ## 呂布
 <iframe width="560" height="315" src="https://www.youtube.com/embed/q4O465xVhxo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+- 附魔火焰前：
+  - 跟張梁很像，保持一定距離。只化解遠的招式。
+  - 弓箭基本上就是來送化解的。
+  - 往前衝向你的殺招要抓時間，要撞到的時候才化解。 其他都很簡單。
+- 附魔火焰後：
+  - 離遠一點，避免火焰傷害。
+  - 一樣是化解遠的招式跟殺招。 其他都格擋。
+
 ## 張遼
+
 好像沒有錄影，等打完二週的再來錄影。
 
 ## 尾王
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fBHUarRyD8k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-
+- 單純記錄用，好像沒有特別難的部分。
 
