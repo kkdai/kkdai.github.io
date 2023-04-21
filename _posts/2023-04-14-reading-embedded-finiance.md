@@ -51,15 +51,26 @@ tags: ["書海裡的漫遊", "Books", "軍事"]
 
 
 
-### 科技巨頭的嵌入式金融
+## 科技巨頭的嵌入式金融
 
-- Google 啟動 Google Plex 金融服務，不到一年最終收起來。
+###  Google 啟動 Google Plex 金融服務，不到一年最終收起來。
 
-![image-20230421135624962](../images/2022/image-20230421135624962.png)
+<img src="../images/2022/image-20230421135624962.png" alt="image-20230421135624962" style="zoom:33%;" />
 
+
+
+
+
+當初 Google Plex 剛發起的時候，企業所做的問卷調查來訪問大眾希望 Google 提供哪些的服務。  
 2020 年啟動的 Google Plex ，結果後續也收起來了。 參考新聞： [撐不到一年！Google 金融計畫 Plex 喊卡，40 萬消費者期待落空](https://buzzorange.com/techorange/2021/10/04/google-plex/)
 
 
+
+### Apple 也發行了 Apple Card
+
+<img src="../images/2022/og__dtukeczp0ygm_overview.png" alt="Apple Card - Apple" style="zoom:33%;" />
+
+另外一個巨頭 Apple 也發行了 Apple Card ，原本除了虛擬卡好之外，希望可以透過[並且在 2023/04/20 推出了「iPhone 卡緊收」服務](https://www.apple.com/tw/newsroom/2023/04/apple-brings-tap-to-pay-on-iphone-in-taiwan/)。
 
 
 
