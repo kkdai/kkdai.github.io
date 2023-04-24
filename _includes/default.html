@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<title>{{ page.title }}</title>
@@ -37,7 +38,8 @@
 	<nav class="navbar navbar-default visible-xs" role="navigation">
 		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			<button type="button" class="navbar-toggle" data-toggle="collapse"
+				data-target="#bs-example-navbar-collapse-1">
 				<span class="sr-only">Toggle navigation</span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
@@ -80,9 +82,8 @@
                 	  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
                         	  });
 	</script>
-	
-	<script type="text/javascript"
-  		src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+
+	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 	</script>
 
 	<!-- nav-menu-dropdown -->
@@ -101,7 +102,8 @@
 		</ul>
 	</div>
 
-	<div class="col-sm-3 sidebar hidden-xs" style="{% if site.sidebar_background_image %}background: url({{site.sidebar_background_image}}) no-repeat center center !important;{% endif %}">
+	<div class="col-sm-3 sidebar hidden-xs"
+		style="{% if site.sidebar_background_image %}background: url({{site.sidebar_background_image}}) no-repeat center center !important;{% endif %}">
 		{% include sidebar.html %}
 	</div>
 
@@ -109,15 +111,18 @@
 		{{ content }}
 
 		<footer>
-			<hr/>
+			<hr />
 			<p>
-				&copy; {{ site.time | date: '%Y' }} {{ site.author.name }} with Jekyll. Theme: <a href="https://github.com/dbtek/dbyll">dbyll</a> by dbtek.
+				&copy; {{ site.time | date: '%Y' }} {{ site.author.name }} with Jekyll. Theme: <a
+					href="https://github.com/dbtek/dbyll">dbyll</a> by dbtek.
 			</p>
 		</footer>
 	</div>
 
-	<script type="text/javascript" src="{{ site.BASE_PATH }}/assets/resources/jquery/jquery.min.js"></script>
+	<script type="text/javascript"
+		src="{{ site.BASE_PATH }}/assets/resources/jquery/jquery-migrate-3.4.1.min.js"></script>
 	<script type="text/javascript" src="{{ site.BASE_PATH }}/assets/resources/bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="{{ site.BASE_PATH }}/assets/js/app.js"></script>
 </body>
+
 </html>
