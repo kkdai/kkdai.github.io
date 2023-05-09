@@ -1,12 +1,19 @@
 ---
 layout: post
-title: "[TIL] CitusCon2023: Keynote - 分散式的 PostgresSQL 問題，還有如何透過 Citus 來解決他"
+title: "[TIL] CitusCon2023 演講相關心得"
 description: ""
 category: 
 - 研討會心得
 - Postgres
 tags: ["研討會心得", "database"]
+
 ---
+
+
+
+# Keynote:  - 分散式的 PostgresSQL 問題，還有如何透過 Citus 來解決他
+
+
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/6hyYqMLYyfg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -67,3 +74,27 @@ Azure PostgreSQL 是 Microsoft 的一個產品，它是一個 PostgreSQL 的擴�
 ![image-20230509004802060](../images/2022/image-20230509004802060.png)
 
 - 可以看得出來，雖然是透過 Azure Cosmos DB for PostgresSQL (網路版本) ，但是效能可以打爆 CockroachDB 跟 Yugabyte managed DB.
+
+
+
+# Postgres without SQL: Natural language queries using GPT-3 & Rust | Citus Con 2023
+
+使用 Rust 來寫 Postgres extension 可以使用自然語言來下指令。 
+JelteF/pg_human: #Postgres without SQL: Natural language queries using GPT-3 & Rust
+[https://github.com/JelteF/pg_human](https://github.com/JelteF/pg_human)
+
+### Video: 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/g8lzx0BABf0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+重點：
+
+- 透過 Rust 來寫一個 Postgres extension ，可以讓你下文字敘述來建立表單。
+  ```
+  SELECT give_me_a_query_to('create tables for a todo app with multiple u
+  sers');
+  ```
+
+  
+
+- 可以了解怎麼安裝一個 postgres extension 。
