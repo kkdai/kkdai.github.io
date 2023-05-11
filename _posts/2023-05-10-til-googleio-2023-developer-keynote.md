@@ -4,8 +4,7 @@ title: "[TIL] Google I/O 2023 - Developer Keynote 資訊整理"
 description: ""
 category: 
 - 研討會心得
-- Postgres
-tags: ["研討會心得", "database"]
+tags: ["研討會心得", "GoogleIO"]
 
 ---
 
@@ -15,6 +14,8 @@ tags: ["研討會心得", "database"]
 
 
 Google I/O 2023 Developer Keynote 相關資訊與討論整理串。 (賣手機跟雲服務的 Google Keynote，有太多新聞可以查，我就不列了 XD) 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/r8T0SnwHRNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
 
