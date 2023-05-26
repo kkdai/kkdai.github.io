@@ -34,5 +34,69 @@ tags: ["研討會心得", "MSBuild"]
 
 
 
+# 關於 IDE 對於 Plugin 開發的支持
+
+![image-20230525134906708](../images/2022/image-20230525134906708.png)
+
+- Web IDE 支援很快速建立 Copilot Plugin
+
+
+
+## 這裡有個 Jira Copilot Plugin 案例
+
+![image-20230525135841131](../images/2022/image-20230525135841131.png)
+
+![image-20230525135904283](../images/2022/image-20230525135904283.png) 
+
+![image-20230525135931099](../images/2022/image-20230525135931099.png)
+
+
+
+## 商業用語部分 - Syntex  Plugin
+
+![image-20230525140354258](../images/2022/image-20230525140354258.png)
+
+![image-20230525140413639](../images/2022/image-20230525140413639.png)
+
+- Docu sign flow with Copilot
+
+
+
+## Copilot 總結
+
+![image-20230525140520001](../images/2022/image-20230525140520001.png)
+
+
+
+# 關於 Plugin - Developer Success
+
+![image-20230525140619283](../images/2022/image-20230525140619283.png)
+
+- Productivity:
+
+  - 完整的說明，有相關的 "Team Toolkit"
+  - 有個人化體驗
+  - 可以很方便開發跟 Deploy 
+
+  ![image-20230525140815459](../images/2022/image-20230525140815459.png)
+
+
+
+# Dev Home: 快速建置開發者的相關環境
+
+![image-20230525142557183](../images/2022/image-20230525142557183.png)
+
+- 透過帳號登入
+- 相關設置都有
+- 今天有 Preview 版本在 Windows Store
+
+
+
+
+
+
+
+
+
 
 
