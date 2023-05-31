@@ -94,7 +94,23 @@ tags: ["研討會心得", "MSBuild"]
 
 
 
+## Build and maintain your company Copilot with Azure ML and GPT-4 | BRK211H
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Vtf25OPuLgo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+整個流程相當清楚，又能完整呈現 Azure Copilot 與 Azure  ML 的強大。
+
+![image-20230526153901836](../images/2022/image-20230526153901836.png)
+
+- 先建立一個情境，幫生意擴展找客戶挑選 TA 
+- 透過 Copilot 給予相關的信件:
+  - 這裡想要給予更多更貼近 TA 的資訊，尋找過去信件與相關資料。
+
+![image-20230526153841220](../images/2022/image-20230526153841220.png)
+
+- 
+- 
+- 
 
 
 

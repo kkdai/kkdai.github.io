@@ -21,6 +21,15 @@ tags: ["Golang", "LINEBot", "TIL"]
 ### 開源套件 https://github.com/google/go-github
 
 
+### 將儲存資料獨立開來的套件 User Favorite Database - FavDB
+
+2023/05/31 這裡也整理了一個我獨立出來的套件 [https://github.com/kkdai/favdb](https://github.com/kkdai/favdb) ，功能如下：
+
+- 用同一個資料處理邏輯可以同時處理 Memory DB ， PostgresSQL 跟 Github Issue
+- 如果一開始找不到可靠（免費）的資料庫，可以先用 Memory DB 作為前期開發用。
+- 後期馬上改成 PostgresSQL 或是 Github Issue 都不用大改程式碼。
+
+
 
 # 如何取得 Github Token
 
