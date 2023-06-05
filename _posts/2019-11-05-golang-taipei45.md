@@ -10,9 +10,6 @@ tags: ["研討會心得", "DevRel", "LINE", "Go"]
 
 ![](../images/2019/1105_4.jpg)
 
-
-
-
 # 前言
 
 大家好，我是 LINE Taiwan 的 Technical Evangelist - Evan Lin。  Golang 是由 Google 在 2009 年的 11 月 10 日開源出來的程式語言，兼具著簡潔與速度的特性。 由於 Docker 與 Kubernetes 的風行而在近幾年成為熱門程式語言。在今年即將邁入第十年了，當然身為 [Golang Taipei](https://www.meetup.com/golang-taipei-meetup) 的共同籌辦人也要來主辦一下十週年的慶生派對。
@@ -25,27 +22,24 @@ tags: ["研討會心得", "DevRel", "LINE", "Go"]
 
 這一次聚會相關資料如下：
 
-- 社群 Golang  Taipei Gathering： https://www.meetup.com/golang-taipei-meetup
+- 社群 Golang  Taipei Gathering： <https://www.meetup.com/golang-taipei-meetup>
 - 本次活動網頁:  [活動網址](https://www.meetup.com/golang-taipei-meetup/events/264921214/)
 
-
-
-##  How I become Go GDE / 資深開發技術推廣工程師 Evan Lin
+## How I become Go GDE / 資深開發技術推廣工程師 Evan Lin
 
 ![](../images/2019/1105_3.jpg)
 
-
-
 #### [投影片](https://speakerdeck.com/line_developers_tw/golang-taipei-number-45-10th-birthday)
 
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/iBL48fizlti9dZ" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/EvansLin/golang-taipei-45-10th-birthday" title="Golang taipei #45 10th birthday" target="_blank">Golang taipei #45 10th birthday</a> </strong> from <strong><a href="https://www.slideshare.net/EvansLin" target="_blank">Evan Lin</a></strong> </div>
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/c3951cc31d754884a5439a782363f6db" title="Golang Taipei #45 10th Birthday" allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 314;" data-ratio="1.78343949044586"></iframe>
+
 這一次分享的投影片，主軸分成三個：
 
 ### 為什麼我會學習 Golang
 
 經過了十年在多媒體外商軟體公司的工作之後，為了學習新的 Web 程式語言進而嘗試了不少的程式語言之後，最後選擇了 Golang 來鑽研。並且為了深入的學習 Golang ，而啟動了 [Project 52](https://github.com/kkdai/project52) 來作為學習 Golang 的方式，也因此學習了不少的演算法與進階的資料格式的應用方式。
 
-###  Golang 十年來的紀錄
+### Golang 十年來的紀錄
 
 第二個階段來分享一下 Golang 近幾年的轉變過程，從 2009/11/10 開源以來，每一個大版本的更新紀錄。並且有一些大家需要注意的功能。比如說: Go 1.5 的 Vendoring 跟 Go 1.11 的 Go Modules ，都是希望大家藉由演進的過程一起來了解 Golang 如何透過每一次的版本更新來讓程式語言更友善，讓開發 Golang App 變得更有趣。
 
@@ -59,18 +53,14 @@ tags: ["研討會心得", "DevRel", "LINE", "Go"]
 
 如果想要瞭解更多關於 LINE Golang 相關職缺， 歡迎參加 2019/12/04 的招募說明會: [https://linegroup.kktix.cc/events/20191204-10](https://linegroup.kktix.cc/events/20191204-10)
 
-
-
-# 相關鏈結:
+# 相關鏈結
 
 - [GMOM- Go Slide Template - 10th Birthday](https://docs.google.com/presentation/d/1R41dUVJXD4KF5TchbXk2qypg422HTvMvwsYHj72Hl7o/edit?usp=sharing)
 - [Go 10 years - Draft Timeline v.0.1](https://docs.google.com/document/d/1Ap_Xhwtwq69ofDBGf1PqEKkhSMOVExrSvxZpUfa9iys/edit?usp=sharing)
 - [The State of Go Modules](https://docs.google.com/presentation/d/1wARA15bsEoy1pKl4W9xjWRw_7ytiM_ZJ5ZbsfIY5F-A/edit?usp=sharing)
-- [Oh the Places you'll Go! #golang by Carmen Andoh](https://docs.google.com/presentation/d/1XwGfBAdo2wzJHDL4QHCgJtslmx8VUcf3HtKnEyBx82M/edit?usp=sharing) 
+- [Oh the Places you'll Go! #golang by Carmen Andoh](https://docs.google.com/presentation/d/1XwGfBAdo2wzJHDL4QHCgJtslmx8VUcf3HtKnEyBx82M/edit?usp=sharing)
 - [The Go Gopher](https://blog.golang.org/gopher)
 - [Community Go 10 years - Draft Timeline](https://docs.google.com/document/d/1Ap_Xhwtwq69ofDBGf1PqEKkhSMOVExrSvxZpUfa9iys/edit?usp=sharing)
-
-
 
 # Understanding real world concurrency bugs in go / UmboCV - Kakashi Liu
 
@@ -86,9 +76,7 @@ tags: ["研討會心得", "DevRel", "LINE", "Go"]
 
 ### 參考資料
 
-- [Understanding real world concurrency bugs in go 的論文](https://songlh.github.io/paper/go-study.pdf) 
-
-
+- [Understanding real world concurrency bugs in go 的論文](https://songlh.github.io/paper/go-study.pdf)
 
 ## 活動小結
 
@@ -100,4 +88,4 @@ tags: ["研討會心得", "DevRel", "LINE", "Go"]
 
 ## 關於「LINE開發社群計畫」
 
-LINE今年年初在台灣啟動「LINE開發社群計畫」，將長期投入人力與資源在台灣舉辦對內對外、線上線下的開發者社群聚會、徵才日、開發者大會等，預計全年將舉辦30場以上的活動。歡迎讀者們能夠持續回來察看最新的狀況。詳情請看 [2019 年LINE 開發社群計畫活動時程表 (持續更新)](https://engineering.linecorp.com/zh-hant/blog/line-taiwan-developer-relations-2019-plan/)https://engineering.linecorp.com/zh-hant/blog/line-taiwan-developer-relations-2019-plan/)
+LINE今年年初在台灣啟動「LINE開發社群計畫」，將長期投入人力與資源在台灣舉辦對內對外、線上線下的開發者社群聚會、徵才日、開發者大會等，預計全年將舉辦30場以上的活動。歡迎讀者們能夠持續回來察看最新的狀況。詳情請看 [2019 年LINE 開發社群計畫活動時程表 (持續更新)](https://engineering.linecorp.com/zh-hant/blog/line-taiwan-developer-relations-2019-plan/)<https://engineering.linecorp.com/zh-hant/blog/line-taiwan-developer-relations-2019-plan/>)
