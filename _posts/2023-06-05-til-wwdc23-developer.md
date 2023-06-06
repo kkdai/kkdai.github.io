@@ -70,7 +70,8 @@ tags: ["研討會心得", "WWDC"]
 可能帶來影響：
 
 - 虹膜辨識會變成是基本 OAuth 的認證設備（搭配 Passkey (a.k.a. FiDO2)
-- 各種虹膜應用也會開始出現
+- 比起 [WorldCoin 可能因為 AirDrop 產生盜用](https://abmedia.io/worldcoin-iris-black-market) ，但是 Vision Pro 更可以取得更多人的虹膜資訊。 
+- 雖然依照 Apple 的個性，不可能有任何取得方式。但是代表 Optic ID 可以更加的準確， Passkey 的未來更令人期待。
 
 
 
