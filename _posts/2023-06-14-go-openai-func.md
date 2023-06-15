@@ -27,7 +27,7 @@ OpenAI 在 06/13 發表了新的功能 "[Function calling](https://openai.com/bl
 
 
 
-## 在 OpenAI Functions Calling 之前，要怎麼做？
+# 在 OpenAI Functions Calling 之前，要怎麼做？
 
 根據 "[DeepLearning 提供一堂很好的 Prompt Engineering for Developers](https://learn.deeplearning.ai/chatgpt-prompt-eng/lesson/1/introduction)" 有提到，你可能要這樣做：
 
@@ -45,17 +45,16 @@ OpenAI 在 06/13 發表了新的功能 "[Function calling](https://openai.com/bl
 
 
 
-## 那 OpenAI Functions Calling 怎麼幫助你呢？
+# 那 OpenAI Functions Calling 怎麼幫助你呢？
+
+這裡給一張流程圖： [PlantUML](https://www.plantuml.com/plantuml/uml/TP5BIyD058Nt-HM7MIcqMTHTGEq355SML5oMCRbj1kSHvjwXr5_lf6cnXRZAOxxpCUVUEOkEafmjYW-cYEa3LgsMPP0AwZE_mJ2a9Un9vqU4yLW6bk0VLN4Y-z1hHtxnKXt3U4g-5XCyLjfQutSeXkCh-uvaSv9EO4Ej-yJzu2ulrNUnMQnxTPPTfcxK0AlROa2kzCyao1GYSRA2C_pNWp6ReQ5T96AioB99N6RNIAatyirPrWNFX2zTVqF2yQSB3Td-WvDpEfeVAiVwglUnAS8mwXGZUR67RF3-WBsH5Xf2hgEe9KL2s8xUTWArDTvmkucaENXLGMLhTxMQVgyLpFO_5jCChJNpULOIa7AcBEQvTtBs5m00) 
+
+![image-20230615152527422](../images/2022/image-20230615152527422.png)
 
 
+## 第一步： 呼叫 Chat / Complete Function Calling
 
-
-
- 從文章內  "[Function calling](https://openai.com/blog/function-calling-and-other-api-updates)" 可以提供一個很簡單的範例。
-
-
-
-
+ 從文章內  "[Function calling](https://openai.com/blog/function-calling-and-other-api-updates)" 可以提供一個很簡單的範例，你可以發現以下得呼叫方式跟原本使用 chat/ completion 沒有差別，但是回傳資訊差很多了。
 
 ```
 curl https://api.openai.com/v1/chat/completions -u :$OPENAI_API_KEY -H 'Content-Type: application/json' -d '{
@@ -107,11 +106,102 @@ curl https://api.openai.com/v1/chat/completions -u :$OPENAI_API_KEY -H 'Content-
 }
 ```
 
+這時候， OpenAI 的 API `絕對` 會回覆給你 JSON ，不需要透過各種黑魔防禦術（特殊 Prompt) 就可以達成。 如果他找得到相關資料，他就會幫你把資料抽取出來，並且放在 `arguments` 傳給你。
 
 
 
+更多細節可以[參考 API 文件](https://platform.openai.com/docs/api-reference/chat/create)的部分：
+
+```
+Function_call / string or object / Optional
+
+Controls how the model responds to function calls. "none" means the model does not call a function, and responds to the end-user. "auto" means the model can pick between an end-user or calling a function. Specifying a particular function via {"name":\ "my_function"} forces the model to call that function. "none" is the default when no functions are present. "auto" is the default if functions are present.
+```
 
 
 
-我們先來看看相關的 API 說明
+## 跟原本 Prompt 的差別
 
+那你會想說，這樣跟原本透過特殊的 Prompt 有什麼差別？
+
+### **不會有 JSON 以外的回傳：**
+
+如果你這時候，忽然又插嘴一句說：「給我一首詩」，他還是會回傳給你 JSON 檔案。可能會告訴你沒有相關可以使用的 arguments。
+
+### **多個 Functions 的處理：**
+
+這也是最強大的，最好用的地方。請查看
+
+```
+curl https: //api.openai.com/v1/chat/completions -u :$OPENAI_API_KEY -H 'Content-Type: application/json' -d '{
+"model": "gpt-3.5-turbo-0613",
+"messages": [
+    {
+        "role": "user",
+        "content": "What is the weather like in Boston?"
+    }
+],
+"functions": [
+    {
+        "name": "get_current_weather",
+        "description": "Get the current weather in a given location",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "location": {
+                    "type": "string",
+                    "description": "The city and state, e.g. San Francisco, CA"
+                },
+                "unit": {
+                    "type": "string",
+                    "enum": [
+                        "celsius",
+                        "fahrenheit"
+                    ]
+                }
+            },
+            "required": [
+                "location"
+            ]
+        }
+    },
+    {
+        "name": "get_current_date",
+        "description": "Get the current time in a given location",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "location": {
+                    "type": "string",
+                    "description": "The city and state, e.g. San Francisco, CA"
+                },
+                "unit": {
+                    "type": "string",
+                    "enum": [
+                        "celsius",
+                        "fahrenheit"
+                    ]
+                }
+            },
+            "required": [
+                "location"
+            ]
+        }
+    }
+]
+}'
+```
+
+你會發現，上面的程式碼有兩個 function 等著判別。 `get_current_date` 跟 `get_current_weather` 。
+
+- 如果你的問句是： `What is the weather like in Boston?` ，那他就會回傳給你 `get_current_weather`，然後給你 `location = Boston`。
+- 反之，如果你問句是: `What time is it in Boston?` ，那他就會回傳給你 `get_current_date`，然後給你 `location = Boston`。
+
+
+
+## 第二步 : 呼叫 3rd Party API
+
+- 這邊就跳過，可以是各種 Open API 去找資料。
+- 但是，可以透過 ChatGPT Plugin 的資料去找，將自己模擬成 ChatGPT Plugin 。
+
+## 第三部： Send the summary to OpenAI
