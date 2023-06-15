@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[學習心得][Golang][OpenAI] 關於 OpenAI 新功能: ChatComplete Func Call"
+title: "[學習心得][Golang][OpenAI] 關於 OpenAI 新功能: Function Calling"
 description: ""
 category: 
 - 學習文件
@@ -32,12 +32,30 @@ OpenAI 在 06/13 發表了新的功能 "[Function calling](https://openai.com/bl
 根據 "[DeepLearning 提供一堂很好的 Prompt Engineering for Developers](https://learn.deeplearning.ai/chatgpt-prompt-eng/lesson/1/introduction)" 有提到，你可能要這樣做：
 
 ```
-你現在是一個
+你現在是一個協助抓取使用者資訊的小幫手，如果使用者詢問了某個地區的天氣。你就幫我把地區抓出來透過以下格式呈現。 
+---
+{
+   "location": "xxxx"
+}
 ```
 
+<img src="../images/2022/image-20230615123019584.png" alt="image-20230615123019584" style="zoom:25%;" />
+
+很多地方是聰明的，但是還是沒有處理非相關天氣詢問要拒絕。這裡可以透過 [ChatGPT Share](https://chat.openai.com/share/0dbd39c6-246a-4ca4-b941-2a103ec1daf0) 查看結果。如果是一個 NLU 的小幫手，在這個情況下可能要回覆 `{ "location" : ""}` 或是 NULL ，但是這樣會讓你的 Prompt 非常的冗長，而且通常很長的防禦Prompt (咒語)只能防禦一個階段。 那該怎麼辦呢？
 
 
-從文章內  "[Function calling](https://openai.com/blog/function-calling-and-other-api-updates)" 可以提供一個很簡單的範例： 
+
+## 那 OpenAI Functions Calling 怎麼幫助你呢？
+
+
+
+
+
+ 從文章內  "[Function calling](https://openai.com/blog/function-calling-and-other-api-updates)" 可以提供一個很簡單的範例。
+
+
+
+
 
 ```
 curl https://api.openai.com/v1/chat/completions -u :$OPENAI_API_KEY -H 'Content-Type: application/json' -d '{
