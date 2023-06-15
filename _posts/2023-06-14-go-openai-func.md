@@ -20,6 +20,11 @@ OpenAI 在 06/13 發表了新的功能 "[Function calling](https://openai.com/bl
 
 關於 "[Function calling](https://openai.com/blog/function-calling-and-other-api-updates)" 主要是拿來處理 Intent 的判斷，並且針對使用者的意圖給予相關的 JSON 輸出給開發者作為處理之用。 換成白話文來說，如果你今天想要做一個「天氣服務的 ChatGPT LINE Bot 」的話，那麼你該如何弄呢？
 
+相關資料：
+
+- 部落格 "[Function calling](https://openai.com/blog/function-calling-and-other-api-updates)" 
+- API 文件 [ChatComplete](https://platform.openai.com/docs/api-reference/chat/create)
+
 
 
 ## 在 OpenAI Functions Calling 之前，要怎麼做？
