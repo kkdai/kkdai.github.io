@@ -204,4 +204,4 @@ curl https: //api.openai.com/v1/chat/completions -u :$OPENAI_API_KEY -H 'Content
 - 這邊就跳過，可以是各種 Open API 去找資料。
 - 但是，可以透過 ChatGPT Plugin 的資料去找，將自己模擬成 ChatGPT Plugin 。
 
-## 第三部： Send the summary to OpenAI
+## 第三步： Send the summary to OpenAI
