@@ -12,7 +12,7 @@ tags: ["ChatGPT", "TIL"]
 
 # 前提
 
-OpenAI 在 06/13 發表了新的功能 "[Function calling](https://openai.com/blog/function-calling-and-other-api-updates)"，其實對 LLM 的開發上算是一個完整的新發展。 本篇文章將快速解釋一下這個更新將會帶來哪一些變革，並且也透過將 LINE 官方帳號的相關整合為案例，幫你打造一個旅遊小幫手。
+OpenAI 在 **06/13** 發表了新的功能 "[Function calling](https://openai.com/blog/function-calling-and-other-api-updates)"，其實對 LLM 的開發上算是一個完整的新發展。 本篇文章將快速解釋一下這個更新將會帶來哪一些變革，並且也透過將 LINE 官方帳號的相關整合為案例，幫你打造一個旅遊小幫手。
 
 
 
@@ -210,6 +210,10 @@ curl https: //api.openai.com/v1/chat/completions -u :$OPENAI_API_KEY -H 'Content
 
 ![image-20230615161410297](../images/2022/image-20230615161410297.png)
 
+這裡要注意，如果你去找 Call 3rd API 故意回傳空的，代表 OpenAI 的 Summary 會沒有「參考資料」 參考以下： `    {"role": "function", "name": "get_poi", "content": "{}"}` 。
+
+也就是説，他會開始使用自己知道的相關資訊。（但是可能不是你期待的）。
+
 
 
 ```
@@ -266,6 +270,23 @@ curl https://api.openai.com/v1/chat/completions -u :$OPENAI_API_KEY -H 'Content-
 ```
 
 本來以為 `"finish_reason": "stop"` 在回覆後檢查。並且設定， for loop 檢查，但是發現就算把資料傳空的給 OpenAI ，他也會根據他有的資訊開始回覆給你。
+
+
+
+# 使用 Function Calling 需要注意的事情
+
+## 1. Langchain 也可以用了嗎？
+
+- [其實在 06/14 台灣時間傍晚， LangChain 也更新到 0.0.200 支援了 LangChain 。](https://github.com/hwchase17/langchain/blob/master/docs/modules/agents/tools/tools_as_openai_functions.ipynb)
+
+- [蠻多人使用的 Flowise (視覺化 Langchain ) ，也在 1.2.12 支援。](https://github.com/FlowiseAI/Flowise/commits/main) 
+
+## 2. 使用 Func Calling 的語意理解能力沒有原來的 Chat 聰明
+
+經過我自己觀察，透過 Func Calling 擷取出來相關 Argument 沒有以前直接在 ChatGPT 測試還聰明。 可能也因為 API GPT3.5 Turbo 其實也是不等於 ChatGPT 的。 所以在使用上，會需要常常去多問一次。來解釋相關內容，再來擷取出相關的 Arguments 。
+
+## 3. Func Calling Summarized 如果沒資料， ChatGPT 會以他知道的來回覆。
+
 
 
 
