@@ -31,6 +31,8 @@ tags: ["書海裡的漫遊", "Books", "軍事"]
 
 
 
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/747145c9358f4fb782af833da93527a9" title="Storyteller - 阿共打來怎麼辦" allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 315;" data-ratio="1.7777777777777777"></iframe>
+
 # 內容摘要：
 
 ```
@@ -96,6 +98,7 @@ tags: ["書海裡的漫遊", "Books", "軍事"]
 ## 第四部　台灣以及周邊各國的真實戰略構想
 
 這邊提到跟台灣的安危有相關的周遭國家，如果在中國侵略台灣發生的時候。 他們會有哪些的影響。
+
 
 
 # 心得:
