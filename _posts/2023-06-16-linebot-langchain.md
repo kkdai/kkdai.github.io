@@ -253,10 +253,61 @@ class StockPriceTool(BaseTool):
 
 ## 跟 LINE Bot 主要程式碼串接起來
 
+可以參考 main.py ，這裡節錄重要的部分：
 
+```
+from stock_tool import StockPriceTool
+from stock_tool import get_stock_price
 
+# Langchain (you must use 0613 model to use OpenAI functions.)
+# Langchain (you must use 0613 model to use OpenAI functions.)
+# Langchain (you must use 0613 model to use OpenAI functions.)
+model = ChatOpenAI(model="gpt-3.5-turbo-0613")
 
+# Prepare openai.functions format.
+tools = [StockPriceTool()]
+functions = [format_tool_to_openai_function(t) for t in tools]
+
+.....
+
+    for event in events:
+        if not isinstance(event, MessageEvent):
+            continue
+        if not isinstance(event.message, TextMessage):
+            continue
+
+        # Use OpenAI functions to parse user intent of his message text.
+        hm = HumanMessage(content=event.message.text)
+        ai_message = model.predict_messages([hm], functions=functions)
+
+        # parse args parsing result from OpenAI.
+        _args = json.loads(
+            ai_message.additional_kwargs['function_call'].get('arguments'))
+
+        # Call the 3rd party API get_stock_price to get stock price.
+        tool_result = tools[0](_args)
+```
+
+首先先讓  [LangChain](https://github.com/hwchase17/langchain) 知道怎麼跟你的 tool 串接
+
+```
+tools = [StockPriceTool()]
+functions = [format_tool_to_openai_function(t) for t in tools]
+```
+
+這裡就是讓 OpenAI 幫你把問題變成 API 的資訊 （假設問 Google 股價)
+
+`AIMessage(content='', additional_kwargs={'function_call': {'name': 'get_stock_ticker_price', 'arguments': '{\n  "stockticker": "GOOGL"\n}'}}, example=False)`
+
+就會直接轉換成 `GOOGL` 這個股票代號。也因為知道是 `get_stock_ticker_price` 會對應到 `tools[0]`這邊其實可以支援多個 Functions，但是支援多個代表你要判斷要呼叫哪一個。
+
+```
+tool_result = tools[0](_args) # 就跟 get_stock_price(`GOOGL`)
+```
+
+這樣就可以完成了，如果多個 Tools 判斷會比較困難。 但是往往這才是  [LangChain](https://github.com/hwchase17/langchain) 可以帶給你方便的地方。
 
 
 # 結語
 
+近期完了不少的 [LangChain](https://github.com/hwchase17/langchain)  的相關範例，並且感受了透過 [Flowise](https://github.com/FlowiseAI/Flowise)  來打造相關應用的方式。 覺得 LINE Bot 的開發將會幫助各位更容易貼近使用者。打造出一個「專一」「好用」的聊天機器人，並且讓 LINE 官方帳號來幫助你的生意邁向生成式 AI 的時代吧！！
