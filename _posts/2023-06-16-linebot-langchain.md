@@ -93,7 +93,67 @@ def get_completion(prompt, model="gpt-3.5-turbo"):
 
 
 
-# 來打造第一個 LangChain + LINE Bot 的範例程式碼
+# 來打造第一個 LangChain + LINE Bot 的範例： 記憶力
+
+常聽到有人詢問， LangChain 到底有什麼方便的地方。我們先透過以下的範例來說明吧，以下透過相關程式碼。可以快速打造一個具有「記憶力」的聊天機器人。並且可以把你之前問題記住。
+
+## 在 OpenAI API 該怎麼打造？
+
+最常需要開發的，就是類似功能。但是原本 OpenAI 狀況下，這樣開發有點複雜。
+
+- User: Hi, I am John.  
+  - AI: Hello, John.
+- User: what is 1+1?  
+  - AI: 2.
+- User: What is my name?
+  - AI: I am sorry, you need to provide more detail.
+
+由於 OpenAI 每次呼叫 API 給他，其實都是嶄新的聊天視窗。 想要做成像是 ChatGPT 這種方式可能就需要有「記憶力」，在 OpenAI 的 API 中其實需要使用 [Chat Completion](https://platform.openai.com/docs/api-reference/chat/create)，而且需要，每一筆慢慢填進去:
+
+```json
+{
+  "model": "gpt-3.5-turbo",
+  "messages": [
+  {"role": "system", "content": "You are a helpful assistant."},
+  {"role": "user", "content": "Hello!"}]
+}
+
+```
+
+是不是很麻煩？ 
+
+## 使用 LangChain 的 ConversationBufferWindowMemory
+
+這裡有[完整程式碼](https://gist.github.com/kkdai/a99e1a78906a4c1eaac1fea1f440aa98)，我只列出重要的部分：
+
+```python
+# Langchain 串接 OpenAI ，這裡 model 可以先選 gpt-3.5-turbo
+llm = ChatOpenAI(temperature=0.9, model='gpt-3.5-turbo')
+
+# 透過 ConversationBufferWindowMemory 快速打造一個具有「記憶力」的聊天機器人，可以記住至少五回。
+# 通常來說 5 回還蠻夠的
+memory = ConversationBufferWindowMemory(k=5)
+conversation = ConversationChain(
+    llm=llm,
+    memory=memory,
+    verbose=False
+)
+
+@app.post("/callback")
+async def handle_callback(request: Request):
+    signature = request.headers['X-Line-Signature']
+
+   ......
+   
+    for event in events:
+        if not isinstance(event, MessageEvent):
+            continue
+        if not isinstance(event.message, TextMessage):
+            continue
+
+        # 將使用者傳來的訊息 event.message.text 當成輸入，等 LangChain 傳回結果。
+        ret = conversation.predict(input=event.message.text)
+```
 
 
 
