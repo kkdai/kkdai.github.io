@@ -18,7 +18,7 @@ tags: ["LINEBot", "TIL", "Python"]
 
 透過 LLM （大型語言模型）的開發上，有許多很方便的工具可以幫助你快速地打造出 POC 。 這裡最知名的莫過於 [LangChain](https://github.com/hwchase17/langchain) ，除了支援眾多的大型語言模型之外，更支援許多小工具（類似: [Flowise](https://github.com/FlowiseAI/Flowise)) 。
 
-本篇文章將介紹如何透過  [LangChain](https://github.com/hwchase17/langchain)  打造一個查詢股價 (stock price) 的小工具，並且提供一個可以快速打造的開源套件讓各位一起學習。
+本篇文章將介紹如何透過  [LangChain](https://github.com/hwchase17/langchain)  打造一個查詢股價 (stock price) 的小工具，並且提供一個可以快速打造的開源套件讓各位一起學習。 對了，本篇文章使用的[範例也是最新的 06/13 公佈的 OpenAI Function Calling 的功能](https://openai.com/blog/function-calling-and-other-api-updates)。除了可以快速判斷使用者 Intent 之外，更可以呼叫外部的 API 來查詢本來 OpenAI 無法了解的資訊（比如說現在的股價）。
 
 
 
@@ -33,7 +33,11 @@ tags: ["LINEBot", "TIL", "Python"]
 
 
 
-## 先來準備一個快速導入 Heroku 的 Python LINE Bot 套件
+# 為何要挑選 LangChain 作為開發 LINE Bot 的架構
+
+
+
+# 先來準備一個快速導入 Heroku 的 Python LINE Bot 套件
 
 這邊有一些選擇方式：
 
