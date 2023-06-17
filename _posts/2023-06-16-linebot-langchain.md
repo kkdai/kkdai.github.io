@@ -8,9 +8,7 @@ category:
 tags: ["LINEBot", "TIL", "Python"]
 ---
 
-<img src="../images/2022/langchain-1679313960.jpg" alt="What is LangChain and how to use it" style="zoom:25%;" />
-
-
+<img src="../images/2022/bot.jpg" alt="img" style="zoom:25%;" />
 
 
 
@@ -20,9 +18,11 @@ tags: ["LINEBot", "TIL", "Python"]
 
 本篇文章將介紹如何透過  [LangChain](https://github.com/hwchase17/langchain)  打造一個查詢股價 (stock price) 的小工具，並且提供一個可以快速打造的開源套件讓各位一起學習。 對了，本篇文章使用的[範例也是最新的 06/13 公佈的 OpenAI Function Calling 的功能](https://openai.com/blog/function-calling-and-other-api-updates)。除了可以快速判斷使用者 Intent 之外，更可以呼叫外部的 API 來查詢本來 OpenAI 無法了解的資訊（比如說現在的股價）。
 
+<img src="../images/2022/langchain-1679313960.jpg" alt="What is LangChain and how to use it" style="zoom:25%;" />
 
 
-<img src="../images/2022/bot.jpg" alt="img" style="zoom:25%;" />
+
+
 
 透過使用 LLM 的 LINE Bot： 你可以使用任何敘述公司的文字，來找尋公司股價。 比如說：
 
@@ -34,6 +34,18 @@ tags: ["LINEBot", "TIL", "Python"]
 
 
 # 為何要挑選 LangChain 作為開發 LINE Bot 的架構
+
+這題目很大，很難一句話回答。
+
+-  [LangChain](https://github.com/hwchase17/langchain)  是一個很方便打造 POC 概念的東西。搭配 Flowise 甚至可以讓 prompt 人員跟開發人員完全分開。
+- 但是他畢竟還是類似黑箱子，有太多需要注意的地方。真的要上線，建議還是要透過 OpenAI 自己來開發。
+- 不過 LangChain 開發出來的架構，可以無痛轉換到其他 LLM 就是了。
+
+- 也有視覺化的工具類似: [Flowise](https://github.com/FlowiseAI/Flowise) 可以讓拉框架的人，跟 Prompt 的人分開。修改 Prompt 甚至不需要重新 deploy 
+
+<img src="../images/2022/flowise.gif" alt="img" style="zoom:50%;" />
+
+[Flowise](https://github.com/FlowiseAI/Flowise) 提供一個  [LangChain](https://github.com/hwchase17/langchain) 視覺畫前端，可以透過拉框架快速測試架構跟 Prompt ，開發 LINE Bot 可以直接串 API   。 甚至修改 Prompt 可以做到不需要改 API Call ，也不需要重新 Deploy 。
 
 
 
@@ -158,6 +170,91 @@ async def handle_callback(request: Request):
         # 將使用者傳來的訊息 event.message.text 當成輸入，等 LangChain 傳回結果。
         ret = conversation.predict(input=event.message.text)
 ```
+
+#  LangChain + OpenAI Functions 的範例： 股價查詢
+
+## 快速介紹什麼 OpenAI Functions Calling
+
+可以參考“[Function calling OpenAI 說明文件](https://openai.com/blog/function-calling-and-other-api-updates)“  ，也可以參考我畫出的流程圖。
+
+這裡給一張流程圖： [PlantUML](https://www.plantuml.com/plantuml/uml/TP5BIyD058Nt-HM7MIcqMTHTGEq355SML5oMCRbj1kSHvjwXr5_lf6cnXRZAOxxpCUVUEOkEafmjYW-cYEa3LgsMPP0AwZE_mJ2a9Un9vqU4yLW6bk0VLN4Y-z1hHtxnKXt3U4g-5XCyLjfQutSeXkCh-uvaSv9EO4Ej-yJzu2ulrNUnMQnxTPPTfcxK0AlROa2kzCyao1GYSRA2C_pNWp6ReQ5T96AioB99N6RNIAatyirPrWNFX2zTVqF2yQSB3Td-WvDpEfeVAiVwglUnAS8mwXGZUR67RF3-WBsH5Xf2hgEe9KL2s8xUTWArDTvmkucaENXLGMLhTxMQVgyLpFO_5jCChJNpULOIa7AcBEQvTtBs5m00)
+
+![image-20230615152527422](../images/2022/image-20230615152527422-6989630.png)
+
+更多細節可以參考我的另外一篇文章「[關於 OpenAI 新功能: Function Calling](https://www.evanlin.com/go-openai-func/)」
+
+## 先來打造 Functions Tools
+
+在  [LangChain](https://github.com/hwchase17/langchain) 裡面把  [OpenAI Function calling OpenAI](https://openai.com/blog/function-calling-and-other-api-updates)“  當成是一個 Tools (Agent) 來呼叫，可以參考 [LangChain 官方的範例程式](https://github.com/hwchase17/langchain/blob/83eea230f3f0a3b21caba9917f6e2750445db9f5/docs/extras/modules/agents/tools/how_to/tools_as_openai_functions.ipynb#L4) 。 快速來看一下：
+
+```
+# 很重要！！！ 一定要使用這個 model ，不然會雷的超怪的！
+# 很重要！！！ 一定要使用這個 model ，不然會雷的超怪的！
+# 很重要！！！ 一定要使用這個 model ，不然會雷的超怪的！
+model = ChatOpenAI(model="gpt-3.5-turbo-0613")
+
+# MoveFileTool 是一個基本的 tool Agent，負責移動檔案的。
+from langchain.tools import MoveFileTool, format_tool_to_openai_function
+
+tools = [MoveFileTool()]
+
+# 取得 MoveFileTool 所有的 functions 接口
+functions = [format_tool_to_openai_function(t) for t in tools]
+
+# 透過 OpenAI 提供的 Predict Message 來呼叫 functions
+message = model.predict_messages(
+    [HumanMessage(content="move file foo to bar")], functions=functions
+)
+```
+
+那我們來打造抓取股票資訊的工具 [stock_tools.py](https://github.com/kkdai/linebot-langchain/blob/master/stock_tool.py)
+
+```python
+import yfinance as yf
+
+def get_stock_price(symbol):
+    ticker = yf.Ticker(symbol)
+    todays_data = ticker.history(period='1d')
+    return round(todays_data['Close'][0], 2)
+```
+
+以上是一個簡單的抓取股價的 functions ，接下來是定義這個 BaseTools
+
+```
+class StockPriceCheckInput(BaseModel):
+    """Input for Stock price check."""
+
+    stockticker: str = Field(...,
+                             description="Ticker symbol for stock or index")
+
+
+class StockPriceTool(BaseTool):
+    name = "get_stock_ticker_price"
+    description = "Useful for when you need to find out the price of stock. You should input the stock ticker used on the yfinance API"
+
+    def _run(self, stockticker: str):
+        # print("i'm running")
+        price_response = get_stock_price(stockticker)
+
+        return price_response
+
+    def _arun(self, stockticker: str):
+        raise NotImplementedError("This tool does not support async")
+
+    args_schema: Optional[Type[BaseModel]] = StockPriceCheckInput
+```
+
+其中兩個重要的就是：
+
+- **name = "get_stock_ticker_price"**: 
+  - 定義相關 func call 名稱。
+- **description = "Useful for when you need to find out the price of stock. You should input the stock ticker used on the yfinance API"**
+  - 這個敘述其實很重要，因為 OpenAI 會真的去讀取你裡面的敘述。來學習該如何抓取使用者輸入的文字。所以這邊需要講的清楚一點，不能打錯也不能隨便打。
+
+## 跟 LINE Bot 主要程式碼串接起來
+
+
+
 
 
 
