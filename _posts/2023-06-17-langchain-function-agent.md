@@ -104,14 +104,11 @@ open_ai_agent = initialize_agent(tools,
 
 ## Langchain Functions Agent 跟 Functions Tool 的比照表
 
-|              | OpenAI Function Tools | OpenAI Function Agent                                 |
-| ------------ | --------------------- | ----------------------------------------------------- |
-| **定義方式** | Tools                 | 透過 LangChain Tools 包裝成 Agents (OPENAI_FUNCTIONS) |
-| **執行流程** |                       |                                                       |
-|              |                       |                                                       |
-|              |                       |                                                       |
-
-
+|                          | OpenAI Function Tools                                        | OpenAI Function Agent                                        |
+| ------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| **定義方式**             | Tools                                                        | 透過 LangChain Tools 包裝成 Agents (OPENAI_FUNCTIONS)        |
+| **執行流程**             | (1)輸入使用者語詞，判斷呼叫哪個 Agent。並且取出相關的 Arguments 。 (2) 開發者自己決定要不要去執行他，或是剩下的動作。 | (1)輸入使用者語詞，判斷呼叫哪個 Agent。並且取出相關的 Arguments 。  (2) 呼叫該 Agent ，並且取得結果。 (3) 透過結果，再一次詢問 LLM 總結回覆的答案。 |
+| **不要回覆定意外問題？** | 可以，自己決定哪些要回覆                                     | 不行！不論什麼都會回覆。                                     |
 
 
 
