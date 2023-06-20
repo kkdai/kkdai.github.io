@@ -91,13 +91,36 @@ tool_result = tools[0](_args)
 
 
 
-```
-tools = [StockPriceTool(), StockPercentageChangeTool(),
-         StockGetBestPerformingTool()]
-open_ai_agent = initialize_agent(tools,
-                                 model,
-                                 agent=AgentType.OPENAI_FUNCTIONS,
-                                 verbose=False)
+```python
+# 以下 impot 工具類別中的 file management 工具組
+# 這些是真的可以操控檔案的相關 tools
+# 分別是： 讀取檔案，複製檔案，刪除檔案，移動檔案，寫入檔案。
+from langchain.tools.file_management import (
+    ReadFileTool,
+    CopyFileTool,
+    DeleteFileTool,
+    MoveFileTool,
+    WriteFileTool,
+    ListDirectoryTool,
+)
+
+....
+
+# 以下方式透過 OPENAI_FUNCTIONS 的 Agent 格式將剛才所有的工具都加入進去。
+# 也就是說我們的 LLM 現在多了檔案操控的能力。
+
+    model = ChatOpenAI(model="gpt-3.5-turbo-0613")
+    tools = FileManagementToolkit().get_tools()
+    open_ai_agent = initialize_agent(tools,
+                                     model,
+                                     agent=AgentType.OPENAI_FUNCTIONS,
+                                     verbose=True)
+
+
+
+# 真的要執行 Agent 的功能只要呼叫這一行就好。
+        tool_result = open_ai_agent.run(question)
+
 ```
 
 
@@ -113,6 +136,12 @@ open_ai_agent = initialize_agent(tools,
 
 
 # 成果
+
+以下的影片可以看到，這樣才幾行的程式碼，卻可以開始操控檔案。
+
+並且，你還不需要完整把指令打對，甚至可以使用中文的指令才「列表」「讀取」「寫入」「刪除」，
+
+最令人不可相信的是，你甚至可以「寫一首詩，然後把內容寫進 1.txt」這種比較複雜的指令都可以完整地被執行。
 
 [![asciicast](../images/2022/aXAxZoeNFTaUq7KxAsCCKLocN.svg)](https://asciinema.org/a/aXAxZoeNFTaUq7KxAsCCKLocN)
 
