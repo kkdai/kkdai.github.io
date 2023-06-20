@@ -5,7 +5,7 @@ description: ""
 category: 
 - 學習文件
 - TodayILearn
-tags: ["LINEBot", "TIL", "Python"]
+tags: ["LINEBot", "TIL", "Python", "Langchain"]
 ---
 
 <img src="../images/2022/bot.jpg" alt="img" style="zoom:25%;" />
