@@ -20,6 +20,13 @@ tags: ["Langchain", "TIL", "Python"]
 
 現在，其實你可以透過  [LangChain](https://github.com/hwchase17/langchain)  很快來達成。本篇文章將給你範例程式碼，跟相關的原理  [LangChain](https://github.com/hwchase17/langchain)   Functions Agent 的用法。
 
+這裡也列出一系列，我有撰寫關於 LangChain 的學習文章：
+
+- [[學習心得][Python] 透過 LangChain 來處理特殊的中央氣象局資料]()
+
+- [[學習心得\][Python] 透過 LangChain 的 Functions Agent 達成用中文來操控資料夾](https://www.evanlin.com/langchain-function-agent/)
+- [[學習心得\][Python] 透過 LangChain 打造一個股價查詢 LINEBot - 股價小幫手](https://www.evanlin.com/linebot-langchain/)[](https://www.evanlin.com/langchain-function-agent/)
+
 ### 開源套件參考這個 [https://github.com/kkdai/langchain_tools/tree/master/func_filemgr](https://github.com/kkdai/langchain_tools/tree/master/func_filemgr)
 
 ## 什麼是 LangChain
