@@ -77,6 +77,8 @@ tool_result = tools[0](_args)
 
 ## 如何完成 LangChain Functions Agent
 
+![image-20230621132804983](../images/2022/image-20230621132804983.png)
+
 如果是 Function Agent 的話，就像是幫你的 LLM 大腦裝上了手臂，開始讓他不只是「說」，更能夠開使「動手做」。
 
 <img src="../images/2022/image-20230620110007097.png" alt="image-20230620110007097" style="zoom:25%;" />
