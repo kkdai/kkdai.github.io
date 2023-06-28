@@ -26,6 +26,18 @@ tags: ["Langchain", "TIL", "Python"]
 - [[學習心得\][Python] 透過 LangChain 的 Functions Agent 達成用中文來操控資料夾](https://www.evanlin.com/langchain-function-agent/)
 - [[學習心得\][Python] 透過 LangChain 打造一個股價查詢 LINEBot - 股價小幫手](https://www.evanlin.com/linebot-langchain/)[](https://www.evanlin.com/langchain-function-agent/)
 
+# 如何透過 EmbedChain 打造客服 LINE Bot
+
+這裡列出幾個簡單流程：
+
+- 準備打造客服 LINE Bot需要的素材
+- 建立 EmbedChain LINE Bot
+- 測試與調整
+
+## 準備打造客服 LINE Bot需要的素材
+
+
+
 ## 直接看如何使用程式碼 
 
 [https://github.com/embedchain/embedchain](https://github.com/embedchain/embedchain)
