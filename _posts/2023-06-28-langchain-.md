@@ -52,6 +52,15 @@ https://docs.google.com/presentation/d/1bo5uxaS4JMNt99VmsRdeTFLo9qSIByJiViIVakzF
 
 
 
+![image-20230629010716866](../images/2022/image-20230629010716866.png)
+
+- Alex: [https://twitter.com/alexreibman](https://twitter.com/alexreibman)
+- Gurkaran: [https://twitter.com/aigsingh](https://twitter.com/aigsingh)
+- dare: [https://twitter.com/dariusemrani](https://twitter.com/dariusemrani)
+- Jesse Hu <https://twitter.com/huyouare>
+
+
+
 ## Q&A
 
 1. What is the most affordable (free, local?) LLM for specific Agent Executor / 
@@ -60,3 +69,26 @@ https://docs.google.com/presentation/d/1bo5uxaS4JMNt99VmsRdeTFLo9qSIByJiViIVakzF
 
 2. In my experience, the OpenAI functions work really well in deciding what tool(s) to use even in multi-step scenarios. Do you think that a train-of-thought process is used behind the scenes, like ReACT or MLKR? And how useful are they now?
    1. 可以考慮看看 few shot
+
+
+
+# 其他
+
+## Agent Hackathon
+
+<img src="../images/2022/image-20230629011637608.png" alt="image-20230629011637608" style="zoom:25%;" />
+
+https://lablab.ai/event/ai-agents-hackathon
+
+
+
+## AgentEval  (第一名)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/sjEMBY3Ngbk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+
+## 最後有 OpenAI CEO 演講
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tGe6syxT4C4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
