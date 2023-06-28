@@ -1,14 +1,12 @@
 ---
 layout: post
-title: "[學習心得][Python] LangChain "Chains vs Agents" Webinar- Notes"
+title: "[學習心得][Python] LangChain Chains vs Agents  Webinar- Notes"
 description: ""
 category: 
 - 學習文件
 - TodayILearn
 tags: ["Langchain", "TIL", "Python"]
 ---
-
-
 
 ![LangChain "Chains vs Agents" Webinar](../images/2022/NrAGGub0.jpeg)
 
