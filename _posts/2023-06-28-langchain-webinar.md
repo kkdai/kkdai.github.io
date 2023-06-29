@@ -14,13 +14,21 @@ Weblink: [https://www.crowdcast.io/c/m2ooh0uy9syg]( https://www.crowdcast.io/c/m
 
 ## Speak1: Swyx - smol developer
 
-https://docs.google.com/presentation/d/1d5N3YqjSJwhioFT-edmyjxGsPBCMb1uZg0Zs5Ju673k/edit#slide=id.g254e571859c_0_133
+[https://docs.google.com/presentation/d/1d5N3YqjSJwhioFT-edmyjxGsPBCMb1uZg0Zs5Ju673k/edit#slide=id.g254e571859c_0_133](https://docs.google.com/presentation/d/1d5N3YqjSJwhioFT-edmyjxGsPBCMb1uZg0Zs5Ju673k/edit#slide=id.g254e571859c_0_133)
+
+![image-20230629013808733](../images/2022/image-20230629013808733.png)
+
+![image-20230629013651102](../images/2022/image-20230629013651102.png)
+
+
+
+
 
 **Article:**
 
-- https://stratechery.com/2018/techs-two-philosophies/
-- https://www.latent.space/p/agents
-- https://lilianweng.github.io/posts/2023-06-23-agent/
+- [https://stratechery.com/2018/techs-two-philosophies/](https://stratechery.com/2018/techs-two-philosophies/)
+- [https://www.latent.space/p/agents](https://www.latent.space/p/agents)
+- [https://lilianweng.github.io/posts/2023-06-23-agent/](https://lilianweng.github.io/posts/2023-06-23-agent/)
 
 
 
