@@ -28,6 +28,32 @@ tags: ["Langchain", "TIL", "Python"]
 - [[學習心得\][Python] 透過 LangChain 的 Functions Agent 達成用中文來操控資料夾](https://www.evanlin.com/langchain-function-agent/)
 - [[學習心得\][Python] 透過 LangChain 打造一個股價查詢 LINEBot - 股價小幫手](https://www.evanlin.com/linebot-langchain/)
 
+#  EmbedChain 解決了那些問題
+
+先預設本篇文章讀者，已經是懂的使用 LLM (Large Language Model) 來打造客服機器人。之前你需要先建立客服機器人的參考資料庫，（因為大部分 LLM (e.g. OpenAI) ) 不知道如何回覆你的問題。
+
+需要的架構可以這裡參考文章 [Enhancing ChatGPT With Infinite External Memory Using Vector Database and ChatGPT Retrieval Plugin](https://betterprogramming.pub/enhancing-chatgpt-with-infinite-external-memory-using-vector-database-and-chatgpt-retrieval-plugin-b6f4ea16ab8)
+
+<img src="../images/2022/1*aP8m4U_BzAe-dYDyzjS7EQ.png" alt="img" style="zoom:25%;" />
+
+如上圖，快速整理架構如下：
+
+- 需要把客服文件透過切割成一群群的文字區塊
+- 將文字區塊透過 Embedding 技術放入 LLM 的向量空間，暫存在 Vector Database。 （會變成一個很長的數字陣列 e.g. {{1212,121213123,1232312,12312,213434,}{123123,....}}
+- 客戶詢問問題的時候，也去針對他的問題切割後作成 Embedding 。並且找尋最接近的文件。
+- 將文件區塊給 LLM 整理後回覆給客戶。
+
+即便你使用了 LangChain 來包裝整個架構，你還是會遇到相關問題：
+
+- 選擇 [Vector Store](https://api.python.langchain.com/en/latest/modules/vectorstores.html)
+- 打造不同文件的 Document Loader
+  - [PDF Loader](https://python.langchain.com/docs/modules/data_connection/document_loaders/how_to/pdf)
+  - Web loader 這邊複雜一點，需要透過 [BeatifulSoup 爬下網頁，抓取需要的內容](https://github.com/embedchain/embedchain/blob/main/embedchain/loaders/web_page.py)。
+  - 如果是 [YouTube 也是很複雜： 找出字幕 -> 抓下來](https://github.com/embedchain/embedchain/blob/main/embedchain/loaders/youtube_video.py) 
+- 將文字切割過後放入 Embedding 。
+
+那有方式可以更快速解決這樣的架構問題嗎？ 接下來就要跟大家   [EmbedChain](https://github.com/embedchain/embedchain)  。
+
 # 如何透過 EmbedChain 打造客服 LINE Bot
 
 這裡列出幾個簡單流程：
