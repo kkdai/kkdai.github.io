@@ -10,8 +10,6 @@ tags: ["Langchain", "TIL", "Python"]
 
 <img src="../images/2022/image-20230628221201753.png" alt="image-20230628221201753" style="zoom:50%;" />
 
-
-
 透過這個 [EmbedChain](https://github.com/embedchain/embedchain) 可以抓取許多種資料，這個圖片是測試他去抓取 「[2023年LINE官方帳號方案價格調整，重點一次掌握](https://tw.linebiz.com/column/LINEOA-2023-Price-Plan/?filter-scale=brand-customers)」網頁上的資料來回覆給使用者。
 
 - **官方帳號在哪一天調整價錢？** 官方帳號價格將在 2023 年 9 月 1 日調整。
@@ -28,7 +26,7 @@ tags: ["Langchain", "TIL", "Python"]
 - [[學習心得\][Python] 透過 LangChain 的 Functions Agent 達成用中文來操控資料夾](https://www.evanlin.com/langchain-function-agent/)
 - [[學習心得\][Python] 透過 LangChain 打造一個股價查詢 LINEBot - 股價小幫手](https://www.evanlin.com/linebot-langchain/)
 
-#  EmbedChain 解決了那些問題
+# EmbedChain 解決了那些問題
 
 先預設本篇文章讀者，已經是懂的使用 LLM (Large Language Model) 來打造客服機器人。之前你需要先建立客服機器人的參考資料庫，（因為大部分 LLM (e.g. OpenAI) ) 不知道如何回覆你的問題。
 
@@ -49,7 +47,7 @@ tags: ["Langchain", "TIL", "Python"]
 - 打造不同文件的 Document Loader
   - [PDF Loader](https://python.langchain.com/docs/modules/data_connection/document_loaders/how_to/pdf)
   - Web loader 這邊複雜一點，需要透過 [BeatifulSoup 爬下網頁，抓取需要的內容](https://github.com/embedchain/embedchain/blob/main/embedchain/loaders/web_page.py)。
-  - 如果是 [YouTube 也是很複雜： 找出字幕 -> 抓下來](https://github.com/embedchain/embedchain/blob/main/embedchain/loaders/youtube_video.py) 
+  - 如果是 [YouTube 也是很複雜： 找出字幕 -> 抓下來](https://github.com/embedchain/embedchain/blob/main/embedchain/loaders/youtube_video.py)
 - 將文字切割過後放入 Embedding 。
 
 那有方式可以更快速解決這樣的架構問題嗎？ 接下來就要跟大家   [EmbedChain](https://github.com/embedchain/embedchain)  。
@@ -72,22 +70,23 @@ tags: ["Langchain", "TIL", "Python"]
 
 這裡列出一些經常被詢問的問題網頁：
 
--  [2023年LINE官方帳號方案價格調整，重點一次掌握](https://tw.linebiz.com/column/LINEOA-2023-Price-Plan/?filter-scale=brand-customers)
+- [2023年LINE官方帳號方案價格調整，重點一次掌握](https://tw.linebiz.com/column/LINEOA-2023-Price-Plan/?filter-scale=brand-customers)
 
--  [善用官方帳號「漸進式訊息」範本，輕鬆完成客製化訊息，讓好友離不開你！](https://tw.linebiz.com/column/stepmessage/?filter-category=service-information)
+- [善用官方帳號「漸進式訊息」範本，輕鬆完成客製化訊息，讓好友離不開你！](https://tw.linebiz.com/column/stepmessage/?filter-category=service-information)
 
--  [1+1>2，用LAP廣告放大你的LINE官方帳號優勢](https://tw.linebiz.com/column/LAP-Maximize-OA-Strategy/)
+- [1+1>2，用LAP廣告放大你的LINE官方帳號優勢](https://tw.linebiz.com/column/LAP-Maximize-OA-Strategy/)
 
 ![image-20230628090828775](../images/2022/image-20230628090828775.png)
 
-##  建立 EmbedChain LINE Bot
+## 建立 EmbedChain LINE Bot
 
 使用上也很簡單:
 
-1. 安裝  [EmbedChain](https://github.com/embedchain/embedchain) 
+1. 安裝  [EmbedChain](https://github.com/embedchain/embedchain)
    `pip install embedchain`
 
 2. 加上相關程式碼
+
    ```
    from embedchain import App
    
