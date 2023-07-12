@@ -47,3 +47,12 @@ vectordb.similarity_search(query, k=2, filter={"page": 1})
 
 
 
+
+
+
+
+## 參考內容：
+
+- [LangChain Chat with Your Data](https://learn.deeplearning.ai/langchain-chat-with-your-data)
+
+- [LLM+Embedding构建问答系统的局限性及优化方案](https://zhuanlan.zhihu.com/p/641132245?utm_id=0)
