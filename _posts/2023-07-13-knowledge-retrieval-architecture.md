@@ -52,7 +52,18 @@ tags: ["GPAI", "TIL", "LLM"]
 
 # 優化設計
 
-- 透過 [GPT Index](https://gpt-index.readthedocs.io/en/latest/guides/primer.html?ref=mattboegner.com) 來衡量你使用的 LLM 回覆。而且這種優化設計，
+有一些方式可以優化以上的基本架構：
+
+## 產生更有意義的 Retrieval 資料
+
+- [Precise Zero-Shot Dense Retrieval without Relevance Labels: (a.k.a. HyDE:  Hypothetical Document Embeddings~(HyDE).)](https://arxiv.org/abs/2212.10496?ref=mattboegner.com) 
+  - 論文摘要:
+    - 本文提出了一種通過虛擬文件嵌入來解決零樣本情況下的密集檢索系統的困難。在沒有相關性標籤的情況下，HyDE通過指示模型生成虛擬文件，該文件捕捉了相關性模式，但仍然不真實且可能包含錯誤細節。然後，通過無監督對比學習的編碼器將該文件編碼為嵌入向量。該向量在嵌入空間中識別出一個近似的鄰域，根據向量相似性檢索出相似的真實文件。我們的實驗結果表明，HyDE明顯優於最先進的無監督密集檢索器Contriever，在各種任務（例如網絡搜索、問答、事實驗證）和語言（例如瑞典語、韓語、日語）上表現出強大的性能。
+  - 透過 LLM 來增加文章本體的上下文，透過這樣的方式來增加整體回覆的完整性。也能進而提升回覆的正確性。
+- [名為“生成然後讀取”(GenRead): Generate rather than Retrieve: Large Language Models are Strong Context Generators](https://arxiv.org/abs/2209.10063?ref=mattboegner.com) 
+  - 論文摘要：
+    - 本論文提出了一種解決知識密集型任務的新方法，該方法使用大型語言模型生成文檔，而不是使用文檔檢索器。這種方法首先給語言模型提供問題，生成相關的文檔，然後閱讀這些文檔以生成最終答案。此外，作者還提出了一種基於聚類的提示方法，從而選擇不同的提示，生成涵蓋不同觀點的文檔，從而提高答案的回收率。研究人員在三個不同的知識密集型任務上進行了廣泛實驗，包括開放領域問答、事實檢查和對話系統。其中，該方法在TriviaQA和WebQ上取得了71.6和54.4的精確匹配分數，明顯優於目前最先進的檢索-閱讀流程DPR-FiD的+4.0和+3.9，而且不需要從任何外部知識來源檢索文檔。最後，作者還演示了通過結合檢索和生成可以進一步提高模型性能。相關代碼和生成的文檔可以在https://github.com/wyu97/GenRead 找到。
+  - 也是類似 HyDE 的方式，而是採取多個上下文的方式來確保內容更有意義。
 
 
 
