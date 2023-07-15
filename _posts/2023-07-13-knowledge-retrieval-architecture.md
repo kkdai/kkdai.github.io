@@ -79,4 +79,4 @@ tags: ["GPAI", "TIL", "LLM"]
 - [如何使用 GPT3、嵌入和數據集對文檔實施問答](https://simonwillison.net/2023/Jan/13/semantic-search-answers/?ref=mattboegner.com)
 - [FAISS](https://github.com/facebookresearch/faiss?ref=mattboegner.com)用於向量相似度計算
 - [生成而不是檢索：大型語言模型是強大的上下文生成器](https://arxiv.org/abs/2209.10063?ref=mattboegner.com)
-- [實施代碼](https://github.com/wyu97/GenRead?ref=mattboegner.com)
+- [GenRead 範例程式碼](https://github.com/wyu97/GenRead)
