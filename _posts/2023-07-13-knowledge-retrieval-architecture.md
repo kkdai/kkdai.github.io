@@ -75,7 +75,7 @@ tags: ["GPAI", "TIL", "LLM"]
 - [GPT指數](https://github.com/jerryjliu/gpt_index?ref=mattboegner.com)
 - 用於語義搜索和其他 NLP 應用的[Haystack庫](https://docs.haystack.deepset.ai/docs/intro?ref=mattboegner.com)
 - [知識密集型 NLP 任務的檢索增強生成](https://arxiv.org/abs/2005.11401?ref=mattboegner.com)
-- [浪鏈](https://github.com/hwchase17/langchain?ref=mattboegner.com)
+- [LangChain](https://github.com/hwchase17/langchain)
 - [如何使用 GPT3、嵌入和數據集對文檔實施問答](https://simonwillison.net/2023/Jan/13/semantic-search-answers/?ref=mattboegner.com)
 - [FAISS](https://github.com/facebookresearch/faiss?ref=mattboegner.com)用於向量相似度計算
 - [生成而不是檢索：大型語言模型是強大的上下文生成器](https://arxiv.org/abs/2209.10063?ref=mattboegner.com)
