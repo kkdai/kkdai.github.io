@@ -74,6 +74,25 @@ tags: ["研討會心得", "LINE"]
 
 這個部分很建議看一下這篇文章，裡面有相當多的說明。
 
+![image-20230719161222138](../images/2022/image-20230719161222138.png)
+
+
+
+透過這個流程的解釋，你可以很了解到為什麼 LLM 可以了解使用者的內容。並且知道要如何去拆解變成參數。這就是如何讓「自主性」這件事情成真的重點。
+
+# LangChain 的程式碼
+
+![image-20230719161427897](../images/2022/image-20230719161427897.png)
+
+根據以上的程式碼，你可以看到定義一個工具的重點，就是要跟 LLM 模型講：
+
+- 這麼工具是做什麼的？(他是一個查詢股價的工具)
+  -  `"Useful for when you need to find out the price of stock. You should input the stock ticker used on the yfinance API"`
+- 他需要什麼樣的參數？ 你需要給定股價的 ticker
+  - `stockticker`就是股票代號，是一個字串。
+
+透過這些資訊，
+
 
 
 
