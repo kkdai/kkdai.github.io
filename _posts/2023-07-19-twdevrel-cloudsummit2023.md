@@ -42,7 +42,39 @@ tags: ["研討會心得", "LINE"]
 
 ![img](../images/2022/1672403412222.png)
 
-大家可以參考一下[這篇文章](https://engineering.linecorp.com/zh-hant/blog/linebot-chatgpt)如何透過生成式AI 來打造聊天室中的訊息摘要小幫手。
+大家是否都有類似的問題？ 常常加入一個群組內，有太多的訊息在裡面跑來跑去，一回頭來看，發現已經有太多未讀的訊息在裡面了。 常常需要進去後，慢慢地追每一個訊息來避免自己錯過太多 (FOMO) ？ 大家可以參考一下[這篇文章](https://engineering.linecorp.com/zh-hant/blog/linebot-chatgpt)如何透過生成式AI 來打造聊天室中的訊息摘要小幫手。
+
+# 透過 LangChain 來打造自主性的 LINE Bot
+
+<img src="../images/2022/image-20230719153754228.png" alt="image-20230719153754228" style="zoom: 25%;" />
+
+
+
+透過基本的生成式AI 打造一個聊天機器人之後，我們可以進階的透過一些有系統的架構來打造「自主性」的 LINE Bot 。 所謂的自主性會是什麼意思：
+
+- 具有基本思考與處理能力，知道資料要去哪裡尋找。
+- 有相關的記憶能力，能記住使用者的相關需求。
+- 可以有效的回覆使用者的疑問，或是可以啟動相關的服務。
+
+這裡就要介紹如何透過 [LangChain](https://github.com/hwchase17/langchain) 來打造一個具有「自主性」的 LINE Bot 小幫手。
+
+
+
+## 什麼是 LangChain?
+
+<img src="../images/2022/image-20230719155356673.png" alt="image-20230719155356673" style="zoom:33%;" />
+
+要讓你的 LINE Bot 做出以上的事情，你需要很多很多的相關 Prompt 。不論是定義 LLM 的模型該如何解讀你的文字，該如何挑選即將要執行的動作，或是如何將結果作為有效的拆解，到把以往訊息得內容加以存在 Prompt 之中。
+
+但是透過  [LangChain](https://github.com/hwchase17/langchain)  你可以將這些工作拆解成一個個的小方塊，讓你打造相關服務與應用的時候不用在重複使用那些的 Prompt ，就可以快速打造出來。 以下透過一些簡單的程式碼範例來講解使用了  [LangChain](https://github.com/hwchase17/langchain) 之後，你的程式碼會變得多簡潔。
+
+
+
+## 關於如何自主性挑選適合的 Tool 去做的能力 Function Calling
+
+這個部分很建議看一下這篇文章，裡面有相當多的說明。
+
+
 
 
 
