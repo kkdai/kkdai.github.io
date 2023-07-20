@@ -105,7 +105,17 @@ tags: ["研討會心得", "LINE"]
 
 <script defer class="speakerdeck-embed" data-slide="17" data-id="0193e5479d8643efa03b6766e17ac0a3" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
+[EmbedChain](https://github.com/embedchain/embedchain) 提供一個良好的打包工具，透過 [LangChain](https://github.com/hwchase17/langchain) 為底層打包出相關的文件解讀的套件。他支持的文件有：
 
+- PDF 檔案
+- YouTube 的字幕檔案（如果有）
+- 網頁
+- 甚至是透過程式碼把相關內容丟給他
+
+他就會針對這樣的內容，將其做過 Split 與 Embeding 之後。可以透過一問一答的方式來查詢資料。 我也將相關的資料打包成一個 LINE Bot 的套件，大家可以看一下： 
+
+- 相關範例程式碼： [https://github.com/kkdai/linebot-embedchain](https://github.com/kkdai/linebot-embedchain)
+- 相關文章：
 
 
 
