@@ -21,6 +21,10 @@ tags: ["研討會心得", "LINE"]
 
 
 
+## 投影片
+
+<script defer class="speakerdeck-embed" data-id="0193e5479d8643efa03b6766e17ac0a3" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
 ## 生成式 AI 浪潮下社群有許多好玩的應用
 
 這裡分享了幾個有趣的應用，大家可以參考看看：
@@ -40,13 +44,11 @@ tags: ["研討會心得", "LINE"]
 
 ## 訊息摘要小幫手
 
-![img](../images/2022/1672403412222.png)
+<script defer class="speakerdeck-embed" data-slide="11" data-id="0193e5479d8643efa03b6766e17ac0a3" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 大家是否都有類似的問題？ 常常加入一個群組內，有太多的訊息在裡面跑來跑去，一回頭來看，發現已經有太多未讀的訊息在裡面了。 常常需要進去後，慢慢地追每一個訊息來避免自己錯過太多 (FOMO) ？ 大家可以參考一下[這篇文章](https://engineering.linecorp.com/zh-hant/blog/linebot-chatgpt)如何透過生成式AI 來打造聊天室中的訊息摘要小幫手。
 
 # 透過 LangChain 來打造自主性的 LINE Bot
-
-<img src="../images/2022/image-20230719153754228.png" alt="image-20230719153754228" style="zoom: 25%;" />
 
 
 
@@ -62,7 +64,9 @@ tags: ["研討會心得", "LINE"]
 
 ## 什麼是 LangChain?
 
-<img src="../images/2022/image-20230719155356673.png" alt="image-20230719155356673" style="zoom:33%;" />
+<script defer class="speakerdeck-embed" data-slide="17" data-id="0193e5479d8643efa03b6766e17ac0a3" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+
 
 要讓你的 LINE Bot 做出以上的事情，你需要很多很多的相關 Prompt 。不論是定義 LLM 的模型該如何解讀你的文字，該如何挑選即將要執行的動作，或是如何將結果作為有效的拆解，到把以往訊息得內容加以存在 Prompt 之中。
 
@@ -74,7 +78,7 @@ tags: ["研討會心得", "LINE"]
 
 這個部分很建議看一下這篇文章，裡面有相當多的說明。
 
-![image-20230719161222138](../images/2022/image-20230719161222138.png)
+<script defer class="speakerdeck-embed" data-slide="17" data-id="0193e5479d8643efa03b6766e17ac0a3" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 
 
@@ -82,7 +86,7 @@ tags: ["研討會心得", "LINE"]
 
 # LangChain 的程式碼
 
-![image-20230719161427897](../images/2022/image-20230719161427897.png)
+<script defer class="speakerdeck-embed" data-slide="17" data-id="0193e5479d8643efa03b6766e17ac0a3" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 根據以上的程式碼，你可以看到定義一個工具的重點，就是要跟 LLM 模型講：
 
@@ -93,9 +97,13 @@ tags: ["研討會心得", "LINE"]
 
 透過這些資訊 LLM 可以透過剛剛提供的有效思考來幫你查詢股票。那結果會如何呢？
 
-![image-20230719162316743](../images/2022/image-20230719162316743.png)
+<script defer class="speakerdeck-embed" data-slide="17" data-id="0193e5479d8643efa03b6766e17ac0a3" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 
+
+## 透過打包 LangChain 的小工具 - EmbedChain 打造客服機器人
+
+<script defer class="speakerdeck-embed" data-slide="17" data-id="0193e5479d8643efa03b6766e17ac0a3" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 
 
