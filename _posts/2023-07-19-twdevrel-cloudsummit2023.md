@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "[CloudSummit2023] 結合生成式 AI 打造有趣的 LINE Bot 應用"
+title: "[iThome Cloud Summit 2023] 結合生成式 AI 打造有趣的 LINE Bot 應用"
 description: ""
 category: 
 - 研討會心得
 tags: ["研討會心得", "LINE"]
 ---
 
-
+<script defer class="speakerdeck-embed" data-slide="17" data-id="0193e5479d8643efa03b6766e17ac0a3" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 # 前言
 
@@ -29,13 +29,13 @@ tags: ["研討會心得", "LINE"]
 
 這裡分享了幾個有趣的應用，大家可以參考看看：
 
-- **歷史名人 Bot：**
+- **歷史名人 Bot：** [加入好友](https://lin.ee/OGlQDqj)
   - 還是會真的回覆相關內容，而且很堅持講日文。 XD
-- **拼盤小幫手：**
+- **拼盤小幫手：** [加入好友](https://lin.ee/n8a6OU)
   - 原本是命理相當有研究的社群高手，透過生成式 AI 讓他的內容更加的口語化與人性化。
-- **就可妹妹：**
+- **就可妹妹：**[加入好友](https://liff.line.me/1645278921-kWRPP32q)
   - 讓生成式AI 幫你講笑話，不過好像不太好笑ＸＤ
-- **Cofacts 真的假的：** 
+- **Cofacts 真的假的：** [加入好友](https://line.me/R/ti/p/%40279grbvd)
   - 透過生成式AI 快速幫使用者檢查訊息是否是假的機率。
 
 而透過 LINE 的生態系中，有著許多文字的相關應用。有哪一些有趣的應用可能會出現呢？
@@ -86,7 +86,7 @@ tags: ["研討會心得", "LINE"]
 
 # LangChain 的程式碼
 
-<script defer class="speakerdeck-embed" data-slide="17" data-id="0193e5479d8643efa03b6766e17ac0a3" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<script defer class="speakerdeck-embed" data-slide="21" data-id="0193e5479d8643efa03b6766e17ac0a3" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 根據以上的程式碼，你可以看到定義一個工具的重點，就是要跟 LLM 模型講：
 
@@ -97,7 +97,7 @@ tags: ["研討會心得", "LINE"]
 
 透過這些資訊 LLM 可以透過剛剛提供的有效思考來幫你查詢股票。那結果會如何呢？
 
-<script defer class="speakerdeck-embed" data-slide="17" data-id="0193e5479d8643efa03b6766e17ac0a3" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<script defer class="speakerdeck-embed" data-slide="23" data-id="0193e5479d8643efa03b6766e17ac0a3" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 
 
@@ -115,9 +115,25 @@ tags: ["研討會心得", "LINE"]
 他就會針對這樣的內容，將其做過 Split 與 Embeding 之後。可以透過一問一答的方式來查詢資料。 我也將相關的資料打包成一個 LINE Bot 的套件，大家可以看一下： 
 
 - 相關範例程式碼： [https://github.com/kkdai/linebot-embedchain](https://github.com/kkdai/linebot-embedchain)
-- 相關文章：
+- 相關文章： [https://www.evanlin.com/langchain-embedchain/]( https://www.evanlin.com/langchain-embedchain/)
 
 
+
+
+
+# 透過生成式 AI 打造 LINE Bot 的小訣竅
+
+以下開始整理一些，你在打造生成式AI的時候可能會需要知道的小訣竅：
+
+
+
+## Tip1: 加上相關規則與規範式輸出
+
+<script defer class="speakerdeck-embed" data-slide="30" data-id="0193e5479d8643efa03b6766e17ac0a3" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+這篇可以參考[教學影片（中文)](https://www.youtube.com/playlist?list=PLly8vI0gpqtpTB7mt_qi57qOKQRo4XWAQ)
+
+就像一開始在使用生成式 AI 開發相關的應用一樣，所有的工程團隊都在思考如何透過有效的「咒語」（也就是 Prompt) 跟 LLM 溝通。
 
 # LINE Developers 相關技術文件與部落格：
 
@@ -126,6 +142,14 @@ tags: ["研討會心得", "LINE"]
 - [部落格: 2022 年 Flex Message 的 3 項新功能 LINE 中訊息設計釋放無限自由](https://engineering.linecorp.com/zh-hant/blog/2022-flex-message-v3/)
 
 # 活動小結
+
+感謝最後一個議程的每一位聽眾。我相信我可能是前幾位在台灣大場地講 LangChain 的講者。 但是接下來開始自主性聊天機器人(Chat Bot) 或是代理人服務（Agent) 將會是市場上一個很主流的議題。 
+
+
+
+希望每一個開發者都能透過生成式AI 打造具有溫度的 LINE 官方帳號，一起來 **Closing the Distance.** 
+
+
 
 立即加入「LINE 開發者官方社群」官方帳號，就能收到第一手 Meetup 活動，或與開發者計畫有關的最新消息的推播通知。▼
 
