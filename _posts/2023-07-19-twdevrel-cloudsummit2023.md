@@ -145,7 +145,28 @@ tags: ["研討會心得", "LINE"]
 
 第二個小訣竅，就是教導大家如何讓你的 LLM 更加的聰明。 雖然我們都知道現在使用的許多 LLM 都是相當的聰明，但是經常還是需要一些敘述來讓他更聰明，能夠有效地處理使用者的疑問。
 
-這裡的案例是使用[中央氣象局的天氣資料 API](https://opendata.cwb.gov.tw/userLogin) 的時候，在輸入地區的時候，由於官方系統規定使用的規定的縣市名稱來輸入。不能接受其他地區的輸入（比如說：
+這裡的案例是使用[中央氣象局的天氣資料 API](https://opendata.cwb.gov.tw/userLogin) 的時候，在輸入地區的時候，由於官方系統規定使用的規定的縣市名稱來輸入。不能接受其他地區的輸入。比如說：墾丁，關西.. 這些不屬於台灣縣市的輸入。 甚至是「台北縣」「台北市」，因為他給的範例只接受「臺北縣」「臺北縣」。 
+
+
+
+這時候該怎麼辦呢？ 只要在說明的 Prompt 中去詳細敘述即可，因為其實 Agent 的 說明 'Description' 其實就是 Prompt 。詳細更多內容也可以參考[這篇文章](https://www.evanlin.com/langchain-cwb/)。 
+
+
+
+## Tip3: 專注的小幫手
+
+<script defer class="speakerdeck-embed" data-slide="34" data-id="0193e5479d8643efa03b6766e17ac0a3" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+最後給予大家一些小建議，建議儘量不要讓所有功能放在一個聊天機器人上。就像是開發 App 一樣，一個好的 LINE 官方帳號應該是盡可能的滿足使用者在一個方面的需求。 如此一來能將所有使用者體驗加以優化， 比如說：
+
+- 翻譯小幫手
+- [股價小幫手](https://github.com/kkdai/linebot-langchain)
+- [旅遊小幫手](https://github.com/kkdai/linebot-travel-chatgpt)
+- [論文小幫手](https://github.com/kkdai/linebot-arxiv)
+
+# 讓你的 LINE 官方帳號創業夢實現
+
+這裡跟大家分享，在沒有生成式AI 之前，其實許多交談對話的處理上都需要使用到 NLU(自然語言理解) 的技術。但是當時的 NLU 技術
 
 
 
