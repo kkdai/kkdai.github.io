@@ -103,7 +103,7 @@ tags: ["研討會心得", "LINE"]
 
 ## 透過打包 LangChain 的小工具 - EmbedChain 打造客服機器人
 
-<script defer class="speakerdeck-embed" data-slide="17" data-id="0193e5479d8643efa03b6766e17ac0a3" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<script defer class="speakerdeck-embed" data-slide="24" data-id="0193e5479d8643efa03b6766e17ac0a3" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 [EmbedChain](https://github.com/embedchain/embedchain) 提供一個良好的打包工具，透過 [LangChain](https://github.com/hwchase17/langchain) 為底層打包出相關的文件解讀的套件。他支持的文件有：
 
@@ -133,7 +133,21 @@ tags: ["研討會心得", "LINE"]
 
 這篇可以參考[教學影片（中文)](https://www.youtube.com/playlist?list=PLly8vI0gpqtpTB7mt_qi57qOKQRo4XWAQ)
 
-就像一開始在使用生成式 AI 開發相關的應用一樣，所有的工程團隊都在思考如何透過有效的「咒語」（也就是 Prompt) 跟 LLM 溝通。
+就像一開始在使用生成式 AI 開發相關的應用一樣，所有的工程團隊都在思考如何透過有效的「咒語」（也就是 Prompt) 跟 LLM 溝通。這邊有相當多的 prompt 可以有效地讓 LLM 盡可能地依照你的要求來做事，並且遇到其他額外的要求（比如說叫他寫一首詩）能避免掉。
+
+要注意 Prompt 使用英文的效果會最好，雖然我們經常使用母語來問答。但是要走 API 的時候，建議還是要用英文。
+
+
+
+## Tip2: 教懂你的 LLM
+
+<script defer class="speakerdeck-embed" data-slide="31" data-id="0193e5479d8643efa03b6766e17ac0a3" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+第二個小訣竅，就是教導大家如何讓你的 LLM 更加的聰明。 雖然我們都知道現在使用的許多 LLM 都是相當的聰明，但是經常還是需要一些敘述來讓他更聰明，能夠有效地處理使用者的疑問。
+
+這裡的案例是使用[中央氣象局的天氣資料 API](https://opendata.cwb.gov.tw/userLogin) 的時候，在輸入地區的時候，由於官方系統規定使用的規定的縣市名稱來輸入。不能接受其他地區的輸入（比如說：
+
+
 
 # LINE Developers 相關技術文件與部落格：
 
