@@ -11,7 +11,8 @@ tags: ["Python", "streamline"]
 ## 小專案 Online PDF Viewer and Parse Data compare： 
 
  - [https://github.com/kkdai/pdf_online_editor](https://github.com/kkdai/pdf_online_editor)
- - 比對你準備要導入的檔案，透過 PyPDF 
+ - 比對你準備要導入的檔案，透過 PyPDF 。
+ - 有在使用 PDF vector embedding 的人，但是又不知道導入資料長什麼樣子，可以透過這個小工具來查看 build by streamlit。
 
 <img src="../images/2022/image-20230805094306589.png" alt="image-20230805094306589" style="zoom:25%;" />
 
