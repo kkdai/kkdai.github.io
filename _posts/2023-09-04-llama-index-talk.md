@@ -36,7 +36,7 @@ RAG (Retrieval Augmented Generation) 主要講的是透過查詢資料，透過 
 
 ### 改善方式:
 
-- 挑選好切割工具(parser) : 推薦 LLamaHub ，Unstructured-IO/unstructured
+- 挑選好切割工具(parser) : 推薦 [LlamaHub](https://llamahub.ai/) ，[Unstructured-IO/unstructured](https://github.com/Unstructured-IO/unstructured)
 - 加強檢索的資料（放一些 metadata) : e.g. 頁碼，章節敘述 ....
 - 建立一個 data pair (doc_hash_id, ver_num)，更新比較快。
 
