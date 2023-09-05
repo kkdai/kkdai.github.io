@@ -53,5 +53,12 @@ RAG (Retrieval Augmented Generation) 主要講的是透過查詢資料，透過 
   - https://gpt-index.readthedocs.io/en/stable/core_modules/data_modules/index/usage_pattern.html#handling-document-update
     - [Metadata Extraction](https://gpt-index.readthedocs.io/en/stable/core_modules/data_modules/index/metadata_extraction.html)
     - [Document Management](https://gpt-index.readthedocs.io/en/stable/core_modules/data_modules/index/document_management.html)
-- 
+
+
+
+
+
+## 關於 Llama-Index 教學資源
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cNMYeW2mpBs?si=NHRdp-Znbv2STbWg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
