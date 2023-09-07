@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[好書分享] The Staff Engineer's Path: A  "
+title: "[好書分享] The Staff Engineer's Path: A Guide for individual contributors navigating growth and change"
 description: ""
 category: 
 - 書海裡的漫遊
