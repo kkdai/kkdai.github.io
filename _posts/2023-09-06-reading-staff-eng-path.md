@@ -46,43 +46,51 @@ By exploring the three pillars of a staff engineer's job, Tanya Reilly, a vetera
 
 ```
 
-感覺是個理想職業 (大心)
+### Creating the big picture
 
 [<img src="../images/2022/F4tbfaIasAE4MoA.jpg" alt="Image" style="zoom:50%;" />](https://pbs.twimg.com/media/F4tbfaIasAE4MoA.jpg)
 
-管理能量跟更有效的 dive 相當的重要..
+感覺是個理想職業 (大心)
+
+
+### 有限的時間
+
 [<img src="../images/2022/F40tmDPbwAAZixe.jpg" alt="Image" style="zoom:50%;" />](https://pbs.twimg.com/media/F40tmDPbwAAZixe.jpg)
 
 [<img src="../images/2022/F40tmndbgAAscw3.jpg" alt="Image" style="zoom:50%;" />](https://pbs.twimg.com/media/F40tmndbgAAscw3.jpg)
+
+管理能量跟更有效的 dive 相當的重要..
+
+
+### 你現在是一個榜樣 (Role Model)
+
+[<img src="../images/2022/F5TkEpobsAAd6rt.png" alt="Image" style="zoom:50%;" />](https://pbs.twimg.com/media/F5TkEpobsAAd6rt.png)
 
 我喜歡要求“ELI5”，這個術語來自 Reddit，意思是“像我五歲一樣解釋它”。這是一個有用的捷徑，意思是“看，不要猜測我的理解程度，只需為我拼出它即可。如果你告訴我我已經知道的事情，我保證不會生氣。” （這裡的社會契約是，如果他們從主題的基礎知識開始，你就不會被冒犯。）
 
 
 
-[<img src="../images/2022/F5TkEpobsAAd6rt.png" alt="Image" style="zoom:50%;" />](https://pbs.twimg.com/media/F5TkEpobsAAd6rt.png)
+### 作為一個組織的榜樣
 
+[<img src="../images/2022/F5To1t7a0AA1xOi.jpg" alt="Image" style="zoom:50%;" />](https://pbs.twimg.com/media/F5To1t7a0AA1xOi.jpg)
 作為一個組織的榜樣，你應該注意的部分： from "The Staff Engineer Path"
 
 
+### 展現你的影響力部分
 
-[<img src="../images/2022/F5To1t7a0AA1xOi.jpg" alt="Image" style="zoom:50%;" />](https://pbs.twimg.com/media/F5To1t7a0AA1xOi.jpg)
-
-展現你的影響力部分：
+[<img src="../images/2022/F5ZCpqaa8AA8b3L.png" alt="Image" style="zoom:50%;" />](https://pbs.twimg.com/media/F5ZCpqaa8AA8b3L.png)
 
 - 文章與公開演講比起 1 on 1 可以幫助人
 - 想要私下給個別建議，不如寫成通用的文章
 - 建立制度高過於自己下來當審核者
 
-[<img src="../images/2022/F5ZCpqaa8AA8b3L.png" alt="Image" style="zoom:50%;" />](https://pbs.twimg.com/media/F5ZCpqaa8AA8b3L.png)
+### 最後關於生涯規劃的部分
 
-最後關於生涯規劃的部分:
+[<img src="../images/2022/F5ZGLhFasAASH3H.png" alt="Image" style="zoom:50%;" />](https://pbs.twimg.com/media/F5ZGLhFasAASH3H.png)
 
 - 挑選自己想做的來投資
 - 不要設限，盡可能投資有最大回報
 - 找尋自己最好的職涯指引
-
-[<img src="../images/2022/F5ZGLhFasAASH3H.png" alt="Image" style="zoom:50%;" />](https://pbs.twimg.com/media/F5ZGLhFasAASH3H.png)
-
 
 
 
