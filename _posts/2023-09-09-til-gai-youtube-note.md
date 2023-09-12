@@ -26,7 +26,7 @@ https://www.youtube.com/playlist?list=PLlHO_3K3NaJczxCPMOcG_c8j8e1e05Dkg 2023 �
 - 商用詠唱進階 & 黑魔法防禦術 - 提升與保護你的 AI 應用／李慕約 生成式 AI 年會策展人 https://www.youtube.com/watch?v=UPN2VD0cV4s&list=PLlHO_3K3NaJczxCPMOcG_c8j8e1e05Dkg&index=15&t=1588s
   上次 @jason.tai  帶來的分享，裡面有一些相關的應用。 如何有意識地去測試你系統 prompt 的安全。
 
-**### 技術相關:**
+### **技術相關:**
 
 - Enterprise Prompt Engineering／陳照元 玉山銀行 主任機器學習工程師 https://www.youtube.com/watch?v=R3oTpyoPh70&list=PLlHO_3K3NaJczxCPMOcG_c8j8e1e05Dkg&index=7&t=2s
   - 技術深度算是我認為最多相關應用，蠻適合在 CB 或是 LINE Bank 相關應用。 更多內容我有寫在 
