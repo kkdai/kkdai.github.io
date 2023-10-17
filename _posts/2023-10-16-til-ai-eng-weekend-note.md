@@ -61,3 +61,38 @@ Hassan 分享他如何在過去兩年開發 AI 相關應用，裡面有幾個蠻
 
 
 github: [https://github.com/Nutlope/aicommits](https://github.com/Nutlope/aicommits)
+
+
+
+## Twitter Bio generator using ChatGPT
+
+![image-20231017124344783](../images/2022/image-20231017124344783.png)
+
+Website: [https://threadcreator.com/tools/twitter-bio-generator](https://threadcreator.com/tools/twitter-bio-generator)
+
+
+
+## 讓你照片更清晰 - Restoring old Photos
+
+![image-20231017125833097](../images/2022/image-20231017125833097.png)
+
+Architecture
+
+![image-20231017130042702](../images/2022/image-20231017130042702.png)
+
+- Website: [https://www.restorephotos.io/](https://www.restorephotos.io/)
+- Github: [https://github.com/Nutlope/restorePhotos](https://github.com/Nutlope/restorePhotos)
+
+
+
+ 
+
+## 重新裝潢家裡 - RoomGPT 
+
+![image-20231017130227025](../images/2022/image-20231017130227025.png)
+
+- Website: [https://www.roomgpt.io/]( https://www.roomgpt.io/)
+- Github: [https://github.com/Nutlope/roomGPT](https://github.com/Nutlope/roomGPT)
+
+
+
