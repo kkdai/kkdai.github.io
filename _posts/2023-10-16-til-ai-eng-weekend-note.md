@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[AI Engineer Summit 2023 - Note] The Weekend AI Engineer
+title: "[AI Engineer Summit 2023 - Note] The Weekend AI Engineer"
 description: ""
 category: 
 - 研討會心得
