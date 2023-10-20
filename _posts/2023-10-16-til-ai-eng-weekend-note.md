@@ -16,7 +16,7 @@ tags: ["Python", "LLM"]
 
 ## 前情提要
 
-AI Engineer - Summit 有趣議程分享
+[AI Engineer - Summit](https://www.ai.engineer/summit/schedule) 有趣議程分享
 “Hassan El Mghari, AI Engineer, Vercel, “The Weekend AI Engineer”
 https://youtu.be/qw4PrtyvJI0?t=8632
 Hassan 分享他如何在過去兩年開發 AI 相關應用，裡面有幾個蠻有趣的
@@ -96,3 +96,21 @@ Architecture
 
 
 
+# 其他人分享的文章
+
+- From 布丁(hlb)
+
+  - Day 1
+
+    - Pydantic is all you need https://www.youtube.com/live/veShHxQYPzo?si=z3b1OHPqk3EOeIcO&t=11825, deck: https://tome.app/fivesixseven/pydantic-is-all-you-need-cllufwp8p08qoo75rx0omiybh, by Jason Liu
+    - The Hidden Life of Embeddings https://www.youtube.com/live/veShHxQYPzo?si=h_LSxYK9LOqzuilV&t=13957, by Linus Lee, AI Lead of Notion
+
+    Day 2
+
+    - Move Fast, Break Nothing https://www.youtube.com/live/qw4PrtyvJI0?si=qNU0zljp_L8TTYo5&t=1531, by Dedy Kredo, CPO of CodiumAI
+    - Climbing the Ladder of Abstraction https://www.youtube.com/live/qw4PrtyvJI0?si=mBV_4fRALkwNQEB1&t=3367, by Amelia Wattenberger, Design of Adept
+    - 120k players in a week: Lessons from the first viral CLIP app https://www.youtube.com/live/qw4PrtyvJI0?si=0DfWVl3PBrhffSx2&t=9594, by Joseph Nelson, CEO of Roboflow
+    - Pragmatic AI With TypeChat https://www.youtube.com/live/qw4PrtyvJI0?si=aaf-xSCH14S3wdDt&t=15538, Daniel Rosenwasser, TypeScript PM of Microsoft
+    - Open Questions for AI Engineering https://www.youtube.com/live/qw4PrtyvJI0?si=TRx6cfn7NisrbGY4&t=24951, Simon Willison, Creator of Datasette; Co-creator of Django
+
+-  [AI Engineer Summit 特輯 by ihower](https://ihower.tw/blog/archives/11794)
