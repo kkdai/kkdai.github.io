@@ -4,7 +4,7 @@ title: "[遊戲天國] P 的謊言"
 description: ""
 category: 
 - 遊戲天國
-- PS5
+- SteamDeck
 tags: ["PS5", "DarkSouls"]
 
 ---
