@@ -4,8 +4,8 @@ title: "[遊戲天國] 黑魂3 也破了"
 description: ""
 category: 
 - 遊戲天國
-- PS5
-tags: ["PS5", "DarkSouls"]
+- SteamDeck
+tags: ["steam", "DarkSouls"]
 
 ---
 
