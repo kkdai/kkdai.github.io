@@ -137,15 +137,82 @@ tags: ["書海裡的漫遊", "Books", "教育"]
 - 經濟
 - 社會
 
+## 八個重要的能力：
+
 #### 好奇心： 提處問題與探索世界運作方式的能力。
 
 #### 創造力： 產生新的想法和付諸實踐的能力。
 
+- 試著引導孩子們去探索，產生興趣。
+
+#### 判斷力： 分析資訊和想法，形成合理的論點與判斷力。
+
+- 幫助孩子們如何去尋找正確，並且來具有批判性思考。
+
+#### 溝通力：以不同方式清楚自信地表達想法和感受的能力。
+
+#### 合作力： 以建設性方式與他人共事的能力。
+
+#### 同情心： 對他人感同身受並因此採取行動的能力。
+
+#### 內心的平靜：與內在感受連結和培養內在和諧平衡的能力。
+
+#### 公民權： 以正向行動投入社會以及參與社會維繫過程的能力。
 
 
 
+## 從工廠到農場的教育： 野化教育
+
+**工廠教育：**
+
+- 大量生產的方式
+- 線性生產
+- 每個人（老師）有自己負責的項目（科目）
+- 預先定義，一成不變，嚴格控管
+
+**工廠化教育的缺點：**
+
+- 把孩子當成商品來教育（到大學），但是往往在「成品」之前，他們的人生以經開始了一大半。
+- 透過固定化的教育，許多孩子變得更不快樂。
+
+**野化教育：**
+
+- 好的農夫不會限制生長的框架
+- 反而會準備最好土壤，讓植物去成長茁壯。
+- 優秀的學校會專注於創造讓孩子成長茁壯，發光發熱的條件。
+
+<div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/lang/zh-tw/sir_ken_robinson_bring_on_the_learning_revolution" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div></div>
+
+
+
+## 讓學校變成生態系統：
+
+- 尊重生態系統的多樣性（孩子們的多樣性）
+
+- 看重老師，就像孩子本身是教育的主體一樣。 老師也是教育裡面完全無法被剝奪的一環。老師就像是一個良好有經驗的農夫，需要被尊重與給予良好的待遇。
+
+  - 老師的價值在於促進學習動機。（不是讓孩子拿高分）
+  - 老師需要針對不同的學生給予不同的誘因與促進他們學習的動機。
+
+  ![image-20231102221801598](../images/2022/image-20231102221801598.png)
+
+  ![image-20231102221804284](../images/2022/image-20231102221804284.png)
+
+- 透過個人化教育：
+
+  - 多樣性
+  - 多面向，多元的智力發展
+  - 更有彈性。
+    - **如果有一家公司 40 分重要規定員工要做不同的事情，可能會倒閉。但是學校正在這樣做！**
+
+![image-20231102222252110](../images/2022/image-20231102222252110.png)
+
+
+
+<div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/lang/zh-tw/sir_ken_robinson_how_to_escape_education_s_death_valley" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div></div>
 
 
 
 # 心得:
 
+如果說這是一本來自於「肯．羅賓森」的一本書，不如說這是他一輩子在做的事情的總結。就像他的三場改變數千萬人的 TED 演講一樣。整本書圍繞著這三個重要的概念
