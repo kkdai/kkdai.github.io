@@ -40,6 +40,68 @@ Kubernetes 1.7 之後的版本，可以加上  [node authorization](http://bit.l
 
 
 
+![image-20231203212545186](../images/2022/image-20231203212545186.png)
+
+As discussed in chapter 1, one of the big differences between Secrets and ConfigMaps is how data is stored inside `etcd`. Secrets store data in Base64 format; ConfigMaps store data in plain text.
+
+
+
+### 2.4.2 Secrets are mounted in a temporary file system
+
+A Secret is only sent to a Node if there is a Pod that requires it. But what’s important is that a Secret, even though it is mounted as a volume, is never written to disk but in-memory using the `tmpfs` file system. `tmpfs` stands for temporal filesystem, and as its name suggests, it is a file system, where data is stored in volatile memory instead of persistent storage. When the Pod containing the Secret is deleted, the kubelet is responsible for deleting it from memory as well.
+
+
+
+### 危險程度 / Hacking 方式
+
+#### Environment Variables / 
+```
+export
+ 
+declare -x GREETING_MESSAGE="Hello Anna"     ①
+declare -x HOME="/"
+declare -x HOSTid="greeting-demo-deployment-5664ffb8c6-2pstn"
+...
+
+```
+
+
+
+#### Secret 放在暫存檔案
+
+```
+mount | grep tmpfs
+ 
+tmpfs on /dev type tmpfs (rw,nosuid,size=65536k,mode=755)
+tmpfs on /sys/fs/cgroup type tmpfs (ro,nosuid,nodev,noexec,relatime,mode=755)
+tmpfs on /etc/sec type tmpfs (ro,relatime) /   ①
+...
+ 
+ls /etc/sec                                    ②
+ 
+greeting.message
+ 
+cat /etc/sec/greeting.message                  ③
+ 
+Hello Anna
+```
+
+
+
+### 利用外部的結構
+
+![img](../images/2022/CH02_F07_Sotobueno3.png)
+
+### Summary
+
+- Kubernetes 叢集由主節點和可選的工作節點組成。
+- 任何 Kubernetes 資源和叢集的目前狀態都儲存在`etcd` 實例中。
+- 我們討論了將應用程式部署到 Kubernetes。
+- 我們介紹了使用 ConfigMaps 在外部配置應用程序，無論是作為環境變數還是作為文件。
+- Secrets 在建構和使用上與 ConfigMap 沒有太大不同。
+
+
+
 ### 要加強 configMap 可以參考這一篇
 
 #### [使用 Kubernetes ConfigMap 進行正確的秘密管理](https://www.trendmicro.com/en_us/devops/23/f/kubernetes-configmaps-secret-management.html)
