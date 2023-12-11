@@ -131,3 +131,42 @@ curl http://localhost:11434/api/generate -d '{
 {"model":"llama2","created_at":"2023-12-11T14:41:36.760949Z","response":"\nSure! Here's the difference between a comet and a meteor:\n\nComets are icy bodies that originate from the outer reaches of the solar system. They are composed of dust, ice, and rock, and they have a long, elliptical orbit around the sun. When a comet approaches the inner solar system, the sun's heat causes the comet to release gas and dust, creating a bright tail that can be seen from Earth.\n\nMeteors, on the other hand, are small rocks or pieces of debris that enter Earth's atmosphere. As they travel through the atmosphere, they burn up due to friction with the air, producing a bright streak of light in the sky, commonly known as a shooting star. The remains of the meteoroid can sometimes survive entry into the atmosphere and land on Earth as a meteorite.\n\nSo, while both comets and meteors are objects in space, the key difference is that comets are icy bodies that originate from outside the solar system, while meteors are small rocks or pieces of debris that originate from within the solar system (primarily from asteroids).","done":true,"context":.......}
 ```
 
+# 寫一個簡單的 LangChain 跟 Ollama 的應用
+
+```
+package main
+
+import (
+	"context"
+	"fmt"
+	"log"
+
+	"github.com/tmc/langchaingo/llms"
+	"github.com/tmc/langchaingo/llms/ollama"
+	"github.com/tmc/langchaingo/schema"
+)
+
+func main() {
+	llm, err := ollama.NewChat(ollama.WithLLMOptions(ollama.WithModel("llama2")))
+	if err != nil {
+		log.Fatal(err)
+	}
+	ctx := context.Background()
+	completion, err := llm.Call(ctx, []schema.ChatMessage{
+		schema.SystemChatMessage{Content: "Give a precise answer to the question based on the context. Don't be verbose."},
+		schema.HumanChatMessage{Content: "What would be a good company name a company that makes colorful socks? Give me 3 examples."},
+	}, llms.WithStreamingFunc(func(ctx context.Context, chunk []byte) error {
+		fmt.Print(string(chunk))
+		return nil
+	}),
+	)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	fmt.Println(completion)
+}
+
+```
+
+你可以透過 github 找到完整程式碼
