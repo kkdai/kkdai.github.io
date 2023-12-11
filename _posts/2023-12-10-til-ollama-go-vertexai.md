@@ -21,7 +21,8 @@ tags: ["LangChain", "LLAMA", "Ollama", "llama"]
 - 什麼是 Ollama 能拿來做些什麼？
 - 要如何使用 Ollama ?
 - 如何透過 Golang 連接 Ollama 並且串接 LangChain 
-- 來個有趣的範例吧
+
+接下來就開始吧！
 
 
 
@@ -169,4 +170,4 @@ func main() {
 
 ```
 
-你可以透過 github 找到完整程式碼
+你可以透過 [github](https://github.com/kkdai/ollama-go) 找到完整程式碼。
