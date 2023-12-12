@@ -33,7 +33,7 @@ tags: ["LangChain", "LLAMA", "Ollama", "llama"]
 [Ollama](https://ollama.ai/) 是一個相當方便的工具，以往需要在本地端使用 llama 的話需要有以下的步驟：
 
 - [到 Meta AI 申請下載 link](https://ai.meta.com/llama/)
-- 透過 [LLAMA.cpp](https://github.com/ggerganov/llama.cpp) 把 LLAMA2 的 model 去轉換過後，讓你在 Mac OSX 上面可以執行並且讀取。 （當然還有 
+- 透過 [LLAMA.cpp](https://github.com/ggerganov/llama.cpp) 把 LLAMA2 的 model 去轉換過後，讓你在 Mac OSX 上面可以執行並且讀取。 （當然還有做 Quantization, Optimization )
 - 然後執行  [LLAMA.cpp](https://github.com/ggerganov/llama.cpp) 去跑起來 LLAMA 的 model 來跑你需要的功能。
 
 
