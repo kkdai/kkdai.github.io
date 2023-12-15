@@ -192,7 +192,9 @@ func GeminiImage(imgData []byte) (string, error) {
 - GOOGLE_APPLICATION_CREDENTIALS (不用寫，固定的)
 - GOOGLE_CREDENTIALS
 
-## 成果：
+## 成果與 Google Gemini Pro API 的一些特點：
+
+### 1. 資料時效相當的新
 
 ![image-20231216022242789](../images/2022/image-20231216022242789.png)
 
@@ -200,9 +202,23 @@ func GeminiImage(imgData []byte) (string, error) {
 
 時效蠻新的，很多資料都是 2023/07 之後。ChatGPT 這種就回答不出來。
 
+- ChatGPT GPT 3.5 是 2022
+- API GPT4 是 2023/04 
+
+
+
+### 2. 很多資料會附上 Markdown Link ，蠻方便在 LINE Bot 中使用：
+
+<img src="../images/2022/image-20231216015049307.png" alt="image-20231216015049307" style="zoom:25%;" />
+
+
+
+- 像是以上的內容，因為許多資料都有 link 可以使用，貼到 LINE Bot 沒有太多問題。
+- 不過因為直接回 Markdown 可能要把相關語法刪除掉，才能正確顯示。
+
 
 
 ## 接下來:
 
-可以開始來玩玩 Function Calling 儘可能把相關內容試試看。  
+可以開始來玩玩 Function Calling 儘可能把相關內容試試看。  然後也可以等等 LangChainGo 什麼時後把 [Gemini Pro 接起來](https://github.com/tmc/langchaingo/issues/410)。
 
