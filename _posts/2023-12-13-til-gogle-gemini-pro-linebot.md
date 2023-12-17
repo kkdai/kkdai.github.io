@@ -230,3 +230,5 @@ func GeminiImage(imgData []byte) (string, error) {
 - [Google Gemini API](https://cloud.google.com/vertex-ai/docs/generative-ai/model-reference/gemini#gemini-pro-vision)
 - [Google Build with Gemini](https://deepmind.google/technologies/gemini/#build-with-gemini) 
 - [Google Blog: It’s time for developers and enterprises to build with Gemini Pro](https://blog.google/technology/ai/gemini-api-developers-cloud/)
+- [Google Gemini Pro - API Keys](https://makersuite.google.com/app/apikey)
+- [Vertex API with Function Calling by LangChain: Competitor Analytics with Langchain Agents and Vertex Palm API](https://medium.com/google-cloud/competitor-analytics-with-langchain-agents-and-vertex-palm-api-410453cecd83)
