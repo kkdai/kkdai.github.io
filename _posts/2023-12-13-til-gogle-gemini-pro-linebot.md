@@ -222,3 +222,11 @@ func GeminiImage(imgData []byte) (string, error) {
 
 可以開始來玩玩 Function Calling 儘可能把相關內容試試看。  然後也可以等等 LangChainGo 什麼時後把 [Gemini Pro 接起來](https://github.com/tmc/langchaingo/issues/410)。
 
+
+
+ # 參考資料：
+
+- [Using Gemini models from Go by Eli Bendersky's website](https://eli.thegreenplace.net/2023/using-gemini-models-from-go/)
+- [Google Gemini API](https://cloud.google.com/vertex-ai/docs/generative-ai/model-reference/gemini#gemini-pro-vision)
+- [Google Build with Gemini](https://deepmind.google/technologies/gemini/#build-with-gemini) 
+- [Google Blog: It’s time for developers and enterprises to build with Gemini Pro](https://blog.google/technology/ai/gemini-api-developers-cloud/)
