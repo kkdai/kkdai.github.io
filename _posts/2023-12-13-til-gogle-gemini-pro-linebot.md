@@ -30,33 +30,12 @@ tags: ["Golang", "GoogleGemini", "LLM"]
 
 <img src="../images/2022/image-20231216015049307.png" alt="image-20231216015049307" style="zoom:25%;" />
 
-1. **Google Gemini Pro 產品頁面**
-
-   * [Google Gemini Pro 介紹](https://ads.google.com/intl/zh-TW_tw/products/gemini-native/)
-   * [Gemini Pro 資源](https://marketingplatform.google.com/intl/zh-TW_tw/native/gemini-pro/resources/)
-
-2. **Google Gemini Pro 說明中心**
-
-   * [Gemini Pro 說明](https://support.google.com/admanager/answer/9378400?hl=zh-Hant)
-   * [Gemini Pro 政策](https://support.google.com/admanager/answer/10469700?hl=zh-Hant)
-
-3. **Google Ad Manager 幫助中心**
-
-   * [Google Ad Manager 幫助中心](https://support.google.com/admanager/answer/6087193?hl=zh-Hant)
-   * [Google Ad Manager 說明](https://support.google.com/admanager/answer/6209477?hl=zh-Hant)
-
-4. **其他資源**
-
-   * [Gemini Pro 部落格](https://blog.google/products/admanager/grow-your-gemini-revenue-with-new-features-and-insights/)
-   * [Gemini Pro 社群論壇](https://productforums.google.com/forum/?utm_source=gemini&utm_medium=website&utm_campaign=gemini#!categories/ad-manager/admob-and-adx-integration)
-   * [Google Ad Manager 培訓課程](https://www.skillshop.withgoogle.com/zh-TW/course/ad-manager-fundamentals)
-
 這裡也有一些我覺得蠻重要的資訊:
 
--  Vetex-ai (Google) 的 function calling ?  https://cloud.google.com/vertex-ai/docs/generative-ai/multimodal/function-calling#function-calling-sdk-samples
-  - Colab: https://colab.research.google.com/github/GoogleCloudPlatform/generative-ai/blob/main/gemini/function-calling/intro_function_calling.ipynb
+-  Vetex-ai (Google) 的 function calling ?  [https://cloud.google.com/vertex-ai/docs/generative-ai/multimodal/function-calling#function-calling-sdk-samples](https://cloud.google.com/vertex-ai/docs/generative-ai/multimodal/function-calling#function-calling-sdk-samples)
+  - Colab: [https://colab.research.google.com/github/GoogleCloudPlatform/generative-ai/blob/main/gemini/function-calling/intro_function_calling.ipynb](https://colab.research.google.com/github/GoogleCloudPlatform/generative-ai/blob/main/gemini/function-calling/intro_function_calling.ipynb)
 - Golang 加上 Gemini pro 這邊有大大 Eli Bendersky 寫的  sample code 
-  https://eli.thegreenplace.net/2023/using-gemini-models-from-go/
+  [https://eli.thegreenplace.net/2023/using-gemini-models-from-go/](https://eli.thegreenplace.net/2023/using-gemini-models-from-go/)
 
 
 
