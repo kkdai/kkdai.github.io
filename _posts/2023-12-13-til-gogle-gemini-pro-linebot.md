@@ -194,6 +194,7 @@ func GeminiImage(imgData []byte) (string, error) {
 
 - 像是以上的內容，因為許多資料都有 link 可以使用，貼到 LINE Bot 沒有太多問題。
 - 不過因為直接回 Markdown 可能要把相關語法刪除掉，才能正確顯示。
+- 這裡註解一下，因為 Gemini Pro 的 temperature 預設是 0.9 ([refer](https://cloud.google.com/vertex-ai/docs/generative-ai/model-reference/gemini))
 
 
 
@@ -210,4 +211,5 @@ func GeminiImage(imgData []byte) (string, error) {
 - [Google Build with Gemini](https://deepmind.google/technologies/gemini/#build-with-gemini) 
 - [Google Blog: It’s time for developers and enterprises to build with Gemini Pro](https://blog.google/technology/ai/gemini-api-developers-cloud/)
 - [Google Gemini Pro - API Keys](https://makersuite.google.com/app/apikey)
-- [Vertex API with Function Calling by LangChain: Competitor Analytics with Langchain Agents and Vertex Palm API](https://medium.com/google-cloud/competitor-analytics-with-langchain-agents-and-vertex-palm-api-410453cecd83)
+- [Vertex API with Function Calling by LangChain: Competitor Analytics with Langchain Agents and Vertex Palm API](https://medium.com/google-cloud/competitor-analytics-with-langchain-agents-and-vertex-palm-api-410453cecd83) 
+- [如何使用 Google 的 Gemini 模型 API？(基礎教學，附上 Python 範例程式)](https://blog.jiatool.com/posts/gemini_api/)
