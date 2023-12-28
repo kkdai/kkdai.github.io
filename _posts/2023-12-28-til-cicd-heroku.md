@@ -1,9 +1,10 @@
 ---
 layout: post
-title: "[TIL][Heroku] 使用 Github Release 來 Deploy 服務到 Heroic "
+title: "[TIL][Heroku][Golang] 使用 Github Release 來 Deploy 服務到 Heroku"
 description: ""
 category: 
 - TIL
+- Golang
 tags: ["Heroku", "CICD"]
 
 ---
