@@ -3,8 +3,8 @@ layout: post
 title: "什麼是 LLaVA 與 LLaVA-Interactive"
 description: ""
 category: 
-- 研討會心得
-tags: ["Python", "LLM"]
+- 論文心得
+tags: ["Python", "LLM", "LLAVA"]
 
 ---
 

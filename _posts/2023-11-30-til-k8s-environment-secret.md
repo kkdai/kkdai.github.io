@@ -3,7 +3,7 @@ layout: post
 title: "[Kubernetes] 關於 Kubernetes "
 description: ""
 category: 
-- 研討會心得
+- TIL
 tags: ["Kubernetes"]
 
 ---
