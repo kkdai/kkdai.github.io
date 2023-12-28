@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "什麼是 LLaVA 與 LLaVA-Interactive"
+title: "[論文心得] 什麼是 LLaVA 與 LLaVA-Interactive"
 description: ""
 category: 
 - 論文心得
