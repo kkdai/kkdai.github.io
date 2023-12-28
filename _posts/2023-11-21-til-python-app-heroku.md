@@ -3,8 +3,8 @@ layout: post
 title: "[Heroku] 如何把 Local Python Docker Services 轉換到 Heroku 上面"
 description: ""
 category: 
-- 研討會心得
-tags: ["Python", "LLM", "Heroic"]
+- TIL
+tags: ["Python", "LLM", "Heroku"]
 
 ---
 
