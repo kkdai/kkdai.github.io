@@ -49,21 +49,6 @@ tags: ["Golang", "GoogleGemini", "LLM"]
 
 ![Image](../images/2022/GBRj-lFaMAAmOQY.jpeg)
 
-## 如何取得 Google Cloud Platform - Services Account Key JSON
-
-照理說，如果只是要跑 Gemini Pro API call 應該是不需要 GCP 相關設定。  因為透過以下的 `curl` 是可以正常執行的：
-
-```
-curl \
--H 'Content-Type: application/json' \
--d '{ "prompt": { "text": "Write a story about a magic backpack"} }' \
-"https://generativelanguage.googleapis.com/v1beta3/models/text-bison-001:generateText?key=YOUR_API_KEY"
-```
-
-但是可能是套件相關的原因，啟動相關 [Golang GAI API](https://github.com/google/generative-ai-go) 就會需要我準備相關的 gcloud 的 context 跟 credential 。 我猜跟整個套件的啟動有關，暫時先不去 debug。 (Github: [https://github.com/google/generative-ai-go)](https://github.com/google/generative-ai-go))
-
-可以參考這一篇： [[學習文件] 如何在 Heroku 上面使用透過 Golang 來存取 Google Cloud 服務](https://www.evanlin.com/til-heroku-gcp-key/)
-
 
 
 ## 如何整合 LINE Bot?
@@ -165,11 +150,9 @@ func GeminiImage(imgData []byte) (string, error) {
 
 - ChannelAccessToken
 - ChannelSecret
-- GCS_PROJECT_ID
-- GCS_BUCKET_NAME
 - GOOGLE_GEMINI_API_KEY
-- GOOGLE_APPLICATION_CREDENTIALS (不用寫，固定的)
-- GOOGLE_CREDENTIALS
+
+
 
 ## 成果與 Google Gemini Pro API 的一些特點：
 
