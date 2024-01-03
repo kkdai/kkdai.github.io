@@ -136,3 +136,10 @@ UC Berkeley 的 Wei-Lin Chiang ([Winston Chiang](https://www.facebook.com/winsto
 
 - LMSyS 是一個學生組織，未來發展方向是做開源 LLM 的 research 。
 - 很多開源模型都是使用外部 hosted (HuggingFace ...)
+
+
+
+# 更多參考：
+
+- [[UC Berkeley台灣籍博士生談開源LLM的重點：資料品質、社群回饋、評測方式 from 蘿蔔實驗室 LoboLab]](https://www.facebook.com/permalink.php?story_fbid=pfbid02cH1EWy4mUVbUi3AsBYVTwKXaa7ECAzArwpphD8Rf9fySyijHMhfoq7SQ4uP3n6zcl&id=61552637872170)
+
