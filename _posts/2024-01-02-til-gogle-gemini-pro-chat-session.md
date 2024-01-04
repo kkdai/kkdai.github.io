@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Golang][Gemini Pro] 使用 Chat Session 與 LINEBot 快速整合出有記憶的小管家"
+title: "[Golang][Gemini Pro] 使用 Chat Session 與 LINEBot 快速整合出有記憶的智慧小幫手"
 description: ""
 category: 
 - Golang
@@ -177,19 +177,12 @@ func startNewChatSession() *genai.ChatSession {
 				}
 ```
 
+其實就是透過 `res := send(cs, req)` 來將你的詢問的內容，發送給 Gemini Pro 並且接收相關回覆 `res` 。
 
+只要這樣，不需要一步步將文字貼在 Chat context 之後。就可以達成一個具有記憶的聊天機器人。 幾件事情需要注意：
 
-
-
-
-
-## 成果
-
-<img src="../images/2022/image-20240103225422373.png" alt="image-20240103225422373" style="zoom: 25%;" />
-
-
-
-
+- 要小心對話內容過長，會造成回覆精確度不夠高。
+- 要小心內容會讓你的 token 爆掉，造成無法取得回覆。
 
 ## 目前 Gemini Pro 的收費
 
@@ -202,7 +195,52 @@ func startNewChatSession() *genai.ChatSession {
 
 <img src="../images/2022/image-20240103223633970.png" alt="image-20240103223633970" style="zoom:50%;" />
 
+## 透過 Render 來快速部署服務:
 
+由於 Gemini Pro 目前在某些額度下，還是免費的。這裡也更改了專案，讓沒有信用卡的學生可以學習如何打造一個 LLM 具有記憶的聊天機器人。
+
+### Render.com 簡介：
+
+- 類似 Heroku 的 PaaS (Platform As A Services) 服務提供者。
+- 他有免費的 Free Tier ，適合工程師開發 Hobby Project。
+- 不需要綁定信用卡，就可以部署服務。
+
+參考： [Render.com Price](https://render.com/pricing)
+
+
+
+### 部署步驟如下：
+
+- 到專案頁面 [kkdai/linebot-gemini-pro: LINE Bot sample code how to use Google Gemini Pro in GO (Golang) (github.com)](https://github.com/kkdai/linebot-gemini-pro)
+- 按下 Deploy To Render
+
+![image-20240104140246518](../images/2022/image-20240104140246518.png)
+
+- 選擇一個服務名字
+
+![image-20240104140347932](../images/2022/image-20240104140347932.png)
+
+- 這邊有三個需要填寫：
+  - **ChannelAccessToken**: 請到 [LINE Developer Console](https://developers.line.biz/console/) 取得。
+  - **ChannelSecret**: 請到 [LINE Developer Console](https://developers.line.biz/console/) 取得。
+  - **GOOGLE_GEMINI_API_KEY**: 請到 [Google AI Studio](https://makersuite.google.com/app/apikey) 取得。
+- 這樣就部署成功了，記得還要跟 LINE Bot 串接起來。
+
+## 成果
+
+<img src="../images/2022/image-20240103225422373.png" alt="image-20240103225422373" style="zoom: 25%;" />
+
+根據以上的圖片，可以知道其實 ChatSession 相當適合打造 LINE Bot。
+
+- 只儲存使用者跟 OA 的相關對話。
+- 回覆的內容很適合在 OA 上面跟使用者互動。
+
+但是使用 Gemini Pro 的 Chat Session 幾件事情需要注意：
+
+- 因為所以的記憶是儲存在 Services 的記憶體中，由於 Render.com 是會睡眠重啟的。到時候他會忘記。
+- ChatSession 是跟著 model 走的，也就是說： "gemini-pro" 跟 gemini-pro-vision" 兩個的對話是不能共用。
+
+謝謝大家的觀看，也期待各位一起打造出
 
 # 參考資料：
 
