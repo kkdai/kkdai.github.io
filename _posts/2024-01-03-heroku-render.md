@@ -8,6 +8,8 @@ tags: ["Heroku", "Render", "FaaS"]
 
 ---
 
+<img src="../images/2022/image-20240104115649015.png" alt="image-20240104115649015" style="zoom:33%;" />
+
 # 前情提要：
 
 有在持續關注我的部落格的朋友，都知道我喜歡透過 Heroku 來快速部署我自己的雲服務 (或是 LINE Bot)。 當初 Heroku 就打著好上手，並且有免費方案的流程來讓許多開發者都有使用到。但是在 2022 十一月之後，就開始收費的 Heroku 也開啟許多人跑走的路途。這邊可以查看以下相關資料：
@@ -79,7 +81,13 @@ tags: ["Heroku", "Render", "FaaS"]
 
 ### 交叉測試：
 
+加上我另外一個小專案： [https://github.com/kkdai/pdf_online_editor?tab=readme-ov-file](https://github.com/kkdai/pdf_online_editor?tab=readme-ov-file)
 
+<img src="../images/2022/demo.png" alt="img" style="zoom:25%;" />
+
+測試結果 Render ($0) 一樣會炸掉。
+
+## 付費後的測試 ($$$$)
 
 
 
