@@ -70,11 +70,26 @@ tags: ["Heroku", "Render", "FaaS"]
 
 ![image-20240104095917259](../images/2022/image-20240104095917259.png)
 
+## 快速測試結果
+
+拿了專案 https://github.com/kkdai/linebot-gemini-prohttps://github.com/kkdai/linebot-gemini-pro 來測試，發現：
+
+- 回覆速度上 Heroku ($5) 跟 Render ($0) 不會差太多。 (Golang App)
+- 但是上傳照片後，要處理 Render ($0) 就會炸掉。 由於記憶體兩者都是 512MB ，考量可能問題出在 CPU 上面。
+
+### 交叉測試：
 
 
 
 
 
+# 結論
+
+雖然 Heroku ($5)  比起 Render ($7) 還要便宜，但是考量以下的部分，可能會逐步轉移過去：
+
+- Render 有免費方案，更適合作為活動推廣之用。 
+- Render ($7)  有 DB 可以使用，但是 Heroku ($5)   的資料庫要額外付錢。
+- Render ($7)  提供的管理頁面跟相關功能比較多。
 
 
 
