@@ -138,7 +138,9 @@ ctx := context.Background()
 
 <img src="../images/2022/image-20240103223633970.png" alt="image-20240103223633970" style="zoom:50%;" />
 
- # 參考資料：
+
+
+# 參考資料：
 
 - [OpenAI ChatCompletion API](https://platform.openai.com/docs/guides/text-generation/chat-completions-api)
 - [google.generativeai.ChatSession](https://ai.google.dev/api/python/google/generativeai/ChatSession?hl=en)
