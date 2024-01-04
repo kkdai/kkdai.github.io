@@ -8,13 +8,17 @@ tags: ["Golang", "GoogleGemini", "LLM"]
 
 ---
 
-<img src="../images/2022/image-20240103174806953.png" alt="image-20240103174806953" style="zoom:50%;" />
+<img src="../images/2022/image-20240103174806953.png" alt="image-20240103174806953" style="zoom: 25%;" />
 
 
 
 # 前提
 
 前幾篇的文章 [[Golang\] 透過 Google Gemini Pro 來打造一個基本功能 LLM LINE Bot](https://www.evanlin.com/til-gogle-gemini-pro-linebot/) 曾經提過，如何整合基本的 Gemini Pro Chat 與 Gemini Pro Vision 兩個模型的使用。 本次將快速提一下，打造一個具有記憶體的 LINE Bot 該如何做。
+
+##### 相關開源程式碼：
+
+[https://github.com/kkdai/linebot-gemini-pro](https://github.com/kkdai/linebot-gemini-pro)
 
 
 
@@ -115,13 +119,73 @@ ctx := context.Background()
 
 看完了套件內提供的 Chat Session 之後，要如何跟 LINE Bot SDK 來做結合呢？
 
+## 以 LINE Bot SDK Go v7 來舉例
+
+因為 v8 有使用到 Open API (a.k.a. swagger) 的架構，整個方式不太一樣。之後會透過新的文章來說明。這裡透過大家比較熟悉的 v7 來舉例：
+
+```
+			case *linebot.TextMessage:
+				req := message.Text
+				// 檢查是否已經有這個用戶的 ChatSession or req == "reset"
+				cs, ok := userSessions[event.Source.UserID]
+				if !ok {
+					// 如果沒有，則創建一個新的 ChatSession
+					cs = startNewChatSession()
+					userSessions[event.Source.UserID] = cs
+				}
+				if req == "reset" {
+					// 如果需要重置記憶，創建一個新的 ChatSession
+					cs = startNewChatSession()
+					userSessions[event.Source.UserID] = cs
+					if _, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage("很高興初次見到你，請問有什麼想了解的嗎？")).Do(); err != nil {
+						log.Print(err)
+					}
+					continue
+				}
+```
+
+- 首先建立一個 `map` 存放資料為 `map[user_Id]-> ChatSession`
+- 如果在 key map 沒有找到，就建立一個新的。 `startNewChatSession()`
+- 詳細內容如下，裡面重點是透過 model 來啟動一個聊天 `model.StartChat()`
+
+```
+// startNewChatSession	: Start a new chat session
+func startNewChatSession() *genai.ChatSession {
+	ctx := context.Background()
+	client, err := genai.NewClient(ctx, option.WithAPIKey(geminiKey))
+	if err != nil {
+		log.Fatal(err)
+	}
+	model := client.GenerativeModel("gemini-pro")
+	value := float32(ChatTemperture)
+	model.Temperature = &value
+	cs := model.StartChat()
+	return cs
+}
+```
+
+- 當然，如果覺得 token 可能爆掉。可以透過 `reset`指令來重新建立一個。
+
+那真正聊天跟回覆要如何處理呢？
+
+```
+				// 使用這個 ChatSession 來處理訊息 & Reply with Gemini result
+				res := send(cs, req)
+				ret := printResponse(res)
+				if _, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage(ret)).Do(); err != nil {
+					log.Print(err)
+				}
+```
+
+
+
 
 
 
 
 ## 成果
 
-<img src="../images/2022/image-20240103225422373.png" alt="image-20240103225422373" style="zoom:50%;" />
+<img src="../images/2022/image-20240103225422373.png" alt="image-20240103225422373" style="zoom: 25%;" />
 
 
 
