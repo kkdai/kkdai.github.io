@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Cloud Platform] 關於雲平台的挑選 Heroku v.s. Render"
+title: "[Cloud Platform] 身為 AI (LLM) Engineer 關於雲平台的挑選 Heroku v.s. Render"
 description: ""
 category: 
 - TIL
@@ -30,8 +30,7 @@ tags: ["Heroku", "Render", "FaaS"]
 
 - Heroku ($5) 雖然沒有免費，但是共用的 Eco Dyno 其實後夠力。 Render ($7) 每一個要單獨收，有點貴。
 - 我會開始放一些到 Render $0 的方案，原因後提。
-- 但是會慢慢把架構都搬遷過去，順便更新 SDK 套件。
-- 一開始會採取兩個都部署跟發布。
+- 兩個都部署跟發布，但是我還是會留在 Heroku ($5)  (因為它是共用 1000 hours)
 
 
 
