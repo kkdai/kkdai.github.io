@@ -30,10 +30,6 @@ Deep Learning AI 新的課程，如何優化  IR/RAG on Chroma 。 講師是 Chr
 
 經常查詢 RAG 結果回來會是不相關的，怎麼看出來？ 透過一個 umap 套件
 
-
-
-
-
 ```
 import umap
 import numpy as np
@@ -73,7 +69,9 @@ plt.axis('off')
 
 ## Query Expansion
 
-透過延伸的假設答案，加上原來的問題。一起下去詢問。
+![image-20240108194721737](../images/2022/image-20240108194721737.png)
+
+**透過延伸的假設答案，加上原來的問題。一起下去詢問:**
 
 ```
 def augment_query_generated(query, model="gpt-3.5-turbo"):
@@ -115,7 +113,7 @@ print(word_wrap(joint_query))
 
 <img src="../images/2022/image-20240108173134289.png" alt="image-20240108173134289" style="zoom: 50%;" />
 
-這邊的作法如下：
+**透過不同問句，取得相似問句。透過該捷達來評分。**這邊的作法如下：
 
 - 原本問句 `original_query` ，得到數個 `generated_queries`:
 - 然後把原本問句跟其他問句下去找數組的解答。
@@ -159,7 +157,73 @@ for score in scores:
 
 ## Training and utilizing Embedding Adapters
 
+![image-20240108195535753](../images/2022/image-20240108195535753.png)
+
+```
+# 產生相關問句
+def generate_queries(model="gpt-3.5-turbo"):
+    messages = [
+        {
+            "role": "system",
+            "content": "You are a helpful expert financial research assistant. You help users analyze financial statements to better understand companies. "
+            "Suggest 10 to 15 short questions that are important to ask when analyzing an annual report. "
+            "Do not output any compound questions (questions with multiple sentences or conjunctions)."
+            "Output each question on a separate line divided by a newline."
+        },
+    ]
+
+    response = openai_client.chat.completions.create(
+        model=model,
+        messages=messages,
+    )
+    content = response.choices[0].message.content
+    content = content.split("\n")
+    return content
+```
+
+產生相關答案
+
+```
+generated_queries = generate_queries()
+for query in generated_queries:
+    print(query)
+```
+
+透過 10 ~ 15 個問題，產生衍生的答案。約有 150 個。 這個就變成是新的資料集。（RAG)
+
+透過新的相似度比較方式 (mse_loss):
+
+```
+def mse_loss(query_embedding, document_embedding, adaptor_matrix, label):
+    return torch.nn.MSELoss()(model(query_embedding, document_embedding, adaptor_matrix), label)
+```
+
+透過這個方式，再來找出最好的解答。 
+
+![image-20240108202350286](../images/2022/image-20240108202350286.png)
+
+這張圖可以看出 adapted query  結果不容易產生不相關的答案。這邊也有建議，如果可以拿到使用者的資料來作為 adapted 問句，可能可以讓答案變得更好。
+
+衍生思考：
+
+- 發現結果過於不相關的時候。
+- 透過多問幾題，然後找出相關答案。
+- 變成新的資料集，作為查詢。就可以優化整個 RAG 的資料集，進而得到更好的解答。
+
+## 課程總結：
+
+- 先解釋 RAG 經常會遇到的陷阱。過於分散的問句，造成相似的解答不相關，回覆就會無法準確。
+- **Expanding Query**： 請 OpenAI 幫你多問幾題，然後把問題跟答案都放進去詢問。
+- **Cross Re-Rank**: 算是上面的進化版，透過產生問句的答案。透過一個評分機制。找到比較好的答案再下去 RAG 。
+- **Embedding Adapter**:  產生更多問句，透過問句產生的解答。當作是新的 dataset ，並且下來 RAG 。
+
 
 
 # 更多參考：
 
+-   [https://learn.deeplearning.ai/advanced-retrieval-for-ai/](https://learn.deeplearning.ai/advanced-retrieval-for-ai/)
+
+- [The Tech Buffet #18: Advanced Retrieval Techniques for RAG](https://thetechbuffet.substack.com/p/advanced-retrieval-techniques-for-rag)
+
+- [9 Effective Techniques To Boost Retrieval Augmented Generation](https://towardsdatascience.com/9-effective-techniques-to-boost-retrieval-augmented-generation-rag-systems-210ace375049)
+- [The Tech Buffet #18: Advanced Retrieval Techniques for RAG](https://thetechbuffet.substack.com/p/advanced-retrieval-techniques-for-rag)
