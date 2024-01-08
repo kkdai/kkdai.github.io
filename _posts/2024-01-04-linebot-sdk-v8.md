@@ -168,7 +168,7 @@ cb, err := webhook.ParseRequest(os.Getenv("ChannelSecret"), r)
   	}
   ```
 
- ## 總結：
+## 總結：
 
 Golang LINE Bot SDK 套件這一次除了升級到 OpenAPI 的版本之外，也對於許多呼叫方式與變數處理方式做了一個通盤的整理。在處理許多訊息上，變得更加直覺與異動。雖然要變動可能會比較多，並且還有一些 API 持續搬遷之中。 不過由於套件也還保持著 v7 的相關套件可以繼續使用 legacy API ，所以歡迎大家可以儘快開始整合到 v8 的版本。 這樣一來可以看到許多更新的 API 在第一時間就會釋放出來。
 
