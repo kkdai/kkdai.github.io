@@ -8,19 +8,19 @@ tags: ["Python", "LLM"]
 
 ---
 
+![image-20240111122733576](../images/2022/image-20240111122733576.png)
+
 # 活動資訊
 
- NVIDIA LLM Developer Day
-https://www.nvidia.com/zh-tw/events/llm-developer-day/「LLM Developer Day 」
+ [NVIDIA LLM Developer Day](https://www.nvidia.com/zh-tw/events/llm-developer-day/) （[重播](https://www.nvidia.com/en-us/on-demand/))
 
-09:30 - 11:00 台灣時間 - 議程 1: 開發大型語言模型 (LLMs) 的快速途徑: [slide](https://on24static.akamaized.net/event/44/33/88/7/rt/1/documents/resourceList1704771459472/llmdevdaysession1taiwanwilliam1704771459472.pdf)  
+- 09:30 - 11:00 台灣時間 - 議程 1: 開發大型語言模型 (LLMs) 的快速途徑: [slide](https://on24static.akamaized.net/event/44/33/88/7/rt/1/documents/resourceList1704771459472/llmdevdaysession1taiwanwilliam1704771459472.pdf)  
 
-11:10 - 12:50 台灣時間 - 議程 2a：量身客製自己的大型語言模型應用:[slides](https://on24static.akamaized.net/event/44/33/90/1/rt/1/documents/resourceList1704769052626/llmdevdaysession2taiwan11704769052626.pdf)
+- 11:10 - 12:50 台灣時間 - 議程 2a：量身客製自己的大型語言模型應用:[slides](https://on24static.akamaized.net/event/44/33/90/1/rt/1/documents/resourceList1704769052626/llmdevdaysession2taiwan11704769052626.pdf)
 
-15:30 台灣時間 - 議程 2b：生物科學大型語言模型和生成式人工智慧:
+- 15:30 台灣時間 - 議程 2b：生物科學大型語言模型和生成式人工智慧
 
-17:10 台灣時間 - 議程 3：運行自己的大型語言模型:
-https://event.on24.com/wcc/r/4434877/5BF24840196B1DF37683894D98322008 
+- 17:10 台灣時間 - 議程 3：運行自己的大型語言模型
 
 
 
@@ -75,7 +75,7 @@ https://event.on24.com/wcc/r/4434877/5BF24840196B1DF37683894D98322008
 - NeVA (NeMo Vision and Language Assistant)
 
 #### 其他:
-GTC 2024 - 實體 GTC 03/18
+GTC 2024 - 實體 GTC 03/18。
 
 # 更多參考：
 
