@@ -117,7 +117,7 @@ type NotionDB struct {
   - **Token**: 就是 Notion Integration Secret
   - **DatabaseID**: 在 URL 即可取得。 Notion DB 的頁面網址應該是 `https://www.notion.so/b764xxxxxa?v=dexxxx1` 那麼 `b764xxxxxa`就是你的 DatabasePageId。
 
-## 首先看 Query 
+## 首先看 Query (search)
 
 ```
 // QueryDatabase 根據提供的屬性和值查詢 Notion 資料庫。
@@ -168,6 +168,98 @@ func (n *NotionDB) QueryDatabase(UId, property, value string) ([]Person, error) 
   - Title: `TitleFilterCondition`
 -  依此類推。
 
+## 再來看如何新增資料
+
+```
+// AddPageToDatabase adds a new page with the provided field values to the specified Notion database.
+func (n *NotionDB) AddPageToDatabase(Uid string, name string, title string, address string, email string, phoneNumber string) error {
+	client := notionapi.NewClient(notionapi.Token(n.Token))
+
+	// 建立 Properties 物件來設置頁面屬性
+	properties := notionapi.Properties{
+		"UID": notionapi.RichTextProperty{
+			RichText: []notionapi.RichText{
+				{
+					PlainText: name,
+					Text:      &notionapi.Text{Content: Uid},
+				},
+			},
+		},
+		"Name": notionapi.TitleProperty{
+			Title: []notionapi.RichText{
+				{
+					PlainText: name,
+					Text:      &notionapi.Text{Content: name},
+				},
+			},
+		},
+		// Address, Email, Phone Number....
+	}
+
+	// 創建一個新頁面的請求
+	pageRequest := &notionapi.PageCreateRequest{
+		Parent: notionapi.Parent{
+			DatabaseID: notionapi.DatabaseID(n.DatabaseID),
+		},
+		Properties: properties,
+	}
+
+	// 調用 Notion API 來創建新頁面
+	_, err := client.Page.Create(context.Background(), pageRequest)
+	if err != nil {
+		log.Println("Error creating page:", err)
+		return err
+	}
+
+	log.Println("Page added successfully:", Uid, name, title, address, email, phoneNumber)
+	return nil
+}
+```
+
+- 大部分程式碼都是類似的，但是根據欄位不同。需要調整以下內容：
+
+```
+"UID": notionapi.RichTextProperty{
+			RichText: []notionapi.RichText{
+				{
+					PlainText: name,
+					Text:      &notionapi.Text{Content: Uid},
+				},
+			},
+		},
+```
+
+- 其中的 `name` 是固定參數，不能改。
+- 只有後面的 Content: `Uid` 可以改。
+
+- 此外，根據欄位不同 `RichTextProperty` 也會變動。如果不正確，就無法正確地寫入資料。
+
+
+
+## 最後測試範例程式碼：
+
+```
+func TestAddNotionDB(t *testing.T) {
+	token := os.Getenv("NOTION_INTEGRATION_TOKEN")
+	pageid := os.Getenv("NOTION_DB_PAGEID")
+
+	// If not set token and pageid , skip this test
+	if token == "" || pageid == "" {
+		t.Skip("NOTION_INTEGRATION_TOKEN or NOTION_DB_PAGEID not set")
+	}
+
+	db := &NotionDB{
+		DatabaseID: pageid,
+		Token:      token,
+	}
+
+	err := db.AddPageToDatabase("uid", "name", "title", "address", "emai@email.com", "phone")
+	if err != nil {
+		t.Fatal(err)
+	}
+}
+
+```
 
 
 
