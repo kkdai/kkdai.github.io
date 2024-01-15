@@ -113,11 +113,11 @@ cb, err := webhook.ParseRequest(os.Getenv("ChannelSecret"), r)
   // 取得用戶 ID ，個人覺得更加容易了解。
   var uID string
   switch source := e.Source.(type) {
-  case *webhook.UserSource:
+  case webhook.UserSource:
     uID = source.UserId
-  case *webhook.GroupSource:
+  case webhook.GroupSource:
     uID = source.UserId
-  case *webhook.RoomSource:
+  case webhook.RoomSource:
     uID = source.UserId
   }
   ```
