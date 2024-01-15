@@ -20,6 +20,8 @@ tags: ["Golang", "GoogleGemini", "LLM"]
 
 
 
+#### 本篇文章將透過: [https://github.com/kkdai/linebot-smart-namecard](https://github.com/kkdai/linebot-smart-namecard) 來說明。
+
 # 關於 Notion Database 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/O8qdvSxDYNY?si=HpjDcPf42mp5TqTR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -65,6 +67,59 @@ tags: ["Golang", "GoogleGemini", "LLM"]
 - **Notion Page ID**
 
 Notion DB 的頁面網址應該是 `https://www.notion.so/b764xxxxxa?v=dexxxx1` 那麼 `b764xxxxxa`就是你的 DatabasePageId。
+
+
+
+# 了解 Notion Database Data Type:
+
+在準備要連接 [Notion Database](https://www.notion.so/help/guides/creating-a-database)  的時候，你必須要先知道每個欄位的差別。
+
+
+
+![image-20240115234749333](../images/2022/image-20240115234749333.png)
+
+以我的資料庫為例子:
+
+- **UID**: 存放 LINE OA User UID，做為辨識之用。資料格式是： Text
+
+![image-20240115234848362](../images/2022/image-20240115234848362.png)
+
+- 其他都是 Title, Address, Email, Phone Number 。
+- **Name**: 使用了 Title 這個資料格式，其中差別為： Title 只能有一個欄位，並且會變成新頁面的標題。
+
+![image-20240115235405588](../images/2022/image-20240115235405588.png)
+
+#  開始撰寫 Golang Notion Database 程式碼：
+
+#### 這邊使用的套件是：  [https://github.com/jomei/notionapi](https://github.com/jomei/notionapi)
+
+## 先了解資料架構
+
+```
+// Person 定義了 JSON 資料的結構體
+type Person struct {
+	Name        string `json:"name"`
+	Title       string `json:"title"`
+	Address     string `json:"address"`
+	Email       string `json:"email"`
+	PhoneNumber string `json:"phone_number"`
+}
+
+// DatabaseEntry 定義了 Notion 資料庫條目的結構體。
+type NotionDB struct {
+	DatabaseID string
+	Token      string
+}
+```
+
+- **Person**: 來自名片掃描的 JSON 資料，也代表這裡每個欄位的資料。除了 UID 是要透過參數進來的。
+- **NotionDB**:啟動 Notion 需要知道的資料：
+  - **Token**: 就是 Notion Integration Secret
+  - **DatabaseID**: 在 URL 即可取得。 Notion DB 的頁面網址應該是 `https://www.notion.so/b764xxxxxa?v=dexxxx1` 那麼 `b764xxxxxa`就是你的 DatabasePageId。
+
+## 首先看 Query 
+
+
 
 
 
