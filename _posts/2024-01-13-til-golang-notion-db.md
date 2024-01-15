@@ -20,7 +20,7 @@ tags: ["Golang", "GoogleGemini", "LLM"]
 
 
 
-# 首先了解 Notion Database 
+# 關於 Notion Database 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/O8qdvSxDYNY?si=HpjDcPf42mp5TqTR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -34,7 +34,39 @@ tags: ["Golang", "GoogleGemini", "LLM"]
 
 - Notion Database 支援相當豐富的格式，並且有很漂亮的視覺化介面。
 - 並且 [Notion Database](https://www.notion.so/help/guides/creating-a-database)  支援多種格式： Table, Board, Calendar, List,  and Gallery
-- 除了
+- 除了蠻方便 coding 之外，如果有後台管理員，可以透過 Notion UI 來直接查看結果。
+
+# 建立 Notion Integration
+
+可以先到 N[otion Developer](https://developers.notion.com/)  建立第一個 [Notion Integration](https://www.notion.so/my-integrations) :
+
+![image-20240115233258526](../images/2022/image-20240115233258526.png)
+
+- **Type:** Internal 只有你可以用，其他人沒有辦法選到。
+- **Name**: 只要可以辨識就好。
+
+這樣就可以建立了 Integration ，並且取的 Internal Integration Secret (Notion API Key):
+
+![image-20240115233433452](../images/2022/image-20240115233433452.png)
+
+## 開啟 Notion Database 讓 Notion Integration 可以存取：
+
+記得要讓 [Notion 頁面取得 Integration 權限](https://developers.notion.com/docs/create-a-notion-integration#give-your-integration-page-permissions) ，參考以下圖片。
+
+![](../images/2022/68747470733a2f2f66696c65732e726561646d652e696f2f666566633830392d7065726d697373696f6e732e676966.gif)
+
+官方給的 GIF 檔案相當的清楚，這也是最重要的其中一步。要讓你的資料可以讓 Integration 存取。
+
+## 取得 Notion Database ID
+
+這也是一個相當重要的事情，要使用 Golang 去存取你的 Notion Database 就需要以下兩個資料：
+
+- **Notion Internal Integration Secret (API Key)**
+- **Notion Page ID**
+
+Notion DB 的頁面網址應該是 `https://www.notion.so/b764xxxxxa?v=dexxxx1` 那麼 `b764xxxxxa`就是你的 DatabasePageId。
+
+
 
 
 
