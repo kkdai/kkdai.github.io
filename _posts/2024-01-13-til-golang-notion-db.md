@@ -119,6 +119,55 @@ type NotionDB struct {
 
 ## 首先看 Query 
 
+```
+// QueryDatabase 根據提供的屬性和值查詢 Notion 資料庫。
+func (n *NotionDB) QueryDatabase(UId, property, value string) ([]Person, error) {
+	client := notionapi.NewClient(notionapi.Token(n.Token))
+
+	// Add UId to the filter conditions
+	// 建立查詢過濾條件
+	filter := &notionapi.DatabaseQueryRequest{
+		Filter: notionapi.AndCompoundFilter{
+			notionapi.PropertyFilter{
+				Property: property,
+				RichText: &notionapi.TextFilterCondition{
+					Equals: value,
+				},
+			},
+			notionapi.PropertyFilter{
+				Property: "UID",
+				RichText: &notionapi.TextFilterCondition{
+					Equals: UId,
+				},
+			},
+		},
+	}
+
+	// 調用 Notion API 來查詢資料庫
+	result, err := client.Database.Query(context.Background(), notionapi.DatabaseID(n.DatabaseID), filter)
+	if err != nil {
+		return nil, err
+	}
+
+	var entries []Person
+
+	for _, page := range result.Results {
+		entry := n.createEntryFromPage(&page)
+		entries = append(entries, entry)
+	}
+	return entries, nil
+}
+
+```
+
+這一段需要注意的是：
+
+- 過濾條件使用的是 `AndCompoundFilter` ，也就是要兩個條件 A && B 。
+- 其中要注意的 `PropertyFilter`如果資料格式不同的時候，需要處理不同資料。
+  - Text: `TextFilterCondition`
+  - Title: `TitleFilterCondition`
+-  依此類推。
+
 
 
 
