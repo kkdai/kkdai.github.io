@@ -8,13 +8,13 @@ tags: ["LLM", "GPT-Vision"]
 
 ---
 
-### 論文名稱: Scaling Up to Excellence: Practicing Model Scaling for Photo-Realistic Image Restoration In the Wild
+### 論文名稱: [Scaling Up to Excellence: Practicing Model Scaling for Photo-Realistic Image Restoration In the Wild](https://arxiv.org/abs/2401.13627)
 
 ![image-20240126105037706](../images/2022/image-20240126105037706.png)
 
 
 
-Scaleing Up to Excellence： 令人驚艷圖像恢復論文 # 
+# Scaleing Up to Excellence： 令人驚艷圖像恢復論文 
 
 提出 SUPIR (Scaling-UP Image Restoration)，主要有以下方法: 
 
@@ -23,7 +23,9 @@ Scaleing Up to Excellence： 令人驚艷圖像恢復論文 #
 
 結果在品質上可以看到相當好的成效。
 
-[https://arxiv.org/abs/2401.13627](https://t.co/8KQMt2ociu)
+#### 論文: [https://arxiv.org/abs/2401.13627](https://arxiv.org/abs/2401.13627)
+
+#### 網站： [https://supir.xpixel.group/](https://supir.xpixel.group/)
 
 ![image-20240126105147093](../images/2022/image-20240126105147093.png)
 
