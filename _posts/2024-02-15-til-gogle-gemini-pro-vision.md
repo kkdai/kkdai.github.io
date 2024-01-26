@@ -10,20 +10,7 @@ tags: ["Golang", "GoogleGemini", "LLM"]
 
 
 
-Scaleing Up to Excellence：在實際練習模型縮放以實現逼真的圖像恢復 #
 
-本篇論文提出 SUPIR (Scaling-UP Image Restoration)，主要有以下方法:
-
-- 透過 prompt 提升 LLM 畫素修復能力，甚至透過 Negtive Prompt 來加強
-- 本身有超過 2000 萬張超高畫質的圖片 prompt 訓練素材 ，讓判別字元更強。
-
-結果在品質上可以看到相當好的成效。
-
-#Paper #LLM 
-
-
-
-https://arxiv.org/abs/2401.13627
 
 # 前提
 
