@@ -25,13 +25,37 @@ tags: ["Golang", "GoogleGemini", "LLM"]
 
 #### [https://github.com/kkdai/linebot-smart-namecard](https://github.com/kkdai/linebot-smart-namecard)
 
-
+註解： 關於如何使用 Notion 作為線上免費的資料庫，請參考這篇文章 : [[Golang\][Notion] 如何透過 Golang 來操控 Notion DB 當成線上資料庫](https://www.evanlin.com/til-golang-notion-db/) 。
 
 ## 系列文章：
 
 1. [使用 Golang 透過 Google Gemini Pro 來打造一個具有LLM 功能 LINE Bot (一）: Chat Completion and Image Vision](https://www.evanlin.com/til-gogle-gemini-pro-linebot/)
 2. [使用 Golang 透過 Google Gemini Pro 來打造一個具有LLM 功能 LINE Bot (二）: 使用 Chat Session 與 LINEBot 快速整合出有記憶的 LINE Bot ](https://www.evanlin.com/til-gogle-gemini-pro-chat-session/)
 3. 使用 Golang 透過 Google Gemini Pro 來打造一個具有LLM 功能 LINE Bot (三）: 使用 Gemini-Pro-Vision 來打造名片管理的聊天機器人 (本篇)
+
+
+
+# 打造一個辨識名片
+
+關於打造一個名片辨識的部分，這裡分享相關的做法：
+
+```
+// Const variables of Prompts.
+const ImagePrompt = "這是一張名片，你是一個名片秘書。請將以下資訊整理成 json 給我。如果看不出來的，幫我填寫 N/A， 只好 json 就好:  Name, Title, Address, Email, Phone, Company.   其中 Phone 的內容格式為 #886-0123-456-789,1234. 沒有分機就忽略 ,1234"
+
+```
+
+這個名片分成幾個部分來解釋：
+
+- **解析圖片**： 相關資訊透過照片的上傳。請 Gemini Pro Vision 來分析。
+- **產出格式**： 這裡有說明，希望 LLm 將資訊透過 json 來提供解決。並且透過以下欄位來分開提供。 這裡也說明一下，這樣說明，就會讓 LLM 會自動去看懂名片上的資訊然後分開提供給你相關資訊。
+  - Name
+  - Title
+  - Address
+  - Email
+  - Phone
+  - Company
+- **特殊處理**：
 
 
 
