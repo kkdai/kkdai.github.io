@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Golang][Gemini Pro] 使用 Chat Session 與 LINEBot 快速整合出有記憶的智慧小幫手"
+title: "[Golang][Gemini Pro] 使用 Chat Session 與 LINEBot 快速整合出有記憶的 LINE Bot "
 description: ""
 category: 
 - Golang
@@ -19,6 +19,14 @@ tags: ["Golang", "GoogleGemini", "LLM"]
 ##### 相關開源程式碼：
 
 [https://github.com/kkdai/linebot-gemini-pro](https://github.com/kkdai/linebot-gemini-pro)
+
+
+
+## 系列文章：
+
+1. [使用 Golang 透過 Google Gemini Pro 來打造一個具有LLM 功能 LINE Bot (一）: Chat Completion and Image Vision](https://www.evanlin.com/til-gogle-gemini-pro-linebot/)
+2. [使用 Golang 透過 Google Gemini Pro 來打造一個具有LLM 功能 LINE Bot (二）: 使用 Chat Session 與 LINEBot 快速整合出有記憶的 LINE Bot(本篇) ](https://www.evanlin.com/til-gogle-gemini-pro-chat-session/)
+3. 使用 Golang 透過 Google Gemini Pro 來打造一個具有LLM 功能 LINE Bot (三）: 使用 Gemini-Pro-Vision 來打造名片管理的聊天機器人
 
 
 
