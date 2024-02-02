@@ -12,15 +12,18 @@ tags: ["Golang", "GoogleGemini", "LLM"]
 
 
 
-
-
 # 前提
 
-前幾篇的文章 曾經提過，如何整合基本的 Gemini Pro Chat 與 Gemini Pro Vision 兩個模型的使用。 本次將快速提一下，打造一個具有記憶體的 LINE Bot 該如何做。
+在我之前的文章中，我探討了如何使用 Golang 結合 Google Gemini Pro 來開發一個具備大型語言模型（LLM）功能的 LINE Bot。這些文章分別介紹了如何整合 Gemini Pro 的聊天完成（Chat Completion）和圖像識別（Image Vision）功能：
+
+1. [使用 Golang 透過 Google Gemini Pro 來打造一個具有LLM 功能 LINE Bot (一）: 聊天完成與圖像識別](https://www.evanlin.com/til-gogle-gemini-pro-linebot/)
+2. [使用 Golang 透過 Google Gemini Pro 來打造一個具有LLM 功能 LINE Bot (二）: 使用聊天會話（Chat Session）與 LINE Bot 快速整合，打造具有記憶功能的 LINE Bot](https://www.evanlin.com/til-gogle-gemini-pro-chat-session/)
+
+這次，我將簡要介紹如何利用 Gemini Pro Vision 模型來創建一個能夠幫助你整理名片的小工具，它甚至能自行識別名片上的資訊。
 
 ##### 相關開源程式碼：
 
-[https://github.com/kkdai/linebot-smart-namecard](https://github.com/kkdai/linebot-smart-namecard)
+#### [https://github.com/kkdai/linebot-smart-namecard](https://github.com/kkdai/linebot-smart-namecard)
 
 
 
@@ -29,6 +32,8 @@ tags: ["Golang", "GoogleGemini", "LLM"]
 1. [使用 Golang 透過 Google Gemini Pro 來打造一個具有LLM 功能 LINE Bot (一）: Chat Completion and Image Vision](https://www.evanlin.com/til-gogle-gemini-pro-linebot/)
 2. [使用 Golang 透過 Google Gemini Pro 來打造一個具有LLM 功能 LINE Bot (二）: 使用 Chat Session 與 LINEBot 快速整合出有記憶的 LINE Bot ](https://www.evanlin.com/til-gogle-gemini-pro-chat-session/)
 3. 使用 Golang 透過 Google Gemini Pro 來打造一個具有LLM 功能 LINE Bot (三）: 使用 Gemini-Pro-Vision 來打造名片管理的聊天機器人 (本篇)
+
+
 
 ## 目前 Gemini Pro 的收費
 
