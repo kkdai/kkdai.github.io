@@ -35,8 +35,9 @@ tags: ["Golang", "GoogleGemini", "LLM"]
 
 
 
-# 打造一個辨識名片
+# 辨識名片處理上的小訣竅
 
+## 執行的 Prompt 
 關於打造一個名片辨識的部分，這裡分享相關的做法：
 
 ```
@@ -47,19 +48,88 @@ const ImagePrompt = "這是一張名片，你是一個名片秘書。請將以�
 
 這個名片分成幾個部分來解釋：
 
-- **解析圖片**： 相關資訊透過照片的上傳。請 Gemini Pro Vision 來分析。
-- **產出格式**： 這裡有說明，希望 LLm 將資訊透過 json 來提供解決。並且透過以下欄位來分開提供。 這裡也說明一下，這樣說明，就會讓 LLM 會自動去看懂名片上的資訊然後分開提供給你相關資訊。
-  - Name
-  - Title
-  - Address
-  - Email
-  - Phone
-  - Company
-- **特殊處理**：
+### **解析圖片**： 
+
+相關資訊透過照片的上傳。請 Gemini Pro Vision 來分析。
+
+### **產出格式**： 
+
+這裡有說明，希望 LLm 將資訊透過 json 來提供解決。並且透過以下欄位來分開提供。 這裡也說明一下，這樣說明，就會讓 LLM 會自動去看懂名片上的資訊然後分開提供給你相關資訊。
+
+- Name
+- Title
+- Address
+- Email
+- Phone
+- Company
+
+### **特殊處理**：
+
+透過 Gemini-Pro-Vision 或是其他 GPT-Vision 大模型來處理影像的時候，都需要準備相關的特殊處理。
+
+#### 關於名片上電話的處理案例：
+
+以下分享幾個電話例子：
+
+- (02) 1234-5678
+- (02) 1234 5678
+- (02) 1234-5678 轉 123
+- (02) 1234-5678 分機 123
+
+根據電話資訊的正確輸入法： 電話好買 *886-02-1234-5678, 1234 (如果分機是 1234) 的話。 使用以下的 Prompt 可以有效的取得:
+
+```
+其中 Phone 的內容格式為 #886-0123-456-789,1234. 沒有分機就忽略 ,1234。
+```
 
 
+#### 關於名片上空白數值：
 
-## 目前 Gemini Pro 的收費
+如果在 Notion 資料庫中有著空的數值不會有任何問題。但是如果要使用 Flex Message 卡片格式來放資料。每一個欄位則必須要有數值，不然 LINE 平台無法接受這樣的 Flex Message. 。
+
+而相信許多人也收過，有些人的名片是比較精簡的版本，上面並不會有職稱，或是說不會有電話（比較常見）。這個時候需要填入一些數值，讓資料不會有空值。 相關的 Prompt 為：
+
+```
+如果看不出來的，幫我填寫 N/A
+```
+
+## 相關處理 Golang 程式碼
+
+關於 Gemini Pro 影像辨識的程式碼是跟之前（第一篇文章）一樣，這邊就不重新敘述。也可以直接參考 [github](https://github.com/kkdai/linebot-smart-namecard/blob/main/gemini.go) 。 但是這裡寫一下處理的方式：
+
+### 透過外部參數或是環境變數處理 Prompt
+
+在寫 LLM 相關應用的時候，要記得 Prompt 是會隨時去調整來取得最佳的辨識效果。這時候如果 Prompt 是寫在程式碼裡面，就會發生不斷修改與部署。建議要寫在外部資料庫，或是系統環境變數。以下提供相關流程：
+
+```
+// Const variables of Prompts.
+const ImagePrompt = "這是一張名片，你是一個名片秘書。請將以下資訊整理成 json 給我。如果看不出來的，幫我填寫 N/A， 只好 json 就好:  Name, Title, Address, Email, Phone, Company.   其中 Phone 的內容格式為 #886-0123-456-789,1234. 沒有分機就忽略 ,1234"
+
+
+// 檢查是否有環境變數，如果沒有，就使用自定義的 Prompt 。
+card_prompt := os.Getenv("CARD_PROMPT")
+	if card_prompt == "" {
+		card_prompt = ImagePrompt
+	}
+	
+
+// 透過圖片下 Prompt
+// Chat with Image
+				ret, err := GeminiImage(data, card_prompt)
+				if err != nil {
+					ret = "無法辨識圖片內容文字，請重新輸入:" + err.Error()
+					if err := replyText(e.ReplyToken, ret); err != nil {
+						log.Print(err)
+					}
+					continue
+				}
+```
+
+### 輸入卡片到資料庫的基本處理
+
+雖然本篇文章不會詳細敘述關於 N
+
+# 目前 Gemini Pro 的收費
 
 截至筆者寫完（2024/01/03) 目前的定價依舊是 (refer [Google AI Price](https://ai.google.dev/pricing))
 
@@ -70,36 +140,7 @@ const ImagePrompt = "這是一張名片，你是一個名片秘書。請將以�
 
 <img src="../images/2022/image-20240103223633970.png" alt="image-20240103223633970" style="zoom:50%;" />
 
-## 透過 Render 來快速部署服務:
 
-由於 Gemini Pro 目前在某些額度下，還是免費的。這裡也更改了專案，讓沒有信用卡的學生可以學習如何打造一個 LLM 具有記憶的聊天機器人。
-
-### Render.com 簡介：
-
-- 類似 Heroku 的 PaaS (Platform As A Services) 服務提供者。
-- 他有免費的 Free Tier ，適合工程師開發 Hobby Project。
-- 不需要綁定信用卡，就可以部署服務。
-
-參考： [Render.com Price](https://render.com/pricing)
-
-
-
-### 部署步驟如下：
-
-- 到專案頁面 [kkdai/linebot-gemini-pro: LINE Bot sample code how to use Google Gemini Pro in GO (Golang) (github.com)](https://github.com/kkdai/linebot-gemini-pro)
-- 按下 Deploy To Render
-
-![image-20240104140246518](../images/2022/image-20240104140246518.png)
-
-- 選擇一個服務名字
-
-![image-20240104140347932](../images/2022/image-20240104140347932.png)
-
-- 這邊有三個需要填寫：
-  - **ChannelAccessToken**: 請到 [LINE Developer Console](https://developers.line.biz/console/) 取得。
-  - **ChannelSecret**: 請到 [LINE Developer Console](https://developers.line.biz/console/) 取得。
-  - **GOOGLE_GEMINI_API_KEY**: 請到 [Google AI Studio](https://makersuite.google.com/app/apikey) 取得。
-- 這樣就部署成功了，記得還要跟 LINE Bot 串接起來。
 
 ## 成果
 
