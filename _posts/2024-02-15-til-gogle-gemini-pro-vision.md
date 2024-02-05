@@ -14,12 +14,12 @@ tags: ["Golang", "GoogleGemini", "LLM"]
 
 # 前提
 
-在我之前的文章中，我探討了如何使用 Golang 結合 Google Gemini Pro 來開發一個具備大型語言模型（LLM）功能的 LINE Bot。這些文章分別介紹了如何整合 Gemini Pro 的聊天完成（Chat Completion）和圖像識別（Image Vision）功能：
+在之前的文章中，探討了如何使用 Golang 結合 Google Gemini Pro 來開發一個具備大型語言模型（LLM）功能的 LINE Bot。這些文章分別介紹了如何整合 Gemini Pro 的聊天完成（Chat Completion）和圖像識別（Image Vision）功能：
 
 1. [使用 Golang 透過 Google Gemini Pro 來打造一個具有LLM 功能 LINE Bot (一）: 聊天完成與圖像識別](https://www.evanlin.com/til-gogle-gemini-pro-linebot/)
 2. [使用 Golang 透過 Google Gemini Pro 來打造一個具有LLM 功能 LINE Bot (二）: 使用聊天會話（Chat Session）與 LINE Bot 快速整合，打造具有記憶功能的 LINE Bot](https://www.evanlin.com/til-gogle-gemini-pro-chat-session/)
 
-這次，我將簡要介紹如何利用 Gemini Pro Vision 模型來創建一個能夠幫助你整理名片的小工具，它甚至能自行識別名片上的資訊。
+這次，將簡要介紹如何利用 Gemini Pro Vision 模型來創建一個能夠幫助你整理名片的小工具，它甚至能自行識別名片上的資訊。
 
 ##### 相關開源程式碼：
 
@@ -93,7 +93,7 @@ const ImagePrompt = "這是一張名片，你是一個名片秘書。請將以�
 如果看不出來的，幫我填寫 N/A
 ```
 
-## 相關處理 Golang 程式碼
+## GPT Vision 辨識處理 Golang 程式碼
 
 關於 Gemini Pro 影像辨識的程式碼是跟之前（第一篇文章）一樣，這邊就不重新敘述。也可以直接參考 [github](https://github.com/kkdai/linebot-smart-namecard/blob/main/gemini.go) 。 但是這裡寫一下處理的方式：
 
@@ -130,22 +130,94 @@ card_prompt := os.Getenv("CARD_PROMPT")
 雖然本篇文章不會詳細敘述關於 [Notion 資料庫](https://www.evanlin.com/til-golang-notion-db)的處理。但是這邊稍微提供卡片資料庫的基本處理流程。
 
 - 掃描到卡片後，透過 **Email** 作為卡片的唯一資料來檢查是否有重複資料。
-- 如果有 **Email** 相同的
+- 如果有 **Email** 相同，則會 skip 本次的掃描資訊。
 
-# 目前 Gemini Pro 的收費
-
-截至筆者寫完（2024/01/03) 目前的定價依舊是 (refer [Google AI Price](https://ai.google.dev/pricing))
-
-- 一分鐘內 60次詢問都免費
-- 超過的話:
-  - $0.00025 / 1K characters
-  - $0.0025 / image
-
-<img src="../images/2022/image-20240103223633970.png" alt="image-20240103223633970" style="zoom:50%;" />
+這部分的處理就算是一個段落，接下來要講解如何透過關鍵字搜尋的相關處理。
 
 
 
-## 成果
+# 方便的名片搜尋
+
+以往在搜尋名片的時候，經常會使用一些關鍵字來搜尋。比如說：
+
+- 想要找出所有認識的「經理」
+- 想要找位於某間公司的所有窗口
+- 想要找出所有認識的行銷窗口
+- 印象中認識一位「李教授」但是不確定是哪間學校。
+
+以上的方式都是名片搜尋需要的功能，
+
+![img](../images/2022/query.jpg)
+
+這邊稍微列出在 Notion 上面使用的程式碼：
+
+```
+				//using test as keyword to query database
+				nDB := &NotionDB{
+					DatabaseID: os.Getenv("NOTION_DB_PAGEID"),
+					Token:      os.Getenv("NOTION_INTEGRATION_TOKEN"),
+					UID:        uID,
+				}
+
+				// Query the database with the provided uID and text
+				results, err := nDB.QueryDatabaseContains(message.Text)
+				log.Println("Got results:", results)
+
+				// If there's an error or no results, reply with an error message
+				if err != nil || len(results) == 0 {
+					ret := "查不到資料，請重新輸入"
+					if err != nil {
+						ret = fmt.Sprintf("%s: %s", ret, err.Error())
+					}
+					if err := replyText(e.ReplyToken, ret); err != nil {
+						log.Print(err)
+					}
+					continue
+				}
+
+```
+
+其中 QueryDatabaseContains 這個 function 會先尋找 Name, Title 與公司名稱。依照這三個順序，將所有的資料搜尋出來。
+
+```
+// QueryDatabaseContains 根據提供的名稱查詢 Notion 資料庫。
+func (n *NotionDB) QueryDatabaseContains(query string) ([]Person, error) {
+	// 初始化一個空的結果集
+	var combinedResult []Person
+
+	// 進行名稱查詢
+	nameResult, err := n.QueryDatabaseContainsByName(query)
+	log.Println("QueryDatabaseContainsByName", nameResult, err)
+	if err != nil {
+		return nil, err
+	}
+	combinedResult = append(combinedResult, nameResult...)
+
+	// 進行電子郵件查詢
+	emailResult, err := n.QueryDatabaseContainsByEmail(query)
+	log.Println("QueryDatabaseContainsByEmail", emailResult, err)
+	if err != nil {
+		return nil, err
+	}
+	combinedResult = append(combinedResult, emailResult...)
+
+	// 進行標題查詢
+	titleResult, err := n.QueryDatabaseContainsByTitle(query)
+	log.Println("QueryDatabaseContainsByTitle", titleResult, err)
+	if err != nil {
+		return nil, err
+	}
+	combinedResult = append(combinedResult, titleResult...)
+
+	// 返回結合的結果
+	return combinedResult, nil
+}
+
+```
+
+這樣就可以完成初步的智慧搜尋方式。
+
+# 成果
 
 
 
