@@ -10,13 +10,8 @@ paginate_path: "page:num"
 
 highlighter: rouge
 markdown: kramdown
-#disqus: evanlin1007
 google_analytics: UA-54721520-1
 
-#comments :
-#    provider : disqus
-#    disqus :
-#      short_name : evanlin1007
 
 
 defaults:
@@ -32,11 +27,11 @@ author:
   email: evanslin@gmail.com
   github: kkdai
   twitter: Evan_Lin
-  #pinterest: 
   linkedin: evanlin1977
   bio: Attitude is everything
   email_md5: 670eb312a14e540fee9f24d740275774
 
+production_url: https://www.evanlin.com
 rss_path: feed.xml
 archive_path: archive
 categories_path: categories
