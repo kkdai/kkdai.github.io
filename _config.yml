@@ -12,15 +12,7 @@ highlighter: rouge
 markdown: kramdown
 google_analytics: UA-54721520-1
 
-
-
-defaults:
-  -
-    scope:
-      path: "" # empty string for all files
-    values:
-      title: Blog E
-
+title: Blog E
 description: Attitude is everything
 author:
   name: Evan
@@ -35,7 +27,7 @@ rss_path: feed.xml
 archive_path: archive
 categories_path: categories
 tags_path: tags
-BASE_PATH: false
+BASE_PATH: https://www.evanlin.com
 
 gems:
   - jekyll-paginate
