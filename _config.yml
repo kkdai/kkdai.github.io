@@ -2,7 +2,7 @@
 #port: 4040
 
 permalink: /:title/ 
-production_url: http://www.evanlin.com
+production_url: https://www.evanlin.com
 gems: ['jekyll-lunr-js-search']
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 paginate: 6 # pagination based on number of posts
@@ -31,7 +31,6 @@ author:
   bio: Attitude is everything
   email_md5: 670eb312a14e540fee9f24d740275774
 
-production_url: https://www.evanlin.com
 rss_path: feed.xml
 archive_path: archive
 categories_path: categories
