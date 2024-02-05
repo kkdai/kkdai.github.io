@@ -145,9 +145,9 @@ card_prompt := os.Getenv("CARD_PROMPT")
 - 想要找出所有認識的行銷窗口
 - 印象中認識一位「李教授」但是不確定是哪間學校。
 
-以上的方式都是名片搜尋需要的功能，
+以上的方式都是名片搜尋需要的功能，本段將介紹該如何實作這一段的部分：
 
-![img](../images/2022/query.jpg)
+## 名片搜尋方式:
 
 這邊稍微列出在 Notion 上面使用的程式碼：
 
@@ -179,47 +179,16 @@ card_prompt := os.Getenv("CARD_PROMPT")
 
 其中 QueryDatabaseContains 這個 function 會先尋找 Name, Title 與公司名稱。依照這三個順序，將所有的資料搜尋出來。
 
-```
-// QueryDatabaseContains 根據提供的名稱查詢 Notion 資料庫。
-func (n *NotionDB) QueryDatabaseContains(query string) ([]Person, error) {
-	// 初始化一個空的結果集
-	var combinedResult []Person
-
-	// 進行名稱查詢
-	nameResult, err := n.QueryDatabaseContainsByName(query)
-	log.Println("QueryDatabaseContainsByName", nameResult, err)
-	if err != nil {
-		return nil, err
-	}
-	combinedResult = append(combinedResult, nameResult...)
-
-	// 進行電子郵件查詢
-	emailResult, err := n.QueryDatabaseContainsByEmail(query)
-	log.Println("QueryDatabaseContainsByEmail", emailResult, err)
-	if err != nil {
-		return nil, err
-	}
-	combinedResult = append(combinedResult, emailResult...)
-
-	// 進行標題查詢
-	titleResult, err := n.QueryDatabaseContainsByTitle(query)
-	log.Println("QueryDatabaseContainsByTitle", titleResult, err)
-	if err != nil {
-		return nil, err
-	}
-	combinedResult = append(combinedResult, titleResult...)
-
-	// 返回結合的結果
-	return combinedResult, nil
-}
-
-```
-
-這樣就可以完成初步的智慧搜尋方式。
-
-# 成果
 
 
+# 成果與未來展望
+
+![img](../images/2022/query.jpg)
+
+## 使用方式：
+
+- **新增名片：** 直接透過相片，掃描名片即可。 不需要像其他名片軟體需要抓名片的四周，也不需要等待對應。
+- **查詢名片**： 
 
 
 
@@ -230,3 +199,4 @@ func (n *NotionDB) QueryDatabaseContains(query string) ([]Person, error) {
 - [Google AI Studio API Price](https://ai.google.dev/pricing)
 - [GoDoc ChatSession Example](https://pkg.go.dev/github.com/google/generative-ai-go/genai#example-ChatSession)
 - [Google GenerativeAI ChatSession Python Client](https://ai.google.dev/api/python/google/generativeai/ChatSession?hl=en) 
+-  [[Golang\][Notion] 如何透過 Golang 來操控 Notion DB 當成線上資料庫](https://www.evanlin.com/til-golang-notion-db/) 
