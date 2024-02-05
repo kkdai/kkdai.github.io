@@ -127,7 +127,10 @@ card_prompt := os.Getenv("CARD_PROMPT")
 
 ### 輸入卡片到資料庫的基本處理
 
-雖然本篇文章不會詳細敘述關於 N
+雖然本篇文章不會詳細敘述關於 [Notion 資料庫](https://www.evanlin.com/til-golang-notion-db)的處理。但是這邊稍微提供卡片資料庫的基本處理流程。
+
+- 掃描到卡片後，透過 **Email** 作為卡片的唯一資料來檢查是否有重複資料。
+- 如果有 **Email** 相同的
 
 # 目前 Gemini Pro 的收費
 
