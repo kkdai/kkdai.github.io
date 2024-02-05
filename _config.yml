@@ -35,11 +35,7 @@ rss_path: feed.xml
 archive_path: archive
 categories_path: categories
 tags_path: tags
-
-# set it as url of an image
-# sidebar_background_image: https://www.dropbox.com/s/g9h23zrycedxtk5/sky.png?raw=1
-
-BASE_PATH:
+BASE_PATH: false
 
 gems:
   - jekyll-paginate
