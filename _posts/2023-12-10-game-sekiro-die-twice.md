@@ -5,7 +5,7 @@ description: ""
 category: 
 - 遊戲天國
 - SteamDeck
-tags: ["PS5", "DarkSouls"]
+tags: ["SteamDeck", "魂系列"]
 
 ---
 
