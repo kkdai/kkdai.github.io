@@ -24,7 +24,7 @@ tags: ["Golang", "GoogleGemini", "LLM"]
 
 1. [使用 Golang 透過 Google Gemini Pro 來打造一個具有LLM 功能 LINE Bot (一）: Chat Completion and Image Vision(本篇) ](https://www.evanlin.com/til-gogle-gemini-pro-linebot/)
 2. [使用 Golang 透過 Google Gemini Pro 來打造一個具有LLM 功能 LINE Bot (二）: 使用 Chat Session 與 LINEBot 快速整合出有記憶的 LINE Bot](https://www.evanlin.com/til-gogle-gemini-pro-chat-session/)
-3. 使用 Golang 透過 Google Gemini Pro 來打造一個具有LLM 功能 LINE Bot (三）: 使用 Gemini-Pro-Vision 來打造名片管理的聊天機器人
+3. [使用 Golang 透過 Google Gemini Pro 來打造一個具有LLM 功能 LINE Bot (三）: 使用 Gemini-Pro-Vision 來打造名片管理的聊天機器人](https://www.evanlin.com/til-gogle-gemini-pro-vision/)
 
 ## Google Gemini Pro 有哪些資源可以學習
 
