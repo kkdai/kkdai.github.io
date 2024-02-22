@@ -77,3 +77,8 @@ img = PIL.Image.open(BytesIO(image_content))
 
 
 
+## 參考文章：
+
+- [https://ithelp.ithome.com.tw/articles/10280087](https://ithelp.ithome.com.tw/articles/10280087)
+- [https://www.myapollo.com.tw/blog/aiohttp-client/](https://www.myapollo.com.tw/blog/aiohttp-client/)
+
