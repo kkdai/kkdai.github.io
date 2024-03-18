@@ -53,6 +53,36 @@ tags: ["Python", "LINEBot", "Firebase", "GoogleCloud", "CloudFunction"]
 
 設定 "進入點" 到 `linebot`，並且記錄觸發網址 `https://xxxxxxxx.cloudfunctions.net/function-test1` 。
 
+## 關於 OpenAI ChatComplete 與 Google Gemini Pro - Multi-turn conversations 格式轉換
+
+這邊講解一下，關於 OpenAI 的 [Chat Completion API](https://platform.openai.com/docs/api-reference/chat/create) 的格式：
+
+```
+[
+  {
+    "role": "system",
+    "content": "You are a helpful assistant."
+  },
+  {
+    "role": "user",
+    "content": "Hello!"
+  }
+]
+```
+
+但是 Google Gemini Pro 的 [Multi-turn Conversations](https://ai.google.dev/tutorials/python_quickstart?_gl=1*avibcg*_up*MQ..&gclid=Cj0KCQjwwMqvBhCtARIsAIXsZpaffJNm4ewSnQQYj9C_-6Srqo1Y681-J_btJCphOE6e9CexRf7SyVMaAjOQEALw_wcB#multi-turn_conversations) 格式不太一樣。
+
+```
+[
+    {'role':'user',
+     'parts': ["Briefly explain how a computer works to a young child."]},
+    {'role':'model',
+     'parts': ["想像一下你的電腦就像一個超級聰明的機器人，它可以按照你的指令去做很多事情....."]}   
+]
+```
+
+主要差別除了 "content" 與 "parts" 命名不同外， `parts` 可以接受多種資料格式。可以參考 API Reference 關於 [Gemini Content](https://ai.google.dev/api/rest/v1/Content)。
+
 # 回頭設定 LINE Bot
 
 - 設定  [LINE Developer Console](https://developers.line.biz/console/?status=success)  到了 Messaging API Tab 並且將 Webhook URL 放入剛剛輸入的  `https://xxxxxxxx.cloudfunctions.net/function-test1` 。
@@ -61,4 +91,5 @@ tags: ["Python", "LINEBot", "Firebase", "GoogleCloud", "CloudFunction"]
 ## 參考文章：
 
 - [【LineBot實作】如何製作有記憶的對話機器人](https://medium.com/@pearl3904/linebot%E5%AF%A6%E4%BD%9C-%E5%A6%82%E4%BD%95%E8%A3%BD%E4%BD%9C%E6%9C%89%E8%A8%98%E6%86%B6%E7%9A%84%E5%B0%8D%E8%A9%B1%E6%A9%9F%E5%99%A8%E4%BA%BA-0a80a9601e3d)
+- 完整 [Github 程式碼](https://github.com/kkdai/linebot-gemini-cloudfunc) 
 
