@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[LINE Bot][Python] Cloud Function + Gemini Pro + Firebase Database == 記憶體聊天機器人"
+title: "[LINE Bot][Python] Cloud Function + Gemini Pro + Firebase Database = 記憶體聊天機器人"
 description: ""
 category: 
 - Python
@@ -32,22 +32,33 @@ tags: ["Python", "LINEBot", "Firebase", "GoogleCloud", "CloudFunction"]
   - 取得該資料庫網址： **https://XXX.firebaseio.com/**
 - 到 Google Cloud 的 [Cloud Functions](https://cloud.google.com/functions?hl=zh_cn) 
   - 建立一個 Cloud Functions - Gen1 或是 Gen2 都可以
-  - 
+  - 採取 HTTPS
+  - 驗證部分： 使用「允許未經驗證的叫用」
+  - **新增四個環境變數**：
+    1. GEMINI_API_KEY：(在 Google AI Studio 獲得的secret key)
+    2. LINE_BOT_TOKEN：(在Line Developers獲得的Channel access token)
+    3. LINE_BOT_SECRET：(在Line Developers獲得的Channel secret)
+    4. FIREBASE_URL：(在Firebase獲得的URL)
+  - 程式碼部分，請使用以下修改的程式碼。
 
-# 主要修改
+# 主要修改程式碼部分
 
- 
+ 首先是 `requirements.txt` 需要將相關設備改成 Gemini pro - `google.generativeai`。
 
 <script src="https://gist.github.com/kkdai/148f57c651f369e771bfd0d86c585563.js"></script>
 
-
+接下來建立另外一個檔案： `main.py`
 
 <script src="https://gist.github.com/kkdai/a59c50a63f568299c46c013461e15d81.js"></script>
 
+設定 "進入點" 到 `linebot`，並且記錄觸發網址 `https://xxxxxxxx.cloudfunctions.net/function-test1` 。
 
+# 回頭設定 LINE Bot
+
+- 設定  [LINE Developer Console](https://developers.line.biz/console/?status=success)  到了 Messaging API Tab 並且將 Webhook URL 放入剛剛輸入的  `https://xxxxxxxx.cloudfunctions.net/function-test1` 。
+- 測試是否成功，即可開始對聊天機器人溝通。
 
 ## 參考文章：
 
-- [https://ithelp.ithome.com.tw/articles/10280087](https://ithelp.ithome.com.tw/articles/10280087)
-- [https://www.myapollo.com.tw/blog/aiohttp-client/](https://www.myapollo.com.tw/blog/aiohttp-client/)
+- [【LineBot實作】如何製作有記憶的對話機器人](https://medium.com/@pearl3904/linebot%E5%AF%A6%E4%BD%9C-%E5%A6%82%E4%BD%95%E8%A3%BD%E4%BD%9C%E6%9C%89%E8%A8%98%E6%86%B6%E7%9A%84%E5%B0%8D%E8%A9%B1%E6%A9%9F%E5%99%A8%E4%BA%BA-0a80a9601e3d)
 
