@@ -1,10 +1,12 @@
+---
 layout: post
 title: "[BwAI workshop][Golang] LINE OA + CloudFunction + GeminiPro + Firebase = 旅行小幫手 LINE 聊天機器人"
 description: ""
 category: 
-- Python
+- Python 
 - TIL
 tags: ["Golang", "LINEBot", "Firebase", "GoogleCloud", "CloudFunction"]
+---
 
 <img src="../images/2022/image-20240318204441270.png" alt="image-20240318204441270" style="zoom:50%;" />
 
@@ -61,7 +63,15 @@ Cloud Functions 針對運算時間資源提供永久免費方案，當中包括 
 請注意，即便您採用的是免費方案，也必須擁有有效的帳單帳戶。
 ```
 
-到 [Cloud Function](https://console.cloud.google.com/functions) 這邊，開始建立一個 Cloud Functions 
+到 [Cloud Function](https://console.cloud.google.com/functions) 這邊，開始建立一個 Cloud Functions ，相關設定參考以下：
+
+- 環境： **第 1 代**
+- 函式名稱: 隨便填 
+- 地區： **asia-east1 (台灣)**
+- HTTP
+  - 驗證： 允許未經驗證的叫用
+
+<img src="../images/2022/image-20240410174823233.png" alt="image-20240410174823233" style="zoom:50%;" />
 
 
 
