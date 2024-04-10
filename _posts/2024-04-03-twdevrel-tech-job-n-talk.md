@@ -9,42 +9,64 @@ tags: ["研討會心得", "LINE"]
 
 
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/femgLNh0h3c?si=CnvtWiY7S57aLkkR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 # 前言
 
-最近，我有幸受邀參加了一場精彩的Podcast專訪，由科技工作講主辦。在這個以科技職涯和人才發展為主題的節目中，我分享了自己在LINE台灣開發者關係與技術推廣部門的工作經驗，以及對於科技行業的見解。以下是這次專訪的精華，希望能給大家帶來一些啟發。
+最近，我有幸受邀參加了一場精彩的Podcast專訪，由[科技工作講](https://www.facebook.com/clubhousetechjob/)主辦。在這個以科技職涯和人才發展為主題的節目中，我分享了自己在LINE台灣開發者關係與技術推廣部門的工作經驗，以及對於科技行業的見解。以下是這次專訪的精華，希望能給大家帶來一些啟發。
 
 
 
 ## 專訪概覽
 
 - **專訪時間**：4月3日，晚上10點
-- **專訪形式**：線上直播
+- **專訪形式**：[線上直播](https://www.youtube.com/watch?v=femgLNh0h3c)
 - **單集標題**：LINE的主管聊聊他們在做什麼 feat. LINE 台灣開發者關係與技術推廣部門資深經理 Evan Lin
 - **上線時間**：4月6日
 
 ## 職涯分享
 
-我從研究所畢業後，開始了我的職業旅程，曾在多重領域公司工作過，包括跨國軟體公司和台灣的硬體公司。在新創企業的日子裡，我積極參與技術分享和開源軟體開發，這段經歷讓我有機會接觸到許多新的領域和機會。2018年底，我加入了LINE台灣，開啟了全新的篇章。
+我的職業旅程從研究所畢業後開始，那時我加入了一家跨國的軟體公司，他們的業務遍及美國和加拿大。隨後，我也在台灣的硬體公司和新創企業中擔任過要職。特別是在新創公司的時光，我非常積極地參與技術分享和開源軟體開發，這讓我有機會接觸到許多新的領域和機會。
+
+
+
+這段經歷對我來說是一個轉捩點，因為我在開源軟體開發和技術推廣方面的熱情，恰好與 LINE 當時的職缺非常契合。所以，在2018年底，我決定加入LINE台灣，開始了我在這裡的新篇章。
 
 ## LINE的工作文化
 
-在LINE，溝通是我們極為重視的一環。我們不僅透過自家開發的通訊平台進行直接討論，還非常注重開放性和自主性。我們鼓勵員工與上司討論，表達自己對於新專案或新挑戰的意願。這種文化鼓勵我們主動探索和擴展自己的能力範圍。實習生也能夠體驗到這樣的開放文化，這證明了LINE的開放和自主。
+
+
+在 LINE，溝通是我們極為重視的一環。我們不僅透過自家開發的通訊平台進行直接討論，還非常注重開放性和自主性。我們鼓勵員工與上司討論，表達自己對於新專案或新挑戰的意願。這種文化鼓勵我們主動探索和擴展自己的能力範圍。實習生也能夠體驗到這樣的開放文化，這證明了LINE的開放和自主。
+
+
 
 ## 部門工作內容
 
 我們的部門負責推廣LINE的開發者生態系統和技術品牌。我們舉辦外部活動和工作坊教學，並且推廣LINE工程團隊的技術分享活動。我們的總公司在日本，提供全球市場的服務，並且在台灣也持續發展在地服務，如LINE TODAY。
 
+![img](https://engineering.linecorp.com/wp-content/uploads/2022/03/IMG_8571-1024x1024.jpg)
+
+(關於 LINE 台灣的企業參訪： 詳情請看文章[關於 LINE 台灣開發者關係與技術推廣部門的校園相關資源](https://engineering.linecorp.com/zh-hant/blog/line-devrel-campus))
+
+
+
 ## 工作上的挑戰
 
+![img](../images/2022/1692948988289.png)
+
+(在 LINE 研發工程團隊中，我們有相關的文化來塑造團隊合作氛圍，請參考 [LINE Engineering Culture](https://engineering.linecorp.com/en/culture))
+
 在LINE，我們鼓勵直接與相關部門的同仁溝通，這種開放的溝通方式大大提高了效率。在這裡，老闆不僅期待你執行既定的任務，他們更希望你能提出新的想法，並且主動去推動讓這些想法成為現實。
+
+
 
 ## 資深軟體開發人力市場
 
 資深軟體開發人員的需求一直都很高。在LINE，我們透過舉辦技術研討會和社群聚會來吸引資深人才，並且非常注重人才的培養。我們有「LINE TECH FRESH」的技術新星實習計畫，旨在培養有潛力的軟體開發工程師。
 
-## 薪資範圍
+![img](../images/2022/1677037511941.jpeg)
 
-在LINE台灣，我們的薪資福利屬於科技業前段班。
+(LINE 台灣的開發者技術年會 - [LINE TAIWAN TECHPUSE](https://engineering.linecorp.com/zh-hant/blog/line-techpulse-2023-report) )
 
 ## 加入LINE的建議
 
