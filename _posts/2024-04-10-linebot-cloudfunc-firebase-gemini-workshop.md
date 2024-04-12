@@ -23,6 +23,12 @@ tags: ["Golang", "LINEBot", "Firebase", "GoogleCloud", "CloudFunction"]
 
 ![image-20240410164827279](../images/2022/image-20240410164827279.png)
 
+## 申請 Gemini API Key
+
+- 到 Google AI Studio [https://aistudio.google.com/](https://aistudio.google.com/ ) 
+- Click "Get API Key"
+- 選擇你已經有綁定信用卡的付費帳號，來取得 API Key![image-20240412195805278](../images/2022/image-20240412195805278.png)
+
 
 
 # 申請一個 LINE 聊天機器人 (Messaging API)
@@ -72,6 +78,22 @@ Cloud Functions 針對運算時間資源提供永久免費方案，當中包括 
   - 驗證： 允許未經驗證的叫用
 
 <img src="../images/2022/image-20240410174823233.png" alt="image-20240410174823233" style="zoom:50%;" />
+
+- **執行階段、建構作業、連線和安全性設定**
+  - 不需要修改，先使用 256MB 記憶體是足夠的。
+- **執行階段環境變數**
+  - 開始設定以下變數:
+    - **GOOGLE_GEMINI_API_KEY**: 剛剛取得的 Gemini API Key
+    - **ChannelAccessToken**: 在 LINE Developer Console 取得的 Channel Access Token
+    - **ChannelSecret**: 在 LINE Developer Console 取得的 Channel Secret
+
+![image-20240412200122236](../images/2022/image-20240412200122236.png)
+
+## 開始修改 Cloud Function 的程式碼
+
+
+
+
 
 
 
