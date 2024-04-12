@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[BwAI workshop][Golang] LINE OA + CloudFunction + GeminiPro + Firebase = 旅行小幫手 LINE 聊天機器人"
+title: "[BwAI workshop][Golang] LINE OA + CloudFunction + GeminiPro + Firebase = 旅行小幫手 LINE 聊天機器人(一)： 景色辨識小幫手"
 description: ""
 category: 
 - Python 
@@ -8,7 +8,7 @@ category:
 tags: ["Golang", "LINEBot", "Firebase", "GoogleCloud", "CloudFunction"]
 ---
 
-<img src="../images/2022/image-20240318204441270.png" alt="image-20240318204441270" style="zoom:50%;" />
+<img src="../images/2022/image-20240412221312444.png" alt="image-20240412221312444" style="zoom:67%;" />
 
 # 事前準備
 
@@ -91,9 +91,40 @@ Cloud Functions 針對運算時間資源提供永久免費方案，當中包括 
 
 ## 開始修改 Cloud Function 的程式碼
 
+- **「執行階段」**選擇 Go 1.21
+- 確認**「進入點」**是呼叫 `HelloHTTP`
+- 將程式碼，貼上以下的程式碼
+- 完整程式碼，記得要修改 "function.go" ，請複製這一段完整程式碼： [https://github.com/kkdai/linebot-cloudfunc-gemini-go/blob/main/function.go]( https://github.com/kkdai/linebot-cloudfunc-gemini-go/blob/main/function.go)
+
+<script src="https://gist.github.com/kkdai/7206ed95d66a762c4c8109e428a38c80.js"></script>
+
+- 別忘記 "go.mod" 也要跟著修改，請複製這一段完整程式碼
+
+- 按下**「部署」**，然後等待一下。
+- 部署好之後，記得到**「觸發條件」**進去查詢**「觸發網址」** ，記得複製這個網址，等等需要使用。
+
+<img src="../images/2022/image-20240412214423901.png" alt="image-20240412214423901" />
+
+# LINE Bot 完成最後設定
+
+- 到 "Messaging API" Tab 
+- 填入 "Webhook URL" 數值，將剛剛得「觸發網址填上去」
+- 更新(update)後，使用 "Verify" 看看有沒有設定錯誤。
+- 如果沒有問題，可以打開**「Use webhook」**
+
+![image-20240412214745544](../images/2022/image-20240412214745544.png)
 
 
 
+# 來測試吧
+
+<img src="../images/2022/image-20240412221246422.png" alt="image-20240412221246422" style="zoom:50%;" />
+
+
+
+#  完整原始碼
+
+你可以在這裡找到相關的開源程式碼: [https://github.com/kkdai/linebot-cloudfunc-gemini-go](https://github.com/kkdai/linebot-cloudfunc-gemini-go)
 
 
 
