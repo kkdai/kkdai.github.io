@@ -10,7 +10,18 @@ tags: ["Golang", "LINEBot", "Firebase", "GoogleCloud", "CloudFunction"]
 
 <img src="../images/2022/image-20240412221312444.png" alt="image-20240412221312444" style="zoom:67%;" />
 
-# 事前準備
+# 前言:
+
+這是一篇為了 04/18 跟 Google Developer Group 合作的 BUILD WITH AI (BWAI) WORKSHOP 的第一篇系列文章（不知道還需要幾篇），裡面包含了完整的 LINE 開發者相關帳號設定與 GCP 相關設定，只需要有付費認證帳號，其實是不會花費到任何錢的。
+
+# 文章列表：
+
+-  [[BwAI workshop][Golang] LINE OA + CloudFunction + GeminiPro + Firebase = 旅行小幫手 LINE 聊天機器人(一)： 景色辨識小幫手](https://www.evanlin.com/linebot-cloudfunc-firebase-gemini-workshop/)
+-  [[BwAI workshop][Golang] LINE OA + CloudFunction + GeminiPro + Firebase = 旅行小幫手 LINE 聊天機器人(2)： Firebase Database 讓 LINEBot 有個超長記憶]()
+
+
+
+# 事前準備:
 
 - **[LINE Developer Account](https://developers.line.biz/en/)**: 你只需要有 LINE 帳號就可以申請開發者帳號。
 - [**Google Cloud Functions**](https://cloud.google.com/functions?hl=zh_cn)： ＧGo 程式碼的**部署平台**，生成供 LINEBot 使用的 webhook address。
