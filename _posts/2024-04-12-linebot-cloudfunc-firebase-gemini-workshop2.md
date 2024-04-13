@@ -136,6 +136,57 @@ tags: ["Golang", "LINEBot", "Firebase", "GoogleCloud", "CloudFunction"]
 
 # Gemini Pro Chat History 要如何正確處理？
 
+首先也要讓大家了解一下，跟 OpenAI 不同的是：  Gemini Chat History 的格式不太一樣（也不是很好了解）。根據[網頁資料](https://ai.google.dev/tutorials/python_quickstart)如下：
+
+```
+[parts {
+   text: "In one sentence, explain how a computer works to a young child."
+ }
+ role: "user",
+ parts {
+   text: "A computer is like a very smart machine that can understand and follow our instructions, help us with our work, and even play games with us!"
+ }
+ role: "model"]
+```
+
+不是很確定為何 "parts" 會用集合， anyway 在 Python 中還不算難處理，但是在 [Golang 裡面的處理方式](https://github.com/google/generative-ai-go/blob/main/genai/example_test.go)如下：(參考自 Google Golang GAI Github https://github.com/google/generative-ai-go)
+
+```
+func ExampleChatSession_history() {
+	ctx := context.Background()
+	client, err := genai.NewClient(ctx, option.WithAPIKey(os.Getenv("GEMINI_API_KEY")))
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer client.Close()
+	model := client.GenerativeModel("gemini-1.0-pro")
+	cs := model.StartChat()
+
+	cs.History = []*genai.Content{
+		&genai.Content{
+			Parts: []genai.Part{
+				genai.Text("Hello, I have 2 dogs in my house."),
+			},
+			Role: "user",
+		},
+		&genai.Content{
+			Parts: []genai.Part{
+				genai.Text("Great to meet you. What would you like to know?"),
+			},
+			Role: "model",
+		},
+	}
+
+	res, err := cs.SendMessage(ctx, genai.Text("How many paws are in my house?"))
+	if err != nil {
+		log.Fatal(err)
+	}
+	printResponse(res)
+}
+```
+
+問題來了， `cs.History` 竟然是對應到 `[]*genai.Content`。這並不是一個對於 JSON unmarshall 就能夠直接使用的資料格式。還需要有相關的轉換。
+
 
 
 #  完整原始碼
