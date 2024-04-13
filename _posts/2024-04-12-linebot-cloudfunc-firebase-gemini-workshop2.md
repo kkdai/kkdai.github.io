@@ -24,7 +24,7 @@ tags: ["Golang", "LINEBot", "Firebase", "GoogleCloud", "CloudFunction"]
 
 # 文章列表：
 
--  [[BwAI workshop][Golang] LINE OA + CloudFunction + GeminiPro + Firebase = 旅行小幫手 LINE 聊天機器人(一)： 景色辨識小幫手](https://www.evanlin.com/linebot-cloudfunc-firebase-gemini-workshop/)
+-  [[BwAI workshop][Golang] LINE OA + CloudFunction + GeminiPro + Firebase = 旅行小幫手 LINE 聊天機器人(1)： 景色辨識小幫手](https://www.evanlin.com/linebot-cloudfunc-firebase-gemini-workshop/)
 -  [[BwAI workshop][Golang] LINE OA + CloudFunction + GeminiPro + Firebase = 旅行小幫手 LINE 聊天機器人(2)： Firebase Database 讓 LINEBot 有個超長記憶]()
 
 
@@ -39,9 +39,37 @@ tags: ["Golang", "LINEBot", "Firebase", "GoogleCloud", "CloudFunction"]
 
 ## 申請 Firebase Database 服務
 
+- 記得到 [Firebase Console](https://console.firebase.google.com/)，並且建立一個專案 。
+
+- 建立一個 Firebase Realtime Database 等等會用到
+
+  ![image-20240413212830827](../images/2022/image-20240413212830827.png)
+
+- 地區選美國
+
+  <img src="../images/2022/image-20240413212903957.png" alt="image-20240413212903957" style="zoom:33%;" />
+
+- Start in "lock mode"
+
+  <img src="../images/2022/image-20240413212950121.png" alt="image-20240413212950121" style="zoom:33%;" />
+
+- 為了開發方便，到 "Rules"設定成可以寫跟讀取，千萬注意：
+
+  - 這是為了測試，請勿用在對外環境
+  - 這是為了測試，請勿用在對外環境
+  - 這是為了測試，請勿用在對外環境
+
+<img src="../images/2022/image-20240413213202354.png" alt="image-20240413213202354" style="zoom:33%;" />
+
+- 記住哪個 URL (注意！**之後要正式上線，需要改回權限**)
+
+<img src="../images/2022/image-20240413213420391.png" alt="image-20240413213420391" style="zoom:33%;" />
 
 
-## 申請 Services Account Credential 讓你的 Cloud Function 連接 Google 服務
+
+## 申請 Services Account Credential 讓 Cloud Function 連接 Google 服務
+
+這部分的教學，其實可以參考我另外一篇文章。[[學習文件] 如何在 Heroku 上面使用透過 Golang 來存取 Google Cloud 服務](https://www.evanlin.com/til-heroku-gcp-key/)，但是這邊還是快速走一次。
 
 
 
