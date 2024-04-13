@@ -47,11 +47,11 @@ tags: ["Golang", "LINEBot", "Firebase", "GoogleCloud", "CloudFunction"]
 
 - 地區選美國
 
-  <img src="../images/2022/image-20240413212903957.png" alt="image-20240413212903957" style="zoom:33%;" />
+  <img src="../images/2022/image-20240413212903957.png" alt="image-20240413212903957"/>
 
 - Start in "lock mode"
 
-  <img src="../images/2022/image-20240413212950121.png" alt="image-20240413212950121" style="zoom:33%;" />
+  <img src="../images/2022/image-20240413212950121.png"/>
 
 - 為了開發方便，到 "Rules"設定成可以寫跟讀取，千萬注意：
 
@@ -59,7 +59,7 @@ tags: ["Golang", "LINEBot", "Firebase", "GoogleCloud", "CloudFunction"]
   - 這是為了測試，請勿用在對外環境
   - 這是為了測試，請勿用在對外環境
 
-<img src="../images/2022/image-20240413213202354.png" alt="image-20240413213202354" style="zoom:33%;" />
+<img src="../images/2022/image-20240413213202354.png" alt="image-20240413213202354"/>
 
 - 記住哪個 URL (注意！**之後要正式上線，需要改回權限**)，並且加上一個項目: "**BwAI**"
 
@@ -97,6 +97,44 @@ tags: ["Golang", "LINEBot", "Firebase", "GoogleCloud", "CloudFunction"]
 雖然已經將 Firebase Realtime Database 設定成每個人都可以讀寫，但是如果是透過 Golang 去存取的時候，你會出現 Unauthorized request 的錯誤訊息。 這時候就是因為你的 JSON 檔案的 Project 跟你的 Firebase Project 是不同的。 只要重新建立一個 Services Account 並且更新 JSON 內容即可。
 
 ![image-20240413220630196](../images/2022/image-20240413220630196.png)
+
+
+
+# 如何在 Google Cloud Function 導入 Services Account Credential ?
+
+接下來會來分享，要如何正確地能夠在 Cloud Function 內使用呢。 如果你想要直接使用 Cloud Function 去開啟 Credential JSON 檔案，你會一直得到無法正確拿到 credential 的錯誤訊息。
+
+這時候需要先透過環境參數來加入:
+
+- 將 JSON 檔案中所有內容複製起來
+- 設定 `GOOGLE_APPLICATION_CREDENTIALS` 參數，然後把所有內容貼上環境參數。
+
+![image-20240413225710980](../images/2022/image-20240413225710980.png)
+
+- 接下來會跟大家講，如何修改相關程式碼？
+
+```
+	// Init firebase related variables
+	ctx := context.Background()
+	opt := option.WithCredentialsJSON([]byte(os.Getenv("GOOGLE_APPLICATION_CREDENTIALS")))
+	config := &firebase.Config{DatabaseURL: os.Getenv("FIREBASE_URL")}
+	app, err := firebase.NewApp(ctx, config, opt)
+	if err != nil {
+		log.Fatalf("error initializing app: %v", err)
+	}
+	client, err := app.Database(ctx)
+	if err != nil {
+		log.Fatalf("error initializing database: %v", err)
+	}
+```
+
+- 首先`option.WithCredentialsJSON([]byte(os.Getenv("GOOGLE_APPLICATION_CREDENTIALS")))` 可以讓你從環境參數讀取到 credential 。
+- 接下來 `&firebase.Config{DatabaseURL: os.Getenv("FIREBASE_URL")}` 則是將 FIREBASE_URL 內容設定好。
+- 這樣就可以正確執行了，接下來要來看相關處理 Gemini 聊天記憶的部分了。
+
+
+
+# Gemini Pro Chat History 要如何正確處理？
 
 
 
