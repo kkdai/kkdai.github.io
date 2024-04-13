@@ -71,7 +71,32 @@ tags: ["Golang", "LINEBot", "Firebase", "GoogleCloud", "CloudFunction"]
 
 這部分的教學，其實可以參考我另外一篇文章。[[學習文件] 如何在 Heroku 上面使用透過 Golang 來存取 Google Cloud 服務](https://www.evanlin.com/til-heroku-gcp-key/)，但是這邊還是快速走一次。
 
+- 進入 Google Cloud Console ，到 IAM & Admin 選擇建立 Services Account
 
+![image-20240413221505536](../images/2022/image-20240413221505536.png)
+
+- Services Account Name 自己決定，要注意好 (上面專案跟 Firebase **專案名稱要一致**)
+
+<img src="../images/2022/image-20240413222847247.png" alt="image-20240413222847247" style="zoom:50%;" />
+
+- Grant this service account access to project 在身份的時候，建議先用 Editor （比較大，需要小心使用）
+
+<img src="../images/2022/image-20240413223055288.png" alt="image-20240413223055288" style="zoom:50%;" />
+
+- "Grant users access to this service account" 不需要特別設定
+- 按下 "Manage Keys" 來準備下載 Credential 
+
+<img src="../images/2022/image-20240413223225404.png" alt="image-20240413223225404" style="zoom:50%;" />
+
+- 選擇 Add Key -> Create new Key -> 下載 JSON 
+
+<img src="../images/2022/image-20240413223613244.png" alt="image-20240413223613244" style="zoom:67%;" />
+
+## 使用 Golang Google Options 套件需要注意:
+
+雖然已經將 Firebase Realtime Database 設定成每個人都可以讀寫，但是如果是透過 Golang 去存取的時候，你會出現 Unauthorized request 的錯誤訊息。 這時候就是因為你的 JSON 檔案的 Project 跟你的 Firebase Project 是不同的。 只要重新建立一個 Services Account 並且更新 JSON 內容即可。
+
+![image-20240413220630196](../images/2022/image-20240413220630196.png)
 
 
 
