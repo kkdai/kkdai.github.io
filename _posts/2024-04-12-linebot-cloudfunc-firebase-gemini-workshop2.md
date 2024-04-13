@@ -61,9 +61,9 @@ tags: ["Golang", "LINEBot", "Firebase", "GoogleCloud", "CloudFunction"]
 
 <img src="../images/2022/image-20240413213202354.png" alt="image-20240413213202354" style="zoom:33%;" />
 
-- 記住哪個 URL (注意！**之後要正式上線，需要改回權限**)
+- 記住哪個 URL (注意！**之後要正式上線，需要改回權限**)，並且加上一個項目: "**BwAI**"
 
-<img src="../images/2022/image-20240413213420391.png" alt="image-20240413213420391" style="zoom:33%;" />
+<img src="../images/2022/image-20240413213802313.png" alt="image-20240413213802313" style="zoom:33%;" />
 
 
 
