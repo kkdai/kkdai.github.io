@@ -187,6 +187,111 @@ func ExampleChatSession_history() {
 
 問題來了， `cs.History` 竟然是對應到 `[]*genai.Content`。這並不是一個對於 JSON unmarshall 就能夠直接使用的資料格式。還需要有相關的轉換。
 
+## 透過 Firebase Database 處理 Chat History 的流程：
+
+這邊稍微讓大家知道一下，由於 Firebase Database 其實就是一大包的 JSON Database 。你可以直接存取一整包的 JSON Structure 進這個資料庫。 這樣來說讓整個資料庫處理上，還有寫小型 POC 應用來說相當的方便。（但是效率是可以討論的）
+
+```
+// Define your custom struct for Gemini ChatMemory
+type GeminiChat struct {
+	Parts []string `json:"parts"`
+	Role  string   `json:"role"`
+}
+
+.....
+
+	// Get chat history from Firebase
+	var InMemory []GeminiChat
+	err = fireDB.NewRef("BwAI").Get(ctx, &InMemory)
+	if err != nil {
+		fmt.Println("load memory failed, ", err)
+	}
+
+	fmt.Println("InMemory: %v", InMemory)
+
+	// convert InMemory to Memory
+	for _, c := range InMemory {
+		parts := make([]genai.Part, len(c.Parts))
+		for i, part := range c.Parts {
+			parts[i] = genai.Text(part)
+		}
+		dst := &genai.Content{
+			Parts: parts,
+			Role:  c.Role,
+		}
+
+		Memory = append(Memory, dst)
+	}
+
+```
+
+上面是從 Firebase Database 取出後需要轉換的程式碼，但是使用方式則是直接將 `Memory` 直接交給 `chat.History` 即可。需要記得的是，在處理完之後，要把這一次的對話也放進 `Memory`之中。部分程式碼如下：
+
+```
+				// Pass the text content to the gemini-pro model for text generation
+				model := client.GenerativeModel("gemini-pro")
+				cs := model.StartChat()
+				cs.History = Memory
+
+				res, err := cs.SendMessage(ctx, genai.Text(req))
+				if err != nil {
+					log.Fatal(err)
+				}
+				var ret string
+				for _, cand := range res.Candidates {
+					for _, part := range cand.Content.Parts {
+						ret = ret + fmt.Sprintf("%v", part)
+						log.Println(part)
+					}
+				}
+
+				// Save the conversation to the memory
+				Memory = append(Memory, &genai.Content{
+					Parts: []genai.Part{
+						genai.Text(req),
+					},
+					Role: "user",
+				})
+
+				// Save the response to the memory
+				Memory = append(Memory, &genai.Content{
+					Parts: []genai.Part{
+						genai.Text(ret),
+					},
+					Role: "model",
+				})
+
+				// Save the conversation to the firebase
+				err = fireDB.NewRef("BwAI").Set(ctx, Memory)
+				if err != nil {
+					fmt.Println(err)
+					return
+				}
+```
+
+重點就在:
+
+- 要把之前講過的話，放入 History
+- 把現在講過的，直接丟給 `cs.SendMessage()`
+- 最後要記得把後來使用者輸入的文字，跟 Gemini 回覆的文字都加入 `Memory`。
+
+## 成果與使用 ChatSession 差異：
+
+<img src="../images/2022/image-20240413210750427.png" alt="image-20240413210750427" style="zoom:20%;" />
+
+可以直接看到成果相當的好，並且這樣的記憶長度就會看 Gemini Model Token 的限制，算是相當的好用。
+
+那這個又跟 Gemini Chat Session 有什麼差別呢？
+
+- **Chat Session**: 適合使用在 Cloud Run 那種有固定一整台 server 的 LINE Bot 應用。
+- **Firebase Database + Chat Session:** 就可以放在 Cloud Function 這種 Functional As A Services 上面。
+
+
+
+## 接下來：
+
+感謝各位的支持，接下來就是要透過 Gemini Vision 去識別並且翻譯收據。還要讓 Gemini 可以快速幫我們找出哪時候買的？ 什麼地方買的？ 當初花了多少錢的「收據小幫手」。
+
 
 
 #  完整原始碼
