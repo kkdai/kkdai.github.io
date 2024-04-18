@@ -143,16 +143,100 @@ Add to a list of data in the database. Every time you push a new node onto a lis
 
 
 
-# 旅遊小幫手導入
+# 旅遊收據小幫手導入
+
+### 開發起因
+
+首先快速講一下，旅遊收據小幫手的開發起因：
+
+- 今年過年去了一趟韓國首爾遊玩，但是在路上會收到一堆的單據。
+- 因為筆者是韓文苦手，無法讀懂韓文。但是又希望可以有效地查詢相關的資訊。
+- 查詢方式可能想知道哪一天買了什麼，或是哪個商品是在哪一天？哪一個店家購買？
+
+#### 導入方式
 
 - 將程式碼: [https://github.com/kkdai/linebot-cf-receipt]( https://github.com/kkdai/linebot-cf-receipt ) 裡面的 `function.go` 打開。
 - 複製到 Cloud Functions 中已經設置好的環境。
 - 建立一個 Firebase Database set: `receipt` 
 - **部署 (搭啦)**
 
-## 相關修改部分
+## 旅遊收據小幫手修改部分
 
-- 
+Python 轉換成 Golang ，這部分就不細講了。 我們來看看跟前一個部分主要修改部分：
+
+```
+const ImgagePrompt = `This is a receipt, and you are a secretary.  
+Please organize the details from the receipt into JSON format for me. 
+I only need the JSON representation of the receipt data. Eventually, 
+I will need to input it into a database with the following structure:
+
+ Receipt(ReceiptID, PurchaseStore, PurchaseDate, PurchaseAddress, TotalAmount) and 
+ Items(ItemID, ReceiptID, ItemName, ItemPrice). 
+
+Data format as follow:
+- ReceiptID, using PurchaseDate, but Represent the year, month, day, hour, and minute without any separators.
+- ItemID, using ReceiptID and sequel number in that receipt. 
+Otherwise, if any information is unclear, fill in with "N/A". 
+`
+```
+
+先來看收據辨識的 Prompt。首先:
+
+- 先跟他說他要讀取的是哪一些資料，要如何去處理它。
+  ```
+  This is a receipt, and you are a secretary.  
+  Please organize the details from the receipt into JSON format for me. 
+  I only need the JSON representation of the receipt data. Eventually, 
+  I will need to input it into a database with the following structure:
+  ```
+
+  
+
+- 在資料格式定義上，將收據單跟裡面每個商品品項切開成兩個項目。但是因為會一整包處理，裡面的資訊會被整合再一起。
+  ```
+   Receipt(ReceiptID, PurchaseStore, PurchaseDate, PurchaseAddress, TotalAmount) and 
+   Items(ItemID, ReceiptID, ItemName, ItemPrice). 
+  ```
+
+- 額外處理項目需要註解，主要是資料讀不到的時候先補個 N/A。因為 Flex Message 必須每個欄位都要有數值。
+  ```
+  Otherwise, if any information is unclear, fill in with "N/A". 
+  ```
+
+這邊有多做一次的處理，就是收據原文都是韓文。需要額外跑一次將韓文的 JSON 轉換成中文再來儲存。
+
+```
+				// Pass the text content to the gemini-pro model for receipt translation.
+				model = client.GenerativeModel("gemini-pro")
+				cs := model.StartChat()
+				transJson := fmt.Sprintf("%s \n --- \n %s", TranslatePrompt, ret)
+				res, err := cs.SendMessage(ctx, genai.Text(transJson))
+				if err != nil {
+					log.Fatal(err)
+				}
+				var transRet string
+				for _, cand := range res.Candidates {
+					for _, part := range cand.Content.Parts {
+						transRet = transRet + fmt.Sprintf("%v", part)
+						log.Println(part)
+					}
+				}
+
+```
+
+這樣才能讓自己比較能了解，並且在前面使用中文詢問的時候，也能取得比較好的答案。 
+
+#### 雷點分享
+
+- 請不要一次直接將韓文收據翻譯成中文，這樣成果會非常的糟糕。
+- 建議都先掃描讓他可以直接得知道韓文成果，你也比較方便來比對答案。
+
+## 旅遊收據小幫手成果
+
+![image-20240418160115593](../images/2022/image-20240418160115593.png)
+
+- 收據的掃描上，可能需要清楚一點的收據效果會更好。
+- 詢問的部分可以變得相當的口語化，各種想問的都可以。
 
 
 
