@@ -40,7 +40,7 @@ tags: ["Golang", "LINEBot", "Firebase", "GoogleCloud", "CloudFunction"]
 
 ## 申請 Firebase Database 服務
 
-- 記得到 [Firebase Console](https://console.firebase.google.com/)，並且建立一個專案 。
+- 記得到 [Firebase Console](https://console.firebase.google.com/)，直接選取你現在有的專案。（可能叫做 My First Project?)
 
 - 建立一個 Firebase Realtime Database 等等會用到
 
@@ -107,7 +107,8 @@ tags: ["Golang", "LINEBot", "Firebase", "GoogleCloud", "CloudFunction"]
 
 這時候需要先透過環境參數來加入:
 
-- 將 JSON 檔案中所有內容複製起來
+- 將 JSON 檔案中所有內容複製起來。
+- 為了要能夠正確啟動 Firebase 記得新增一個參數， `FIREBASE_URL` 並且把剛剛的 Firebase link 網址填上去。
 - 設定 `GOOGLE_APPLICATION_CREDENTIALS` 參數，然後把所有內容貼上環境參數。
 
 ![image-20240413225710980](../images/2022/image-20240413225710980.png)
@@ -286,6 +287,19 @@ type GeminiChat struct {
 
 - **Chat Session**: 適合使用在 Cloud Run 那種有固定一整台 server 的 LINE Bot 應用。
 - **Firebase Database + Chat Session:** 就可以放在 Cloud Function 這種 Functional As A Services 上面。
+
+
+
+## 錯誤處理
+
+**Q: 如果從第一篇的文章做過來，改了 `FIREBASE_URL` 與 `GOOGLE_APPLICATION_CREDENTIALS` 之後，反而傳訊息都不會回覆了？**
+
+A: 請幫我做以下檢查：
+
+- 傳遞一個圖片訊息，看看有沒有回覆。
+- 如果圖片有回覆，那麼就是你的 Services Account 設定權限跟 Firebase 不同。
+
+
 
 
 
