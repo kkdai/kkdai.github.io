@@ -19,10 +19,8 @@ tags: ["Golang", "OAuth2", "PKCE"]
   - Github: [github.com/kkdai/line-login-sdk-go](https://github.com/kkdai/line-login-sdk-go)
 - **LINE Login Starter:** 
   - GitHub:  [github.com/kkdai/line-login-go](https://github.com/kkdai/line-login-go)
-  - Website: https://login-tester-evan.herokuapp.com/
 - **LINE Login PKCE Starter:**
   - GitHub:  [github.com/kkdai/line-login-pkce-go](https://github.com/kkdai/line-login-pkce-go)
-  - Website: https://line-login-pkce.herokuapp.com/
 
 
 
@@ -69,9 +67,7 @@ LINE Login 除了提供一個方式來登入之外，也可以提供使用者名
 
 <https://github.com/kkdai/line-login-go>
 
-### 測試網站
 
-<https://login-tester-evan.herokuapp.com/>
 
 # 如何部署範例程式碼:
 
@@ -182,7 +178,6 @@ PKCE (Proof Key for Code Exchange) 是由 Google 在 [RFC 7636](https://tools.ie
   - Github: [github.com/kkdai/line-login-sdk-go](https://github.com/kkdai/line-login-sdk-go)
 - **LINE Login PKCE Starter:**
   - GitHub:  [github.com/kkdai/line-login-pkce-go](https://github.com/kkdai/line-login-pkce-go)
-  - Website: https://line-login-pkce.herokuapp.com/
 
 ### 如何產生 Code Verifier
 
@@ -214,7 +209,7 @@ PKCE (Proof Key for Code Exchange) 是由 Google 在 [RFC 7636](https://tools.ie
 
 ![](../images/2021/pkce.gif)
 
-(展示影片來自網站: [PKCE LINE Login Test Site](https://line-login-pkce.herokuapp.com/))
+
 
 這邊有個簡單的展示網站，也歡迎想了解如何開發的開發者們，可以直接使用以下的開源程式碼。   範例程式碼提供兩種模式的來取得使用者的登入資料。
 
