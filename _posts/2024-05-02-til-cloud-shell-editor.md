@@ -45,7 +45,17 @@ Cloud Run 其實很方便，可以很快速地將 Heroku 的專案搬移過來�
 
 
 
-- 這ㄌㄧ
+
+
+# 障礙釋疑
+
+#### 發生問題: proto: (line 34:3): unknown field "usageMetadata"
+
+![image-20240503123728796](../images/2022/image-20240503123728796.png)
+
+- 回頭檢查 Google 套件 [https://github.com/google/generative-ai-go](https://github.com/google/generative-ai-go) 發現有發 [issue](https://github.com/google/generative-ai-go/issues/97) 。
+
+
 
 
 
