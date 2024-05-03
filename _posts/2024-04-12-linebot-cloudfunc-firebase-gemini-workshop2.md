@@ -93,12 +93,6 @@ tags: ["Golang", "LINEBot", "Firebase", "GoogleCloud", "CloudFunction"]
 
 <img src="../images/2022/image-20240413223613244.png" alt="image-20240413223613244" style="zoom:67%;" />
 
-## 使用 Golang Google Options 套件需要注意:
-
-雖然已經將 Firebase Realtime Database 設定成每個人都可以讀寫，但是如果是透過 Golang 去存取的時候，你會出現 Unauthorized request 的錯誤訊息。 這時候就是因為你的 JSON 檔案的 Project 跟你的 Firebase Project 是不同的。 只要重新建立一個 Services Account 並且更新 JSON 內容即可。
-
-![image-20240413220630196](../images/2022/image-20240413220630196.png)
-
 
 
 # 如何在 Google Cloud Function 導入 Services Account Credential ?
@@ -112,6 +106,22 @@ tags: ["Golang", "LINEBot", "Firebase", "GoogleCloud", "CloudFunction"]
 - 設定 `GOOGLE_APPLICATION_CREDENTIALS` 參數，然後把所有內容貼上環境參數。
 
 ![image-20240413225710980](../images/2022/image-20240413225710980.png)
+
+## 相關程式碼要如何修改
+
+
+
+
+
+## 使用 Golang Google Options 套件需要注意:
+
+雖然已經將 Firebase Realtime Database 設定成每個人都可以讀寫，但是如果是透過 Golang 去存取的時候，你會出現 Unauthorized request 的錯誤訊息。 這時候就是因為你的 JSON 檔案的 Project 跟你的 Firebase Project 是不同的。 只要重新建立一個 Services Account 並且更新 JSON 內容即可。
+
+![image-20240413220630196](../images/2022/image-20240413220630196.png)
+
+
+
+## 關於修改程式碼的細節
 
 - 接下來會跟大家講，如何修改相關程式碼？
 
@@ -298,8 +308,6 @@ A: 請幫我做以下檢查：
 
 - 傳遞一個圖片訊息，看看有沒有回覆。
 - 如果圖片有回覆，那麼就是你的 Services Account 設定權限跟 Firebase 不同。
-
-
 
 
 
