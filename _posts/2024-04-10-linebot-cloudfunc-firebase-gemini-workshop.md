@@ -104,13 +104,17 @@ Cloud Functions 針對運算時間資源提供永久免費方案，當中包括 
 ## 開始修改 Cloud Function 的程式碼
 
 - **「執行階段」**選擇 Go 1.21
+
 - 確認**「進入點」**是呼叫 `HelloHTTP`
+
 - 將程式碼，貼上以下的程式碼
-- 完整程式碼，記得要修改 "function.go" ，請複製這一段完整程式碼： [https://github.com/kkdai/linebot-cloudfunc-gemini-go/blob/main/function.go]( https://github.com/kkdai/linebot-cloudfunc-gemini-go/blob/main/function.go)
 
-<script src="https://gist.github.com/kkdai/7206ed95d66a762c4c8109e428a38c80.js"></script>
+- 完整程式碼，記得要修改 "function.go" 與 "go.mod"，請複製以下兩個完整的程式碼並且覆蓋原來的：
 
-- 別忘記 "go.mod" 也要跟著修改，請複製這一段完整程式碼
+  - [function.go](https://github.com/kkdai/linebot-cloudfunc-gemini-go/blob/main/function.go) -> [https://github.com/kkdai/linebot-cloudfunc-gemini-go/blob/main/function.go]( https://github.com/kkdai/linebot-cloudfunc-gemini-go/blob/main/function.go)
+
+  - [go.mod](https://github.com/kkdai/linebot-cloudfunc-gemini-go/blob/main/go.mod) -> [https://github.com/kkdai/linebot-cloudfunc-gemini-go/blob/main/go.mod](https://github.com/kkdai/linebot-cloudfunc-gemini-go/blob/main/go.mod)
+
 
 - 按下**「部署」**，然後等待一下。
 - 部署好之後，記得到**「觸發條件」**進去查詢**「觸發網址」** ，記得複製這個網址，等等需要使用。
@@ -137,8 +141,3 @@ Cloud Functions 針對運算時間資源提供永久免費方案，當中包括 
 #  完整原始碼
 
 你可以在這裡找到相關的開源程式碼: [https://github.com/kkdai/linebot-cloudfunc-gemini-go](https://github.com/kkdai/linebot-cloudfunc-gemini-go)
-
-
-
-
-
