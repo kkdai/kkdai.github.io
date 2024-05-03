@@ -95,7 +95,7 @@ tags: ["Golang", "LINEBot", "Firebase", "GoogleCloud", "CloudFunction"]
 
 
 
-# 如何在 Google Cloud Function 導入 Services Account Credential ?
+## 如何在 Google Cloud Function 導入 Services Account Credential ?
 
 接下來會來分享，要如何正確地能夠在 Cloud Function 內使用呢。 如果你想要直接使用 Cloud Function 去開啟 Credential JSON 檔案，你會一直得到無法正確拿到 credential 的錯誤訊息。
 
@@ -108,6 +108,26 @@ tags: ["Golang", "LINEBot", "Firebase", "GoogleCloud", "CloudFunction"]
 ![image-20240413225710980](../images/2022/image-20240413225710980.png)
 
 ## 相關程式碼要如何修改
+
+到了原始碼那邊，記得要更新兩個檔案： ([完整程式碼](https://github.com/kkdai/linebot-cf-firebase))
+
+- function.go -> [function.go](https://github.com/kkdai/linebot-cf-firebase/blob/main/function.go) 
+- go.mod -> [go.mod](https://github.com/kkdai/linebot-cf-firebase/blob/main/go.mod)
+
+重新 Deploy 之後，就可以來看最新的狀況。
+
+
+
+## 成果與使用 ChatSession 差異：
+
+<img src="../images/2022/image-20240413210750427.png" alt="image-20240413210750427" style="zoom:20%;" />
+
+可以直接看到成果相當的好，並且這樣的記憶長度就會看 Gemini Model Token 的限制，算是相當的好用。
+
+那這個又跟 Gemini Chat Session 有什麼差別呢？
+
+- **Chat Session**: 適合使用在 Cloud Run 那種有固定一整台 server 的 LINE Bot 應用。
+- **Firebase Database + Chat Session:** 就可以放在 Cloud Function 這種 Functional As A Services 上面。
 
 
 
@@ -287,17 +307,6 @@ type GeminiChat struct {
 - 把現在講過的，直接丟給 `cs.SendMessage()`
 - 最後要記得把後來使用者輸入的文字，跟 Gemini 回覆的文字都加入 `Memory`。
 
-## 成果與使用 ChatSession 差異：
-
-<img src="../images/2022/image-20240413210750427.png" alt="image-20240413210750427" style="zoom:20%;" />
-
-可以直接看到成果相當的好，並且這樣的記憶長度就會看 Gemini Model Token 的限制，算是相當的好用。
-
-那這個又跟 Gemini Chat Session 有什麼差別呢？
-
-- **Chat Session**: 適合使用在 Cloud Run 那種有固定一整台 server 的 LINE Bot 應用。
-- **Firebase Database + Chat Session:** 就可以放在 Cloud Function 這種 Functional As A Services 上面。
-
 
 
 ## 錯誤處理
@@ -308,6 +317,8 @@ A: 請幫我做以下檢查：
 
 - 傳遞一個圖片訊息，看看有沒有回覆。
 - 如果圖片有回覆，那麼就是你的 Services Account 設定權限跟 Firebase 不同。
+
+
 
 
 
