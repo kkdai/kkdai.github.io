@@ -320,6 +320,17 @@ A: 請幫我做以下檢查：
 
 
 
+**Q: 怎麼本來可以對話？ 但是忽然沒有回覆了？** **查看 Log 卻出現 unknown field "usageMetadata"**
+
+<img src="../images/2022/image-20240503211859408.png" alt="image-20240503211859408" style="zoom:50%;" />
+
+這是因為由於 Google Gemini 伺服器今天早上修改相關變動，但是 Golang 官方套件還無法來得及改動。 
+([https://github.com/google/generative-ai-go/issues/97](https://github.com/google/generative-ai-go/issues/97))
+
+目前這部分程式碼有透過直接換成 [新版本的程式碼](https://github.com/kkdai/linebot-cf-firebase)。
+
+
+
 ## 接下來：
 
 感謝各位的支持，接下來就是要透過 Gemini Vision 去識別並且翻譯收據。還要讓 Gemini 可以快速幫我們找出哪時候買的？ 什麼地方買的？ 當初花了多少錢的「收據小幫手」。
