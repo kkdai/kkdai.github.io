@@ -114,8 +114,8 @@ A: 目前不會造成部署的錯誤，但是會有錯誤訊息發生。
 ![image-20240506122442086](../images/2022/image-20240506122442086.png)
 
 - Refer 
+  - [https://github.com/johnbeynon/render-deploy-action/issues/6](https://github.com/johnbeynon/render-deploy-action/issues/6)
   - [https://github.com/johnbeynon/render-deploy-action/issues/7](https://github.com/johnbeynon/render-deploy-action/issues/7)
-  - https://github.com/johnbeynon/render-deploy-action/issues/6
 
 
 
