@@ -67,8 +67,10 @@ tags: ["Google", "GDE"]
 <img src="../images/2022/image-20240515102730901.png" alt="image-20240515102730901" style="zoom:25%;" />
 
 - **OS 中似乎有個 AI Core**
-  - 包括圖像生成的 LoRA
-  - 負責文字的 Gemini Nano 
+  - Gemini Nano 和 LoRA 在 Android 的 AI Core 中主要是為了提升 Android 設備的本地 AI 能力。這種設定使得設備能夠在不依賴雲端服務的情況下有效地執行 AI 強化的任務，進而提升隱私、減少延遲和降低數據使用。 
+  - Gemini Nano 是 Google 專為本地任務優化的 Gemini AI 模型。它設計用於直接在移動設備處理器上運行，能夠支援多種重要用例，如摘要、提問回答、實體抽取和校對。這使得應用程式能夠在裝置離線的情況下提供高品質的反應，並具有對話意識。 
+  - LoRA（Low-Rank Adaptation）是一種允許在不大幅增加模型尺寸的情況下有效地微調大型語言模型的技術。在 Android 的 AI Core 中，LoRA 可以被用來將 Gemini Nano 模型適應特定任務或領域，使其更加高效和針對個別應用程式的需求。 
+  - 通過在 Android 的 AI Core 中加入 Gemini Nano 和 LoRA，Google 旨在為開發者提供強大的工具，以便構建 AI 強化的功能和應用程式。這將為使用者在各種任務和領域提供更智能、更敏捷、更保護隱私的體驗。
 
 <img src="../images/2022/image-20240515103328968.png" alt="image-20240515103328968" style="zoom:25%;" />
 
