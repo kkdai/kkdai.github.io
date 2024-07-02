@@ -98,9 +98,13 @@ tags: ["Golang", "LINEBot", "Firebase", "GoogleCloud", "CloudFunction"]
 ![image-20240702213018935](../images/2022/image-20240702213018935.png)
 
 - 選擇好 Source Repository (應該是你自己的名字)
-  ![image-20240702213127188](../images/2022/image-20240702213127188.png)
+
+![image-20240702213127188](../images/2022/image-20240702213127188.png)
+
 - 透過 Dockerfile 來啟動
-  ![image-20240702213157101](../images/2022/image-20240702213157101.png)
+
+![image-20240702213157101](../images/2022/image-20240702213157101.png)
+
 - 機器設定可以挑選任何區域，但是 `Authentication` 要挑選 `Allow unauthenticated invocations`
 
 ![Google Chrome 2024-07-02 21.32.25](../images/2022/Google Chrome 2024-07-02 21.32.25.png)
