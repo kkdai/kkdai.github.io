@@ -10,9 +10,57 @@ tags: ["Golang", "LINEBot", "Firebase", "GoogleCloud", "CloudFunction"]
 
 ![image-20240702204105183](../images/2022/image-20240702204105183.png)
 
+<img src="../images/2022/LINE 2024-07-02 23.42.02.tiff" alt="LINE 2024-07-02 23.42.02" style="zoom:25%;" />
+
 # 前言:
 
+本篇文章主要是 iThome Cloud Summit 2024 Lab 的課程內容：
 
+##### 課程目標
+
+這個工作坊適合對 ChatBot 開發、雲端服務或機器學習有興趣的開發者、學生或任何技術愛好者。無論你是想擴展你的技能集，還是對打造智能旅遊助手有獨特的想法，這個工作坊都將為你提供實踐經驗和深入知識。
+
+##### 課程綱要
+
+第一部分：了解基礎
+
+Cloud Function 和 Firebase 簡介：學習這些平台的基本概念以及它們如何協同工作來支持應用程式的後端。
+
+LINE ChatBot 的運作原理：深入了解 LINE ChatBot 的架構和 API，以及如何與用戶進行互動。
+
+第二部分：動手實作
+
+設置 Firebase 環境：實際操作，建立 Firebase 專案並配置所需的服務。
+
+開發 Cloud Function：學習如何編寫和部署 Cloud Function 來處理 ChatBot 的邏輯和資料存取。
+
+整合 Gemini Pro Vision API：探索如何使用 Gemini Pro Vision 的 API 進行影像識別，並將其應用於收據管理。
+
+第三部分：ChatBot 功能開發
+
+旅遊資訊查詢：實現一個功能，讓用戶可以透過 ChatBot 查詢旅遊相關資訊。
+
+收據上傳與識別：開發一個系統，讓用戶能夠上傳收據圖片，並利用 Gemini Pro Vision 的技術自動識別和整理收據資訊。
+
+第四部分：部署與監控
+
+ChatBot 的部署：學習如何將 ChatBot 部署到生產環境中，讓真實用戶開始使用。
+
+監控與維護：介紹如何監控 ChatBot 的運行狀況，並進行必要的維護。
+
+##### 學員自備裝置
+
+1.可連接網路筆電
+
+2.Google Cloud 帳號
+
+3.LINE 帳號
+
+##### 學員基礎能力需求
+
+Python 
+
+Cloud Deployment
 
 
 
