@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "[iThome Cloud Summit Lab][Python] 透過 Cloud Function + Firebase 與 Gemini Pro Vision 打造一個旅遊小幫手 LINE ChatBot"
+title: "[iThome Cloud Summit Lab][Python] 透過 Cloud Function (Cloud Run) + Firebase 與 Gemini Pro Vision 打造一個旅遊小幫手 LINE ChatBot"
 description: ""
 category: 
 - Python 
 - TIL
-tags: ["Golang", "LINEBot", "Firebase", "GoogleCloud", "CloudFunction"]
+tags: ["python", "LINEBot", "Firebase", "GoogleCloud", "CloudFunction"]
 ---
 
 ![image-20240702204105183](../images/2022/image-20240702204105183.png)
@@ -14,7 +14,7 @@ tags: ["Golang", "LINEBot", "Firebase", "GoogleCloud", "CloudFunction"]
 
 # 前言:
 
-本篇文章主要是 iThome Cloud Summit 2024 Lab 的課程內容：
+本篇文章主要是 [iThome Cloud Summit 2024 Lab 的課程內容](https://cloudsummit.ithome.com.tw/2024/lab-page/2980)：
 
 ##### 課程目標
 
@@ -214,15 +214,32 @@ Cloud Deployment
 
 # 需要注意事項：
 
-### 1. 要注意一下 Cloud Function / Cloud Run Instance 開的伺服器夠不夠大
+### 1. 發生 Error "Cloud Build trigger creation failed. Required role roles/iam.service/run.admin, roles/iam.services/iam.serciceAccloutUser"
 
-![image-20240702204435191](../images/2022/image-20240702204435191.png)
+![image-20240703134145163](../images/2022/image-20240703134145163.png)
+
+第一次建立 Google Cloud 專案之後，如果馬上使用 Cloud Run 就會發生這樣的錯誤。 主要是因為預設的 Compute Engine default service account 的權限不足。 修改方式如下：
+
+- 到 [IAM 的設定畫面](https://console.cloud.google.com/iam-admin/iam?referrer=search&hl=en&project=line-vertex)。
+- 修改 Compute Engine default service account 權限
+- 確定增加兩個權限
+  - Cloud Run Admin
+  - Service Account User
+
+參考以下圖片：
+
+<img src="../images/2022/Google Chrome 2024-07-03 13.51.05.png" alt="Google Chrome 2024-07-03 13.51.05" style="zoom:25%;" />
+
+
+
+### 2. 要注意一下 Cloud Function / Cloud Run Instance 開的伺服器夠不夠大
 
 - 如果 Firebase 資料放太多，要小心記憶體可能會不夠。記得 Cloud Function (Cloud Run) 記憶體要開得夠大。
+- 有使用到圖像處理，因為要把圖像整個讀取到記憶體中。也會有相關的考量。
 
 
 
-### 2. 記得定期清理 Artifact Registry 空間 -  透過 Artifact Registry 直接設定 House Keeping 策略
+### 3. 記得定期清理 Artifact Registry 空間 -  透過 Artifact Registry 直接設定 House Keeping 策略
 
 - 到 [Artifact Registry](https://console.cloud.google.com/artifacts/browse/)
 
@@ -243,7 +260,10 @@ Cloud Deployment
 
 #  完整原始碼
 
-你可以在這裡找到相關的開源程式碼: [https://github.com/kkdai/linebot-receipt-gemini](https://github.com/kkdai/linebot-receipt-gemini)
+你可以在這裡找到相關的開源程式碼:
+
+- [https://github.com/kkdai/linebot-receipt-gemini](https://github.com/kkdai/linebot-receipt-gemini)
+- [https://github.com/kkdai/linebot-gemini-python](https://github.com/kkdai/linebot-gemini-python)
 
 
 
