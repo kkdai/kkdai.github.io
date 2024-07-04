@@ -16,6 +16,10 @@ tags: ["python", "LINEBot", "Firebase", "GoogleCloud", "CloudFunction"]
 
 本篇文章主要是 [iThome Cloud Summit 2024 Lab 的課程內容](https://cloudsummit.ithome.com.tw/2024/lab-page/2980)：
 
+這裡可以看一下投影片內容，在緊接著來看 Lab 實作的流程教學：
+
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/a7124e166c3c47ec95a440022e18e956" title="透過 Cloud Function + Firebase 與 Gemini Pro Vision 打造一個旅遊小幫手 LINE ChatBot" allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 315;" data-ratio="1.7777777777777777"></iframe>
+
 ##### 課程目標
 
 這個工作坊適合對 ChatBot 開發、雲端服務或機器學習有興趣的開發者、學生或任何技術愛好者。無論你是想擴展你的技能集，還是對打造智能旅遊助手有獨特的想法，這個工作坊都將為你提供實踐經驗和深入知識。
