@@ -8,15 +8,16 @@ category:
 tags: ["python", "gemma", "GoogleCloud"]
 ---
 
+![image-20240708123810509](../images/2022/image-20240708123810509.png)
 
-# 前言:
+# 懶人包:
+
+懶人包： Gemma2 目前還是屬於偏大的參數（27B) 小模型還在訓練中，可以先看看 Gemma 1.1 。
 
 
 # 相關內容
 
-## 概論
-
-![image-20240708123810509](../images/2022/image-20240708123810509.png)
+### 概論
 
 - [Gemma2 Model Card](https://ai.google.dev/gemma/docs/model_card_2)
 
