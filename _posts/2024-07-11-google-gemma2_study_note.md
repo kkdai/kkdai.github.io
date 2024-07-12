@@ -138,4 +138,4 @@ Check if the image content contains personal information, address, identity numb
 
 ## 未來展望
 
-所謂的「小模型」或者是「Open Model」 不僅僅是在 on-device 的應用才有用。 放眼在 Cloud Services 的概念上，其實也是可以透過 on-devices LLM model 來做相關應用。 未來的相關應用應該會更多，也相信未來
+所謂的「小模型」或者是「Open Model」 不僅僅是在 on-device 的應用才有用。 放眼在 Cloud Services 的概念上，其實也是可以透過 on-devices LLM model 來做相關應用。 也歡迎大家一起來發想，如何透過比較隱密的 on-device model 來做出更多符合法規與讓成本更加優化的的應用。
