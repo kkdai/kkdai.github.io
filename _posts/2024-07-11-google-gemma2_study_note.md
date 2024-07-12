@@ -93,21 +93,49 @@ Check if the image content contains personal information, address, identity numb
 
 
 
-### 實地測試
+### 實地測試 - Gemma2 / PaliGemma
 
 #### 文字測試 Gemma2-9B
 
-![image-20240712112210113](../images/2022/image-20240712112210113.png)
+![iTerm2 2024-07-12 11.49.58](../images/2022/iTerm2 2024-07-12 11.49.58.png)
 
 改成 「某人」跟 「配偶」，並且可以有效地去除身份字號跟銀行帳號。 
 
+
+
 #### 圖片測試 PaliGemma
 
-![image-20240712111016920](../images/2022/image-20240712111016920.png)
+![Google Chrome 2024-07-12 11.10.02](../images/2022/Google Chrome 2024-07-12 11.10.02.png)
+
 
 ![image-20240712111911951](../images/2022/image-20240712111911951.png)
 
 
-
 ## 判定是否需要 「大型」LLM 的介入
 
+將聊天機器人放入群組之中，最害怕的就是怕「 Token」爆掉。因為每一句話都需要判斷是否需要 LLM 的介入。這時候就可以透過 Gemma 可以有效的處理。
+
+### 以前做法
+
+有看過一些人做法是： `設定前綴字 "@" "!" 才會呼叫 LLM`
+
+這些做法沒有錯誤，只是這樣往往讓聊天室裡面的文字不好理解。
+
+### 如何用 Gemma (on-device LLM) 處理
+可以透過簡單的判斷 Prompt 讓
+
+```
+查看以下文字是否需要客服人員的協助。回答 yes/no
+------
+我今天早上吃了蛋餅
+```
+
+### 實體測試 Gemma
+
+![image-20240712122131249](../images/2022/image-20240712122131249.png)
+
+
+
+## 未來展望
+
+所謂的「小模型」或者是「Open Model」 不僅僅是在 on-device 的應用才有用。 放眼在 Cloud Services 的概念上，其實也是可以透過 on-devices LLM model 來做相關應用。 未來的相關應用應該會更多，也相信未來
