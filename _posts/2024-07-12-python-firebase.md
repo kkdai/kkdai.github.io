@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Google Cloud/Firebase] 關於 Python Firebasee Admin 認證方式 "
+title: "[Google Cloud/Firebase] 關於 Python Firebase Admin 認證方式 "
 description: ""
 category: 
 - Python 
