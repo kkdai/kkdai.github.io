@@ -33,6 +33,22 @@ Google 跟 Udacity 合作開的這一個課程，蠻建議大家可以看一下�
 
 ## 幾個重點整理：
 
+### 如何算產出 token
+
+```
+token_n_model = genai.GenerativeModel(model_name, generation_config={"temperature": 0.0})
+poem_prompt = "Write me a poem about Berkeley's campus"
+
+prompt_token_count = token_n_model.count_tokens(poem_prompt)
+output_token_count = token_n_model.count_tokens(response.text)
+print(f'Tokens in prompt: {prompt_token_count} \n Estimated tokens in output {output_token_count}')
+```
+
+透過 
+
+- prompt_token_count: 輸入的 token 數字。
+- output_token_count: 產出的 token 數字。
+
 ### Safty Setting
 
 由於 Gemini 有著嚴格的管控，許多時候一些資料會被以安全因素而拒絕回覆。這時候你需要做一些處理：
@@ -94,3 +110,27 @@ response = model.generate_content(
 ```
 
 這樣即便要產生一些具有髒話或是攻擊性文字也是被允許的。
+
+
+
+### 透過 code execution 可以讓幻覺更少
+
+可以讓 Gemini 幫你產生 Python code 並且實際執行它 ([範例](https://ai.google.dev/gemini-api/docs/code-execution?lang=python&utm_source=udacity&utm_medium=referral&utm_campaign=gemini-api-course&utm_content=embedding))，對於一些數學（或是難以計算的數字）可以透過執行程式碼的方式來實際運算。
+
+```
+import os
+import google.generativeai as genai
+
+genai.configure(api_key=os.environ['API_KEY'])
+
+model = genai.GenerativeModel(
+    model_name='gemini-1.5-pro',
+    tools='code_execution')
+
+response = model.generate_content((
+    'What is the sum of the first 50 prime numbers? '
+    'Generate and run code for the calculation, and make sure you get all 50.'))
+
+print(response.text)
+```
+
