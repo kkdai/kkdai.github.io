@@ -53,7 +53,7 @@ print(f'Tokens in prompt: {prompt_token_count} \n Estimated tokens in output {ou
 - prompt_token_count: 輸入的 token 數字。
 - output_token_count: 產出的 token 數字。
 
-### Safty Setting
+### Safety Setting
 
 由於 Gemini 有著嚴格的管控，許多時候一些資料會被以安全因素而拒絕回覆。這時候你需要做一些處理：
 
