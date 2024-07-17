@@ -14,6 +14,10 @@ tags: ["python", "gemma", "GoogleCloud"]
 
 (課程連結： https://www.udacity.com/enrollment/cd13416)
 
+
+
+![image-20240717155058420](../images/2022/image-20240717155058420.png)
+
 ## 前言
 
 Google 跟 Udacity 合作開的這一個課程，蠻建議大家可以看一下。除了是免費之外，更加許多文件裡面沒有提供的詳細資訊跟用法講得很清楚。 想要更了解每一個 API 該如何使用，可以考慮看看。
@@ -115,7 +119,7 @@ response = model.generate_content(
 
 ### 透過 code execution 可以讓幻覺更少
 
-可以讓 Gemini 幫你產生 Python code 並且實際執行它 ([範例](https://ai.google.dev/gemini-api/docs/code-execution?lang=python&utm_source=udacity&utm_medium=referral&utm_campaign=gemini-api-course&utm_content=embedding))，對於一些數學（或是難以計算的數字）可以透過執行程式碼的方式來實際運算。
+可以讓 Gemini 幫你產生 Python code 並且實際執行它 ([範例](https://ai.google.dev/gemini-api/docs/code-execution?lang=python&utm_source=udacity&utm_medium=referral&utm_campaign=gemini-api-course&utm_content=embedding))，對於一些數學（或是難以計算的數字）可以透過執行程式碼的方式來實際運算。 主要原因，因為如果你直接問 Gemini 可能因為幻覺造成計算出錯誤的數學結果，這時候務必要使用 code execution 來計算。
 
 ```
 import os
@@ -133,4 +137,43 @@ response = model.generate_content((
 
 print(response.text)
 ```
+
+
+
+## 透過 response_mime_type 強制回覆 JSON
+
+雖然使用 prompting 可以要求 Gemini 回覆 JSON，但是為了確保回覆的資料格式，可以使用 `response_mime_type` 來強至指定回覆格式。
+
+- 此功能限制在 Gemini 1.5 [參考官方文件](https://ai.google.dev/gemini-api/docs/api-overview#json)
+
+```
+model = genai.GenerativeModel('gemini-1.5-flash',
+                              generation_config={"response_mime_type": "application/json"})
+
+prompt = """
+  List 5 popular cookie recipes.
+
+  Using this JSON schema:
+
+    Recipe = {"recipe_name": str}
+
+  Return a `list[Recipe]`
+  """
+
+response = model.generate_content(prompt)
+print(response.text)
+```
+
+`response_schema`更可以限制回傳的資料格式，可以是 list or map 。
+
+```
+result = model.generate_content(
+  "List 5 popular cookie recipes",
+  generation_config=genai.GenerationConfig(response_mime_type="application/json",
+                                           response_schema = list[Recipe]))
+
+print(result.text)
+```
+
+
 
