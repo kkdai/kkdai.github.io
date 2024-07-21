@@ -4,8 +4,8 @@ title: "[Udacity] Gemini API by Google 課程分享"
 description: ""
 category: 
 - Python 
-- TIL
-tags: ["python", "gemma", "GoogleCloud"]
+- Coursera
+tags: ["python", "Udacity", "GoogleCloud"]
 ---
 
 
