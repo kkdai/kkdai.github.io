@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Gemma] 用 Gemma 本地端 model 打造 LINE Bot"
+title: "[Gemma] 用 Gemma/Gemma2 這類 Local Model 打造更安全與具有隱私概念的 LINE ChatBot"
 description: ""
 category: 
 - Python 
@@ -59,3 +59,57 @@ Replicate AI 是一間可以在雲端去測試這些本地端 Model 的網路服
 
 
 
+## 如何透過 Replicate AI 來執行 Gemma 或是 Gemma2
+
+這邊可以直接去尋找 Replicate AI 上面的資料，可以找到以下相關資料：
+
+- [google-deepmind/gemma-7b-it](https://replicate.com/google-deepmind/gemma-7b-it)
+- [lucataco/gemma2-9b-it](https://replicate.com/lucataco/gemma2-9b-it)
+
+### 相關設定也相當簡單（以 Python 為範例)：
+
+1. 設定環境變數 `REPLICATE_API_TOKEN` 
+
+```shell
+export REPLICATE_API_TOKEN=r8_d8o**********************************
+```
+
+
+
+2. 安裝套件
+
+```shell
+pip install replicate
+```
+
+
+
+3. 直接執行以下的程式碼
+
+```python
+import replicate
+
+output = replicate.run(
+    "lucataco/gemma2-9b-it:24464993111a1b52b2ebcb2a88c76090a705950644dca3a3955ee40d80909f2d",
+    input={
+        "top_k": 50,
+        "top_p": 0.9,
+        "prompt": "Write me a poem about Machine Learning.",
+        "temperature": 0.6,
+        "max_new_tokens": 512,
+        "repetition_penalty": 1.2
+    }
+)
+
+# The lucataco/gemma2-9b-it model can stream output as it's running.
+# The predict method returns an iterator, and you can iterate over that output.
+for item in output:
+    # https://replicate.com/lucataco/gemma2-9b-it/api#output-schema
+    print(item, end="")
+```
+
+
+
+## 如何跟 LINE Chatbot 可以有完美的結合？
+
+Gemma 與 LLAMA 這種本地端模型有哪些優勢？
