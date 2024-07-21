@@ -74,8 +74,6 @@ Replicate AI 是一間可以在雲端去測試這些本地端 Model 的網路服
 export REPLICATE_API_TOKEN=r8_d8o**********************************
 ```
 
-
-
 2. 安裝套件
 
 ```shell
@@ -113,3 +111,10 @@ for item in output:
 ## 如何跟 LINE Chatbot 可以有完美的結合？
 
 Gemma 與 LLAMA 這種本地端模型有哪些優勢？
+
+### 個人隱私的去除
+
+雖然說， OpenAI， Azure  甚至是 GCP 都有明令說 API Level 的資料是不可以拿來訓練的。但是根據許多個人資料保護法來說，最重要的就是**不能隨便地將客戶的個人資料直接交給第三方的服務**。 通常這一類型的服務被稱為 Personal Identifiable Information  (PII) Redactor (PIID)。當然市面上有許多根據 REGEX 打造出來的 Redactor ，但是使用 LLM 可以很有效地去除。也能避免掉許多各種逃逸字元造成 REGEX 失敗的案例。
+
+這時候就可以透過這一類的 local model 來將個人資料做拔除， 以下做一些簡單的 Code  Sample
+
