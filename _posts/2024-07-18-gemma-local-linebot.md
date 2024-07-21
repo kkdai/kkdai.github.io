@@ -112,9 +112,25 @@ for item in output:
 
 Gemma 與 LLAMA 這種本地端模型有哪些優勢？
 
+<img src="../images/2022/OIG4.jpeg" alt="卡通風格, 個人資料的保護者， " style="zoom:33%;" />
+
 ### 個人隱私的去除
 
 雖然說， OpenAI， Azure  甚至是 GCP 都有明令說 API Level 的資料是不可以拿來訓練的。但是根據許多個人資料保護法來說，最重要的就是**不能隨便地將客戶的個人資料直接交給第三方的服務**。 通常這一類型的服務被稱為 Personal Identifiable Information  (PII) Redactor (PIID)。當然市面上有許多根據 REGEX 打造出來的 Redactor ，但是使用 LLM 可以很有效地去除。也能避免掉許多各種逃逸字元造成 REGEX 失敗的案例。
 
 這時候就可以透過這一類的 local model 來將個人資料做拔除， 以下做一些簡單的 Code  Sample
+
+```
+remove_personal_prompt = '''
+Replace personal information, name with someone, address, ID number, bank account, etc. 
+Just give me the modified original text, don't reply to me.
+------\n
+'''
+```
+
+這一段是移除個人資料的 prompt ，透過 LLM 可以很輕鬆的移除掉個人資料。 但是以往這件事情，如果是透過 Gemini 或是 OpenAI 的 API 來實作的話。那麼相關的資料流程會需要經過相關單位的資料審核，但是如果這個模型是透過本地端模型，就沒有這樣的困擾。
+
+
+
+### 判別是否需要 LLM 的協助
 
