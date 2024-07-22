@@ -130,7 +130,31 @@ Just give me the modified original text, don't reply to me.
 
 這一段是移除個人資料的 prompt ，透過 LLM 可以很輕鬆的移除掉個人資料。 但是以往這件事情，如果是透過 Gemini 或是 OpenAI 的 API 來實作的話。那麼相關的資料流程會需要經過相關單位的資料審核，但是如果這個模型是透過本地端模型，就沒有這樣的困擾。
 
+```
+    # Provide a default value for reply_msg
+    msg = event.message.text
+    # using local llm to remove personal information.
+    safe_ret = generate_local_llm_result_from_replicate(f'{remove_personal_prompt}, {msg}')
+    # pass the result to gemini to generate a complete sentence.
+    ret = generate_gemini_text_complete(f'{safe_ret}, reply in zh-TW:')
+    reply_msg = TextSendMessage(text=ret.text)
+    await line_bot_api.reply_message(
+        event.reply_token,
+        reply_msg
+    )
+```
+
+ 
+
+#### 測試結果範例：
+
+![iTerm2 2024-07-12 11.49.58](../images/2022/iTerm2 2024-07-12 11.49.58-1568570.png)
+
 
 
 ### 判別是否需要 LLM 的協助
+
+<img src="../images/2022/OIG4-20240721213024064.jpeg" alt="卡通風格, 一個機器人總機人員" style="zoom:33%;" />
+
+
 
