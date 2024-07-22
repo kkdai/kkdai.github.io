@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Gemma] 用 Gemma/Gemma2 這類 Local Model 打造更安全與具有隱私概念的 LINE ChatBot"
+title: "[Gemma] 用 GEMMA/LLAMA 這類 Local Model 打造更安全與具有隱私概念的 LINE ChatBot"
 description: ""
 category: 
 - Python 
@@ -131,11 +131,12 @@ Just give me the modified original text, don't reply to me.
 這一段是移除個人資料的 prompt ，透過 LLM 可以很輕鬆的移除掉個人資料。 但是以往這件事情，如果是透過 Gemini 或是 OpenAI 的 API 來實作的話。那麼相關的資料流程會需要經過相關單位的資料審核，但是如果這個模型是透過本地端模型，就沒有這樣的困擾。
 
 ```
-    # Provide a default value for reply_msg
     msg = event.message.text
-    # using local llm to remove personal information.
-    safe_ret = generate_local_llm_result_from_replicate(f'{remove_personal_prompt}, {msg}')
-    # pass the result to gemini to generate a complete sentence.
+    
+    # 透過本地端 LLM 來處理可能含有個人隱私的資訊。
+    safe_ret = generate_local_llm_result(f'{remove_personal_prompt}, {msg}')
+    
+    # 比較安全的內容在傳遞到遠端的 LLM 來生成內容
     ret = generate_gemini_text_complete(f'{safe_ret}, reply in zh-TW:')
     reply_msg = TextSendMessage(text=ret.text)
     await line_bot_api.reply_message(
@@ -144,9 +145,9 @@ Just give me the modified original text, don't reply to me.
     )
 ```
 
- 
+ 這時候使用者雖然在不經意的狀況下，輸入資料到聊天視窗。但是因為透過了 `generate_local_llm_result()` ，會將裡面有個人資料的文字在本地端的模型(Gemma or LLAMA) 去除後，就可以將需求傳到外部的大型語言模型去進行接下來的相關處理。
 
-#### 測試結果範例：
+#### 測試結果範例(示意圖)：
 
 ![iTerm2 2024-07-12 11.49.58](../images/2022/iTerm2 2024-07-12 11.49.58-1568570.png)
 
@@ -156,5 +157,65 @@ Just give me the modified original text, don't reply to me.
 
 <img src="../images/2022/OIG4-20240721213024064.jpeg" alt="卡通風格, 一個機器人總機人員" style="zoom:33%;" />
 
+聊天機器人搭配著 LLM 是一個強大的應用。但是如果每一句每一個訊息都傳遞到 LLM 那麼也太沒有效率了， 許多聊天機器人的開發人員都會了這個方法苦惱中。以往的方式可能用一些特殊的 prefix 來處理，但是這樣的處理方式相當的不友善也讓人好像回到 LLM 時代之前。
+
+<img src="../images/2022/image-20240722205407728.png" alt="image-20240722205407728" style="zoom: 33%;" />
+
+就像是客服也不需要參與所有的對話，有些時候一些聊天的對話其實也不需要傳遞給 LLM 。這時候可以透過本地端的模型來幫助你。由於本地端的模型，可以透過比較小的模型，來讓成本整個降低。（並且小成本可以做出簡單的判斷）。
+
+```
+need_bot_prompt = '''
+Check the following text to see if it requires customer service assistance. 
+Just answer YES/NO
+------\n
+'''
+```
+
+以上是讓本地端的小模型，讓他來幫你判斷的 prompt。主要是判斷是否需要客服的協助（如果你打造的是客服聊天機器人）。這時候即便是小模型，也可以很快速的回覆 YES / NO 。 以下提供整段的判斷程式碼。
+
+```
+# 處理在群組內的訊息，有時候可能訊息不是對 LINE Bot。
+if event.source.type == "group":
+    msg = event.message.text
+    
+    # 使用本地端模型來判斷是否需要 LLM 
+    determine_ret = generate_local_llm_result(f'{need_bot_prompt}, {msg}')
+
+    # 檢查判斷的結果，如果是 YES 就直接將原文送到 LLM 。
+    if "YES" in determine_ret:
+        # Pass to LLM to process original request.
+        ret = generate_gemini_text_complete(f'{msg}, reply in zh-TW:')
+        reply_msg = TextSendMessage(text=ret.text)
+        await line_bot_api.reply_message(
+            event.reply_token,
+            reply_msg
+        )
+    else:
+        # 如果不需要，就 skip 這段訊息。
+        continue
+
+```
 
 
+
+# 未來展望
+
+![Image](../images/2022/AD_4nXdm1yQEGqJOKLbzBDtbpKf9DxKGFweuXueR8Din4Z1dKCy1nB2RZgD1OnrxROhyEQlogzt4fLUijzaLvIqkpRwZsNxK9h-tDI9LhoAeKrZDG2fo5j8ThIVw-DQ-XJ234XQIMpDH9k2G0REM6Mdqjsb-dsE.png)
+
+近期 (07/11) Uber 分享了他們的 [GenAI Gateway 的創新 (Navigating the LLM Landscape: Uber’s Innovation with GenAI Gateway)](https://www.uber.com/en-TW/blog/genai-gateway/)（尤其是針對 LLM 的部分），裡面有提到通常來說訊息可能從許多地方進來
+
+- ChatBot 
+- 3rd Party Library 
+- Internal Services
+
+但是這一類的訊息與請求在經過 GenAI Gateway 蛇後，會請過許多的處理。
+
+- PII Redaction (去除掉個人資訊)
+- 相關的資訊認證
+- 訊息與流量控管
+
+最後才會分配到不同的 LLM 來處理相關的資訊。 
+
+
+
+在 LINE Bot 的開發上也是如此，雖然他的需求與功能會是單一且明確的。但是如果可以讓
