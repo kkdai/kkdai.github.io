@@ -108,7 +108,45 @@ for item in output:
 
 
 
-## 如何跟 LINE Chatbot 可以有完美的結合？
+## 透過 LPU API Services - Groq 來使用 Gemma2
+
+![image-20240725011545782](../images/2022/image-20240725011545782.png)
+
+不得不說 [Groq](https://groq.com/) 真的很快，而且目前也都還有免費額度可以使用 API 來呼叫。這邊也放上最簡的程式碼來呼叫 `Gemma2-9B` 
+
+``` python
+# Default
+import os
+
+from groq import Groq
+
+client = Groq(
+    # This is the default and can be omitted
+    api_key=os.environ.get("GROQ_API_KEY"),
+)
+
+chat_completion = client.chat.completions.create(
+    messages=[
+        {
+            "role": "system",
+            "content": "you are a helpful assistant."
+        },
+        {
+            "role": "user",
+            "content": "Explain the importance of fast language models",
+        }
+    ],
+    model="gemma2-9b-it",
+)
+
+print(chat_completion.choices[0].message.content)
+```
+
+
+
+
+
+# 如何跟 LINE Chatbot 可以有完美的結合？
 
 Gemma 與 LLAMA 這種本地端模型有哪些優勢？
 
