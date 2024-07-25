@@ -18,6 +18,12 @@ tags: ["python", "gemma", "GoogleCloud"]
 
 
 
+## 相關程式碼
+
+關於 LINE Bot 相關程式碼，可以參考這一段。這邊使用 Groq 的 API 服務
+
+[https://github.com/kkdai/linebot-gemma](https://github.com/kkdai/linebot-gemma)
+
 ## Gemma/LLAMA 這一類的模型該如何部署
 
 不論是 Gemma 還是 LLAMA 這一類可以部署在本地電腦（或是自己的雲端伺服器裡面的），在本文中都先暫且稱為 Local Model 。 他的基本 Prediction 的精準度，在於你提供的本地機器的算力。
@@ -47,64 +53,7 @@ Ollama 是一個跨平台很好使用 LLM 的本地端工具，可以在本地�
 | Machine type: ct5lp-hightpu-4t Accelerator <br />type: TPU_V5_LITEPOD <br />Accelerator count: 4 | - Machine type: g2-standard-16<br/>- Accelerator type: NVIDIA_L4<br/>- Accelerator count: 1 |
 
 
-不過要注意這些單位需要申請，因為筆者還沒有申請下來本文將使用 Replicate 來示範。 （2024/07/19)
-
-
-
-### 透過第三方模型託管服務 Replicate 
-
-<img src="../images/2022/Google Chrome 2024-07-21 17.52.04.png" alt="Google Chrome 2024-07-21 17.52.04" style="zoom:25%;" />
-
-Replicate AI 是一間可以在雲端去測試這些本地端 Model 的網路服務提供商，可以在雲端上透過 UI 快速去了解並且測試。也可以 fint-tune 與部署自己本地端的模型在他們的服務上面。 本文的範例將這過他們的服務來架設。
-
-
-
-## 如何透過 Replicate AI 來執行 Gemma 或是 Gemma2
-
-這邊可以直接去尋找 Replicate AI 上面的資料，可以找到以下相關資料：
-
-- [google-deepmind/gemma-7b-it](https://replicate.com/google-deepmind/gemma-7b-it)
-- [lucataco/gemma2-9b-it](https://replicate.com/lucataco/gemma2-9b-it)
-
-### 相關設定也相當簡單（以 Python 為範例)：
-
-1. 設定環境變數 `REPLICATE_API_TOKEN` 
-
-```shell
-export REPLICATE_API_TOKEN=r8_d8o**********************************
-```
-
-2. 安裝套件
-
-```shell
-pip install replicate
-```
-
-
-
-3. 直接執行以下的程式碼
-
-```python
-import replicate
-
-output = replicate.run(
-    "lucataco/gemma2-9b-it:24464993111a1b52b2ebcb2a88c76090a705950644dca3a3955ee40d80909f2d",
-    input={
-        "top_k": 50,
-        "top_p": 0.9,
-        "prompt": "Write me a poem about Machine Learning.",
-        "temperature": 0.6,
-        "max_new_tokens": 512,
-        "repetition_penalty": 1.2
-    }
-)
-
-# The lucataco/gemma2-9b-it model can stream output as it's running.
-# The predict method returns an iterator, and you can iterate over that output.
-for item in output:
-    # https://replicate.com/lucataco/gemma2-9b-it/api#output-schema
-    print(item, end="")
-```
+不過要注意這些單位需要申請，因為筆者還沒有申請下來本文將使用 Groq 來示範。 （2024/07/19)
 
 
 
@@ -187,7 +136,9 @@ Just give me the modified original text, don't reply to me.
 
 #### 測試結果範例(示意圖)：
 
-![iTerm2 2024-07-12 11.49.58](../images/2022/iTerm2 2024-07-12 11.49.58-1568570.png)
+<img src="../images/2022/image-20240725100415967.png" alt="image-20240725100415967" style="zoom:50%;" />
+
+根據這個範例，你可以看到使用者可能在無意間將自己的個人資訊（包括了信用卡帳號，銀行帳號）加入他詢問的問題中。這時候如果直接將使用者文字傳遞給第三方的 LLM ，在許多國家的資安控管上都是不合規訂的。 這時候要透過 local LLM 將原本資料去修改，將個人資料修改或是遮蓋後才能傳遞給第三方 LLM 。
 
 
 
@@ -233,6 +184,14 @@ if event.source.type == "group":
         continue
 
 ```
+
+### 判斷是否需要 LLM 協助的範例
+
+
+
+<img src="../images/2022/image-20240725100451360.png" alt="image-20240725100451360" style="zoom:50%;" />
+
+根據這個範例，你可以看得出來。 除非你有特定想要詢問客服中心，不然都不會將訊息傳遞給 LLM 。這樣除了可以更節省經費之外，還可以不需要任何特殊字元來判斷是否需要 LLM 的幫助。 
 
 
 
