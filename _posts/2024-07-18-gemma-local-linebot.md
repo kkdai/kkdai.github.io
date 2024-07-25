@@ -12,9 +12,9 @@ tags: ["python", "gemma", "GoogleCloud"]
 
 ## 前言
 
-[Google Gemma2/PaliGemma\] Gemma2/PaliGemma 學習筆記，可以應用範圍](http://www.evanlin.com/google-gemma2_study_note/) 這篇文章中我們有稍微介紹過如何在 LINE Bot 中如何使用 Gemma 這種稱為可以建置在本地端的 Local Model 。
+LLM 的盛行之後，我們可以看到許多開發者將 LLM 整入到自己的聊天機器人 (LINE ChatBot) 之中。但是隨著而來也有不同的考量開始出現。讓許多開發者感到困擾，該如何更有經濟效益，並且更安全合法規的方式來使用 LINE Chatbot。
 
-本篇文章將更仔細的解釋相關用法，並且提供一些範例程式碼作為 LINE Bot 的範例。
+自從 LLAMA 等開源模型發展後，我們可以看到市面上有許多相關的開源模型。 LLAMA, Gemma, Phi3 等等，甚至有許多模型是可以在自己本地端的電腦中使用的。本篇文章將介紹這一類型的 Local Model 究竟能如何跟 LINE Bot 去整合，，並且提供一些範例程式碼作為 LINE Bot 的範例。
 
 
 
@@ -140,6 +140,8 @@ Just give me the modified original text, don't reply to me.
 
 根據這個範例，你可以看到使用者可能在無意間將自己的個人資訊（包括了信用卡帳號，銀行帳號）加入他詢問的問題中。這時候如果直接將使用者文字傳遞給第三方的 LLM ，在許多國家的資安控管上都是不合規訂的。 這時候要透過 local LLM 將原本資料去修改，將個人資料修改或是遮蓋後才能傳遞給第三方 LLM 。
 
+相關程式碼： https://github.com/kkdai/linebot-gemma
+
 
 
 ### 判別是否需要 LLM 的協助
@@ -192,6 +194,8 @@ if event.source.type == "group":
 <img src="../images/2022/image-20240725100451360.png" alt="image-20240725100451360" style="zoom:50%;" />
 
 根據這個範例，你可以看得出來。 除非你有特定想要詢問客服中心，不然都不會將訊息傳遞給 LLM 。這樣除了可以更節省經費之外，還可以不需要任何特殊字元來判斷是否需要 LLM 的幫助。 
+
+相關程式碼： https://github.com/kkdai/linebot-gemma
 
 
 
