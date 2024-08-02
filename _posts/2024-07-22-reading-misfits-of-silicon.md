@@ -45,6 +45,14 @@ tags: ["書海裡的漫遊", "Books"]
 
 #### 
 
+### 投影片
+
+![image-20240802144706975](../images/2022/image-20240802144706975.png)
+
+
+
+[https://gamma.app/docs/jqvjlzehglge9p0?following_id=jehro1dlnujeazj&follow_on_start=true](https://gamma.app/docs/jqvjlzehglge9p0?following_id=jehro1dlnujeazj&follow_on_start=true)
+
 # 心得:
 
 這本書相當有趣的敘述了矽谷生活的許多大小事情，裡面提到的關於印度人的讓我印象很深刻。
