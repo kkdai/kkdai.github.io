@@ -1,0 +1,192 @@
+---
+layout: post
+title: "[Gemini/Firebase] 土炮打造- 透過 Firebase 作為 Embedding Vector DB 透過 Gemini 來幫你的 Github Page Blog 做 RAG 服務"
+description: ""
+category: 
+- Python 
+- TIL
+tags: ["python", "firebase", "GoogleCloud"]
+---
+
+![Improve RAG accuracy with fine-tuned embedding models on Amazon SageMaker |  AWS Machine Learning Blog](../images/2022/ML-16788_image001.png)
+
+## 前提
+
+我是一個很喜歡寫作的人，經常學習到東西都會記錄在這一個網站裡面。陸陸續續從 2002 年也寫了 20 多年的部落格。但是經常自己也是會忘記我曾經寫過什麼樣的內容。 
+
+之前我也曾經說明會，經常會將我會的東西整理成部落格，主要不是為了幫助其他人，最重要是可以幫助到未來的自己。總有一天你會遇到類似的問題，而你的文章的思緒跟脈絡就跟你想的一樣。只要透過類似的關鍵字，馬上就可以找到你的回憶。
+
+伴隨著 LLM 生成式 AI 的爆發性成長，其實再也不需要透過 Google Search 來搜尋自己寫過的內容。 其實你可以透過 RAG 的方式來直接去詢問一個聊天機器人來達到類似的工作。
+
+相關的內容其實有很多，透過 LangChain 要來做一個 RAG 的功能更是相當的簡潔。 但是本篇文章將反樸歸真，透過 Python 與 Firebase DB 直接告訴你如何打造 Embedding DB ，做成一個可以簡易的查詢功能的 RAG 。
+
+
+
+### 完整相關程式碼：
+
+[https://github.com/kkdai/jekyll-rag-firebase](https://github.com/kkdai/jekyll-rag-firebase)
+
+
+
+## 透過 Firebase Realtime DB 來當成 Vector DB
+
+程式碼： [https://github.com/kkdai/jekyll-rag-firebase/blob/main/embedding.py](https://github.com/kkdai/jekyll-rag-firebase/blob/main/embedding.py)
+
+![image-20240823122740989](../images/2022/image-20240823122740989.png)
+
+之前就一直在思考，究竟有沒有方式可以透過 Firebase 來做 Vector DB。其實是可以的，方式如下：
+
+```python
+def generate_embedding(text):
+    result = genai.embed_content(
+        model="models/text-embedding-004",
+        content=text,
+        task_type="retrieval_document",
+        title="Embedding of single string"
+    )
+    embedding = result['embedding']
+    return embedding
+```
+
+這是一個透過 tex-embedding-004 的 gemini model ，可以幫助你直接將一串文字直接產生 Embedding 的 Vector Value 。
+
+如果要將資料儲存在 Firebase 的資料庫內，其實也沒有那麼複雜。以下程式碼可以很快速了解。
+
+```python
+def store_embedding(embedding_data):
+    ref = db.reference('embeddings')
+    ref.child(embedding_data['id']).set(embedding_data)
+    print(f"Embedding data for {embedding_data['id']} stored successfully.")
+```
+
+完整範例大概如下：
+
+```
+# 範例文字
+text_1 = "What is the meaning of life?"
+text_2 = "How to learn Python programming?"
+text_3 = "The quick brown fox jumps over the lazy dog."
+
+# Embedding Vector Value
+embedding_vector_1 = generate_embedding(text_1)
+embedding_vector_2 = generate_embedding(text_2)
+embedding_vector_3 = generate_embedding(text_3)
+
+# 產生 DB data
+embedding_data_1 = {
+    'id': 'embedding_1',
+    'vector': embedding_vector_1
+}
+
+embedding_data_2 = {
+    'id': 'embedding_2',
+    'vector': embedding_vector_2
+}
+
+embedding_data_3 = {
+    'id': 'embedding_3',
+    'vector': embedding_vector_3
+}
+
+# 儲存資料
+store_embedding(embedding_data_1)
+store_embedding(embedding_data_2)
+store_embedding(embedding_data_3)
+```
+
+
+
+## 如何解析 Github Page 的 Blog 資料？ (以 Jekyll 打造的 Blog 為例子)
+
+範例部落格資料： [https://github.com/kkdai/kkdai.github.io](https://github.com/kkdai/kkdai.github.io)
+
+程式碼： 
+
+![image-20240823124515723](../images/2022/image-20240823124515723.png)
+
+裡面會看到，公開的文章會放在 `_posts` 資料夾下面。 雖然裡面是 Markdown 的內容，但是這樣的內容往往更適合給 LLM 作為總結與 Embedding 使用。 接下來來看一下程式碼。
+
+### 取得 Github Token 
+
+請參考[這篇文章](https://www.evanlin.com/go-github-issue/)，有完整教學該如何取的 Github Token 作為 Github 操作之用。
+
+
+
+### 讀取 Github 上面的檔案資料
+
+```python
+def git_article(github_token, repo_owner, repo_name, directory_path):
+    g = Github(github_token)
+    repo = g.get_repo(f"{repo_owner}/{repo_name}")
+    contents = repo.get_contents(directory_path)
+    
+    files_data = []
+    
+    while contents:
+        file_content = contents.pop(0)
+        if file_content.type == "dir":
+            contents.extend(repo.get_contents(file_content.path))
+        else:
+            files_data.append({
+                'file_name': file_content.name,
+                'content': file_content.decoded_content.decode('utf-8')
+            })
+            print(f"Downloaded {file_content.name}")
+    
+    result = {
+        'files': files_data,
+        'total_count': len(files_data)
+    }
+    return result
+```
+
+這段程式碼，可以指定給他 `token` 與 `repo_owner`, `repo_name` 與 `directory_path` 之後。他會將裡面的檔案一個個存取出來。
+
+
+
+## 整個打包 - 讀取 Github Page 然後製作 Embedding Vector 在 Firebase 上
+
+程式碼：  [https://github.com/kkdai/jekyll-rag-firebase/blob/main/blog_embedding.py](https://github.com/kkdai/jekyll-rag-firebase/blob/main/blog_embedding.py)
+
+```python
+def git_article(github_token, repo_owner, repo_name, directory_path):
+    g = Github(github_token)
+    repo = g.get_repo(f"{repo_owner}/{repo_name}")
+    contents = repo.get_contents(directory_path)
+    
+    files_data = []
+
+    while contents:
+        file_content = contents.pop(0)
+        if file_content.type == "dir":
+            contents.extend(repo.get_contents(file_content.path))
+        else:
+            file_id = file_content.name.split('.')[0]
+            if check_if_exists(file_id):
+                print(f"File {file_id} already exists in the database. Skipping.")
+                continue
+            
+            file_content_decoded = file_content.decoded_content.decode('utf-8')
+            cleaned_content = remove_html_tags(file_content_decoded)
+            embedding = generate_embedding(cleaned_content)
+            
+            embedding_data = {
+                'id': file_id,
+                'vector': embedding.tolist(),  # 将 numpy 数组转换为列表
+                'content': cleaned_content
+            }
+            store_embedding(embedding_data)
+            
+            files_data.append({
+                'file_name': file_id,
+                'content': cleaned_content
+            })
+            print(f"Downloaded and processed {file_id}")
+    
+    result = {
+        'files': files_data,
+        'total_count': len(files_data)
+    }
+    return result
+```
+
