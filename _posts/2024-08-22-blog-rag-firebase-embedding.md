@@ -148,6 +148,14 @@ def git_article(github_token, repo_owner, repo_name, directory_path):
 
 程式碼：  [https://github.com/kkdai/jekyll-rag-firebase/blob/main/blog_embedding.py](https://github.com/kkdai/jekyll-rag-firebase/blob/main/blog_embedding.py)
 
+直接單獨執行這個程式碼即可。但是整個資料夾時間會比較久，也會花費相當程度的費用。
+
+這部分程式碼中，請記得要將以下資料改成你的資料夾資料。
+
+- REPO_OWNER = 'kkdai'
+- REPO_NAME = 'kkdai.github.io'
+- DIRECTORY_PATH = '_posts'
+
 ```python
 def git_article(github_token, repo_owner, repo_name, directory_path):
     g = Github(github_token)
@@ -201,3 +209,110 @@ def git_article(github_token, repo_owner, repo_name, directory_path):
 - 透過 `generate_embedding` 來產生整篇文章的 embedding vector value
 - 存入資料庫
 
+
+
+## 透過 Firebase Realtime  DB詢問資料
+
+程式碼： [https://github.com/kkdai/jekyll-rag-firebase/blob/main/blog_query.py](https://github.com/kkdai/jekyll-rag-firebase/blob/main/blog_query.py)
+
+直接單獨執行這個程式碼即可。
+
+```
+# 示例调用
+if __name__ == "__main__":    
+    # 示例查询和生成响应
+    question = "我哪一天架設 oracle8i 的?"
+    response = query_and_generate_response(question, top_k=1)
+    for res in response:
+        print(f"File ID: {res['file_id']}, Similarity: {res['similarity']}")
+        # print(f"Content: {res['content']}")
+        content_str = res['content']
+        # print(f'content_str: {content_str}')
+        prompt = f"""
+        use the following CONTEXT to answer the QUESTION at the end.
+        If you don't know the answer, just say that you don't know, don't try to make up an answer.
+
+        CONTEXT: {content_str}
+        QUESTION: {question}
+
+        reply in zh_tw
+        """
+
+        # print(f'prompt: {prompt}')
+        completion = generate_gemini_text_complete(prompt)
+        print(completion.text)
+```
+
+
+
+- 先產生問句 `question` 的 Embedding 
+
+- `query_and_generate_response(question, top_k=1)` 其中 k=1 只要最接近的一個答案。
+
+  - ```
+    def query_embedding(question, top_k=1):
+        # 生成问句的嵌入
+        question_embedding = generate_embedding(question)
+        
+        # 从数据库中获取所有存储的嵌入
+        ref = db.reference('blog_embeddings')
+        all_embeddings = ref.get()
+        
+        if not all_embeddings:
+            return "No embeddings found in the database."
+        
+        # 计算问句嵌入与存储嵌入之间的相似度
+        similarities = []
+        for file_id, embedding_data in all_embeddings.items():
+            stored_embedding = np.array(embedding_data['vector'])
+            similarity = 1 - cosine(question_embedding, stored_embedding)
+            similarities.append((file_id, similarity))
+        
+        # 按相似度排序并返回最相关的结果
+        similarities.sort(key=lambda x: x[1], reverse=True)
+        top_results = similarities[:top_k]
+        
+        results = []
+        for file_id, similarity in top_results:
+            file_content = ref.child(file_id).get()
+            results.append({
+                'file_id': file_id,
+                'similarity': similarity,
+                'content': file_content
+            })
+        
+        return results
+    ```
+
+  - 講問題與每一個資料的比對結果存入  `similarities`
+
+  - 透過排序之後，挑選最相似的答案
+
+    - ```
+      similarities.sort(key=lambda x: x[1], reverse=True)
+      top_results = similarities[:top_k]
+      ```
+
+- 取出資料之後，將問句跟參考資料放入 prompt 之中來詢問。
+
+  - ```
+    prompt = f"""
+    use the following CONTEXT to answer the QUESTION at the end.
+    If you don't know the answer, just say that you don't know, don't try to make up an answer.
+    
+    CONTEXT: {content_str}
+    QUESTION: {question}
+    
+    reply in zh_tw
+    """
+    ```
+
+- 回覆答案。
+
+
+
+## 未來發展
+
+本篇文章透過一些簡單的程式碼，來了解如何透過 Gemini 與 Firebase Realtime DB 來打造一個 RAG 的應用。程式碼儘可能使用原生的一些套件，儘量不使用比較複雜的 LangChain 或是 LlamaIndex 。
+
+雖然使用 LangChain 或是 LlamaIndex 打造出來的 RAG 會更加的效果好甚至程式碼更少。但是我們還是需要知道 RAG 的原理是什麼，這樣才能針對相關的細節來優化與改善。
