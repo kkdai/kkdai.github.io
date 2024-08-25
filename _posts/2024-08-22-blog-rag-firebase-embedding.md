@@ -8,7 +8,7 @@ category:
 tags: ["python", "firebase", "GoogleCloud"]
 ---
 
-![Improve RAG accuracy with fine-tuned embedding models on Amazon SageMaker |  AWS Machine Learning Blog](../images/2022/ML-16788_image001.png)
+![RAG](../images/2022/ML-16788_image001.png)
 
 ## 前提
 
@@ -61,7 +61,8 @@ def store_embedding(embedding_data):
 
 完整範例大概如下：
 
-```
+```python
+
 # 範例文字
 text_1 = "What is the meaning of life?"
 text_2 = "How to learn Python programming?"
