@@ -18,7 +18,7 @@ tags: ["python", "firebase", "GoogleCloud"]
 
 伴隨著 LLM 生成式 AI 的爆發性成長，其實再也不需要透過 Google Search 來搜尋自己寫過的內容。 其實你可以透過 RAG 的方式來直接去詢問一個聊天機器人來達到類似的工作。
 
-相關的內容其實有很多，透過 LangChain 要來做一個 RAG 的功能更是相當的簡潔。 但是本篇文章將反樸歸真，透過 Python 與 Firebase DB 直接告訴你如何打造 Embedding DB ，做成一個可以簡易的查詢功能的 RAG 。
+相關的內容其實有很多，透過 LangChain 要來做一個 RAG 的功能更是相當的簡潔。 但是本篇文章將反樸歸真，透過 Python 與 Google Gemini 與 Firebase DB 直接告訴你如何打造 Embedding DB ，做成一個可以簡易的查詢功能的 RAG 應用。
 
 
 
@@ -316,3 +316,9 @@ if __name__ == "__main__":
 本篇文章透過一些簡單的程式碼，來了解如何透過 Gemini 與 Firebase Realtime DB 來打造一個 RAG 的應用。程式碼儘可能使用原生的一些套件，儘量不使用比較複雜的 LangChain 或是 LlamaIndex 。
 
 雖然使用 LangChain 或是 LlamaIndex 打造出來的 RAG 會更加的效果好甚至程式碼更少。但是我們還是需要知道 RAG 的原理是什麼，這樣才能針對相關的細節來優化與改善。
+
+接下來我們可以持續改善的方向如下：
+
+- Embedding 的方式與演算法
+- 如果文章修改了，可以自動來更新 Embedding DB
+- 透過 LINE 官方帳號的應對與回覆，可以有更漂亮的畫面與相關應用。
