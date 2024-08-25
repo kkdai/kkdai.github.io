@@ -190,3 +190,14 @@ def git_article(github_token, repo_owner, repo_name, directory_path):
     return result
 ```
 
+這邊稍微解釋一下，整個邏輯：
+
+- 讀取 jekyll 目錄底下 `_posts`
+- 取出檔案名稱，比如 `2024-08-10-reading-elon-musk` 作為 firebase 的 I
+- 先檢查是否已經在 Firebase Realtime DB 中有存在的物件
+  - 如果有，就 skip 到下一個檔案
+- 取出裡面 utf-8 編碼的內容 `file_content.decoded_content.decode('utf-8')`
+- 並且去除掉所有 HTML tags `remove_html_tags`
+- 透過 `generate_embedding` 來產生整篇文章的 embedding vector value
+- 存入資料庫
+
