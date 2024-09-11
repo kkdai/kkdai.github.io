@@ -20,11 +20,26 @@ tags: ["python", "firebase", "GoogleCloud", "IFTTT"]
 
 程式碼： [https://github.com/kkdai/gh-summarized-scheduler](https://github.com/kkdai/gh-summarized-scheduler)
 
+
+
+# IFTTT 設定
+
+![image-20240911222516788](../images/2022/image-20240911222516788.png)
+
+![image-20240911222612321](../images/2022/image-20240911222612321.png)
+
 # 成果
 
 <img src="../images/2022/image-20240911222313402.png" alt="image-20240911222313402" style="zoom:33%;" />
 
+- 有詳細的文章連結跟文章摘要。
+- 可以快速決定要不要進去看。
+- 整個格式也改成可以直接複製貼到 Twitter (我有付費發長文)
 
 
-<img src="../images/2022/image-20240911222327375.png" alt="image-20240911222327375" style="zoom:33%;" />
 
+# 未來發展：
+
+- 照理說應該要可以一鍵發文到 twitter ，但是 X API 好貴（一百美）
+- 有想過用 IFTTT 來發文 Twitter 但是有長度限制 (128) ，不能用。
+- 不過 Threads API 似乎可以發長文。
