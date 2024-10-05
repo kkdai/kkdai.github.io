@@ -12,11 +12,13 @@ tags: ["python", "LangChain", "GoogleCloud"]
 
 # 前提
 
+[之前有提過](https://www.evanlin.com/personal-km-flow-1/)，我做了一個「透過 IFTTT 與 LangChain 打造科技時事 LINE Bot」，讓我可以透過那個 LINE Bot 來取得許多需要的資訊。 但是近期來說有太多 YouTube 影片有著相當深厚的技術資訊。 也讓我思考該如何來取得 YouTube 字幕資訊來作為資訊的整理。
+
+雖然 [LangChain YouTube Transcripts Loader](https://python.langchain.com/docs/integrations/document_loaders/youtube_transcript/) 可以很快速地取得字幕資訊，但是如果部署到 Google CloudRun 的時候，卻會出現一些問題。  本篇文章將會分享遇到哪些問題，還有如何解決這些問題的流程。希望可以帶給大家一些幫助。
 
 
 
-
-# 呼叫 LangChain YouTube Downloader 來取得影片字幕
+# 呼叫 LangChain YouTube Transcripts Loader 來取得影片字幕
 
 參考 LangChain 教學文件 ([YouTube transcripts](https://python.langchain.com/docs/integrations/document_loaders/youtube_transcript/)) ，透過這個套件可以取得具有字幕的 YouTube 影片。透過相關的分析可以快速了解影片內容。這邊有一些範例程式碼：
 
@@ -119,3 +121,42 @@ def get_secret(secret_id):
 
 程式碼： [https://github.com/kkdai/gcp-test-youtuber]( https://github.com/kkdai/gcp-test-youtuber)
 
+```
+def load_youtube_data():
+    try:
+        logging.debug("Loading YouTube data")
+        google_api_client = init_google_api_client()
+
+        # Use a Channel
+        youtube_loader_channel = GoogleApiYoutubeLoader(
+            google_api_client=google_api_client,
+            channel_name="Reducible",
+            captions_language="en",
+        )
+
+        # Use Youtube Ids
+        youtube_loader_ids = GoogleApiYoutubeLoader(
+            google_api_client=google_api_client,
+            video_ids=["TrdevFK_am4"],
+            add_video_info=True,
+        )
+
+        # Load data
+        logging.debug("Loading data from channel")
+        channel_data = youtube_loader_channel.load()
+        logging.debug("Loading data from video IDs")
+        ids_data = youtube_loader_ids.load()
+
+        logging.debug("Data loaded successfully")
+        return jsonify({"channel_data": str(channel_data), "ids_data": str(ids_data)})
+    except Exception as e:
+        logging.error(f"An error occurred: {str(e)}", exc_info=True)
+        return jsonify({"error": str(e)}), 500
+
+```
+
+### 成果
+
+影片來源： [https://www.youtube.com/watch?v=TrdevFK_am4](https://www.youtube.com/watch?v=TrdevFK_am4)
+
+![image-20241006004150943](../images/2022/image-20241006004150943.png)
