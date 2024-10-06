@@ -8,7 +8,7 @@ category:
 tags: ["python", "LangChain", "GoogleCloud"]
 ---
 
-
+![image-20241006103355905](../images/2022/image-20241006103355905.png)
 
 # 前提
 
