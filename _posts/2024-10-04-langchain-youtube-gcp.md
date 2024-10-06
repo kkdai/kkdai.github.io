@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Google Cloud/Firebase] 如何在 GCP Cloud Run 上面透過 LangChain 取得 YouTube 的相關資訊 "
+title: "[Google Cloud] 如何在 GCP Cloud Run 上面透過 LangChain 取得 YouTube 的相關資訊 "
 description: ""
 category: 
 - Python 
