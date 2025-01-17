@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[敗家紀錄] 如何在台灣啟動 Rayban Meta Glasses 的 AI 功能"
+title: "[敗家紀錄] 如何在台灣啟動 Rayban Meta Glasses 的 AI 功能 (2025 更新)"
 description: ""
 category: 
 - AI
@@ -55,10 +55,11 @@ Amazon: [Ray-Ban | Meta Smart Glasses, Wayfarer](https://www.amazon.com/dp/B0CGX
 
 
 
-1. 砍掉 Meta View App 
-2. 裝 NordVPN or SrufShak (免費的我弄不出來) 切美國
-3. 上 App Store 重新下載 
-4. 看到 圈起來部分就成功了。
+```
+更新：  2025/01/17 
+因為在版本 V193 之後（大概是 2024/11 月底） 他好像會抓取 Meta 帳戶的區域，而非你安裝 App 的網路 IP 。所以原來方法無法正常成功，需要透過以下修改。
+```
 
+- 我的方式是在 VPN 連著的情況下開一個新的 meta account。 （需要 VPN 連線到美國）
+-  這樣就是要把眼鏡 factory reset 之後重新用新的 meta account 來配對綁定。
 
-之後更新也不用 VPN ，第一次就可以。 快開通來玩!
