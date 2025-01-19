@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[生活] 日本旅遊零錢太多？ ✈️  輕鬆存進 Suica 卡，手機也能用！"
-description: 告別沉甸甸的口袋，日本零錢一鍵解決！🤩  手機 Suica 也適用，1 元硬幣也能存！"
+description: 告別沉甸甸的口袋，日本零錢一鍵解決！  手機 Suica 也適用，1 元硬幣也能存！"
 category: 
 - 生命就該浪費在旅遊上
 tags: ["日本", "Suica", "零錢", "Pocket Exchange", "旅遊技巧"]
