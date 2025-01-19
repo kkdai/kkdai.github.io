@@ -2,7 +2,7 @@
 layout: post
 title: "[生活] 日本旅遊零錢太多？ 輕鬆存進 Suica 卡，手機也能用！"
 description: ""
-category: 
+category: 
 - 生命就該浪費在旅遊上
 tags: ["日本", "Suica", "零錢", "Pocket Exchange", "旅遊技巧"]
 
