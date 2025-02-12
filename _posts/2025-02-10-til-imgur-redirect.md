@@ -16,6 +16,8 @@ tags: ["imgur", "python"]
 
 近期，Imgur 對其圖片連結進行了技術更新，導致直接訪問 `i.imgur.com/{image_id}.jpeg` 類型的 URL 時會被重定向到 `imgur.com/{image_id}` 頁面。這種行為使得在應用程式或網頁中直接顯示或下載圖片變得困難。此外，這種轉址機制也會影響到使用者腳本和瀏覽器擴充套件的正常運作，使得原本能夠阻止轉址的工具可能失效。因此，開發者需要找到新的方法來繞過這個限制。
 
+
+
 ## **解決思路**
 
 要解決這個問題，我們可以採用以下幾種策略：
@@ -23,6 +25,8 @@ tags: ["imgur", "python"]
 1. **設置正確的 HTTP 標頭**特別是設定 `Referer` 標頭，以模擬從 Imgur 頁面訪問圖片。使用合理的 `User-Agent` 標頭，以避免被視為爬蟲請求。
 2. **使用 Imgur 官方 API**透過官方 API 可以穩定地取得圖片直連 URL，但需要註冊並取得 Client ID 和 Client Secret。這種方法通常更可靠，但需要額外的手續和速率限制考量。
 3. **瀏覽器擴充套件或腳本更新**更新 NoImgurRedirect 等擴充套件以適應最新變動，或撰寫自訂腳本來處理轉址問題。
+
+
 
 ## **範例程式碼**
 
@@ -61,6 +65,73 @@ def download_img(image_id):
 # 測試下載（假設 image_id 為「example123」）
 download_img("example123")
 ```
+
+
+## **範例程式碼（Golang）**
+
+以下是一段 Golang 程式碼示範如何設定正確標頭來下載 Imgur 圖片：
+
+```
+go
+package main
+
+import (
+	"fmt"
+	"io/ioutil"
+	"net/http"
+)
+
+func downloadImg(imageID string) error {
+	directURL := fmt.Sprintf("https://i.imgur.com/%s.jpeg", imageID)
+	refererURL := fmt.Sprintf("https://imgur.com/%s", imageID)
+
+	req, err := http.NewRequest("GET", directURL, nil)
+	if err != nil {
+		return err
+	}
+
+	req.Header.Set("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36")
+	req.Header.Set("Referer", refererURL)
+
+	client := &http.Client{}
+	resp, err := client.Do(req)
+	if err != nil {
+		return err
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != http.StatusOK {
+		return fmt.Errorf("HTTP status code: %d", resp.StatusCode)
+	}
+
+	body, err := ioutil.ReadAll(resp.Body)
+	if err != nil {
+		return err
+	}
+
+	filename := fmt.Sprintf("%s.jpeg", imageID)
+	err = ioutil.WriteFile(filename, body, 0644)
+	if err != nil {
+		return err
+	}
+
+	fmt.Printf("圖片已成功下載：%s\n", filename)
+
+	return nil
+}
+
+func main() {
+	imageID := "example123"
+	err := downloadImg(imageID)
+	if err != nil {
+		fmt.Println(err.Error())
+	}
+}
+```
+
+
+
+
 
 ## **未來該如何小心類似的問題**
 
