@@ -16,6 +16,12 @@ tags: ["GCP", "python", "LangChain"]
 
 
 
+### 範例程式碼：
+
+[https://github.com/kkdai/linebot-gemini-python](https://github.com/kkdai/linebot-gemini-python)
+
+(透過這個程式碼，可以快速部署到 GCP Cloud Run)
+
 ## 透過 LangChain 與 Gemini 打造 LINE Bot 到 Vertex AI
 
 首先先給各位一個簡單的 LangChain + Gemini 打造 LINE Bot 的範例程式碼：
@@ -143,15 +149,52 @@ display(Markdown(response.text))
 - 如果放在 GCP 的 Cloud Run 就不需要放 Services Account 的 JSON 內容
 - 如果不是放在 GCP 上，就必須要將 JSON 內容放入 `GOOGLE_APPLICATION_CREDENTIALS` 系統參數中。
 
+如果建立在 GCP 上面，以下是最基本的啟動方式。
 
+```
+# Create LangChain Vertex AI model instances
+# For Vertex AI, we use "gemini-2.0-flash" instead of "gemini-2.0-flash-lite"
+text_model = ChatVertexAI(
+    model_name="gemini-2.0-flash-001",
+    project=google_project_id,
+    location=google_location,
+    max_output_tokens=1024
+)
+```
+
+接下來透過 LangChain 呼叫 Vertex AI 的程式碼如下：
+
+```
+def generate_text_with_langchain(prompt):
+    """
+    Generate a text completion using LangChain with Vertex AI model.
+    """
+    # Create a chat prompt template with system instructions
+    prompt_template = ChatPromptTemplate.from_messages([
+        SystemMessage(
+            content="You are a helpful assistant that responds in Traditional Chinese (zh-TW)."),
+        HumanMessage(content=prompt)
+    ])
+
+    # Format the prompt and call the model
+    formatted_prompt = prompt_template.format_messages()
+    response = text_model.invoke(formatted_prompt)
+
+    return response.content
+```
+
+這樣就可以，本次只注重將 LangChain Gemini 在文字方面的部分，轉換成使用 Vertex AI 。但是因為 Vertex AI 上面針對圖片的使用都會透過 Google Cloud Storage ，所以本次將先不專注在相關的部分，想了解的可以
 
 
 
 ### 需要注意的問題：
 
-1. 關於以下錯誤該如何解決?
+1. #### 關於以下錯誤該如何解決?
 
 ```
 details = "Publisher Model `projects/PROJECT_ID/locations/asia-east1/publishers/google/models/gemini-2.0-flash` not found."
 ```
 
+會發生這個問題，主要是因為如果你選擇了 `asia-east1` 作為你 Vertex AI 的區域。他目前是沒有支援 gemini-2.0 的相關模型喔。
+
+需要改成 `us-central1` 才能正確地呼叫
