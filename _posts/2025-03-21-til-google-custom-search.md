@@ -16,7 +16,7 @@ tags: ["MCP", "Gemini"]
 
 一直以來我們都知道透過 LLM 上的 function call ，是可以讓 LLM 有了使用工具的能力。可以去做網頁搜尋，或是查詢資料庫，甚至是做一些特殊的工作。 
 
-而在處理網頁搜尋的時候，通常是會使用到一些外部服務 [Serper](https://serper.dev/)相關的付費服務。 如果你原本的服務是建置在 Google Cloud Platform 上面，有沒有想過是否有可以使用的服務呢？ 本篇文章就來介紹一下，如何透過 Google Custom Search API 搜尋 Google 並且將結果總結回覆。
+而在處理網頁搜尋的時候，通常是會使用到一些外部服務 [SerpAPI](https://serpapi.com/)  相關的付費服務。 如果你原本的服務是建置在 Google Cloud Platform 上面，有沒有想過是否有可以使用的服務呢？ 本篇文章就來介紹一下，如何透過 Google Custom Search API 搜尋 Google 並且將結果總結回覆。
 
 
 
