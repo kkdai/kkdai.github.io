@@ -88,7 +88,7 @@ def search_with_google_custom_search(keywords, search_api_key, cx, num_results=1
 這裡你會需要兩個數值:
 
 - `search_api_key`:  這個你在[說明網址](https://developers.google.com/custom-search/v1/overview?hl=zh-tw) 會取得
-- `cx`: 這個是 Google Search ID ，這個 [Custom Search Dashboard](https://programmablesearchengine.google.com/controlpanel/overview)   取得你自己的。
+- `cx`: 這個是 Google Search ID ，這個 [Custom Search Dashboard](https://programmablesearchengine.google.com/controlpanel/overview)   取得你自己的 Search Windows ID。
 
 
 
