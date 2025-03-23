@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Gemini][[MCP] 在 Cline 上面使用 Gemini 來呼叫 MCP 的功能"
+title: "[Gemini][MCP] 在 Cline 上面使用 Gemini 來呼叫 MCP 的功能"
 description: ""
 category: 
 - TIL
@@ -81,9 +81,9 @@ tags: ["MCP", "Gemini"]
 
 並且，很重要的：
 
-- **MCP 讓不能使用 Function Calling 的 Model 也能使用 MCP Servers 做出類似 Function Calling 的共用**
-- **MCP 讓不能使用 Function Calling 的 Model 也能使用 MCP Servers 做出類似 Function Calling 的共用**
-- **MCP 讓不能使用 Function Calling 的 Model 也能使用 MCP Servers 做出類似 Function Calling 的共用**
+- **MCP 讓不能使用 Function Calling 的 Model 也能使用 MCP Servers 做出類似 Function Calling 的應用**
+- **MCP 讓不能使用 Function Calling 的 Model 也能使用 MCP Servers 做出類似 Function Calling 的應用**
+- **MCP 讓不能使用 Function Calling 的 Model 也能使用 MCP Servers 做出類似 Function Calling 的應用**
 
 因為 [技术爬爬虾  TechShrimp](https://www.youtube.com/@Tech_Shrimp) [MCP是怎么对接大模型的？抓取AI提示词，拆解MCP的底层原理](https://www.youtube.com/watch?v=wiLQgCDzp44) 影片中使用到的相關模型是 DeepSeekChat 其實還不支援 Function Calling ，但是他也是可以在透過 MCP Server 來互動。
 
