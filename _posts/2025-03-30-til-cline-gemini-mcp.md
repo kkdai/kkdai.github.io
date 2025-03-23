@@ -10,7 +10,7 @@ tags: ["MCP", "Gemini"]
 
 
 
-
+![What is Model Context Protocol (MCP)? How it simplifies AI ...](../images/2022/mcp_overview-641a298352ff835488af36be3d8eee52.png)
 
 ## 前情提要
 
@@ -39,8 +39,61 @@ tags: ["MCP", "Gemini"]
 這個架構圖，有清楚的敘述出關於 MCP 的 Client Server 的架構，這邊再強調一下。
 
 - **MCP Host**: 使用這些 MCP 服務的應用，可能是 Cline, Windsurf 或是 Claude Desktop)
-- MCP Server: 
-- **MCP Client**:  在每一個 Host 中，確定使用某個 MCP Server
+- **MCP Server**:  許多地方應該都要介紹過，這裡不太贅述。之後也會有範例程式碼。就是一個萬用的溝通協定，讓每一個 MCP Host 可以更容易去使用一些外部功能。並且變成一個共通的協定。
+- **MCP Client**:  在每一個 Host 中，確定使用某個 MCP Server 後。在 Host 中，會有其相關的 client 這裡將會是用 Prompt 存在著。接下來會詳細敘述。
+
+
+
+## MCP 運作細節
+
+完整細節可以參考網路上這位的說明，不過我將內容改成 Google Gemini 相關的應用。除了換掉影片中使用的 DeepSeek 之外，也可以讓整個使用更符合資訊安全相關的應用。 
+
+##### 參考影片： 
+
+[技术爬爬虾  TechShrimp](https://www.youtube.com/@Tech_Shrimp) [MCP是怎么对接大模型的？抓取AI提示词，拆解MCP的底层原理](https://www.youtube.com/watch?v=wiLQgCDzp44)
+
+### 透過 CloudFlare 建立 AI API Gateway 
+
+(如果要查看相關細節，需要使用 OpenRouter 或是 OpenAI Compatible )
+
+- 建立一個 [Cloudflare 帳號](https://dash.cloudflare.com/)
+- 建立 AI -> API Gateway
+- 選項選擇 OpenRouter  ，然後記得去 [OpenRouter 申請帳號](https://openrouter.ai/)
+
+如果要查看 MCP 溝通細節，就得使用 OpenAI 或是 OpenRouter 。這裡查看[影片](https://www.youtube.com/watch?v=wiLQgCDzp44)可以看到完整教學。這裡將直接貼出相關細節。
+
+![Code 2025-03-23 17.35.03](../images/2022/Code 2025-03-23 17.35.03.png)
+
+以上是透過 Cloudflare 抓取封包後，來解析 MCP 的溝通機制：
+
+- 你會發現 MCP Server 所有安裝的 Server  跟功能都被當作 Promopt 輸入給該模型。
+- 每一個 MCP Server 能做什麼，會寫在 Prompt 之中（圖片可以看到 Github Repository MCP Server)
+
+以上這些資料很重要，稍後會在下一個章節 MCP 跟 Function Call 來討論。
+
+### MCP 跟 Function Call 的差別
+
+![Expanding AI Horizons: The Rise of Function Calling in LLMs](../images/2022/newsletter94-function-calling.jpeg)
+
+原本 LLM 有一些模型會透過 Function Calling 來決定要如何呼叫一些工具，這裡其實需要 Model 額外的支持，雖然說大家常見的 LLM 提供商 OpenAI, Google, Anthropic 都已經支援 Function Calling ，但是每一次都要為了這些工具額外去寫相關的 Function Calling App 還是很讓人頭痛。
+
+這也是為什麼 MCP 會紅的原因，他讓原本的 Function Calling App 變成一個共用機制。每一個相關的應用廠商，都可以寫出自己的 MCP Servers ，也可以讓使用的服務變得更多人可以使用。
+
+並且，很重要的：
+
+- MCP 讓不能使用 Function Calling 的 Model 也能使用 MCP Servers
+- MCP 讓不能使用 Function Calling 的 Model 也能使用 MCP Servers
+- MCP 讓不能使用 Function Calling 的 Model 也能使用 MCP Servers
+
+因為 [技术爬爬虾  TechShrimp](https://www.youtube.com/@Tech_Shrimp) [MCP是怎么对接大模型的？抓取AI提示词，拆解MCP的底层原理](https://www.youtube.com/watch?v=wiLQgCDzp44) 影片中使用到的相關模型是 DeepSeekChat 其實還不支援 Function Calling ，但是他也是可以在透過 MCP Server 來互動。
+
+
+
+
+
+
+
+## 使用 Cline 作為 MCP host
 
 
 
