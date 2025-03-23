@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Gemini] 在 Cline 上面使用 Gemini 來呼叫 MCP 的功能"
+title: "[Gemini][[MCP] 在 Cline 上面使用 Gemini 來呼叫 MCP 的功能"
 description: ""
 category: 
 - TIL
@@ -81,19 +81,55 @@ tags: ["MCP", "Gemini"]
 
 並且，很重要的：
 
-- MCP 讓不能使用 Function Calling 的 Model 也能使用 MCP Servers
-- MCP 讓不能使用 Function Calling 的 Model 也能使用 MCP Servers
-- MCP 讓不能使用 Function Calling 的 Model 也能使用 MCP Servers
+- **MCP 讓不能使用 Function Calling 的 Model 也能使用 MCP Servers 做出類似 Function Calling 的共用**
+- **MCP 讓不能使用 Function Calling 的 Model 也能使用 MCP Servers 做出類似 Function Calling 的共用**
+- **MCP 讓不能使用 Function Calling 的 Model 也能使用 MCP Servers 做出類似 Function Calling 的共用**
 
 因為 [技术爬爬虾  TechShrimp](https://www.youtube.com/@Tech_Shrimp) [MCP是怎么对接大模型的？抓取AI提示词，拆解MCP的底层原理](https://www.youtube.com/watch?v=wiLQgCDzp44) 影片中使用到的相關模型是 DeepSeekChat 其實還不支援 Function Calling ，但是他也是可以在透過 MCP Server 來互動。
 
-
-
-
-
-
-
 ## 使用 Cline 作為 MCP host
+
+![image-20250323175901298](../images/2022/image-20250323175901298.png)
+
+(Refer: [Cline Plugin](https://marketplace.visualstudio.com/items?itemName=saoudrizwan.claude-dev))
+
+Cline 是一個 VS Code 的 Plugin ，目前已經有相當多的類似 AI IDE Plugin 。但是由於 Cline 本身內建支援 MCP Server 的溝通機制，並且有一個內建的推薦清單，讓開發者可以很快速地連接 MCP Servers ，這裡很推薦使用 Cline 作為你第一個了解 MCP 的工具。
+
+### 相關 Cline 設定流程，讓你使用 MCP Servers
+
+- 安裝 [Cline Plugin](https://marketplace.visualstudio.com/items?itemName=saoudrizwan.claude-dev)
+- 選擇你需要的 MCP Servers
+  ![image-20250323180151743](../images/2022/image-20250323180151743.png)
+- 設定你的模型，這裡使用 Google Gemini ，並且使用比較省錢的 `Gemini-1.5-flash` 。
+  ![Code 2025-03-23 18.02.07](../images/2022/Code 2025-03-23 18.02.07.png)
+
+這裡比較建議大家可以先安裝最安全跟簡單的 "[Time MCP Servers](https://github.com/modelcontextprotocol/servers/tree/main/src/time)"，也可以從 Cline 的介面上來理解。
+
+![Code 2025-03-23 18.03.33](../images/2022/Code 2025-03-23 18.03.33.png)
+
+這裡可以看到  "[Time MCP Servers](https://github.com/modelcontextprotocol/servers/tree/main/src/time)" 支援兩個功能：
+
+- Get_current_time
+- Convert_time
+
+這時候如果詢問，`請問幾點？`
+
+![image-20250323180956464](../images/2022/image-20250323180956464.png)
+
+- 他可能會先請你告訴他你所在區域
+- 然後決定要跑 MCP Server (會請求你同意)
+- 同意後，才會告訴你現在的結果。
+
+如果你要換成 `告訴我現在幾點？並且轉換成法國的時間?`
+![Code 2025-03-23 18.11.23](../images/2022/Code 2025-03-23 18.11.23.png)
+
+這時候就會呼叫轉換的 API ，這時候也會要求同意。完成後就可以跑出相關的工作。
+
+
+
+## 未來發展:
+
+本篇文章快速做了一個簡介，並且使用 Cline 搭配了 Gemini 1.5-flash model 來呼叫 MCP Server 做一個查詢時間的展示。接下來的文章將會告訴大家，該如何寫一個 MCP Server ，並且分享給大家可能有用的應用。
 
 
 
