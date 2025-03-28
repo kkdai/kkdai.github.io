@@ -23,7 +23,8 @@ tags: ["python", "proxy", "GoogleCloud"]
 ```
 During handling of the above exception, another exception occurred:
 youtube_transcript_api._errors.RequestBlocked:
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=ViA4-YWx8Y4! This is most likely caused by:
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=ViA4-YWx8Y4! 
+This is most likely caused by:
 YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
 - You have done too many requests and your IP has been blocked by YouTube
 - You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
@@ -104,7 +105,7 @@ YouTube is blocking your requests, despite you using Webshare proxies. Please ma
 
 The only reliable option is using "Residential" proxies (not "Static Residential"), as this allows you to rotate through a pool of over 30M IPs, which means you will always find an IP that hasn't been blocked by YouTube yet!
 
-You can support the development of this open source project by making your Webshare purchases through this affiliate link: https://www.webshare.io/?referral_code=w0xno53eb50g
+You can support the development of this open source project by making your Webshare purchases through this affiliate link: https://www.webshare.io/?referral_code=1yl49cgzfedr
 Thank you for your support! <3
 ```
 
