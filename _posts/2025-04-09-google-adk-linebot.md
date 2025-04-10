@@ -193,18 +193,7 @@ async def call_agent_async(query: str, user_id: str) -> str:
 
 學習到現在，或許大家會跟我一樣有疑問是： 「究竟 OpenAI Agents SDK 跟 Google ADK 有什麼差異？」
 
-| 特性       | OpenAI Agents SDK          | Google ADK                        |
-| ---------- | -------------------------- | --------------------------------- |
-| 開源       | 是                         | 是                                |
-| 主要語言   | Python（Node.js 即將推出） | Python（未來計畫支援更多語言）    |
-| 模型生態   | OpenAI 為主，兼容其他模型  | Gemini 為主，支援多種第三方模型   |
-| 工具支持   | 內建工具 + 自定義函數      | 預建工具 + 自定義 + 第三方整合    |
-| 多代理協作 | 基礎協作與任務轉交         | 進階協作與動態路由                |
-| 多模態     | 有限（文字為主）           | 原生支持音訊/視訊串流             |
-| 調試工具   | Tracing & observability    | CLI + Web UI + 評估工具           |
-| 部署       | 自行容器化部署             | Agent Engine + Vertex AI + 容器化 |
-| 學習曲線   | 低                         | 中等（因靈活性增加）              |
-| 企業級功能 | 基礎守護（guardrails）     | 安全性、監控、記憶管理            |
+![Google Chrome 2025-04-10 21.28.23](../images/2022/Google Chrome 2025-04-10 21.28.23.png)
 
 (表格整理 by Grok3)
 
