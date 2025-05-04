@@ -118,13 +118,13 @@ Nexus : A Brief History of Information Networks from the Stone Age to AI
 
 這邊有提出在社群媒體興盛的這個年代，人們越來越喜歡在社群媒體上「取得同溫層」的鼓勵。但是卻又更喜歡去「異溫層」層裡面爭吵與彼此對立。這其實也是因為 AI 計算出來這就是一個推薦系統上的問題。
 
-![image-20250504133626958](/Users/al03034132/Library/Application Support/typora-user-images/image-20250504133626958.png)
+![Typora 2025-05-04 13.36.19](../images/Typora 2025-05-04 13.36.19.png)
 
 #### 使用去中心化的資訊，是否可以達成民主？
 
 這裡也有探討著最新的技術與民主的交互作用，是否可以用去中心化來保存資訊，達到真正的社群民主？但是作者也提出疑問，如果類似史達林的極權統治者，統治著 51% 的人民，是否就可以消除掉其他的聲音？
 
-![Google Chrome 2025-05-04 13.47.52](/Users/al03034132/Library/Containers/com.wiheads.paste/Data/tmp/images/Google Chrome 2025-05-04 13.47.52.png)
+![Google Chrome 2025-05-04 13.49.22](../images/Google Chrome 2025-05-04 13.49.22.png)
 
 ## 我們應該如何小心
 
