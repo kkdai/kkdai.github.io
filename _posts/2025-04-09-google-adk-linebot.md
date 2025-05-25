@@ -20,6 +20,16 @@ tags: ["python", "Gemini", "Google"]
 
 #### 範例程式碼：  [https://github.com/kkdai/linebot-adk](https://github.com/kkdai/linebot-adk)
 
+#### 05/25更新: SDK 有更改成 asynchronous  形式。 
+
+```
+session = await session_service.create_session(app_name=app_name, 
+                                    user_id=user_id, 
+                                    session_id=session_id)
+```
+
+
+
 ## 快速簡介 Google ADK
 
 #### Repo: [https://github.com/google/adk-python](https://github.com/google/adk-python)
@@ -105,18 +115,18 @@ runner = Runner(
 
 
 ```python
-def get_or_create_session(user_id):
+async def get_or_create_session(user_id):
     if user_id not in active_sessions:
         # Create a new session for this user
         session_id = f"session_{user_id}"
-        session_service.create_session(
+        session = await session_service.create_session(
             app_name=APP_NAME,
             user_id=user_id,
             session_id=session_id
         )
         active_sessions[user_id] = session_id
         print(
-            f"New session created: App='{APP_NAME}', User='{user_id}', Session='{session_id}'")
+            f"New session created: App='{APP_NAME}', User='{user_id}', Session='{session.id}'")
     else:
         # Use existing session
         session_id = active_sessions[user_id]
@@ -135,7 +145,7 @@ async def call_agent_async(query: str, user_id: str) -> str:
     print(f"\n>>> User Query: {query}")
 
     # Get or create a session for this user
-    session_id = get_or_create_session(user_id)
+    session_id = await get_or_create_session(user_id)
 
     # Prepare the user's message in ADK format
     content = types.Content(role='user', parts=[types.Part(text=query)])
@@ -161,7 +171,7 @@ async def call_agent_async(query: str, user_id: str) -> str:
         # Recreate session if it was lost
         if "Session not found" in str(e):
             active_sessions.pop(user_id, None)  # Remove the invalid session
-            session_id = get_or_create_session(user_id)  # Create a new one
+            session_id = await get_or_create_session(user_id)  # Create a new one
             # Try again with the new session
             try:
                 async for event in runner.run_async(user_id=user_id, session_id=session_id, new_message=content):
