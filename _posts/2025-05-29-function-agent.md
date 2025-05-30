@@ -168,3 +168,7 @@ session_id = await get_or_create_session(user_id)
 
 
 ## 未來的展望：
+
+本篇文章主要介紹如何將原本使用 LangChain Function Calling 的 LINE Bot 轉換成使用 Agent SDK 的 LINE Bot 。這裡也看得出來，整體出來後的成果相當令人驚艷，不僅僅整個程式碼變得更少的之外，並且在對談中，也變得更加像真人一樣。接下來，我們將會深入 Agent 許多更加複雜的功能，比如說 Multiple Agent 與各種 Agent 中合作的方式。 
+
+也會透過 LINE Bot 的相關案例，來分享給每一個在 LINE 官方帳號開發的夥伴們。下次見。
