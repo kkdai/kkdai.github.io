@@ -37,7 +37,7 @@ tags: ["python", "Gemini", "Google"]
 
 這篇文章介紹了如何利用 LangChain 和 OpenAI 的 Function Calling 來開發一個股價查詢的 LINE Bot，並分享了一個開源套件供大家學習。LangChain 是一個強大的工具，支援多種大型語言模型，讓開發概念驗證（POC）變得更加容易。文章中提到，透過 Flowise 這樣的視覺化工具，開發者可以快速測試架構和 Prompt，並且在不需要重新部署的情況下修改 Prompt。文章還詳細說明了如何在 Heroku 上快速部署 Python LINE Bot，並提供了使用 LangChain 的 ConversationBufferWindowMemory 來實現具有記憶功能的聊天機器人的方法。此外，文章深入探討了如何使用 OpenAI Functions 來查詢股價，包括如何定義和使用工具來實現這一功能。整體而言，這篇文章展示了 LangChain 在開發 LINE Bot 中的應用潛力，並鼓勵讀者利用這些技術打造出「專一」「好用」的聊天機器人。
 
-![image-20250530162426815](../images/image-20250530162426815.png)
+![image-20250531020759673](../images/image-20250531020759673.png)
 
 ## 導入 Agent SDK
 
@@ -155,9 +155,15 @@ session_id = await get_or_create_session(user_id)
 
 # 另外一個案例 Arxiv 論文小幫手改成 Agent 的案例
 
+#### 程式碼： [https://github.com/kkdai/linebot-adk-arxiv](https://github.com/kkdai/linebot-adk-arxiv)
+
+
+
 ![LINE 2025-05-31 02.00.46](../images/LINE 2025-05-31 02.00.46.png)
 
 ![image-20250531020215131](../images/image-20250531020215131.png)
+
+可以看得出來，類似的功能如果透過 Agent ADK 來達成的話。整個原本是 Function Call 的論文小幫手。就變得更加的聰明了，而且程式碼也沒有增加太多。這裡就不詳細解釋相關的功能了，歡迎各位直接去看程式碼。
 
 
 
