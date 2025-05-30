@@ -33,10 +33,118 @@ tags: ["python", "Gemini", "Google"]
 
 ![img](https://www.evanlin.com/images/2022/bot.jpg)
 
+**（這個是之前 LangChain Function Calling 的執行成果）**
+
 這篇文章介紹了如何利用 LangChain 和 OpenAI 的 Function Calling 來開發一個股價查詢的 LINE Bot，並分享了一個開源套件供大家學習。LangChain 是一個強大的工具，支援多種大型語言模型，讓開發概念驗證（POC）變得更加容易。文章中提到，透過 Flowise 這樣的視覺化工具，開發者可以快速測試架構和 Prompt，並且在不需要重新部署的情況下修改 Prompt。文章還詳細說明了如何在 Heroku 上快速部署 Python LINE Bot，並提供了使用 LangChain 的 ConversationBufferWindowMemory 來實現具有記憶功能的聊天機器人的方法。此外，文章深入探討了如何使用 OpenAI Functions 來查詢股價，包括如何定義和使用工具來實現這一功能。整體而言，這篇文章展示了 LangChain 在開發 LINE Bot 中的應用潛力，並鼓勵讀者利用這些技術打造出「專一」「好用」的聊天機器人。
 
 ![image-20250530162426815](../images/image-20250530162426815.png)
 
 ## 導入 Agent SDK
 
-我們先來討論一下，如何將 LangChain funciont Calling 中將 Tools 的
+接下來會來開始拆解，如何將 LangChain Function Calling 的程式碼，轉換到 Agent SDK 的方式：
+
+
+
+### 第一部分： 講解 Tools 的轉換方式：
+
+我們先來討論一下，如何將 LangChain funciont Calling 中將 Tools 的程式碼，轉換到 Agent 的部分。
+
+```python
+def get_price_change_percent(symbol: str, days_ago: int) -> dict:
+    """
+    Calculates the percentage change in a stock's price over a specified number of days.
+    Args:
+        symbol (str): The stock symbol (e.g., "AAPL").
+        days_ago (int): The number of days to look back for the price change calculation. Must be positive.
+    Returns:
+        dict: Contains the symbol, percentage change, and period, or an error message.
+    """
+    if not isinstance(days_ago, int) or days_ago <= 0:
+        return {"status": "error", "message": "Days ago must be a positive integer."}
+
+    performance = calculate_performance(symbol, days_ago)
+    if performance is not None:
+        return {
+            "status": "success",
+            "symbol": symbol,
+            "price_change_percent": performance,
+            "period_days": days_ago,
+        }
+    else:
+        return {
+            "status": "error",
+            "message": f"Could not calculate price change for {symbol} over {days_ago} days. Ensure symbol is valid and data is available for the period.",
+        }
+```
+
+可以看得出來，大部分的程式碼並沒有太多修改。 但是主要就是之前在 Function Calling 的說明內容必須寫在這邊。才能讓 Agent 去正確的了解整個 Tools 的運作方式。
+
+
+
+### 第二部分： 來了解整個 Agent 的運作大腦
+
+接下來就要來看整個 Agent 如何去運用這三個工具？
+
+```python
+root_agent = Agent(
+    name="stock_agent",
+    model="gemini-2.0-flash",  # Or your preferred model
+    description="Agent specialized in providing stock market information and analysis.",
+    instruction="""
+        You are an AI assistant specializing in stock market data.
+        Users will ask for stock prices, price changes, or the best performing stock from a list.
+        Use the provided tools to answer these questions accurately.
+        - For current price, use `get_stock_price`.
+        - For price change percentage over a period, use `get_price_change_percent`.
+        - For finding the best performing stock in a list over a period, use `get_best_performing`.
+        Always state the symbol and the period clearly in your response if applicable.
+        If a stock symbol is invalid or data is unavailable, inform the user clearly.
+    """,
+    tools=[
+        get_stock_price,
+        get_price_change_percent,
+        get_best_performing,
+    ],
+)
+```
+
+這邊有稍微針對不同功能，來跟他解釋應該要呼叫哪個 tools 。但是這裡並不需要跟他解釋那些 tools 有什麼參數，還有回傳什麼資料。並且也不用跟他講解更多其他的資訊。
+
+但是在 Agent 中，他不會強迫你每一次的呼叫一定要對應到一個 Function Calling 。而是發現需要使用到的時候，才會呼叫該 Function 的結果。
+
+
+
+### 第三部分：根據實戰結果，來分析一下差異：
+
+![img](https://private-user-images.githubusercontent.com/2252691/447592418-92009d89-8aac-4a63-9c51-2d3c94d8264d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDg2Mjc0ODIsIm5iZiI6MTc0ODYyNzE4MiwicGF0aCI6Ii8yMjUyNjkxLzQ0NzU5MjQxOC05MjAwOWQ4OS04YWFjLTRhNjMtOWM1MS0yZDNjOTRkODI2NGQucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI1MDUzMCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNTA1MzBUMTc0NjIyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZTFhZGU5Nzk5ZTQzMzJmM2U0ZDhiZjYwYTNhYTYxYjQ1NjliODhmYjkyODc4ZTJmOWZhMDk1MWQzOGM5OTJmZCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.Un54kHA7TRmxNAe2tZp0jTBZpBN5185WDf_vnvlxCWU)
+
+有沒有發現兩個的差異在哪些地方：
+
+#### 1. 有了更深層的記憶能力，還有上下文的連貫
+這部分主要跟 Agent 預設就有支援 Session Services 有關。透過 Session Services 整個 Agent 不光是記憶著之前的問題之外，還可以跟使用者達成一對一的聊天效果。這也是為什麼上面的聊天出現了
+
+```
+- 我： 其他兩個表現如何？
+- Agent: 我很利益告訴你，但為了做到這一點，我需要分別查詢蘋果與超微的....
+```
+
+這樣就知道，他能理解整個對話 Context 中的「其他兩個」是代表什麼意思。這個也是相當的重要。
+
+相關程式碼方式如下：
+
+```python
+# Initialize InMemorySessionService
+session_service = InMemorySessionService()
+active_sessions = {}  # Cache for active session IDs per user
+
+....
+
+# Get or create a session for this user
+session_id = await get_or_create_session(user_id)
+```
+
+以上兩個方式，就是主要負責記錄與處理 使用者交談對話匡的 Session_ID 處理的方式。
+
+#### 2. 在回答部分， Agent 變得更加聰明
+
+這部分也因為
