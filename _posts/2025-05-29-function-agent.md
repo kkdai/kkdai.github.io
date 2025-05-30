@@ -38,3 +38,5 @@ tags: ["python", "Gemini", "Google"]
 ![image-20250530162426815](../images/image-20250530162426815.png)
 
 ## 導入 Agent SDK
+
+我們先來討論一下，如何將 LangChain funciont Calling 中將 Tools 的
