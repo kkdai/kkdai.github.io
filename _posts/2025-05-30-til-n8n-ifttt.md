@@ -59,6 +59,11 @@ tags: ["n8n"]
 
 
 
+# 一些好用的 n8n 相關樣板：
+
+- [N8n LINE Bot Webhook node](https://github.com/syshen/n8n-nodes-linewebhook)
+- [n8n 好用的 workflow 整理 (shared by cympotek)](https://github.com/cympotek/n8n-workflows)
+
 # 取代掉原本 IFTTT 上面的一些服務
 
 架設完畢也設定完相關的服務之後，就可以開始來取代掉 IFTTT 上面的服務。由於 IFTTT 本來就是比較簡單的 SaaS 服務，所以很快速的將相關的流程轉移到了 n8n 的服務上。
