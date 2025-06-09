@@ -46,6 +46,14 @@ tags: ["n8n"]
 
 這邊列出幾個我覺得在 n8n Node 串接上需要注意的：
 
+### 記得將 Space 打開 Private ，不然不能串接 LINE 跟 TG (等等 POST Services)
+
+安裝好的時候，一開始覺得 WebHook "GET" 沒問題就完事。結果發現 LINE Bot 一直串接不起來，才發現跟 Space 是隱藏的還是公開的有很大的關係。
+
+記得去 Space -> Setting 將它打開。 (這樣就可以接 TG 跟 LINE Bot)
+
+![Google Chrome 2025-06-06 23.32.15](../images/Google Chrome 2025-06-06 23.32.15.png)
+
 ### Google Sheet/Doc/Drive 串接
 
 - 可以參考同一位作者分享的[這段影片](https://www.youtube.com/watch?v=vvqhzbp4J5A&t=8250s)，原來影片三個小時，但是可以跳到這個部分看就好。
