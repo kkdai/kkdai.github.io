@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[DevOps] Netflix 遊戲平台總監將技術債視為一種創新 - Tech debt as innovation by Bruce Wang"
+title: "[DevOps] Netflix 遊戲平台總監將解決技術債視為一種創新 - Tech debt as innovation by Bruce Wang"
 description: ""
 category: 
 - TIL
@@ -93,4 +93,4 @@ Netflix的Bruce Wang分享技術負債管理經驗：技術負債是創新的自
 
 ## 後話
 
-真的是很
+雖然是一個 25 分鐘的演講，但是我卻花了兩三個小時慢慢地欣賞跟品味每一段文字。 許多內容也呼應了身為軟體開發的心路歷程與以前的血淚（？）。 蠻推薦大家要好好思考這些相關的內容。
