@@ -28,7 +28,7 @@ Netflix的Bruce Wang分享技術負債管理經驗：技術負債是創新的自
 - Bad Code (寫的爛～也不會是技術債) - 效能問題 (效能問題絕對不是技術債) 
 -  你對這些程式碼不熟.... (好像超多人講這個，好像重寫就沒有技術債一樣 XD)
 
-![Image](https://pbs.twimg.com/media/GtD4KLlbQAAmVeK?format=jpg&name=large)
+![image-20250610224541232](../images/image-20250610224541232.png)
 
 
 
@@ -39,7 +39,7 @@ Netflix的Bruce Wang分享技術負債管理經驗：技術負債是創新的自
 - 最重要需要去研究你所謂的「技術債」究竟是什麼？ 不能只是說一句，這是某個舊的框架，所以是個技術債。 
 - 要「明確」，「可視化」並且「主動」去將技術債都找出並且明確的定義出來。
 
-![Image](https://pbs.twimg.com/media/GtFc8Ata4AAk_4w?format=jpg&name=medium)
+![image-20250610224523232](../images/image-20250610224523232.png)
 
 
 
@@ -50,7 +50,9 @@ Netflix的Bruce Wang分享技術負債管理經驗：技術負債是創新的自
 - 某個 Tunnel 資訊流通上的限制 -> Tunnel X Project 不可以遇到事情，就說這是「技術債」。
 - 需要清楚的講出來是哪個技術債，不要把技術債當作是不想修復與不想處理上的籠統(suitcase)名詞。
 
-![Image](https://pbs.twimg.com/media/GtFdqcbbYAAv4Q-?format=jpg&name=medium)
+![image-20250610224459656](../images/image-20250610224459656.png)
+
+
 
 
 
@@ -66,7 +68,7 @@ Netflix的Bruce Wang分享技術負債管理經驗：技術負債是創新的自
 
 你所謂的技術債就會消失。 或許根本不會.... 你只會有一堆商業邏輯忘記搬過來。 
 
-![Image](https://pbs.twimg.com/media/GtFhwBqbwAAduHX?format=jpg&name=medium)
+![image-20250610224439613](../images/image-20250610224439613.png)
 
 
 
