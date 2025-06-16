@@ -57,6 +57,11 @@ tags: ["n8n"]
 ### Google Sheet/Doc/Drive 串接
 
 - 可以參考同一位作者分享的[這段影片](https://www.youtube.com/watch?v=vvqhzbp4J5A&t=8250s)，原來影片三個小時，但是可以跳到這個部分看就好。
+- 快速紀錄流程：
+  - 進入 "Google Auth Platform"
+  - 進入 "用戶端"
+  - 增加一個 OAuth 的 "用戶端"
+
 - 需要注意的地方：
   - OAuth2 要串接，因為是測試帳號可能會小心失效。
   - 串接之前，務必要啟動 "Google Drive API", "Googl Sheet API", "Gmail API" 這幾個就平常架設 GCP 用戶比較少打開的。
@@ -64,8 +69,6 @@ tags: ["n8n"]
 ### JSON 檔案的處理
 
 這部分算是 n8n 一個很重要的地方，很多時候你會需要使用 `Edit Field(Set) Node` 來處理。 沒有概念的，可以看這個[部分影片](https://youtu.be/vvqhzbp4J5A?t=1998)。
-
-
 
 # 一些好用的 n8n 相關樣板：
 
