@@ -41,10 +41,10 @@ AI 會理解這些意圖，並將其轉換為具體的程式碼與架構。Gemin
 ![Gemini CLI Screenshot](https://github.com/google-gemini/gemini-cli/raw/main/docs/assets/gemini-screenshot.png)
 
 Gemini CLI:
-https://github.com/google-gemini/gemini-cli
+[https://github.com/google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli)
 
 Google 官方文章:
-https://blog.google/technology/developers/introducing-gemini-cli-open-source-ai-agent/
+[https://blog.google/technology/developers/introducing-gemini-cli-open-source-ai-agent/](https://blog.google/technology/developers/introducing-gemini-cli-open-source-ai-agent/)
 
 接下來，我們將拆解如何利用 Gemini CLI 來完成這個健身日誌專案。
 
@@ -66,11 +66,9 @@ https://blog.google/technology/developers/introducing-gemini-cli-open-source-ai-
 *   **整合開發工具鏈**：它可以直接幫你執行 `git` 指令來進行版本控制，甚至能透過 `gcloud` 指令，將你的應用程式一鍵部署到 Cloud Run。
 *   **建立自動化工作流**：你可以和它建立「默契」。例如，我曾對它下達指令：
     
-    ```
-    以後改完程式碼，都幫我 push 到 GitHub，然後直接跑一次本地端伺服器給我驗證。
-    ```
+> 以後改完程式碼，都幫我 push 到 GitHub，然後直接跑一次本地端伺服器給我驗證。
     
-    從此，這個開發、測試、提交的循環就變得完全自動化且極其順暢。
+從此，這個開發、測試、提交的循環就變得完全自動化且極其順暢。
 
 Gemini CLI 的核心是將 Gemini 1.5 Pro 強大的模型能力與開發者熟悉的 CLI 環境深度整合，讓它能理解你的指令，並調用對應的工具來完成任務。
 
