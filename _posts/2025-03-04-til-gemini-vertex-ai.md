@@ -197,4 +197,10 @@ details = "Publisher Model `projects/PROJECT_ID/locations/asia-east1/publishers/
 
 會發生這個問題，主要是因為如果你選擇了 `asia-east1` 作為你 Vertex AI 的區域。他目前是沒有支援 gemini-2.0 的相關模型喔。
 
-需要改成 `us-central1` 才能正確地呼叫
+20250625 更新： 後來 Google 官方更新要使用 `global` 會更好，也更不容易出錯。
+
+![Google Chrome 2025-06-26 10.23.14](../images/Google Chrome 2025-06-26 10.23.14.png)
+
+- 參考 [https://colab.research.google.com/github/GoogleCloudPlatform/generative-ai/blob/main/gemini/getting-started/intro_gemini_2_0_flash.ipynb](https://colab.research.google.com/github/GoogleCloudPlatform/generative-ai/blob/main/gemini/getting-started/intro_gemini_2_0_flash.ipynb)
+- [https://cloud.google.com/vertex-ai/generative-ai/docs/learn/locations?hl=zh-tw](https://cloud.google.com/vertex-ai/generative-ai/docs/learn/locations?hl=zh-tw)
+
