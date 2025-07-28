@@ -147,4 +147,4 @@ def upload_to_gcs(file_stream, file_name, bucket_name):
 
 ## 成果:
 
-![LINE 2025-07-28 10.46.37](../images/LINE 2025-07-28 10.46.37.tiff)
+![image-20250728105409436](../images/image-20250728105409436.png)
