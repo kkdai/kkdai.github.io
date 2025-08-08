@@ -69,3 +69,7 @@ curl "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:g
 
 
 
+# 成果
+
+![Google Chrome 2025-08-08 23.58.55](../images/Google Chrome 2025-08-08 23.58.55.png)
+
