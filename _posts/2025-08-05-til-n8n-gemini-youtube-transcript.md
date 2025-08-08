@@ -40,3 +40,32 @@ tags: ["Gemini_CLI"]
 
 
 
+## 如何使用 "Gemini 2.5 YouTube 影片字幕總結“ 變成一個 Node
+
+直接透過 HTTP Node
+
+![image-20250809001128186](../images/image-20250809001128186.png)
+
+其中 Header Auth 可以幫助你避免將密碼複製給其他人。其實可以右上角 "import cURL" 就可以直接放入。 參考：
+
+```
+curl "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent" \
+    -H "x-goog-api-key: $GEMINI_API_KEY" \
+    -H 'Content-Type: application/json' \
+    -X POST \
+    -d '{
+      "contents": [{
+        "parts":[
+            {"text": "Please summarize the video in 3 sentences."},
+            {
+              "file_data": {
+                "file_uri": "https://www.youtube.com/watch?v=9hE5-98ZeCg"
+              }
+            }
+        ]
+      }]
+    }' 
+```
+
+
+
