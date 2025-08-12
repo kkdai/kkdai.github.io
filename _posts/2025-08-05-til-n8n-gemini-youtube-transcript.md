@@ -8,7 +8,7 @@ tags: ["Gemini_CLI"]
 
 ---
 
-![LINE 2025-08-08 23.29.29](../images/LINE 2025-08-08 23.29.29.tiff)
+![image-20250812230800553](../images/image-20250812230800553.png)
 
 # 前言
 
@@ -71,5 +71,5 @@ curl "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:g
 
 # 成果
 
-![Google Chrome 2025-08-08 23.58.55](../images/Google Chrome 2025-08-08 23.58.55.png)
+![image-20250812230835729](../images/image-20250812230835729.png)
 
