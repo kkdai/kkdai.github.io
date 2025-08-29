@@ -12,7 +12,15 @@ tags: ["Gemini_CLI", "Golang", "LINEBot"]
 
 
 
-在數位時代，管理 LINE 聊天中的照片、影片、音訊和檔案可能有點麻煩，尤其是想讓這些資料井然有序。這時候，[kkdai/linebot-file](https://github.com/kkdai/linebot-file) 這個開源專案就能派上用場！這款功能強大的 LINE 機器人使用 **Golang** 開發，能自動將聊天室中的多媒體檔案備份到你的 Google Drive，還能聰明整理資料夾並提供簡單的查詢功能。這篇技術部落格將帶你認識這個機器人的核心功能，並一步步教你如何在 Google Cloud Platform (GCP) 上部署它。
+平常在使用 LINE 跟朋友．家人聊天的時候，總是會收到許多不同的檔案。比如說小孩的開學課表、旅行社的旅行資料、或是一些文件。這時候會擔心超過一定時間造成檔案的失效，就可以使用這一次要跟大家分享的功能。 「**LINE Bot 檔案備份機器人**」：這款功能強大的 LINE 機器人使用 **Golang** 開發，能自動將聊天室中的多媒體檔案備份到你的 Google Drive，還能聰明整理資料夾並提供簡單的查詢功能。這篇技術部落格將帶你認識這個機器人的核心功能，並一步步教你如何上部署它。
+
+## 範例程式碼
+
+#### [https://github.com/kkdai/linebot-file](https://github.com/kkdai/linebot-file)
+
+歡迎給 Star 與分享，如果覺得實用也歡迎參與貢獻添加一些新功能。
+
+
 
 ## ✨ 主要功能介紹
 
@@ -111,47 +119,38 @@ gcloud services enable run.googleapis.com cloudbuild.googleapis.com firestore.go
 
 這是讓機器人能存取 Google Drive 的關鍵步驟：
 
-- 前往 Google Cloud Console > APIs & Services > Credentials。
+- 前往 Google Cloud Console > APIs & Services > Credentials。 ([Google Auth Platform](https://console.cloud.google.com/auth))
 - 點擊 **+ CREATE CREDENTIALS**，選擇 **OAuth client ID**。
+
+![image-20250829161538979](../images/image-20250829161538979.png)
+
 - 在 Application type 中選 **Web application**，並命名（例如「LINE Bot File Uploader」）。
 - 這一步先不要填寫 **Authorized redirect URIs**，等 Cloud Run 部署完成後再回來設定。
+
+![image-20250829161558554](../images/image-20250829161558554.png)
+
 - 建立後，你會得到一組 **Client ID** 和 **Client Secret**，請妥善保存，後面會用到。
 
 
 
-#### 4. 部署到 Cloud Run
 
-將專案程式碼 clone 到你的本地環境，然後在專案根目錄執行以下指令：
 
-```bash
-gcloud run deploy linebot-file-service \
-  --source . \
-  --platform managed \
-  --region asia-east1 \
-  --allow-unauthenticated \
-  --set-env-vars="ChannelSecret=YOUR_CHANNEL_SECRET" \
-  --set-env-vars="ChannelAccessToken=YOUR_CHANNEL_ACCESS_TOKEN" \
-  --set-env-vars="GOOGLE_CLIENT_ID=YOUR_GOOGLE_CLIENT_ID" \
-  --set-env-vars="GOOGLE_CLIENT_SECRET=YOUR_GOOGLE_CLIENT_SECRET" \
-  --set-env-vars="GOOGLE_REDIRECT_URL=YOUR_CLOUD_RUN_URL/oauth/callback"
-```
+## 成果展示
 
-**參數說明**：
+![image-20250829162044191](../images/image-20250829162044191.png)
 
-- `linebot-file-service`：你的 Cloud Run 服務名稱，可自訂。
-- `--region`：建議選離你最近的地區，例如 `asia-east1`（台灣）。
-- `--allow-unauthenticated`：允許來自 LINE Platform 的公開請求。
-- `YOUR_...`：替換成你的金鑰和憑證。
-- `GOOGLE_REDIRECT_URL`：先填一個臨時網址（例如 `https://temp.com`）。
+- 如果沒有認證過，會出現請認證的說明。
+- 點選網址認證 Google Drive 的上傳權限即可。
+- 如果不想使用，也可以使用  `/disconnect_drive` 來撤銷相關授權。
 
-#### 5. 設定 Webhook 和 Redirect URI
 
-- 部署完成後，Cloud Run 會提供一個服務 URL（例如 `https://linebot-file-service-xxxxxxxx-an.a.run.app`）。
-- **更新 LINE Webhook**：前往 LINE Developers Console，將你的 Bot 頻道 Webhook URL 設為 Cloud Run 服務 URL。
-- **更新 Google OAuth Redirect URI**：回到步驟 3 的憑證頁面，編輯 Web application 憑證，在 Authorized redirect URIs 加入 `YOUR_CLOUD_RUN_URL/oauth/callback`（例如 `https://linebot-file-service-xxxxxxxx-an.a.run.app/oauth/callback`）。
-- **重新部署 Cloud Run**：再次執行步驟 5 的 `gcloud run deploy`，這次將 `GOOGLE_REDIRECT_URL` 更新為正確的 Cloud Run 回呼網址。
 
-（在這邊你可以貼上你的 Golang 程式碼中處理 Webhook 的部分，例如如何解析 LINE Webhook 事件或處理檔案上傳到 Google Drive 的邏輯，這樣可以讓讀者看到實際的 Golang 實作細節。）
+![image-20250829161720900](../images/image-20250829161720900.png)
+
+- 上傳檔案也很簡單，支援兩種格式。
+  - 直接上傳圖片，會將圖片上傳到 google drvie 保存。
+  - 透過 iOS / AOS 將 PDF 或是任何檔案格式，轉貼到對話視窗。也可以精準上傳到 Google Drive。檔案也可以超過 50MB
+- 要看檔案，就點選查詢最近檔案，就會開啟 Google Drive 網頁去查看檔案列表。
 
 ## 未來展望
 
