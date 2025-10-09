@@ -55,3 +55,34 @@ tags: ["TIL", "數位憑證皮夾"]
 
 
 
+## 數位豆泥卡範例 Web App
+
+網址： [https://mashbeanvc.tonyq.org/](https://mashbeanvc.tonyq.org/)
+
+![Google Chrome 2025-10-09 17.39.55](../images/Google Chrome 2025-10-09 17.39.55.png)
+
+這個 Web App 作為展示有以下兩個主要功能：
+
+- 申請一張豆泥卡（只需要暱稱，生日是選填）
+- 幫豆泥點蠟（也就是驗證的意思）
+
+
+
+這個範例也充分了應用以下主要 API :
+
+- 發卡方： （參考： [https://issuer-sandbox.wallet.gov.tw/swaggerui/#/](https://issuer-sandbox.wallet.gov.tw/swaggerui/#/)）
+  - `/api/qrcode/data` 產生 QR code
+- 驗證方： （參考: [https://verifier-sandbox.wallet.gov.tw/swaggerui/#/)](https://verifier-sandbox.wallet.gov.tw/swaggerui/#/))
+  - `api/oidvp/qrcode`: 產生驗證的 QR Code...
+  - `api/oidvp/result`: 檢查驗證結果是否成功...
+
+
+
+## 打造一個簡單數位憑證驗證場景吧
+
+<img src="http://localhost:3000/images/avatar_candle.png" alt="Avatar" style="zoom:50%;" />
+
+接下來要做一個給 HR 的數位員工卡系統：
+
+
+
