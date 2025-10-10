@@ -303,6 +303,12 @@ VERIFIER_ACCESS_TOKEN=YOUR_VERIFIER_ACCESS_TOKEN
 
 
 
+## 直接線上體驗？
+
+可以直接打開這個[網址](https://did-usecase-hr-660825558664.asia-east1.run.app/support_checkin)來測試。
+
+
+
 ## 總結與未來展望
 
 這是一個數位憑證沙盒的展示場景與 demo program ，大部分程式碼還是透過 TonnyQ 當初打造出來的樣板修改的。主要是希望讓大家可以對於數位憑證沙盒能有基礎的理解，這樣的應用場景只會是許多有創意中的起點。很期待可以看到許多有趣的想法與應用場景在未來的應用上。
