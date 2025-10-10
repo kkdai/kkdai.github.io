@@ -66,8 +66,6 @@ tags: ["TIL", "數位憑證皮夾"]
 - 申請一張豆泥卡（只需要暱稱，生日是選填）
 - 幫豆泥點蠟（也就是驗證的意思）
 
-
-
 這個範例也充分了應用以下主要 API :
 
 - 發卡方： （參考： [https://issuer-sandbox.wallet.gov.tw/swaggerui/#/](https://issuer-sandbox.wallet.gov.tw/swaggerui/#/)）
@@ -164,3 +162,26 @@ tags: ["TIL", "數位憑證皮夾"]
 
 - 挑選要驗證的數位憑證欄位
 - 因為運動補助只需要知道「入職時間」跟「英文名字」就可以，就不需要挑選其他的資料欄位。
+
+最後就會出現一個 QR Code 看做為驗證使用。
+
+
+
+## 來修改程式與使用相關的參數
+
+<img src="../images/image-20251010142916050.png" alt="image-20251010142916050" style="zoom:67%;" />
+
+接下來程式碼放在這個地方： [https://github.com/kkdai/did-usecase-HR](https://github.com/kkdai/did-usecase-HR) ，但是我們先透過發行端跟驗證端的 SwaggerUI 介面來跟大家分享一下，該使用哪些資訊。
+
+
+
+#### 發行端 SwaggerUI 參數說明
+
+網址： [發行端 SwaggerUI](https://issuer-sandbox.wallet.gov.tw/swaggerui/)
+
+#### 輸入 API_Key (Access Token)
+
+<img src="../images/image-20251010143636547.png" alt="image-20251010143636547" style="zoom: 50%;" />
+
+這個資料在當初註冊沙盒的時候發送兩封信件之一 ： 「【數位憑證皮夾】發行端沙盒系統_帳號啟用通知」。
+
