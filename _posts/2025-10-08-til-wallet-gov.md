@@ -110,3 +110,38 @@ tags: ["TIL", "數位憑證皮夾"]
 
 ### 發行數位憑證
 
+（可以參考官方的[發行端使用手冊](https://issuer-sandbox.wallet.gov.tw/operation-manual_0618.pdf))
+
+到了 [發行端沙盒系統  (負責建立發行數位憑證)](https://issuer-sandbox.wallet.gov.tw/) 透過「建立VC模板」
+
+<img src="../images/image-20251010132418021.png" alt="image-20251010132418021" style="zoom: 50%;" />
+
+建立以下的數位憑證
+
+<img src="../images/Google Chrome 2025-10-10 13.12.08.png" alt="Google Chrome 2025-10-10 13.12.08" style="zoom:67%;" />
+
+其中有一些資料需要記住：
+
+- 序號 
+- 證件類型（credentialType)
+
+這邊可以透過「產生 VC 資料」來輸入一個新的資料。
+
+<img src="../images/image-20251010132543934.png" alt="image-20251010132543934" style="zoom:50%;" />
+
+
+
+這樣就會產生一個 QR Code 並且可以讓你匯入到數位錢包之內。
+
+### 驗證數位憑證
+
+(可以參考官方的[驗證端使用手冊](https://verifier-sandbox.wallet.gov.tw/operation-manual.pdf))
+
+![image-20251010133429458](../images/image-20251010133429458.png)
+
+
+
+![image-20251010133415287](../images/image-20251010133415287.png)
+
+![image-20251010133450566](../images/image-20251010133450566.png)
+
