@@ -94,7 +94,7 @@ tags: ["TIL", "數位憑證皮夾"]
 
 以上就是一個使用數位憑證皮夾的系統的假設場景，接下來要來說明要如何打造。
 
-## 透過沙河系統來設計與發行相關數位憑證
+## 透過沙盒系統來設計與發行相關數位憑證
 
 ### 申請沙盒相關流程：
 
@@ -184,4 +184,50 @@ tags: ["TIL", "數位憑證皮夾"]
 <img src="../images/image-20251010143636547.png" alt="image-20251010143636547" style="zoom: 50%;" />
 
 這個資料在當初註冊沙盒的時候發送兩封信件之一 ： 「【數位憑證皮夾】發行端沙盒系統_帳號啟用通知」。
+
+#### 發行端產生 QR Code `/api/qrcode/data`
+
+<img src="../images/image-20251010144626368.png" alt="image-20251010144626368" style="zoom:50%;" />
+
+這邊會需要輸入一個參數 `vcUid` ，請去 [發行端沙盒系統  (負責建立發行數位憑證)](https://issuer-sandbox.wallet.gov.tw/) 找到你發行的數位憑證，點下編輯即可看到相關資訊。
+
+![image-20251010145116814](../images/image-20251010145116814.png)
+
+這個 `/api/qrcode/data` 會需要有資料欄位，這邊可能會比較不容易在介面上一個個填寫。可以先用 `/api/qrcode/nodata` 來測試。
+
+#### 特別說明 - `/api/vc-item-data`
+
+但是程式碼中會使用到的 APO `/api/vc-item-data` 在 [SwaggerUI](https://issuer-sandbox.wallet.gov.tw/swaggerui/#/) 沒有出現。
+
+相關資訊如下： (以我上面資訊舉例)
+
+- **vcId**: 607861
+- **vcCiD**: 0028680530_line_school
+
+```
+curl -X 'POST' \
+  'https://issuer-sandbox.wallet.gov.tw/api/vc-item-data' \
+  -H 'accept: */*' \
+  -H 'Access-Token: YOUR_ACCESS_TOKEN' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "vcId": 607861,
+  "vcCid": "0028680530_line_school",
+  "fields": [
+    {
+      資料省略
+    },
+}'
+
+```
+
+
+
+### 驗證端 SwaggerUI 參數說明
+
+網址： [驗證端 SwaggerUI](https://verifier-sandbox.wallet.gov.tw/swaggerui)
+
+關於 Authorize 的流程跟發行端相同，就跳過。
+
+#### 產生驗證端的 QR Code `/api/oidvp/qrcode`
 
