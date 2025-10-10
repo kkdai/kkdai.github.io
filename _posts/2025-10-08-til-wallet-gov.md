@@ -167,11 +167,9 @@ tags: ["TIL", "數位憑證皮夾"]
 
 
 
-## 來修改程式與使用相關的參數
+## 透過 SwaggerUI : 來了解各種 API 的使用方法
 
-<img src="../images/image-20251010142916050.png" alt="image-20251010142916050" style="zoom:67%;" />
-
-接下來程式碼放在這個地方： [https://github.com/kkdai/did-usecase-HR](https://github.com/kkdai/did-usecase-HR) ，但是我們先透過發行端跟驗證端的 SwaggerUI 介面來跟大家分享一下，該使用哪些資訊。
+接下來透過官方提供的 SwaggerUI 介面，與一些 API 來跟大家講如何找到這些變數。
 
 
 
@@ -231,3 +229,80 @@ curl -X 'POST' \
 
 #### 產生驗證端的 QR Code `/api/oidvp/qrcode`
 
+這邊會需要有兩個參數 
+
+- **ref** :  驗證服務代碼，請到 [驗證端沙盒系統  (用來驗證數位憑證)](https://verifier-sandbox.wallet.gov.tw/) 點選任何一個 VP 即可看到。
+
+<img src="../images/Microsoft PowerPoint 2025-10-10 15.17.10.png" alt="Microsoft PowerPoint 2025-10-10 15.17.10" style="zoom: 50%;" />
+
+- **transactionId**:   這個需要一個 UUID 的字串，可以用 SwaggerUI 上面原本數值來修改一下即可。
+
+如果資料成功，會出現以下相關資料：
+
+```
+{
+  "transactionId": "104158f9-b1dc-4f76-847e-86f6af36d917",
+  "qrcodeImage": "data:image/png;base64,...",
+  "authUri": "modadigitalwallet://authorize?..."
+}
+```
+
+其中：
+
+- transactionId： 就是你填寫得資料
+- qrcodeImage: base64 的圖片
+- authUri： 就是一個 deeplink 可以開啟 iOS App 數位錢包的 App 並且執行相關的驗證。
+
+## 最後： 來修改程式與使用相關的參數
+
+<img src="../images/image-20251010142916050.png" alt="image-20251010142916050" style="zoom:67%;" />
+
+接下來程式碼放在這個地方： [https://github.com/kkdai/did-usecase-HR](https://github.com/kkdai/did-usecase-HR) ，但是我們先透過發行端跟驗證端的 SwaggerUI 介面來跟大家分享一下，該使用哪些資訊。
+
+各位可以查詢 `.env.example` 可以看到相關說明 ([網址](https://github.com/kkdai/did-usecase-HR/blob/main/.env.example))
+
+```
+# 卡片序號，從發行後台取得
+VC_SERNUM=YOUR_VC_SERNUM
+
+# 卡片樣板代號，從發行後台取得
+VC_UID=YOUR_VC_UID
+
+# 發行者存取權杖，從發行後台取得
+ISSUER_ACCESS_TOKEN=YOUR_ISSUER_ACCESS_TOKEN
+
+# 驗證器參考碼
+VERIFIER_SPORT_REF=YOUR_VERIFIER_REF_FOR_SPORT_SUBSIDY
+VERIFIER_PARENT_REF=YOUR_VERIFIER_REF_FOR_PARENT_CHECK
+
+# 驗證器存取權杖
+VERIFIER_ACCESS_TOKEN=YOUR_VERIFIER_ACCESS_TOKEN
+```
+
+裡面的 `VC_SERNUM` 就是剛才提到的 `vcId` 。 其他就可以快速理解才對。
+
+
+
+## 範例使用方式：
+
+可以本地端執行測試一下
+
+#### 建立員工卡
+
+![image-20251010152639239](../images/image-20251010152639239.png)
+
+可以快速輸入資料，並且產生一張員工卡。
+
+
+
+### 申請運動補助
+
+![image-20251010152718672](../images/image-20251010152718672.png)
+
+點選 `運動補助（驗證)` 就可以進入申請運動補助，並且透過掃描 QR Code 來傳輸需要的資料。
+
+
+
+## 總結與未來展望
+
+這是一個數位憑證沙盒的展示場景與 demo program ，大部分程式碼還是透過 TonnyQ 當初打造出來的樣板修改的。主要是希望讓大家可以對於數位憑證沙盒能有基礎的理解，這樣的應用場景只會是許多有創意中的起點。很期待可以看到許多有趣的想法與應用場景在未來的應用上。
