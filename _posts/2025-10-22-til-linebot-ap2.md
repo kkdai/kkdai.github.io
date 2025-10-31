@@ -16,6 +16,12 @@ tags: ["AP2", "Python", "LINEBot", "Enterprise", "HMAC", "CircuitBreaker"]
 
 
 
+建議大家可以看一下這個由 NotebookLM 透過我的程式碼還有部落格內容產生的影片，有個快速概念。
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-d2qMdzk4yw?si=4rZj7lCKudGWWqla" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+
 這篇文章主要會跟大家分享：
 
 - 什麼是 AP2 (Agent Payments Protocol)
@@ -33,13 +39,17 @@ tags: ["AP2", "Python", "LINEBot", "Enterprise", "HMAC", "CircuitBreaker"]
 
 <img src="../images/LINE 2025-10-31 13.49.26.png" alt="LINE 2025-10-31 13.49.26" style="zoom:50%;" />
 
-- 這時候，Shopping Agent 會去詢問 <
+- 這時候，Shopping Agent 會去詢問庫存系統，並且回報產品資訊給你。
 
 
 
 <img src="../images/LINE 2025-10-31 13.49.38.png" alt="LINE 2025-10-31 13.49.38" style="zoom:50%;" />
 
+- 當他看到要付款，就會轉給 Payment Agent 來處理付款相關的資訊。
+
 <img src="../images/LINE 2025-10-31 13.49.47.png" alt="LINE 2025-10-31 13.49.47" style="zoom:50%;" />
+
+- 這裡也會看到，Payment Agent 有展示了一個付款 OTP 的 Demo (當然是用測試用 OTP )
 
 ### 範例程式碼
 
@@ -252,7 +262,7 @@ if otp_data["attempts"] > 3:
     })
 ```
 
-## 🏗️ 企業級 LINE Bot 架構升級實作
+## 🏗️  LINE Bot 架構升級實作
 
 這次的升級我完全重新設計了整個系統架構，從原本的三個基本 Agent 升級成企業級的模組化架構。
 
@@ -295,55 +305,6 @@ def create_enhanced_shopping_agent(model: str = "gemini-2.5-flash") -> Agent:
         ]
     )
 ```
-
-### 🔧 現代化專案結構
-
-採用標準的 Python 專案結構，讓整個專案更專業：
-
-```
-src/linebot_ap2/
-├── config/
-│   ├── settings.py          # Pydantic v2 設定管理
-│   └── __init__.py
-├── services/
-│   ├── mandate_service.py   # AP2 Mandate 服務
-│   ├── payment_service.py   # 支付處理服務
-│   └── product_service.py   # 商品管理服務
-├── common/
-│   ├── retry_handler.py     # Circuit Breaker & 重試機制
-│   └── session_manager.py   # 增強型 Session 管理
-├── tools/
-│   ├── shopping_tools.py    # 增強型購物工具
-│   └── payment_tools.py     # 增強型支付工具
-└── agents/
-    ├── enhanced_shopping_agent.py
-    └── enhanced_payment_agent.py
-```
-
-主要改進：
-- **模組化設計**: 每個功能都有獨立的服務模組，更容易維護
-- **標準化配置**: 使用 `pyproject.toml` 和 Pydantic v2 進行現代化配置管理
-- **企業級工具**: 內建 Circuit Breaker、重試機制、完整日誌追蹤
-- **AP2 完全合規**: 所有 mandate 都有 HMAC-SHA256 數位簽章
-
-我在 Demo 中放了一些範例商品：
-
-```python
-DEMO_PRODUCTS = [
-    {
-        "id": "prod_001",
-        "name": "iPhone 15 Pro", 
-        "price": 999.00,
-        "currency": "USD",
-        "description": "Latest Apple iPhone with advanced camera system",
-        "category": "Electronics",
-        "stock": 10
-    },
-    # ... 更多商品
-]
-```
-
-支援的商品類別包括：Electronics、Computers、Audio、Wearables 等等。
 
 ### 💳 Enhanced Payment Agent - 企業級支付處理
 
