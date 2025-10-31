@@ -23,6 +23,24 @@ tags: ["AP2", "Python", "LINEBot", "Enterprise", "HMAC", "CircuitBreaker"]
 - 如何實作一個具備完整購物流程的 LINE Bot
 - 實際的程式碼架構跟踩坑經驗
 
+## 實際展示
+
+<img src="../images/image-20251031135254894.png" alt="image-20251031135254894" style="zoom:50%;" />
+
+
+
+- 首先你跟 LINE Bot 說你想要買什麼樣的產品，這時候會啟動 Shopping Agent
+
+<img src="../images/LINE 2025-10-31 13.49.26.png" alt="LINE 2025-10-31 13.49.26" style="zoom:50%;" />
+
+- 這時候，Shopping Agent 會去詢問 <
+
+
+
+<img src="../images/LINE 2025-10-31 13.49.38.png" alt="LINE 2025-10-31 13.49.38" style="zoom:50%;" />
+
+<img src="../images/LINE 2025-10-31 13.49.47.png" alt="LINE 2025-10-31 13.49.47" style="zoom:50%;" />
+
 ### 範例程式碼
 
 #### [https://github.com/kkdai/linebot-ap2](https://github.com/kkdai/linebot-ap2)
@@ -509,108 +527,6 @@ async def get_or_create_session(user_id):
     return active_sessions[user_id]
 ```
 
-## 🏗️ 企業級程式碼架構跟實戰經驗
-
-### 🔧 現代化環境設定 - Pydantic v2 配置管理
-
-現在不用手動管理環境變數了，用 Pydantic v2 自動驗證和管理：
-
-```python
-# src/linebot_ap2/config/settings.py
-from pydantic import Field
-from pydantic_settings import BaseSettings
-
-class Settings(BaseSettings):
-    """企業級設定管理，自動驗證和類型檢查"""
-    
-    # LINE Bot 設定
-    channel_secret: str = Field(..., description="LINE Channel Secret")
-    channel_access_token: str = Field(..., description="LINE Channel Access Token")
-    
-    # Google AI 設定
-    google_api_key: str = Field(..., description="Google Gemini API Key")
-    
-    # Vertex AI 設定 (可選)
-    google_genai_use_vertexai: bool = Field(False, description="Use Vertex AI instead of API")
-    google_cloud_project: str = Field("", description="GCP Project ID")
-    google_cloud_location: str = Field("us-central1", description="GCP Region")
-    
-    # 🔐 AP2 安全設定
-    mandate_secret_key: str = Field(..., description="HMAC signing key for mandates")
-    otp_expiry_minutes: int = Field(5, description="OTP expiry time in minutes")
-    max_otp_attempts: int = Field(3, description="Maximum OTP attempts")
-    
-    # 🔄 系統穩定性設定
-    circuit_breaker_failure_threshold: int = Field(5, description="Circuit breaker failure threshold")
-    circuit_breaker_timeout: int = Field(60, description="Circuit breaker timeout in seconds")
-    retry_max_attempts: int = Field(3, description="Maximum retry attempts")
-    
-    class Config:
-        env_file = ".env"
-        case_sensitive = False
-
-# 全域設定實例
-settings = Settings()
-```
-
-### 🔐 pyproject.toml - 現代化專案配置
-
-```toml
-[build-system]
-requires = ["setuptools>=61.0", "wheel"]
-build-backend = "setuptools.build_meta"
-
-[project]
-name = "linebot-ap2"
-version = "2.0.0"
-description = "Enterprise-grade LINE Bot with Google AP2 integration"
-readme = "README.md"
-requires-python = ">=3.10"
-dependencies = [
-    "fastapi>=0.104.0",
-    "uvicorn>=0.24.0",
-    "line-bot-sdk>=3.5.0",
-    "google-adk>=0.1.0",
-    "pydantic>=2.5.0",
-    "pydantic-settings>=2.1.0",  # 重要：Pydantic v2 設定管理
-    "structlog>=23.2.0",
-    "tenacity>=8.2.0"
-]
-
-[project.optional-dependencies]
-dev = [
-    "pytest>=7.4.0",
-    "pytest-asyncio>=0.21.0",
-    "black>=23.0.0",
-    "ruff>=0.1.0",
-    "mypy>=1.7.0"
-]
-
-[tool.setuptools.packages.find]
-where = ["src"]
-
-[tool.setuptools.package-dir]
-"" = "src"
-```
-
-### 實際對話測試
-
-我測試了一下整個流程，基本上蠻順暢的：
-
-```
-用戶: "我想買 iPhone"
-🤖 Shopping Agent: "我找到了 iPhone 15 Pro，售價 $999，目前庫存充足。您想了解更多詳情嗎？"
-
-用戶: "好的，我要購買"  
-🤖 Shopping Agent: "已為您創建購物車，商品總計 $999。可以說「我要付款」進行結帳。"
-
-用戶: "我要付款"
-🤖 Payment Agent: "您有以下支付方式：Visa卡(****1234)。已發送驗證碼到您的手機 ***-***-1234。請輸入6位數驗證碼。"
-
-用戶: "驗證碼是 123456"
-🤖 Payment Agent: "✅ 支付成功！交易編號：txn_abc123def456，感謝您的購買！"
-```
-
 ### 🔧 企業級升級踩坑經驗分享
 
 **1. Pydantic v2 升級挑戰**
@@ -719,60 +635,16 @@ def _prepare_signable_data(self, mandate_data: Dict[str, Any]) -> str:
     return "|".join([f"{k}={v}" for k, v in sorted(filtered_data.items())])
 ```
 
-## 🎯 企業級成果展示
+## 🚀 結語與未來方向
 
-現在的系統不只是基本的購物功能，而是一個真正的企業級電商 Agent 平台：
+整合完才會知道，其實 VP2 並不是一整套的 SDK 或是框架，而是一個協定與相關規範。讓每一個組織都能夠打造出自己的 Payment Protocol 而不需要依賴其他人。
 
-### 🔐 安全性成果
-- ✅ **AP2 完全合規**: 所有 mandate 都有 HMAC-SHA256 數位簽章
-- ✅ **OTP 防暴力破解**: 最多 3 次嘗試，過期自動清理
-- ✅ **Circuit Breaker 保護**: 自動故障恢復，避免系統崩潰
-- ✅ **完整 Audit Trail**: 所有交易都有完整記錄
+以下是未來的一些方向
 
-### 🏗️ 架構性成果  
-- ✅ **模組化設計**: 清楚分離 services、tools、agents
-- ✅ **現代化配置**: Pydantic v2 + pyproject.toml
-- ✅ **企業級錯誤處理**: 結構化日誌 + 異常追蹤
-- ✅ **可擴展性**: 新增功能只需要新增對應的 service 和 tool
-
-### 📊 效能監控
-```python
-# 系統健康度檢查
-@app.get("/health")
-async def health_check():
-    """企業級健康度檢查端點"""
-    return {
-        "status": "healthy",
-        "timestamp": datetime.now(timezone.utc).isoformat(),
-        "active_sessions": len(session_manager.active_sessions),
-        "circuit_breaker_state": retry_handler.circuit_breaker.state,
-        "ap2_compliance": "enabled"
-    }
-```
-
-## 🚀 未來企業級改進方向
-
-### 1. **雲端原生部署**
-- **Kubernetes**: 容器化部署，自動擴縮容
-- **Google Cloud Secret Manager**: 安全的密鑰管理
-- **Cloud Monitoring**: 完整的監控和告警
-
-### 2. **進階 AI 功能** 
+**進階 AI 功能** 
 - **多模態搜尋**: 圖片、語音、文字混合搜尋
 - **個人化推薦**: 基於用戶行為的 ML 推薦引擎
 - **對話式客服**: 整合 Gemini Pro 處理複雜查詢
-
-### 3. **企業級整合**
-- **ERP 系統整合**: 與企業資源規劃系統連接
-- **多渠道支援**: Facebook、WhatsApp、網站客服
-- **B2B 功能**: 企業採購、批量訂單、信用額度管理
-
-### 4. **進階安全功能**
-- **Zero Trust 架構**: 所有請求都需要驗證
-- **端到端加密**: 使用 TLS 1.3 + AES-256-GCM
-- **合規性報告**: 自動生成 PCI DSS、SOX 等合規報告
-
----
 
 希望這篇文章能幫助大家了解 AP2 協議的實作方式。如果你對程式碼有任何問題，歡迎到 [GitHub 專案](https://github.com/kkdai/linebot-ap2) 留言討論，也歡迎大家 fork 回去改進！
 
