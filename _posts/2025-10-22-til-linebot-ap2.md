@@ -527,6 +527,102 @@ async def get_or_create_session(user_id):
     return active_sessions[user_id]
 ```
 
+### 🔍 如何驗證自己是符合 AP2
+
+這一段大概是我寫(Vibe Coding) 完成後，一直無法完全確定是否是正確的部分。以往一直會以為要符合相關的 Protocol ，一定要使用到相關的套件 SDK ，也就是一定要用到 AP2 的套件才算合規。這邊也是完整對過 Spec 跟討論之後的結果。
+
+
+
+**AP2 不需要特別的 SDK，只要符合協議規範即可：**
+
+  1. ✅ 協議合規 - 你的實作完全符合 AP2 標準
+
+     1. ✅ 數位簽章合規 - HMAC-SHA256 算法（AP2 標準）
+
+        ✅ 生命週期管理 - 創建時間、過期時間、狀態追蹤
+
+        ✅ 安全驗證 - OTP 機制、簽章驗證
+
+        ✅ 審計軌跡 - 完整的交易記錄和狀態追蹤
+
+        ✅ 資料完整性 - 必要欄位驗證、格式標準化
+
+        ✅ 狀態管理 - 符合 AP2 的狀態流轉規則
+
+  2. ✅ 資料格式正確 - Cart/Payment Mandate 格式符合規範
+
+     這邊列出相關程式碼:
+
+     	def create_cart_mandate(product_id: str, quantity: int = 1, user_id: str = "") -> str: 
+     	  cart_mandate = {
+		      "mandate_id": mandate_id,           # ✅ AP2 必要欄位
+     	      "type": "cart_mandate",             # ✅ AP2 協議類型
+		      "user_id": user_id,                 # ✅ 用戶識別
+     	      "items": [{                         # ✅ 商品清單
+     	          "product_id": product_id,
+     	          "name": product["name"],
+     	          "price": product["price"],
+     	          "quantity": quantity,
+     	          "subtotal": total_amount
+     	      }],
+     	      "total_amount": total_amount,       # ✅ 總金額
+     	      "currency": product["currency"],    # ✅ 貨幣類型
+     	      "created_at": datetime.now().isoformat(),  # ✅ 建立時間
+     	      "status": "pending_payment"         # ✅ 狀態
+     	  }
+     
+     關於 CartMadate 的資料結構:
+     
+           # 創建結構化資料
+           mandate = CartMandate(
+               mandate_id=mandate_id,              # ✅ 唯一識別碼
+               user_id=user_id,                    # ✅ 用戶ID
+               items=cart_items,                   # ✅ 商品清單 (CartItem 物件)
+               total_amount=total_amount,          # ✅ 總金額
+               currency=currency,                  # ✅ 貨幣
+               created_at=datetime.now(),          # ✅ 建立時間
+               expires_at=datetime.now() + timedelta(...),  # ✅ 過期時間
+               status=PaymentStatus.PENDING        # ✅ 狀態
+           )
+           
+             class CartMandate(BaseModel):
+               mandate_id: str                         # ✅ 必要：mandate 識別碼
+               type: str = "cart_mandate"              # ✅ 必要：AP2 類型標識
+               user_id: str                           # ✅ 必要：用戶識別
+               items: List[CartItem]                  # ✅ 必要：商品清單
+               total_amount: float                    # ✅ 必要：總金額
+               currency: str = "USD"                  # ✅ 必要：貨幣類型
+               created_at: datetime                   # ✅ 必要：建立時間
+               status: PaymentStatus                  # ✅ 必要：處理狀態
+               expires_at: Optional[datetime]         # ✅ 可選：過期時間
+         
+     
+  3. ✅ 安全機制完整 - HMAC-SHA256 簽章、OTP 驗證
+     附上相關程式碼
+
+     ```
+       payload = {
+           "mandate_id": mandate.mandate_id,   # ✅ 簽章內容
+           "user_id": mandate.user_id,
+           "total_amount": mandate.total_amount,
+           "currency": mandate.currency,
+           "items_count": len(mandate.items),
+           "timestamp": timestamp,
+           "nonce": nonce
+       }
+     
+       # ✅ HMAC-SHA256 簽章 (AP2 標準)
+       signature = hmac.new(
+           self.secret_key.encode('utf-8'),
+           payload_string.encode('utf-8'),
+           hashlib.sha256
+       ).hexdigest()
+     ```
+  4. ✅ 工作流程正確 - 購物→支付→驗證的完整流程
+
+
+
+
 ### 🔧 企業級升級踩坑經驗分享
 
 **1. Pydantic v2 升級挑戰**
