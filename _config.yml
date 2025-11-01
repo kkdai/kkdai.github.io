@@ -10,7 +10,7 @@ paginate_path: "page:num"
 
 highlighter: rouge
 markdown: kramdown
-google_analytics: UA-54721520-1
+google_analytics: G-4DTDLY14RN
 
 title: Blog E
 description: Attitude is everything
