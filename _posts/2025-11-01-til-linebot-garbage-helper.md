@@ -8,7 +8,7 @@ tags: ["Go", "LINE Bot", "GCP", "Gemini", "Firestore", "Cloud Run"]
 
 ---
 
-
+<img src="../images/image-20251102143236468.png" alt="image-20251102143236468" style="zoom:50%;" />
 
 
 
@@ -20,7 +20,7 @@ tags: ["Go", "LINE Bot", "GCP", "Gemini", "Firestore", "Cloud Run"]
 
 這時候我看到臉書上一個[朋友貼文](https://www.facebook.com/yukaihuangtw/posts/pfbid02Hf5K28V7BmBcy9FzHBdu9r8zD5TjtK3MTKL4BpwMdX34Wc9SP1ktoZfvTGQTRix5l) ，他敘述他做出了一個垃圾車追蹤的網站。 ([網站](https://garbage.yukai.dev/)， [github](https://github.com/Yukaii/garbage/))
 
-<img src="../images/Telegram 2025-11-02 12.44.03.tiff" alt="Telegram 2025-11-02 12.44.03" style="zoom:25%;" />
+<img src="../images/image-20251102143208176.png" alt="image-20251102143208176" style="zoom:25%;" />
 
 這時候我在想，難道不能結合 LINE Bot 做出一個可以很快速幫助到其他的工具嗎?因此，我決定打造一個垃圾車 LINE Bot，讓大家可以透過最熟悉的通訊軟體，輕鬆查詢垃圾車資訊，甚至設定提醒通知。更重要的是，這個 Bot 不只是簡單的指令查詢，而是整合了 Google Gemini AI，能夠理解「我晚上七點前在哪裡倒垃圾？」這樣的自然語言，提供真正智慧化的服務體驗。
 
