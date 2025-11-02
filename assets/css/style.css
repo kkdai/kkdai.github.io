@@ -189,3 +189,56 @@ ul.dropdown-menu>li>a>i.fa {
     width: 1.3em;
 }
 
+/* Horizontal navigation layout */
+.nav-horizontal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.nav-horizontal li {
+    flex: 0 0 auto;
+}
+
+.nav-horizontal li a {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-horizontal li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-horizontal li a i {
+    margin-right: 4px;
+}
+
+/* Social media horizontal layout */
+.social-horizontal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.social-horizontal li {
+    flex: 0 0 auto;
+}
+
+.social-horizontal li .btn {
+    padding: 6px 8px;
+    min-width: 32px;
+    min-height: 32px;
+}
+
