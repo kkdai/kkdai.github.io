@@ -31,34 +31,46 @@ tagline:
 {% endfor %}
 <hr/>
 
-<ul class="pager"> 
-
-  {% if paginator.previous_page %}
-  <li class="previous">
-    {% if paginator.previous_page == 1 %}
-    <a href="{{ site.BASE_PATH }}/">&larr; Newer</a>
+<nav aria-label="Blog pagination" class="mt-4">
+  <ul class="pagination justify-content-center">
+    {% if paginator.previous_page %}
+    <li class="page-item">
+      {% if paginator.previous_page == 1 %}
+      <a class="page-link" href="{{ site.BASE_PATH }}/" aria-label="Newer posts">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i> Newer
+      </a>
+      {% else %}
+      <a class="page-link" href="{{ site.BASE_PATH }}/{{ site.paginate_path | replace: ':num', paginator.previous_page }}" aria-label="Newer posts">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i> Newer
+      </a>
+      {% endif %}
+    </li>
     {% else %}
-    <a href="{{ site.BASE_PATH }}/{{ site.paginate_path | replace: ':num', paginator.previous_page }}">&larr; Newer</a>
+    <li class="page-item disabled">
+      <span class="page-link">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i> Newer
+      </span>
+    </li>
     {% endif %}
-  </li>
-  {% else %}
-  <li class="previous disabled">
-    <a>&larr; Newer</a>
-  </li>
-  {% endif %}
-  
-  <li>
-    <span class="page_number">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-  </li>
+    
+    <li class="page-item active">
+      <span class="page-link">
+        Page {{ paginator.page }} of {{ paginator.total_pages }}
+      </span>
+    </li>
 
-  {% if paginator.next_page %}
-  <li class="next">
-    <a href="{{ site.BASE_PATH }}/{{ site.paginate_path | replace: ':num', paginator.next_page }}">Older &rarr;</a>
-  </li>
-  {% else %}
-  <li class="next disabled">
-    <a>Older &rarr;</a>        
-  </li>
-  {% endif %}
-
-</ul>
+    {% if paginator.next_page %}
+    <li class="page-item">
+      <a class="page-link" href="{{ site.BASE_PATH }}/{{ site.paginate_path | replace: ':num', paginator.next_page }}" aria-label="Older posts">
+        Older <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+    </li>
+    {% else %}
+    <li class="page-item disabled">
+      <span class="page-link">
+        Older <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </span>
+    </li>
+    {% endif %}
+  </ul>
+</nav>
