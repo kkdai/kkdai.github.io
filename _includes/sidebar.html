@@ -14,8 +14,8 @@
 </div>
 {% endif %}
 
-<div id="contact-list" class="text-center">
-	<ul class="list-unstyled list-inline">
+<div id="nav-list" class="text-center">
+	<ul class="list-unstyled nav-horizontal">
 		<li><a href="{{ site.BASE_PATH}}/"><i class="fa fa-home"></i>首頁</a></li>
 		<li><a href="{{ site.BASE_PATH}}/{{ site.categories_path }}"><i class="fa fa-folder"></i>分類</a></li>
 		<li><a href="{{ site.BASE_PATH}}/{{ site.archive_path }}"><i class="fa fa-archive"></i>封存</a></li>
@@ -23,39 +23,38 @@
 	</ul>
 </div>
 <div id="contact-list" class="text-center">
-	<ul class="list-unstyled list-inline">
+	<ul class="list-unstyled social-horizontal">
 		{% if site.author.github %}
 		<li>
 			<a class="btn btn-default btn-sm" href="https://github.com/{{ site.author.github }}">
-				<i class="fa fa-github-alt fa-lg"></i>
+				<i class="fa fa-github-alt"></i>
 			</a>
 		</li>
 		{% endif %}
 		{% if site.author.twitter %}
 		<li>
 			<a class="btn btn-default btn-sm" href="https://twitter.com/{{ site.author.twitter }}">
-				<i class="fa fa-twitter fa-lg"></i>
+				<i class="fa fa-twitter"></i>
 			</a>
 		</li>
 		{% endif %}
 		{% if site.author.linkedin %}
 		<li>
 			<a class="btn btn-default btn-sm" href="https://linkedin.com/in/{{ site.author.linkedin }}">
-				<i class="fa fa-linkedin fa-lg"></i>
+				<i class="fa fa-linkedin"></i>
 			</a>
 		</li>
 		{% endif %}
 		{% if site.author.email %}
 		<li>
 			<a class="btn btn-default btn-sm" href="mailto:{{ site.author.email }}">
-				<i class="fa fa-envelope fa-lg"></i>
+				<i class="fa fa-envelope"></i>
 			</a>
 		</li>
 		{% endif %}
-
 		<li>
 			<a class="btn btn-default btn-sm" href="{{ site.BASE_PATH }}/{{ site.rss_path }}">
-				<i class="fa fa-rss fa-lg"></i>
+				<i class="fa fa-rss"></i>
 			</a>
 		</li>
 	</ul>
