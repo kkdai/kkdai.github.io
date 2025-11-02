@@ -53,10 +53,59 @@
 	<![endif]-->
 
 	<!-- Le styles -->
-	<link href="{{ site.BASE_PATH }}/assets/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 	<link href="{{ site.BASE_PATH }}/assets/resources/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	<link href="{{ site.BASE_PATH }}/assets/resources/syntax/syntax.css" rel="stylesheet">
 	<link href="{{ site.BASE_PATH }}/assets/css/style.css" rel="stylesheet">
+
+	<!-- Mobile Touch Optimization -->
+	<style>
+		/* Touch-friendly button sizes */
+		.btn {
+			min-height: 44px;
+			min-width: 44px;
+		}
+		
+		/* Better touch targets for navigation */
+		.nav-link {
+			padding: 0.75rem 1rem;
+			min-height: 44px;
+			display: flex;
+			align-items: center;
+		}
+		
+		.dropdown-item {
+			padding: 0.75rem 1.5rem;
+			min-height: 44px;
+			display: flex;
+			align-items: center;
+		}
+		
+		/* Improved spacing for mobile */
+		@media (max-width: 991.98px) {
+			.navbar-nav .nav-item {
+				margin-bottom: 0.25rem;
+			}
+			
+			.navbar-brand {
+				padding: 0.75rem 0;
+			}
+			
+			body {
+				padding-top: 0;
+			}
+			
+			.col-lg-9 {
+				padding: 1rem;
+			}
+		}
+		
+		/* Better scrolling on mobile */
+		html {
+			scroll-behavior: smooth;
+			-webkit-overflow-scrolling: touch;
+		}
+	</style>
 
 	<!-- Le fav and touch icons -->
 	<!-- Update these with your own images
@@ -115,44 +164,40 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-default visible-xs" role="navigation">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light d-lg-none" role="navigation">
 		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse"
-				data-target="#bs-example-navbar-collapse-1">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNavbar" aria-controls="mobileNavbar" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
 			</button>
 			{% if site.author.github %}
-			<a type="button" class="navbar-toggle nav-link" href="http://github.com/{{ site.author.github }}">
+			<a class="btn btn-outline-secondary btn-sm me-2" href="http://github.com/{{ site.author.github }}" aria-label="GitHub">
 				<i class="fa fa-github"></i>
 			</a>
 			{% endif %}
 			{% if site.author.twitter %}
-			<a type="button" class="navbar-toggle nav-link" href="http://twitter.com/{{ site.author.twitter }}">
+			<a class="btn btn-outline-secondary btn-sm me-2" href="http://twitter.com/{{ site.author.twitter }}" aria-label="Twitter">
 				<i class="fa fa-twitter"></i>
 			</a>
 			{% endif %}
 			{% if site.author.email %}
-			<a type="button" class="navbar-toggle nav-link" href="mailto:{{ site.author.email }}">
+			<a class="btn btn-outline-secondary btn-sm" href="mailto:{{ site.author.email }}" aria-label="Email">
 				<i class="fa fa-envelope"></i>
 			</a>
 			{% endif %}
-			<a class="navbar-brand" href="{{ site.BASE_PATH }}/">
-				<img src="http://www.gravatar.com/avatar/{{site.author.email_md5}}?s=35" class="img-circle" />
+			<a class="navbar-brand d-flex align-items-center" href="{{ site.BASE_PATH }}/">
+				<img src="http://www.gravatar.com/avatar/{{site.author.email_md5}}?s=35" class="rounded-circle me-2" alt="{{ site.author.name }}" />
 				{{ site.title }}
 			</a>
 		</div>
 
 		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			<ul class="nav navbar-nav">
-				<li class="active"><a href="{{ site.BASE_PATH }}/">首頁</a></li>
-				<li><a href="{{ site.BASE_PATH}}/{{ site.categories_path }}">分類</a></li>
-				<li><a href="{{ site.BASE_PATH}}/{{ site.archive_path }}">封存</a></li>
-				<li><a href="{{ site.BASE_PATH}}/{{ site.tags_path }}">標籤</a></li>
+		<div class="collapse navbar-collapse" id="mobileNavbar">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<li class="nav-item"><a class="nav-link active" href="{{ site.BASE_PATH }}/">首頁</a></li>
+				<li class="nav-item"><a class="nav-link" href="{{ site.BASE_PATH}}/{{ site.categories_path }}">分類</a></li>
+				<li class="nav-item"><a class="nav-link" href="{{ site.BASE_PATH}}/{{ site.archive_path }}">封存</a></li>
+				<li class="nav-item"><a class="nav-link" href="{{ site.BASE_PATH}}/{{ site.tags_path }}">標籤</a></li>
 			</ul>
 		</div><!-- /.navbar-collapse -->
 	</nav>
@@ -167,27 +212,27 @@
 	</script>
 
 	<!-- nav-menu-dropdown -->
-	<div class="btn-group hidden-xs" id="nav-menu">
-		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+	<div class="btn-group d-none d-lg-block" id="nav-menu">
+		<button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
 			<i class="fa fa-bars"></i>
 		</button>
-		<ul class="dropdown-menu" role="menu">
-			<li><a href="{{ site.BASE_PATH}}/"><i class="fa fa-home"></i>首頁</a></li>
-			<li><a href="{{ site.BASE_PATH}}/{{ site.categories_path }}"><i class="fa fa-folder"></i>分類</a></li>
-			<li><a href="{{ site.BASE_PATH}}/{{ site.archive_path }}"><i class="fa fa-archive"></i>封存</a></li>
-			<li><a href="{{ site.BASE_PATH}}/{{ site.tags_path }}"><i class="fa fa-tags"></i>標籤</a></li>
+		<ul class="dropdown-menu">
+			<li><a class="dropdown-item" href="{{ site.BASE_PATH}}/"><i class="fa fa-home"></i> 首頁</a></li>
+			<li><a class="dropdown-item" href="{{ site.BASE_PATH}}/{{ site.categories_path }}"><i class="fa fa-folder"></i> 分類</a></li>
+			<li><a class="dropdown-item" href="{{ site.BASE_PATH}}/{{ site.archive_path }}"><i class="fa fa-archive"></i> 封存</a></li>
+			<li><a class="dropdown-item" href="{{ site.BASE_PATH}}/{{ site.tags_path }}"><i class="fa fa-tags"></i> 標籤</a></li>
 
-			<li class="divider"></li>
-			<li><a href="#"><i class="fa fa-arrow-up"></i>回到頁首</a></li>
+			<li><hr class="dropdown-divider"></li>
+			<li><a class="dropdown-item" href="#"><i class="fa fa-arrow-up"></i> 回到頁首</a></li>
 		</ul>
 	</div>
 
-	<div class="col-sm-3 sidebar hidden-xs"
+	<div class="col-lg-3 sidebar d-none d-lg-block"
 		style="{% if site.sidebar_background_image %}background: url({{site.sidebar_background_image}}) no-repeat center center !important;{% endif %}">
 		{% include sidebar.html %}
 	</div>
 
-	<div class="col-sm-9 col-sm-offset-3">
+	<div class="col-lg-9 offset-lg-3">
 		{{ content }}
 
 		<footer>
@@ -201,7 +246,7 @@
 
 	<script type="text/javascript"
 		src="{{ site.BASE_PATH }}/assets/resources/jquery/jquery-migrate-3.4.1.min.js"></script>
-	<script type="text/javascript" src="{{ site.BASE_PATH }}/assets/resources/bootstrap/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="{{ site.BASE_PATH }}/assets/js/app.js"></script>
 
 	<!-- Lazy Loading for Images -->
