@@ -56,13 +56,6 @@ tags: ["Go", "LINE Bot", "GCP", "Gemini", "Firestore", "Cloud Run"]
 
 ## 🏗️ 技術架構說明
 
-### 為什麼選擇 Go 語言？
-
-1. **卓越的併發處理**：Go 的 goroutine 非常適合處理大量的 webhook 請求
-2. **快速的編譯和部署**：特別適合 Cloud Run 的容器化部署
-3. **豐富的生態系**：LINE Bot SDK、Google Cloud SDK 都有官方支援
-4. **優秀的效能**：記憶體使用量低，啟動速度快
-
 ### 系統架構圖
 
 ```
@@ -85,15 +78,6 @@ tags: ["Go", "LINE Bot", "GCP", "Gemini", "Firestore", "Cloud Run"]
                     │ (提醒排程觸發)    │
                     └──────────────────┘
 ```
-
-### 主要技術棧
-
-- **語言**: Go 1.24
-- **雲端平台**: Google Cloud Platform
-- **資料庫**: Firestore（NoSQL 文件資料庫）
-- **外部 API**: LINE Bot SDK, Google Maps API, Gemini API
-- **資料來源**: [Yukaii/garbage](https://github.com/Yukaii/garbage)
-- **部署**: Cloud Run + Cloud Build
 
 ## 💻 核心功能實作
 
@@ -121,7 +105,7 @@ func (h *Handler) HandleWebhook(w http.ResponseWriter, r *http.Request) {
 }
 ```
 
-### 2. Gemini AI 自然語言理解
+### 2. Gemini AI 關於 LLM 理解的部分
 
 這是整個系統最有趣的部分，透過 Gemini 來理解使用者的自然語言查詢：
 
@@ -305,52 +289,7 @@ r.HandleFunc("/tasks/dispatch-reminders", func(w http.ResponseWriter, r *http.Re
 })
 ```
 
-## 🚀 Cloud Build 自動化部署
 
-### 設定 Cloud Build 觸發器
-
-部署流程完全自動化，只要推送程式碼到 main 分支，就會自動觸發部署：
-
-```yaml
-# cloudbuild.yaml
-steps:
-  # Build the container image
-  - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'gcr.io/$PROJECT_ID/garbage-linebot:$COMMIT_SHA', '.']
-
-  # Push the container image to Container Registry
-  - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'gcr.io/$PROJECT_ID/garbage-linebot:$COMMIT_SHA']
-
-  # Deploy container image to Cloud Run
-  - name: 'gcr.io/cloud-builders/gcloud'
-    args:
-    - 'run'
-    - 'deploy'
-    - 'garbage-linebot'
-    - '--image'
-    - 'gcr.io/$PROJECT_ID/garbage-linebot:$COMMIT_SHA'
-    - '--region'
-    - 'asia-east1'
-    - '--platform'
-    - 'managed'
-    - '--allow-unauthenticated'
-    - '--set-env-vars'
-    - 'LINE_CHANNEL_SECRET=${_LINE_CHANNEL_SECRET},LINE_CHANNEL_ACCESS_TOKEN=${_LINE_CHANNEL_ACCESS_TOKEN},GOOGLE_MAPS_API_KEY=${_GOOGLE_MAPS_API_KEY},GEMINI_API_KEY=${_GEMINI_API_KEY},GCP_PROJECT_ID=$PROJECT_ID'
-```
-
-### 環境變數設定
-
-在 Cloud Build 觸發器中設定替代變數：
-
-```
-_LINE_CHANNEL_SECRET: your_line_channel_secret
-_LINE_CHANNEL_ACCESS_TOKEN: your_line_channel_access_token
-_GOOGLE_MAPS_API_KEY: your_google_maps_api_key
-_GEMINI_API_KEY: your_gemini_api_key
-```
-
-特別的是，`INTERNAL_TASK_TOKEN` 會在應用啟動時自動生成，無需手動設定！
 
 ## 🔧 遇到的挑戰與解決方案
 
