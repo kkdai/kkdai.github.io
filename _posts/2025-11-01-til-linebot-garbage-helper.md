@@ -627,7 +627,85 @@ if count == 0 {
 
 **解決方案**：設計雙重保障機制，即使外部排程器失效，本地排程器仍能正常運作。
 
-### 5. LINE Bot 訊息推播限制
+### 5. 時區處理的複雜性
+
+**問題**：在雲端環境中，伺服器可能運行在 UTC 時區，但垃圾車資料和使用者都在台灣時區，導致提醒時間計算錯誤。
+
+**具體症狀**：
+- 使用者在半夜收到「垃圾車 9 分鐘後抵達」的提醒
+- 提醒時間與實際垃圾車時間不符
+
+**問題分析**：
+```go
+// 問題代碼：混用不同時區
+now := time.Now()                    // 可能是 UTC
+eta := parseTimeToToday("19:00")     // 台灣時間 19:00
+timeUntil := eta.Sub(now)           // 時區不一致導致計算錯誤
+```
+
+**解決方案**：建立統一的時區處理機制：
+
+```go
+// 1. 建立時區工具函數
+package utils
+
+func GetTaiwanTimezone() *time.Location {
+    taipeiTZ, err := time.LoadLocation("Asia/Taipei")
+    if err != nil {
+        // 備用方案：固定時區 UTC+8
+        taipeiTZ = time.FixedZone("CST", 8*3600)
+    }
+    return taipeiTZ
+}
+
+func NowInTaiwan() time.Time {
+    return time.Now().In(GetTaiwanTimezone())
+}
+
+func ToTaiwan(t time.Time) time.Time {
+    return t.In(GetTaiwanTimezone())
+}
+
+// 2. 修復時間解析
+func parseTimeToToday(timeStr string) (time.Time, error) {
+    taipeiTZ := utils.GetTaiwanTimezone()
+    now := utils.NowInTaiwan()
+    
+    // 確保解析出的時間在台灣時區
+    return time.Date(now.Year(), now.Month(), now.Day(), 
+                    hour, minute, 0, 0, taipeiTZ), nil
+}
+
+// 3. 修復提醒計算
+func (s *Scheduler) processReminder(reminder *store.Reminder) error {
+    now := utils.NowInTaiwan()
+    etaInTaipei := utils.ToTaiwan(reminder.ETA)
+    
+    notificationTime := etaInTaipei.Add(-10 * time.Minute)
+    timeUntilArrival := etaInTaipei.Sub(now)
+    
+    // 現在時間計算是正確的
+    if now.After(notificationTime) && now.Before(etaInTaipei) {
+        // 發送提醒
+    }
+}
+```
+
+**測試驗證**：
+```go
+// 建立測試來驗證時區修復
+func TestTimezoneHandling() {
+    now := utils.NowInTaiwan()
+    eta := time.Date(now.Year(), now.Month(), now.Day(), 19, 0, 0, 0, utils.GetTaiwanTimezone())
+    
+    timeUntil := eta.Sub(now)
+    fmt.Printf("距離垃圾車抵達: %.0f 分鐘", timeUntil.Minutes())
+}
+```
+
+這個修復確保了無論伺服器運行在哪個時區，所有時間計算都基於台灣時間進行。
+
+### 6. LINE Bot 訊息推播限制
 
 **問題**：LINE Bot 有推播訊息的頻率限制。
 
@@ -692,7 +770,11 @@ log.Printf("Processing reminder %s: ETA=%s, NotificationTime=%s, AdvanceMinutes=
 
 ### 實戰經驗分享
 
-在開發過程中，我們遇到了一個典型的 AI 應用挑戰：**如何處理 AI 模型的不穩定性**。透過建立本地測試環境和多層 fallback 策略，我們確保了系統的穩定性：
+在開發過程中，我們遇到了兩個典型的挑戰：
+
+#### 1. AI 模型的不穩定性處理
+
+**挑戰**：如何處理 AI 模型的不穩定性。透過建立本地測試環境和多層 fallback 策略，我們確保了系統的穩定性：
 
 ```bash
 # 我們建立了完整的測試環境
@@ -700,7 +782,28 @@ export GEMINI_API_KEY='your_key_here'
 cd test && go run simple_main.go
 ```
 
-這個測試程式幫助我們發現 Gemini 在地址解析上的限制，並及時實作了相應的解決方案。這提醒我們：**在 AI 驅動的應用中，永遠要有備用方案。**
+這個測試程式幫助我們發現 Gemini 在地址解析上的限制，並及時實作了相應的解決方案。
+
+#### 2. 雲端應用的時區陷阱
+
+**挑戰**：最容易被忽略但影響最大的問題 - 時區處理。
+
+**發現過程**：
+- 使用者反映在半夜收到垃圾車提醒
+- 透過日誌發現時間計算異常
+- 建立時區測試程式驗證問題
+
+```bash
+# 時區測試驗證
+cd test && go run timezone_test_main.go
+```
+
+**關鍵學習**：
+- **雲端部署時，絕對不能假設伺服器時區**
+- **建立專門的時區工具函數**，統一處理所有時間相關操作
+- **完整的測試覆蓋**，包含時區邊界情況
+
+這兩個經驗提醒我們：**在 AI 驅動的雲端應用中，永遠要有備用方案，並且要特別注意基礎設施層面的差異。**
 
 希望這個經驗分享能夠幫助到正在學習相關技術的開發者們！
 
