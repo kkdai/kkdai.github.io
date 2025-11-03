@@ -306,6 +306,7 @@ func (h *Handler) searchNearbyGarbageTrucks(ctx context.Context, userID string, 
 ```
 
 這樣的設計讓系統能夠：
+
 1. **高效率處理大量資料**：每次查詢都會取得最新資料，確保資訊準確性
 2. **智慧化查詢**：結合地理位置、時間窗口等多重條件
 3. **彈性擴展**：易於加入其他城市的垃圾車資料源
@@ -632,10 +633,12 @@ if count == 0 {
 **問題**：在雲端環境中，伺服器可能運行在 UTC 時區，但垃圾車資料和使用者都在台灣時區，導致提醒時間計算錯誤。
 
 **具體症狀**：
+
 - 使用者在半夜收到「垃圾車 9 分鐘後抵達」的提醒
 - 提醒時間與實際垃圾車時間不符
 
 **問題分析**：
+
 ```go
 // 問題代碼：混用不同時區
 now := time.Now()                    // 可能是 UTC
@@ -692,6 +695,7 @@ func (s *Scheduler) processReminder(reminder *store.Reminder) error {
 ```
 
 **測試驗證**：
+
 ```go
 // 建立測試來驗證時區修復
 func TestTimezoneHandling() {
@@ -714,6 +718,102 @@ func TestTimezoneHandling() {
 - 實作提醒狀態管理，避免重複發送
 - 加入適當的錯誤處理和重試機制
 - 使用 goroutine 非同步處理，避免阻塞主要流程
+
+### 7. Google Maps API 授權配置問題
+
+**問題**：在實作地理編碼功能時遇到 `REQUEST_DENIED - This API project is not authorized to use this API` 錯誤。
+
+**問題分析**：
+
+Geocoding API 是 Google Maps Platform 的核心服務，但預設並未啟用。即使有 API Key，如果沒有在 GCP 專案中啟用相應的 API，仍會被拒絕存取。
+
+**完整解決方案**：
+
+#### 1. 啟用必要的 Google Maps API
+
+在 GCP Console 中啟用以下 API（這些都是本專案會用到的）：
+
+```bash
+# 使用 gcloud 命令一次性啟用
+gcloud services enable \
+  geocoding-backend.googleapis.com \
+  maps-backend.googleapis.com \
+  places-backend.googleapis.com \
+  geolocation.googleapis.com \
+  --project=your-project-id
+```
+
+或透過 GCP Console 手動啟用：
+- **Geocoding API** - 地址轉坐標（必需）
+- **Maps JavaScript API** - 地圖顯示
+- **Places API** - 地點搜索
+- **Geolocation API** - 定位服務
+
+#### 2. 建立並限制 API Key
+
+**建立 API Key**：
+1. 前往 [APIs & Services → Credentials](https://console.cloud.google.com/apis/credentials)
+2. 點擊 "CREATE CREDENTIALS" → "API key"
+3. 複製產生的 API key
+
+**設定安全限制**（重要！）：
+
+```
+API restrictions（推薦設定）:
+✅ Restrict key
+  ✅ Geocoding API
+  ✅ Places API
+  ✅ Maps JavaScript API
+  ✅ Geolocation API
+
+Application restrictions（生產環境必需）:
+選項 A: HTTP referrers - 適合網頁應用
+選項 B: IP addresses - 適合後端服務（本專案建議）
+選項 C: None - 僅限開發測試
+```
+
+#### 3. 配置環境變數
+
+**Cloud Build 部署**：
+在觸發器的替代變數中設定：
+```
+_GOOGLE_MAPS_API_KEY = 你的API_KEY
+```
+
+**本地開發**：
+```bash
+# .env 文件
+GOOGLE_MAPS_API_KEY=你的API_KEY
+```
+
+#### 4. 驗證 API 生效
+
+等待 1-2 分鐘後測試：
+
+```bash
+# 測試 Geocoding API
+curl "https://maps.googleapis.com/maps/api/geocode/json?address=台北101&key=你的API_KEY"
+
+# 成功回應應包含：
+# {
+#   "results": [...],
+#   "status": "OK"
+# }
+```
+
+**關鍵學習**：
+
+1. **API 啟用是前提**：有 API Key ≠ 有權限使用 API，必須明確啟用每個服務
+2. **安全性優先**：生產環境務必設定 API restrictions，避免 API key 被濫用
+3. **費用控管**：Google Maps API 有免費額度（每月 $200），但建議設定預算提醒
+4. **區域考量**：確保 API key 的限制設定不會阻擋 Cloud Run 的請求
+
+**費用說明**：
+- Geocoding API：每月 $200 免費額度（約 40,000 次請求）
+- 超過後：$5/1000 次請求
+- 建議在代碼中實作快取機制，減少 API 調用次數
+
+這個問題提醒我們：在整合第三方服務時，不僅要有正確的憑證，還要確保所有必要的服務都已正確啟用和配置。
 
 ## 📊 效能監控與可靠性
 
@@ -789,6 +889,7 @@ cd test && go run simple_main.go
 **挑戰**：最容易被忽略但影響最大的問題 - 時區處理。
 
 **發現過程**：
+
 - 使用者反映在半夜收到垃圾車提醒
 - 透過日誌發現時間計算異常
 - 建立時區測試程式驗證問題
@@ -799,6 +900,7 @@ cd test && go run timezone_test_main.go
 ```
 
 **關鍵學習**：
+
 - **雲端部署時，絕對不能假設伺服器時區**
 - **建立專門的時區工具函數**，統一處理所有時間相關操作
 - **完整的測試覆蓋**，包含時區邊界情況
