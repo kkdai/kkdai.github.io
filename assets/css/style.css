@@ -249,3 +249,53 @@ ul.social-horizontal li .btn {
     min-height: 32px;
 }
 
+/* Enhanced code styling for dark theme */
+article pre {
+    background: #2d3748 !important;
+    color: #e2e8f0 !important;
+    border-radius: 8px;
+    padding: 1.25rem;
+    margin: 1rem 0;
+    overflow-x: auto;
+    font-family: 'Fira Code', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    border: none;
+}
+
+article code {
+    background: #4a5568 !important;
+    color: #e2e8f0 !important;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: 'Fira Code', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    font-size: 0.85rem;
+}
+
+/* Ensure code blocks inside pre tags also get the styling */
+article pre code {
+    background: transparent !important;
+    padding: 0 !important;
+    font-size: 0.9rem;
+}
+
+/* Make sure highlighted code blocks blend well */
+article .highlight {
+    border: none;
+    background: #2d3748 !important;
+}
+
+/* Code block language labels */
+.highlight::before {
+    content: attr(data-lang);
+    display: block;
+    text-align: right;
+    color: #a0aec0;
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
