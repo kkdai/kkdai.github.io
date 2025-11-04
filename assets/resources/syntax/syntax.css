@@ -5,7 +5,7 @@
  */
 
 /* Modern code block styling */
-.highlight {
+.highlight, .highlighter-rouge {
     background: #2d3748;
     color: #e2e8f0;
     border-radius: 8px;
@@ -16,6 +16,30 @@
     font-size: 0.9rem;
     line-height: 1.6;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Markdown code blocks with language specification */
+div.highlight {
+    background: #2d3748;
+    border-radius: 8px;
+    margin: 1rem 0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Code inside highlight divs */
+div.highlight pre {
+    background: transparent;
+    margin: 0;
+    padding: 1.25rem;
+    border-radius: 8px;
+    overflow-x: auto;
+}
+
+/* Language-specific highlighting */
+.language-bash, .language-go, .language-javascript, .language-python, 
+.language-html, .language-css, .language-json, .language-yaml {
+    background: #2d3748 !important;
+    color: #e2e8f0 !important;
 }
 
 /* Alternative code blocks and pre tags */
