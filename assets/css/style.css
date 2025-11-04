@@ -281,9 +281,33 @@ article pre code {
 }
 
 /* Make sure highlighted code blocks blend well */
-article .highlight {
+article .highlight, article .highlighter-rouge {
     border: none;
     background: #2d3748 !important;
+}
+
+/* Specific targeting for Jekyll/Rouge generated code blocks */
+article div.highlight {
+    background: #2d3748 !important;
+    border-radius: 8px;
+    margin: 1rem 0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+article div.highlight pre {
+    background: transparent !important;
+    margin: 0;
+    padding: 1.25rem;
+    border-radius: 8px;
+    color: #e2e8f0 !important;
+}
+
+/* Language-specific code blocks in articles */
+article .language-bash, article .language-go, article .language-javascript, 
+article .language-python, article .language-html, article .language-css, 
+article .language-json, article .language-yaml {
+    background: #2d3748 !important;
+    color: #e2e8f0 !important;
 }
 
 /* Code block language labels */
