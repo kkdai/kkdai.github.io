@@ -249,65 +249,93 @@ ul.social-horizontal li .btn {
     min-height: 32px;
 }
 
-/* Enhanced code styling for dark theme */
-article pre {
+/* Enhanced code styling for dark theme - Override Bootstrap with maximum specificity */
+article pre, 
+article div.language-python.highlighter-rouge,
+article div.language-bash.highlighter-rouge,
+article div.language-go.highlighter-rouge,
+article div.language-javascript.highlighter-rouge {
     background: #2d3748 !important;
     color: #e2e8f0 !important;
-    border-radius: 8px;
-    padding: 1.25rem;
-    margin: 1rem 0;
-    overflow-x: auto;
-    font-family: 'Fira Code', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
-    font-size: 0.9rem;
-    line-height: 1.6;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    border: none;
+    border-radius: 8px !important;
+    padding: 1.25rem !important;
+    margin: 1rem 0 !important;
+    overflow-x: auto !important;
+    font-family: 'Fira Code', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace !important;
+    font-size: 0.9rem !important;
+    line-height: 1.6 !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+    border: none !important;
 }
 
-article code {
+article code,
+article .language-plaintext.highlighter-rouge {
     background: #4a5568 !important;
     color: #e2e8f0 !important;
-    padding: 0.2rem 0.4rem;
-    border-radius: 4px;
-    font-family: 'Fira Code', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
-    font-size: 0.85rem;
+    padding: 0.2rem 0.4rem !important;
+    border-radius: 4px !important;
+    font-family: 'Fira Code', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace !important;
+    font-size: 0.85rem !important;
+    border: none !important;
 }
 
 /* Ensure code blocks inside pre tags also get the styling */
-article pre code {
+article pre code,
+article div.language-python.highlighter-rouge div.highlight pre code,
+article div.language-bash.highlighter-rouge div.highlight pre code {
     background: transparent !important;
     padding: 0 !important;
-    font-size: 0.9rem;
+    font-size: 0.9rem !important;
+    color: #e2e8f0 !important;
 }
 
-/* Make sure highlighted code blocks blend well */
-article .highlight, article .highlighter-rouge {
-    border: none;
+/* Make sure highlighted code blocks blend well - Maximum specificity */
+article .highlight, 
+article .highlighter-rouge,
+article div.language-python.highlighter-rouge,
+article div.language-bash.highlighter-rouge,
+article div.language-go.highlighter-rouge {
+    border: none !important;
     background: #2d3748 !important;
+    color: #e2e8f0 !important;
 }
 
 /* Specific targeting for Jekyll/Rouge generated code blocks */
-article div.highlight {
+article div.highlight,
+article div.language-python.highlighter-rouge div.highlight,
+article div.language-bash.highlighter-rouge div.highlight {
     background: #2d3748 !important;
-    border-radius: 8px;
-    margin: 1rem 0;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    border-radius: 8px !important;
+    margin: 1rem 0 !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+    border: none !important;
+    padding: 0 !important;
 }
 
-article div.highlight pre {
+article div.highlight pre,
+article div.language-python.highlighter-rouge div.highlight pre,
+article div.language-bash.highlighter-rouge div.highlight pre {
     background: transparent !important;
-    margin: 0;
-    padding: 1.25rem;
-    border-radius: 8px;
+    margin: 0 !important;
+    padding: 1.25rem !important;
+    border-radius: 8px !important;
     color: #e2e8f0 !important;
+    font-family: 'Fira Code', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace !important;
+    font-size: 0.9rem !important;
+    line-height: 1.6 !important;
+    border: none !important;
 }
 
-/* Language-specific code blocks in articles */
+/* Language-specific code blocks in articles with maximum specificity */
 article .language-bash, article .language-go, article .language-javascript, 
 article .language-python, article .language-html, article .language-css, 
-article .language-json, article .language-yaml {
+article .language-json, article .language-yaml, article .language-plaintext,
+article div.language-bash.highlighter-rouge,
+article div.language-go.highlighter-rouge,
+article div.language-python.highlighter-rouge {
     background: #2d3748 !important;
     color: #e2e8f0 !important;
+    border: none !important;
 }
 
 /* Code block language labels */
@@ -321,5 +349,66 @@ article .language-json, article .language-yaml {
     font-family: 'Ubuntu', sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+}
+
+/* ULTRA HIGH SPECIFICITY - NUCLEAR OPTION FOR BOOTSTRAP OVERRIDE */
+body article .col-lg-9 div.language-python.highlighter-rouge,
+body article .col-lg-9 div.language-bash.highlighter-rouge,
+body article .col-lg-9 div.language-go.highlighter-rouge,
+body article .col-lg-9 div.language-javascript.highlighter-rouge,
+body article .col-lg-9 div.language-json.highlighter-rouge,
+body .col-lg-9 .language-python.highlighter-rouge,
+body .col-lg-9 .language-bash.highlighter-rouge,
+body .col-lg-9 .language-go.highlighter-rouge {
+    background: #2d3748 !important;
+    color: #e2e8f0 !important;
+    border-radius: 8px !important;
+    padding: 1.25rem !important;
+    margin: 1rem 0 !important;
+    overflow-x: auto !important;
+    font-family: 'Fira Code', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace !important;
+    font-size: 0.9rem !important;
+    line-height: 1.6 !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+    border: none !important;
+}
+
+body article .col-lg-9 div.language-python.highlighter-rouge div.highlight,
+body article .col-lg-9 div.language-bash.highlighter-rouge div.highlight,
+body article .col-lg-9 div.language-go.highlighter-rouge div.highlight,
+body .col-lg-9 div.highlight {
+    background: #2d3748 !important;
+    border-radius: 8px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+}
+
+body article .col-lg-9 div.language-python.highlighter-rouge div.highlight pre,
+body article .col-lg-9 div.language-bash.highlighter-rouge div.highlight pre,
+body article .col-lg-9 div.language-go.highlighter-rouge div.highlight pre,
+body .col-lg-9 div.highlight pre,
+body .col-lg-9 pre.highlight {
+    background: transparent !important;
+    margin: 0 !important;
+    padding: 1.25rem !important;
+    border-radius: 8px !important;
+    color: #e2e8f0 !important;
+    font-family: 'Fira Code', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace !important;
+    font-size: 0.9rem !important;
+    line-height: 1.6 !important;
+    border: none !important;
+}
+
+/* Inline code with ultra-high specificity */
+body .col-lg-9 code.language-plaintext.highlighter-rouge,
+body article .col-lg-9 code.language-plaintext.highlighter-rouge {
+    background: #4a5568 !important;
+    color: #e2e8f0 !important;
+    padding: 0.2rem 0.4rem !important;
+    border-radius: 4px !important;
+    font-family: 'Fira Code', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace !important;
+    font-size: 0.85rem !important;
+    border: none !important;
 }
 
