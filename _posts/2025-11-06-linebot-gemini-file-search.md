@@ -34,7 +34,7 @@ tags: ["Python", "LINE Bot", "GCP", "Gemini", "FastAPI", "Cloud Run", "File Sear
 
 ##  📚 關於 Gemini File Search 基本介紹
 
-**Gemini File Search** 是 Google DeepMind 於 2025 年 11 月推出的全新工具，直接內建在 Gemini API 之中。這個工具是一套**全託管的 RAG（檢索增強生成，Retrieval-Augmented Generation）系統**，目標是讓開發者能更簡單、有效率地將自己的資料與 Gemini 模型結合，產生更**精確、相關且可驗證**的 AI 回應。
+**Gemini File Search** 是 [Google DeepMind 於 2025 年 11 月 6 日推出的全新工具](https://blog.google/technology/developers/file-search-gemini-api/?linkId=17612251)，直接內建在 Gemini API 之中。這個工具是一套**全託管的 RAG（檢索增強生成，Retrieval-Augmented Generation）系統**，目標是讓開發者能更簡單、有效率地將自己的資料與 Gemini 模型結合，產生更**精確、相關且可驗證**的 AI 回應。
 
 ------
 
@@ -289,60 +289,6 @@ def is_list_files_intent(text: str) -> bool:
     ]
     text_lower = text.lower().strip()
     return any(keyword in text_lower for keyword in list_keywords)
-```
-
-#### 使用 Carousel Template 展示
-
-使用 LINE 的 Carousel Template 美觀地展示文件列表，每個文件都有刪除按鈕：
-
-```python
-async def send_files_carousel(event: MessageEvent, documents: list):
-    """
-    Send files as LINE Carousel Template.
-    """
-    if not documents:
-        no_files_msg = TextSendMessage(text="📁 目前沒有任何文件。\n\n請先上傳文件檔案，就可以查詢囉！")
-        await line_bot_api.reply_message(event.reply_token, no_files_msg)
-        return
-
-    # LINE Carousel 限制最多 10 個
-    documents = documents[:10]
-
-    columns = []
-    for doc in documents:
-        display_name = doc.get('display_name', 'Unknown')
-        create_time = doc.get('create_time', '')
-
-        # 格式化時間顯示
-        if create_time and 'T' in create_time:
-            try:
-                from datetime import datetime
-                dt = datetime.fromisoformat(create_time.replace('Z', '+00:00'))
-                create_time = dt.strftime('%Y-%m-%d %H:%M')
-            except:
-                create_time = create_time[:16]
-
-        # 建立每個檔案的 Column
-        column = CarouselColumn(
-            thumbnail_image_url='https://via.placeholder.com/1024x1024/4CAF50/FFFFFF?text=File',
-            title=display_name[:40],  # LINE 限制標題長度
-            text=f"上傳時間：{create_time[:20]}" if create_time else "文件檔案",
-            actions=[
-                PostbackAction(
-                    label='🗑️ 刪除檔案',
-                    data=f"action=delete_file&doc_name={doc['name']}"
-                )
-            ]
-        )
-        columns.append(column)
-
-    carousel_template = CarouselTemplate(columns=columns)
-    template_message = TemplateSendMessage(
-        alt_text=f'📁 找到 {len(documents)} 個文件',
-        template=carousel_template
-    )
-
-    await line_bot_api.reply_message(event.reply_token, template_message)
 ```
 
 #### 刪除文件功能
@@ -710,7 +656,6 @@ File Search Store 的設計哲學：
 - [專案 GitHub Repository](https://github.com/kkdai/linebot-file-search-adk)
 - [LINE Bot SDK for Python](https://github.com/line/line-bot-sdk-python)
 - [Google Gemini File Search API](https://ai.google.dev/gemini-api/docs/file-search?hl=zh-tw)
-- [FastAPI 文件](https://fastapi.tiangolo.com/)
 - [Google Cloud Run 文件](https://cloud.google.com/run/docs)
 
 ---
