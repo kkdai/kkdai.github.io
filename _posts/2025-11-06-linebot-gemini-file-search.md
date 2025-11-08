@@ -32,9 +32,26 @@ tags: ["Python", "LINE Bot", "GCP", "Gemini", "FastAPI", "Cloud Run", "File Sear
 
 <img src="../images/LINE 2025-11-08 08.07.11.tiff" alt="LINE 2025-11-08 08.07.11" style="zoom:50%;" />
 
-##  📚 專案功能介紹
+##  📚 關於 Gemini File Search 基本介紹
 
+**Gemini File Search** 是 Google DeepMind 於 2025 年 11 月推出的全新工具，直接內建在 Gemini API 之中。這個工具是一套**全託管的 RAG（檢索增強生成，Retrieval-Augmented Generation）系統**，目標是讓開發者能更簡單、有效率地將自己的資料與 Gemini 模型結合，產生更**精確、相關且可驗證**的 AI 回應。
 
+------
+
+## 主要特色
+
+- **簡化開發流程**
+  File Search 免去自行搭建 RAG 管線的麻煩，開發者只需專注於應用程式本身。檔案儲存、分段（chunking）、嵌入（embedding）及檢索等繁瑣細節都自動處理。
+- **價格透明且經濟實惠**
+  查詢時的儲存與嵌入運算完全免費，僅在第一次建立索引時收取固定費用（每 100 萬 tokens 僅 $0.15 美元，依嵌入模型而異）。
+- **強大的向量搜尋**
+  採用最新的 Gemini Embedding 模型，可理解使用者查詢的語意與上下文，找出最相關的資訊，即使關鍵字不同也能命中答案。
+- **自動引用來源**
+  AI 回應會自動附上出處，明確標示答案引用自哪一份文件、哪一段內容，方便核對與驗證。
+- **廣泛格式支援**
+  支援 PDF、DOCX、TXT、JSON 及多種程式語言檔案等主流格式，方便建立多元知識庫。
+- **輕鬆整合**
+  可直接在 `generateContent` API 中使用，且有完善的 Python SDK，開發者能快速上手。
 
 
 ## 📚 專案功能介紹
@@ -59,7 +76,13 @@ tags: ["Python", "LINE Bot", "GCP", "Gemini", "FastAPI", "Cloud Run", "File Sear
    - 自動識別對話類型，無需手動設定
    - File Search Store 自動建立和管理
 
-4. **🔄 智能錯誤處理**
+4. **📁 檔案管理功能**
+   - **列出檔案**：輸入「列出檔案」查看已上傳的文件
+   - **Carousel 展示**：使用 LINE Carousel Template 美觀呈現
+   - **一鍵刪除**：每個檔案都有刪除按鈕，可單獨移除
+   - **智能識別**：支援中英文關鍵字（列出檔案、show files 等）
+
+5. **🔄 智能錯誤處理**
    - 檔案上傳失敗自動重試
    - 沒有文件時引導使用者上傳
    - 詳細的錯誤日誌記錄
@@ -138,51 +161,9 @@ else:
     store_name_cache[store_name] = actual_store_name
 ```
 
-### 2. 中文檔名的編碼問題處理
 
-#### 問題分析
 
-當檔案名稱包含中文字元時，直接傳給 API 會遇到 ASCII 編碼錯誤：
-
-```
-Error: 'ascii' codec can't encode characters in position 19-21: ordinal not in range(128)
-```
-
-#### 解決方案：檔案名稱安全化
-
-我們採用「本地使用 ASCII 檔名，顯示時使用原始檔名」的策略：
-
-```python
-async def download_line_content(message_id: str, file_name: str) -> Optional[Path]:
-    """
-    Download file content from LINE and save to local uploads directory.
-    """
-    try:
-        message_content = await line_bot_api.get_message_content(message_id)
-
-        # Extract file extension from original file name
-        _, ext = os.path.splitext(file_name)
-        # Use safe file name (ASCII only) to avoid encoding issues
-        safe_file_name = f"{message_id}{ext}"
-        file_path = UPLOAD_DIR / safe_file_name
-
-        async with aiofiles.open(file_path, 'wb') as f:
-            async for chunk in message_content.iter_content():
-                await f.write(chunk)
-
-        print(f"Downloaded file: {file_path} (original: {file_name})")
-        return file_path
-    except Exception as e:
-        print(f"Error downloading file: {e}")
-        return None
-```
-
-這樣做的好處：
-- ✅ 本地檔案路徑全為 ASCII（避免編碼問題）
-- ✅ 使用者仍然看到原始中文檔名
-- ✅ 支援任何語言的檔案名稱
-
-### 3. 檔案上傳與狀態管理
+### 2. 檔案上傳與狀態管理
 
 完整的檔案上傳流程，包含等待 API 處理完成：
 
@@ -233,7 +214,7 @@ async def upload_to_file_search_store(file_path: Path, store_name: str, display_
         return False
 ```
 
-### 4. 智能查詢與 File Search 整合
+### 3. 智能查詢與 File Search 整合
 
 當使用者提問時，系統會先檢查是否有上傳文件，然後使用 File Search 查詢：
 
@@ -289,38 +270,149 @@ async def query_file_search(query: str, store_name: str) -> str:
         return f"查詢時發生錯誤：{str(e)}"
 ```
 
-### 5. LINE Bot Webhook 處理
+### 4. 檔案管理功能
 
-FastAPI 的 webhook 處理，支援文字、檔案、圖片三種訊息類型：
+#### 列出文件
+
+使用者可以輸入「列出檔案」等關鍵字來查看已上傳的文件：
 
 ```python
-@app.post("/")
-async def handle_callback(request: Request):
-    signature = request.headers["X-Line-Signature"]
-    body = await request.body()
-    body = body.decode()
-
-    try:
-        events = parser.parse(body, signature)
-    except InvalidSignatureError:
-        raise HTTPException(status_code=400, detail="Invalid signature")
-
-    for event in events:
-        if not isinstance(event, MessageEvent):
-            continue
-
-        if event.message.type == "text":
-            # Process text message
-            await handle_text_message(event, event.message)
-        elif event.message.type == "file":
-            # Process file message
-            await handle_file_message(event, event.message)
-        elif event.message.type == "image":
-            # Process image message
-            await handle_file_message(event, event.message)
-
-    return "OK"
+def is_list_files_intent(text: str) -> bool:
+    """
+    Check if user wants to list files.
+    """
+    list_keywords = [
+        '列出檔案', '列出文件', '顯示檔案', '顯示文件',
+        '查看檔案', '查看文件', '檔案列表', '文件列表',
+        '有哪些檔案', '有哪些文件', '我的檔案', '我的文件',
+        'list files', 'show files', 'my files'
+    ]
+    text_lower = text.lower().strip()
+    return any(keyword in text_lower for keyword in list_keywords)
 ```
+
+#### 使用 Carousel Template 展示
+
+使用 LINE 的 Carousel Template 美觀地展示文件列表，每個文件都有刪除按鈕：
+
+```python
+async def send_files_carousel(event: MessageEvent, documents: list):
+    """
+    Send files as LINE Carousel Template.
+    """
+    if not documents:
+        no_files_msg = TextSendMessage(text="📁 目前沒有任何文件。\n\n請先上傳文件檔案，就可以查詢囉！")
+        await line_bot_api.reply_message(event.reply_token, no_files_msg)
+        return
+
+    # LINE Carousel 限制最多 10 個
+    documents = documents[:10]
+
+    columns = []
+    for doc in documents:
+        display_name = doc.get('display_name', 'Unknown')
+        create_time = doc.get('create_time', '')
+
+        # 格式化時間顯示
+        if create_time and 'T' in create_time:
+            try:
+                from datetime import datetime
+                dt = datetime.fromisoformat(create_time.replace('Z', '+00:00'))
+                create_time = dt.strftime('%Y-%m-%d %H:%M')
+            except:
+                create_time = create_time[:16]
+
+        # 建立每個檔案的 Column
+        column = CarouselColumn(
+            thumbnail_image_url='https://via.placeholder.com/1024x1024/4CAF50/FFFFFF?text=File',
+            title=display_name[:40],  # LINE 限制標題長度
+            text=f"上傳時間：{create_time[:20]}" if create_time else "文件檔案",
+            actions=[
+                PostbackAction(
+                    label='🗑️ 刪除檔案',
+                    data=f"action=delete_file&doc_name={doc['name']}"
+                )
+            ]
+        )
+        columns.append(column)
+
+    carousel_template = CarouselTemplate(columns=columns)
+    template_message = TemplateSendMessage(
+        alt_text=f'📁 找到 {len(documents)} 個文件',
+        template=carousel_template
+    )
+
+    await line_bot_api.reply_message(event.reply_token, template_message)
+```
+
+#### 刪除文件功能
+
+當使用者點擊刪除按鈕時，透過 Postback 事件處理刪除：
+
+```python
+async def delete_document(document_name: str) -> bool:
+    """
+    Delete a document from file search store.
+    Note: force=True is required to permanently delete documents from File Search Store.
+    """
+    try:
+        # Try to use SDK method first with force=True
+        if hasattr(client.file_search_stores, 'documents'):
+            # Force delete is required for File Search Store documents
+            client.file_search_stores.documents.delete(
+                name=document_name,
+                config={'force': True}  # ⚠️ 必須加上 force=True
+            )
+            return True
+    except Exception as sdk_error:
+        # Fallback to REST API with force parameter
+        import requests
+        url = f"https://generativelanguage.googleapis.com/v1beta/{document_name}"
+        params = {
+            'key': GOOGLE_API_KEY,
+            'force': 'true'  # ⚠️ 必須加上 force parameter
+        }
+        response = requests.delete(url, params=params, timeout=10)
+        response.raise_for_status()
+        return True
+```
+
+**關鍵重點**：
+- File Search Store 中的文件是 **immutable（不可變）**
+- 刪除時**必須**加上 `force: True` 參數，否則會失敗
+- 雙重後備機制確保相容性（SDK → REST API）
+
+#### Postback 事件處理
+
+```python
+async def handle_postback(event: PostbackEvent):
+    """
+    Handle postback events (e.g., delete file button clicks).
+    """
+    try:
+        # Parse postback data
+        data = event.postback.data
+        params = dict(param.split('=') for param in data.split('&'))
+
+        action = params.get('action')
+        doc_name = params.get('doc_name')
+
+        if action == 'delete_file' and doc_name:
+            success = await delete_document(doc_name)
+
+            if success:
+                reply_msg = TextSendMessage(
+                    text=f"✅ 檔案已刪除成功！\n\n如需查看剩餘檔案，請輸入「列出檔案」。"
+                )
+            else:
+                reply_msg = TextSendMessage(text="❌ 刪除檔案失敗，請稍後再試。")
+
+            await line_bot_api.reply_message(event.reply_token, reply_msg)
+    except Exception as e:
+        print(f"Error handling postback: {e}")
+```
+
+
 
 ## 🔧 遇到的挑戰與解決方案
 
@@ -434,6 +526,45 @@ while not operation.done and elapsed < max_wait:
 - 簡化環境變數配置
 - 只需要 `GOOGLE_API_KEY` 即可
 
+### 6. 刪除文件需要 force 參數
+
+**問題**：實作刪除文件功能時，直接呼叫 `delete()` API 會失敗。
+
+**錯誤訊息**：
+```
+刪除失敗，或是沒有回應
+```
+
+**原因分析**：
+根據 [Google Gemini File Search API 文件](https://ai.google.dev/gemini-api/docs/file-search)（2025年11月6日發布）：
+- File Search Store 中的文件是 **immutable（不可變的）**
+- 刪除操作必須使用 `force: True` 參數才能永久刪除
+- 如果不加 `force` 參數，API 會拒絕刪除請求
+
+**解決方案**：
+
+1. **SDK 方式**：在 config 中加上 `force: True`
+```python
+client.file_search_stores.documents.delete(
+    name=document_name,
+    config={'force': True}  # ⚠️ 必須加上
+)
+```
+
+2. **REST API 方式**：在 query parameters 中加上 `force=true`
+```python
+params = {
+    'key': GOOGLE_API_KEY,
+    'force': 'true'  # ⚠️ 必須加上
+}
+response = requests.delete(url, params=params)
+```
+
+**關鍵學習**：
+- File Search 的文件一旦建立就是不可變的
+- 如果要「更新」文件，必須先刪除（force delete）再重新上傳
+- 這與一般的 Files API 行為不同（Files API 的檔案 48 小時後自動刪除）
+
 ## 📊 部署與維運
 
 ### 本地開發設定
@@ -495,6 +626,8 @@ gcloud run services describe linebot-file-search \
 3. **中文友善**：完整支援中文檔名和查詢
 4. **隔離機制**：每個對話有獨立的文件庫，安全可靠
 5. **自動化管理**：File Search Store 自動建立，使用者無感知
+6. **完整檔案管理**：列出檔案、刪除檔案，Carousel 美觀展示
+7. **多媒體支援**：文件查詢 + 圖片分析，一個 Bot 搞定
 
 ### 實戰經驗分享
 
@@ -522,44 +655,55 @@ gcloud run services describe linebot-file-search \
 - 使用 `asyncio.sleep()` 而非 `time.sleep()`
 - 適當的 timeout 設定避免無限等待
 
+#### 4. Immutable 資料的處理
+
+File Search Store 的設計哲學：
+- 文件一旦上傳就是**不可變的（immutable）**
+- 刪除需要明確的 `force: True` 參數
+- 要「更新」文件必須先刪除再上傳
+- **這與其他服務（如 Files API）完全不同**
+
+這讓我學到：不同服務有不同的資料模型，不能假設行為一致。
+
+#### 5. LINE Bot 互動設計
+
+實作 Carousel + Postback 的經驗：
+- **Carousel Template** 提供美觀的卡片式展示（最多 10 個）
+- **PostbackEvent** 讓按鈕點擊能觸發後端邏輯
+- **data 參數**使用 URL 編碼格式傳遞資料（如 `action=delete&id=123`）
+- 需要在 webhook 中同時處理 MessageEvent 和 PostbackEvent
+
+這比單純的文字互動更直覺、更友善。
+
 ### 未來改進方向
 
 1. **效能優化**
    - 實作更完整的 cache 機制
    - 批次處理多檔案上傳
    - 壓縮大型檔案
+   - 減少 API 呼叫次數
 
 2. **功能擴展**
-   - 支援檔案刪除功能
-   - 支援列出已上傳檔案
+   - ✅ ~~支援檔案刪除功能~~（已完成）
+   - ✅ ~~支援列出已上傳檔案~~（已完成）
+   - ✅ ~~整合圖片理解功能~~（已完成）
    - 支援檔案摘要生成
-   - 整合更多 Gemini 功能（如圖片理解）
+   - 支援多檔案批次上傳
+   - 檔案分類和標籤管理
 
 3. **使用體驗優化**
    - Rich Menu 設計
    - 更友善的錯誤提示
-   - 上傳進度顯示
+   - 上傳進度顯示（長時間處理時）
    - 查詢歷史記錄
+   - 檔案搜尋功能（按檔名或時間）
 
 4. **安全性強化**
    - 檔案大小限制
    - 檔案類型驗證
    - 使用者配額管理
    - 敏感資料過濾
-
-### 關鍵學習
-
-透過這個專案，我學到了：
-
-1. **Google Gemini File Search** 的正確使用方式
-2. **FastAPI** 在處理 LINE Bot webhook 的高效性
-3. **Python async/await** 在 I/O 密集型應用的重要性
-4. **編碼問題**的處理策略
-5. **雲端原生**應用的設計模式
-
-最重要的是：**AI 不只是聊天機器人，更是強大的內容分析工具**。File Search API 讓我們能輕鬆打造專業級的文件問答系統。
-
-希望這個經驗分享能幫助到正在探索 AI 應用開發的朋友們！
+   - Store 定期清理機制
 
 ### 相關資源
 
