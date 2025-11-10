@@ -163,6 +163,8 @@ else:
 
 ### 2. 檔案上傳與狀態管理
 
+<img src="../images/LINE 2025-11-10 21.49.26.tiff" alt="LINE 2025-11-10 21.49.26" style="zoom:50%;" />
+
 完整的檔案上傳流程，包含等待 API 處理完成：
 
 ```python
@@ -313,6 +315,8 @@ async def query_file_search(query: str, store_name: str) -> tuple[str, list]:
     return (response.text, citations)
 ```
 
+
+
 #### 引用快取機制
 
 為了讓使用者可以查看引用詳情，我們實作了引用快取：
@@ -389,62 +393,19 @@ if query.startswith("📖 引用"):
 
 **實際效果**：
 
-使用者詢問：「這份文件的主要結論是什麼？」
-
-AI 回答：
-```
-根據文件內容，主要結論有三點：
-1. 專案預算控制在目標範圍內
-2. 完成率達到 95%
-3. 客戶滿意度為 4.5/5.0
-
-📖 引用1  📖 引用2  📖 引用3
-```
-
-點擊「📖 引用1」後：
-```
-📖 引用 1
-
-📄 文件：專案報告.pdf
-
-📝 內容：
-本專案於 2025 年 1 月完成，總預算為 500 萬元，
-實際支出 480 萬元，控制在預算範圍內。
-專案完成率達到 95%，超出原定目標...
-```
+<img src="../images/image-20251110211857624.png" alt="image-20251110211857624" style="zoom:50%;" />
 
 ### 5. Quick Reply 快速操作
 
 當使用者上傳檔案成功後，系統會提供 Quick Reply 按鈕，讓使用者快速執行常見操作：
 
-```python
-if success:
-    # Create Quick Reply buttons for common actions with specific file name
-    quick_reply = QuickReply(items=[
-        QuickReplyButton(action=MessageAction(
-            label="📝 生成檔案摘要",
-            text=f"請幫我生成「{file_name}」這個檔案的摘要"
-        )),
-        QuickReplyButton(action=MessageAction(
-            label="📌 重點整理",
-            text=f"請幫我整理「{file_name}」的重點"
-        )),
-        QuickReplyButton(action=MessageAction(
-            label="📋 列出檔案",
-            text="列出檔案"
-        )),
-    ])
-
-    success_msg = TextSendMessage(
-        text=f"✅ 檔案已成功上傳！\n檔案名稱：{file_name}\n\n現在您可以詢問我關於這個檔案的任何問題。",
-        quick_reply=quick_reply
-    )
-```
+<img src="../images/LINE 2025-11-10 21.57.41.tiff" alt="LINE 2025-11-10 21.57.41" style="zoom:50%;" />
 
 **設計要點**：
 - **明確檔案名稱**：Quick Reply 的文字自動帶入 `{file_name}`，避免多檔案時的混淆
 - **一鍵操作**：使用者點擊按鈕即可發送完整問題，無需手動輸入
 - **常見需求**：提供「生成摘要」、「重點整理」等高頻功能
+- 
 
 ### 5. 使用 Google ADK Agent 實作口語化檔案列表
 
@@ -908,58 +869,6 @@ because these package versions have conflicting dependencies.
 
 這個問題提醒我們：**在使用新興框架時，官方文檔和 GitHub repo 是最可靠的資訊來源**。
 
-## 📊 部署與維運
-
-### 本地開發設定
-
-```bash
-# 1. 安裝依賴
-pip install -r requirements.txt
-
-# 2. 設定環境變數
-export ChannelSecret="你的 LINE Channel Secret"
-export ChannelAccessToken="你的 LINE Channel Access Token"
-export GOOGLE_API_KEY="你的 Google Gemini API Key"
-
-# 3. 啟動服務
-uvicorn main:app --reload
-```
-
-### Docker 部署
-
-```bash
-# 建立映像
-docker build -t linebot-file-search .
-
-# 啟動容器
-docker run -p 8000:8000 \
-  -e ChannelSecret=你的SECRET \
-  -e ChannelAccessToken=你的TOKEN \
-  -e GOOGLE_API_KEY=你的API_KEY \
-  linebot-file-search
-```
-
-### Google Cloud Run 部署
-
-```bash
-# 1. 建立並推送映像
-gcloud builds submit --tag gcr.io/你的專案ID/linebot-file-search
-
-# 2. 部署到 Cloud Run
-gcloud run deploy linebot-file-search \
-  --image gcr.io/你的專案ID/linebot-file-search \
-  --platform managed \
-  --region asia-east1 \
-  --allow-unauthenticated \
-  --set-env-vars ChannelSecret=你的SECRET,ChannelAccessToken=你的TOKEN,GOOGLE_API_KEY=你的API_KEY
-
-# 3. 取得服務網址
-gcloud run services describe linebot-file-search \
-  --platform managed \
-  --region asia-east1 \
-  --format 'value(status.url)'
-```
-
 ## 🎯 總結與未來改進
 
 ### 專案亮點
@@ -973,6 +882,8 @@ gcloud run services describe linebot-file-search \
 7. **AI 口語化互動**：使用 Google ADK Agent 讓檔案管理更親切自然
 8. **Quick Reply 便利性**：上傳後立即提供快捷操作，查詢後可一鍵查看引用
 9. **多媒體支援**：文件查詢 + 圖片分析，一個 Bot 搞定
+
+
 
 ### 實戰經驗分享
 
@@ -1009,43 +920,6 @@ File Search Store 的設計哲學：
 - **這與其他服務（如 Files API）完全不同**
 
 這讓我學到：不同服務有不同的資料模型，不能假設行為一致。
-
-#### 5. LINE Bot 互動設計
-
-**Quick Reply 的妙用**：
-- **情境化操作**：上傳檔案後立即提供相關快捷操作
-- **避免打字錯誤**：使用者點擊即可，無需手動輸入
-- **明確檔案指定**：在 Quick Reply 文字中帶入 `{file_name}`，避免混淆
-- **提升使用者體驗**：從「要打什麼指令？」變成「選擇你要做什麼」
-
-**ADK Agent vs 傳統 UI**：
-
-起初使用 Carousel Template 展示檔案列表，但發現：
-- 機械化：像在看資料表，缺乏互動感
-- 有限制：最多只能顯示 10 個檔案
-- 缺乏彈性：無法根據情境調整呈現方式
-
-改用 Google ADK Agent 後：
-- **更自然**：AI 會用對話方式介紹檔案（「我看到你上傳了...」）
-- **更智能**：檔案多時會總結，檔案少時會詳細說明
-- **更友善**：語氣親切，還會主動詢問需求
-- **無限制**：不受 UI 元件數量限制
-
-這讓我學到：**有時候 AI 對話比傳統 UI 更適合某些場景**。
-
-#### 6. Google ADK (Agent Development Kit) 的應用
-
-使用 ADK 建立 FileManagerAgent 的經驗：
-
-**優點**：
-- **簡化開發**：只需定義 agent instruction 和 tools，LLM 自動處理對話邏輯
-- **靈活性高**：指令可以輕鬆調整語氣和風格
-- **擴展性好**：未來可以加入更多 tools（如搜尋、分類等）
-
-**挑戰**：
-- **需要良好的 Prompt Engineering**：instruction 要夠清楚，AI 才能理解意圖
-- **回應一致性**：要確保每次回應的風格和格式相對穩定
-- **錯誤處理**：當 tool 執行失敗時，要讓 Agent 能優雅地處理
 
 **關鍵學習**：
 ADK 不只是技術工具，更是一種**設計思維的轉變**——從「如何用 UI 呈現資料」到「如何讓 AI 用對話呈現資訊」。
