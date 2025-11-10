@@ -42,8 +42,6 @@ tags: ["Python", "LINE Bot", "GCP", "Gemini", "FastAPI", "Cloud Run", "File Sear
 
 - **簡化開發流程**
   File Search 免去自行搭建 RAG 管線的麻煩，開發者只需專注於應用程式本身。檔案儲存、分段（chunking）、嵌入（embedding）及檢索等繁瑣細節都自動處理。
-- **價格透明且經濟實惠**
-  查詢時的儲存與嵌入運算完全免費，僅在第一次建立索引時收取固定費用（每 100 萬 tokens 僅 $0.15 美元，依嵌入模型而異）。
 - **強大的向量搜尋**
   採用最新的 Gemini Embedding 模型，可理解使用者查詢的語意與上下文，找出最相關的資訊，即使關鍵字不同也能命中答案。
 - **自動引用來源**
@@ -77,10 +75,10 @@ tags: ["Python", "LINE Bot", "GCP", "Gemini", "FastAPI", "Cloud Run", "File Sear
    - File Search Store 自動建立和管理
 
 4. **📁 檔案管理功能**
-   - **列出檔案**：輸入「列出檔案」查看已上傳的文件
-   - **Carousel 展示**：使用 LINE Carousel Template 美觀呈現
-   - **一鍵刪除**：每個檔案都有刪除按鈕，可單獨移除
+   - **AI 口語化列表**：使用 Google ADK Agent 以自然對話方式介紹檔案
    - **智能識別**：支援中英文關鍵字（列出檔案、show files 等）
+   - **Quick Reply 快速操作**：上傳成功後提供快捷按鈕
+   - **明確檔案指定**：Quick Reply 自動帶入檔案名稱
 
 5. **🔄 智能錯誤處理**
    - 檔案上傳失敗自動重試
@@ -270,7 +268,122 @@ async def query_file_search(query: str, store_name: str) -> str:
         return f"查詢時發生錯誤：{str(e)}"
 ```
 
-### 4. 檔案管理功能
+### 4. Quick Reply 快速操作
+
+當使用者上傳檔案成功後，系統會提供 Quick Reply 按鈕，讓使用者快速執行常見操作：
+
+```python
+if success:
+    # Create Quick Reply buttons for common actions with specific file name
+    quick_reply = QuickReply(items=[
+        QuickReplyButton(action=MessageAction(
+            label="📝 生成檔案摘要",
+            text=f"請幫我生成「{file_name}」這個檔案的摘要"
+        )),
+        QuickReplyButton(action=MessageAction(
+            label="📌 重點整理",
+            text=f"請幫我整理「{file_name}」的重點"
+        )),
+        QuickReplyButton(action=MessageAction(
+            label="📋 列出檔案",
+            text="列出檔案"
+        )),
+    ])
+
+    success_msg = TextSendMessage(
+        text=f"✅ 檔案已成功上傳！\n檔案名稱：{file_name}\n\n現在您可以詢問我關於這個檔案的任何問題。",
+        quick_reply=quick_reply
+    )
+```
+
+**設計要點**：
+- **明確檔案名稱**：Quick Reply 的文字自動帶入 `{file_name}`，避免多檔案時的混淆
+- **一鍵操作**：使用者點擊按鈕即可發送完整問題，無需手動輸入
+- **常見需求**：提供「生成摘要」、「重點整理」等高頻功能
+
+### 5. 使用 Google ADK Agent 實作口語化檔案列表
+
+為了讓檔案列表更友善，我們使用 Google ADK (Agent Development Kit) 建立一個專門的檔案管理 Agent：
+
+#### FileManagerAgent 架構
+
+```python
+class FileManagerAgent:
+    def __init__(self, store_name: str, store_name_cache: dict):
+        self.store_name = store_name
+        self.store_name_cache = store_name_cache
+        self.client = genai.Client(api_key=GOOGLE_API_KEY, vertexai=False)
+
+        # Define the agent configuration
+        self.agent_config = types.AgentConfig(
+            name="file_manager",
+            model="gemini-2.5-flash",
+            description="檔案管理助手，幫助使用者查看和管理已上傳的文件。",
+            instruction="""你是一個友善的檔案管理助手。
+
+當使用者要求列出檔案時：
+1. 使用 list_files tool 來取得檔案清單
+2. 用口語化、友善的方式呈現結果
+3. 不要使用條列式或表格，用自然的對話方式說明
+4. 例如：「我看到你上傳了 3 個檔案唷！首先是『會議記錄.pdf』，這是在 1月8日下午2點上傳的...」
+5. 語氣要輕鬆、親切
+
+回應時請用繁體中文。""",
+            tools=[LIST_FILES_DECLARATION],
+        )
+```
+
+#### 口語化回應生成
+
+```python
+async def handle_list_files(self) -> str:
+    # Execute the list_files tool
+    files_info = await list_files_tool(self.store_name, self.store_name_cache)
+
+    # Let the LLM generate a conversational response
+    prompt = f"""使用者想要查看已上傳的檔案清單。
+
+這是檔案清單：
+{files_info}
+
+請用友善、口語化的方式向使用者介紹這些檔案。不要使用條列式，用自然的對話方式說明。"""
+
+    response = self.client.models.generate_content(
+        model="gemini-2.5-flash",
+        contents=prompt,
+    )
+
+    return response.text if response.text else "目前沒有找到任何檔案唷！"
+```
+
+**效果對比**：
+
+**傳統條列式**：
+```
+📁 找到 3 個文件：
+1. 會議記錄.pdf (2025-01-08 14:30)
+2. 技術文件.docx (2025-01-08 15:20)
+3. 報告.txt (2025-01-08 16:10)
+```
+
+**ADK Agent 口語化**：
+```
+我看到你上傳了 3 個檔案唷！
+
+首先是「會議記錄.pdf」，這是在 1月8日下午2點半上傳的。
+接著是「技術文件.docx」，是在下午3點20分傳的。
+最後一個是「報告.txt」，這個是在下午4點10分上傳的。
+
+需要我幫你查詢哪個檔案的內容呢？😊
+```
+
+**優點**：
+- 更自然、更像人類對話
+- 自動格式化時間（「下午2點半」而非 14:30）
+- 語氣友善親切
+- 可根據檔案數量智能調整回應方式
+
+### 6. 檔案刪除功能
 
 #### 列出文件
 
@@ -572,8 +685,9 @@ gcloud run services describe linebot-file-search \
 3. **中文友善**：完整支援中文檔名和查詢
 4. **隔離機制**：每個對話有獨立的文件庫，安全可靠
 5. **自動化管理**：File Search Store 自動建立，使用者無感知
-6. **完整檔案管理**：列出檔案、刪除檔案，Carousel 美觀展示
-7. **多媒體支援**：文件查詢 + 圖片分析，一個 Bot 搞定
+6. **AI 口語化互動**：使用 Google ADK Agent 讓檔案管理更親切自然
+7. **Quick Reply 便利性**：上傳後立即提供快捷操作，提升使用體驗
+8. **多媒體支援**：文件查詢 + 圖片分析，一個 Bot 搞定
 
 ### 實戰經驗分享
 
@@ -613,13 +727,43 @@ File Search Store 的設計哲學：
 
 #### 5. LINE Bot 互動設計
 
-實作 Carousel + Postback 的經驗：
-- **Carousel Template** 提供美觀的卡片式展示（最多 10 個）
-- **PostbackEvent** 讓按鈕點擊能觸發後端邏輯
-- **data 參數**使用 URL 編碼格式傳遞資料（如 `action=delete&id=123`）
-- 需要在 webhook 中同時處理 MessageEvent 和 PostbackEvent
+**Quick Reply 的妙用**：
+- **情境化操作**：上傳檔案後立即提供相關快捷操作
+- **避免打字錯誤**：使用者點擊即可，無需手動輸入
+- **明確檔案指定**：在 Quick Reply 文字中帶入 `{file_name}`，避免混淆
+- **提升使用者體驗**：從「要打什麼指令？」變成「選擇你要做什麼」
 
-這比單純的文字互動更直覺、更友善。
+**ADK Agent vs 傳統 UI**：
+
+起初使用 Carousel Template 展示檔案列表，但發現：
+- 機械化：像在看資料表，缺乏互動感
+- 有限制：最多只能顯示 10 個檔案
+- 缺乏彈性：無法根據情境調整呈現方式
+
+改用 Google ADK Agent 後：
+- **更自然**：AI 會用對話方式介紹檔案（「我看到你上傳了...」）
+- **更智能**：檔案多時會總結，檔案少時會詳細說明
+- **更友善**：語氣親切，還會主動詢問需求
+- **無限制**：不受 UI 元件數量限制
+
+這讓我學到：**有時候 AI 對話比傳統 UI 更適合某些場景**。
+
+#### 6. Google ADK (Agent Development Kit) 的應用
+
+使用 ADK 建立 FileManagerAgent 的經驗：
+
+**優點**：
+- **簡化開發**：只需定義 agent instruction 和 tools，LLM 自動處理對話邏輯
+- **靈活性高**：指令可以輕鬆調整語氣和風格
+- **擴展性好**：未來可以加入更多 tools（如搜尋、分類等）
+
+**挑戰**：
+- **需要良好的 Prompt Engineering**：instruction 要夠清楚，AI 才能理解意圖
+- **回應一致性**：要確保每次回應的風格和格式相對穩定
+- **錯誤處理**：當 tool 執行失敗時，要讓 Agent 能優雅地處理
+
+**關鍵學習**：
+ADK 不只是技術工具，更是一種**設計思維的轉變**——從「如何用 UI 呈現資料」到「如何讓 AI 用對話呈現資訊」。
 
 ### 未來改進方向
 
@@ -631,11 +775,13 @@ File Search Store 的設計哲學：
 
 2. **功能擴展**
    - ✅ ~~支援檔案刪除功能~~（已完成）
-   - ✅ ~~支援列出已上傳檔案~~（已完成）
+   - ✅ ~~支援列出已上傳檔案~~（已完成，使用 ADK Agent）
    - ✅ ~~整合圖片理解功能~~（已完成）
-   - 支援檔案摘要生成
+   - ✅ ~~Quick Reply 快速操作~~（已完成）
+   - ✅ ~~AI 口語化檔案列表~~（已完成，使用 Google ADK）
    - 支援多檔案批次上傳
    - 檔案分類和標籤管理
+   - 檔案內容全文搜尋
 
 3. **使用體驗優化**
    - Rich Menu 設計
@@ -650,6 +796,31 @@ File Search Store 的設計哲學：
    - 使用者配額管理
    - 敏感資料過濾
    - Store 定期清理機制
+
+### 關鍵學習
+
+透過這個專案，我學到了：
+
+1. **Google Gemini File Search** 的正確使用方式與 immutable 資料模型
+2. **FastAPI** 在處理 LINE Bot webhook 的高效性
+3. **Python async/await** 在 I/O 密集型應用的重要性
+4. **編碼問題**的處理策略（分離儲存名稱與顯示名稱）
+5. **雲端原生**應用的設計模式
+6. **LINE Quick Reply** 的情境化應用與使用者體驗提升
+7. **Google ADK (Agent Development Kit)** 的實戰應用
+8. **AI 對話 vs 傳統 UI**：選擇合適的互動方式
+9. **API 設計差異**：不同服務有不同的資料模型和限制
+10. **雙重後備機制**：SDK + REST API 確保穩定性
+
+最重要的是：
+
+**AI 不只是聊天機器人，更是強大的內容分析工具**。File Search API 讓我們能輕鬆打造專業級的文件問答系統。
+
+**AI 對話可以取代部分傳統 UI**。透過 Google ADK Agent，我們可以讓檔案列表從機械化的清單變成親切的對話，這是 UI 元件難以達到的體驗。
+
+**Quick Reply 是 LINE Bot 的靈魂**。在正確的時機提供正確的快捷操作，可以大幅提升使用者體驗和操作效率。
+
+希望這個經驗分享能幫助到正在探索 AI 應用開發的朋友們！
 
 ### 相關資源
 
