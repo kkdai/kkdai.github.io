@@ -268,7 +268,152 @@ async def query_file_search(query: str, store_name: str) -> str:
         return f"查詢時發生錯誤：{str(e)}"
 ```
 
-### 4. Quick Reply 快速操作
+### 4. 引用來源（Citations）功能
+
+Gemini File Search API 的一大特色就是會自動提供引用來源，讓使用者可以驗證 AI 回答的準確性。我們實作了完整的引用功能：
+
+#### 提取 Grounding Metadata
+
+當 AI 回答問題時，會在 `grounding_metadata` 中包含引用資訊：
+
+```python
+async def query_file_search(query: str, store_name: str) -> tuple[str, list]:
+    """
+    Query the file search store using generate_content.
+    Returns (AI response text, list of citations).
+    """
+    # ... (前面的查詢代碼)
+
+    # Extract grounding metadata (citations)
+    citations = []
+    try:
+        if hasattr(response, 'candidates') and response.candidates:
+            candidate = response.candidates[0]
+            if hasattr(candidate, 'grounding_metadata') and candidate.grounding_metadata:
+                grounding_chunks = candidate.grounding_metadata.grounding_chunks
+                for chunk in grounding_chunks:
+                    if hasattr(chunk, 'web') and chunk.web:
+                        # Web source (網頁來源)
+                        citations.append({
+                            'type': 'web',
+                            'title': getattr(chunk.web, 'title', 'Unknown'),
+                            'uri': getattr(chunk.web, 'uri', ''),
+                        })
+                    elif hasattr(chunk, 'retrieved_context') and chunk.retrieved_context:
+                        # File search source (文件來源)
+                        citations.append({
+                            'type': 'file',
+                            'title': getattr(chunk.retrieved_context, 'title', 'Unknown'),
+                            'text': getattr(chunk.retrieved_context, 'text', '')[:500],
+                        })
+        print(f"Found {len(citations)} citations")
+    except Exception as citation_error:
+        print(f"Error extracting citations: {citation_error}")
+
+    return (response.text, citations)
+```
+
+#### 引用快取機制
+
+為了讓使用者可以查看引用詳情，我們實作了引用快取：
+
+```python
+# Cache to store citations/grounding metadata for each user/group
+# Key: store_name, Value: list of grounding chunks
+citations_cache = {}
+
+# 查詢完成後，儲存引用資訊
+response_text, citations = await query_file_search(query, store_name)
+
+# Store citations in cache (limit to 3 for Quick Reply)
+if citations:
+    citations_cache[store_name] = citations[:3]
+    print(f"Stored {len(citations_cache[store_name])} citations for {store_name}")
+```
+
+#### Quick Reply 引用按鈕
+
+在回答中加入 Quick Reply 按鈕，讓使用者一鍵查看引用詳情：
+
+```python
+# Create Quick Reply buttons for citations
+quick_reply = None
+if citations:
+    quick_reply_items = []
+    for i, citation in enumerate(citations[:3], 1):  # Limit to 3 citations
+        quick_reply_items.append(
+            QuickReplyButton(action=MessageAction(
+                label=f"📖 引用{i}",
+                text=f"📖 引用{i}"
+            ))
+        )
+    quick_reply = QuickReply(items=quick_reply_items)
+
+# Reply to user with citations
+reply_msg = TextSendMessage(text=response_text, quick_reply=quick_reply)
+```
+
+#### 查看引用詳情
+
+當使用者點擊「📖 引用」按鈕時，顯示完整的引用內容：
+
+```python
+# Check if user wants to view a citation
+if query.startswith("📖 引用"):
+    # Extract citation number
+    citation_num = int(query.replace("📖 引用", "").strip())
+    if store_name in citations_cache and 0 < citation_num <= len(citations_cache[store_name]):
+        citation = citations_cache[store_name][citation_num - 1]
+
+        # Format citation text
+        if citation['type'] == 'file':
+            citation_text = f"📖 引用 {citation_num}\n\n"
+            citation_text += f"📄 文件：{citation['title']}\n\n"
+            citation_text += f"📝 內容：\n{citation['text']}"
+            if len(citation.get('text', '')) >= 500:
+                citation_text += "\n\n... (內容過長，已截斷)"
+        elif citation['type'] == 'web':
+            citation_text = f"📖 引用 {citation_num}\n\n"
+            citation_text += f"🌐 來源：{citation['title']}\n"
+            citation_text += f"🔗 連結：{citation['uri']}"
+
+        reply_msg = TextSendMessage(text=citation_text)
+```
+
+**設計要點**：
+- **兩種引用來源**：支援文件引用（file）和網頁引用（web）
+- **限制數量**：Quick Reply 最多顯示 3 個引用（LINE Bot 限制）
+- **內容截斷**：文件內容超過 500 字元會自動截斷，避免訊息過長
+- **快取機制**：每個 store 的引用獨立儲存，避免混淆
+- **使用者體驗**：一鍵查看引用詳情，無需複製貼上
+
+**實際效果**：
+
+使用者詢問：「這份文件的主要結論是什麼？」
+
+AI 回答：
+```
+根據文件內容，主要結論有三點：
+1. 專案預算控制在目標範圍內
+2. 完成率達到 95%
+3. 客戶滿意度為 4.5/5.0
+
+📖 引用1  📖 引用2  📖 引用3
+```
+
+點擊「📖 引用1」後：
+```
+📖 引用 1
+
+📄 文件：專案報告.pdf
+
+📝 內容：
+本專案於 2025 年 1 月完成，總預算為 500 萬元，
+實際支出 480 萬元，控制在預算範圍內。
+專案完成率達到 95%，超出原定目標...
+```
+
+### 5. Quick Reply 快速操作
 
 當使用者上傳檔案成功後，系統會提供 Quick Reply 按鈕，讓使用者快速執行常見操作：
 
@@ -624,6 +769,145 @@ response = requests.delete(url, params=params)
 - 如果要「更新」文件，必須先刪除（force delete）再重新上傳
 - 這與一般的 Files API 行為不同（Files API 的檔案 48 小時後自動刪除）
 
+### 7. Google ADK 模組導入錯誤與依賴衝突
+
+**問題**：在實作 File Manager Agent 功能時，使用 Google ADK (Agent Development Kit) 遇到模組導入錯誤。
+
+**錯誤訊息**：
+```
+ModuleNotFoundError: No module named 'google.adk.common'
+```
+
+**原因分析**：
+
+根據 [Google ADK Python GitHub](https://github.com/google/adk-python) 的官方文檔，Google ADK 的 API 結構已經更新：
+
+1. **模組路徑變更**：
+   - ❌ 舊路徑：`from google.adk.common import types`
+   - ✅ 新路徑：`from google.genai import types`
+
+2. **Agent 建立方式變更**：
+   - ❌ 舊方式：使用 `types.AgentConfig` + `Runner`
+   - ✅ 新方式：使用 `Agent` + `InMemoryRunner`
+
+3. **依賴版本衝突**：
+   - `google-adk>=1.18.0` 需要 `google-genai>=1.45.0`
+   - `google-adk>=1.18.0` 需要 `fastapi>=0.116.2`（支援 `starlette>=0.46.2`）
+   - `google-adk>=1.18.0` 需要 `uvicorn>=0.34.0`
+   - `google-adk>=1.18.0` 需要 `requests>=2.32.4`
+
+**解決方案**：
+
+#### 1. 修復 FileManagerAgent 導入
+
+```python
+# ❌ 舊代碼
+from google.adk.common import types
+from google.adk.runners.runner import Runner
+
+self.agent_config = types.AgentConfig(
+    name="file_manager",
+    model="gemini-2.5-flash",
+    # ...
+)
+self.runner = Runner(client=self.client, agent=self.agent_config)
+
+# ✅ 新代碼
+from google.genai import types
+from google.adk.agents import Agent
+from google.adk.runners import InMemoryRunner
+
+self.agent = Agent(
+    name="file_manager",
+    model="gemini-2.5-flash",
+    # ...
+)
+self.runner = InMemoryRunner(agent=self.agent, app_name="file_manager")
+```
+
+#### 2. 修復 Tools 模組導入
+
+```python
+# file_manager_agent/tools.py
+
+# ❌ 舊代碼
+from google.adk.common import types
+
+# ✅ 新代碼
+from google.genai import types
+```
+
+#### 3. 更新 requirements.txt
+
+解決多重依賴衝突：
+
+```txt
+# ❌ 舊版本（會衝突）
+google-genai==1.9.0      # 版本太舊
+fastapi==0.115.5         # 不支援 starlette>=0.46.2
+uvicorn[standard]==0.32.1  # 版本太舊
+requests==2.32.3         # 版本太舊
+
+# ✅ 新版本（相容）
+google-genai>=1.45.0,<2.0.0    # google-adk 需要
+fastapi>=0.116.2               # 支援 starlette>=0.46.2
+uvicorn[standard]>=0.34.0,<1.0.0  # google-adk 需要
+requests>=2.32.4,<3.0.0        # google-adk 需要
+google-adk>=1.18.0
+pydantic>=2.10.3,<3.0.0
+```
+
+**Dockerfile 構建錯誤**：
+
+原本的 Dockerfile 構建會失敗，錯誤訊息：
+```
+ERROR: Cannot install -r requirements.txt (line 5) and google-genai==1.9.0
+because these package versions have conflicting dependencies.
+```
+
+經過多次依賴解析，找出以下衝突鏈：
+1. `google-genai` 版本過舊（需要 >=1.45.0）
+2. `requests` 版本過舊（需要 >=2.32.4）
+3. `fastapi` 不支援新版 `starlette`（需要 >=0.116.2）
+4. `uvicorn` 版本過舊（需要 >=0.34.0）
+
+**關鍵學習**：
+
+1. **API 演進追蹤**：
+   - Google ADK 是新推出的框架，API 變化較快
+   - 需要參考官方 GitHub 而非過時的範例
+
+2. **依賴版本管理**：
+   - 使用版本範圍（`>=x.y.z,<a.b.c`）而非固定版本
+   - 可以避免未來的相容性問題
+   - 但也要注意 breaking changes
+
+3. **Dockerfile 構建優化**：
+   - pip 的依賴解析器會自動處理版本衝突
+   - 錯誤訊息會明確指出哪些套件衝突
+   - 使用 `pip install --dry-run` 可以提前測試
+
+4. **模組重構應對**：
+   - 當模組路徑變更時，要系統性地搜尋所有導入位置
+   - 使用 `grep` 或 IDE 的全域搜尋功能
+   - 確保測試覆蓋所有修改的模組
+
+5. **雙重驗證機制**：
+   - 本地測試 + Docker 構建測試
+   - 確保在不同環境下都能正常運行
+   - Docker 環境更接近生產環境
+
+**修復流程總結**：
+
+1. ✅ 識別錯誤來源（`ModuleNotFoundError`）
+2. ✅ 查閱官方文檔（GitHub pyproject.toml）
+3. ✅ 更新所有導入語句（3 個檔案）
+4. ✅ 解決依賴衝突（5 個套件版本更新）
+5. ✅ 本地測試（模組可正常導入）
+6. ✅ Docker 測試（構建成功）
+
+這個問題提醒我們：**在使用新興框架時，官方文檔和 GitHub repo 是最可靠的資訊來源**。
+
 ## 📊 部署與維運
 
 ### 本地開發設定
@@ -685,9 +969,10 @@ gcloud run services describe linebot-file-search \
 3. **中文友善**：完整支援中文檔名和查詢
 4. **隔離機制**：每個對話有獨立的文件庫，安全可靠
 5. **自動化管理**：File Search Store 自動建立，使用者無感知
-6. **AI 口語化互動**：使用 Google ADK Agent 讓檔案管理更親切自然
-7. **Quick Reply 便利性**：上傳後立即提供快捷操作，提升使用體驗
-8. **多媒體支援**：文件查詢 + 圖片分析，一個 Bot 搞定
+6. **引用來源追蹤**：自動提取並顯示 AI 回答的引用來源，可驗證答案準確性
+7. **AI 口語化互動**：使用 Google ADK Agent 讓檔案管理更親切自然
+8. **Quick Reply 便利性**：上傳後立即提供快捷操作，查詢後可一鍵查看引用
+9. **多媒體支援**：文件查詢 + 圖片分析，一個 Bot 搞定
 
 ### 實戰經驗分享
 
@@ -779,9 +1064,11 @@ ADK 不只是技術工具，更是一種**設計思維的轉變**——從「如
    - ✅ ~~整合圖片理解功能~~（已完成）
    - ✅ ~~Quick Reply 快速操作~~（已完成）
    - ✅ ~~AI 口語化檔案列表~~（已完成，使用 Google ADK）
+   - ✅ ~~引用來源追蹤~~（已完成，支援查看引用詳情）
    - 支援多檔案批次上傳
    - 檔案分類和標籤管理
    - 檔案內容全文搜尋
+   - 引用來源跳轉（如果是文件，顯示頁碼或段落位置）
 
 3. **使用體驗優化**
    - Rich Menu 設計
@@ -802,15 +1089,17 @@ ADK 不只是技術工具，更是一種**設計思維的轉變**——從「如
 透過這個專案，我學到了：
 
 1. **Google Gemini File Search** 的正確使用方式與 immutable 資料模型
-2. **FastAPI** 在處理 LINE Bot webhook 的高效性
-3. **Python async/await** 在 I/O 密集型應用的重要性
-4. **編碼問題**的處理策略（分離儲存名稱與顯示名稱）
-5. **雲端原生**應用的設計模式
-6. **LINE Quick Reply** 的情境化應用與使用者體驗提升
-7. **Google ADK (Agent Development Kit)** 的實戰應用
-8. **AI 對話 vs 傳統 UI**：選擇合適的互動方式
-9. **API 設計差異**：不同服務有不同的資料模型和限制
-10. **雙重後備機制**：SDK + REST API 確保穩定性
+2. **Grounding Metadata** 的提取與引用來源追蹤機制
+3. **FastAPI** 在處理 LINE Bot webhook 的高效性
+4. **Python async/await** 在 I/O 密集型應用的重要性
+5. **編碼問題**的處理策略（分離儲存名稱與顯示名稱）
+6. **雲端原生**應用的設計模式
+7. **LINE Quick Reply** 的情境化應用與使用者體驗提升（檔案摘要 + 引用查看）
+8. **Google ADK (Agent Development Kit)** 的實戰應用與 API 演進追蹤
+9. **AI 對話 vs 傳統 UI**：選擇合適的互動方式
+10. **API 設計差異**：不同服務有不同的資料模型和限制
+11. **雙重後備機制**：SDK + REST API 確保穩定性
+12. **依賴版本管理**：使用版本範圍避免衝突，追蹤官方文檔更新
 
 最重要的是：
 
@@ -818,7 +1107,11 @@ ADK 不只是技術工具，更是一種**設計思維的轉變**——從「如
 
 **AI 對話可以取代部分傳統 UI**。透過 Google ADK Agent，我們可以讓檔案列表從機械化的清單變成親切的對話，這是 UI 元件難以達到的體驗。
 
-**Quick Reply 是 LINE Bot 的靈魂**。在正確的時機提供正確的快捷操作，可以大幅提升使用者體驗和操作效率。
+**Quick Reply 是 LINE Bot 的靈魂**。在正確的時機提供正確的快捷操作，可以大幅提升使用者體驗和操作效率。無論是上傳後的「檔案摘要」還是查詢後的「查看引用」，都讓使用者能快速完成任務。
+
+**引用來源讓 AI 回答更可信**。透過 Grounding Metadata 提取引用資訊，使用者可以驗證 AI 的回答來源，這對於專業文件分析特別重要。結合 Quick Reply 的一鍵查看，讓引用功能真正實用。
+
+**依賴管理是持續挑戰**。新興框架（如 Google ADK）的 API 變化快，需要持續追蹤官方文檔和 GitHub。使用版本範圍而非固定版本，可以提高相容性，但也要注意 breaking changes。
 
 希望這個經驗分享能幫助到正在探索 AI 應用開發的朋友們！
 
