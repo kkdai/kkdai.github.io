@@ -26,7 +26,7 @@ tags: ["Python", "LINE Bot", "GCP", "Gemini", "FastAPI", "Cloud Run", "File Sear
 
 ### 專案程式碼
 
-[https://github.com/kkdai/linebot-file-search-adk](https://github.com/kkdai/linebot-file-search-adk)
+#### [https://github.com/kkdai/linebot-gemini-file-search](https://github.com/kkdai/linebot-gemini-file-search)
 
 （透過這個程式碼，可以快速部署到 GCP Cloud Run，享受無伺服器的便利）
 
