@@ -89,7 +89,7 @@ LINE Messaging API v8.18.0 在各種訊息內容中新增了 `markAsReadToken` �
 
 以下是使用 Golang 實作 Mark as Read 功能的完整範例程式碼： (請注意 github.com/line/line-bot-sdk-go/v8 需要更新到 8.18.0 之後)
 
-範例程式碼在：https://github.com/kkdai/linebot-mark-as-read
+範例程式碼在：[https://github.com/kkdai/linebot-mark-as-read](https://github.com/kkdai/linebot-mark-as-read)
 
 ### 實作方式：使用 Quick Reply + Postback
 
