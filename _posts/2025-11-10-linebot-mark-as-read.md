@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "LINE Messaging API 新功能介紹: Mark as Read API 讓你的聊天機器人標記訊息已讀"
-description: "LINE Messaging API 新功能介紹: Mark as Read API 讓你的聊天機器人標記訊息已讀"
+description: ""
 category:
 - TIL
 tags: ["Golang", "LINE Bot", "Messaging API", "Mark as Read", "Quick Reply"]
