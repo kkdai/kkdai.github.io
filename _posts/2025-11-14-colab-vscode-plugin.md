@@ -75,3 +75,16 @@ tags: ["Python", "Colab", "Gemini"]
 
 ## 目前一些需要注意的地方
 
+由於 Colab VS Code Plugin 還在持續開發中，有一些原本在 Colab Web UI 上可以使用的 `google.colab` 功能目前還無法在 VS Code 中使用。以下是一些主要的限制：
+
+- **`auth.authenticate_user()`**: 認證 URL 會出現在選單中，無法直接點擊。建議改用 Python Cloud Client Library。
+- **`drive.mount()`**: 目前無法掛載 Google Drive，可以改用 Drive Python API 來存取檔案。
+- **`files.download()` / `files.upload()`**: 原生的檔案上傳下載功能無法使用，但可以透過 IPyWidget 來達成相同效果。
+- **`userdata.get()`**: 目前會回傳錯誤，暫時需要從 Colab Web UI 複製 secret 值到 notebook 中。
+
+雖然有這些限制，但整體來說 Colab VS Code Plugin 還是大幅提升了開發體驗，特別是對於習慣使用 VS Code 和各種 AI Coding Assistant 的開發者來說，絕對是值得一試的好工具！
+
+## 參考資料
+
+- [Colab VS Code Extension](https://marketplace.visualstudio.com/items?itemName=Google.colab)
+- [Known Issues and Workarounds](https://github.com/googlecolab/colab-vscode/wiki/Known-Issues-and-Workarounds)
