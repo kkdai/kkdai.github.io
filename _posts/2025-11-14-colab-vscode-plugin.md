@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[VS Code][Colab] Google 正式釋出 Colab vS Code Plugin "
+title: "[VS Code][Colab] Google 正式釋出 Colab VS Code Plugin "
 description: ""
 category:
 - TIL
