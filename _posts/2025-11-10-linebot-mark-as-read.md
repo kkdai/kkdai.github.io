@@ -8,7 +8,7 @@ tags: ["Golang", "LINE Bot", "Messaging API", "Mark as Read", "Quick Reply"]
 
 ---
 
-# LINE Messaging API 新功能介紹: Mark as Read API 讓你的聊天機器人標記訊息已讀
+
 
 <img src="../images/image-20251112102510088.png" alt="image-20251112102510088" style="zoom:50%;" />
 
