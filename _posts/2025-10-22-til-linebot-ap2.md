@@ -225,18 +225,20 @@ async def enhanced_verify_otp(
 說實話，如果你要自己從零開始做一套完整的電商支付系統，那真的是會累死。AP2 提供了：
 
 ```python
-# 基本上就是這樣，很簡單
+# 基本上概念就是這樣，很簡單（這是簡化示意）
 shopping_agent = Agent(
-    name="ap2_shopping_assistant",  
+    name="ap2_shopping_assistant",
     model="gemini-2.5-flash",
     tools=[
         search_products,
-        get_product_details, 
+        get_product_details,
         create_cart_mandate,
         get_shopping_recommendations
     ]
 )
 ```
+
+> **注意**：上面是概念性的簡化示例。實際專案中我們使用了企業級的 factory pattern 來創建 agents，詳細實作請見下方的「Enhanced Shopping Agent」和「Enhanced Payment Agent」章節。
 
 - 不需要重新造輪子，協議都幫你定義好了
 - 標準化的 API 介面，跟不同支付服務商整合都是同一套邏輯
