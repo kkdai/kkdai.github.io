@@ -184,9 +184,44 @@ npm install -g @googlemaps/code-assist-mcp
 
 # 在 Claude Code 或 Cursor 中設定 MCP 伺服器
 # 之後就能直接在 AI 助手中查詢最新的 Google Maps 文件
+gemini extensions install https://github.com/googlemaps/platform-ai.git
+
+#or
+
+claude mcp add google-maps-platform-code-assist -- npx -y @googlemaps/code-assist-mcp@latest
 ```
 
 這個工具特別適合在開發時快速查詢 API 用法，不用在瀏覽器和編輯器之間切換！
+
+## 使用後的成果
+
+![iTerm2 2025-12-02 22.38.11](../images/iTerm2 2025-12-02 22.38.11.png)
+
+可以看到透過使用 [Google Maps Platform Code Assist](https://developers.google.com/maps/ai/mcp?hl=zh-tw) 之後，他們能找到完整的範例程式碼，並且知道要設定哪些相關參數。可以一次就將所有的功能都修復完成。
+
+我原本有使用 Context7 但是對於 Google Map 相關的設定還是有錯誤，並且也使用錯的 API 。這部分還是需要找到相關的 MCP 來使用才會正確。
+
+以下就是一段範例程式碼來使用 [Google Map Grounding API](https://ai.google.dev/gemini-api/docs/maps-grounding?hl=zh-tw) 
+
+```python
+prompt = "What are the best Italian restaurants within a 15-minute walk from here?"
+
+response = client.models.generate_content(
+    model='gemini-2.5-flash',
+    contents=prompt,
+    config=types.GenerateContentConfig(
+        # Turn on grounding with Google Maps
+        tools=[types.Tool(google_maps=types.GoogleMaps())],
+        # Optionally provide the relevant location context (this is in Los Angeles)
+        tool_config=types.ToolConfig(retrieval_config=types.RetrievalConfig(
+            lat_lng=types.LatLng(
+                latitude=34.050481, longitude=-118.248526))),
+    ),
+)
+```
+
+
+
 
 ## 目前需要注意的地方
 
