@@ -19,6 +19,7 @@ tags: ["Python", "Gemini", "Image Generation", "Streamlit", "PDF", "OCR"]
 於是我決定：**為什麼不直接做成自動化工具？**
 
 我想要的功能很簡單：
+
 1. 📄 上傳 PDF 檔案
 2. 🤖 自動使用 Gemini API 優化每一頁的文字清晰度
 3. 📥 下載優化後的 PDF
@@ -62,21 +63,25 @@ Output the reconstructed image ONLY. No textual explanation required.
 ```
 
 這個 prompt 的重點在於：
+
 - ✅ 使用「語意推理」而非純 OCR（能理解上下文）
 - ✅ 保持原有版面配置
 - ✅ 生成高解析度圖像
 - ✅ 強制使用繁體中文
 
 但為了自動化，我簡化成更直接的版本：
+
 ```python
 prompt_text = "請優化這張圖片中的文字，使其更清晰、更易讀。保持原有的版面配置，但提升文字的品質、對比度和清晰度。請輸出優化後的圖片。"
 ```
 
 雖然簡化了，但搭配 Gemini 3.0 的圖像生成能力不僅有效，而且實測之後效果更好！
 
+## 關於 Vertex AI - API Key
 
+因為這個使用到的是  `gemini-3-pro-image-preview` 的 API ，所以需要 Google Cloud 的 Vertex AI 的 API  Key ，可以到以下頁面去取得。
 
-
+[https://console.cloud.google.com/vertex-ai/studio/settings/api-keys](https://console.cloud.google.com/vertex-ai/studio/settings/api-keys)
 
 ## 技術架構
 
@@ -463,6 +468,7 @@ def main():
 ### 1. API 文檔要看最新版
 
 這次踩的坑大多是因為 API 更新導致的：
+
 - `Part.from_text()` → `Part(text=...)`
 - `use_container_width` → `width='stretch'`
 
@@ -477,11 +483,13 @@ def main():
 ### 3. 圖像生成 API 的限制
 
 目前 Gemini 圖像生成 API 有一些限制：
+
 - 必須透過 Vertex AI（不能用一般的 Developer API）
 - 需要設定 GCP 專案和認證
 - 輸出比例固定（不能自由指定像素大小）
 
 但好處是：
+
 - ✅ 生成品質極高（特別是文字清晰度）
 - ✅ 能理解語意（不只是簡單的濾鏡）
 - ✅ 支援多種比例選項
@@ -489,6 +497,7 @@ def main():
 ### 4. 批次處理的用戶體驗
 
 處理多頁 PDF 時，用戶體驗很重要：
+
 - ✅ 顯示即時進度（第 X/Y 頁）
 - ✅ 顯示每一頁的處理狀態
 - ✅ 統計成功/失敗數量
@@ -499,10 +508,12 @@ def main():
 ### 5. 成本考量
 
 Gemini 圖像生成 API 是付費的，處理一份 10 頁的 PDF：
+
 - 10 次 API 調用
 - 每次處理 1 張 2K 圖片
 
 **建議：** 在生產環境要考慮成本控制：
+
 - 限制單次處理的頁數
 - 提供預覽功能（只處理第一頁）
 - 快取已處理的結果
@@ -510,6 +521,7 @@ Gemini 圖像生成 API 是付費的，處理一份 10 頁的 PDF：
 ### 6. 從手動到自動化的價值
 
 原本的流程：
+
 ```
 1. 在 NotebookLM 生成投影片
 2. 截圖每一頁
@@ -521,6 +533,7 @@ Gemini 圖像生成 API 是付費的，處理一份 10 頁的 PDF：
 ```
 
 自動化後：
+
 ```
 1. 上傳 PDF
 2. 點擊「開始處理」
@@ -532,6 +545,7 @@ Gemini 圖像生成 API 是付費的，處理一份 10 頁的 PDF：
 ### 總結
 
 如果你也遇到類似的圖像優化需求：
+
 - ✅ **使用 Gemini 圖像生成 API** - 比傳統 OCR + 濾鏡效果好太多
 - ✅ **注意 API 版本** - SDK 更新很快，要看最新文檔
 - ✅ **重視用戶體驗** - 進度顯示、錯誤處理很重要
@@ -597,10 +611,10 @@ streamlit run app.py
 ## 未來改進方向
 
 - [ ] 支援批次處理多個 PDF
-- [ ] 加入預覽功能（只處理第一頁）
-- [ ] 快取處理結果
+- [x] 加入預覽功能（只處理第一頁）
+- [x] 快取處理結果
 - [ ] 支援更多圖片格式（JPG, PNG 等）
-- [ ] 加入進度條和預估時間
+- [x] 加入進度條和預估時間
 - [ ] 錯誤重試機制
 
 ## 參考資料
