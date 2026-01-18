@@ -24,7 +24,7 @@ tagline:
   </h2>
 
   <div class="post-excerpt">
-    {{ post.excerpt | strip_html | truncatewords: 80 }}
+    {{ post.content | strip_html | truncatewords: 150 }}
   </div>
 
   <a href="{{ site.BASE_PATH }}{{ post.url }}" class="btn btn-outline-primary btn-sm">
