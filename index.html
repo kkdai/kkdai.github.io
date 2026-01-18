@@ -23,9 +23,13 @@ tagline:
     <a href="{{ site.BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
   </h2>
 
-  <div>
-    {{ post.content }}
+  <div class="post-excerpt">
+    {{ post.excerpt }}
   </div>
+
+  <a href="{{ site.BASE_PATH }}{{ post.url }}" class="btn btn-outline-primary btn-sm">
+    繼續閱讀 <i class="fa fa-arrow-right"></i>
+  </a>
 
 </article>
 {% endfor %}
