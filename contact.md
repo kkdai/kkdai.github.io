@@ -12,7 +12,6 @@ header: Contact
 
 | 管道 | 連結 | 用途 |
 |------|------|------|
-| **Email** | [evanslin@gmail.com](mailto:evanslin@gmail.com) | 一般詢問、合作提案 |
 | **GitHub** | [github.com/kkdai](https://github.com/kkdai) | 技術問題、開源專案 |
 | **Twitter** | [@Evan_Lin](https://twitter.com/Evan_Lin) | 快速交流、技術討論 |
 | **LinkedIn** | [evanlin1977](https://linkedin.com/in/evanlin1977) | 專業聯繫、職涯交流 |
@@ -27,19 +26,17 @@ header: Contact
 
 **合作提案**
 
-歡迎透過 Email 聯繫，請在信件中說明：
+歡迎透過 LinkedIn 或 Twitter 私訊聯繫，請說明：
 - 合作類型（演講、撰稿、技術顧問等）
 - 專案或活動簡介
 - 預期時程
 
 **Bug 回報**
 
-如果您發現網站有任何問題，歡迎：
-- 到 [GitHub Repository](https://github.com/kkdai/kkdai.github.io) 開 Issue
-- 或直接發 Email 告知
+如果您發現網站有任何問題，歡迎到 [GitHub Repository](https://github.com/kkdai/kkdai.github.io) 開 Issue。
 
 ### 回覆時間
 
 我會盡量在 **3-5 個工作天**內回覆您的訊息。如果是緊急事項，建議透過 Twitter 私訊聯繫。
 
-感謝您的來信！
+感謝您的聯繫！
