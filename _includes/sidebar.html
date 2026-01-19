@@ -45,13 +45,16 @@
 			</a>
 		</li>
 		{% endif %}
-		{% if site.author.email %}
 		<li>
-			<a class="btn btn-default btn-sm" href="mailto:{{ site.author.email }}">
-				<i class="fa fa-envelope"></i>
+			<a class="btn btn-default btn-sm" href="{{ site.BASE_PATH }}/about/">
+				<i class="fa fa-user"></i>
 			</a>
 		</li>
-		{% endif %}
+		<li>
+			<a class="btn btn-default btn-sm" href="{{ site.BASE_PATH }}/privacy/">
+				<i class="fa fa-shield"></i>
+			</a>
+		</li>
 		<li>
 			<a class="btn btn-default btn-sm" href="{{ site.BASE_PATH }}/{{ site.rss_path }}">
 				<i class="fa fa-rss"></i>
