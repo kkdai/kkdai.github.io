@@ -248,6 +248,12 @@ def _create_image_send_message(image_bytes: bytes):
 
 ---
 
+## 成果展示
+
+![LINE 2026-01-28 15.27.33](../images/LINE 2026-01-28 15.27.33.png)
+
+![image-20260128143559301](../images/image-20260128143559301.png)
+
 ## 踩到的坑
 
 ### 坑 1: `from_image_bytes` 不存在
