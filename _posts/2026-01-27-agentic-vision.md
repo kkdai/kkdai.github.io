@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Gemini 3 Flash] 在 LINE Bot 中實現 Agentic Vision：讓 AI 主動標註圖片"
+title: "[Gemini 3 Flash] 在 LINE Bot 中實現 Agentic Vision：讓 AI 主動標註圖片甚至做更多 AI 處理"
 description: "整合 Gemini 3 Flash Agentic Vision 到 LINE Bot，實現 Code Execution + 圖片標註回傳的完整流程"
 category:
 - TIL
