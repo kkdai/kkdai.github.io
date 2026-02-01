@@ -10,6 +10,8 @@ tags: ["AP2", "Python", "LINEBot", "CredentialProvider", "Tokenization", "Paymen
 
 ![Agent Payments Protocol Graphic](https://github.com/google-agentic-commerce/AP2/raw/main/docs/assets/ap2_graphic.png)
 
+![image-20260201223858741](../images/image-20260201223858741.png)
+
 # 前情提要
 
 這是 LINE Bot AP2 整合系列的第二篇文章。在[第一篇文章](https://www.evanlin.com/til-linebot-ap2/)中，我們完成了基本的 Shopping Agent 和 Payment Agent 整合，實作了 Cart Mandate、HMAC-SHA256 數位簽章、以及 OTP 驗證機制。
