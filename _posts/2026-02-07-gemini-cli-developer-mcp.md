@@ -13,6 +13,7 @@ tags: ["Google", "MCP", "Gemini"]
 參考文章：
 * [Introducing the Developer Knowledge API and MCP server](https://developers.googleblog.com/introducing-the-developer-knowledge-api-and-mcp-server/)
 * [Google Knowledge MCP Server](https://developers.google.com/knowledge/mcp#claude-code)
+* [Developer Knowledge API Corpus Reference](https://developers.google.com/knowledge/reference/corpus-reference)
 
 # 前言
 
@@ -27,7 +28,18 @@ tags: ["Google", "MCP", "Gemini"]
 **Developer Knowledge API** 則提供了：
 *   **機器可讀的真理來源**：直接提供乾淨的 Markdown 格式內容。
 *   **即時性**：與 Google 官方文件同步更新，不再有資訊落差。
-*   **全面性**：涵蓋了 Android, Google Cloud, Firebase, Google Maps 等所有 Google 開發者文件。
+*   **全面性**：它能直接檢索並獲取以下 Google 官方網域的文檔，如果你的開發領域與這些相關，強烈建議開啟這個 MCP：
+    *   `ai.google.dev`
+    *   `developer.android.com`
+    *   `developer.chrome.com`
+    *   `developers.home.google.com`
+    *   `developers.google.com`
+    *   `docs.cloud.google.com`
+    *   `docs.apigee.com`
+    *   `firebase.google.com`
+    *   `fuchsia.dev`
+    *   `web.dev`
+    *   `www.tensorflow.org`
 
 ## MCP Server：讓 AI 更有「常識」
 
