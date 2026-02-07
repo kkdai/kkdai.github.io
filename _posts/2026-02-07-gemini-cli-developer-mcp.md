@@ -15,20 +15,76 @@ tags: ["Google", "MCP", "Gemini"]
 * [Google Knowledge MCP Server](https://developers.google.com/knowledge/mcp#claude-code)
 * [Developer Knowledge API Corpus Reference](https://developers.google.com/knowledge/reference/corpus-reference)
 
-# 前言
+# 前情提要
 
-在我們進入「Vibe Coding」的時代後，開發者最常遇到的痛點之一就是 AI 的「幻覺」或是「資訊過時」。即便強如 Gemini 1.5 Pro，有時也會因為文件更新太快而給出舊版的 API 建議。
+還記得上週我用 Gemini CLI 寫 Gemini API 整合時，它信心滿滿地告訴我：「這個 API 參數是這樣用的」。結果執行後噴了一堆錯誤，原來 Google 三個月前就改了 API 格式。這不是 AI 的錯，它的訓練資料截止日期就在那裡，面對日新月異的技術文件，再強的模型也會「過時」。
 
-為了徹底解決這個問題，Google 釋出了兩大殺手級工具：**Developer Knowledge API** 以及基於 **Model Context Protocol (MCP)** 的知識服務器。這意味著你的 AI 助手現在可以直接「閱讀」官方最新的文件，成為一個真正擁有官方掛保證的開發專家。
+**過去我們遇到的典型場景：**
+
+```
+開發者: "Gemini，幫我寫一個 Gemini Function Calling 的範例"
+AI: "好的，你可以這樣寫..." [產生基於 2024 年 6 月文件的程式碼]
+開發者: [複製貼上，執行]
+終端機: ❌ Error: Parameter 'tools' format has changed in v2
+開發者: 😤 "又要去翻官網文件了..."
+```
+
+這樣的循環你是不是很熟悉？即便是 Gemini 1.5 Pro，有時也會因為自己的 API 更新太快而給出舊版建議。**AI 的知識是靜態的，但技術文件是動態的**，這個矛盾一直困擾著我們。
+
+為了徹底解決這個問題，Google 在 2025 年初釋出了兩大殺手級工具：
+
+*   **Developer Knowledge API** - 機器可讀的官方文件 API
+*   **Knowledge MCP Server** - 基於 Model Context Protocol 的即時文件查詢服務
+
+這意味著你的 AI 助手現在不再只是「憑記憶」寫程式，而是可以在需要時主動「翻閱最新官方文件」，成為一個真正擁有官方掛保證、永不過時的開發專家。
 
 ## 什麼是 Developer Knowledge API？
 
-這是一個專為機器設計的 API。過去，AI 是透過網頁爬蟲來學習文件的，但網頁內容往往參雜了導覽列、廣告或格式干擾。
+### 過去 AI 學習文件的方式：網頁爬蟲的困境
 
-**Developer Knowledge API** 則提供了：
-*   **機器可讀的真理來源**：直接提供乾淨的 Markdown 格式內容。
-*   **即時性**：與 Google 官方文件同步更新，不再有資訊落差。
-*   **全面性**：它能直接檢索並獲取以下 Google 官方網域的文檔，如果你的開發領域與這些相關，強烈建議開啟這個 MCP：
+傳統上，AI 模型是透過爬蟲抓取網頁來學習文件的。但這種方式有幾個致命問題：
+
+**❌ 雜訊干擾**
+```html
+<!-- AI 看到的實際內容 -->
+<nav>...</nav>  <!-- 導覽列 -->
+<ad>...</ad>    <!-- 廣告 -->
+<cookie-banner>...</cookie-banner>  <!-- Cookie 提示 -->
+<div class="content">
+  <!-- 真正的文件內容只佔 30% -->
+  這是 Gemini API 的使用方式...
+</div>
+<footer>...</footer>  <!-- 頁尾 -->
+```
+
+AI 必須從這堆 HTML 中「猜測」哪些才是真正的文件內容。
+
+**❌ 格式不一致**
+- 有些用 `<code>` 標籤，有些用 `<pre>`
+- 有些用 Markdown 渲染，有些用自訂語法
+- 圖片說明可能在 `alt`、`title` 或 `figcaption` 裡
+
+**❌ 更新延遲**
+- 爬蟲可能幾個月才抓一次
+- 新增的 API 參數要等下次訓練才知道
+- 訓練資料截止日期成為永遠的痛
+
+### Developer Knowledge API：機器優先的文件系統
+
+**Developer Knowledge API** 徹底改變了這個遊戲規則，它提供了：
+
+*   **✅ 機器可讀的真理來源**：
+    - 直接提供純淨的 Markdown 格式
+    - 無雜訊、無廣告、無導覽列
+    - 結構化的 metadata（作者、更新時間、版本）
+
+*   **✅ 即時性**：
+    - 與 Google 官方文件**同步更新**（延遲 < 1 小時）
+    - API 改了，AI 就能立刻讀到新文件
+    - 永遠不會有「訓練資料過時」的問題
+
+*   **✅ 全面性**：
+    它能直接檢索並獲取以下 Google 官方網域的文檔，如果你的開發領域與這些相關，強烈建議開啟這個 MCP：
     *   `ai.google.dev`
     *   `developer.android.com`
     *   `developer.chrome.com`
