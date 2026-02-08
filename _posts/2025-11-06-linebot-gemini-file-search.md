@@ -30,7 +30,7 @@ tags: ["Python", "LINE Bot", "GCP", "Gemini", "FastAPI", "Cloud Run", "File Sear
 
 （透過這個程式碼，可以快速部署到 GCP Cloud Run，享受無伺服器的便利）
 
-<img src="../images/LINE 2025-11-08 08.07.11.tiff" alt="LINE 2025-11-08 08.07.11" style="zoom:50%;" />
+<img src="../images/20251108.jpg" alt="LINE 2025-11-08 08.07.11" style="zoom:50%;" />
 
 ##  📚 關於 Gemini File Search 基本介紹
 
