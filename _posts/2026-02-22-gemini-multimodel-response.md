@@ -8,10 +8,16 @@ category:
 tags: ["Google", "Gemini", "LINE Bot", "Function Calling", "Multimodal"]
 ---
 
+
+
+
+
 參考文章：
+
 * [Gemini API - Function Calling with Multimodal](https://ai.google.dev/gemini-api/docs/function-calling?hl=zh-tw#multimodal)
 * [GitHub: linebot-gemini-multimodel-funcal](https://github.com/kkdai/linebot-gemini-multimodel-funcal)
 * [Vertex AI - Multimodal Function Response](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/function-calling#mm-fr)
+* 完整程式碼  [GitHub](https://github.com/kkdai/linebot-gemini-multimodel-funcal)
 
 # 前情提要
 
