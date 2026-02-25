@@ -12,6 +12,12 @@ tags: ["Google", "Gemini", "LINE Bot", "Function Calling", "Multimodal"]
 
 
 
+
+
+![image-20260225234804185](../images/image-20260225234804185.png)
+
+![image-20260225234701217](../images/image-20260225234701217.png)
+
 參考文章：
 
 * [Gemini API - Function Calling with Multimodal](https://ai.google.dev/gemini-api/docs/function-calling?hl=zh-tw#multimodal)
