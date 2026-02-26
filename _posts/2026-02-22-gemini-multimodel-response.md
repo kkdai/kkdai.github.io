@@ -10,10 +10,6 @@ tags: ["Google", "Gemini", "LINE Bot", "Function Calling", "Multimodal"]
 
 
 
-
-
-
-
 ![image-20260225234804185](../images/image-20260225234804185.png)
 
 ![image-20260225234701217](../images/image-20260225234701217.png)
@@ -42,7 +38,9 @@ Gemini: "您在 1 月 15 日購買了棕色飛行員外套，金額 NT$1,890。"
 
 **AI 能讀懂文字，但看不到圖片**——這個限制在傳統 Function Calling 架構下一直是死角。
 
-![image-20260225230645814](../images/image-20260225230645814.png)
+![Google Chrome 2026-02-26 10.34.51](../images/Google Chrome 2026-02-26 10.34.51.png)
+
+![Google Chrome 2026-02-26 10.34.58](../images/Google Chrome 2026-02-26 10.34.58.png)
 
 直到 Gemini 推出了 **Multimodal Function Response**，這個問題才被真正解決。
 
