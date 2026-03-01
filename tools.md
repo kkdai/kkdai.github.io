@@ -8,7 +8,7 @@ header: Useful Tools
 
 | 產品名稱 | 功能敘述 | 線上使用 | GitHub |
 | :--- | :--- | :--- | :--- |
-| **YouTube Channel ID Finder** | A sleek, modern web application that extracts the Channel ID from any YouTube video URL using the YouTube Data API v3. | [Link](https://youtube-channel-id-finder-660825558664.europe-west1.run.app/) | [Repo](https://github.com/kkdai/youtube-channel-id-finder) |
+| **YouTube Channel ID Finder** | 一個簡潔且具質感的網頁應用，透過 YouTube Data API v3，從任何 YouTube 影片網址中擷取 Channel ID。 | [Link](https://youtube-channel-id-finder-660825558664.europe-west1.run.app/) | [Repo](https://github.com/kkdai/youtube-channel-id-finder) |
 
 ---
 
