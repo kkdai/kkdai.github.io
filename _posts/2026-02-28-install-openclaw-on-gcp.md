@@ -194,6 +194,19 @@ sudo resize2fs /dev/sda1
 
 
 
+## 🏁 最終章：當 AI 也會「累」的時候
+
+當你看到 `The AI service is temporarily overloaded` 時，恭喜你，你的基礎設施（GCP, OpenClaw, Path）已經完全健康了！這剩下的 1% 屬於 AI 供應商的範疇。
+
+### 如何優化 AI 回應穩定性？
+1. **備用模型**：在 `models configure` 中設定多個模型，當 Pro 版過載時切換到 Flash 版。
+2. **重試機制**：OpenClaw 內建了基本的重試邏輯，但遇到 Overload 時，最好的方式是「冷靜 30 秒」。
+3. **區域選擇**：如果你使用 Vertex AI，可以嘗試切換不同的區域（Region），例如從 `us-central1` 切換到 `asia-east1`。
+
+> **結語**：從 `sudo-rs` 的拒絕、NVM 的迷蹤、GCP 磁碟的炸裂，到最後的 AI 過載，我們成功在雲端建立了一個強大的 AI Agent 基地。Happy Coding! 🦞
+
+
+
 ## 總結
 
 在 GCP 部署 OpenClaw 的關鍵在於 **「使用者目錄優先」**。透過 NVM 避開系統層級的 `sudo-rs` 限制，不僅安裝過程更流暢，也能更方便地切換 Node.js 版本以符合 OpenClaw 的最新需求。
