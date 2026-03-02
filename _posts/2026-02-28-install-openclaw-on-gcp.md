@@ -157,7 +157,42 @@ chmod +x ~/start_openclaw.sh
 3. **完美分離 (Detach)**：按下 `Ctrl + B` 後放開，再按下 `D`。
 4. **隨時重連**：下次登入執行 `tmux a -t openclaw` 即可。
 
----
+## 🛠️ 問題四：更新到一半硬碟爆了怎麼辦？
+
+### ❓ 為什麼 `openclaw` 指令會突然消失？
+
+如果你在執行過程中遇到 `-bash: openclaw: command not found`，通常有兩個原因：
+1. **NVM 未載入**：NVM 安裝在使用者目錄下，非互動式 Shell 可能不會自動執行 `nvm.sh`。
+2. **磁碟滿載導致設定損壞**：當磁碟 100% 時，系統可能無法讀取或寫入環境變數設定。
+
+**快速修復指令：**
+```bash
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+export PATH="$HOME/.nvm/versions/node/v25.7.0/bin:$PATH"
+```
+
+### 接下來的檢查清單：
+1. **空間確認**：`df -h` 看到 `/dev/sda1` 還有空間嗎？
+2. **指令確認**：`which openclaw` 有噴路徑出來嗎？
+3. **服務確認**：`openclaw gateway` 跑起來後，有沒有看到 `Gateway is listening on port 18789`？
+
+**如果以上都 OK，你的 AI Agent 就正式復活了！需要我幫你把這整段「復活流程」也補進你的 MD 檔案中嗎？**
+
+### 💡 為什麼改了 GCP 磁碟大小，`df -h` 卻沒變？
+
+在雲端控制台調整磁碟大小後，必須進入系統手動執行「磁碟擴張」兩部曲，空間才會真正釋放：
+
+1. **擴展分割區**：使用 `growpart` 指令將分割區邊界推至實體磁碟極限。
+2. **擴展檔案系統**：使用 `resize2fs` 指令讓檔案系統填充剩餘空間。
+
+**指令範例：**
+```bash
+sudo growpart /dev/sda 1
+sudo resize2fs /dev/sda1
+```
+
+
 
 ## 總結
 
