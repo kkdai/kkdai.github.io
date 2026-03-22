@@ -79,6 +79,24 @@ header: Useful Tools
   </div>
 </div>
 
+<div class="tool-card">
+  <div class="tool-header">
+    <h3 class="tool-title">🤖 Agent Skill Hub</h3>
+    <div class="tool-links">
+      <a href="https://www.evanlin.com/agent-skill-hub/zh/index.html" target="_blank"><i class="fa fa-external-link"></i> 線上使用</a>
+    </div>
+  </div>
+  <p class="tool-description">
+    Agent Skill Hub 是一個專門收集與展示 AI Agent 技能的平台。這裡彙整了各種實用的技能與工具（如 MCP），讓開發者與使用者能夠更快速地找到並整合所需的 AI 功能，進而強化自動化工作流程與 AI 應用的能力。
+  </p>
+  <div class="tool-tags">
+    <span class="tag">AI Agents</span>
+    <span class="tag">MCP</span>
+    <span class="tag">Automation</span>
+    <span class="tag">Knowledge Base</span>
+  </div>
+</div>
+
 ---
 
 *(更多工具持續增加中...)*
