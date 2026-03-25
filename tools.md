@@ -84,6 +84,7 @@ header: Useful Tools
     <h3 class="tool-title">🤖 Agent Skill Hub</h3>
     <div class="tool-links">
       <a href="https://www.evanlin.com/agent-skill-hub/zh/index.html" target="_blank"><i class="fa fa-external-link"></i> 線上使用</a>
+      <a href="https://github.com/kkdai/agent-skill-hub" target="_blank"><i class="fa fa-github"></i> GitHub</a>
     </div>
   </div>
   <p class="tool-description">
