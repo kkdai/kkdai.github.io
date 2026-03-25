@@ -13,7 +13,6 @@ tags: ["GitHub Pages", "AI Agent", "Gemini", "Technical Writing", "Documentation
 
 參考連結：
 * [Agent Skill Hub 儲存庫](https://github.com/kkdai/agent-skill-hub)
-* [whisperASR 參考範例](https://plateaukao.github.io/whisperASR/)
 * [GitHub Pages 官方說明文件](https://docs.github.com/en/pages)
 
 這篇文章記錄了我在開發 **Agent Skill Hub (2026 技能庫)** 時，如何從零開始建構技能描述規範，並參考極簡美學打造出支援中英雙語的 GitHub Pages 文件站。
@@ -100,6 +99,16 @@ git push origin main
 ![image-20260322225932252](../images/image-20260322225932252.png)
 
 ---
+
+## 成果
+
+##### Web App: [https://www.evanlin.com/agent-skill-hub/zh/index.html](https://www.evanlin.com/agent-skill-hub/zh/index.html)
+
+**Source code:** [https://github.com/kkdai/agent-skill-hub](https://github.com/kkdai/agent-skill-hub)
+
+![image-20260325155233087](../images/image-20260325155233087.png)
+
+
 
 ## 🛠️ 常見坑洞與故障排除
 
