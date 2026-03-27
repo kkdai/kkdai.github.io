@@ -8,9 +8,7 @@ category:
 tags: ["Google", "Gemini", "LINE Bot", "Function Calling", "Maps Grounding", "Places API", "Tool Combo"]
 ---
 
-
-
-![image-20260327163200329](../images/image-20260327163200329.png)
+![image-20260327164715459](../images/image-20260327164715459.png)
 
 參考文章：
 
@@ -421,6 +419,8 @@ history = [...]
 ---
 
 ## Demo 展示
+
+![image-20260327163200329](../images/image-20260327163200329.png)
 
 ### 場景 1：「找評價 4 顆星以上的聚餐熱炒店」
 
