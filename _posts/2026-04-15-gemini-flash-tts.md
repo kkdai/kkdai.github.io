@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Gemini 3.1] Native TTS 實戰：更簡單、更強大的朗讀摘要功能"
+title: "[Gemini 3.1] Gemini-3.1-flash TTS 實戰：更簡單、更強大的朗讀摘要功能"
 description: "介紹 Gemini 3.1 新推出的原生 TTS 能力，將 LINE Bot 的朗讀摘要功能從 Live API 遷移至 Native TTS，並解決異步迭代的技術陷阱。"
 category:
 - AI
