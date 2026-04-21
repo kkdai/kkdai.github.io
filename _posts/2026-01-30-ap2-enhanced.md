@@ -16,7 +16,7 @@ tags: ["AP2", "Python", "LINEBot", "CredentialProvider", "Tokenization", "Paymen
 
 這是 LINE Bot AP2 整合系列的第二篇文章。在[第一篇文章](https://www.evanlin.com/til-linebot-ap2/)中，我們完成了基本的 Shopping Agent 和 Payment Agent 整合，實作了 Cart Mandate、HMAC-SHA256 數位簽章、以及 OTP 驗證機制。
 
-但是在實際部署後，我重新審視了 [AP2 官方 Spec](https://github.com/anthropics/AP2)，發現我們漏掉了一個很重要的元件：**Credential Provider**。
+但是在實際部署後，我重新審視了 [AP2 官方 Spec](https://github.com/google-agentic-commerce/AP2)，發現我們漏掉了一個很重要的元件：**Credential Provider**。
 
 這篇文章會分享：
 
