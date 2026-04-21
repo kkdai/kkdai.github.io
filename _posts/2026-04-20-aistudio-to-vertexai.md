@@ -87,9 +87,9 @@ tags: ["Google Cloud", "Vertex AI", "LINE Bot", "Python", "Cloud Run"]
 
 程式碼清乾淨、容器也順利啟動了，但當我在 LINE 傳送名片圖片時，機器人卻又拋出了 500 錯誤。再次調閱日誌，這次是：
 
-> `google.api_core.exceptions.NotFound: 404 Publisher Model ... gemini-1.5-flash was not found or your project does not have access to it.`
+> `google.api_core.exceptions.NotFound: 404 Publisher Model ... gemini-2.5-flash was not found or your project does not have access to it.`
 
-這是我這次遇到最大的坑！在 Google AI Studio，你可以很隨意地用 `gemini-1.5-flash` 這個 alias；**但在 Vertex AI 的某些區域（例如 `asia-east1` 台灣區），你必須指定精確的版本號**，例如 `gemini-1.5-flash-002`，否則 API 會直接告訴你找不到模型。
+這是我這次遇到最大的坑！在 Google AI Studio，你可以很隨意地用 `gemini-2.5-flash` 這個 alias；**但在 Vertex AI 的某些區域（例如 `asia-east1` 台灣區），你必須指定精確的版本號**，例如 `gemini-2.5-flash-002`，否則 API 會直接告訴你找不到模型。
 
 ### 進階挑戰：我想嚐鮮 Gemini 3.0 Flash Preview！
 
