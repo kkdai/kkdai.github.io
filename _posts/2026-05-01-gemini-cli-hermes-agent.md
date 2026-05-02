@@ -22,7 +22,7 @@ tags: ["Google Cloud", "GCE", "Hermes Agent", "Gemini", "Telegram Bot", "Systemd
 
 ## 環境參數預備
 
-在開始之前，請確保你手上有這些必要的參數：
+在開始之前，請確保你手手上這這些必要的參數：
 *   **PROJECT_ID**: `YOUR_PROJECT_ID`
 *   **LOCATION**: `global`
 *   **GOOGLE_API_KEY**: `YOUR_GOOGLE_API_KEY` (Google AI Studio 取得)
