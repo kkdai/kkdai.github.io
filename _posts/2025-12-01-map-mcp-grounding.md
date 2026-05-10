@@ -160,11 +160,13 @@ async def search_nearby_places(
 
 目前支援 Google Maps Grounding 的 Gemini 模型：
 
-- ✅ Gemini 2.5 Pro
-- ✅ Gemini 2.5 Flash
+- ✅ Gemini 3.1 Pro / Flash-Lite (預覽版)
+- ✅ Gemini 2.5 Pro / Flash
 - ✅ Gemini 2.0 Flash
 - ✅ Gemini 2.5 Flash with Live API
-- ❌ Gemini 2.0 Flash-Lite（不支援）
+- ❌ Gemini 1.5 Flash-Lite (不支援)
+
+> **注意**：最新的 Gemini 3.1 Flash-Lite 已經開始支援地圖基準功能，這對於降低延遲非常有幫助！
 
 ## Google Maps Platform Code Assist (MCP)
 
@@ -172,56 +174,33 @@ async def search_nearby_places(
 
 在開發過程中，我也發現 Google 推出了 [Google Maps Platform Code Assist toolkit](https://developers.google.com/maps/ai/mcp?hl=zh-tw)，這是一個基於 Model Context Protocol (MCP) 的工具，可以：
 
-- 🔍 **即時文件檢索**：透過 RAG 技術搜尋最新的官方文件和程式碼範例
-- 🤖 **AI 助手整合**：支援 Gemini CLI、Claude Code、Cursor 等多種開發環境
-- 📚 **豐富的資源**：涵蓋官方文件、教學、GitHub 範例和安全資源
+- 🔍 **即時文件檢索**：透過 RAG 技術搜尋最新的官方文件、程式碼範例、教學與安全資源。
+- 🤖 **AI 助手整合**：支援 Gemini CLI、Claude Code、Cursor 等多種開發環境。
+- 📚 **核心工具**：
+    - `retrieve-google-maps-platform-docs`：接收自然語言查詢並檢索地圖官方文件。
+    - `retrieve-instructions`：**必須優先呼叫**，提供系統指令協助 AI 了解如何正確使用工具。
 
 ### 如何使用 MCP
 
+目前 Google Maps Platform Code Assist 提供遠端的 MCP 伺服器，安裝方式如下：
+
+#### Gemini CLI
+在 Gemini CLI 中執行以下指令即可完成安裝：
+
 ```bash
-# 使用 Node.js 安裝
-npm install -g @googlemaps/code-assist-mcp
+gemini mcp add -s user -t http maps-code-assist-mcp https://mapscodeassist.googleapis.com/mcp
+```
 
-# 在 Claude Code 或 Cursor 中設定 MCP 伺服器
-# 之後就能直接在 AI 助手中查詢最新的 Google Maps 文件
-gemini extensions install https://github.com/googlemaps/platform-ai.git
+安裝完成後，可以使用 `/mcp list` 檢查是否出現 `maps-code-assist-mcp - Ready (2 tools)`。
 
-#or
+#### Claude Code / Cursor
+如果是使用 Claude Code，建議使用 `npx` 啟動：
 
+```bash
 claude mcp add google-maps-platform-code-assist -- npx -y @googlemaps/code-assist-mcp@latest
 ```
 
-這個工具特別適合在開發時快速查詢 API 用法，不用在瀏覽器和編輯器之間切換！
-
-## 使用後的成果
-
-![iTerm2 2025-12-02 22.38.11](../images/iTerm2 2025-12-02 22.38.11.png)
-
-可以看到透過使用 [Google Maps Platform Code Assist](https://developers.google.com/maps/ai/mcp?hl=zh-tw) 之後，他們能找到完整的範例程式碼，並且知道要設定哪些相關參數。可以一次就將所有的功能都修復完成。
-
-我原本有使用 Context7 但是對於 Google Map 相關的設定還是有錯誤，並且也使用錯的 API 。這部分還是需要找到相關的 MCP 來使用才會正確。
-
-以下就是一段範例程式碼來使用 [Google Map Grounding API](https://ai.google.dev/gemini-api/docs/maps-grounding?hl=zh-tw) 
-
-```python
-prompt = "What are the best Italian restaurants within a 15-minute walk from here?"
-
-response = client.models.generate_content(
-    model='gemini-2.5-flash',
-    contents=prompt,
-    config=types.GenerateContentConfig(
-        # Turn on grounding with Google Maps
-        tools=[types.Tool(google_maps=types.GoogleMaps())],
-        # Optionally provide the relevant location context (this is in Los Angeles)
-        tool_config=types.ToolConfig(retrieval_config=types.RetrievalConfig(
-            lat_lng=types.LatLng(
-                latitude=34.050481, longitude=-118.248526))),
-    ),
-)
-```
-
-
-
+或者直接將遠端伺服器端點 `https://mapscodeassist.googleapis.com/mcp` 加入到設定檔中。
 
 ## 目前需要注意的地方
 
@@ -232,14 +211,12 @@ Maps Grounding 功能**不支援**一般的 Gemini Developer API，必須透過 
 - 開發環境：使用 `gcloud auth application-default login`
 - 生產環境：使用 Service Account 並設定 `GOOGLE_APPLICATION_CREDENTIALS`
 
-### 3. 支援的模型
-確保使用支援的模型（如 `gemini-2.0-flash`），避免使用 `-lite` 版本。
-
-### 4. 區域選擇
+### 3. 區域選擇
 建議將 `GOOGLE_CLOUD_LOCATION` 設為 `global` 以獲得最佳可用性。
 
-### 5. 成本考量
-Vertex AI 的計費方式與 Developer API 不同，建議先在[定價頁面](https://cloud.google.com/vertex-ai/pricing)了解費用結構。
+### 4. 成本考量
+Vertex AI 的計費方式與 Developer API 不同，建議先在[定價頁面](https://cloud.google.com/vertex-ai/pricing)了解費用結構。目前 Google Maps Grounding 在免費方案下每天提供最多 500 次要求。
+
 
 ## 開發心得
 
