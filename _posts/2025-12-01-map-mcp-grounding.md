@@ -202,6 +202,40 @@ claude mcp add google-maps-platform-code-assist -- npx -y @googlemaps/code-assis
 
 或者直接將遠端伺服器端點 `https://mapscodeassist.googleapis.com/mcp` 加入到設定檔中。
 
+## 網頁嵌入地圖範例 (JavaScript Web Components)
+
+除了後端的 Grounding，如果你想在網頁中直接嵌入一個以台北 101 為中心的地圖，現在最推薦的方式是使用 **Web Components**。這可以大幅簡化程式碼：
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>台北 101 地圖範例</title>
+    <style>
+      gmp-map { height: 500px; width: 100%; }
+    </style>
+    <!-- 載入 Maps JS API -->
+    <script>
+      (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
+        key: "YOUR_API_KEY",
+        v: "weekly"
+      });
+    </script>
+  </head>
+  <body>
+    <gmp-map
+      center="25.0339639,121.5644681"
+      zoom="15"
+      map-id="DEMO_MAP_ID">
+      <gmp-advanced-marker
+        position="25.0339639,121.5644681"
+        title="台北 101">
+      </gmp-advanced-marker>
+    </gmp-map>
+  </body>
+</html>
+```
+
 ## 目前需要注意的地方
 
 ### 1. 必須使用 Vertex AI
