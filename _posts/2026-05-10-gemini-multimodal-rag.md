@@ -341,4 +341,4 @@ print(f"[BG Store] uploading display_name={display_name!r} mime={mime_type} "
 3.  開發者實作指南：[Multimodal RAG with the Gemini API File Search tool: a developer guide](https://dev.to/googleai/multimodal-rag-with-the-gemini-api-file-search-tool-a-developer-guide-5878)
 4.  我的開源範例：[github.com/kkdai/linebot-multimodal-rag](https://github.com/kkdai/linebot-multimodal-rag)
 
-歡迎來 Build With AI 2026 工作坊現場一起把它跑起來！
+歡迎大家一起來試試看這個很強大的 Multimodal RAG 的支援吧！
