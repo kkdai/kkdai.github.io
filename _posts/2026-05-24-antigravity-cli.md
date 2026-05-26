@@ -20,6 +20,8 @@ tags: ["Antigravity CLI", "agy", "Gemini CLI", "YOLO Mode", "DevTools", "AI Tool
 
 然而，新工具上線總是伴隨著各種踩坑與驚喜。這篇文章將專注於 **Antigravity CLI (agy)**，為大家解密如何搞定「看不見字的配色地獄」、如何開啟讓人欲罷不能的 **YOLO 免確認狂飆模式**，以及那些深藏在 `settings.json` 底下、鮮為人知的終端黑科技與設定秘辛！
 
+![image-20260526212808645](../images/image-20260526212808645.png)
+
 ---
 
 # 🛠️ 填坑第一步：Antigravity CLI (agy) 配色看不見字的救星！
