@@ -269,6 +269,8 @@ os.environ["GOOGLE_CLOUD_LOCATION"] = "global"
 
 # 總結與效益
 
+![image-20260526213236447](../images/image-20260526213236447.png)
+
 重構成 **ADK Agent + Tools** 的架構後，帶來了令人驚豔的實質轉變：
 1. **極致省 Token**：模型只有在需要讀取名片時才調用 `get_all_namecards`，一般對話不再需要反覆傳送巨大的 JSON 資料。
 2. **多步驟自然對話連動**：使用者只要打「幫我把王大明的備忘錄改成『下週一開會』」，模型就會自動連續呼叫 `get_all_namecards()` -> 找出 ID -> 呼叫 `update_namecard_memo(id, ...)` -> 再呼叫 `display_namecard(id)` 展示最新成果。
