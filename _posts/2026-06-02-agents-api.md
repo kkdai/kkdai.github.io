@@ -242,7 +242,7 @@ while True:
 
 ## 部署實戰：commit → 自動上線
 
-開源範例光跑得起來不夠，這次我請 [Claude Code](https://docs.anthropic.com/en/docs/claude-code) 當副駕駛幫我把整套 GCP 基建跟 CI/CD 接起來。
+開源範例光跑得起來不夠，這次把整套 GCP 基建跟 CI/CD 接起來。
 
 我只給了它 project ID + LINE secret，剩下它一條龍跑：
 
@@ -275,8 +275,6 @@ curl -sS -X POST \
 # 部署 Cloud Run
 gcloud run deploy line-research-bot --source=. --timeout=3600 --memory=2Gi ...
 ```
-
-唯一不能自動化的是 **LINE Developers Console 那邊的 webhook URL 設定** —— Claude Code 直接坦白告訴我「這步只能去 console 點」，附上要貼的 URL 跟 Verify 步驟。
 
 整個過程花了大約 40 分鐘 —— 但**其中有 30 分鐘是在追下面要講的那五個踩坑**。
 
