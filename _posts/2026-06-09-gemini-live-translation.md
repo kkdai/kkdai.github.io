@@ -226,6 +226,8 @@ private func audioBufferFromSampleBuffer(_ sampleBuffer: CMSampleBuffer, asbd: A
 
 ![image-20260610144945151](../images/image-20260610144945151.png)
 
+完整開發 repo : [https://github.com/kkdai/gemini-live-translate-macos](https://github.com/kkdai/gemini-live-translate-macos)
+
 透過這次的架構升級與 Bug 修正，**MeetingTranslator** 展現了極佳的實用價值：
 1. **零外部設備依賴**：完全不需設定 BlackHole 或 Loopback 等複雜路由，開箱即用。
 2. **精準且即時的字幕**：Gemini Live API 在幾百毫秒內即可完成英文到繁體中文的翻譯，流暢地將結果顯示在 HUD 懸浮視窗上。
