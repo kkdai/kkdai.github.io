@@ -8,7 +8,7 @@ category:
 tags: ["Gemini API", "Gemini 3.5 Pro", "Gemini 3.5 Flash", "File Search", "Agents API", "Webhook", "Managed RAG", "AI Agent", "LINE Bot"]
 ---
 
-![LINE 2026-06-12 16.06.10](../images/LINE 2026-06-12 16.06.10.tiff)
+![image-20260612163641980](../images/image-20260612163641980.png)
 
 (活動：[Google I/O Extended 2026 Taipei](https://gdg.community.dev/events/details/google-gdg-taipei-presents-google-io-extended-2026-taipei/) / 簡報：[SpeakerDeck](https://speakerdeck.com/line_developers_tw/building-applications-in-the-gemini-api-family))
 
