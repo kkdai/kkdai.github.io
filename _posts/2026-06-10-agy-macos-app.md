@@ -81,11 +81,11 @@ AGY CLI 隨即主動修改了 [AudioCaptureManager.swift](file:///Users/al030341
 
 > **User**: 我要把 swift-demo 資料夾另外 checkin 到我自己的 github repo，給我建議的 repo 名稱，並且寫一個 README.md 在 swift-demo 底下。
 > 
-> **User**: 幫我把該資料夾相關變動都寫進 git@github.com:kkdai/gemini-live-translate-macos.git
+> **User**: 幫我把該資料夾相關變動都寫進 [https://github.com/kkdai/gemini-live-translate-macos](https://github.com/kkdai/gemini-live-translate-macos)
 
 AGY CLI 立刻接手了最後的 DevOps 工作：
 1. 它推薦使用 `gemini-live-translate-macos` 做為 Repo 名稱，並撰寫了專案的英文 GitHub description 與 topics 標籤。
-2. 它自動在 [README.md](file:///Users/al03034132/Documents/gemini-live-api-examples/gemini-live-translate-livekit/swift-demo/README.md) 中補齊了完整的環境準備、Xcode 沙盒 Capabilities 設定、命令行腳本執行步驟與 API 排雷提示。
+2. 它自動在 [README.md](https://github.com/kkdai/gemini-live-translate-macos) 中補齊了完整的環境準備、Xcode 沙盒 Capabilities 設定、命令行腳本執行步驟與 API 排雷提示。
 3. 獲得使用者的倉庫網址後，AGY CLI 主動在背景執行 `git init`，撰寫 `.gitignore`，將所有程式碼進行 commit，並順利 push 至遠端 GitHub 倉庫！
 
 ---
