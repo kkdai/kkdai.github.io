@@ -226,6 +226,58 @@ while let res = await group.next() {
 
 最後在 `build-app.sh` 打包的 `Info.plist` 加上 `LSUIElement = true`，Dock 圖示消失，MemeFinder 正式成為純選單列工具。
 
+### 踩坑五：設定表單一片空白——一個症狀，三層原因
+
+改成選單列版後，使用者回報「設定視窗整個是空白的」。這個看似單純的 bug，剝開來其實有三層，每一層都很有代表性。
+
+**第一層：`Form` 在手刻 `NSWindow` 裡塌成零高度。**
+原本設定畫面住在 SwiftUI 原生的 `Settings { }` scene 裡，SwiftUI 會自動給它合理尺寸。改版後改用手刻的 `NSWindow(contentViewController: NSHostingController(rootView: SettingsView()))` 承載，而 `SettingsView` 的結尾只寫了 `.frame(width: 460)`——**只有寬度、沒有高度**。`NSWindow(contentViewController:)` 會用內容的自然尺寸決定視窗大小，但 SwiftUI `Form` 在垂直方向是貪婪的、沒有約束時自然高度會被算成接近 0，於是視窗開成一條 460 寬、高度幾乎為零的空白條。修正只要補上高度：
+
+```swift
+.padding(20)
+// 在手刻 NSWindow（非 SwiftUI Settings scene）裡承載時，沒有高度約束的
+// Form 會塌成 ~0，視窗就變成一條空白。
+.frame(width: 460, height: 320)
+```
+
+**第二層：⌘, 和選單列「設定…」走的是兩條不同的路。**
+補了高度後，使用者說「還是空白」。追問之下才發現——他是按 **⌘,** 叫出設定的，而選單列右鍵的「設定…」走的卻是另一條路。原因是：⌘, 在 SwiftUI App 會觸發 `Settings { }` scene，而我當初為了迴避狀態共享問題，把那裡放成了 `Settings { EmptyView() }`：
+
+```swift
+// 改版時為了避開狀態共享，Settings scene 被放空——於是 ⌘, 開出來就是一片空白
+var body: some Scene {
+    Settings { EmptyView() }
+}
+```
+
+換句話說，**設定有兩個入口，而它們指向不同的東西**：⌘, 指向空 scene，選單列「設定…」指向真正的視窗。修正是把兩條路統一——讓 `Settings` scene 裝真正的 `SettingsView`（⌘, 直接可用），選單列「設定…」也改成開同一個原生設定視窗：
+
+```swift
+Settings {
+    SettingsView(vm: appDelegate.settings, indexing: appDelegate.indexing,
+                 onReindex: { appDelegate.reindexNow() },
+                 onCancel: { appDelegate.cancelReindex() })
+}
+```
+
+```swift
+// 選單列「設定…」改成開同一個 Settings scene
+@objc private func openSettings() {
+    NSApp.activate(ignoringOtherApps: true)
+    NSApp.sendAction(Selector(("showSettingsWindow:")), to: nil, from: nil)
+}
+```
+這裡也順帶把 SwiftUI App body 是 `@MainActor` 隔離這件事用上了——所以從 body 直接讀取 `@MainActor` 的 `appDelegate.settings` 是合法的，不需要額外的橋接。
+
+**第三層（最陰險的）：選單列 App 用 `open` 根本不會載入新版。**
+過程中最浪費時間的，是我重新編譯後請使用者 `open MemeFinder.app`，他卻一直看到舊行為。因為 MemeFinder 是 `LSUIElement` 選單列常駐 App——當已經有一個實例在跑時，`open` 只會**喚醒既有的舊行程**，而不會用新的二進位重啟。於是我們其實一直在測同一個舊版。正確的開發循環是先確實關掉，再從原始碼跑：
+
+```bash
+killall MemeFinderApp 2>/dev/null; swift run MemeFinderApp
+```
+
+這層提醒我：**debug 時要先確認「你測的真的是你改的那一版」**，否則所有推理都建立在錯誤的觀察上。
+
 ---
 
 # 關於「開發過程」本身
