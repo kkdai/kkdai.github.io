@@ -98,6 +98,27 @@ header: Useful Tools
   </div>
 </div>
 
+<div class="tool-card">
+  <div class="tool-header">
+    <h3 class="tool-title">🎫 數位憑證皮夾 - 訪客背書發證</h3>
+    <div class="tool-links">
+      <a href="https://did-usecase-visitor-660825558664.asia-east1.run.app/" target="_blank"><i class="fa fa-external-link"></i> 線上使用</a>
+      <a href="https://github.com/kkdai/did-usecase-visitor" target="_blank"><i class="fa fa-github"></i> GitHub</a>
+      <a href="https://www.evanlin.com/did-visitor/" target="_blank"><i class="fa fa-file-text-o"></i> 說明文章</a>
+    </div>
+  </div>
+  <p class="tool-description">
+    一個去中心化身份（DID）的全鏈應用，結合驗證方（Verifier）與發行方（Issuer）的角色。在職員工出示員工卡背書後，系統會當場核發一張具備時效性的臨時訪客通行證至訪客的數位憑證皮夾，安全且兼顧隱私。
+  </p>
+  <div class="tool-tags">
+    <span class="tag">DID</span>
+    <span class="tag">數位憑證皮夾</span>
+    <span class="tag">Cloud Run</span>
+    <span class="tag">Verifier & Issuer</span>
+  </div>
+</div>
+
 ---
 
 *(更多工具持續增加中...)*
+
