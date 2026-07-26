@@ -7,7 +7,7 @@ category:
 tags: ["Node.js", "RSS", "LINE Login", "Gemini", "Firestore"]
 ---
 
-![LINE 2026-07-26 12.40.19](../images/LINE 2026-07-26 12.40.19.tiff)
+![image-20260726142208046](../images/image-20260726142208046.png)
 
 ## 前言:
 
@@ -43,7 +43,7 @@ Feedly 改版之後，介面我一直不習慣，尤其是懷念舊版 Feedly Cl
 
 <a id="line-login"></a>
 
-![LINE 2026-07-26 12.40.51](../images/LINE 2026-07-26 12.40.51.tiff)
+![image-20260726142225462](../images/image-20260726142225462.png)
 
 我之前寫過 [如何透過 Golang 開發 OAuth2 的 PKCE](https://www.evanlin.com/go-oauth-pkce/)，講的是 LINE Login 導入 PKCE 的實作細節。那時候是把 LINE Login 當研究對象在拆解協定；這次在 FeedFlow 裡，LINE Login 換了一個角色——它是整個多使用者架構能不能成立的關鍵。
 
