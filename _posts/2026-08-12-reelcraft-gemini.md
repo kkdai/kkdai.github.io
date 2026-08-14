@@ -7,7 +7,7 @@ category:
 tags: ["Python", "Gemini", "Gemini 3.7 Flash", "Lyria", "ffmpeg", "短影片"]
 ---
 
-![image-20260814153330012](../images/image-20260814153330012.png)
+![reelcraft-logo](../images/reelcraft-logo.png)
 
 ## 前言:
 
