@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[Go 實戰] 讓 AI 寫出當代的 Go：JetBrains go-modern-guidelines 實測，順手把一支 1039 行的 main.go 拆掉"
-description: "LLM 的知識有截止日期，Go 卻每半年出一版。這篇先好好介紹 JetBrains 開源的 go-modern-guidelines 是什麼、怎麼用 list 與 explain 兩個指令把「這個 Go 版本該用什麼寫法」餵給 AI，再記錄我拿它對自己的 LINE Bot 做一次程式碼健檢的完整過程：包含一段編譯得過但永遠不會執行的 switch、群組訊息會 panic 的型別斷言、回傳資料夾而不是檔案的查詢指令，以及把 go.mod 版號從 1.23 改成 1.24 之後，工具突然多推薦四條規則的有趣現象。"
+description: "LLM 的知識有截止日期，Go 卻每半年出一版。這篇先好好介紹 JetBrains 開源的 go-modern-guidelines 是什麼、怎麼用 list 與 explain 兩個指令把「這個 Go 版本該用什麼寫法」餵給 AI，再記錄我拿它對自己的 LINE Bot 做一次程式碼健檢的完整過程：包含一段編譯得過但永遠不會執行的 switch、群組訊息會 panic 的型別斷言、回傳資料夾而不是檔案的查詢指令，以及把 go.mod 版號從 1.23 改成 1.24 之後，工具突然多推薦四條規則的有趣現象。最後還有全部測試通過、CI 全綠、build 成功、Cloud Run 顯示 Ready 之後，才發現健康檢查端點被 Cloud Run 悄悄吃掉的過程。"
 category:
 - Go
 - Claude Code
@@ -302,10 +302,13 @@ mux := http.NewServeMux()
 // "/{$}" 只匹配根路徑，而不是它底下的所有路徑
 mux.HandleFunc("POST /{$}", webhookHandler)
 mux.HandleFunc("GET /oauth/callback", oauthCallbackHandler)
-mux.HandleFunc("GET /healthz", healthHandler)
+// 不能叫 /healthz，原因見後面的踩坑五
+mux.HandleFunc("GET /health", healthHandler)
 ```
 
 `{$}` 這個語法是關鍵：`"/"` 在 ServeMux 裡是 subtree pattern，會吃掉底下所有路徑，這也是為什麼原本的程式碼需要那段手寫檢查。`"/{$}"` 只匹配根路徑本身，檢查就不用寫了。順手還把 method 限制、健康檢查端點一起補上。
+
+健康檢查端點這件事後來出了問題，不過那是部署之後才發現的，留到踩坑五再講。
 
 ## `cmp_or`：三段 fallback 變成三行
 
@@ -512,6 +515,130 @@ func (h *handledEvents) markHandled(id string) bool {
 
 這是個折衷方案，真正的解法是走 Cloud Tasks 或 Pub/Sub。我把它寫進專案的 roadmap 裡了，包含「不能只開 goroutine」這個原因——不然下一個接手的人（可能是三個月後的我）大概會再踩一次。
 
+## 踩坑五：ServeMux 寫對了，Cloud Run 不讓你用
+
+PR 合併之後我用 gcloud 查了一下 Cloud Build，狀態是 SUCCESS，新的 revision 也 Ready 了，流量全部切過去。看起來就是收工的樣子。
+
+順手戳一下端點：
+
+```
+GET  /            405   ← method-aware ServeMux 生效
+POST /   無簽章    400   ← 簽章驗證生效
+GET  /nope        404   ← {$} 精確匹配生效
+GET  /healthz     404   ← ？
+```
+
+前三個都對，健康檢查那個回 404。
+
+一開始以為是自己路由寫錯，把回應內容印出來才發現不對——那是一個 Google 品牌的 HTML 錯誤頁（`Error 404 (Not Found)!!1`，還帶著 Google 那隻機器人的圖），不是 Go 的 `404 page not found` 純文字。這代表請求根本沒進到我的程式裡。
+
+去翻 Cloud Run 的 request log，證實了這件事：
+
+```
+15:44:54  GET  400  /oauth/callback
+15:44:36  GET  404  /nope
+15:44:36  POST 400  /
+15:44:36  GET  405  /
+```
+
+我發了五個請求，log 裡只有四個。`/healthz` 那兩次連紀錄都沒有。
+
+把各種常見的健康檢查路徑掃一輪，範圍縮得非常小：
+
+```
+/healthz         404  GFE(Google)   ← 被攔截
+/healthz/        404  app(Go)       ← 只差一個斜線
+/health          404  app(Go)
+/readyz          404  app(Go)
+/livez           404  app(Go)
+/_ah/health      404  app(Go)
+/status          404  app(Go)
+/ping            404  app(Go)
+/healthcheck     404  app(Go)
+```
+
+只有 `/healthz` 這個精確路徑被 Google Frontend 攔下來，連加一個斜線都能正常到達。查了一下這是 Cloud Run 的已知行為，[Streamlit](https://github.com/streamlit/streamlit/issues/3028) 跟 [n8n](https://github.com/n8n-io/n8n/issues/26163) 也都踩過。
+
+**原因與解法**：端點改叫 `/health`，一行的事。麻煩的是這個坑完全不會叫——`go vet` 不會說話、測試不會說話、CI 全綠、build 成功、Cloud Run 顯示 Ready，連 request log 都不會留下痕跡。唯一會發現的方法是真的去戳那個端點，而且要注意到回來的 404 長得跟自己程式回的不一樣。
+
+所以修的時候我在程式碼裡留了註解，README 也寫了一段：
+
+```go
+// Not "/healthz": Cloud Run's frontend reserves that exact path and
+// answers it with its own 404, so the request never reaches us.
+mux.HandleFunc("GET /health", func(w http.ResponseWriter, _ *http.Request) {
+```
+
+不留這行的話，下一個看到 `/health` 覺得「這不是慣例、應該叫 healthz」的人（很可能就是我自己）會改回去。
+
+## 踩坑六：我以為外部呼叫都加了 context，結果漏了一整條路徑
+
+修 `/healthz` 的時候順手把程式碼又掃了一遍，找到一個更難堪的東西。
+
+前面我很滿意的一項改動是「全流程改用 context，所有外部呼叫都有逾時」。Firestore 有了，Drive 有了。然後我 grep 了一下所有外部呼叫：
+
+```
+webhook.go:312   blob.GetMessageContent(messageID)
+line.go:73       bot.ReplyMessage(...)
+line.go:94       bot.PushMessage(...)
+line.go:118      bot.LinkRichMenuIdToUser(...)
+```
+
+四個 LINE 的呼叫，沒有一個吃 context。翻進 SDK 才知道為什麼：
+
+```go
+c := &MessagingApiAPI{
+    channelToken: channelToken,
+    httpClient:   http.DefaultClient,   // ← Timeout 是零值，等於不逾時
+}
+```
+
+而且 SDK 產生出來的方法簽章不收 `context`，所以我在 handler 外層包的那個逾時，對這四個呼叫完全沒有作用。LINE 那端只要卡住，goroutine 就一直掛著。
+
+**原因與解法**：問題不在我不知道要加逾時，而在於「我加過 context 了」這個記憶蓋掉了「這個 SDK 到底收不收 context」這個事實。改 Drive 和 Firestore 的時候是一路 `.Context(ctx)` 加下去的，加得很順，順到我沒停下來想還有哪些外部呼叫不長那個樣子。
+
+SDK 有提供注入點：
+
+```go
+bot, err = messaging_api.NewMessagingApiAPI(accessToken,
+    messaging_api.WithHTTPClient(&http.Client{Timeout: lineAPITimeout}))      // 10 秒
+
+blob, err = messaging_api.NewMessagingApiBlobAPI(accessToken,
+    messaging_api.WithBlobHTTPClient(&http.Client{Timeout: lineBlobTimeout})) // 5 分鐘
+```
+
+blob 那邊給到 5 分鐘，因為它要下載使用者傳的影片。
+
+順帶一個更隱蔽的陷阱。SDK 另外提供了一個看起來正是我要的東西：
+
+```go
+func (call *MessagingApiAPI) WithContext(ctx context.Context) *MessagingApiAPI {
+    call.ctx = ctx
+    return call
+}
+```
+
+它直接改寫共用結構的欄位，然後回傳同一個指標。我的 `bot` 是套件層級的共用變數，多個請求同時進來各自呼叫 `WithContext`，就是一個標準的 data race。名字取得像 functional option，行為卻是 mutation。這行我在程式碼裡也留了註解，免得之後有人覺得它比 `WithHTTPClient` 精準而改過去。
+
+## 踩坑七：不會叫的 bug，要靠測試主動去撞
+
+同一輪掃出來的還有一個。`uploadParents` 這個函式負責列舉所有 `YYYY-MM` 月份資料夾，原本寫成這樣：
+
+```go
+r, err := srv.Files.List().Q(query).Fields("files(id)").Context(ctx).Do()
+```
+
+沒設 `PageSize`。Drive API 預設一頁 100 筆，超過的要拿 `nextPageToken` 再問一次。每個月產生一個資料夾，所以滿 100 個月——大約 8 年 4 個月——之後，最舊的那些資料夾會從搜尋和 `/recent_files` 的涵蓋範圍裡消失。不會有錯誤，不會有警告，就只是結果變少。
+
+**原因與解法**：改用 `Pages()` 走完所有頁。真正想講的是後面那步。我不太信任自己剛寫完的分頁邏輯，所以寫了一個會回傳 `nextPageToken` 的假伺服器，然後把實作暫時改回只取第一頁，看測試會不會失敗：
+
+```
+--- FAIL: TestUploadParentsPagesThroughAllSubfolders
+    uploadParents() = [root_id month_1 month_2], want [root_id month_1 month_2 month_3]
+```
+
+確認會失敗，才把實作還原。這步花不到兩分鐘，但沒做的話，我手上只有一個「有跑過、是綠的」測試，不知道它到底有沒有在測東西。靜默截斷這類 bug 本來就不會自己現身，測試如果也是綠的假象，等於什麼都沒有。
+
 ---
 
 # 成果與效益
@@ -539,6 +666,10 @@ func (h *handledEvents) markHandled(id string) bool {
 
 **它的邊界也很清楚。** 那五個實際會咬到使用者的 bug——寫錯層級的 switch、會 panic 的型別斷言、回傳資料夾的查詢、沒跳脫的 query、被誤判的 `/quit`——沒有一個是 go-modern-guidelines 抓出來的，那不是它的守備範圍。它管的是「這段 Go 寫得夠不夠當代」，不是「這段邏輯對不對」。把它當成 linter 的補充，而不是 code review 的替代品。
 
+**這篇文章的前半段，是在部署之前就寫完的。** `/healthz` 那個坑是文章都收尾了、PR 也合併了，我去 gcloud 查 build 狀態時才發現的。當下的狀況是：45 條規範都查過、該套的都套了、17 個測試在 `-race` 下全過、CI 三道檢查全綠、Cloud Build SUCCESS、Cloud Run 顯示 Ready 而且 100% 流量已經切過去。這一整排綠燈裡面，沒有任何一盞會告訴你有個端點是死的。
+
+我在[上一篇處理 Cloudflare 那次](/help-handle-cloudflare/)寫過「build 成功不能當作驗證通過」，本來以為自己記住了，結果這次還是在同一個地方繳學費，只是換了一層——上次是 build 成功但容器跑起來會 crash，這次是容器跑得好好的，被更外面那層基礎設施吃掉。工具管語法，測試管邏輯，CI 管這兩件事有沒有退步，但沒有任何一個管得到「這東西部署到那個特定環境上會怎樣」。那一段只能自己去戳。
+
 **輸出會隨專案狀態變動這件事，要放在心上。** 踩坑三那個「改完 go.mod 之後多出四條建議」的現象，是這次最實用的體會。它不是一份查一次就好的靜態文件，而是一個依專案當下狀態回答的查詢介面。修改內容的性質改變時（從主程式轉到測試、升了語言版本、換了專案），值得重跑一次。
 
-最後，這次的改動都在 [PR #4](https://github.com/kkdai/linebot-file/pull/4)，程式碼在 [kkdai/linebot-file](https://github.com/kkdai/linebot-file)。go-modern-guidelines 的原始碼在 [JetBrains/go-modern-guidelines](https://github.com/JetBrains/go-modern-guidelines)，Apache 2.0 授權。
+最後，這次的改動在 [PR #4](https://github.com/kkdai/linebot-file/pull/4)，部署之後補的兩個修正在 [#5](https://github.com/kkdai/linebot-file/pull/5) 和 [#6](https://github.com/kkdai/linebot-file/pull/6)，程式碼在 [kkdai/linebot-file](https://github.com/kkdai/linebot-file)。go-modern-guidelines 的原始碼在 [JetBrains/go-modern-guidelines](https://github.com/JetBrains/go-modern-guidelines)，Apache 2.0 授權。
