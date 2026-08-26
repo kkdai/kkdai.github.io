@@ -9,7 +9,7 @@ category:
 tags: ["Go", "Claude Code", "JetBrains", "Skill", "Refactoring", "LINE Bot", "Google Drive", "Cloud Run"]
 ---
 
-![image-20260826233144561](../images/image-20260826233144561.png)
+![JetBrains go-modern-guidelines：Help AI coding agents write modern Go](../images/image-20260826233144561.png)
 
 
 
