@@ -15,6 +15,10 @@ tags: ["LINEBot", "Messaging API"]
 
 作者：Evan Lin，LINE Taiwan Developer Relations Team Lead
 
+
+
+![img](https://vos.line-scdn.net/landpress-content-v2-3ub8nanc40829phmlme9ov4o/f4888b425e8244f7bc09c770f2b96659.png)
+
 2026 年 8 月 20 日，LINE 宣布在 LINE Labs 開放「編輯訊息」功能免費試用。
 
 對一般使用者來說，這是一個很直覺的功能：訊息送出後才發現打錯字、日期寫錯，或語氣想再調整，不必再經過「收回、重打、重新送出」的流程，直接編輯原本的文字訊息就可以了。
