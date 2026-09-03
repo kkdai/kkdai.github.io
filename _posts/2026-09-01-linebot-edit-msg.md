@@ -1,13 +1,11 @@
 ---
 layout: post
-title: "[AI 實戰] 當訊息可以反悔：用 Edit 與 Unsend Webhook 打造會「變形」的 LINE 團購 Bot"
+title: "[LINE 新功能實戰] 當訊息可以反悔：用 Edit 與 Unsend Webhook 打造會「變形」的 LINE 團購 Bot"
 description: "當訊息可以反悔：用 Edit 與 Unsend Webhook 打造會「變形」的 LINE 團購 Bot"
 category:
 - LINEBot
 tags: ["LINEBot", "Messaging API"]
 ---
-
-
 
 <iframe width="485" height="862" src="https://www.youtube.com/embed/ldjbkUSKZCs" title="編輯訊息 LINE Bot 測試影片 - 百變店長・單單" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
