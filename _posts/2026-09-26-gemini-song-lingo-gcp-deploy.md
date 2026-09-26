@@ -8,6 +8,8 @@ category:
 tags: ["Cloud Run", "IAP", "Cloud Storage", "GCP", "Next.js", "Claude Code"]
 ---
 
+![image-20260927012108201](../images/image-20260927012108201.png)
+
 # 前情提要
 
 [上一篇](https://www.evanlin.com/gemini-song-lingo/)我用 Gemini 3.8 Flash TTS 做了 Song Lingo：貼 YouTube MV 網址，Gemini 轉錄歌詞、加上拼音翻譯文法，再由一位用 voice design 設計出來的老師一句一句念給你聽。
@@ -211,6 +213,8 @@ gcloud meta list-files-for-upload .
 ---
 
 # 驗證：每一層都要實際測過
+
+![image-20260927012153245](../images/image-20260927012153245.png)
 
 部署完的驗證清單，每一項都實際跑過：
 

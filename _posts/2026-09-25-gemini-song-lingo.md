@@ -8,6 +8,8 @@ category:
 tags: ["Gemini", "TTS", "Voice Design", "Next.js", "YouTube", "Claude Code"]
 ---
 
+![image-20260927012006728](../images/image-20260927012006728.png)
+
 # 前情提要
 
 每次看到 Gemini 出新功能，我第一個念頭都是「能不能接進我的 LINE Bot」。
@@ -326,6 +328,8 @@ def clip_name(text: str, speed: str) -> str:
 ---
 
 # 成果與效益
+
+![image-20260927012049604](../images/image-20260927012049604.png)
 
 | | 數字 |
 |---|---|
