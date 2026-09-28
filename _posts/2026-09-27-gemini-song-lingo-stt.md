@@ -8,6 +8,8 @@ category:
 tags: ["Gemini", "Gemini 3.5 Transcribe", "Speech-to-Text", "Language Learning", "Next.js", "Claude Code"]
 ---
 
+![image-20260928234100152](../images/image-20260928234100152.png)
+
 # 前情提要
 
 [第一篇](https://www.evanlin.com/gemini-song-lingo/)我用 Gemini 3.8 Flash TTS 做了 Song Lingo：貼 YouTube MV 網址，Gemini 轉錄歌詞、加上拼音翻譯文法，再由一位用 voice design 設計的老師逐句示範發音。[第二篇](https://www.evanlin.com/gemini-song-lingo-gcp-deploy/)把它部署到 Cloud Run，用 IAP 鎖到只有我自己能用。
@@ -19,6 +21,8 @@ tags: ["Gemini", "Gemini 3.5 Transcribe", "Speech-to-Text", "Language Learning",
 ---
 
 # Gemini 3.5 Transcribe 是什麼
+
+![Google Chrome 2026-09-28 23.40.44](../images/Google Chrome 2026-09-28 23.40.44.tiff)
 
 Google 在 8/26 發布了 [Gemini 3.5 Transcribe](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5-transcribe/)，是兩個專門做語音轉文字的模型：
 
@@ -222,6 +226,8 @@ navigator.mediaDevices.getUserMedia = async () => {
 ---
 
 # 順帶：讓 PWA 在 IAP 後面裝得起來
+
+![image-20260928234132888](../images/image-20260928234132888.png)
 
 roadmap 的第一項是手機版面：MV 固定在上方、卡片可以左右滑動換句、拇指按得到的底部控制列，外加可以加入主畫面的 PWA。版面本身沒什麼特別，但 PWA 在 IAP 後面有一個坑值得記一下。
 
