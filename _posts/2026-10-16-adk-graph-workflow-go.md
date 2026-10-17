@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[AI 實戰] 用 Go 與 Google ADK 2.0 Graph Workflow 打造 LINE AI 名片王：從 Fan-Out 平行檢索到 HITL 暫停迴圈修正"
+title: "[Agent Platform 實戰 (1)] 用 Go 與 Google ADK 2.0 Graph Workflow 打造 LINE AI 名片王：從 Fan-Out 平行檢索到 HITL 暫停迴圈修正"
 description: "深入解析 Google Agent Development Kit (ADK) 2.0 最新推出的 Graph Workflows 架構，結合 Google 官方兩篇核心開發指南，並以 Golang + LINE Messaging API v8 實戰打造具備 Vision OCR、平行背景調查、HITL 預覽修改迴圈與混合檢索的「AI 名片王」LINE Bot。"
 category:
 - AI
