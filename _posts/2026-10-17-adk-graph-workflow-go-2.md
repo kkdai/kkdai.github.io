@@ -9,7 +9,7 @@ category:
 tags: ["ADK", "ADK 2.0", "Agent Platform", "Agent Runtime", "agents-cli", "Graph Workflow", "Golang", "LINEBot", "A2A"]
 ---
 
-![image-20261017135128284](../images/image-20261017135128284.png)
+![LINE Card Assistant + Google Cloud Agent Platform Architecture](../images/line-card-agent-platform-arch.png)
 
 # 前情提要
 
