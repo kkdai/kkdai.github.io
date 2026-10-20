@@ -9,7 +9,7 @@ category:
 tags: ["ADK", "ADK 2.0", "Agent Platform", "Agent Runtime", "GCS Artifact", "HITL", "Graph Workflow", "Golang", "LINEBot"]
 ---
 
-![LINE Card Assistant + Google Cloud Agent Platform Architecture](../images/line-card-agent-platform-arch.png)
+![Phase 2: Stateless Cross-Instance HITL & GCS Artifact Architecture](../images/line-card-phase2-artifact-hitl-arch.png)
 
 # 前情提要
 
