@@ -53,21 +53,21 @@ tags: ["Golang", "Go 1.26", "LINEBot", "Cloud Run", "ADK", "Gemini", "Firestore"
 ```mermaid
 flowchart TB
     subgraph Client["LINE 客戶端與 LIFF"]
-        LINE["LINE App 聊天室\n(文字 / 網址 / 圖片 / 語音 / 位置 / Postback)"]
-        LIFF["LIFF 即時語音助手\n(/liff/ + WebSocket PCM 16kHz/24kHz)"]
+        LINE["LINE App 聊天室<br/>(文字 / 網址 / 圖片 / 語音 / 位置 / Postback)"]
+        LIFF["LIFF 即時語音助手<br/>(/liff/ + WebSocket PCM 16kHz/24kHz)"]
     end
 
     subgraph CloudRun["Google Cloud Run: linebot-helper-go (Go 1.26, 1 vCPU / 1 GiB)"]
-        Mux["Go 1.26 net/http Server\n(HMAC 驗證 + 立即回傳 200 OK)"]
-        VoiceRelay["internal/voice\nGemini Live BidiGenerateContent Relay"]
-        Orch["internal/agents (google.golang.org/adk v1.9.0)\nRoot Orchestrator + 5 Sub-Agents"]
-        Loader["internal/loader\nHTTP -> Firecrawl -> SingleFile\n+ PDF/Office/EPUB 轉 Markdown"]
-        BatchSvc["internal/services/batch_service\nGemini Batch API + JWKS/HMAC Webhook + 60s Poller"]
+        Mux["Go 1.26 net/http Server<br/>(HMAC 驗證 + 立即回傳 200 OK)"]
+        VoiceRelay["internal/voice<br/>Gemini Live BidiGenerateContent Relay"]
+        Orch["internal/agents (google.golang.org/adk v1.9.0)<br/>Root Orchestrator + 5 Sub-Agents"]
+        Loader["internal/loader<br/>HTTP -> Firecrawl -> SingleFile<br/>+ PDF/Office/EPUB 轉 Markdown"]
+        BatchSvc["internal/services/batch_service<br/>Gemini Batch API + JWKS/HMAC Webhook + 60s Poller"]
     end
 
     subgraph GCP["Google Cloud & AI 後端"]
-        Vertex["Vertex AI / Gemini Developer API\n(Search Grounding / Maps / Vision / TTS / Live)"]
-        FS[("Cloud Firestore\nchat_sessions | bookmarks\nreports | batch_jobs")]
+        Vertex["Vertex AI / Gemini Developer API<br/>(Search Grounding / Maps / Vision / TTS / Live)"]
+        FS[("Cloud Firestore<br/>chat_sessions | bookmarks<br/>reports | batch_jobs")]
     end
 
     LINE -->|"POST /"| Mux
