@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "[AI 實戰] 把 LINE 研究 Bot 從 Go ADK 搬到 DeepSeek Harness（DSH）：框架解析、搬遷對照與踩坑全紀錄"
-description: "上一篇把 LINE 研究 Bot 改寫成 Go + ADK for Go。這次換一個方向：把 Agent 框架換成 DeepSeek 開源的 dsh-superagent-prototype 背後那套 DeepSeek Harness（DSH）。這篇先拆解 DSH 的架構（Cordis 外掛、Profile 疊層、SDK JSON-RPC、只講 Anthropic Messages 的模型層），再說明為什麼我沒有直接 fork dsh-superagent，而是保留 Cloud Run 架構、只換掉 Agent 層；接著整理 ADK → DSH 的對照與搬遷方式（submit_* 工具取代 OutputSchema、LiteLLM sidecar 讓 DSH 接上 Vertex AI Gemini、web_research 工具保住 Google Search grounding），最後列出 SDK 參數靜默失效、外掛路徑解析、Session 壓縮格式衝突等實際踩到的坑。"
+title: "[AI 實戰] 把 LINE 研究 Bot 從 Go ADK 搬到 DeepSeek Harness（DSH）：搬遷對照與踩坑全紀錄"
+description: "上一篇拆解了 DeepSeek Harness（DSH）的架構，並跟 Google Research Harness² 做了比較；這篇進入實作：把 LINE 研究 Bot 的 Agent 層從 ADK for Go 換成 DSH。先說明為什麼我沒有直接 fork dsh-superagent，而是保留 Cloud Run 架構、只換掉 Agent 層；接著整理 ADK → DSH 的對照與四個改寫（submit_* 工具取代 OutputSchema、LiteLLM sidecar 讓 DSH 接上 Vertex AI Gemini、web_research 工具保住 Google Search grounding），再列出 SDK 參數靜默失效、外掛路徑解析、Session 壓縮格式衝突等十個實際踩到的坑，最後是部署與切換 webhook 的過程。"
 category:
 - AI
 - LINEBot
@@ -40,122 +40,40 @@ flowchart LR
 
 # 前情提要
 
-在 [上一篇](https://www.evanlin.com/line-research-bot-python-to-go-adk/) 裡，我把 LINE 研究規劃師 Bot 從 Python + Managed Agents 改寫成 **Go + [ADK for Go](https://github.com/google/adk-go)**，也就是 **[`kkdai/line-research-bot-go`](https://github.com/kkdai/line-research-bot-go)**。
+在 [前前篇](https://www.evanlin.com/line-research-bot-python-to-go-adk/) 裡，我把 LINE 研究規劃師 Bot 從 Python + Managed Agents 改寫成 **Go + [ADK for Go](https://github.com/google/adk-go)**，也就是 **[`kkdai/line-research-bot-go`](https://github.com/kkdai/line-research-bot-go)**。
 
 玩法沒變：
 - 在 LINE 傳「**研究 SOTA 開源向量資料庫的選型**」，Bot 依序跑 **PLAN → SEARCH_COMPARE → WRITE_REPORT** 三個階段，最後丟一張有摘要、主要來源與「閱讀完整報告」按鈕的 Flex 卡片。
 - 再傳「**第 2 章再深一點，加日文來源**」，同一份報告深化、版本號 +1，舊版存成 snapshot。
 
-剛好 DeepSeek 開源了 **[`deepseek-ai/dsh-superagent-prototype`](https://github.com/deepseek-ai/dsh-superagent-prototype)**，它是建在 **[DeepSeek Harness（DSH）](https://www.deepseek.com/en/harness/)** 上的「超級 Agent」原型。我很好奇這套框架拿來做 LINE Bot 會是什麼樣子，所以給自己出了一個題目：
+[上一篇](https://www.evanlin.com/deepseek-harness-vs-google-harness2/) 介紹了 DeepSeek 開源的 **[DeepSeek Harness（DSH）](https://www.deepseek.com/en/harness/)**，也就是 **[`deepseek-ai/dsh-superagent-prototype`](https://github.com/deepseek-ai/dsh-superagent-prototype)** 底下的那套執行環境，並跟 Google Research Harness² 做了比較。這篇要做的是：
 
-> **LINE Bot 功能跟 Cloud Run 設定都沿用原本的，只把 Agent 框架從 ADK 換成 dsh-superagent 這一套。**
+> **LINE Bot 功能跟 Cloud Run 設定都沿用原本的，只把 Agent 框架從 ADK 換成 DSH。**
 
-先講結論：**做得到，而且已經在線上跑了**，但做法跟我一開始想的不一樣。這篇會分三塊：
+先講結論：**做得到，而且已經在線上跑了**，但做法跟我一開始想的不一樣。這篇分四塊：
 
-1. **DSH 框架到底是什麼**（附框架圖），以及 dsh-superagent 在它上面做了什麼。
+1. **可行性評估**：為什麼沒有直接 fork dsh-superagent。
 2. **怎麼從 ADK 搬過去**：概念對照與實際程式碼。
 3. **會遇到哪些問題**：我實際踩到的坑，整理成清單。
+4. **部署與切換**：沿用原本服務的設定，切 LINE webhook。
 
 | Repo | 內容 |
 | :--- | :--- |
-| **[`kkdai/line-research-bot-go`](https://github.com/kkdai/line-research-bot-go)** | 上一篇：Go 1.27 + ADK for Go v1.9.0 |
+| **[`kkdai/line-research-bot-go`](https://github.com/kkdai/line-research-bot-go)** | 搬遷前：Go 1.27 + ADK for Go v1.9.0 |
 | **[`kkdai/line-research-bot-dsh`](https://github.com/kkdai/line-research-bot-dsh)** | 這篇的主角：TypeScript（Node 24）+ DeepSeek Harness 0.2.1-rc.5，目前 LINE webhook 指向的就是這份 |
 
----
+## 30 秒複習 DSH
 
-# 一、先搞懂 DeepSeek Harness（DSH）是什麼
+完整的框架圖跟說明在[上一篇](https://www.evanlin.com/deepseek-harness-vs-google-harness2/)，這裡只列出跟搬遷直接相關的四件事：
 
-很多人看到 dsh-superagent 會以為它是一個 Agent SDK，其實它是兩層東西：
-
-| 層次 | 是什麼 | 在 npm 上 |
-| :--- | :--- | :--- |
-| **DeepSeek Harness（DSH）** | 一個「Agent 執行環境」：負責模型呼叫、工具、Session、權限、沙箱，全部都是外掛 | `@deepseek-ai/dsh`（CLI）、`@deepseek-ai/dsh-*` 一百多個套件 |
-| **dsh-superagent** | 跑在 DSH 上的一個 **bundle（外掛包）**，把 DSH 變成「幫一個 GitHub repo 做事的主動式 Agent」 | 一個 Node 套件，用 `dsh plugin add` 裝進 DSH profile |
-
-## DSH 的核心設計：一切都是 Cordis 外掛
-
-DSH 底層是 **Cordis**（`@deepseek-ai/cordis`）這個外掛框架。模型、工具、Session 儲存、沙箱、甚至 JSON-RPC 伺服器，**全部都是一個個的外掛（plugin row）**，彼此透過 `ctx` 上的服務溝通，例如 `ctx.llm`、`ctx.tools`、`ctx.fs`、`ctx.subprocess`。
-
-外掛怎麼組合起來，由 **Profile** 決定：
-
-- **Bundle**：官方預先組好的一串外掛，例如 `dsh-sdk-minimal`、`dsh-base`、`web`、`tui`、`headless`。
-- **Profile**：放在 `$DSH_HOME/profiles/<name>/` 底下，指定要用哪些 bundle。
-- **Patch 疊層**：在 bundle 之上再疊 YAML patch，可以改某個外掛的 config、`disabled: true` 關掉它，或 `insert` 自己的外掛。用 `dsh --profile x --dump-config` 可以看到最後組出來的完整樹。
-
-```yaml
-# 一個 patch 的樣子：改模型設定、關掉 shell、插入自己的外掛
-- id: llm-deepseek
-  config:
-    thinking: disabled
-- id: persistent-bash
-  disabled: true
-- insert:
-    - id: line-research-tools
-      name: 'file:///app/dsh/plugin/index.js'
-```
-
-## DSH 框架圖
-
-```mermaid
-flowchart TB
-    subgraph HOST["你的程式（Host）"]
-        APP["Node / Python 程式"]
-        SDK["@deepseek-ai/dsh-sdk-client<br/>DeepSeekHarness.run()"]
-        APP --> SDK
-    end
-
-    subgraph RT["dsh runtime 子程序（一個 Profile）"]
-        direction TB
-        RPC["dsh-sdk-jsonrpc-server<br/>stdio JSON-RPC"]
-        LOADER["Cordis Loader<br/>bundle + patch 疊層"]
-        AGENT["dsh-agent / agent-loop<br/>turn → step → tool call"]
-        PROMPT["system-prompt<br/>persona（DSH_SYSTEM_PROMPT）"]
-        TOOLS["dsh-tools（ctx.tools）<br/>內建：bash / edit / web_search…<br/>外掛：defineTool() 註冊"]
-        LLM["dsh-llm（ctx.llm）<br/>llm-deepseek 介接層<br/>Anthropic Messages 協定"]
-        SES["session-persistence<br/>$DSH_HOME/sessions/*.jsonl"]
-        RPC --> AGENT
-        LOADER -.組裝.-> AGENT
-        AGENT --> PROMPT
-        AGENT --> TOOLS
-        AGENT --> LLM
-        AGENT --> SES
-    end
-
-    SDK <-->|"initialize / prompt<br/>notifications"| RPC
-    LLM -->|"POST {baseURL}/v1/messages"| API["api.deepseek.com/anthropic<br/>或任何 Messages 相容端點"]
-```
-
-幾個從這張圖延伸出來、對搬遷很關鍵的事實：
-
-1. **Agent 跑在另一個行程裡**。不像 ADK 的 `runner.Run()` 是在你的程式裡跑，DSH 是你 spawn 一個 `dsh` runtime 子程序，用 **stdio JSON-RPC** 跟它講話。TypeScript 端是 `@deepseek-ai/dsh-sdk-client`，另外也有 Python SDK。
-2. **模型層只講 Anthropic Messages 協定**。官方介接層 `llm-deepseek` 預設打 `https://api.deepseek.com/anthropic`。`baseURL` 可以換，但對面一定要是 `/v1/messages` 相容端點，**沒有 Gemini 介接層**。
-3. **工具是外掛註冊的**。自己寫一個 Cordis 外掛，在 `apply(ctx)` 裡 `ctx.tools.register(defineTool({...}))`，參數 schema 由 DSH 驗證，驗不過會以錯誤結果回給模型，讓它自己修正。
-4. **Session 是事件流**。每一次 `run()` 都會回傳完整的 session 事件：`turn/start`、`tool/call`、`tool/result`、`assistant/message`、`turn/end`……之後拿結構化結果就靠這個。
-
-## dsh-superagent 在 DSH 上做了什麼
-
-dsh-superagent 是 DeepSeek 團隊內部用的「主動式 coding agent」原型。它的 README 自己講得很清楚：**research prototype，不是正式產品**。它的領域模型長這樣：
-
-```mermaid
-flowchart LR
-    S["Source<br/>GitHub / Feishu"] -->|Trigger| T["Thread"]
-    T -->|批次| E["Eval<br/>準入 + 研判"]
-    T -->|Subscription 扇出| K["Ticket"]
-    E -->|accept + Mandate| K
-    K -->|Assignment| W["Executor<br/>每張 Ticket 一個 DSH Session + 目錄"]
-    K -->|Channel| S
-```
-
-- **Source** 把 GitHub 通知、Feishu 訊息轉成 **Trigger**。
-- **Eval** 依照 **Policy**（誰可以下指令、在哪裡、強度多少）決定要不要接單，接了就開一張 **Ticket**。
-- 每張 Ticket 由一個 **Executor Session** 在自己的目錄裡做事，結果透過 **Channel** 回到原本的對話，例如開一個 PR。
-- 旁邊還有一個 Web 面板，顯示哪些事情需要人來決定。
-
-這套設計非常完整，而且有一個 `SourceKind` 擴充點（`docs/008-cookbook.md`），理論上可以加一個 LINE Source 進去。
+1. **Agent 跑在另一個行程裡**：spawn 一個 `dsh` runtime 子程序，用 `@deepseek-ai/dsh-sdk-client` 透過 **stdio JSON-RPC** 驅動。
+2. **模型層只講 Anthropic Messages 協定**：`baseURL` 可以換，但對面一定要是 `/v1/messages` 相容端點，沒有 Gemini 介接層。
+3. **一切都是 Cordis 外掛**：用 Profile（bundle + YAML patch）組裝，工具用 `defineTool()` 註冊，參數 schema 由 DSH 驗證。
+4. **Session 是事件流**：`run()` 回傳 `tool/call`、`tool/result`、`turn/end` 等事件，結構化結果與除錯都靠它。
 
 ---
 
-# 二、可行性評估：為什麼我沒有直接 fork dsh-superagent
+# 一、可行性評估：為什麼我沒有直接 fork dsh-superagent
 
 一開始的直覺是：fork dsh-superagent、加一個 LINE Source、部署到 Cloud Run。實際翻完文件跟程式碼之後，發現它跟 Cloud Run 的假設幾乎完全相反：
 
@@ -176,13 +94,13 @@ flowchart LR
 - **方案 A：Fork dsh-superagent，加 LINE Source。** 保留 Eval / Ticket / 面板，但成本最高、最脆弱。
 - **方案 B：保留 Cloud Run 架構，只把 Agent 層換成 DSH。** ✅ 採用。LINE webhook、Cloud Tasks、Firestore、GCS 都不動，三個研究 stage 各跑一個 DSH Session。
 
-模型的部分，我選擇**繼續用 Vertex AI 上的 Gemini**，中間放一個 LiteLLM 當翻譯。這個決定的影響在第三節講。
+模型的部分，我選擇**繼續用 Vertex AI 上的 Gemini**，中間放一個 LiteLLM 當翻譯。這個決定的影響在第二節講。
 
 > 💡 **心得**：「把框架 A 換成框架 B」之前，先分清楚你要換的是**執行環境（harness）**還是**上面那個應用（superagent）**。這次我要的其實是前者。
 
 ---
 
-# 三、從 ADK 搬到 DSH：架構與對照
+# 二、從 ADK 搬到 DSH：架構與對照
 
 ## 搬遷後的架構
 
@@ -204,7 +122,7 @@ Cloud Run 上是**一個服務、兩個 container**：`app`（ingress）加上 `
 
 ## ADK → DSH 對照表
 
-| 概念 | ADK for Go（上一篇） | DeepSeek Harness（這篇） |
+| 概念 | ADK for Go（Go 版） | DeepSeek Harness（這篇） |
 | :--- | :--- | :--- |
 | **Agent 執行位置** | 同一個行程，`runner.Run()` | 每個 stage spawn 一個 `dsh` runtime 子程序，用 stdio JSON-RPC 驅動 |
 | **Agent 定義** | `llmagent.New(...)` × 3 | 一個 profile（`sdk-minimal` + patch）+ persona，stage 指示放在 user message |
@@ -287,7 +205,7 @@ for (const e of events) {
 const accepted = [...calls].filter(([id]) => !failed.has(id))
 ```
 
-這樣做還有一個附帶好處：上一篇提到 `chapter_not_found_chapter_not_found` 那種模型亂回 enum 的情況，在這裡 **`enum` 由 DSH 在工具層就擋下來了**，模型會被要求重送。
+這樣做還有一個附帶好處：前前篇提到 `chapter_not_found_chapter_not_found` 那種模型亂回 enum 的情況，在這裡 **`enum` 由 DSH 在工具層就擋下來了**，模型會被要求重送。
 
 ## 改寫 3：LiteLLM sidecar，讓 DSH 接上 Gemini
 
@@ -335,7 +253,7 @@ const res = await ai.models.generateContent({
 
 ---
 
-# 四、會遇到的問題：踩坑清單
+# 三、會遇到的問題：踩坑清單
 
 下面這些都是這次**實際踩到**的。DSH 目前是 `0.2.1-rc.5`，很多行為文件沒寫，或寫的是舊版。
 
@@ -434,9 +352,9 @@ DSH 在 npm 上同時有 `latest`（0.0.1-rc.1 或 0.1.x）、`next`（0.2.1-rc.
 
 ---
 
-# 五、部署與切換：沿用原本服務的環境變數
+# 四、部署與切換：沿用原本服務的環境變數
 
-部署方式跟上一篇不同：這次是**新開一個 Cloud Run 服務**，因為多了 sidecar，container 結構不一樣。但設定全部沿用原本的服務：
+部署方式跟 Go 版那篇不同：這次是**新開一個 Cloud Run 服務**，因為多了 sidecar，container 結構不一樣。但設定全部沿用原本的服務：
 
 1. **先 `describe` 原服務**：拿到 Service Account、bucket、queue、LINE secrets 的 Secret Manager 綁定。
 2. **新服務直接沿用**：同一個 SA、同一個 bucket、同一個 queue、同一組 LINE secrets，**Firestore 用同一組 collections**。這樣切過去之後，使用者既有的報告可以直接「深化」。唯一新增的 secret 是 `LITELLM_MASTER_KEY`。
@@ -459,7 +377,7 @@ curl -s -X POST -H "Authorization: Bearer $TOKEN" -H 'Content-Type: application/
 
 ---
 
-# 六、ADK → DSH 搬遷自我檢查清單（Checklist）
+# 五、ADK → DSH 搬遷自我檢查清單（Checklist）
 
 - [ ] **1. 先分清楚要換的是 harness 還是上面的 app**：dsh-superagent 是 GitHub coding agent，Cloud Run 上的聊天 Bot 要的是 DSH 本身。
 - [ ] **2. 先做 PoC，而且用正式環境的目錄結構**：`DSH_HOME` 放在專案外面（例如 `/tmp`），才測得出外掛解析問題。
@@ -480,16 +398,16 @@ curl -s -X POST -H "Authorization: Bearer $TOKEN" -H 'Content-Type: application/
 
 這次把 **[`kkdai/line-research-bot-go`](https://github.com/kkdai/line-research-bot-go)** 的 Agent 層從 ADK for Go 換成 DeepSeek Harness，做成 **[`kkdai/line-research-bot-dsh`](https://github.com/kkdai/line-research-bot-dsh)**，幾個最值得帶走的收穫：
 
-1. **DSH 是「可組裝的 Agent 執行環境」**：Cordis 外掛 + Profile 疊層的設計很乾淨，關掉、換掉、插入任何一塊都只要一段 YAML。代價是 Agent 跑在另一個行程，要用 JSON-RPC 跟它溝通。
-2. **dsh-superagent 是一個很完整的「主動式 Agent」設計參考**（Source / Eval / Ticket / Mandate），但它的執行模型是長駐行程 + SQLite，跟 Cloud Run 不合。借它的 harness，不要硬搬它的 app。
-3. **ADK 有的東西，在 DSH 上大多可以用「工具」重新做出來**：`OutputSchema` 變 `submit_*`，Google Search grounding 變 `web_research`。工具層的 schema 驗證，甚至比 prompt 約束更可靠。
-4. **pre-release 框架最大的風險不是功能，是「靜默失效」**：參數被忽略、外掛載入失敗變成「unknown tool」。每一層都要有能直接觀察的驗證方法。
+1. **dsh-superagent 是一個很完整的「主動式 Agent」設計參考**（Source / Eval / Ticket / Mandate），但它的執行模型是長駐行程 + SQLite，跟 Cloud Run 不合。借它的 harness，不要硬搬它的 app。
+2. **ADK 有的東西，在 DSH 上大多可以用「工具」重新做出來**：`OutputSchema` 變 `submit_*`，Google Search grounding 變 `web_research`。工具層的 schema 驗證，甚至比 prompt 約束更可靠。
+3. **pre-release 框架最大的風險不是功能，是「靜默失效」**：參數被忽略、外掛載入失敗變成「unknown tool」。每一層都要有能直接觀察的驗證方法。
 
 完整程式碼在 **[`kkdai/line-research-bot-dsh`](https://github.com/kkdai/line-research-bot-dsh)**，設計取捨也寫在 repo 的 [`docs/design.md`](https://github.com/kkdai/line-research-bot-dsh/blob/main/docs/design.md)，歡迎參考與交流！
 
 ## 延伸閱讀
 
-- [上一篇：把 LINE 研究 Bot 從 Python Managed Agents 改寫成 Go ADK](https://www.evanlin.com/line-research-bot-python-to-go-adk/)
+- [上一篇：同樣叫 Harness，差在哪？DSH 框架解析與 Google Harness² 比較](https://www.evanlin.com/deepseek-harness-vs-google-harness2/)
+- [前前篇：把 LINE 研究 Bot 從 Python Managed Agents 改寫成 Go ADK](https://www.evanlin.com/line-research-bot-python-to-go-adk/)
 - [`kkdai/line-research-bot-dsh`：本文的完整程式碼](https://github.com/kkdai/line-research-bot-dsh)
 - [`deepseek-ai/dsh-superagent-prototype`](https://github.com/deepseek-ai/dsh-superagent-prototype)
 - [DeepSeek Harness](https://www.deepseek.com/en/harness/)
