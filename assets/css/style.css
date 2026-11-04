@@ -412,3 +412,63 @@ body article .col-lg-9 code.language-plaintext.highlighter-rouge {
     border: none !important;
 }
 
+
+/* Markdown tables in posts.
+   Bootstrap 5's reboot removes table borders, so kramdown tables rendered as
+   bare text. Give them borders, a header bar, zebra rows and padding. */
+.article_body table {
+    width: 100%;
+    margin: 1.5rem 0;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid #d0d7de;
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.article_body table th,
+.article_body table td {
+    padding: 0.65rem 0.9rem;
+    border-bottom: 1px solid #d0d7de;
+    border-right: 1px solid #e5e9ee;
+    vertical-align: top;
+    text-align: left;
+}
+
+.article_body table th:last-child,
+.article_body table td:last-child { border-right: none; }
+
+.article_body table tbody tr:last-child td { border-bottom: none; }
+
+.article_body table thead th {
+    background: #2c3e50;
+    color: #fff;
+    font-weight: 600;
+    white-space: nowrap;
+    border-bottom: 2px solid #1f2d3a;
+    border-right-color: #3d5266;
+}
+
+.article_body table tbody tr:nth-child(even) td { background: #f6f8fa; }
+.article_body table tbody tr:hover td { background: #fdf0ee; }
+
+/* First column usually holds the row label. */
+.article_body table tbody td:first-child {
+    font-weight: 600;
+    color: #1f2d3a;
+}
+
+/* Narrow screens: scroll the table sideways instead of squashing columns. */
+@media (max-width: 767.98px) {
+    .article_body table {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        font-size: 0.875rem;
+    }
+    .article_body table th,
+    .article_body table td { min-width: 7rem; }
+}
