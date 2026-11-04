@@ -5,7 +5,7 @@
  */
 
 /* Modern code block styling - Override Bootstrap */
-.highlight, .highlighter-rouge, 
+.highlight, div.highlighter-rouge, 
 div.language-python.highlighter-rouge,
 div.language-bash.highlighter-rouge,
 div.language-go.highlighter-rouge,
@@ -61,7 +61,7 @@ pre.highlight {
 /* Language-specific highlighting with higher specificity */
 .language-bash, .language-go, .language-javascript, .language-python, 
 .language-html, .language-css, .language-json, .language-yaml,
-.language-plaintext {
+div.language-plaintext {
     background: #2d3748 !important;
     color: #e2e8f0 !important;
 }
@@ -82,9 +82,9 @@ pre {
 
 /* Inline code styling */
 code {
-    background: #4a5568;
-    color: #e2e8f0;
-    padding: 0.2rem 0.4rem;
+    background: rgba(175, 184, 193, 0.2);
+    color: #24292f;
+    padding: 0.15em 0.4em;
     border-radius: 4px;
     font-family: 'Fira Code', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
     font-size: 0.85rem;

@@ -82,8 +82,7 @@ article .share .gplus:hover {
 }
 
 .page-header {
-	color: #e74c3c;
-	text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
+	color: #c0392b;
 }
 
 @media only screen and (min-width: 768px) {
@@ -268,14 +267,16 @@ article div.language-javascript.highlighter-rouge {
     border: none !important;
 }
 
-article code,
-article .language-plaintext.highlighter-rouge {
-    background: #4a5568 !important;
-    color: #e2e8f0 !important;
-    padding: 0.2rem 0.4rem !important;
+article :not(pre) > code,
+article code.language-plaintext.highlighter-rouge {
+    background: rgba(175, 184, 193, 0.2) !important;
+    color: #24292f !important;
+    padding: 0.15em 0.4em !important;
+    margin: 0 !important;
     border-radius: 4px !important;
-    font-family: 'Fira Code', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace !important;
-    font-size: 0.85rem !important;
+    box-shadow: none !important;
+    font-family: 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', monospace !important;
+    font-size: 0.875em !important;
     border: none !important;
 }
 
@@ -329,7 +330,7 @@ article div.language-bash.highlighter-rouge div.highlight pre {
 /* Language-specific code blocks in articles with maximum specificity */
 article .language-bash, article .language-go, article .language-javascript, 
 article .language-python, article .language-html, article .language-css, 
-article .language-json, article .language-yaml, article .language-plaintext,
+article .language-json, article .language-yaml, article div.language-plaintext,
 article div.language-bash.highlighter-rouge,
 article div.language-go.highlighter-rouge,
 article div.language-python.highlighter-rouge {
@@ -403,63 +404,103 @@ body .col-lg-9 pre.highlight {
 /* Inline code with ultra-high specificity */
 body .col-lg-9 code.language-plaintext.highlighter-rouge,
 body article .col-lg-9 code.language-plaintext.highlighter-rouge {
-    background: #4a5568 !important;
-    color: #e2e8f0 !important;
-    padding: 0.2rem 0.4rem !important;
+    background: rgba(175, 184, 193, 0.2) !important;
+    color: #24292f !important;
+    padding: 0.15em 0.4em !important;
+    margin: 0 !important;
     border-radius: 4px !important;
-    font-family: 'Fira Code', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace !important;
-    font-size: 0.85rem !important;
+    box-shadow: none !important;
+    font-family: 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', monospace !important;
+    font-size: 0.875em !important;
     border: none !important;
 }
 
 
-/* Markdown tables in posts.
-   Bootstrap 5's reboot removes table borders, so kramdown tables rendered as
-   bare text. Give them borders, a header bar, zebra rows and padding. */
+/* ---------- Post typography ----------
+   Quiet, readable defaults for everything inside a post body. */
+.article_body {
+    font-size: 1.0625rem;
+    line-height: 1.85;
+    color: #2f3a45;
+}
+
+.article_body p,
+.article_body ul,
+.article_body ol { margin-bottom: 1.1rem; }
+
+.article_body li { margin-bottom: 0.3rem; }
+
+.article_body h1,
+.article_body h2,
+.article_body h3,
+.article_body h4 {
+    color: #1f2d3a;
+    font-weight: 600;
+    line-height: 1.4;
+}
+.article_body h1 {
+    font-size: 1.6rem;
+    margin: 2.75rem 0 1rem;
+    padding-bottom: 0.45rem;
+    border-bottom: 1px solid #e4e8ec;
+}
+.article_body h2 { font-size: 1.3rem; margin: 2.25rem 0 0.85rem; }
+.article_body h3 { font-size: 1.12rem; margin: 1.75rem 0 0.7rem; }
+.article_body h4 { font-size: 1rem; margin: 1.5rem 0 0.6rem; }
+
+.article_body a { color: #2b6cb0; text-decoration: none; border-bottom: 1px solid rgba(43, 108, 176, 0.25); }
+.article_body a:hover { color: #1e4e8c; border-bottom-color: currentColor; }
+
+.article_body strong { color: #1f2d3a; font-weight: 600; }
+
+.article_body hr {
+    margin: 2.5rem 0;
+    border: 0;
+    border-top: 1px solid #e4e8ec;
+    opacity: 1;
+}
+
+/* Bootstrap renders blockquotes at 1.25rem with no marker; make them a quiet aside. */
+.article_body blockquote {
+    margin: 1.5rem 0;
+    padding: 0.75rem 1.1rem;
+    font-size: 1rem;
+    color: #4a5866;
+    background: #f7f9fb;
+    border-left: 3px solid #c8d1db;
+    border-radius: 0 6px 6px 0;
+}
+.article_body blockquote p:last-child { margin-bottom: 0; }
+
+/* ---------- Tables ----------
+   Bootstrap 5's reboot strips table borders, so kramdown tables rendered as
+   bare text. Thin rules, a light header and generous padding. */
 .article_body table {
     width: 100%;
-    margin: 1.5rem 0;
-    border-collapse: separate;
-    border-spacing: 0;
-    border: 1px solid #d0d7de;
-    border-radius: 8px;
-    overflow: hidden;
-    font-size: 0.95rem;
-    line-height: 1.6;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+    margin: 1.75rem 0;
+    border-collapse: collapse;
+    font-size: 0.94rem;
+    line-height: 1.65;
 }
 
 .article_body table th,
 .article_body table td {
-    padding: 0.65rem 0.9rem;
-    border-bottom: 1px solid #d0d7de;
-    border-right: 1px solid #e5e9ee;
+    padding: 0.6rem 0.85rem;
+    border-bottom: 1px solid #e4e8ec;
     vertical-align: top;
     text-align: left;
 }
 
-.article_body table th:last-child,
-.article_body table td:last-child { border-right: none; }
-
-.article_body table tbody tr:last-child td { border-bottom: none; }
-
 .article_body table thead th {
-    background: #2c3e50;
-    color: #fff;
-    font-weight: 600;
-    white-space: nowrap;
-    border-bottom: 2px solid #1f2d3a;
-    border-right-color: #3d5266;
-}
-
-.article_body table tbody tr:nth-child(even) td { background: #f6f8fa; }
-.article_body table tbody tr:hover td { background: #fdf0ee; }
-
-/* First column usually holds the row label. */
-.article_body table tbody td:first-child {
-    font-weight: 600;
     color: #1f2d3a;
+    font-weight: 600;
+    background: #f6f8fa;
+    border-top: 1px solid #d5dbe1;
+    border-bottom: 1px solid #c8d1db;
+    white-space: nowrap;
 }
+
+.article_body table tbody tr:last-child td { border-bottom: 1px solid #d5dbe1; }
 
 /* Narrow screens: scroll the table sideways instead of squashing columns. */
 @media (max-width: 767.98px) {
