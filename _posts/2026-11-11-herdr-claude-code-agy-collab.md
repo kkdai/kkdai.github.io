@@ -1,16 +1,41 @@
 ---
 layout: post
 title: "[AI 實戰] 第一次用 Herdr：讓 Claude Code 當 Reviewer、agy 當實作者，在左右 Pane 協作完成 Go 後端 Code Review、5 個 Issue 修正與 Cloud Run 部署"
-description: "第一次使用 Herdr 這個多 Agent 終端機管理工具，我讓 Claude Code（主控、Reviewer）與 Antigravity CLI agy（實作者）在同一個視窗的左右兩個 Pane 裡協作，替自己的日文歌學習 App song-lingo 的 Go 後端跑完一整輪：agy 先做 Code Review 找出 17 個問題，Claude Code 驗證後整併成 5 個 Issue（#57–#61），再由 agy 逐一修改、Claude Code 逐一 Review，通過才放行 commit/push，最後 PR #62 合併並部署到 Cloud Run。這篇記錄 Herdr 的核心概念、agent 對 agent 的訊息通道、權限放行的分寸，以及 Reviewer 實際抓到的三個「測試會過、上線才會痛」的問題。"
+description: "第一次使用 Herdr 這個多 Agent 終端機管理工具，我讓 Claude Code（主控、Reviewer）與 Antigravity CLI agy（實作者）在同一個視窗的左右兩個 Pane 裡協作，替自己的日文歌學習 App song-lingo 的 Go 後端跑完一整輪：agy 先做 Code Review 找出 17 個問題，Claude Code 驗證後整併成 5 個 Issue（#57–#61），再由 agy 逐一修改、Claude Code 逐一 Review，通過才放行 commit/push，最後 PR #62 合併並部署到 Cloud Run，接著 PR #65 再把前端冷啟動優化上線。這篇記錄 Herdr 這類 TTT（Terminal Text Tool，俗稱 AI Terminal Editor）的核心概念、用指令建立 Pane 與互傳訊息的教學、一個拿去就能用的 prompt、為什麼 TTT 流水線比直接呼叫 Sub-Agent 更透明，以及 Reviewer 實際抓到的三個「測試會過、上線才會痛」的問題。"
 category:
 - AI
 - Golang
-tags: ["Herdr", "Claude Code", "Antigravity", "agy", "Multi-Agent", "Code Review", "Golang", "Cloud Run", "GCP", "Gemini"]
+tags: ["Herdr", "TTT", "AI Terminal Editor", "Herdr Pane", "Claude Code", "Antigravity", "agy", "Multi-Agent", "Code Review", "Golang", "Cloud Run", "GCP", "Gemini"]
 ---
 
 ![Herdr：左邊 Claude Code 派任務，右邊 Antigravity（agy）執行](../images/herdr-claude-code-agy-panes.png)
 
 # 前情提要
+
+最近迷上使用 **TTT（Terminal Text Tool）**，也就是大家俗稱的 **AI Terminal Editor**，第一個使用的就是 **Herdr**。
+
+昨天用它（Master Agent 是 **Claude Opus 5.5**）由他來分配工作，請 **Gemini 4 Argon** 去實作來優化程式碼，最後再由 **Claude Code** 來審核，最後再請 **Claude Agent** 將相關過程寫成文章，一次完成（還會自動幫我截圖附上）。
+
+
+
+整條流水線長這樣：
+
+| 階段 | 誰負責 | 做什麼 |
+| :--- | :--- | :--- |
+| 1. 分派 | Master Agent（Claude Opus 5.5，左 Pane） | 拆任務、開 Issue、決定誰做什麼 |
+| 2. 實作 | Gemini 4 Argon（透過 agy，中 Pane） | 改程式、跑測試 |
+| 3. 審核 | Claude Code | 看 diff、自己再跑測試、通過才放行 commit/push |
+| 4. 寫文章 | Claude Agent（blog-writer，最右邊 Pane） | 把整個過程寫成這篇文章，順便用 `herdr-app shot` 截圖附上 |
+
+![Herdr 實際畫面：左邊主控 Claude Code 派工作，最右邊的 blog-writer 正在改這篇文章](../images/herdr-ttt-pipeline.png)
+
+沒錯，你現在讀的這篇文章，就是上圖最右邊那個 Pane 裡的 Claude Agent 寫的（連這張截圖也是它自己拍的）。用下來也能了解，為什麼一些高手可以使用這些 TTT 來打造一條線的流水線工作架構——這部分我在第八節會再展開。
+
+真的蠻讚～ 其他身邊同事不是玩 rex + Pi，就是一直叫我去玩 Orca 🤣
+
+---
+
+## 這次的實驗場：song-lingo
 
 **song-lingo** 是我自己做來學日文歌的小工具：貼上一支 YouTube MV，Gemini 會幫我聽寫歌詞、標註羅馬拼音、繁中翻譯與文法，再用 Gemini TTS 產生「老師示範音」；我錄音跟讀之後，Gemini 會轉錄我的發音並逐字評分。
 
@@ -90,6 +115,63 @@ flowchart LR
     Human -.-> CC
     Human -.-> AGY
 ```
+
+## 6. 教學：用指令建立 Pane、在 Pane 裡起 Agent、互傳訊息
+
+上面的速查表偏「Agent 怎麼操作 Agent」，這裡整理一份**自己動手開 Pane** 的指令。以下都是這次實際在用的：
+
+> 註：`herdr-app` 預設不在 PATH 裡，App 版的實際路徑是 `/Applications/Herdr.app/Contents/MacOS/Herdr`，可以自己 alias 成 `herdr-app`。
+
+### 先看懂現在的畫面
+
+```sh
+herdr-app --skill                      # 給 AI 看的操作手冊（hc --skill 是 herdr-core 的）
+herdr-app ls                           # spaces > tabs > terminals，含 pane ID
+herdr-app status                       # 目前焦點 pane、layout
+```
+
+### 開 Pane、在 Pane 裡跑 Agent
+
+```sh
+herdr-app do pane.go --direction right # 焦點移到右邊 pane（重複到最右邊）
+herdr-app do pane.split --direction right --pane <pane-id>      # 從某個 pane 往右切一個新 terminal
+herdr-app do terminal.open --place right --argv '["agy"]'       # 在焦點 pane 右邊開一個跑 agy 的 terminal
+herdr-app do tab.new --name "fix login" --argv '["claude"]' --task "Look at the login bug"
+herdr-app shot herdr-shot.png          # 存下視窗畫面（文章截圖就是這樣來的）
+```
+
+### 背景 Agent、搬進 Pane、互傳訊息
+
+```sh
+hc run --bg --name coder --cwd /path/to/repo agy                # 背景起一個 agent（不加 --bg 整個畫面會灌進輸出）
+hc run --bg --outlive-parent --name blog-writer claude "<任務>"  # 主控結束後仍繼續跑
+herdr-app do terminal.keep --terminal <t-id> --place right      # 把背景 agent 放進右邊 pane 讓人看得到
+hc send coder "改這個…"                 # 傳訊息給另一個 agent
+hc wait --children any                 # 等子 agent 回報，不要 sleep/輪詢
+hc read --lines 200 coder              # 讀它的畫面與歷史
+```
+
+幾個要注意的地方：
+
+| 重點 | 說明 |
+| :--- | :--- |
+| **ID vs 名字** | `herdr-app do` 的 terminal 參數要用 **ID**（例如 `t12`），不是名字；`hc` 則可以直接用名字（例如 `coder`） |
+| **一定要 `--bg`** | `hc run` 不加 `--bg`，對方整個畫面會灌進你的輸出 |
+| **`--outlive-parent`** | 像 blog-writer 這種「主控結束後還要繼續寫」的 Agent 要加 |
+| **背景 → 看得見** | 先 `hc run --bg` 起起來，再 `terminal.keep --place right` 搬到右邊 Pane，人就能隨時看、隨時插手 |
+| **等待** | 用 `hc wait`，不要 sleep 輪詢 |
+
+## 7. 直接可用的 prompt
+
+裝好 herdr app 版，這個 prompt 拿去用——在 Herdr 裡直接呼叫另外一個 model 做事情，然後交給原來的 model 審核：
+
+```
+ 幫我使用 herdr open agy gemini-3.8 (先使用 herdr-app --skill 了解) as coder in a pane on the right.
+  --- 做某件事情 ---
+  coder 來修改，改完回覆由 agy  gemini 4 argon 來 review 並且 commit and push
+```
+
+把中間「做某件事情」換成你的任務就好。重點是那句「**先使用 `herdr-app --skill` 了解**」——讓主控 Agent 先讀手冊，後面開 Pane、傳訊息、等回報就會照規矩來。
 
 ---
 
@@ -301,12 +383,52 @@ Agent 之間可以互相信任到「你可以跑測試」，但「寫入 git、�
 - [ ] **8. 權限 Driver 讀整個畫面**：不要依賴會被截斷的狀態列；組合指令要逐條判斷。
 - [ ] **9. Git 與雲端寫入要閘門**：commit/push 只在 Review 通過後放行；外部 API 呼叫交給人。
 - [ ] **10. 部署後實測新行為**：不只看 200，也要驗證新加的限制（413）、新加的標頭（304 / 206），並保留上一版 revision。
+- [ ] **11. 開 Pane 用 ID、傳訊息用名字**：`herdr-app do` 吃 terminal ID（`t12`），`hc send` / `hc read` 可以用名字。
+- [ ] **12. 背景 Agent 要搬到看得見的地方**：`hc run --bg` 之後用 `terminal.keep --place right` 放進 Pane，流水線才不會變黑箱。
 
 ---
 
-# 七、下一步：讓 agy 分析 Cloud Run 效能
+# 七、後續：Cloud Run 冷啟動優化（PR #65，已合併）
 
-這篇寫完的同時，右邊的 agy 已經在跑下一個任務了：用它的 GCP skill 分析 song-lingo 在 Cloud Run 上的執行效能——服務設定、cold start、gcsfuse、Firestore 等——提出 5–8 個方案，每個方案附上證據、預期效益、每月成本與風險，再由 Claude Code 決定要修哪些。這部分還在進行中，之後再來分享。
+上一版文章寫到這裡時，右邊的 agy 正在跑下一個任務：用它的 GCP skill 分析 song-lingo 在 Cloud Run 上的執行效能——服務設定、cold start、gcsfuse、Firestore 等——提出方案，每個方案附上證據、預期效益、成本與風險，再由 Claude Code 決定要修哪些。
+
+這一輪最後收斂成 **PR #65「web: faster cold start (standalone output, gcsfuse cache, 512Mi)」**，在 **2026-11-11 合併**（Fixes #63、#64）：
+
+| 改動 | 內容 |
+| :--- | :--- |
+| **首頁不 prefetch** | `web/app/page.tsx` 的歌曲連結加上 `prefetch={false}`，首頁不再預先抓每一首歌的頁面 |
+| **`next.config.ts` → `next.config.mjs`** | 設定一樣，但改成純 ESM，啟動時不用再跑 TypeScript 轉譯 |
+| **Next.js standalone output** | `output: "standalone"`，Dockerfile 只複製 `.next/standalone` + static + public |
+| **gcsfuse in-memory file cache** | Cloud Run 部署的 gcsfuse 掛載加上記憶體檔案快取（README 部署指令一起更新） |
+| **記憶體 512Mi** | 部署指令改成 `--memory=512Mi` |
+
+PR 裡記錄的前後對照：
+
+| 項目 | Before | After |
+| :--- | :--- | :--- |
+| 啟動時載入 next config | 995–1132 ms | 約 0.7 ms |
+| 映像檔裡的 `web/` | 約 770 MB | 約 46 MB |
+
+<!-- TODO: 部署後實際的 Cloud Run 冷啟動時間（端到端）尚未量測，有數據再補。 -->
+
+這個 PR 的風險也標得很清楚：Docker 映像只在 Cloud Build 上驗證過，如果新 revision 起不來，Cloud Run 會繼續由上一版 revision 服務——跟第四節「保留上一版 revision」是同一個思路。
+
+---
+
+# 八、為什麼 TTT 流水線比直接呼叫 Sub-Agent 好？
+
+這樣來打造流水線，除了可以**混合不同家的模型**之外，還可以**避免像是直接呼叫 Sub-Agent 方式的黑箱方式**來工作，看到有問題也可以馬上自己介入並且給予修正的指令。
+
+| 比較項目 | 直接呼叫 Sub-Agent | TTT 流水線（Herdr Pane） |
+| :--- | :--- | :--- |
+| **模型選擇** | 通常只能用同一家的模型 | 可以混用不同家：Claude 分派與審核、Gemini 實作 |
+| **過程可見度** | 黑箱，只看得到最後回傳的結果 | 每個 Agent 一個 Pane，正在跑什麼指令即時看得到 |
+| **人類介入** | 要等它跑完才能修正 | 看到有問題，馬上在那個 Pane 下修正指令 |
+| **溝通方式** | 一次性呼叫、回傳一段結果 | `hc send` / `hc wait` 非同步互傳，每則訊息都帶來源位址 |
+| **權限控管** | 跟著主 Agent 的權限走 | 每個 Pane 的權限對話框分開，可以由 Reviewer 或人逐一放行 |
+| **生命週期** | 跟著主 Agent 結束 | `--outlive-parent` 讓 blog-writer 這類 Agent 主控結束後繼續跑 |
+
+---
 
 ---
 
@@ -318,5 +440,6 @@ Agent 之間可以互相信任到「你可以跑測試」，但「寫入 git、�
 2. **Agent 對 Agent 的訊息讓協作非同步又可追蹤**：`herdr-core send t4 'ready for review #N'` 讓實作者自己來敲門，Reviewer 用 `hc wait` 等待，不用輪詢。
 3. **Pane 讓人保持在迴圈裡**：我可以在右邊即時看到 agy 正在跑什麼指令，必要時直接插手。
 4. **權限放行要有分寸**：唯讀可以自動化，寫入 git、寫入雲端、對外發請求，一定要過 Review 或人。
+5. **TTT 流水線不是黑箱**：可以混用不同家的模型，每一步都看得到，有問題隨時自己介入下修正指令——這是直接呼叫 Sub-Agent 做不到的。
 
-而這篇文章本身，也是 Herdr 裡最右邊那個 Pane 的 Claude Code 寫的——寫完之後，它會用 `herdr-core send t4` 跟左邊的主控回報一聲。
+而這篇文章本身，也是 Herdr 裡最右邊那個 Pane 的 Claude Code 寫的——寫完之後，它會用 `herdr-core send` 跟左邊的主控回報一聲；這次補上 TTT 心得、Pane 教學與 PR #65 的修改，也是同一個 blog-writer 在同一個 Pane 裡完成的。
