@@ -106,7 +106,7 @@ herdr-app do terminal.keep --terminal <ID> --place down    # 第二個疊在下�
 
 畫面就變成：左邊 Claude Code（PM），右邊上下兩個 agy。
 
-<!-- TODO: 補 Herdr 三個 Pane 的截圖（herdr-app shot） -->
+![Herdr 三個 Pane：左邊 Claude Code（PM），右邊上下兩個 agy coder（Gemini 4 Argon）各自讀 SPEC 整理 Issue #2、#3](../images/herdr-record2gif-three-panes.png)
 
 幾個這次的小變化：
 
