@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[AI 實戰] 用 Herdr 開兩個 agy Pane 平行開發：一天做出 macOS 錄影直接轉 GIF 的 record2gif"
+title: "[Herdr 實戰] 用 Herdr 開兩個 agy Pane 平行開發：一天做出 macOS 錄影直接轉 GIF 的 record2gif"
 description: "想要一個像 QuickTime 一樣好用、但錄完直接吐出 GIF、還能選解析度的 Mac 小工具。這次讓 Claude Code 當 PM：開 GitHub repo、寫 SPEC、拆成 5 個 Issue，再用 Herdr 同時開兩個 agy coder Pane、各自在 git worktree 裡平行實作，回報後由 Claude Code review、commit。功能做完只是開始，實際按下 make run 後又冒出 5 個 bug：視窗變成 900×450、按 Record App 直接消失、螢幕錄影權限怎麼設都不會生效、選單列沒有秒數、GIF 匯出失敗。這篇記錄整個流程、每個 bug 的根因，以及 PM 自己在 review 時埋下的兩顆雷。"
 category:
 - AI

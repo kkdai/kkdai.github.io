@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[AI 實戰] 第一次用 Herdr：讓 Claude Code 當 Reviewer、agy 當實作者，在左右 Pane 協作完成 Go 後端 Code Review、5 個 Issue 修正與 Cloud Run 部署"
+title: "[Herdr 實戰] 第一次用 Herdr：讓 Claude Code 當 Reviewer、agy 當實作者，在左右 Pane 協作完成 Go 後端 Code Review、5 個 Issue 修正與 Cloud Run 部署"
 description: "第一次使用 Herdr 這個多 Agent 終端機管理工具，我讓 Claude Code（主控、Reviewer）與 Antigravity CLI agy（實作者）在同一個視窗的左右兩個 Pane 裡協作，替自己的日文歌學習 App song-lingo 的 Go 後端跑完一整輪：agy 先做 Code Review 找出 17 個問題，Claude Code 驗證後整併成 5 個 Issue（#57–#61），再由 agy 逐一修改、Claude Code 逐一 Review，通過才放行 commit/push，最後 PR #62 合併並部署到 Cloud Run，接著 PR #65 再把前端冷啟動優化上線。這篇記錄 Herdr 這類 TTT（Terminal Text Tool，俗稱 AI Terminal Editor）的核心概念、用指令建立 Pane 與互傳訊息的教學、一個拿去就能用的 prompt、為什麼 TTT 流水線比直接呼叫 Sub-Agent 更透明，以及 Reviewer 實際抓到的三個「測試會過、上線才會痛」的問題。"
 category:
 - AI
