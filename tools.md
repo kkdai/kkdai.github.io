@@ -123,6 +123,7 @@ header: Useful Tools
     <h3 class="tool-title">🎬 record2gif</h3>
     <div class="tool-links">
       <a href="https://github.com/kkdai/record2gif" target="_blank"><i class="fa fa-github"></i> GitHub</a>
+      <a href="https://www.evanlin.com/record2gif-macos-screen-to-gif/" target="_blank"><i class="fa fa-file-text-o"></i> 說明文章</a>
     </div>
   </div>
   <p class="tool-description">
