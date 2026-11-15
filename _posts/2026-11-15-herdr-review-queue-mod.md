@@ -145,7 +145,7 @@ hc-review ls [--all] [--json]                     # 終端機版的佇列
 | **`run("agent.focus", …)`** | 執行 Herdr 指令，例如跳到那個 coder 的 Pane |
 | **`notify({...})`** | 跳出通知，點了可以執行一個指令 |
 | **`theme()`** | 用主題色，深色淺色主題都會跟著變 |
-| **`nextCommand()`** | 接收快捷鍵指令，例如 `review-queue:next` |
+| **`nextCommand()`** | 接收快捷鍵指令，例如 `review-queue.next`（keys.json 裡寫 `<mod>.<command>`，用點不是冒號） |
 
 精簡後的骨架大概長這樣：
 
@@ -243,7 +243,30 @@ herdr-app do pane.split --direction right --mod review-queue
 
 一個小提醒：`herdr-app shot` 存的是視窗「最後畫的那一格」，Herdr 不在前景時可能是舊畫面。我遇到兩次截到舊圖，先 `open -a Herdr` 把視窗叫到前面再截就正常了。
 
-還沒驗證的：面板上的按鈕我沒有用滑鼠實際點（Herdr 的規範是不要在真實螢幕上做指標自動化，所以 Seen 是用 CLI 測的，兩者送的是同一個 `hc label`）；新回報的通知和 `review-queue:next` 快捷鍵也還沒實測。
+還沒驗證的：面板上的按鈕我沒有用滑鼠實際點（Herdr 的規範是不要在真實螢幕上做指標自動化，所以 Seen 是用 CLI 測的，兩者送的是同一個 `hc label`）；新回報的通知和 `review-queue.next` 快捷鍵也還沒實測。
+
+## 平常怎麼把面板叫出來
+
+裝好之後，平常有兩種方式：
+
+```sh
+# 需要時在目前的 Pane 右邊開一個面板（會一直留在這個 tab）
+herdr-app do pane.split --direction right --mod review-queue
+```
+
+或在 `~/.config/herdr-app/keys.json` 的 `global` 綁快捷鍵：
+
+```json
+"ctrl-shift-q": { "command": "pane.split", "args": { "direction": "right", "mod": "review-queue" } },
+"ctrl-shift-r": "review-queue.next"
+```
+
+第二行是「跳到最舊的待審 coder」。這裡有個寫完文章後才發現的坑：
+
+- mod 指令在 keys.json 要寫成 **`<mod>.<command>`（用點）**。一開始 README 寫成 `review-queue:next`（冒號），Herdr 會直接回 `unknown command`。
+- 更麻煩的是，用 CLI 跑 `herdr-app do review-queue.next`，Herdr 回 `{"ok": true}`，**焦點卻完全不動**。coder 在 mod 裡加了除錯紀錄才確認：指令根本沒送進 mod 的 `nextCommand()`，紀錄裡只有 mod 啟動那一行。內建的 mod 也都沒有用到 `nextCommand()`。所以 mod 的邏輯沒錯，是 herdr-app 0.1.15 的 CLI 這條路沒送達，`<mod>.<command>` 目前只能靠 keys.json 快捷鍵觸發。
+
+這個修正記錄在 [Issue #4](https://github.com/kkdai/herdr-review-queue/issues/4)，快捷鍵實際按過確認之後才會關掉。
 
 ---
 
