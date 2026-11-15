@@ -157,6 +157,26 @@ header: Useful Tools
   </div>
 </div>
 
+<div class="tool-card">
+  <div class="tool-header">
+    <h3 class="tool-title">📋 herdr-review-queue</h3>
+    <div class="tool-links">
+      <a href="https://github.com/kkdai/herdr-review-queue" target="_blank"><i class="fa fa-github"></i> GitHub</a>
+      <a href="https://www.evanlin.com/herdr-review-queue-mod/" target="_blank"><i class="fa fa-file-text-o"></i> 說明文章</a>
+    </div>
+  </div>
+  <p class="tool-description">
+    一個 Herdr mod 加上小型 CLI，用來顯示「待 review」佇列。在 Claude Code 當 reviewer、多個 agy coder 平行開發時，coder 完成後執行 <code>hc-review ready "&lt;摘要&gt;"</code>，就會在自己的 terminal 貼上 review 標籤並通知 reviewer。面板即時列出哪些 coder 已經回報、還沒被看過，可以直接跳到該 Pane，或標成已看過。
+  </p>
+  <div class="tool-tags">
+    <span class="tag">Herdr</span>
+    <span class="tag">Herdr mod</span>
+    <span class="tag">Multi-Agent</span>
+    <span class="tag">JavaScript</span>
+    <span class="tag">Shell</span>
+  </div>
+</div>
+
 ---
 
 *(更多工具持續增加中...)*
