@@ -243,7 +243,7 @@ herdr-app do pane.split --direction right --mod review-queue
 
 一個小提醒：`herdr-app shot` 存的是視窗「最後畫的那一格」，Herdr 不在前景時可能是舊畫面。我遇到兩次截到舊圖，先 `open -a Herdr` 把視窗叫到前面再截就正常了。
 
-還沒驗證的：面板上的按鈕我沒有用滑鼠實際點（Herdr 的規範是不要在真實螢幕上做指標自動化，所以 Seen 是用 CLI 測的，兩者送的是同一個 `hc label`）；新回報的通知和 `review-queue.next` 快捷鍵也還沒實測。
+還沒驗證的：面板上的按鈕我沒有用滑鼠實際點（Herdr 的規範是不要在真實螢幕上做指標自動化，所以 Seen 是用 CLI 測的，兩者送的是同一個 `hc label`）；新回報的通知也還沒實測。
 
 ## 平常怎麼把面板叫出來
 
@@ -266,7 +266,7 @@ herdr-app do pane.split --direction right --mod review-queue
 - mod 指令在 keys.json 要寫成 **`<mod>.<command>`（用點）**。一開始 README 寫成 `review-queue:next`（冒號），Herdr 會直接回 `unknown command`。
 - 更麻煩的是，用 CLI 跑 `herdr-app do review-queue.next`，Herdr 回 `{"ok": true}`，**焦點卻完全不動**。coder 在 mod 裡加了除錯紀錄才確認：指令根本沒送進 mod 的 `nextCommand()`，紀錄裡只有 mod 啟動那一行。內建的 mod 也都沒有用到 `nextCommand()`。所以 mod 的邏輯沒錯，是 herdr-app 0.1.15 的 CLI 這條路沒送達，`<mod>.<command>` 目前只能靠 keys.json 快捷鍵觸發。
 
-這個修正記錄在 [Issue #4](https://github.com/kkdai/herdr-review-queue/issues/4)，快捷鍵實際按過確認之後才會關掉。
+後來實際按過：`ctrl-shift-q` 會開出面板，`ctrl-shift-r` 會跳到最舊的待審 coder。要注意 `review-queue.next` **只會送給畫面上正在顯示的面板**，面板沒開時按了不會有反應，所以要先按 `ctrl-shift-q`。這個修正記錄在 [Issue #4](https://github.com/kkdai/herdr-review-queue/issues/4)，已經關閉。
 
 ---
 
